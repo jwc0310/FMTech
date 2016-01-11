@@ -2,21 +2,22 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scrollbars="vertical"
-    android:layout_marginLeft="16dp"
-    android:layout_marginRight="16dp">
+    android:scrollbars="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
+        <include android:id="@+id/titlebar" layout="@layout/common_titlebar"/>
+
         <LinearLayout
             android:id="@+id/ll_first_login_step3_top"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_below="@id/titlebar"
             android:orientation="vertical">
-
-            <include layout="@layout/common_titlebar"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -183,6 +184,8 @@
             android:layout_alignParentBottom="true"
             android:layout_below="@id/ll_first_login_step3_top"
             android:layout_marginBottom="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
             android:orientation="vertical">
 
             <Button
