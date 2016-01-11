@@ -57,7 +57,6 @@ public class NavigationDot extends View {
         mDotNormalResId = typedArray.getResourceId(R.styleable.NavigationDot_navigationDotNormal, -1);
         mDotSelectedResId =typedArray.getResourceId(R.styleable.NavigationDot_navigationDotSelected, -1);
         mDotCount = typedArray.getInt(R.styleable.NavigationDot_navigationDotCount, 3);
-//        float dotPadding = typedArray.getDimension(R.styleable.NavigationDot_navigationDotPadding, 6.0F);
         mPadding = (int)typedArray.getDimension(R.styleable.NavigationDot_navigationDotPadding, 6.0F);
         typedArray.recycle();
 

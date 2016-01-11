@@ -94,6 +94,16 @@ public class MainActivity extends BaseActivity implements ActionBarController, P
         mNavigationManager.showPage(FragmentConfig.FRAGMENT_HOME, null, HomeFragment.newInstance(), false, new View[0]);
     }
 
+    @Override
+    protected void onNewIntent(Intent intent) {
+        super.onNewIntent(intent);
+        handleIntent(intent);
+    }
+
+    private void handleIntent(Intent intent){
+
+    }
+
     public void toLogin(View view) {
         switch (mClickCount) {
             case 0:
