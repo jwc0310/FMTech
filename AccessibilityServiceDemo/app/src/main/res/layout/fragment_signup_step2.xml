@@ -3,146 +3,152 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp">
+        android:layout_height="match_parent">
 
-        <include layout="@layout/common_titlebar" />
+        <include android:id="@+id/titlebar" layout="@layout/common_titlebar" />
 
-        <LinearLayout
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="center"
-            android:orientation="horizontal">
+            android:layout_height="match_parent"
+            android:layout_below="@id/titlebar"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/dot_background_normal"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/dot_background_selected"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/dot_background_normal"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textColor="@android:color/white" />
+
+                <TextView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_margin="8dp"
+                    android:background="@drawable/dot_background_normal"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
 
             <TextView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_margin="8dp"
-                android:background="@drawable/dot_background_normal"
-                android:gravity="center"
-                android:text="1"
-                android:textColor="@android:color/white" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="REGISTRATION FORM"
+                android:textSize="16sp" />
 
             <TextView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_margin="8dp"
-                android:background="@drawable/dot_background_selected"
-                android:gravity="center"
-                android:text="2"
-                android:textColor="@android:color/white" />
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="The name provided below must be same
+as HKID card for identification purpose."
+                android:textSize="20sp" />
 
             <TextView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_margin="8dp"
-                android:background="@drawable/dot_background_normal"
-                android:gravity="center"
-                android:text="3"
-                android:textColor="@android:color/white" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="* is a mandatory field" />
+
+            <EditText
+                style="@style/CommonEditText"
+                android:layout_marginTop="16dp"
+                android:hint="Surname in English*" />
+
+            <EditText
+                style="@style/CommonEditText"
+                android:layout_marginTop="16dp"
+                android:hint="Other names in English" />
+
+            <EditText
+                style="@style/CommonEditText"
+                android:layout_marginTop="16dp"
+                android:hint="Surname in Chinese" />
+
+            <EditText
+                style="@style/CommonEditText"
+                android:layout_marginTop="16dp"
+                android:hint="Other names in Chinese" />
+
+            <EditText
+                style="@style/CommonEditText"
+                android:layout_marginTop="16dp"
+                android:hint="HKID Card Number*" />
 
             <TextView
-                android:layout_width="20dp"
-                android:layout_height="20dp"
-                android:layout_margin="8dp"
-                android:background="@drawable/dot_background_normal"
-                android:gravity="center"
-                android:text="4"
-                android:textColor="@android:color/white" />
-        </LinearLayout>
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="e.g input A1234567 if HKID card number is
+A123456(7)." />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="REGISTRATION FORM"
-            android:textSize="16sp" />
+            <EditText
+                style="@style/CommonEditText"
+                android:layout_marginTop="16dp"
+                android:hint="Email Address*" />
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:textSize="20sp"
-            android:text="The name provided below must be same
-as HKID card for identification purpose." />
+            <EditText
+                style="@style/CommonEditText"
+                android:layout_marginTop="16dp"
+                android:hint="Re-Enter Email Address*" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="* is a mandatory field"/>
+            <EditText
+                style="@style/CommonEditText"
+                android:layout_marginTop="16dp"
+                android:hint="Contact Number" />
 
-        <EditText
-           style="@style/CommonEditText"
-            android:layout_marginTop="16dp"
-            android:hint="Surname in English*"/>
-
-        <EditText
-            style="@style/CommonEditText"
-            android:layout_marginTop="16dp"
-            android:hint="Other names in English"/>
-
-        <EditText
-            style="@style/CommonEditText"
-            android:layout_marginTop="16dp"
-            android:hint="Surname in Chinese"/>
-
-        <EditText
-            style="@style/CommonEditText"
-            android:layout_marginTop="16dp"
-            android:hint="Other names in Chinese"/>
-
-        <EditText
-            style="@style/CommonEditText"
-            android:layout_marginTop="16dp"
-            android:hint="HKID Card Number*" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:text="e.g input A1234567 if HKID card number is
-A123456(7)."/>
-
-        <EditText
-            style="@style/CommonEditText"
-            android:layout_marginTop="16dp"
-            android:hint="Email Address*"/>
-
-        <EditText
-            style="@style/CommonEditText"
-            android:layout_marginTop="16dp"
-            android:hint="Re-Enter Email Address*" />
-
-        <EditText
-            style="@style/CommonEditText"
-            android:layout_marginTop="16dp"
-            android:hint="Contact Number" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="When your contact number is outside
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="When your contact number is outside
 Hong Kong, put the country code within the brackets. i.e. (86) 12345678901 for
 the contact number in Mainland"
-            android:textSize="20sp" />
+                android:textSize="20sp" />
 
-        <Button
-            style="@style/Style_MPFAButton"
-            android:id="@+id/signup"
-            android:layout_marginTop="48dp"
-            android:text="Reset"/>
+            <Button
+                android:id="@+id/signup"
+                style="@style/Style_MPFAButton"
+                android:layout_marginTop="48dp"
+                android:text="Reset" />
 
-        <Button
-            style="@style/Style_MPFAButton"
-            android:id="@+id/login"
-            android:layout_marginTop="18dp"
-            android:layout_marginBottom="22dp"
-            android:text="Submit"/>
-    </LinearLayout>
+            <Button
+                android:id="@+id/login"
+                style="@style/Style_MPFAButton"
+                android:layout_marginBottom="22dp"
+                android:layout_marginTop="18dp"
+                android:text="Submit" />
+        </LinearLayout>
+    </RelativeLayout>
 </ScrollView>
