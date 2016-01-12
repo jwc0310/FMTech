@@ -1,32 +1,24 @@
 package com.fmtech.empf;
 
 import android.content.Intent;
-import android.os.Build;
-import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.KeyEvent;
 import android.view.View;
-import android.view.ViewTreeObserver;
-import android.view.WindowManager;
 
 import com.fmtech.empf.image.BitmapLoader;
 import com.fmtech.empf.ui.activities.BaseActivity;
-import com.fmtech.empf.ui.activities.LoginActivity;
-import com.fmtech.empf.ui.activities.SignupActivity;
-import com.fmtech.empf.ui.component.MPFADialog;
 import com.fmtech.empf.ui.component.actionbar.ActionBarController;
 import com.fmtech.empf.ui.component.actionbar.ActionBarHelper;
 import com.fmtech.empf.ui.component.drawer.DrawerAdapter;
 import com.fmtech.empf.ui.component.drawer.FMDrawerLayout;
 import com.fmtech.empf.ui.fragments.FragmentConfig;
-import com.fmtech.empf.ui.fragments.HomeFragment;
 import com.fmtech.accessibilityservicedemo.R;
 import com.fmtech.empf.ui.fragments.LoginSignupFragment;
-import com.fmtech.empf.ui.fragments.PageFragment;
-import com.fmtech.empf.ui.fragments.PageFragmentHost;
+import com.fmtech.empf.ui.fragments.base.PageFragment;
+import com.fmtech.empf.ui.fragments.base.PageFragmentHost;
 import com.fmtech.empf.ui.navigationmanager.NavigationManager;
 import com.fmtech.empf.utils.CommonResourceUtils;
 
@@ -99,7 +91,10 @@ public class MainActivity extends BaseActivity implements ActionBarController, P
     }
 
     private void handleIntent(Intent intent){
-
+        int fragmentType = intent.getIntExtra("switch_fragment_type", -1);
+        if(fragmentType != -1 && fragmentType == FragmentConfig.FRAGMENT_HOME){
+            mNavigationManager.gotoHome();
+        }
     }
 
     @Override

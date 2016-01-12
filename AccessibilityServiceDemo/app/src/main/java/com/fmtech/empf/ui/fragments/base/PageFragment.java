@@ -1,4 +1,4 @@
-package com.fmtech.empf.ui.fragments;
+package com.fmtech.empf.ui.fragments.base;
 
 import android.app.Activity;
 import android.content.Context;

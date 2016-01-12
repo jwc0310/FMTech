@@ -1,6 +1,7 @@
-package com.fmtech.empf.ui.fragments;
+package com.fmtech.empf.ui.fragments.signup;
 
 import com.fmtech.accessibilityservicedemo.R;
+import com.fmtech.empf.ui.fragments.base.CommonBaseFragment;
 
 /**
  * ==================================================================
@@ -20,17 +21,17 @@ import com.fmtech.accessibilityservicedemo.R;
  * ==================================================================
  */
 
-public class FirstLoginStep3Fragment extends PageFragment{
+public class SingupStep1Fragment extends CommonBaseFragment {
 
 
-    public static FirstLoginStep3Fragment newInstance(){
-        FirstLoginStep3Fragment firstLoginStep3Fragment = new FirstLoginStep3Fragment();
-        return firstLoginStep3Fragment;
+    public static SingupStep1Fragment newInstance(){
+        SingupStep1Fragment singupStep1Fragment = new SingupStep1Fragment();
+        return singupStep1Fragment;
     }
 
     @Override
     public int getLayoutRes() {
-        return R.layout.fragment_first_login_step3;
+        return R.layout.fragment_first_login_step1;
     }
 
     @Override

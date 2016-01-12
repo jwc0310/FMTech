@@ -5,7 +5,12 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 
 import com.fmtech.accessibilityservicedemo.R;
-import com.fmtech.empf.ui.fragments.FirstLoginStep1Fragment;
+import com.fmtech.empf.ui.fragments.FragmentConfig;
+import com.fmtech.empf.ui.fragments.base.CommonBaseFragment;
+import com.fmtech.empf.ui.fragments.login.FirstLoginStep1Fragment;
+import com.fmtech.empf.ui.fragments.login.FirstLoginStep2Fragment;
+import com.fmtech.empf.ui.fragments.login.FirstLoginStep3Fragment;
+import com.fmtech.empf.ui.fragments.login.FirstLoginStep4Fragment;
 
 /**
  * ==================================================================
@@ -36,13 +41,37 @@ public class FirstLoginActivity extends BaseActivity{
 
         mFragmentManager = getSupportFragmentManager();
 
-        setupContentFragment();
+        initContentFragment();
     }
 
-    private void setupContentFragment(){
+    private void initContentFragment(){
         FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.first_login_content_frame, FirstLoginStep1Fragment.newInstance());
         fragmentTransaction.commit();
     }
 
+    public void switchContentFragment(int type){
+        CommonBaseFragment fragment = null;
+        switch (type){
+            case FragmentConfig.FRAGMENT_FIRST_LOGIN_STEP1:
+                fragment = FirstLoginStep1Fragment.newInstance();
+                break;
+            case FragmentConfig.FRAGMENT_FIRST_LOGIN_STEP2:
+                fragment = FirstLoginStep2Fragment.newInstance();
+                break;
+            case FragmentConfig.FRAGMENT_FIRST_LOGIN_STEP3:
+                fragment = FirstLoginStep3Fragment.newInstance();
+                break;
+            case FragmentConfig.FRAGMENT_FIRST_LOGIN_STEP4:
+                fragment = FirstLoginStep4Fragment.newInstance();
+                break;
+        }
+
+        if(null != fragment){
+            FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
+            fragmentTransaction.replace(R.id.first_login_content_frame, fragment);
+            fragmentTransaction.addToBackStack(type+"");
+            fragmentTransaction.commit();
+        }
+    }
 }

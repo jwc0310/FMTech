@@ -14,6 +14,7 @@ import com.fmtech.empf.model.NewsInfo;
 import com.fmtech.empf.ui.activities.NewsDetailActivity;
 import com.fmtech.empf.ui.adapter.NewsAdapter;
 import com.fmtech.empf.ui.decorator.DividerItemDecoration;
+import com.fmtech.empf.ui.fragments.base.PageFragment;
 
 import java.util.ArrayList;
 import java.util.List;

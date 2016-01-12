@@ -37,18 +37,27 @@ public class LoginActivity extends BaseActivity{
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
-        toolbar.setTitle("Login");
-        setSupportActionBar(toolbar);
-        final ActionBar ab = getSupportActionBar();
-        ab.setHomeAsUpIndicator(R.drawable.ic_back);
-        ab.setDisplayHomeAsUpEnabled(true);
+
+        initViews();
+        initActionBar();
+    }
+
+    private void initViews() {
         mForgotPassword = (TextView)findViewById(R.id.tv_forgot_password);
 //        String forgotPassword = getResources().getString(R.string.forgot_password);
 //        mForgotPassword.setText(Html.fromHtml(forgotPassword));
 //        mForgotPassword.setText(forgotPassword);
         mForgotPassword.getPaint().setFlags(Paint.UNDERLINE_TEXT_FLAG ); //下划线
         mForgotPassword.getPaint().setAntiAlias(true);//抗锯齿
+    }
+
+    private void initActionBar() {
+        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+        toolbar.setTitle("Login");
+        setSupportActionBar(toolbar);
+        final ActionBar ab = getSupportActionBar();
+        ab.setHomeAsUpIndicator(R.drawable.ic_back);
+        ab.setDisplayHomeAsUpEnabled(true);
     }
 
     public void doRealLogin(View view){

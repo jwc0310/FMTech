@@ -4,7 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 import com.fmtech.accessibilityservicedemo.R;
-import com.fmtech.empf.ui.fragments.PageFragment;
+import com.fmtech.empf.ui.fragments.base.PageFragment;
 
 /**
  * ==================================================================

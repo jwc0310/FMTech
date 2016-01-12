@@ -1,4 +1,4 @@
-package com.fmtech.empf.ui.fragments;
+package com.fmtech.empf.ui.fragments.base;
 
 import com.fmtech.empf.image.BitmapLoader;
 import com.fmtech.empf.ui.component.actionbar.ActionBarController;

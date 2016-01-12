@@ -1,10 +1,9 @@
 package com.fmtech.empf.ui.fragments.homepages;
 
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import com.fmtech.empf.ui.fragments.PageFragment;
+import com.fmtech.empf.ui.fragments.base.PageFragment;
 
 import java.util.List;
 

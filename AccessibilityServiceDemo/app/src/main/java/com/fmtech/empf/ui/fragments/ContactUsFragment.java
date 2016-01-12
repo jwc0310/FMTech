@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.support.annotation.Nullable;
 
 import com.fmtech.accessibilityservicedemo.R;
+import com.fmtech.empf.ui.fragments.base.PageFragment;
 
 /**
  * ==================================================================
@@ -23,7 +24,7 @@ import com.fmtech.accessibilityservicedemo.R;
  * ==================================================================
  */
 
-public class ContactUsFragment extends PageFragment{
+public class ContactUsFragment extends PageFragment {
 
     private String mBreadcrumb;
 

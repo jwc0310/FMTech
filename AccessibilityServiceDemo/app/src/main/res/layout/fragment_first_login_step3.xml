@@ -8,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <include android:id="@+id/titlebar" layout="@layout/common_titlebar"/>
+        <!--<include android:id="@+id/titlebar" layout="@layout/common_titlebar"/>-->
 
         <LinearLayout
             android:id="@+id/ll_first_login_step3_top"
@@ -16,7 +16,6 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
-            android:layout_below="@id/titlebar"
             android:orientation="vertical">
 
             <LinearLayout
@@ -79,10 +78,12 @@
                 android:layout_marginTop="16dp">
 
                 <EditText
+                    android:id="@+id/et_first_login_step3_security_question1"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
                     android:hint="Question"
+                    android:focusable="false"
                     android:textColorHint="#ffbdbdbd"
                     android:background="@android:color/white"/>
 
@@ -97,7 +98,7 @@
             </RelativeLayout>
 
             <EditText
-                android:id="@+id/et_new_first_answer1"
+                android:id="@+id/et_first_login_step3_security_answer1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -113,6 +114,7 @@
                 android:layout_marginTop="16dp">
 
                 <EditText
+                    android:id="@+id/et_first_login_step3_security_question2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
@@ -131,7 +133,7 @@
             </RelativeLayout>
 
             <EditText
-                android:id="@+id/et_new_first_answer2"
+                android:id="@+id/et_first_login_step3_security_answer2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -147,6 +149,7 @@
                 android:layout_marginTop="16dp">
 
                 <EditText
+                    android:id="@+id/et_first_login_step3_security_question3"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="10dp"
@@ -165,7 +168,7 @@
             </RelativeLayout>
 
             <EditText
-                android:id="@+id/et_new_first_answer3"
+                android:id="@+id/et_first_login_step3_security_answer3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -183,13 +186,14 @@
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
             android:layout_below="@id/ll_first_login_step3_top"
-            android:layout_marginBottom="16dp"
+            android:paddingBottom="16dp"
             android:layout_marginLeft="16dp"
             android:layout_marginRight="16dp"
             android:orientation="vertical">
 
             <Button
                 style="@style/Style_MPFAButton"
+                android:id="@+id/btn_fisrt_login_step3_skip"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="22dp"
@@ -197,6 +201,7 @@
 
             <Button
                 style="@style/Style_MPFAButton"
+                android:id="@+id/btn_fisrt_login_step3_next"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="22dp"

@@ -27,5 +27,9 @@ public class FragmentConfig {
     public static final int FRAGMENT_SECURITY_TIPS = 4;
     public static final int FRAGMENT_CONTACT_US = 5;
     public static final int FRAGMENT_SETTING = 6;
+    public static final int FRAGMENT_FIRST_LOGIN_STEP1 = 7;
+    public static final int FRAGMENT_FIRST_LOGIN_STEP2= 8;
+    public static final int FRAGMENT_FIRST_LOGIN_STEP3 = 9;
+    public static final int FRAGMENT_FIRST_LOGIN_STEP4 = 10;
 //    public static final int FRAGMENT_ = ;
 }

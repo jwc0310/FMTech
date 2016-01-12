@@ -9,6 +9,7 @@ import android.view.ViewGroup;
 
 import com.fmtech.accessibilityservicedemo.R;
 import com.fmtech.empf.ui.component.ItemHomeTab;
+import com.fmtech.empf.ui.fragments.base.PageFragment;
 import com.fmtech.empf.ui.fragments.homepages.HomeFragmentPagerAdapter;
 import com.fmtech.empf.ui.fragments.homepages.MessageBoxFragment;
 import com.fmtech.empf.ui.fragments.homepages.PersonalAccountFragment;

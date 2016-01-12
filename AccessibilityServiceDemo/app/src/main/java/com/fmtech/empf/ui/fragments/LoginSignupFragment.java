@@ -12,6 +12,7 @@ import com.fmtech.accessibilityservicedemo.R;
 import com.fmtech.empf.ui.activities.LoginActivity;
 import com.fmtech.empf.ui.activities.SignupActivity;
 import com.fmtech.empf.ui.component.MPFADialog;
+import com.fmtech.empf.ui.fragments.base.PageFragment;
 
 /**
  * ==================================================================

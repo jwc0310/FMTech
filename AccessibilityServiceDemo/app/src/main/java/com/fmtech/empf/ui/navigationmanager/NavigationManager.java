@@ -4,7 +4,6 @@ import android.os.Build;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.text.TextUtils;
 import android.view.View;
 
 import com.fmtech.accessibilityservicedemo.R;
@@ -13,7 +12,7 @@ import com.fmtech.empf.ui.fragments.ContactUsFragment;
 import com.fmtech.empf.ui.fragments.FragmentConfig;
 import com.fmtech.empf.ui.fragments.HomeFragment;
 import com.fmtech.empf.ui.fragments.NewsFragment;
-import com.fmtech.empf.ui.fragments.PageFragment;
+import com.fmtech.empf.ui.fragments.base.PageFragment;
 import com.fmtech.empf.ui.fragments.SecurityTipsFragment;
 import com.fmtech.empf.ui.fragments.SettingFragment;
 import com.fmtech.empf.ui.fragments.TutorialsFragment;
