@@ -2,7 +2,8 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
 
     <FrameLayout
         android:layout_width="match_parent"
@@ -23,6 +24,7 @@
             app:navigationDotNormal="@drawable/navigation_dot_normal"
             app:navigationDotSelected="@drawable/navigation_dot_selected"
             app:navigationDotCount="3"
+            app:navigationDotPadding="8dp"
             android:layout_margin="16.0dp"/>
     </FrameLayout>
 
@@ -40,7 +42,6 @@
         android:layout_marginTop="18dp"
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
-        android:onClick="toLogin"
         android:text="Login"/>
 
 

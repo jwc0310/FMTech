@@ -1,5 +1,5 @@
 <resources xmlns:xliff="http://schemas.android.com/tools">
-    <string name="app_name">MPFA Accessiblity Service</string>
+    <string name="app_name">eMPF</string>
     <string name="language_cn">繁體</string>
     <string name="language_en">English</string>
     <string name="setting_language">選擇語言</string>

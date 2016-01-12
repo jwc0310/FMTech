@@ -2,6 +2,7 @@ package com.fmtech.empf.ui.activities;
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 
 import com.fmtech.accessibilityservicedemo.R;
 import com.fmtech.empf.ui.fragments.FirstLoginStep1Fragment;
@@ -39,7 +40,9 @@ public class FirstLoginActivity extends BaseActivity{
     }
 
     private void setupContentFragment(){
-        mFragmentManager.beginTransaction().replace(R.id.first_login_content_frame, FirstLoginStep1Fragment.newInstance()).commit();
+        FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.first_login_content_frame, FirstLoginStep1Fragment.newInstance());
+        fragmentTransaction.commit();
     }
 
 }

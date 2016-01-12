@@ -15,6 +15,7 @@ import android.view.WindowManager;
 import com.fmtech.empf.image.BitmapLoader;
 import com.fmtech.empf.ui.activities.BaseActivity;
 import com.fmtech.empf.ui.activities.LoginActivity;
+import com.fmtech.empf.ui.activities.SignupActivity;
 import com.fmtech.empf.ui.component.MPFADialog;
 import com.fmtech.empf.ui.component.actionbar.ActionBarController;
 import com.fmtech.empf.ui.component.actionbar.ActionBarHelper;
@@ -23,15 +24,15 @@ import com.fmtech.empf.ui.component.drawer.FMDrawerLayout;
 import com.fmtech.empf.ui.fragments.FragmentConfig;
 import com.fmtech.empf.ui.fragments.HomeFragment;
 import com.fmtech.accessibilityservicedemo.R;
+import com.fmtech.empf.ui.fragments.LoginSignupFragment;
 import com.fmtech.empf.ui.fragments.PageFragment;
 import com.fmtech.empf.ui.fragments.PageFragmentHost;
 import com.fmtech.empf.ui.navigationmanager.NavigationManager;
+import com.fmtech.empf.utils.CommonResourceUtils;
 
 public class MainActivity extends BaseActivity implements ActionBarController, PageFragmentHost {
 
     public int MY_DATA_CHECK_CODE = 0;
-    private int mClickCount = 0;
-    private MPFADialog mDialog;
     private Toolbar mToolbar;
     private FMDrawerLayout mDrawerLayout;
     public boolean mStateSaved;
@@ -71,7 +72,8 @@ public class MainActivity extends BaseActivity implements ActionBarController, P
     }
 
     protected void initActionBar() {
-        mToolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+//        mToolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
+        mToolbar.setTitle(CommonResourceUtils.getString(R.string.app_name));
         setSupportActionBar(mToolbar);
         final ActionBar ab = getSupportActionBar();
         ab.setHomeAsUpIndicator(R.drawable.ic_menu_white);
@@ -87,11 +89,7 @@ public class MainActivity extends BaseActivity implements ActionBarController, P
     }
 
     private void setUpFragments() {
-//        getSupportFragmentManager().beginTransaction()
-//                .add(R.id.content_frame, new HomeFragment(), "HOME_FRAGMENT")
-//                .addToBackStack(null)
-//                .commit();
-        mNavigationManager.showPage(FragmentConfig.FRAGMENT_HOME, null, HomeFragment.newInstance(), false, new View[0]);
+        mNavigationManager.showPage(FragmentConfig.FRAGMENT_LOGIN_SIGNUP, null, LoginSignupFragment.newInstance(), false, new View[0]);
     }
 
     @Override
@@ -102,34 +100,6 @@ public class MainActivity extends BaseActivity implements ActionBarController, P
 
     private void handleIntent(Intent intent){
 
-    }
-
-    public void toLogin(View view) {
-        switch (mClickCount) {
-            case 0:
-                showMaintanceMessage();
-                mClickCount++;
-                break;
-            case 1:
-                toLoginActivity();
-                break;
-        }
-    }
-
-    private void showMaintanceMessage() {
-        mDialog = new MPFADialog(MainActivity.this, "Maintenance", "The system is under maintenance/down, please try again later,thanks.", "OK", new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mDialog.dismiss();
-            }
-        });
-        mDialog.show();
-    }
-
-    private void toLoginActivity() {
-        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
-        startActivity(intent);
-//        finish();
     }
 
     @Override
@@ -163,6 +133,7 @@ public class MainActivity extends BaseActivity implements ActionBarController, P
         mNavigationManager.mActivity = null;
         super.onDestroy();
     }
+
 
     /***************
      * Methods implements from ActionBarController

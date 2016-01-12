@@ -20,11 +20,12 @@ package com.fmtech.empf.ui.fragments;
 
 public class FragmentConfig {
 
-    public static final int FRAGMENT_HOME = 0;
-    public static final int FRAGMENT_TUTORIALS = 1;
-    public static final int FRAGMENT_NEWS = 2;
-    public static final int FRAGMENT_SECURITY_TIPS = 3;
-    public static final int FRAGMENT_CONTACT_US = 4;
-    public static final int FRAGMENT_SETTING = 5;
+    public static final int FRAGMENT_LOGIN_SIGNUP = 0;
+    public static final int FRAGMENT_HOME = 1;
+    public static final int FRAGMENT_TUTORIALS = 2;
+    public static final int FRAGMENT_NEWS = 3;
+    public static final int FRAGMENT_SECURITY_TIPS = 4;
+    public static final int FRAGMENT_CONTACT_US = 5;
+    public static final int FRAGMENT_SETTING = 6;
 //    public static final int FRAGMENT_ = ;
 }
