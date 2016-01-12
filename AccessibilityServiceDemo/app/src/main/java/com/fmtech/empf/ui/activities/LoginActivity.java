@@ -1,10 +1,10 @@
 package com.fmtech.empf.ui.activities;
 
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
-import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.widget.TextView;
@@ -29,7 +29,7 @@ import com.fmtech.accessibilityservicedemo.R;
  * ==================================================================
  */
 
-public class LoginActivity extends AppCompatActivity{
+public class LoginActivity extends BaseActivity{
 
     private TextView mForgotPassword;
 
@@ -58,9 +58,15 @@ public class LoginActivity extends AppCompatActivity{
         SharedPreferences sharedPreferences = getSharedPreferences("MPFA_SharedPref", MODE_PRIVATE);
         boolean isFirstLogin = sharedPreferences.getBoolean("isFirstLogin", true);
         if(isFirstLogin){//To first login page
-
+            Intent intent = new Intent(LoginActivity.this, FirstLoginActivity.class);
+            startActivity(intent);
+            finish();
         }else{//To second level password page
-
+            Intent intent = new Intent(LoginActivity.this, SelectLoginModeActivity.class);
+            startActivity(intent);
+            finish();
         }
     }
+
+
 }
