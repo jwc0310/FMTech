@@ -24,6 +24,7 @@ email address for login"
             android:textSize="20sp" />
 
         <EditText
+            android:id="@+id/et_one_time_password"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
@@ -39,6 +40,7 @@ email address for login"
 
         <Button
             style="@style/Style_MPFAButton"
+            android:id="@+id/btn_one_time_pwd_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="72dp"

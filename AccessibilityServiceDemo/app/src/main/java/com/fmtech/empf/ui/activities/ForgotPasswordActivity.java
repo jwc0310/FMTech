@@ -3,15 +3,14 @@ package com.fmtech.empf.ui.activities;
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.view.View;
 
 import com.fmtech.accessibilityservicedemo.R;
 import com.fmtech.empf.ui.component.CommonTitleBar;
 import com.fmtech.empf.ui.fragments.FragmentConfig;
 import com.fmtech.empf.ui.fragments.base.CommonBaseFragment;
-import com.fmtech.empf.ui.fragments.login.OneTimePasswordFragment;
-import com.fmtech.empf.ui.fragments.login.SedondPasswordFragment;
-import com.fmtech.empf.ui.fragments.login.SelectLoginModeFragment;
+import com.fmtech.empf.ui.fragments.login.ForgotPasswordConfirmFragment;
+import com.fmtech.empf.ui.fragments.login.ForgotPasswordFragment;
+import com.fmtech.empf.utils.CommonResourceUtils;
 
 /**
  * ==================================================================
@@ -20,18 +19,18 @@ import com.fmtech.empf.ui.fragments.login.SelectLoginModeFragment;
  * @author Drew.Chiang
  * @version v1.0.0
  * @email chiangchuna@gmail.com
- * @create_date 2016/1/12 12:18
+ * @create_date 2016/1/13 12:38
  * @description ${todo}
  * <p/>
  * Modification History:
  * Date            Author            Version         Description
  * -----------------------------------------------------------------
- * 2016/1/12 12:18  Drew.Chiang       v1.0.0          create
+ * 2016/1/13 12:38  Drew.Chiang       v1.0.0          create
  * <p/>
  * ==================================================================
  */
 
-public class SelectLoginModeActivity extends BaseActivity{
+public class ForgotPasswordActivity extends BaseActivity{
 
     private FragmentManager mFragmentManager;
     private CommonTitleBar mTitleBar;
@@ -39,51 +38,48 @@ public class SelectLoginModeActivity extends BaseActivity{
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_second_level_password);
+        setContentView(R.layout.activity_forgot_password);
 
         mFragmentManager = getSupportFragmentManager();
 
         initContentFragment();
         initViews();
+
     }
 
     private void initViews(){
         mTitleBar = (CommonTitleBar)findViewById(R.id.titlebar);
+        mTitleBar.setToolbarTitle(CommonResourceUtils.getString(R.string.forgot_password));
     }
 
     private void initContentFragment(){
         FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.login_mode_content_frame, SelectLoginModeFragment.newInstance());
+        fragmentTransaction.replace(R.id.forgot_password_content_frame, ForgotPasswordFragment.newInstance());
         fragmentTransaction.commit();
     }
 
     public void switchContentFragment(int type){
         CommonBaseFragment fragment = null;
         switch (type){
-            case FragmentConfig.FRAGMENT_SELECT_LOGIN_MODE:
-                fragment = SelectLoginModeFragment.newInstance();
+            case FragmentConfig.FRAGMENT_FORGOT_PASSWORD:
+                fragment = ForgotPasswordFragment.newInstance();
                 break;
-            case FragmentConfig.FRAGMENT_ONE_TIME_PASSWORD:
-                fragment = OneTimePasswordFragment.newInstance();
-                break;
-            case FragmentConfig.FRAGMENT_SECOND_PASSWORD:
-                fragment = SedondPasswordFragment.newInstance();
+            case FragmentConfig.FRAGMENT_FORGOT_PASSWORD_CONFIRMATION:
+                fragment = ForgotPasswordConfirmFragment.newInstance();
                 break;
         }
 
         if(null != fragment){
             FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
-            fragmentTransaction.replace(R.id.login_mode_content_frame, fragment);
+            fragmentTransaction.replace(R.id.forgot_password_content_frame, fragment);
             fragmentTransaction.addToBackStack(type+"");
             fragmentTransaction.commit();
         }
     }
 
-    public void showTitleBar(boolean show){
-        if(show){
-            mTitleBar.setVisibility(View.VISIBLE);
-        }else{
-            mTitleBar.setVisibility(View.GONE);
+    public void goBack(){
+        if(mFragmentManager.getBackStackEntryCount() > 0){
+            mFragmentManager.popBackStack();
         }
     }
 }

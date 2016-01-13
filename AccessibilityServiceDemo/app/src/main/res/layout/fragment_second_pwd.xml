@@ -167,6 +167,7 @@
 
         <Button
             style="@style/Style_MPFAButton"
+            android:id="@+id/btn_second_pwd_login"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="72dp"

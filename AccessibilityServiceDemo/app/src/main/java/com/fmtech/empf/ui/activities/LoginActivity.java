@@ -7,9 +7,11 @@ import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.fmtech.accessibilityservicedemo.R;
+import com.fmtech.empf.utils.PreferenceUtils;
 
 /**
  * ==================================================================
@@ -29,9 +31,11 @@ import com.fmtech.accessibilityservicedemo.R;
  * ==================================================================
  */
 
-public class LoginActivity extends BaseActivity{
+public class LoginActivity extends BaseActivity implements View.OnClickListener{
 
     private TextView mForgotPassword;
+    private Button mLoginBtn;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -44,11 +48,12 @@ public class LoginActivity extends BaseActivity{
 
     private void initViews() {
         mForgotPassword = (TextView)findViewById(R.id.tv_forgot_password);
-//        String forgotPassword = getResources().getString(R.string.forgot_password);
-//        mForgotPassword.setText(Html.fromHtml(forgotPassword));
-//        mForgotPassword.setText(forgotPassword);
-        mForgotPassword.getPaint().setFlags(Paint.UNDERLINE_TEXT_FLAG ); //下划线
+        mLoginBtn = (Button)findViewById(R.id.btn_login);
+        mForgotPassword.getPaint().setFlags(Paint.UNDERLINE_TEXT_FLAG); //下划线
         mForgotPassword.getPaint().setAntiAlias(true);//抗锯齿
+
+        mForgotPassword.setOnClickListener(this);
+        mLoginBtn.setOnClickListener(this);
     }
 
     private void initActionBar() {
@@ -60,12 +65,11 @@ public class LoginActivity extends BaseActivity{
         ab.setDisplayHomeAsUpEnabled(true);
     }
 
-    public void doRealLogin(View view){
+    public void doRealLogin(){
         //TODO API login to server, check login infomation, authorisation
 
         //login success check if is the first time login
-        SharedPreferences sharedPreferences = getSharedPreferences("MPFA_SharedPref", MODE_PRIVATE);
-        boolean isFirstLogin = sharedPreferences.getBoolean("isFirstLogin", true);
+        boolean isFirstLogin = PreferenceUtils.shareInstance().getBoolean("isFirstLogin", true);
         if(isFirstLogin){//To first login page
             Intent intent = new Intent(LoginActivity.this, FirstLoginActivity.class);
             startActivity(intent);
@@ -77,5 +81,20 @@ public class LoginActivity extends BaseActivity{
         }
     }
 
+    @Override
+    public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.btn_login:
+                doRealLogin();
+                break;
+            case R.id.tv_forgot_password:
+                gotoForgotPassword();
+                break;
+        }
+    }
 
+    private void gotoForgotPassword(){
+        Intent intent = new Intent(LoginActivity.this, ForgotPasswordActivity.class);
+        startActivity(intent);
+    }
 }

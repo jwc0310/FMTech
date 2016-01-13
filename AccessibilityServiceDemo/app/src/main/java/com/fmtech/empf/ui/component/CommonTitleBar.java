@@ -1,8 +1,12 @@
 package com.fmtech.empf.ui.component;
 
 import android.content.Context;
+import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
+
+import com.fmtech.accessibilityservicedemo.R;
 
 /**
  * ==================================================================
@@ -22,24 +26,26 @@ import android.widget.RelativeLayout;
  * ==================================================================
  */
 
-public class CommonToolBar extends RelativeLayout {
+public class CommonTitleBar extends RelativeLayout {
 
-    public CommonToolBar(Context context) {
+    private TextView mTitle;
+
+    public CommonTitleBar(Context context) {
         super(context);
     }
 
-    public CommonToolBar(Context context, AttributeSet attrs) {
+    public CommonTitleBar(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public CommonToolBar(Context context, AttributeSet attrs, int defStyleAttr) {
+    public CommonTitleBar(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
-
+        mTitle = (TextView)findViewById(R.id.common_titlebar_title);
     }
 
     public void disableBackButton(){
@@ -47,7 +53,9 @@ public class CommonToolBar extends RelativeLayout {
     }
 
     public void setToolbarTitle(String title){
-
+        if(!TextUtils.isEmpty(title)){
+            mTitle.setText(title);
+        }
     }
 
 

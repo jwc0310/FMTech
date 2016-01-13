@@ -93,6 +93,11 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+        <activity android:name="com.fmtech.empf.ui.activities.ForgotPasswordActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
         <activity android:name="com.fmtech.empf.ui.activities.SignupActivity">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
