@@ -36,6 +36,11 @@ public class FragmentConfig {
     public static final int FRAGMENT_SECOND_PASSWORD = 13;
     public static final int FRAGMENT_FORGOT_PASSWORD = 14;
     public static final int FRAGMENT_FORGOT_PASSWORD_CONFIRMATION = 15;
+    public static final int FRAGMENT_SIGNUP_STEP1 = 16;
+    public static final int FRAGMENT_SIGNUP_STEP2= 17;
+    public static final int FRAGMENT_SIGNUP_STEP3 = 18;
+    public static final int FRAGMENT_SIGNUP_STEP4 = 19;
+
 //    public static final int FRAGMENT_ = ;
 
 }
