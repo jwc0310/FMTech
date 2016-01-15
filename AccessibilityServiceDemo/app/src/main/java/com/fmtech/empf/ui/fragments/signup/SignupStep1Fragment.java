@@ -89,7 +89,7 @@ public class SignupStep1Fragment extends CommonBaseFragment implements View.OnCl
 
     private void doAgree(){
         if(mAgreeCB.isChecked()){
-            ((SignupActivity)getActivity()).switchContentFragment(FragmentConfig.FRAGMENT_SIGNUP_STEP2);
+            ((SignupActivity)getActivity()).switchContentFragment(FragmentConfig.FRAGMENT_SIGNUP_STEP2, true);
         }else{
             Toast.makeText(getActivity(), "You must agreed to\n" +
                     "the above registration procedures,\n" +

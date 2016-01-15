@@ -188,4 +188,7 @@ public class FMDrawerLayout extends DrawerLayout implements DrawerContentClickLi
 
     }
 
+    public void updateCurrentBackendId(int backenId){
+        mDrawerAdapter.updateCurrentActionIndex(backenId);
+    }
 }

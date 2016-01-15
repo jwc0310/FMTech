@@ -1,5 +1,7 @@
 package com.fmtech.empf.ui.fragments.signup;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.view.LayoutInflater;
@@ -7,9 +9,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.fmtech.accessibilityservicedemo.R;
+import com.fmtech.empf.ui.activities.SignupActivity;
+import com.fmtech.empf.ui.fragments.FragmentConfig;
 import com.fmtech.empf.ui.fragments.base.CommonBaseFragment;
+import com.fmtech.empf.utils.Utils;
+
+import java.io.File;
 
 /**
  * ==================================================================
@@ -74,6 +82,32 @@ public class SignupStep4Fragment extends CommonBaseFragment implements View.OnCl
 
     @Override
     public void onClick(View v) {
+        switch (v.getId()){
+            case R.id.btn_print_screen:
+                printScreen();
+                break;
+            case R.id.btn_register_anoter_account:
+                registerAnotherAccount();
+                break;
+        }
+    }
 
+    private void printScreen(){
+        File file = Utils.takeScreenShot(getActivity());
+        if(null != file){
+            Intent intent = new Intent(Intent.ACTION_MEDIA_SCANNER_SCAN_FILE);
+            Uri uri = Uri.fromFile(file);
+            intent.setData(uri);
+            mContext.sendBroadcast(intent);
+            Toast.makeText(getActivity(), "Print Screen successfully!", Toast.LENGTH_SHORT).show();
+        }else{
+            Toast.makeText(getActivity(), "Print Screen failed!", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void registerAnotherAccount(){
+        SignupActivity signupActivity = (SignupActivity)getActivity();
+        signupActivity.clearBackStack();
+        signupActivity.switchContentFragment(FragmentConfig.FRAGMENT_SIGNUP_STEP1, false);
     }
 }

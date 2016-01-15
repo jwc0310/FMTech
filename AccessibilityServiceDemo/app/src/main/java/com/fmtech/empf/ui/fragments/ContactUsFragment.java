@@ -43,7 +43,7 @@ public class ContactUsFragment extends PageFragment {
     @Override
     public void rebindActionBar() {
         this.mPageFragmentHost.updateActionBarTitle(mBreadcrumb);
-        mPageFragmentHost.updateCurrentBackendId(0, true);
+        mPageFragmentHost.updateCurrentBackendId(FragmentConfig.FRAGMENT_CONTACT_US -1, true);
         mPageFragmentHost.switchToRegularActionBar();
     }
 

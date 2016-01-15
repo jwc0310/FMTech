@@ -229,6 +229,6 @@ public class MainActivity extends BaseActivity implements ActionBarController, P
     @Override
     public void updateCurrentBackendId(int backend, boolean ignoreActionBarBackground) {
 //        mActionBarHelper.updateCurrentBackendId(backend, ignoreActionBarBackground);
-//        mDrawerLayout.updateCurrentBackendId(backend);
+        mDrawerLayout.updateCurrentBackendId(backend);
     }
 }

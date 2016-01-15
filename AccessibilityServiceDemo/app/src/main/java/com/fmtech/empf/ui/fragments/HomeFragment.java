@@ -147,7 +147,7 @@ public class HomeFragment extends PageFragment implements View.OnClickListener{
     @Override
     public void rebindActionBar() {
         mPageFragmentHost.updateActionBarTitle(mBreadcrumb);
-        mPageFragmentHost.updateCurrentBackendId(0, true);
+        mPageFragmentHost.updateCurrentBackendId(FragmentConfig.FRAGMENT_HOME -1, true);
         mPageFragmentHost.switchToRegularActionBar();
     }
 

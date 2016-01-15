@@ -83,11 +83,11 @@ public class DrawerAdapter extends BaseAdapter{
                 public void onClick(View v) {
                     if (null != mDrawerContentClickListener) {
                         if(mCurrActionIndex != position - 1){
-                            mDrawerActions.get(mCurrActionIndex).isActive = !mDrawerActions.get(mCurrActionIndex).isActive;
+//                            mDrawerActions.get(mCurrActionIndex).isActive = !mDrawerActions.get(mCurrActionIndex).isActive;
                             mDrawerContentClickListener.onDrawActionClicked(mDrawerActions.get(position - 1));
-                            mCurrActionIndex = position - 1;
-                            mDrawerActions.get(mCurrActionIndex).isActive = !mDrawerActions.get(mCurrActionIndex).isActive;
-                            notifyDataSetChanged();
+//                            mCurrActionIndex = position - 1;
+//                            mDrawerActions.get(mCurrActionIndex).isActive = !mDrawerActions.get(mCurrActionIndex).isActive;
+//                            notifyDataSetChanged();
                         }
                     }
                     mDrawerLayout.closeDrawer();
@@ -98,5 +98,13 @@ public class DrawerAdapter extends BaseAdapter{
         }
     }
 
+    public void updateCurrentActionIndex(int index){
+        if(mCurrActionIndex != index){
+            mDrawerActions.get(mCurrActionIndex).isActive = !mDrawerActions.get(mCurrActionIndex).isActive;
+            mCurrActionIndex = index;
+            mDrawerActions.get(mCurrActionIndex).isActive = !mDrawerActions.get(mCurrActionIndex).isActive;
+            notifyDataSetChanged();
+        }
+    }
 
 }

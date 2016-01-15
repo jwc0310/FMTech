@@ -43,7 +43,7 @@ public class SettingFragment extends PageFragment {
     @Override
     public void rebindActionBar() {
         this.mPageFragmentHost.updateActionBarTitle(mBreadcrumb);
-        mPageFragmentHost.updateCurrentBackendId(0, true);
+        mPageFragmentHost.updateCurrentBackendId(FragmentConfig.FRAGMENT_SETTING -1, true);
         mPageFragmentHost.switchToRegularActionBar();
     }
 

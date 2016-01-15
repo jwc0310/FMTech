@@ -119,6 +119,6 @@ public class SignupStep2Fragment extends CommonBaseFragment implements View.OnCl
     }
 
     private void goToSubmitionOverview(){
-        ((SignupActivity)getActivity()).switchContentFragment(FragmentConfig.FRAGMENT_SIGNUP_STEP3);
+        ((SignupActivity)getActivity()).switchContentFragment(FragmentConfig.FRAGMENT_SIGNUP_STEP3, true);
     }
 }

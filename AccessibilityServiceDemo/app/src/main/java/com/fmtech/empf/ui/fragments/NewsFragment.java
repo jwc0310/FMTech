@@ -92,7 +92,7 @@ public class NewsFragment extends PageFragment implements NewsAdapter.NewsItemCl
     @Override
     public void rebindActionBar() {
         this.mPageFragmentHost.updateActionBarTitle(mBreadcrumb);
-        mPageFragmentHost.updateCurrentBackendId(0, true);
+        mPageFragmentHost.updateCurrentBackendId(FragmentConfig.FRAGMENT_NEWS -1, true);
         mPageFragmentHost.switchToRegularActionBar();
     }
 

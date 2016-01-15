@@ -85,6 +85,6 @@ public class SignupStep3Fragment extends CommonBaseFragment implements View.OnCl
     }
 
     private void gotoLastSigupStep(){
-        ((SignupActivity)getActivity()).switchContentFragment(FragmentConfig.FRAGMENT_SIGNUP_STEP4);
+        ((SignupActivity)getActivity()).switchContentFragment(FragmentConfig.FRAGMENT_SIGNUP_STEP4, true);
     }
 }

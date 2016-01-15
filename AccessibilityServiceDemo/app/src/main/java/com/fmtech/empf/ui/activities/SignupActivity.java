@@ -2,6 +2,7 @@ package com.fmtech.empf.ui.activities;
 
 import android.os.Bundle;
 import android.os.PersistableBundle;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 
@@ -47,11 +48,12 @@ public class SignupActivity extends BaseActivity{
 
     private void initContentFragment(){
         FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.sinup_content_frame, SignupStep1Fragment.newInstance());
+        fragmentTransaction.replace(R.id.sinup_content_frame, SignupStep1Fragment.newInstance(), "SignupStep1Fragment");
+        System.out.println("-------SignupStep1Fragment.class.getSimpleName(): " + SignupStep1Fragment.class.getSimpleName());
         fragmentTransaction.commit();
     }
 
-    public void switchContentFragment(int type){
+    public void switchContentFragment(int type, boolean addToBackStack){
         CommonBaseFragment fragment = null;
         switch (type){
             case FragmentConfig.FRAGMENT_SIGNUP_STEP1:
@@ -71,8 +73,16 @@ public class SignupActivity extends BaseActivity{
         if(null != fragment){
             FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
             fragmentTransaction.replace(R.id.sinup_content_frame, fragment);
-            fragmentTransaction.addToBackStack(type+"");
+            if(addToBackStack){
+                fragmentTransaction.addToBackStack(type+"");
+            }
             fragmentTransaction.commit();
+        }
+    }
+
+    public void clearBackStack(){
+        while(mFragmentManager.getBackStackEntryCount() > 0){
+            mFragmentManager.popBackStackImmediate();
         }
     }
 }
