@@ -15,6 +15,7 @@ import com.fmtech.empf.ui.component.actionbar.ActionBarController;
 import com.fmtech.empf.ui.component.actionbar.ActionBarHelper;
 import com.fmtech.empf.ui.component.drawer.DrawerAdapter;
 import com.fmtech.empf.ui.component.drawer.FMDrawerLayout;
+import com.fmtech.empf.ui.component.layout.MtelToolbar;
 import com.fmtech.empf.ui.fragments.FragmentConfig;
 import com.fmtech.accessibilityservicedemo.R;
 import com.fmtech.empf.ui.fragments.LoginSignupFragment;
@@ -26,7 +27,7 @@ import com.fmtech.empf.utils.CommonResourceUtils;
 public class MainActivity extends BaseActivity implements ActionBarController, PageFragmentHost {
 
     public int MY_DATA_CHECK_CODE = 0;
-    private Toolbar mToolbar;
+    private MtelToolbar mToolbar;
     private FMDrawerLayout mDrawerLayout;
     public boolean mStateSaved;
     public NavigationManager mNavigationManager;
@@ -57,7 +58,7 @@ public class MainActivity extends BaseActivity implements ActionBarController, P
 
     protected void initViews() {
         mDrawerLayout = (FMDrawerLayout) findViewById(R.id.drawer_layout);
-        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        mToolbar = (MtelToolbar) findViewById(R.id.toolbar);
         mDrawerLayout.mNavigationManager = mNavigationManager;
         mDrawerLayout.mDrawerAdapter = new DrawerAdapter(this, mDrawerLayout, mDrawerLayout.mDrawerList, mDrawerLayout);
         mDrawerLayout.mDrawerList.setAdapter(mDrawerLayout.mDrawerAdapter);
@@ -66,7 +67,8 @@ public class MainActivity extends BaseActivity implements ActionBarController, P
 
     protected void initActionBar() {
 //        mToolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
-        mToolbar.setTitle(CommonResourceUtils.getString(R.string.app_name));
+//        mToolbar.setTitle(CommonResourceUtils.getString(R.string.app_name));
+        mToolbar.setCustomTitle(CommonResourceUtils.getString(R.string.app_name));
         setSupportActionBar(mToolbar);
         final ActionBar ab = getSupportActionBar();
         ab.setHomeAsUpIndicator(R.drawable.ic_menu_white);

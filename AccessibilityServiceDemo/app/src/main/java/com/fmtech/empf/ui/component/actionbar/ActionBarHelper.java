@@ -9,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import com.fmtech.accessibilityservicedemo.R;
+import com.fmtech.empf.ui.component.layout.MtelToolbar;
 import com.fmtech.empf.ui.navigationmanager.NavigationManager;
 
 import java.util.Stack;
@@ -33,13 +34,15 @@ import java.util.Stack;
 
 public final class ActionBarHelper {
 
-    public ActionBar mActionBar;
+//    public ActionBar mActionBar;
     public ActionBarController mActionBarController;
     private Stack<ActionBarState> mActionBarStateStack;
     private Activity mActivity;
     private CharSequence mCurrentTitle;
     public NavigationManager mNavigationManager;
-    public Toolbar mToolbar;
+//    public Toolbar mToolbar;
+    public MtelToolbar mToolbar;
+
     public int mCurrentBackendId;
 
     public ActionBarHelper(NavigationManager navigationManager, AppCompatActivity appCompatActivity) {
@@ -47,8 +50,9 @@ public final class ActionBarHelper {
     }
 
     public ActionBarHelper(NavigationManager navigationManager, ActionBarController actionBarController, AppCompatActivity activity) {
-        mActionBar = activity.getDelegate().getSupportActionBar();
-        mToolbar = ((Toolbar) activity.findViewById(R.id.toolbar));
+//        mActionBar = activity.getDelegate().getSupportActionBar();//
+//        mToolbar = ((Toolbar) activity.findViewById(R.id.toolbar));
+        mToolbar = ((MtelToolbar) activity.findViewById(R.id.toolbar));
         mActivity = activity;
         mNavigationManager = navigationManager;
         mActionBarController = actionBarController;
@@ -110,9 +114,13 @@ public final class ActionBarHelper {
     }
 
     private void setTitle(CharSequence title){
-        if(null != mActionBar) {
+//        if(null != mActionBar) {
+//            mCurrentTitle = title;
+//            mActionBar.setTitle(mCurrentTitle);
+//        }
+        if(null != mToolbar) {
             mCurrentTitle = title;
-            mActionBar.setTitle(mCurrentTitle);
+            mToolbar.setCustomTitle(mCurrentTitle);
         }
     }
 
