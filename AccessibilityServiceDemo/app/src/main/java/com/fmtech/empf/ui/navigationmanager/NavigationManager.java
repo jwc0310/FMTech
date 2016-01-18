@@ -81,7 +81,11 @@ public class NavigationManager {
 
     public void gotoHome(){
         if(canNavigate()){
-            showPage(FragmentConfig.FRAGMENT_HOME, null, HomeFragment.newInstance(), true, new View[0]);
+            if(isHomeHome()){
+                System.out.println("-------isHomeHome: "+isHomeHome());
+            }else {
+                showPage(FragmentConfig.FRAGMENT_HOME, null, HomeFragment.newInstance(), true, new View[0]);
+            }
         }
     }
 
@@ -137,7 +141,8 @@ public class NavigationManager {
 
     public final void clearInternal(){
 //        mBackStack.removeAllElements();
-        //Keeep HomeFragment
+        //Keep HomeFragment
+        System.out.println("-------mFragmentManager.getBackStackEntryCount(): " + mFragmentManager.getBackStackEntryCount());
         while(mBackStack.size() > 1){
             mBackStack.pop();
         }
@@ -179,7 +184,7 @@ public class NavigationManager {
         fragmentTransaction.addToBackStack(navigationState.backstackName);
         mBackStack.push(navigationState);
         fragmentTransaction.commit();
-        System.out.println("-------mFragmentManager.getBackStackEntryCount(): "+mFragmentManager.getBackStackEntryCount());
+        System.out.println("-------mFragmentManager.getBackStackEntryCount(): " + mFragmentManager.getBackStackEntryCount());
     }
 
     /*public final void showPage(int paramInt, String paramString, Fragment paramFragment, boolean paramBoolean, View... paramVarArgs)

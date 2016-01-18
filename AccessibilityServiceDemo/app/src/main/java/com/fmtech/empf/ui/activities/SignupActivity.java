@@ -48,8 +48,7 @@ public class SignupActivity extends BaseActivity{
 
     private void initContentFragment(){
         FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.sinup_content_frame, SignupStep1Fragment.newInstance(), "SignupStep1Fragment");
-        System.out.println("-------SignupStep1Fragment.class.getSimpleName(): " + SignupStep1Fragment.class.getSimpleName());
+        fragmentTransaction.replace(R.id.sinup_content_frame, SignupStep1Fragment.newInstance());
         fragmentTransaction.commit();
     }
 
