@@ -1,6 +1,7 @@
 package com.fmtech.empf;
 
 import android.content.Intent;
+import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.os.Bundle;
