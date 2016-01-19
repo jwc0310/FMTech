@@ -3,6 +3,7 @@
     <string name="language_cn">繁體</string>
     <string name="language_en">English</string>
     <string name="setting_language">Select Language</string>
+    <string name="activity_title_login">Login</string>
     <string name="fragment_title_home">Home</string>
     <string name="fragment_title_news">News</string>
     <string name="fragment_title_tutorials">Tutorials</string>

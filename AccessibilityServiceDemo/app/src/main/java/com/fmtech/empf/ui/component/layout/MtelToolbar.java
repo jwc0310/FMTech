@@ -1,10 +1,10 @@
 package com.fmtech.empf.ui.component.layout;
 
 import android.content.Context;
-import android.support.v7.widget.Toolbar;
 import android.text.TextUtils;
 import android.util.AttributeSet;
 import android.view.View;
+import android.widget.FrameLayout;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -23,7 +23,7 @@ import com.fmtech.accessibilityservicedemo.R;
  * ==================================================================
  */
 
-public class MtelToolbar extends Toolbar{
+public class MtelToolbar extends FrameLayout{
 
     private TextView mCustomTitle;
     private ImageButton mCustomActionBtn;
@@ -44,7 +44,6 @@ public class MtelToolbar extends Toolbar{
     @Override
     protected void onFinishInflate() {
         super.onFinishInflate();
-        setTitle("");//Disable the original TitleTextView
         mCustomTitle = (TextView)findViewById(R.id.toolbar_custom_title);
         mCustomActionBtn = (ImageButton)findViewById(R.id.toolbar_custom_imagebtn);
         mCustomActionBtn.setOnClickListener(new OnClickListener() {

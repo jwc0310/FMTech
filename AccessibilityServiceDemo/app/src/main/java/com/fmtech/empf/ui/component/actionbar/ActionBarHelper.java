@@ -34,14 +34,15 @@ import java.util.Stack;
 
 public final class ActionBarHelper {
 
-//    public ActionBar mActionBar;
+    public ActionBar mActionBar;
     public ActionBarController mActionBarController;
     private Stack<ActionBarState> mActionBarStateStack;
     private Activity mActivity;
     private CharSequence mCurrentTitle;
     public NavigationManager mNavigationManager;
-//    public Toolbar mToolbar;
-    public MtelToolbar mToolbar;
+    public Toolbar mToolbar;
+    public MtelToolbar mMtelToolbar;
+//    public MtelToolbar mToolbar;
 
     public int mCurrentBackendId;
 
@@ -50,9 +51,9 @@ public final class ActionBarHelper {
     }
 
     public ActionBarHelper(NavigationManager navigationManager, ActionBarController actionBarController, AppCompatActivity activity) {
-//        mActionBar = activity.getDelegate().getSupportActionBar();//
-//        mToolbar = ((Toolbar) activity.findViewById(R.id.toolbar));
-        mToolbar = ((MtelToolbar) activity.findViewById(R.id.toolbar));
+        mActionBar = activity.getDelegate().getSupportActionBar();//
+        mToolbar = ((Toolbar) activity.findViewById(R.id.toolbar));
+        mMtelToolbar = ((MtelToolbar) activity.findViewById(R.id.mtel_toolbar));
         mActivity = activity;
         mNavigationManager = navigationManager;
         mActionBarController = actionBarController;
@@ -118,9 +119,9 @@ public final class ActionBarHelper {
 //            mCurrentTitle = title;
 //            mActionBar.setTitle(mCurrentTitle);
 //        }
-        if(null != mToolbar) {
+        if(null != mMtelToolbar) {
             mCurrentTitle = title;
-            mToolbar.setCustomTitle(mCurrentTitle);
+            mMtelToolbar.setCustomTitle(mCurrentTitle);
         }
     }
 

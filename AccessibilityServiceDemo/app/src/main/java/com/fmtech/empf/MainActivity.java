@@ -1,7 +1,6 @@
 package com.fmtech.empf;
 
 import android.content.Intent;
-import android.support.design.widget.CoordinatorLayout;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.os.Bundle;
@@ -27,7 +26,8 @@ import com.fmtech.empf.utils.CommonResourceUtils;
 public class MainActivity extends BaseActivity implements ActionBarController, PageFragmentHost {
 
     public int MY_DATA_CHECK_CODE = 0;
-    private MtelToolbar mToolbar;
+    private Toolbar mToolbar;
+    private MtelToolbar mMtelToolbar;
     private FMDrawerLayout mDrawerLayout;
     public boolean mStateSaved;
     public NavigationManager mNavigationManager;
@@ -58,7 +58,8 @@ public class MainActivity extends BaseActivity implements ActionBarController, P
 
     protected void initViews() {
         mDrawerLayout = (FMDrawerLayout) findViewById(R.id.drawer_layout);
-        mToolbar = (MtelToolbar) findViewById(R.id.toolbar);
+        mToolbar = (Toolbar) findViewById(R.id.toolbar);
+        mMtelToolbar = (MtelToolbar) findViewById(R.id.mtel_toolbar);
         mDrawerLayout.mNavigationManager = mNavigationManager;
         mDrawerLayout.mDrawerAdapter = new DrawerAdapter(this, mDrawerLayout, mDrawerLayout.mDrawerList, mDrawerLayout);
         mDrawerLayout.mDrawerList.setAdapter(mDrawerLayout.mDrawerAdapter);
@@ -68,7 +69,8 @@ public class MainActivity extends BaseActivity implements ActionBarController, P
     protected void initActionBar() {
 //        mToolbar.setBackgroundColor(getResources().getColor(R.color.colorPrimary));
 //        mToolbar.setTitle(CommonResourceUtils.getString(R.string.app_name));
-        mToolbar.setCustomTitle(CommonResourceUtils.getString(R.string.app_name));
+        mMtelToolbar.setCustomTitle(CommonResourceUtils.getString(R.string.app_name));
+        mToolbar.setTitle("");
         setSupportActionBar(mToolbar);
         final ActionBar ab = getSupportActionBar();
         ab.setHomeAsUpIndicator(R.drawable.ic_menu_white);

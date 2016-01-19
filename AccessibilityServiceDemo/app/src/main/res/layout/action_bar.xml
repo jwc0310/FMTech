@@ -7,11 +7,12 @@
     android:clipToPadding="true"
     android:fitsSystemWindows="true">
 
-    <FrameLayout
-        android:id="@id/action_bar_container"
+    <com.fmtech.empf.ui.component.layout.MtelToolbar
+        android:id="@id/mtel_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <include layout="@layout/toolbar" />
-    </FrameLayout>
+    </com.fmtech.empf.ui.component.layout.MtelToolbar>
+
 </com.fmtech.empf.ui.component.layout.InsetsFrameLayout>

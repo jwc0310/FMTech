@@ -11,6 +11,8 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.fmtech.accessibilityservicedemo.R;
+import com.fmtech.empf.ui.component.layout.MtelToolbar;
+import com.fmtech.empf.utils.CommonResourceUtils;
 import com.fmtech.empf.utils.PreferenceUtils;
 
 /**
@@ -57,8 +59,10 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener{
     }
 
     private void initActionBar() {
+        MtelToolbar mtelToolbar = (MtelToolbar)findViewById(R.id.mtel_toolbar);
         Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
-        toolbar.setTitle("Login");
+        mtelToolbar.setCustomTitle(CommonResourceUtils.getString(R.string.activity_title_login));
+        toolbar.setTitle("");
         setSupportActionBar(toolbar);
         final ActionBar ab = getSupportActionBar();
         ab.setHomeAsUpIndicator(R.drawable.ic_back);
