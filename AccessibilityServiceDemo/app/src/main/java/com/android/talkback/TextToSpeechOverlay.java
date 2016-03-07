@@ -27,9 +27,9 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.FrameLayout;
 import android.widget.TextView;
-import com.android.utils.WeakReferenceHandler;
+
 import com.android.utils.widget.SimpleOverlay;
-import com.fmtech.accessibilityservicedemo.R;
+import com.android.utils.WeakReferenceHandler;
 
 /**
  * Displays text-to-speech text on the screen.
@@ -57,9 +57,9 @@ public class TextToSpeechOverlay extends SimpleOverlay {
         setParams(params);
 
         int padding = context.getResources()
-                .getDimensionPixelSize(R.dimen.tts_overlay_text_padding);
+                .getDimensionPixelSize(com.mpfa.empf.R.dimen.tts_overlay_text_padding);
         int bottomMargin = context.getResources()
-                .getDimensionPixelSize(R.dimen.tts_overlay_text_bottom_margin);
+                .getDimensionPixelSize(com.mpfa.empf.R.dimen.tts_overlay_text_bottom_margin);
 
         mText = new TextView(context);
         mText.setBackgroundColor(0xAA000000);

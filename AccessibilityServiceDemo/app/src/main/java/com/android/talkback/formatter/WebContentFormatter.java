@@ -22,11 +22,10 @@ import android.text.TextUtils;
 import android.util.Xml;
 import android.view.accessibility.AccessibilityEvent;
 
-import com.fmtech.empf.service.MyAccessibilityService;
 import com.android.talkback.Utterance;
 import com.android.utils.AccessibilityEventUtils;
 import com.android.utils.WebContentHandler;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
 
 import org.xml.sax.SAXException;
 
@@ -107,14 +106,14 @@ public final class WebContentFormatter implements EventSpeechRule.AccessibilityE
 
         if (mHtmlHandler == null) {
             final Map<String, String> htmlInputMap =
-                    loadMapFromStringArrays(context, R.array.html_input_to_desc_keys,
-                            R.array.html_input_to_desc_values);
+                    loadMapFromStringArrays(context, com.mpfa.empf.R.array.html_input_to_desc_keys,
+                            com.mpfa.empf.R.array.html_input_to_desc_values);
             final Map<String, String> htmlRoleMap =
-                    loadMapFromStringArrays(context, R.array.html_role_to_desc_keys,
-                            R.array.html_role_to_desc_values);
+                    loadMapFromStringArrays(context, com.mpfa.empf.R.array.html_role_to_desc_keys,
+                            com.mpfa.empf.R.array.html_role_to_desc_values);
             final Map<String, String> htmlTagMap =
-                    loadMapFromStringArrays(context, R.array.html_tag_to_desc_keys,
-                            R.array.html_tag_to_desc_values);
+                    loadMapFromStringArrays(context, com.mpfa.empf.R.array.html_tag_to_desc_keys,
+                            com.mpfa.empf.R.array.html_tag_to_desc_values);
 
             mHtmlHandler = new WebContentHandler(htmlInputMap, htmlRoleMap, htmlTagMap);
         }
@@ -156,14 +155,14 @@ public final class WebContentFormatter implements EventSpeechRule.AccessibilityE
         if (sAxisNames == null) {
             sAxisNames =
                     new String[] {
-                            context.getString(R.string.axis_character),
-                            context.getString(R.string.axis_word),
-                            context.getString(R.string.axis_sentence),
-                            context.getString(R.string.axis_heading),
-                            context.getString(R.string.axis_sibling),
-                            context.getString(R.string.axis_parent_first_child),
-                            context.getString(R.string.axis_document),
-                            context.getString(R.string.axis_default_web_view_behavior)
+                            context.getString(com.mpfa.empf.R.string.axis_character),
+                            context.getString(com.mpfa.empf.R.string.axis_word),
+                            context.getString(com.mpfa.empf.R.string.axis_sentence),
+                            context.getString(com.mpfa.empf.R.string.axis_heading),
+                            context.getString(com.mpfa.empf.R.string.axis_sibling),
+                            context.getString(com.mpfa.empf.R.string.axis_parent_first_child),
+                            context.getString(com.mpfa.empf.R.string.axis_document),
+                            context.getString(com.mpfa.empf.R.string.axis_default_web_view_behavior)
                     };
         }
 

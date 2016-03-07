@@ -20,12 +20,12 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
+import com.mpfa.empf.R;
 
 /**
  * Activity for broadcasting
- * {@link com.fmtech.empf.service.MyAccessibilityService#ACTION_PERFORM_GESTURE_ACTION} to open the TalkBack
+ * {@link MyAccessibilityService#ACTION_PERFORM_GESTURE_ACTION} to open the TalkBack
  * Global Context Menu from a search button long-press.
  */
 public class ShortcutProxyActivity extends Activity {

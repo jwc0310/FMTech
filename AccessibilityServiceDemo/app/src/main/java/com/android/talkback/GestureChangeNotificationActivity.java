@@ -27,7 +27,7 @@ import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.text.SpannableStringBuilder;
 
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.R;
 
 public class GestureChangeNotificationActivity extends Activity {
 

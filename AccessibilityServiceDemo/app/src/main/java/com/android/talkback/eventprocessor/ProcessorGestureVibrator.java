@@ -21,9 +21,9 @@ import android.os.Build;
 import android.os.Handler;
 import android.support.v4.view.accessibility.AccessibilityEventCompat;
 import android.view.accessibility.AccessibilityEvent;
-import com.android.talkback.controller.FeedbackController;
+
 import com.android.utils.AccessibilityEventListener;
-import com.fmtech.accessibilityservicedemo.R;
+import com.android.talkback.controller.FeedbackController;
 
 /**
  * Produces continuous vibration feedback during framework gesture recognition.
@@ -65,8 +65,8 @@ public class ProcessorGestureVibrator implements AccessibilityEventListener {
     private final Runnable mFeedbackRunnable = new Runnable() {
         @Override
         public void run() {
-            mFeedbackController.playHaptic(R.array.gesture_detection_repeated_pattern);
-            mFeedbackController.playAuditory(R.raw.gesture_begin, 1.0f, 0.5f);
+            mFeedbackController.playHaptic(com.mpfa.empf.R.array.gesture_detection_repeated_pattern);
+            mFeedbackController.playAuditory(com.mpfa.empf.R.raw.gesture_begin, 1.0f, 0.5f);
         }
     };
 }

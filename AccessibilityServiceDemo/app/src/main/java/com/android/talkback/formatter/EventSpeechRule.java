@@ -28,16 +28,15 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.view.accessibility.AccessibilityEvent;
 
-import com.fmtech.empf.service.MyAccessibilityService;
 import com.android.talkback.Utterance;
 import com.android.talkback.speechrules.NodeSpeechRuleProcessor;
 import com.android.utils.AccessibilityEventUtils;
-import com.android.utils.AccessibilityNodeInfoUtils;
 import com.android.utils.ClassLoadingCache;
 import com.android.utils.LogUtils;
 import com.android.utils.NodeUtils;
 import com.android.utils.PackageManagerUtils;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
+import com.android.utils.AccessibilityNodeInfoUtils;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Node;
@@ -1006,7 +1005,7 @@ public class EventSpeechRule {
 
             // Append the control's disabled state, if applicable.
             if (!utterance.getSpoken().isEmpty() && !event.isEnabled() && speakState) {
-                utterance.addSpoken(mContext.getString(R.string.value_disabled));
+                utterance.addSpoken(mContext.getString(com.mpfa.empf.R.string.value_disabled));
             }
 
             return true;

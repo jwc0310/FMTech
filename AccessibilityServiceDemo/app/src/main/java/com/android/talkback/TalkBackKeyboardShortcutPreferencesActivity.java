@@ -23,8 +23,6 @@ import android.preference.PreferenceActivity;
 import android.preference.PreferenceGroup;
 import android.view.MenuItem;
 
-import com.fmtech.accessibilityservicedemo.R;
-
 /**
  * Activity used to set TalkBack's keyboard shortcut preferences.
  */
@@ -50,7 +48,7 @@ public class TalkBackKeyboardShortcutPreferencesActivity extends PreferenceActiv
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         getActionBar().setDisplayHomeAsUpEnabled(true);
-        addPreferencesFromResource(R.xml.key_combo_preferences);
+        addPreferencesFromResource(com.mpfa.empf.R.xml.key_combo_preferences);
         setPreferenceChangeListeners(getPreferenceScreen());
     }
 

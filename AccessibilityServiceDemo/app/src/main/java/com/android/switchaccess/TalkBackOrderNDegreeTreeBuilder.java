@@ -20,10 +20,9 @@ import android.annotation.TargetApi;
 import android.content.Context;
 import android.os.Build;
 
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.R;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
 /**

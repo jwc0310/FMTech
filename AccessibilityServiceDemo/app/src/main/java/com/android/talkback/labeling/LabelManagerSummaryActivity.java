@@ -41,7 +41,6 @@ import android.widget.TextView;
 import com.android.utils.LogUtils;
 import com.android.utils.labeling.LabelProviderClient;
 import com.android.utils.labeling.PackageLabelInfo;
-import com.fmtech.accessibilityservicedemo.R;
 
 import java.util.List;
 import java.util.Locale;
@@ -61,12 +60,12 @@ public class LabelManagerSummaryActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.label_manager_packages);
+        setContentView(com.mpfa.empf.R.layout.label_manager_packages);
 
         getActionBar().setDisplayHomeAsUpEnabled(true);
 
-        mPackageList = (ListView) findViewById(R.id.package_list);
-        mNoPackagesMessage = (TextView) findViewById(R.id.no_packages_message);
+        mPackageList = (ListView) findViewById(com.mpfa.empf.R.id.package_list);
+        mNoPackagesMessage = (TextView) findViewById(com.mpfa.empf.R.id.no_packages_message);
         mLabelProviderClient = new LabelProviderClient(this, LabelProvider.AUTHORITY);
     }
 
@@ -122,7 +121,7 @@ public class LabelManagerSummaryActivity extends Activity {
         @Override
         public View getView(int position, View view, ViewGroup parent) {
             if (view == null) {
-                view = mLayoutInflater.inflate(R.layout.label_manager_package_row, null);
+                view = mLayoutInflater.inflate(com.mpfa.empf.R.layout.label_manager_package_row, null);
             }
 
             final PackageLabelInfo packageLabelInfo = getItem(position);
@@ -152,13 +151,13 @@ public class LabelManagerSummaryActivity extends Activity {
                 }
             }
 
-            final TextView textView = (TextView) view.findViewById(R.id.package_label_info_text);
+            final TextView textView = (TextView) view.findViewById(com.mpfa.empf.R.id.package_label_info_text);
             textView.setText(applicationLabel);
 
-            final TextView countView = (TextView) view.findViewById(R.id.package_label_info_count);
+            final TextView countView = (TextView) view.findViewById(com.mpfa.empf.R.id.package_label_info_count);
             countView.setText(Integer.toString(packageLabelInfo.getLabelCount()));
 
-            final ImageView iconImage = (ImageView) view.findViewById(R.id.icon_image);
+            final ImageView iconImage = (ImageView) view.findViewById(com.mpfa.empf.R.id.icon_image);
             iconImage.setImageDrawable(applicationIcon);
 
             final Intent packageActivityIntent = new Intent(LabelManagerSummaryActivity.this,
@@ -202,7 +201,7 @@ public class LabelManagerSummaryActivity extends Activity {
         protected void onPostExecute(List<PackageLabelInfo> result) {
             if (result != null && result.size() > 0) {
                 mPackageList.setAdapter(new PackageLabelInfoAdapter(
-                        LabelManagerSummaryActivity.this, R.layout.label_manager_package_row,
+                        LabelManagerSummaryActivity.this, com.mpfa.empf.R.layout.label_manager_package_row,
                         result));
                 mPackageList.setVisibility(View.VISIBLE);
                 mNoPackagesMessage.setVisibility(View.GONE);

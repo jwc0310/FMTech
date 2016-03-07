@@ -18,7 +18,6 @@ package com.android.talkback.eventprocessor;
 
 import android.content.Context;
 import android.content.SharedPreferences;
-import android.os.Build;
 import android.os.Message;
 import android.preference.PreferenceManager;
 import android.support.v4.content.LocalBroadcastManager;
@@ -28,18 +27,19 @@ import android.support.v4.view.accessibility.AccessibilityRecordCompat;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.accessibility.AccessibilityEvent;
+
 import com.android.talkback.FeedbackItem;
 import com.android.talkback.SpeechController;
-import com.android.talkback.controller.CursorControllerApp;
 import com.android.talkback.speechrules.NodeSpeechRuleProcessor;
 import com.android.talkback.tutorial.AccessibilityTutorialActivity;
-import com.android.talkback.controller.GestureActionMonitor;
 import com.android.utils.AccessibilityEventListener;
-import com.android.utils.AccessibilityNodeInfoUtils;
 import com.android.utils.LogUtils;
 import com.android.utils.SharedPreferencesUtils;
+import com.android.talkback.controller.CursorControllerApp;
+import com.android.talkback.controller.GestureActionMonitor;
+import com.android.utils.AccessibilityNodeInfoUtils;
 import com.android.utils.WeakReferenceHandler;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.R;
 
 /**
  * Manages accessibility hints. If a HOVER_ENTER event passes through this

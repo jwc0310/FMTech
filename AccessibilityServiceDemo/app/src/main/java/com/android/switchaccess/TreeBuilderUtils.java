@@ -18,8 +18,7 @@ package com.android.switchaccess;
 
 import android.graphics.Rect;
 import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
-import com.android.utils.AccessibilityNodeInfoUtils;
-import com.android.utils.NodeFilter;
+
 import com.android.utils.traversal.OrderedTraversalController;
 
 import java.io.PrintStream;

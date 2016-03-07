@@ -18,6 +18,7 @@ package com.android.switchaccess;
 
 import android.content.Context;
 import android.text.TextUtils;
+
 import com.android.utils.AccessibilityNodeInfoUtils;
 
 import java.util.HashMap;

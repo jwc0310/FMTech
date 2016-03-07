@@ -31,18 +31,18 @@ import android.util.Log;
 import android.view.accessibility.AccessibilityEvent;
 
 import android.view.accessibility.AccessibilityNodeInfo;
+
 import com.android.talkback.FeedbackItem;
 import com.android.talkback.PasteHistory;
 import com.android.talkback.SpeechCleanupUtils;
 import com.android.talkback.SpeechController;
-import com.fmtech.empf.service.MyAccessibilityService;
 import com.android.talkback.Utterance;
 import com.android.talkback.controller.TextCursorController;
 import com.android.utils.AccessibilityEventUtils;
 import com.android.utils.LogUtils;
 import com.android.utils.SharedPreferencesUtils;
 import com.android.utils.compat.provider.SettingsCompatUtils;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
 
 import java.util.List;
 
@@ -137,7 +137,7 @@ public final class TextFormatters {
                 // the event except when running on locales that don't support
                 // text replacement due to character combination complexity.
                 if (!hasDelayElapsed && !hasPackageChanged
-                        && context.getResources().getBoolean(R.bool.supports_text_replacement)) {
+                        && context.getResources().getBoolean(com.mpfa.empf.R.bool.supports_text_replacement)) {
                     sAwaitingSelectionCount++;
                     sChangedTimestamp = timestamp;
                     return false;
@@ -197,7 +197,7 @@ public final class TextFormatters {
                 if (source != null
                         && eventText != null
                         && eventText.length() == source.getMaxTextLength()) {
-                    utterance.addSpoken(context.getString(R.string.value_text_max_length));
+                    utterance.addSpoken(context.getString(com.mpfa.empf.R.string.value_text_max_length));
                 }
             }
         }
@@ -208,7 +208,7 @@ public final class TextFormatters {
                 final AccessibilityNodeInfo source = event.getSource();
                 if(source != null && !TextUtils.isEmpty(source.getError())) {
                     utterance.addSpoken(
-                            context.getString(R.string.template_text_error,
+                            context.getString(com.mpfa.empf.R.string.template_text_error,
                                     source.getError().toString()));
                 }
             }
@@ -223,7 +223,7 @@ public final class TextFormatters {
             final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
             final Resources res = context.getResources();
             final int keyboardPref = SharedPreferencesUtils.getIntFromStringPref(prefs, res,
-                    R.string.pref_keyboard_echo_key, R.string.pref_keyboard_echo_default);
+                    com.mpfa.empf.R.string.pref_keyboard_echo_key, com.mpfa.empf.R.string.pref_keyboard_echo_default);
 
             switch (keyboardPref) {
                 case PREF_ECHO_ALWAYS:
@@ -257,7 +257,7 @@ public final class TextFormatters {
                     && event.getAddedCount() == 0
                     && event.getBeforeText().length() == event.getRemovedCount();
             if (wasCleared) {
-                utterance.addSpoken(context.getString(R.string.value_text_cleared));
+                utterance.addSpoken(context.getString(com.mpfa.empf.R.string.value_text_cleared));
                 return REMOVED;
             }
 
@@ -305,7 +305,7 @@ public final class TextFormatters {
                 } else if (TextUtils.isEmpty(cleanRemovedText)
                         || TextUtils.equals(cleanAddedText, cleanRemovedText)) {
                     utterance.addSpoken(cleanAddedText);
-                } else if (!(context.getResources().getBoolean(R.bool.supports_text_replacement))) {
+                } else if (!(context.getResources().getBoolean(com.mpfa.empf.R.bool.supports_text_replacement))) {
                     // The method of character substitution in some languages is
                     // identical to text replacement events. As such, we only
                     // speak the added text if the device locale matches one of
@@ -313,7 +313,7 @@ public final class TextFormatters {
                     utterance.addSpoken(cleanAddedText);
                 } else {
                     String replacedText = context.getString(
-                            R.string.template_text_replaced, cleanAddedText, cleanRemovedText);
+                            com.mpfa.empf.R.string.template_text_replaced, cleanAddedText, cleanRemovedText);
                     utterance.addSpoken(replacedText);
 
                     // If this text change event probably wasn't the result of a
@@ -329,7 +329,7 @@ public final class TextFormatters {
 
             if (!TextUtils.isEmpty(cleanRemovedText)) {
                 // Text was only removed.
-                utterance.addSpoken(context.getString(R.string.template_text_removed,
+                utterance.addSpoken(context.getString(com.mpfa.empf.R.string.template_text_removed,
                         cleanRemovedText));
                 return REMOVED;
             }
@@ -495,14 +495,14 @@ public final class TextFormatters {
             if ((added <= 0) && (removed <= 0)) {
                 return REJECTED;
             } else if ((added == 1) && (removed <= 0)) {
-                utterance.addSpoken(context.getString(R.string.symbol_bullet));
+                utterance.addSpoken(context.getString(com.mpfa.empf.R.string.symbol_bullet));
                 return ADDED;
             } else if ((added <= 0) && (removed == 1)) {
                 utterance.addSpoken(context.getString(
-                        R.string.template_text_removed, context.getString(R.string.symbol_bullet)));
+                        com.mpfa.empf.R.string.template_text_removed, context.getString(com.mpfa.empf.R.string.symbol_bullet)));
                 return REMOVED;
             } else {
-                utterance.addSpoken(context.getString(R.string.template_replaced_characters,
+                utterance.addSpoken(context.getString(com.mpfa.empf.R.string.template_replaced_characters,
                         removed, added));
                 return REPLACED;
             }
@@ -720,7 +720,7 @@ public final class TextFormatters {
             }
 
             final CharSequence formattedText = context.getString(
-                    R.string.template_password_selected, fromIndex, toIndex);
+                    com.mpfa.empf.R.string.template_password_selected, fromIndex, toIndex);
             utterance.addSpoken(formattedText);
             return true;
         }

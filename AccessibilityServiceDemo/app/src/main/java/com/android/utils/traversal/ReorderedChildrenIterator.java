@@ -18,8 +18,9 @@ package com.android.utils.traversal;
 
 import android.graphics.Rect;
 import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
-import com.android.utils.AccessibilityNodeInfoUtils;
+
 import com.android.utils.WebInterfaceUtils;
+import com.android.utils.AccessibilityNodeInfoUtils;
 
 import java.util.ArrayList;
 import java.util.Arrays;

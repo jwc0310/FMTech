@@ -17,8 +17,6 @@
 package com.android.talkback.tutorial;
 
 import android.annotation.SuppressLint;
-import android.annotation.TargetApi;
-import android.os.Build;
 import android.support.annotation.NonNull;
 import android.view.View;
 import android.view.ViewGroup;
@@ -26,8 +24,6 @@ import android.view.accessibility.AccessibilityEvent;
 import android.widget.AdapterView;
 import android.widget.AdapterView.OnItemClickListener;
 import android.widget.GridView;
-
-import com.fmtech.accessibilityservicedemo.R;
 
 
 /**
@@ -51,7 +47,7 @@ class TouchTutorialModule1 extends TutorialModule {
                                                        AccessibilityEvent event) {
             if (event.getEventType()
                     == AccessibilityEvent.TYPE_VIEW_ACCESSIBILITY_FOCUSED) {
-                child.setTag(R.id.accessibility_tutorial_tag_touched, true);
+                child.setTag(com.mpfa.empf.R.id.accessibility_tutorial_tag_touched, true);
                 mAllApps.setAccessibilityDelegate(null);
                 installTriggerDelayedWithFeedback(new Runnable() {
                     @Override
@@ -73,8 +69,8 @@ class TouchTutorialModule1 extends TutorialModule {
         public boolean onRequestSendAccessibilityEvent(@NonNull ViewGroup host, View child,
                                                        AccessibilityEvent event) {
             if ((event.getEventType() == AccessibilityEvent.TYPE_VIEW_ACCESSIBILITY_FOCUSED)
-                    && (child.getTag(R.id.accessibility_tutorial_tag_touched) == null)) {
-                child.setTag(R.id.accessibility_tutorial_tag_touched, true);
+                    && (child.getTag(com.mpfa.empf.R.id.accessibility_tutorial_tag_touched) == null)) {
+                child.setTag(com.mpfa.empf.R.id.accessibility_tutorial_tag_touched, true);
                 mAllApps.setAccessibilityDelegate(null);
                 installTriggerDelayedWithFeedback(new Runnable() {
                     @Override
@@ -176,12 +172,12 @@ class TouchTutorialModule1 extends TutorialModule {
     };
 
     public TouchTutorialModule1(AccessibilityTutorialActivity parentTutorial) {
-        super(parentTutorial, R.layout.tutorial_lesson_1,
-                R.string.accessibility_tutorial_lesson_1_title);
+        super(parentTutorial, com.mpfa.empf.R.layout.tutorial_lesson_1,
+                com.mpfa.empf.R.string.accessibility_tutorial_lesson_1_title);
 
-        mAppsAdapter = new AppsAdapter(getContext(), R.layout.tutorial_app_icon, R.id.app_icon);
+        mAppsAdapter = new AppsAdapter(getContext(), com.mpfa.empf.R.layout.tutorial_app_icon, com.mpfa.empf.R.id.app_icon);
 
-        mAllApps = (GridView) findViewById(R.id.all_apps);
+        mAllApps = (GridView) findViewById(com.mpfa.empf.R.id.all_apps);
         mAllApps.setAdapter(mAppsAdapter);
 
         setSkipVisible(true);
@@ -223,7 +219,7 @@ class TouchTutorialModule1 extends TutorialModule {
      * Triggered when the lesson is first shown.
      */
     private void onTrigger0() {
-        addInstruction(R.string.accessibility_tutorial_lesson_1_text_1, true);
+        addInstruction(com.mpfa.empf.R.string.accessibility_tutorial_lesson_1_text_1, true);
 
         // Next trigger is a focus event raised from an icon.
         mAllApps.setAccessibilityDelegate(mFirstIconFocusDelegate);
@@ -233,7 +229,7 @@ class TouchTutorialModule1 extends TutorialModule {
      * Triggered when one application icon receives accessibility focus.
      */
     private void onTrigger1() {
-        addInstruction(R.string.accessibility_tutorial_lesson_1_text_2_more, true);
+        addInstruction(com.mpfa.empf.R.string.accessibility_tutorial_lesson_1_text_2_more, true);
 
         /*
          * Next trigger is a focus event raised from an icon that hasn't been
@@ -246,7 +242,7 @@ class TouchTutorialModule1 extends TutorialModule {
      * Triggered when a second application icon receives accessibility focus.
      */
     private void onTrigger2() {
-        addInstruction(R.string.accessibility_tutorial_lesson_1_text_3, true);
+        addInstruction(com.mpfa.empf.R.string.accessibility_tutorial_lesson_1_text_3, true);
 
         /*
          * Next trigger is a focus event raised from an icon after the user is
@@ -261,7 +257,7 @@ class TouchTutorialModule1 extends TutorialModule {
      */
     private void onTrigger3() {
         final CharSequence targetName = mAppsAdapter.getLabel(TARGET_POSITION);
-        addInstruction(R.string.accessibility_tutorial_lesson_1_text_4, true, targetName);
+        addInstruction(com.mpfa.empf.R.string.accessibility_tutorial_lesson_1_text_4, true, targetName);
 
         // Next trigger is a focus event raised from the target icon.
         mAllApps.setAccessibilityDelegate(mTargetIconFocusDelegate);
@@ -272,7 +268,7 @@ class TouchTutorialModule1 extends TutorialModule {
      */
     private void onTrigger4() {
         final CharSequence targetName = mAppsAdapter.getLabel(TARGET_POSITION);
-        addInstruction(R.string.accessibility_tutorial_lesson_1_text_5, true, targetName);
+        addInstruction(com.mpfa.empf.R.string.accessibility_tutorial_lesson_1_text_5, true, targetName);
 
         /*
          * One possible trigger is leaving the target icon. This doesn't
@@ -292,7 +288,7 @@ class TouchTutorialModule1 extends TutorialModule {
      */
     private void onTrigger4FocusLost() {
         final CharSequence targetName = mAppsAdapter.getLabel(TARGET_POSITION);
-        addInstruction(R.string.accessibility_tutorial_lesson_1_text_5_exited, true, targetName);
+        addInstruction(com.mpfa.empf.R.string.accessibility_tutorial_lesson_1_text_5_exited, true, targetName);
 
         // Watch for a focus event returning to the target icon.
         mAllApps.setAccessibilityDelegate(mTargetIconFocusDelegate);
@@ -303,7 +299,7 @@ class TouchTutorialModule1 extends TutorialModule {
      */
     private void onTrigger5() {
         // This is the last trigger in this lesson.
-        addInstruction(R.string.accessibility_tutorial_lesson_1_text_6, true,
-                getContext().getString(R.string.accessibility_tutorial_next));
+        addInstruction(com.mpfa.empf.R.string.accessibility_tutorial_lesson_1_text_6, true,
+                getContext().getString(com.mpfa.empf.R.string.accessibility_tutorial_next));
     }
 }

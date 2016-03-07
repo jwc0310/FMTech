@@ -21,11 +21,10 @@ import android.preference.PreferenceManager;
 import android.text.TextUtils;
 import android.view.accessibility.AccessibilityEvent;
 
-import com.fmtech.empf.service.MyAccessibilityService;
 import com.android.talkback.Utterance;
 import com.android.talkback.formatter.EventSpeechRule;
 import com.android.utils.SharedPreferencesUtils;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
 
 import java.util.List;
 
@@ -42,7 +41,7 @@ public final class InCallScreenFormatterJB implements EventSpeechRule.Accessibil
     public boolean format(AccessibilityEvent event, MyAccessibilityService context, Utterance utterance) {
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         final boolean speakCallerId = SharedPreferencesUtils.getBooleanPref(prefs,
-                context.getResources(), R.string.pref_caller_id_key, R.bool.pref_caller_id_default);
+                context.getResources(), com.mpfa.empf.R.string.pref_caller_id_key, com.mpfa.empf.R.bool.pref_caller_id_default);
         if (!speakCallerId) {
             // Don't speak the caller ID screen.
             return false;

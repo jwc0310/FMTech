@@ -31,13 +31,11 @@ import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.WindowManager;
-import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import com.android.utils.widget.SimpleOverlay;
-import com.fmtech.accessibilityservicedemo.R;
 
 import java.util.HashMap;
 import java.util.HashSet;
@@ -82,8 +80,8 @@ public class OverlayController {
      */
     public OverlayController(SimpleOverlay overlay) {
         mOverlay = overlay;
-        mOverlay.setContentView(R.layout.switch_access_overlay_layout);
-        mRelativeLayout = (RelativeLayout) mOverlay.findViewById(R.id.overlayRelativeLayout);
+        mOverlay.setContentView(com.mpfa.empf.R.layout.switch_access_overlay_layout);
+        mRelativeLayout = (RelativeLayout) mOverlay.findViewById(com.mpfa.empf.R.id.overlayRelativeLayout);
         IntentFilter filter = new IntentFilter();
         filter.addAction(Intent.ACTION_CONFIGURATION_CHANGED);
         mOverlay.getContext().registerReceiver(mBroadcastReceiver, filter);
@@ -191,7 +189,7 @@ public class OverlayController {
         LayoutInflater layoutInflater =
                 (LayoutInflater) context.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
         LinearLayout menuButtonLayout = (LinearLayout) layoutInflater
-                .inflate(R.layout.switch_access_global_menu_button, mRelativeLayout, false);
+                .inflate(com.mpfa.empf.R.layout.switch_access_global_menu_button, mRelativeLayout, false);
         addViewAndShow(menuButtonLayout);
     }
 
@@ -200,7 +198,7 @@ public class OverlayController {
      *         screen. Otherwise null is returned.
      */
     public Rect getMenuButtonLocation() {
-        Button menuButton = (Button) mOverlay.findViewById(R.id.top_screen_menu_button);
+        Button menuButton = (Button) mOverlay.findViewById(com.mpfa.empf.R.id.top_screen_menu_button);
         if (menuButton != null) {
             Rect locationOnScreen = new Rect();
             menuButton.getGlobalVisibleRect(locationOnScreen);

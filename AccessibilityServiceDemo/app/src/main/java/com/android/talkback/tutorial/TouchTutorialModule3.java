@@ -17,10 +17,12 @@
 package com.android.talkback.tutorial;
 
 import android.annotation.SuppressLint;
+
 import com.android.talkback.SpeechController;
 import com.android.talkback.controller.FullScreenReadController;
 import com.android.talkback.controller.GestureActionMonitor;
-import com.fmtech.accessibilityservicedemo.R;
+
+import com.mpfa.empf.R;
 
 /**
  * A tutorial lesson that introduces the local and global context menus.

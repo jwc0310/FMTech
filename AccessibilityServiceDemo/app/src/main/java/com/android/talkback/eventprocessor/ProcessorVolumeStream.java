@@ -34,18 +34,18 @@ import android.view.accessibility.AccessibilityWindowInfo;
 import android.widget.EditText;
 
 import android.widget.SeekBar;
+
 import com.android.talkback.CursorGranularity;
-import com.android.talkback.SpeechController;
-import com.android.talkback.controller.CursorController;
-import com.android.talkback.controller.DimScreenController;
 import com.android.talkback.controller.FeedbackController;
 import com.android.talkback.volumebutton.VolumeButtonPatternDetector;
 import com.android.utils.AccessibilityEventListener;
+import com.android.utils.SharedPreferencesUtils;
+import com.mpfa.empf.service.MyAccessibilityService;
+import com.android.talkback.SpeechController;
+import com.android.talkback.controller.CursorController;
+import com.android.talkback.controller.DimScreenController;
 import com.android.utils.AccessibilityNodeInfoUtils;
 import com.android.utils.PerformActionUtils;
-import com.android.utils.SharedPreferencesUtils;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
 
 import java.util.List;
 
@@ -168,8 +168,8 @@ public class ProcessorVolumeStream implements AccessibilityEventListener,
 
     private boolean switchTalkBackActiveStateEnabled() {
         return SharedPreferencesUtils.getBooleanPref(mPrefs, mService.getResources(),
-                R.string.pref_two_volume_long_press_key,
-                R.bool.pref_resume_volume_buttons_long_click_default);
+                com.mpfa.empf.R.string.pref_two_volume_long_press_key,
+                com.mpfa.empf.R.bool.pref_resume_volume_buttons_long_click_default);
     }
 
     private void navigateSlider(int button) {
@@ -208,7 +208,7 @@ public class ProcessorVolumeStream implements AccessibilityEventListener,
         }
 
         if (!result) {
-            mFeedbackController.playAuditory(R.raw.complete);
+            mFeedbackController.playAuditory(com.mpfa.empf.R.raw.complete);
         }
     }
 
@@ -329,7 +329,7 @@ public class ProcessorVolumeStream implements AccessibilityEventListener,
     private void resetDimScreenSettings() {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(mService);
         SharedPreferencesUtils.putBooleanPref(prefs, mService.getResources(),
-                R.string.pref_dim_when_talkback_enabled_key, false);
+                com.mpfa.empf.R.string.pref_dim_when_talkback_enabled_key, false);
     }
 
     private void handleSingleTap(int button) {

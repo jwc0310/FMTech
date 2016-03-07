@@ -19,7 +19,6 @@ package com.android.utils;
 import android.os.Bundle;
 import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
 import android.util.Log;
-import com.android.utils.LogUtils;
 
 public class PerformActionUtils {
 

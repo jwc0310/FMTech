@@ -32,24 +32,23 @@ import android.widget.DatePicker;
 import android.widget.NumberPicker;
 
 import com.android.talkback.CursorGranularity;
-import com.android.talkback.CursorGranularityManager;
 import com.android.talkback.KeyComboManager;
 import com.android.talkback.SpeechController;
 import com.android.talkback.eventprocessor.EventState;
 import com.android.utils.AccessibilityEventListener;
-import com.android.utils.AccessibilityNodeInfoUtils;
 import com.android.utils.LogUtils;
 import com.android.utils.NodeFilter;
-import com.android.utils.PerformActionUtils;
 import com.android.utils.SharedPreferencesUtils;
 import com.android.utils.WebInterfaceUtils;
 import com.android.utils.WindowManager;
-import com.android.utils.compat.accessibilityservice.AccessibilityServiceCompatUtils;
 import com.android.utils.traversal.NodeFocusFinder;
-import com.android.utils.traversal.OrderedTraversalStrategy;
 import com.android.utils.traversal.TraversalStrategy;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
+import com.android.talkback.CursorGranularityManager;
+import com.android.utils.AccessibilityNodeInfoUtils;
+import com.android.utils.PerformActionUtils;
+import com.android.utils.compat.accessibilityservice.AccessibilityServiceCompatUtils;
+import com.android.utils.traversal.OrderedTraversalStrategy;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -576,8 +575,8 @@ public class CursorControllerApp implements
                 final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(
                         mService);
                 shouldScroll = SharedPreferencesUtils.getBooleanPref(prefs,
-                        mService.getResources(), R.string.pref_auto_scroll_key,
-                        R.bool.pref_auto_scroll_default);
+                        mService.getResources(), com.mpfa.empf.R.string.pref_auto_scroll_key,
+                        com.mpfa.empf.R.bool.pref_auto_scroll_default);
             }
 
             rootNode = AccessibilityNodeInfoUtils.getRoot(current);

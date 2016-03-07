@@ -24,10 +24,10 @@ import android.hardware.SensorEventListener;
 import android.hardware.SensorManager;
 import android.os.PowerManager;
 import android.preference.PreferenceManager;
+
 import com.android.talkback.controller.FullScreenReadController;
 import com.android.utils.SharedPreferencesUtils;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
 
 /**
  * Detector for shake events used to trigger continuous reading.
@@ -114,8 +114,8 @@ public class ShakeDetector implements SensorEventListener {
             mLastEventValues = event.values.clone();
 
             final int threshold = SharedPreferencesUtils.getIntFromStringPref(mPrefs,
-                    mContext.getResources(), R.string.pref_shake_to_read_threshold_key,
-                    R.string.pref_shake_to_read_threshold_default);
+                    mContext.getResources(), com.mpfa.empf.R.string.pref_shake_to_read_threshold_key,
+                    com.mpfa.empf.R.string.pref_shake_to_read_threshold_default);
             if ((threshold > 0) && (speed >= threshold)) {
                 mFullScreenReadController.startReadingFromNextNode();
             }

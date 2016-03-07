@@ -25,12 +25,11 @@ import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
 import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat.AccessibilityActionCompat;
 import android.text.TextUtils;
 import android.view.MenuItem;
-import com.fmtech.empf.service.MyAccessibilityService;
+import com.mpfa.empf.service.MyAccessibilityService;
 import com.android.talkback.contextmenu.ContextMenuItem;
 import com.android.talkback.contextmenu.ContextMenuItemBuilder;
 import com.android.utils.AccessibilityNodeInfoUtils;
 import com.android.utils.PerformActionUtils;
-import com.fmtech.accessibilityservicedemo.R;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -79,7 +78,7 @@ public class RuleCustomAction implements NodeMenuRule {
 
     @Override
     public CharSequence getUserFriendlyMenuName(Context context) {
-        return context.getString(R.string.title_custom_action);
+        return context.getString(com.mpfa.empf.R.string.title_custom_action);
     }
 
     private static class CustomMenuItem implements MenuItem.OnMenuItemClickListener {

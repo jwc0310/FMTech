@@ -64,7 +64,7 @@
                 android:layout_width="wrap_content"
                 android:text="High Contract" />
             
-            <com.fmtech.empf.ui.view.ToggleButton
+            <com.mpfa.empf.ui.view.ToggleButton
                 android:layout_width="60dp"
                 android:layout_height="24dp"
                 android:layout_alignParentRight="true"
@@ -83,7 +83,7 @@
                 android:layout_width="wrap_content"
                 android:text="Push notification" />
 
-            <com.fmtech.empf.ui.view.ToggleButton
+            <com.mpfa.empf.ui.view.ToggleButton
                 android:layout_width="60dp"
                 android:layout_height="24dp"
                 android:layout_alignParentRight="true"

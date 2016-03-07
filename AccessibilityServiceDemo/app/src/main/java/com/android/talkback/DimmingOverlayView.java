@@ -25,8 +25,6 @@ import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
-import com.fmtech.accessibilityservicedemo.R;
-
 public class DimmingOverlayView extends LinearLayout {
 
     private View mContent;
@@ -45,11 +43,11 @@ public class DimmingOverlayView extends LinearLayout {
         setBackgroundColor(Color.BLACK);
 
         LayoutInflater inflater = LayoutInflater.from(getContext());
-        inflater.inflate(R.layout.dimming_overlay_exit_instruction, this, true);
-        mContent = findViewById(R.id.content);
+        inflater.inflate(com.mpfa.empf.R.layout.dimming_overlay_exit_instruction, this, true);
+        mContent = findViewById(com.mpfa.empf.R.id.content);
 
-        mTimerView = (TextView) findViewById(R.id.timer);
-        mProgress = (ProgressBar) findViewById(R.id.progress);
+        mTimerView = (TextView) findViewById(com.mpfa.empf.R.id.timer);
+        mProgress = (ProgressBar) findViewById(com.mpfa.empf.R.id.progress);
     }
 
     public void setTimerLimit(int seconds) {
@@ -58,7 +56,7 @@ public class DimmingOverlayView extends LinearLayout {
     }
 
     public void updateSecondsText(int seconds) {
-        String text = getContext().getString(R.string.dim_screen_timer,
+        String text = getContext().getString(com.mpfa.empf.R.string.dim_screen_timer,
                 getMinutes(seconds), getSeconds(seconds));
         mTimerView.setText(text);
         mProgress.setProgress(mTimerLimit - seconds);

@@ -26,8 +26,6 @@ import android.text.TextUtils;
 import android.text.style.StyleSpan;
 import android.text.style.URLSpan;
 
-import com.fmtech.accessibilityservicedemo.R;
-
 import java.util.Set;
 
 /**
@@ -239,7 +237,7 @@ class FeedbackProcessingUtils {
         final Bundle speechParams = new Bundle(Bundle.EMPTY);
         speechParams.putFloat(SpeechController.SpeechParam.PITCH, PITCH_CHANGE_HYPERLINK);
         spanFragment.setSpeechParams(speechParams);
-        spanFragment.addEarcon(R.raw.hyperlink);
+        spanFragment.addEarcon(com.mpfa.empf.R.raw.hyperlink);
         item.addFragmentAtPosition(spanFragment, fragmentPosition + 1);
 
         // Use the existing fragment to hold any remaining text after the span.
@@ -280,11 +278,11 @@ class FeedbackProcessingUtils {
         switch (style) {
             case Typeface.BOLD:
                 voicePitch = PITCH_CHANGE_BOLD;
-                earconId = R.raw.bold;
+                earconId = com.mpfa.empf.R.raw.bold;
                 break;
             case Typeface.ITALIC:
                 voicePitch = PITCH_CHANGE_ITALIC;
-                earconId = R.raw.italic;
+                earconId = com.mpfa.empf.R.raw.italic;
                 break;
             default:
                 return false;

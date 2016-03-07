@@ -22,9 +22,7 @@ import android.view.accessibility.AccessibilityEvent;
 
 import com.android.talkback.Utterance;
 import com.android.utils.LogUtils;
-import com.android.talkback.formatter.EventSpeechRule.AccessibilityEventFilter;
-import com.android.talkback.formatter.EventSpeechRule.AccessibilityEventFormatter;
-import com.fmtech.empf.service.MyAccessibilityService;
+import com.mpfa.empf.service.MyAccessibilityService;
 
 import org.w3c.dom.Document;
 
@@ -68,16 +66,16 @@ public class EventSpeechRuleProcessor {
 
         /**
          * Result indicating that no {@link EventSpeechRule}'s
-         * {@link AccessibilityEventFilter} matched an
+         * {@link EventSpeechRule.AccessibilityEventFilter} matched an
          * {@link AccessibilityEvent}
          */
         NOT_MATCHED,
 
         /**
          * Result indicating that an {@link EventSpeechRule}'s
-         * {@link AccessibilityEventFilter} matched an
+         * {@link EventSpeechRule.AccessibilityEventFilter} matched an
          * {@link AccessibilityEvent}, but its
-         * {@link AccessibilityEventFormatter} indicated the event should be
+         * {@link EventSpeechRule.AccessibilityEventFormatter} indicated the event should be
          * dropped from the processor.
          */
         REJECTED
@@ -227,7 +225,7 @@ public class EventSpeechRuleProcessor {
                         return RuleProcessorResult.FORMATTED;
                     } else {
                         if (LogUtils.LOG_LEVEL <= Log.VERBOSE) {
-                            AccessibilityEventFilter filter = speechRule.getFilter();
+                            EventSpeechRule.AccessibilityEventFilter filter = speechRule.getFilter();
                             if (filter != null) {
                                 Log.v(TAG, String.format("The \"%s\" filter accepted the event, but"
                                                 + " the \"%s\" formatter indicated the event should"

@@ -27,11 +27,11 @@ import android.text.SpannableStringBuilder;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.accessibility.AccessibilityEvent;
-import com.android.utils.AccessibilityNodeInfoUtils;
+
 import com.android.utils.LogUtils;
 import com.android.utils.StringBuilderUtils;
+import com.android.utils.AccessibilityNodeInfoUtils;
 import com.android.utils.traversal.ReorderedChildrenIterator;
-import com.fmtech.accessibilityservicedemo.R;
 
 import java.util.HashSet;
 import java.util.LinkedList;
@@ -51,15 +51,15 @@ public class NodeSpeechRuleProcessor {
         // Rules are matched in the order they are added, so make sure to place
         // general rules after specific ones (e.g. Button after RadioButton).
         mRules.add(new RuleSimpleHintTemplate(android.widget.Spinner.class,
-                R.string.template_spinner, R.string.template_hint_spinner));
+                com.mpfa.empf.R.string.template_spinner, com.mpfa.empf.R.string.template_hint_spinner));
         mRules.add(mRuleSwitch);
         mRules.add(new RuleNonTextViews()); // ImageViews and ImageButtons
         mRules.add(new RuleSimpleTemplate(android.widget.RadioButton.class,
-                R.string.template_radio_button));
+                com.mpfa.empf.R.string.template_radio_button));
         mRules.add(new RuleSimpleTemplate(android.widget.CompoundButton.class,
-                R.string.template_checkbox));
+                com.mpfa.empf.R.string.template_checkbox));
         mRules.add(new RuleSimpleTemplate(android.widget.Button.class,
-                R.string.template_button));
+                com.mpfa.empf.R.string.template_button));
         mRules.add(new RuleEditText());
         mRules.add(new RuleSeekBar());
         mRules.add(new RuleContainer());
@@ -224,7 +224,7 @@ public class NodeSpeechRuleProcessor {
         }
 
         final String labeled = mContext.getString(
-                R.string.template_labeled_item, builder, labelDescription);
+                com.mpfa.empf.R.string.template_labeled_item, builder, labelDescription);
         Spannable spannableLabeledText = StringBuilderUtils.createSpannableFromTextWithTemplate(
                 labeled, builder);
 
@@ -243,7 +243,7 @@ public class NodeSpeechRuleProcessor {
         // Append state for actionable but disabled nodes.
         if (AccessibilityNodeInfoUtils.isActionableForAccessibility(node) && !node.isEnabled()) {
             StringBuilderUtils.appendWithSeparator(
-                    descriptionBuilder, mContext.getString(R.string.value_disabled));
+                    descriptionBuilder, mContext.getString(com.mpfa.empf.R.string.value_disabled));
         }
 
         // Append the control's selected state.
@@ -267,7 +267,7 @@ public class NodeSpeechRuleProcessor {
         // checkable state.
         if (node.isCheckable() && !mRuleSwitch.accept(node, event)) {
             CharSequence checkedString = mContext.getString(
-                    node.isChecked() ? R.string.value_checked : R.string.value_not_checked);
+                    node.isChecked() ? com.mpfa.empf.R.string.value_checked : com.mpfa.empf.R.string.value_not_checked);
             StringBuilderUtils.appendWithSeparator(descriptionBuilder, checkedString);
         }
     }

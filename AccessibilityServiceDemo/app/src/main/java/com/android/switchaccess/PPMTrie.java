@@ -18,6 +18,7 @@ package com.android.switchaccess;
 
 import android.content.Context;
 import android.util.Log;
+
 import com.android.utils.LogUtils;
 
 import java.io.BufferedReader;

@@ -27,16 +27,17 @@ import android.os.Bundle;
 import android.os.SystemClock;
 import android.util.Log;
 import android.view.accessibility.AccessibilityEvent;
+
 import com.android.talkback.SpeechController;
 import com.android.talkback.Utterance;
-import com.android.talkback.formatter.EventSpeechRuleProcessor;
-import com.android.talkback.eventprocessor.AccessibilityEventProcessor.TalkBackListener;
 import com.android.utils.AccessibilityEventListener;
 import com.android.utils.LogUtils;
 import com.android.utils.StringBuilderUtils;
 import com.android.utils.WeakReferenceHandler;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
+import com.android.talkback.formatter.EventSpeechRuleProcessor;
+
+import com.mpfa.empf.R;
 
 /**
  * Manages the event feedback queue. Queued events are run through the
@@ -64,7 +65,7 @@ public class ProcessorEventQueue implements AccessibilityEventListener {
     private EventSpeechRuleProcessor mEventSpeechRuleProcessor;
 
     /** TalkBack-specific listener used for testing. */
-    private TalkBackListener mTestingListener;
+    private AccessibilityEventProcessor.TalkBackListener mTestingListener;
 
     /** Event type for the most recently processed event. */
     private int mLastEventType;
@@ -81,7 +82,7 @@ public class ProcessorEventQueue implements AccessibilityEventListener {
         loadDefaultRules();
     }
 
-    public void setTestingListener(TalkBackListener testingListener) {
+    public void setTestingListener(AccessibilityEventProcessor.TalkBackListener testingListener) {
         mTestingListener = testingListener;
     }
 

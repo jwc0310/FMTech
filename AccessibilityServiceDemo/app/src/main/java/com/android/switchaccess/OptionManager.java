@@ -26,8 +26,6 @@ import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
 import android.util.DisplayMetrics;
 import android.util.TypedValue;
 
-import com.fmtech.accessibilityservicedemo.R;
-
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
@@ -66,11 +64,11 @@ public class OptionManager implements SharedPreferences.OnSharedPreferenceChange
         Context context = mOverlayController.getContext();
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         mHighlightColorPrefKeys = context.getResources()
-                .getStringArray(R.array.switch_access_highlight_color_pref_keys);
+                .getStringArray(com.mpfa.empf.R.array.switch_access_highlight_color_pref_keys);
         mHighlightColorDefaults = context.getResources()
-                .getStringArray(R.array.switch_access_highlight_color_defaults);
+                .getStringArray(com.mpfa.empf.R.array.switch_access_highlight_color_defaults);
         mHighlightWeightPrefKeys = context.getResources()
-                .getStringArray(R.array.switch_access_highlight_weight_pref_keys);
+                .getStringArray(com.mpfa.empf.R.array.switch_access_highlight_weight_pref_keys);
         mOptionPaintArray = new Paint[mHighlightColorPrefKeys.length];
         for (int i = 0; i < mOptionPaintArray.length; i++) {
             mOptionPaintArray[i] = new Paint();
@@ -235,7 +233,7 @@ public class OptionManager implements SharedPreferences.OnSharedPreferenceChange
     public void onSharedPreferenceChanged(SharedPreferences prefs, String key) {
         Context context = mOverlayController.getContext();
         mOptionScanningEnabled = SwitchAccessPreferenceActivity.isOptionScanningEnabled(context);
-        String defaultWeight =  context.getString(R.string.pref_highlight_weight_default);
+        String defaultWeight =  context.getString(com.mpfa.empf.R.string.pref_highlight_weight_default);
         /* Configure highlighting */
         for (int i = 0; i < mOptionPaintArray.length; ++i) {
             /*

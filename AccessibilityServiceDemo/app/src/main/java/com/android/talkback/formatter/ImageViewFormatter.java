@@ -20,9 +20,10 @@ import android.support.v4.view.accessibility.AccessibilityEventCompat;
 import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
 import android.support.v4.view.accessibility.AccessibilityRecordCompat;
 import android.view.accessibility.AccessibilityEvent;
-import com.fmtech.empf.service.MyAccessibilityService;
+
 import com.android.talkback.Utterance;
 import com.android.talkback.speechrules.RuleNonTextViews;
+import com.mpfa.empf.service.MyAccessibilityService;
 
 /**
  * Formatter that returns an utterance to announce ImageViews.

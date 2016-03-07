@@ -31,8 +31,8 @@ import com.android.talkback.controller.FeedbackController;
 import com.android.talkback.controller.GestureController;
 import com.android.utils.AccessibilityEventListener;
 import com.android.utils.picidae.IntegratedTapDetector;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
+import com.mpfa.empf.R;
 
 /**
  * Manages detection of taps on the side of the device. Wraps IntegratedTapDetector.

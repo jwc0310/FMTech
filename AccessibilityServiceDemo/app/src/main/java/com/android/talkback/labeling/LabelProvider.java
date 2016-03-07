@@ -30,7 +30,7 @@ import android.net.Uri;
 import android.os.Build;
 import android.text.TextUtils;
 import android.util.Log;
-import com.fmtech.accessibilityservicedemo.BuildConfig;
+import com.mpfa.empf.BuildConfig;
 import com.android.utils.LogUtils;
 import com.android.utils.labeling.LabelsTable;
 

@@ -39,12 +39,11 @@ import android.view.animation.Animation.AnimationListener;
 import android.view.animation.AnimationUtils;
 import android.widget.ViewAnimator;
 
-import com.android.talkback.SpeechController;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.android.talkback.controller.FullScreenReadController;
 import com.android.utils.LogUtils;
+import com.android.talkback.SpeechController;
+import com.mpfa.empf.service.MyAccessibilityService;
+import com.android.talkback.controller.FullScreenReadController;
 import com.android.utils.WeakReferenceHandler;
-import com.fmtech.accessibilityservicedemo.R;
 
 /**
  * This class provides a short tutorial that introduces the user to the features
@@ -178,13 +177,13 @@ public class AccessibilityTutorialActivity extends Activity {
          * is disabled when TalkBack is suspended.
          */
         if (serviceState == MyAccessibilityService.SERVICE_STATE_SUSPENDED) {
-            showAlertDialogAndFinish(R.string.accessibility_tutorial_service_suspended_title,
-                    R.string.accessibility_tutorial_service_suspended_message);
+            showAlertDialogAndFinish(com.mpfa.empf.R.string.accessibility_tutorial_service_suspended_title,
+                    com.mpfa.empf.R.string.accessibility_tutorial_service_suspended_message);
             return;
         } else if ((serviceState == MyAccessibilityService.SERVICE_STATE_INACTIVE)
                 || !mAccessibilityManager.isTouchExplorationEnabled()) {
-            showAlertDialogAndFinish(R.string.accessibility_tutorial_service_inactive_title,
-                    R.string.accessibility_tutorial_service_inactive_message);
+            showAlertDialogAndFinish(com.mpfa.empf.R.string.accessibility_tutorial_service_inactive_title,
+                    com.mpfa.empf.R.string.accessibility_tutorial_service_inactive_message);
             return;
         }
 
@@ -277,7 +276,7 @@ public class AccessibilityTutorialActivity extends Activity {
     }
 
     public void setTouchGuardActive(boolean active) {
-        final View touchGuard = getCurrentModule().findViewById(R.id.touch_guard);
+        final View touchGuard = getCurrentModule().findViewById(com.mpfa.empf.R.id.touch_guard);
 
         if (active) {
             touchGuard.setVisibility(View.VISIBLE);
@@ -293,7 +292,7 @@ public class AccessibilityTutorialActivity extends Activity {
     public void playTriggerSound() {
         MyAccessibilityService service = MyAccessibilityService.getInstance();
         if (service != null) {
-            service.getFeedbackController().playAuditory(R.raw.tutorial_trigger);
+            service.getFeedbackController().playAuditory(com.mpfa.empf.R.raw.tutorial_trigger);
         }
     }
 
@@ -456,7 +455,7 @@ public class AccessibilityTutorialActivity extends Activity {
         setTouchGuardActive(false);
         MyAccessibilityService service = MyAccessibilityService.getInstance();
         if (service != null) {
-            service.getFeedbackController().playAuditory(R.raw.ready);
+            service.getFeedbackController().playAuditory(com.mpfa.empf.R.raw.ready);
         }
         unlockOrientation();
 
@@ -478,7 +477,7 @@ public class AccessibilityTutorialActivity extends Activity {
             .setMessage(message)
             .setCancelable(true)
             .setOnCancelListener(mFinishActivityOnCancelListener)
-            .setPositiveButton(R.string.accessibility_tutorial_alert_dialog_exit,
+            .setPositiveButton(com.mpfa.empf.R.string.accessibility_tutorial_alert_dialog_exit,
                     mFinishActivityOnClickListener)
             .create()
             .show();
@@ -527,8 +526,8 @@ public class AccessibilityTutorialActivity extends Activity {
                 stopRepeating();
 
                 // If the service is suspended, show an alert and exit.
-                showAlertDialogAndFinish(R.string.accessibility_tutorial_service_suspended_title,
-                        R.string.accessibility_tutorial_service_suspended_message);
+                showAlertDialogAndFinish(com.mpfa.empf.R.string.accessibility_tutorial_service_suspended_title,
+                        com.mpfa.empf.R.string.accessibility_tutorial_service_suspended_message);
             }
         }
     };

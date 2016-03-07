@@ -21,7 +21,6 @@ import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
 import android.text.TextUtils;
 import android.view.accessibility.AccessibilityEvent;
 import com.android.utils.AccessibilityNodeInfoUtils;
-import com.fmtech.accessibilityservicedemo.R;
 
 /**
  * Default node processing rule. Returns a content description if available,
@@ -48,7 +47,7 @@ class RuleDefault implements NodeSpeechRule, NodeHintRule {
     public CharSequence getHintText(Context context, AccessibilityNodeInfoCompat node) {
         // Disabled actionable items don't have any hint text.
         if (AccessibilityNodeInfoUtils.isActionableForAccessibility(node) && !node.isEnabled()) {
-            return context.getString(R.string.value_disabled);
+            return context.getString(com.mpfa.empf.R.string.value_disabled);
         }
 
         return NodeHintHelper.getDefaultHintString(context, node);

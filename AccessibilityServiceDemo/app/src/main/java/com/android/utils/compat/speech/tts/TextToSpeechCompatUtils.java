@@ -20,7 +20,6 @@ import android.speech.tts.TextToSpeech;
 import com.android.utils.compat.CompatUtils;
 
 import java.lang.reflect.Method;
-import java.util.HashMap;
 
 public class TextToSpeechCompatUtils {
     private static final Method METHOD_getCurrentEngine = CompatUtils.getMethod(

@@ -23,16 +23,18 @@ import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
 import android.view.KeyEvent;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
+
 import com.android.utils.AccessibilityEventListener;
 import com.android.utils.AccessibilityNodeInfoRef;
 import com.android.utils.AccessibilityNodeInfoUtils;
 import com.android.utils.FocusFinder;
 import com.android.utils.NodeSearch;
 import com.android.utils.PerformActionUtils;
-import com.android.utils.labeling.CustomLabelManager;
 import com.android.utils.traversal.NodeFocusFinder;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
+import com.android.utils.labeling.CustomLabelManager;
+
+import com.mpfa.empf.R;
 
 /**
  * Handles keyboard search of the nodes on the screen.

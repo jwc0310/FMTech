@@ -22,12 +22,12 @@ import com.android.talkback.FeedbackItem;
 import android.annotation.TargetApi;
 import android.os.Build;
 import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
-import com.android.talkback.SpeechController;
+
 import com.android.talkback.contextmenu.ContextMenu;
-import com.android.talkback.contextmenu.ContextMenuItem;
 import com.android.talkback.contextmenu.ContextSubMenu;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
+import com.android.talkback.SpeechController;
+import com.android.talkback.contextmenu.ContextMenuItem;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -114,7 +114,7 @@ public class NodeMenuRuleProcessor {
         }
 
         if (menu.size() == 0) {
-            mSpeechController.speak(mService.getString(R.string.title_local_breakout_no_items),
+            mSpeechController.speak(mService.getString(com.mpfa.empf.R.string.title_local_breakout_no_items),
                     SpeechController.QUEUE_MODE_FLUSH_ALL, FeedbackItem.FLAG_NO_HISTORY, null);
             return false;
         }

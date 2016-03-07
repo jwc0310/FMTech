@@ -20,8 +20,6 @@ import android.accessibilityservice.AccessibilityService;
 import android.content.Context;
 import android.graphics.Rect;
 
-import com.fmtech.accessibilityservicedemo.R;
-
 import java.util.*;
 
 /**
@@ -36,15 +34,15 @@ public class GlobalActionNode extends OptionScanActionNode {
     public static List<GlobalActionNode> getGlobalActionList(AccessibilityService service) {
         List<GlobalActionNode> globalActionList = new ArrayList<>();
         globalActionList.add(new GlobalActionNode(AccessibilityService.GLOBAL_ACTION_BACK,
-                service, service.getResources().getString(R.string.global_action_back)));
+                service, service.getResources().getString(com.mpfa.empf.R.string.global_action_back)));
         globalActionList.add(new GlobalActionNode(AccessibilityService.GLOBAL_ACTION_HOME,
-                service, service.getResources().getString(R.string.global_action_home)));
+                service, service.getResources().getString(com.mpfa.empf.R.string.global_action_home)));
         globalActionList.add(new GlobalActionNode(AccessibilityService.GLOBAL_ACTION_NOTIFICATIONS,
-                service, service.getResources().getString(R.string.global_action_notifications)));
+                service, service.getResources().getString(com.mpfa.empf.R.string.global_action_notifications)));
         globalActionList.add(new GlobalActionNode(AccessibilityService.GLOBAL_ACTION_QUICK_SETTINGS,
-                service, service.getResources().getString(R.string.global_action_quick_settings)));
+                service, service.getResources().getString(com.mpfa.empf.R.string.global_action_quick_settings)));
         globalActionList.add(new GlobalActionNode(AccessibilityService.GLOBAL_ACTION_RECENTS,
-                service, service.getResources().getString(R.string.global_action_overview)));
+                service, service.getResources().getString(com.mpfa.empf.R.string.global_action_overview)));
         return globalActionList;
     }
 

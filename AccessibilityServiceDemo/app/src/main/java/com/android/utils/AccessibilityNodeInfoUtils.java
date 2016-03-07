@@ -28,11 +28,12 @@ import android.widget.AdapterView;
 import android.widget.HorizontalScrollView;
 import android.widget.ScrollView;
 import android.widget.Spinner;
-import com.android.utils.compat.CompatUtils;
-import com.android.utils.labeling.CustomLabelManager;
+
 import com.android.utils.labeling.Label;
 import com.android.utils.traversal.NodeFocusFinder;
 import com.android.utils.traversal.TraversalStrategy;
+import com.android.utils.compat.CompatUtils;
+import com.android.utils.labeling.CustomLabelManager;
 
 import java.util.ArrayList;
 import java.util.Collection;

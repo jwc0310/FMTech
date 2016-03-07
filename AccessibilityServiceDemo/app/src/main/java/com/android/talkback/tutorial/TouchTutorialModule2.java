@@ -25,7 +25,7 @@ import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.widget.TextView;
 
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.R;
 
 /**
  * A tutorial lesson that introduces using two fingers to scroll through a list

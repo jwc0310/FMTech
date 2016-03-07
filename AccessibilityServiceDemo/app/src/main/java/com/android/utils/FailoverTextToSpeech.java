@@ -40,10 +40,8 @@ import android.speech.tts.TextToSpeech.OnUtteranceCompletedListener;
 import android.text.TextUtils;
 import android.util.Log;
 
-import com.android.utils.compat.provider.SettingsCompatUtils.SecureCompatUtils;
+import com.android.utils.compat.provider.SettingsCompatUtils;
 import com.android.utils.compat.speech.tts.TextToSpeechCompatUtils;
-import com.android.utils.LogUtils;
-import com.android.utils.WeakReferenceHandler;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -754,7 +752,7 @@ public class FailoverTextToSpeech {
      */
     @TargetApi(Build.VERSION_CODES.ICE_CREAM_SANDWICH_MR1)
     private void registerGoogleTtsFixCallbacks() {
-        final Uri defaultLocaleUri = Secure.getUriFor(SecureCompatUtils.TTS_DEFAULT_LOCALE);
+        final Uri defaultLocaleUri = Secure.getUriFor(SettingsCompatUtils.SecureCompatUtils.TTS_DEFAULT_LOCALE);
         mResolver.registerContentObserver(defaultLocaleUri, false, mLocaleObserver);
         mContext.registerComponentCallbacks(mComponentCallbacks);
     }

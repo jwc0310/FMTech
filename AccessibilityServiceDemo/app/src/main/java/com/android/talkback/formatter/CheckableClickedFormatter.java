@@ -28,8 +28,8 @@ import android.widget.ToggleButton;
 import com.android.talkback.Utterance;
 import com.android.utils.AccessibilityEventUtils;
 import com.android.utils.AccessibilityNodeInfoUtils;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
+import com.mpfa.empf.R;
 
 /**
  * Filters and formats click events from checkable items.

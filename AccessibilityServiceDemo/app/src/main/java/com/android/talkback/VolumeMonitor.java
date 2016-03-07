@@ -27,11 +27,13 @@ import android.os.Message;
 import android.telephony.TelephonyManager;
 import android.util.Log;
 import android.util.SparseIntArray;
+
 import com.android.utils.LogUtils;
 import com.android.utils.WeakReferenceHandler;
 import com.android.utils.compat.media.AudioManagerCompatUtils;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
+
+import com.mpfa.empf.R;
 
 /**
  * Listens for and responds to volume changes.

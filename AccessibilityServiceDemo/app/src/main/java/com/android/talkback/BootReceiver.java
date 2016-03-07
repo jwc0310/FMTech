@@ -19,7 +19,7 @@ package com.android.talkback;
 import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
-import com.fmtech.empf.service.MyAccessibilityService;
+import com.mpfa.empf.service.MyAccessibilityService;
 
 public class BootReceiver extends BroadcastReceiver {
 

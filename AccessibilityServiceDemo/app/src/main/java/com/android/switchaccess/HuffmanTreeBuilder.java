@@ -17,8 +17,6 @@
 package com.android.switchaccess;
 
 import android.support.annotation.NonNull;
-import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
-import com.android.utils.traversal.OrderedTraversalController;
 
 import java.util.ArrayList;
 import java.util.HashSet;

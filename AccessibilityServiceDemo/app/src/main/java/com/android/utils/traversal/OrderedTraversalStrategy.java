@@ -17,6 +17,7 @@
 package com.android.utils.traversal;
 
 import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
+
 import com.android.utils.AccessibilityNodeInfoUtils;
 
 import java.util.HashMap;

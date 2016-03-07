@@ -16,13 +16,13 @@
 
 package com.android.talkback;
 
-import com.fmtech.empf.service.MyAccessibilityService;
+import com.mpfa.empf.service.MyAccessibilityService;
 
 /**
  * Analytics that tracks talkback usage
  */
 public abstract class Analytics {
-    /** The {@link com.fmtech.empf.service.MyAccessibilityService} instance. */
+    /** The {@link MyAccessibilityService} instance. */
     protected MyAccessibilityService mService;
 
     public Analytics(MyAccessibilityService service) {

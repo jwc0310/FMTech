@@ -11,4 +11,3 @@
     android:notificationTimeout="0"
     android:settingsActivity="com.android.talkback.TalkBackPreferencesActivity" />
 
-    <!--android:packageNames="com.fmtech.accessibilityservicedemo, com.manulife.mpf"-->

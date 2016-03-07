@@ -25,10 +25,10 @@ import android.view.ViewGroup;
 import android.view.accessibility.AccessibilityEvent;
 import android.widget.LinearLayout;
 import android.widget.TextView;
+
 import com.android.talkback.CursorGranularity;
 import com.android.talkback.controller.CursorController;
 import com.android.talkback.controller.GestureActionMonitor;
-import com.fmtech.accessibilityservicedemo.R;
 
 /**
  * A tutorial lesson that introduces reading text at different granularities.
@@ -90,7 +90,7 @@ class TouchTutorialModule4 extends TutorialModule {
         public void onGestureAction(String action) {
             if (action == null) return;
             if (action.equals(getContext().getString(
-                    R.string.shortcut_value_local_breakout))) {
+                    com.mpfa.empf.R.string.shortcut_value_local_breakout))) {
                 mLayout.setAccessibilityDelegate(null);
                 mGestureMonitor.setListener(null);
                 installTriggerDelayedWithFeedback(new Runnable() {
@@ -116,7 +116,7 @@ class TouchTutorialModule4 extends TutorialModule {
 
         @Override
         public void onHide(int menuId) {
-            if (menuId != R.menu.local_context_menu) {
+            if (menuId != com.mpfa.empf.R.menu.local_context_menu) {
                 return;
             }
 
@@ -231,11 +231,11 @@ class TouchTutorialModule4 extends TutorialModule {
             (Build.VERSION.SDK_INT < TouchTutorialModule5.MIN_API_LEVEL);
 
     public TouchTutorialModule4(AccessibilityTutorialActivity parentTutorial) {
-        super(parentTutorial, R.layout.tutorial_lesson_4,
-                R.string.accessibility_tutorial_lesson_4_title);
+        super(parentTutorial, com.mpfa.empf.R.layout.tutorial_lesson_4,
+                com.mpfa.empf.R.string.accessibility_tutorial_lesson_4_title);
 
-        mLayout = (LinearLayout) findViewById(R.id.accessibility_tutorial_lesson_4_layout);
-        mTextView = (TextView) findViewById(R.id.accessibility_tutorial_lesson_4_text_view);
+        mLayout = (LinearLayout) findViewById(com.mpfa.empf.R.id.accessibility_tutorial_lesson_4_layout);
+        mTextView = (TextView) findViewById(com.mpfa.empf.R.id.accessibility_tutorial_lesson_4_text_view);
 
         setSkipVisible(false);
         setBackVisible(true);
@@ -268,16 +268,16 @@ class TouchTutorialModule4 extends TutorialModule {
     }
 
     private void onTrigger0() {
-        addInstruction(R.string.accessibility_tutorial_lesson_4_text_1, true);
+        addInstruction(com.mpfa.empf.R.string.accessibility_tutorial_lesson_4_text_1, true);
 
         // Next trigger is a focus event on the text view.
         mLayout.setAccessibilityDelegate(mTextViewFocusedDelegate);
     }
 
     private void onTrigger1() {
-        addInstruction(R.string.accessibility_tutorial_lesson_4_text_2, true,
+        addInstruction(com.mpfa.empf.R.string.accessibility_tutorial_lesson_4_text_2, true,
                 getGestureDirectionForRequiredAction(
-                        getContext().getString(R.string.shortcut_value_local_breakout)));
+                        getContext().getString(com.mpfa.empf.R.string.shortcut_value_local_breakout)));
 
         // Next trigger is a local context menu gesture.
         mGestureMonitor.setListener(mLocalContextMenuGestureDelegate);
@@ -287,15 +287,15 @@ class TouchTutorialModule4 extends TutorialModule {
     }
 
     private void onTrigger2FocusLost() {
-        addInstruction(R.string.accessibility_tutorial_lesson_4_text_3_focus_lost, true);
+        addInstruction(com.mpfa.empf.R.string.accessibility_tutorial_lesson_4_text_3_focus_lost, true);
 
         // Next trigger is a focus event on the text view.
         mLayout.setAccessibilityDelegate(mTextViewFocusedDelegate);
     }
 
     private void onTrigger2() {
-        addInstruction(R.string.accessibility_tutorial_lesson_4_text_3, true,
-                getContext().getString(R.string.granularity_character));
+        addInstruction(com.mpfa.empf.R.string.accessibility_tutorial_lesson_4_text_3, true,
+                getContext().getString(com.mpfa.empf.R.string.granularity_character));
 
         // Next trigger is a character granularity button press on the local
         // context menu.
@@ -307,10 +307,10 @@ class TouchTutorialModule4 extends TutorialModule {
     }
 
     private void onTrigger3MenuHidden() {
-        addInstruction(R.string.accessibility_tutorial_lesson_4_text_4_menu_hidden, true,
-                getContext().getString(R.string.granularity_character),
+        addInstruction(com.mpfa.empf.R.string.accessibility_tutorial_lesson_4_text_4_menu_hidden, true,
+                getContext().getString(com.mpfa.empf.R.string.granularity_character),
                 getGestureDirectionForRequiredAction(
-                        getContext().getString(R.string.shortcut_value_local_breakout)));
+                        getContext().getString(com.mpfa.empf.R.string.shortcut_value_local_breakout)));
 
         // Next trigger is a local context menu gesture.
         mGestureMonitor.setListener(mLocalContextMenuGestureDelegate);
@@ -320,7 +320,7 @@ class TouchTutorialModule4 extends TutorialModule {
     }
 
     private void onTrigger3() {
-        addInstruction(R.string.accessibility_tutorial_lesson_4_text_4, true);
+        addInstruction(com.mpfa.empf.R.string.accessibility_tutorial_lesson_4_text_4, true);
 
         mNavigationCount = 0;
 
@@ -333,10 +333,10 @@ class TouchTutorialModule4 extends TutorialModule {
     }
 
     private void onTrigger4GranularityChanged() {
-        addInstruction(R.string.accessibility_tutorial_lesson_4_text_5_granularity_changed, true,
-                getContext().getString(R.string.granularity_character),
+        addInstruction(com.mpfa.empf.R.string.accessibility_tutorial_lesson_4_text_5_granularity_changed, true,
+                getContext().getString(com.mpfa.empf.R.string.granularity_character),
                 getGestureDirectionForRequiredAction(
-                        getContext().getString(R.string.shortcut_value_local_breakout)));
+                        getContext().getString(com.mpfa.empf.R.string.shortcut_value_local_breakout)));
 
         // Next trigger is a local context menu gesture.
         mGestureMonitor.setListener(mLocalContextMenuGestureDelegate);
@@ -347,11 +347,11 @@ class TouchTutorialModule4 extends TutorialModule {
 
     private void onTrigger4() {
         final int buttonLabelResId = IS_LAST_LESSON
-                ? R.string.accessibility_tutorial_finish
-                : R.string.accessibility_tutorial_next;
+                ? com.mpfa.empf.R.string.accessibility_tutorial_finish
+                : com.mpfa.empf.R.string.accessibility_tutorial_next;
         final int instructionResId = IS_LAST_LESSON
-                ? R.string.accessibility_tutorial_lesson_4_text_5_finish
-                : R.string.accessibility_tutorial_lesson_4_text_5_next;
+                ? com.mpfa.empf.R.string.accessibility_tutorial_lesson_4_text_5_finish
+                : com.mpfa.empf.R.string.accessibility_tutorial_lesson_4_text_5_next;
 
         // This is the last trigger in this lesson.
         addInstruction(instructionResId, true, getContext().getString(buttonLabelResId));

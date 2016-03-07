@@ -31,11 +31,11 @@ import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityManager;
+
 import com.android.talkback.DimmingOverlayView;
 import com.android.talkback.OrientationMonitor;
 import com.android.utils.SharedPreferencesUtils;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
 
 import java.util.concurrent.TimeUnit;
 
@@ -86,7 +86,7 @@ public class DimScreenControllerApp implements DimScreenController,
             new SharedPreferences.OnSharedPreferenceChangeListener() {
         @Override
         public void onSharedPreferenceChanged(SharedPreferences sharedPreferences, String key) {
-            if (key.equals(mContext.getString(R.string.pref_dim_when_talkback_enabled_key))) {
+            if (key.equals(mContext.getString(com.mpfa.empf.R.string.pref_dim_when_talkback_enabled_key))) {
                 if (MyAccessibilityService.isServiceActive() && isDimmingEnabled()) {
                     makeScreenDim();
                 } else {
@@ -106,8 +106,8 @@ public class DimScreenControllerApp implements DimScreenController,
     public boolean isDimmingEnabled() {
         return SharedPreferencesUtils.getBooleanPref(
                 mPrefs, mContext.getResources(),
-                R.string.pref_dim_when_talkback_enabled_key,
-                R.bool.pref_dim_when_talkback_enabled_default);
+                com.mpfa.empf.R.string.pref_dim_when_talkback_enabled_key,
+                com.mpfa.empf.R.bool.pref_dim_when_talkback_enabled_default);
     }
 
     @Override
@@ -131,7 +131,7 @@ public class DimScreenControllerApp implements DimScreenController,
         addExitInstructionView();
         startDimmingCount();
 
-        announceScreenDimChanged(R.string.screen_dimmed);
+        announceScreenDimChanged(com.mpfa.empf.R.string.screen_dimmed);
     }
 
     private void initView() {
@@ -236,7 +236,7 @@ public class DimScreenControllerApp implements DimScreenController,
         mIsInstructionDisplayed = false;
 
         mWindowManager.removeViewImmediate(mView);
-        announceScreenDimChanged(R.string.screen_brightness_restored);
+        announceScreenDimChanged(com.mpfa.empf.R.string.screen_brightness_restored);
         mDimmingHandler.removeMessages(START_DIMMING_MESSAGE);
         mDimmingHandler.removeMessages(UPDATE_TIMER_MESSAGE);
     }

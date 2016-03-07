@@ -62,8 +62,8 @@ import com.android.talkback.tutorial.AccessibilityTutorialActivity;
 import com.android.utils.LogUtils;
 import com.android.utils.PackageManagerUtils;
 import com.android.utils.SharedPreferencesUtils;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
+
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.GooglePlayServicesUtil;
 
@@ -76,16 +76,16 @@ import java.util.List;
 public class TalkBackPreferencesActivity extends PreferenceActivity {
     /** The gestures that may need to be reassigned if node tree debugging is disabled. */
     private static final int[] GESTURE_PREF_KEY_IDS = {
-            R.string.pref_shortcut_down_and_left_key,
-            R.string.pref_shortcut_down_and_right_key,
-            R.string.pref_shortcut_left_and_down_key,
-            R.string.pref_shortcut_left_and_up_key,
-            R.string.pref_shortcut_right_and_down_key,
-            R.string.pref_shortcut_right_and_up_key,
-            R.string.pref_shortcut_up_and_left_key,
-            R.string.pref_shortcut_up_and_right_key,
-            R.string.pref_shortcut_single_tap_key,
-            R.string.pref_shortcut_double_tap_key
+            com.mpfa.empf.R.string.pref_shortcut_down_and_left_key,
+            com.mpfa.empf.R.string.pref_shortcut_down_and_right_key,
+            com.mpfa.empf.R.string.pref_shortcut_left_and_down_key,
+            com.mpfa.empf.R.string.pref_shortcut_left_and_up_key,
+            com.mpfa.empf.R.string.pref_shortcut_right_and_down_key,
+            com.mpfa.empf.R.string.pref_shortcut_right_and_up_key,
+            com.mpfa.empf.R.string.pref_shortcut_up_and_left_key,
+            com.mpfa.empf.R.string.pref_shortcut_up_and_right_key,
+            com.mpfa.empf.R.string.pref_shortcut_single_tap_key,
+            com.mpfa.empf.R.string.pref_shortcut_double_tap_key
     };
 
     /** Preferences managed by this activity. */
@@ -112,28 +112,28 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
         super.onCreate(savedInstanceState);
 
         mPrefs = PreferenceManager.getDefaultSharedPreferences(this);
-        addPreferencesFromResource(R.xml.preferences);
+        addPreferencesFromResource(com.mpfa.empf.R.xml.preferences);
 
         final CheckBoxPreference prefDimEnabled = (CheckBoxPreference) findPreferenceByResId(
-                R.string.pref_dim_when_talkback_enabled_key);
+                com.mpfa.empf.R.string.pref_dim_when_talkback_enabled_key);
 
         mPrefs.registerOnSharedPreferenceChangeListener(
             new SharedPreferences.OnSharedPreferenceChangeListener() {
                 @Override
                 public void onSharedPreferenceChanged(SharedPreferences sharedPreferences,
                                                       String key) {
-                    String dimKey = getString(R.string.pref_dim_when_talkback_enabled_key);
+                    String dimKey = getString(com.mpfa.empf.R.string.pref_dim_when_talkback_enabled_key);
                     if (key != null &&  key.equals(dimKey)) {
                         boolean value = mPrefs.getBoolean(dimKey,
                                 getResources().getBoolean(
-                                        R.bool.pref_dim_when_talkback_enabled_default));
+                                        com.mpfa.empf.R.bool.pref_dim_when_talkback_enabled_default));
                         prefDimEnabled.setChecked(value);
                     }
                 }
             });
 
         final CheckBoxPreference prefTreeDebug = (CheckBoxPreference) findPreferenceByResId(
-                R.string.pref_tree_debug_reflect_key);
+                com.mpfa.empf.R.string.pref_tree_debug_reflect_key);
         prefTreeDebug.setOnPreferenceChangeListener(mTreeDebugChangeListener);
 
         fixListSummaries(getPreferenceScreen());
@@ -152,11 +152,11 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
         showTalkBackVersion();
         updateTalkBackShortcutStatus();
 
-        assignWebIntentToPreference(R.string.pref_play_store_key,
+        assignWebIntentToPreference(com.mpfa.empf.R.string.pref_play_store_key,
                 "https://play.google.com/store/apps/details?id=com.google.android.marvin.talkback");
-        assignWebIntentToPreference(R.string.pref_policy_key,
+        assignWebIntentToPreference(com.mpfa.empf.R.string.pref_policy_key,
                 "http://www.google.com/policies/privacy/");
-        assignWebIntentToPreference(R.string.pref_show_tos_key,
+        assignWebIntentToPreference(com.mpfa.empf.R.string.pref_show_tos_key,
                 "http://www.google.com/mobile/toscountry");
     }
 
@@ -250,8 +250,8 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
      */
     private void assignTutorialIntent() {
         final PreferenceGroup category =
-                (PreferenceGroup) findPreferenceByResId(R.string.pref_category_miscellaneous_key);
-        final Preference prefTutorial = findPreferenceByResId(R.string.pref_tutorial_key);
+                (PreferenceGroup) findPreferenceByResId(com.mpfa.empf.R.string.pref_category_miscellaneous_key);
+        final Preference prefTutorial = findPreferenceByResId(com.mpfa.empf.R.string.pref_tutorial_key);
 
         if ((category == null) || (prefTutorial == null)) {
             return;
@@ -275,8 +275,8 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
     private void assignLabelManagerIntent() {
         final PreferenceGroup category =
                 (PreferenceGroup) findPreferenceByResId(
-                        R.string.pref_category_touch_exploration_key);
-        final Preference prefManageLabels = findPreferenceByResId(R.string.pref_manage_labels_key);
+                        com.mpfa.empf.R.string.pref_category_touch_exploration_key);
+        final Preference prefManageLabels = findPreferenceByResId(com.mpfa.empf.R.string.pref_manage_labels_key);
 
         if ((category == null) || (prefManageLabels == null)) {
             return;
@@ -299,9 +299,9 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
     private void assignKeyboardShortcutIntent() {
         final PreferenceGroup category =
                 (PreferenceGroup) findPreferenceByResId(
-                        R.string.pref_category_miscellaneous_key);
+                        com.mpfa.empf.R.string.pref_category_miscellaneous_key);
         final Preference keyboardShortcutPref = findPreferenceByResId(
-                R.string.pref_category_manage_keyboard_shortcut_key);
+                com.mpfa.empf.R.string.pref_category_manage_keyboard_shortcut_key);
 
         if ((category == null) || (keyboardShortcutPref == null)) {
             return;
@@ -324,7 +324,7 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
      */
     private void checkTouchExplorationSupport() {
         final PreferenceGroup category = (PreferenceGroup) findPreferenceByResId(
-                R.string.pref_category_touch_exploration_key);
+                com.mpfa.empf.R.string.pref_category_touch_exploration_key);
         if (category == null) {
             return;
         }
@@ -341,14 +341,14 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     private void checkTouchExplorationSupportInner(PreferenceGroup category) {
         final CheckBoxPreference prefTouchExploration = (CheckBoxPreference) findPreferenceByResId(
-                R.string.pref_explore_by_touch_reflect_key);
+                com.mpfa.empf.R.string.pref_explore_by_touch_reflect_key);
         if (prefTouchExploration == null) {
             return;
         }
 
         // Remove single-tap preference if it's not supported on this device.
         final CheckBoxPreference prefSingleTap = (CheckBoxPreference) findPreferenceByResId(
-                R.string.pref_single_tap_key);
+                com.mpfa.empf.R.string.pref_single_tap_key);
         if ((prefSingleTap != null)
                 && (Build.VERSION.SDK_INT < ProcessorFocusAndSingleTap.MIN_API_LEVEL_SINGLE_TAP)) {
             category.removePreference(prefSingleTap);
@@ -366,14 +366,14 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
 
         // Hook in the external PreferenceActivity for gesture management
         final Preference shortcutsScreen = findPreferenceByResId(
-                R.string.pref_category_manage_gestures_key);
+                com.mpfa.empf.R.string.pref_category_manage_gestures_key);
         final Intent shortcutsIntent = new Intent(this, TalkBackShortcutPreferencesActivity.class);
         shortcutsScreen.setIntent(shortcutsIntent);
     }
 
     private void updateTalkBackShortcutStatus() {
         final CheckBoxPreference preference = (CheckBoxPreference) findPreferenceByResId(
-                R.string.pref_two_volume_long_press_key);
+                com.mpfa.empf.R.string.pref_two_volume_long_press_key);
         if (preference == null) {
             return;
         }
@@ -381,7 +381,7 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
             preference.setEnabled(MyAccessibilityService.getInstance() != null || preference.isChecked());
         } else {
             final PreferenceGroup category = (PreferenceGroup) findPreferenceByResId(
-                    R.string.pref_category_miscellaneous_key);
+                    com.mpfa.empf.R.string.pref_category_miscellaneous_key);
             if (category == null) {
                 return;
             }
@@ -392,14 +392,14 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
 
     private void updateDimingPreferenceStatus() {
         final CheckBoxPreference dimPreference = (CheckBoxPreference) findPreferenceByResId(
-                R.string.pref_dim_when_talkback_enabled_key);
+                com.mpfa.empf.R.string.pref_dim_when_talkback_enabled_key);
         if (dimPreference == null) {
             return;
         }
 
         if (Build.VERSION.SDK_INT < ProcessorVolumeStream.MIN_API_LEVEL) {
             final PreferenceGroup category = (PreferenceGroup) findPreferenceByResId(
-                    R.string.pref_category_miscellaneous_key);
+                    com.mpfa.empf.R.string.pref_category_miscellaneous_key);
             if (category == null) {
                 return;
             }
@@ -420,7 +420,7 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
                 if (!boolValue && !MyAccessibilityService.isServiceActive()) {
                     dimPreference.setEnabled(false);
                 } else if (boolValue &&
-                    mPrefs.getBoolean(getString(R.string.pref_show_dim_screen_confirmation_dialog),
+                    mPrefs.getBoolean(getString(com.mpfa.empf.R.string.pref_show_dim_screen_confirmation_dialog),
                                 true)) {
                     showDimScreenDialog(new DialogInterface.OnClickListener() {
                         @Override
@@ -438,8 +438,8 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
     private void showDimScreenDialog(final DialogInterface.OnClickListener onConfirmListener) {
         LayoutInflater inflater = LayoutInflater.from(this);
         @SuppressLint("InflateParams") final ScrollView root = (ScrollView) inflater.inflate(
-                R.layout.dim_screen_confirmation_dialog, null);
-        final CheckBox confirmCheckBox = (CheckBox) root.findViewById(R.id.show_warning_checkbox);
+                com.mpfa.empf.R.layout.dim_screen_confirmation_dialog, null);
+        final CheckBox confirmCheckBox = (CheckBox) root.findViewById(com.mpfa.empf.R.id.show_warning_checkbox);
 
         final DialogInterface.OnClickListener okayClick = new DialogInterface.OnClickListener() {
             @Override
@@ -447,7 +447,7 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
                 if (which == DialogInterface.BUTTON_POSITIVE) {
                     if (!confirmCheckBox.isChecked()) {
                         SharedPreferencesUtils.putBooleanPref(mPrefs, getResources(),
-                                R.string.pref_show_dim_screen_confirmation_dialog, false);
+                                com.mpfa.empf.R.string.pref_show_dim_screen_confirmation_dialog, false);
                     }
 
                     if (onConfirmListener != null) {
@@ -458,7 +458,7 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
         };
 
         Dialog dialog = new AlertDialog.Builder(this)
-                .setTitle(R.string.dialog_title_dim_screen)
+                .setTitle(com.mpfa.empf.R.string.dialog_title_dim_screen)
                 .setView(root)
                 .setNegativeButton(android.R.string.cancel, null)
                 .setPositiveButton(android.R.string.ok, okayClick)
@@ -474,7 +474,7 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
     @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
     private void updateTouchExplorationState() {
         final CheckBoxPreference prefTouchExploration = (CheckBoxPreference) findPreferenceByResId(
-                R.string.pref_explore_by_touch_reflect_key);
+                com.mpfa.empf.R.string.pref_explore_by_touch_reflect_key);
 
         if (prefTouchExploration == null) {
             return;
@@ -484,7 +484,7 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
         final Resources res = getResources();
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
         final boolean requestedState = SharedPreferencesUtils.getBooleanPref(prefs, res,
-                R.string.pref_explore_by_touch_key, R.bool.pref_explore_by_touch_default);
+                com.mpfa.empf.R.string.pref_explore_by_touch_key, com.mpfa.empf.R.bool.pref_explore_by_touch_default);
         final boolean reflectedState = prefTouchExploration.isChecked();
         final boolean actualState;
 
@@ -503,7 +503,7 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
             LogUtils.log(this, Log.DEBUG,
                     "Set touch exploration preference to reflect actual state %b", actualState);
             SharedPreferencesUtils.putBooleanPref(
-                    prefs, res, R.string.pref_explore_by_touch_key, actualState);
+                    prefs, res, com.mpfa.empf.R.string.pref_explore_by_touch_key, actualState);
         }
 
         // Ensure that the check box preference reflects the requested state,
@@ -558,8 +558,8 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
     private void checkWebScriptsSupport() {
         // TalkBack can control web script injection on API 18+ only.
         final PreferenceGroup category = (PreferenceGroup) findPreferenceByResId(
-                R.string.pref_category_developer_key);
-        final Preference prefWebScripts = findPreferenceByResId(R.string.pref_web_scripts_key);
+                com.mpfa.empf.R.string.pref_category_developer_key);
+        final Preference prefWebScripts = findPreferenceByResId(com.mpfa.empf.R.string.pref_web_scripts_key);
 
         if (prefWebScripts != null) {
             category.removePreference(prefWebScripts);
@@ -579,8 +579,8 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
         }
 
         final PreferenceGroup category = (PreferenceGroup) findPreferenceByResId(
-                R.string.pref_category_when_to_speak_key);
-        final Preference prefCallerId = findPreferenceByResId(R.string.pref_caller_id_key);
+                com.mpfa.empf.R.string.pref_category_when_to_speak_key);
+        final Preference prefCallerId = findPreferenceByResId(com.mpfa.empf.R.string.pref_caller_id_key);
 
         if (prefCallerId != null) {
             category.removePreference(prefCallerId);
@@ -599,9 +599,9 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
         }
 
         final PreferenceGroup category =
-                (PreferenceGroup) findPreferenceByResId(R.string.pref_category_feedback_key);
+                (PreferenceGroup) findPreferenceByResId(com.mpfa.empf.R.string.pref_category_feedback_key);
         final CheckBoxPreference prefVibration =
-                (CheckBoxPreference) findPreferenceByResId(R.string.pref_vibration_key);
+                (CheckBoxPreference) findPreferenceByResId(com.mpfa.empf.R.string.pref_vibration_key);
 
         if (prefVibration != null) {
             prefVibration.setChecked(false);
@@ -622,9 +622,9 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
         }
 
         final PreferenceGroup category =
-                (PreferenceGroup) findPreferenceByResId(R.string.pref_category_when_to_speak_key);
+                (PreferenceGroup) findPreferenceByResId(com.mpfa.empf.R.string.pref_category_when_to_speak_key);
         final CheckBoxPreference prefProximity =
-                (CheckBoxPreference) findPreferenceByResId(R.string.pref_proximity_key);
+                (CheckBoxPreference) findPreferenceByResId(com.mpfa.empf.R.string.pref_proximity_key);
 
         if (prefProximity != null) {
             prefProximity.setChecked(false);
@@ -645,9 +645,9 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
         }
 
         final PreferenceGroup category =
-                (PreferenceGroup) findPreferenceByResId(R.string.pref_category_when_to_speak_key);
+                (PreferenceGroup) findPreferenceByResId(com.mpfa.empf.R.string.pref_category_when_to_speak_key);
         final ListPreference prefShake =
-                (ListPreference) findPreferenceByResId(R.string.pref_shake_to_read_threshold_key);
+                (ListPreference) findPreferenceByResId(com.mpfa.empf.R.string.pref_shake_to_read_threshold_key);
 
         if (prefShake != null) {
             category.removePreference(prefShake);
@@ -660,9 +660,9 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
      */
     private void checkInstalledBacks() {
         final PreferenceGroup category =
-                (PreferenceGroup) findPreferenceByResId(R.string.pref_category_feedback_key);
+                (PreferenceGroup) findPreferenceByResId(com.mpfa.empf.R.string.pref_category_feedback_key);
         final CheckBoxPreference prefVibration =
-                (CheckBoxPreference) findPreferenceByResId(R.string.pref_vibration_key);
+                (CheckBoxPreference) findPreferenceByResId(com.mpfa.empf.R.string.pref_vibration_key);
         final int kickBackVersionCode = PackageManagerUtils.getVersionCode(
                 this, TalkBackUpdateHelper.KICKBACK_PACKAGE);
         final boolean removeKickBack = (kickBackVersionCode
@@ -675,9 +675,9 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
         }
 
         final CheckBoxPreference prefSoundBack =
-                (CheckBoxPreference) findPreferenceByResId(R.string.pref_soundback_key);
+                (CheckBoxPreference) findPreferenceByResId(com.mpfa.empf.R.string.pref_soundback_key);
         final Preference prefSoundBackVolume =
-                findPreferenceByResId(R.string.pref_soundback_volume_key);
+                findPreferenceByResId(com.mpfa.empf.R.string.pref_soundback_volume_key);
         final int soundBackVersionCode = PackageManagerUtils.getVersionCode(
                 this, TalkBackUpdateHelper.SOUNDBACK_PACKAGE);
         final boolean removeSoundBack = (soundBackVersionCode
@@ -712,11 +712,11 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
             final ActionBar actionBar = getActionBar();
             if (actionBar != null) {
                 actionBar.setSubtitle(
-                        getString(R.string.talkback_preferences_subtitle,
+                        getString(com.mpfa.empf.R.string.talkback_preferences_subtitle,
                                 packageInfo.versionName));
             }
 
-            final Preference playStoreButton = findPreferenceByResId(R.string.pref_play_store_key);
+            final Preference playStoreButton = findPreferenceByResId(com.mpfa.empf.R.string.pref_play_store_key);
             if (playStoreButton == null) {
                 return;
             }
@@ -726,7 +726,7 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
                 // Not needed, but playing safe since this is hard to test outside of China
                 playStoreButton.setIntent(null);
                 final PreferenceGroup category = (PreferenceGroup)
-                        findPreferenceByResId(R.string.pref_category_miscellaneous_key);
+                        findPreferenceByResId(com.mpfa.empf.R.string.pref_category_miscellaneous_key);
                 if (category != null) {
                     category.removePreference(playStoreButton);
                 }
@@ -738,7 +738,7 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
                 // Not needed, but playing safe since this is hard to test outside of China
                 playStoreButton.setIntent(null);
                 final PreferenceGroup category = (PreferenceGroup)
-                        findPreferenceByResId(R.string.pref_category_miscellaneous_key);
+                        findPreferenceByResId(com.mpfa.empf.R.string.pref_category_miscellaneous_key);
                 if (category != null) {
                     category.removePreference(playStoreButton);
                 }
@@ -746,7 +746,7 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
                 final String versionNumber = String.valueOf(packageInfo.versionCode);
                 final int length = versionNumber.length();
 
-                playStoreButton.setSummary(getString(R.string.summary_pref_play_store,
+                playStoreButton.setSummary(getString(com.mpfa.empf.R.string.summary_pref_play_store,
                         String.valueOf(Integer.parseInt(versionNumber.substring(0, length-7))) +
                                 "." +
                                 String.valueOf(Integer.parseInt(
@@ -788,7 +788,7 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
         // Update the "requested" state. This will trigger a listener in
         // TalkBack that changes the "actual" state.
         SharedPreferencesUtils.putBooleanPref(prefs, getResources(),
-                R.string.pref_explore_by_touch_key, requestedState);
+                com.mpfa.empf.R.string.pref_explore_by_touch_key, requestedState);
 
         // If TalkBack is inactive, we should immediately reflect the change in
         // "requested" state.
@@ -832,15 +832,15 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
                     // the preference change listener.
                     final CheckBoxPreference prefTouchExploration =
                             (CheckBoxPreference) findPreferenceByResId(
-                                    R.string.pref_explore_by_touch_reflect_key);
+                                    com.mpfa.empf.R.string.pref_explore_by_touch_reflect_key);
                     prefTouchExploration.setChecked(false);
                 }
             }
         };
 
         return new AlertDialog.Builder(this)
-                .setTitle(R.string.dialog_title_disable_exploration)
-                .setMessage(R.string.dialog_message_disable_exploration)
+                .setTitle(com.mpfa.empf.R.string.dialog_title_disable_exploration)
+                .setMessage(com.mpfa.empf.R.string.dialog_message_disable_exploration)
                 .setNegativeButton(android.R.string.cancel, cancelClick)
                 .setPositiveButton(android.R.string.yes, okClick)
                 .setOnCancelListener(cancel)
@@ -870,20 +870,20 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
                 final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(
                         TalkBackPreferencesActivity.this);
                 SharedPreferencesUtils.putBooleanPref(prefs, getResources(),
-                        R.string.pref_tree_debug_key, true);
+                        com.mpfa.empf.R.string.pref_tree_debug_key, true);
 
                 // Manually tick the check box since we're not returning to
                 // the preference change listener.
                 final CheckBoxPreference prefTreeDebug =
                         (CheckBoxPreference) findPreferenceByResId(
-                                R.string.pref_tree_debug_reflect_key);
+                                com.mpfa.empf.R.string.pref_tree_debug_reflect_key);
                 prefTreeDebug.setChecked(true);
             }
         };
 
         return new AlertDialog.Builder(this)
-                .setTitle(R.string.dialog_title_enable_tree_debug)
-                .setMessage(R.string.dialog_message_enable_tree_debug)
+                .setTitle(com.mpfa.empf.R.string.dialog_title_enable_tree_debug)
+                .setMessage(com.mpfa.empf.R.string.dialog_message_enable_tree_debug)
                 .setNegativeButton(android.R.string.cancel, cancelClick)
                 .setPositiveButton(android.R.string.yes, okClick)
                 .setOnCancelListener(cancel)
@@ -939,13 +939,13 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
                             TalkBackPreferencesActivity.this);
                     final SharedPreferences.Editor prefEditor = prefs.edit();
 
-                    prefEditor.putBoolean(getString(R.string.pref_tree_debug_key), false);
+                    prefEditor.putBoolean(getString(com.mpfa.empf.R.string.pref_tree_debug_key), false);
 
                     for (int prefKey : GESTURE_PREF_KEY_IDS) {
                         final String currentValue = prefs.getString(getString(prefKey), null);
-                        if (getString(R.string.shortcut_value_print_node_tree).equals(currentValue)) {
+                        if (getString(com.mpfa.empf.R.string.shortcut_value_print_node_tree).equals(currentValue)) {
                             prefEditor.putString(getString(prefKey),
-                                    getString(R.string.shortcut_value_unassigned));
+                                    getString(com.mpfa.empf.R.string.shortcut_value_unassigned));
                         }
                     }
 
@@ -976,15 +976,15 @@ public class TalkBackPreferencesActivity extends PreferenceActivity {
                     }
 
                     final String key = preference.getKey();
-                    if (getString(R.string.pref_resume_talkback_key).equals(key)) {
+                    if (getString(com.mpfa.empf.R.string.pref_resume_talkback_key).equals(key)) {
                         final String oldValue = SharedPreferencesUtils.getStringPref(
-                                mPrefs, getResources(), R.string.pref_resume_talkback_key,
-                                R.string.pref_resume_talkback_default);
+                                mPrefs, getResources(), com.mpfa.empf.R.string.pref_resume_talkback_key,
+                                com.mpfa.empf.R.string.pref_resume_talkback_default);
                         if (!newValue.equals(oldValue)) {
                             // Reset the suspend warning dialog when the resume
                             // preference changes.
                             SharedPreferencesUtils.putBooleanPref(mPrefs, getResources(),
-                                    R.string.pref_show_suspension_confirmation_dialog, true);
+                                    com.mpfa.empf.R.string.pref_show_suspension_confirmation_dialog, true);
                         }
                     }
 

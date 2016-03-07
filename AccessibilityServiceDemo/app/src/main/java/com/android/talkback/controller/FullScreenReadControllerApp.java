@@ -25,18 +25,18 @@ import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
 import android.util.Log;
 import android.view.accessibility.AccessibilityEvent;
 
+import com.android.utils.AccessibilityEventUtils;
 import com.android.talkback.CursorGranularity;
 import com.android.talkback.SpeechController;
 import com.android.utils.AccessibilityEventListener;
-import com.android.utils.AccessibilityEventUtils;
 import com.android.utils.AccessibilityNodeInfoUtils;
 import com.android.utils.LogUtils;
 import com.android.utils.WebInterfaceUtils;
 import com.android.utils.compat.accessibilityservice.AccessibilityServiceCompatUtils;
 import com.android.utils.traversal.OrderedTraversalStrategy;
 import com.android.utils.traversal.TraversalStrategy;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
+import com.mpfa.empf.R;
 
 @TargetApi(Build.VERSION_CODES.JELLY_BEAN)
 public class FullScreenReadControllerApp implements

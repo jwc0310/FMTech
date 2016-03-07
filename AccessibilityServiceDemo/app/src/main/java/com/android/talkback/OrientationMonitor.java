@@ -20,8 +20,8 @@ import android.content.Context;
 import android.content.res.Configuration;
 import android.os.PowerManager;
 
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
+import com.mpfa.empf.R;
 
 import java.util.ArrayList;
 import java.util.List;

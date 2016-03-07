@@ -29,10 +29,10 @@ public class ContentFrame
     super(paramContext, paramAttributeSet, paramInt);
     this.mInflater = ((LayoutInflater)paramContext.getSystemService("layout_inflater"));
     View localView1 = this.mInflater.inflate(2130968895, this, false);
-    localView1.setVisibility(8);
+    localView1.setVisibility(View.GONE);
     addView(localView1);
     View localView2 = this.mInflater.inflate(2130968894, this, false);
-    localView2.setVisibility(8);
+    localView2.setVisibility(View.GONE);
     addView(localView2);
     TypedArray localTypedArray = paramContext.obtainStyledAttributes(paramAttributeSet, R.styleable.ContentFrame);
     int i = localTypedArray.getResourceId(0, 0);
@@ -56,8 +56,12 @@ public class ContentFrame
   }
 }
 
-
-/* Location:           F:\apktool\apktool\Google_Play_Store6.0.5\classes-dex2jar.jar
- * Qualified Name:     com.google.android.finsky.layout.ContentFrame
- * JD-Core Version:    0.7.0.1
+
+
+/* Location:           F:\apktool\apktool\Google_Play_Store6.0.5\classes-dex2jar.jar
+
+ * Qualified Name:     com.google.android.finsky.layout.ContentFrame
+
+ * JD-Core Version:    0.7.0.1
+
  */

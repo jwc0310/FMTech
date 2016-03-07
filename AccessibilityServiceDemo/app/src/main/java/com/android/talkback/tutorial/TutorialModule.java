@@ -31,10 +31,10 @@ import android.view.accessibility.AccessibilityEvent;
 import android.widget.Button;
 import android.widget.FrameLayout;
 import android.widget.TextView;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.android.talkback.controller.CursorController;
+
 import com.android.talkback.controller.GestureController;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
+import com.android.talkback.controller.CursorController;
 
 /**
  * Abstract class that represents a single module within a tutorial.
@@ -68,26 +68,26 @@ abstract class TutorialModule extends FrameLayout implements OnClickListener {
 
         final LayoutInflater inflater = mParentTutorial.getLayoutInflater();
         final View container = inflater.inflate(
-                R.layout.tutorial_container, this, true);
+                com.mpfa.empf.R.layout.tutorial_container, this, true);
 
-        mInstructions = (TextView) container.findViewById(R.id.instructions);
-        mSkip = (Button) container.findViewById(R.id.skip_button);
+        mInstructions = (TextView) container.findViewById(com.mpfa.empf.R.id.instructions);
+        mSkip = (Button) container.findViewById(com.mpfa.empf.R.id.skip_button);
         mSkip.setOnClickListener(this);
-        mBack = (Button) container.findViewById(R.id.back_button);
+        mBack = (Button) container.findViewById(com.mpfa.empf.R.id.back_button);
         mBack.setOnClickListener(this);
-        mNext = (Button) container.findViewById(R.id.next_button);
+        mNext = (Button) container.findViewById(com.mpfa.empf.R.id.next_button);
         mNext.setOnClickListener(this);
-        mFinish = (Button) container.findViewById(R.id.finish_button);
+        mFinish = (Button) container.findViewById(com.mpfa.empf.R.id.finish_button);
         mFinish.setOnClickListener(this);
 
-        final TextView title = (TextView) container.findViewById(R.id.title);
+        final TextView title = (TextView) container.findViewById(com.mpfa.empf.R.id.title);
 
         if (title != null) {
             title.setText(titleResId);
         }
 
         if (layoutResId != -1) {
-            final ViewGroup contentHolder = (ViewGroup) container.findViewById(R.id.content);
+            final ViewGroup contentHolder = (ViewGroup) container.findViewById(com.mpfa.empf.R.id.content);
 
             // Inflate the tutorial module content while dropping certain accessibility events
             // A delegate used to drop accessibility events related to AbsListView's
@@ -184,10 +184,10 @@ abstract class TutorialModule extends FrameLayout implements OnClickListener {
             parentActivity.stopRepeating();
 
             final String title = parentActivity.getString(
-                    R.string.accessibility_tutorial_missing_assignment_title);
+                    com.mpfa.empf.R.string.accessibility_tutorial_missing_assignment_title);
             final String actionLabel = gestureController.gestureFromAction(action);
             final String message = parentActivity.getString(
-                    R.string.accessibility_tutorial_missing_assignment_message, actionLabel);
+                    com.mpfa.empf.R.string.accessibility_tutorial_missing_assignment_message, actionLabel);
 
             parentActivity.showAlertDialogAndFinish(title, message);
         }
@@ -228,13 +228,13 @@ abstract class TutorialModule extends FrameLayout implements OnClickListener {
 
     @Override
     public void onClick(View v) {
-        if (v.getId() == R.id.skip_button) {
+        if (v.getId() == com.mpfa.empf.R.id.skip_button) {
             mParentTutorial.finish();
-        } else if (v.getId() == R.id.back_button) {
+        } else if (v.getId() == com.mpfa.empf.R.id.back_button) {
             mParentTutorial.previous();
-        } else if (v.getId() == R.id.next_button) {
+        } else if (v.getId() == com.mpfa.empf.R.id.next_button) {
             mParentTutorial.next();
-        } else if (v.getId() == R.id.finish_button) {
+        } else if (v.getId() == com.mpfa.empf.R.id.finish_button) {
             mParentTutorial.finish();
         }
     }

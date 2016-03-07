@@ -28,10 +28,9 @@ import android.text.style.URLSpan;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.fmtech.empf.service.MyAccessibilityService;
+import com.mpfa.empf.service.MyAccessibilityService;
 import com.android.talkback.contextmenu.ContextMenuItem;
 import com.android.talkback.contextmenu.ContextMenuItemBuilder;
-import com.fmtech.accessibilityservicedemo.R;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -94,7 +93,7 @@ public class RuleSpannables implements NodeMenuRule {
 
     @Override
     public CharSequence getUserFriendlyMenuName(Context context) {
-        return context.getString(R.string.links);
+        return context.getString(com.mpfa.empf.R.string.links);
     }
 
     @Override

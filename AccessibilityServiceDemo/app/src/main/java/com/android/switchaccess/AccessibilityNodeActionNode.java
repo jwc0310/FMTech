@@ -23,7 +23,6 @@ import android.graphics.Rect;
 import android.os.Build;
 import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
 import com.android.utils.PerformActionUtils;
-import com.fmtech.accessibilityservicedemo.R;
 
 import java.util.Collections;
 import java.util.HashSet;
@@ -110,13 +109,13 @@ public class AccessibilityNodeActionNode extends OptionScanActionNode {
         int id = mAction.getId();
         switch (id) {
             case AccessibilityNodeInfoCompat.ACTION_CLICK:
-                return context.getResources().getString(R.string.action_name_click);
+                return context.getResources().getString(com.mpfa.empf.R.string.action_name_click);
             case AccessibilityNodeInfoCompat.ACTION_LONG_CLICK:
-                return context.getResources().getString(R.string.action_name_long_click);
+                return context.getResources().getString(com.mpfa.empf.R.string.action_name_long_click);
             case AccessibilityNodeInfoCompat.ACTION_SCROLL_BACKWARD:
-                return context.getResources().getString(R.string.action_name_scroll_backward);
+                return context.getResources().getString(com.mpfa.empf.R.string.action_name_scroll_backward);
             case AccessibilityNodeInfoCompat.ACTION_SCROLL_FORWARD:
-                return context.getResources().getString(R.string.action_name_scroll_forward);
+                return context.getResources().getString(com.mpfa.empf.R.string.action_name_scroll_forward);
             default:
                 return null;
         }

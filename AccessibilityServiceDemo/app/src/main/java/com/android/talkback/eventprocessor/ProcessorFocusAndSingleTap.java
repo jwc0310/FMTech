@@ -32,8 +32,8 @@ import android.view.accessibility.AccessibilityManager;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.webkit.WebView;
 import android.widget.EditText;
+
 import com.android.talkback.SpeechController;
-import com.android.talkback.controller.CursorController;
 import com.android.talkback.controller.FeedbackController;
 import com.android.talkback.tutorial.AccessibilityTutorialActivity;
 import com.android.utils.AccessibilityEventListener;
@@ -46,8 +46,8 @@ import com.android.utils.WebInterfaceUtils;
 import com.android.utils.compat.accessibilityservice.AccessibilityServiceCompatUtils;
 import com.android.utils.traversal.OrderedTraversalStrategy;
 import com.android.utils.traversal.TraversalStrategy;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
+import com.android.talkback.controller.CursorController;
 
 import java.util.ArrayDeque;
 import java.util.Iterator;
@@ -820,8 +820,8 @@ public class ProcessorFocusAndSingleTap implements AccessibilityEventListener,
                     break;
                 case EMPTY_TOUCH_AREA:
                     if (!AccessibilityNodeInfoUtils.isSelfOrAncestorFocused(mCachedTouchedNode)) {
-                        mFeedbackController.playHaptic(R.array.view_hovered_pattern);
-                        mFeedbackController.playAuditory(R.raw.view_entered, 1.3f, 1);
+                        mFeedbackController.playHaptic(com.mpfa.empf.R.array.view_hovered_pattern);
+                        mFeedbackController.playAuditory(com.mpfa.empf.R.raw.view_entered, 1.3f, 1);
                     }
 
                     break;

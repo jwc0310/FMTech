@@ -24,10 +24,11 @@ import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
 import android.text.TextUtils;
 import android.util.Log;
 import android.widget.EditText;
-import com.android.utils.AccessibilityNodeInfoUtils;
+
 import com.android.utils.LogUtils;
-import com.android.utils.PerformActionUtils;
 import com.android.utils.WebInterfaceUtils;
+import com.android.utils.AccessibilityNodeInfoUtils;
+import com.android.utils.PerformActionUtils;
 
 import java.util.ArrayList;
 import java.util.HashSet;

@@ -17,6 +17,7 @@
 package com.android.talkback;
 
 import android.text.SpannableStringBuilder;
+
 import com.android.utils.StringBuilderUtils;
 
 import java.util.Collections;

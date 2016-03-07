@@ -22,7 +22,7 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.webkit.WebView;
 
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.R;
 
 public class WebActivity extends Activity {
 

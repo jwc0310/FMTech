@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="com.fmtech.accessibilityservicedemo">
+    package="com.mpfa.empf">
 
     <!-- Required to monitor phone busy state. -->
     <uses-permission android:name="android.permission.READ_PHONE_STATE" />
@@ -40,14 +40,14 @@
         android:required="false" />
 
     <application
-        android:name="com.fmtech.empf.FMApplication"
+        android:name="com.mpfa.empf.FMApplication"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.fmtech.empf.MainActivity"
+            android:name="com.mpfa.empf.MainActivity"
             android:configChanges="locale"
             android:launchMode="singleTask"
             android:theme="@style/AppTheme">
@@ -56,14 +56,14 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.fmtech.empf.ui.activities.SplashActivity">
+        <activity android:name="com.mpfa.empf.ui.activities.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.fmtech.empf.ui.activities.SelectLanguageActivity"
+            android:name="com.mpfa.empf.ui.activities.SelectLanguageActivity"
             android:configChanges="locale"
             android:launchMode="singleTop">
             <intent-filter>
@@ -71,40 +71,40 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.fmtech.empf.ui.activities.GuidanceActivity"
+            android:name="com.mpfa.empf.ui.activities.GuidanceActivity"
             android:configChanges="locale">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.fmtech.empf.ui.activities.LoginActivity"
+        <activity android:name="com.mpfa.empf.ui.activities.LoginActivity"
             android:theme="@style/AppTheme">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.fmtech.empf.ui.activities.FirstLoginActivity">
+        <activity android:name="com.mpfa.empf.ui.activities.FirstLoginActivity">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.fmtech.empf.ui.activities.SelectLoginModeActivity">
+        <activity android:name="com.mpfa.empf.ui.activities.SelectLoginModeActivity">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.fmtech.empf.ui.activities.ForgotPasswordActivity">
+        <activity android:name="com.mpfa.empf.ui.activities.ForgotPasswordActivity">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.fmtech.empf.ui.activities.SignupActivity">
+        <activity android:name="com.mpfa.empf.ui.activities.SignupActivity">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
         <activity
-            android:name="com.fmtech.empf.ui.activities.NewsDetailActivity"
+            android:name="com.mpfa.empf.ui.activities.NewsDetailActivity"
             android:theme="@style/AppTheme">
             <intent-filter>
                 <category android:name="android.intent.category.DEFAULT" />
@@ -126,7 +126,7 @@
         </activity>
 
         <service
-            android:name="com.fmtech.empf.service.MyAccessibilityService"
+            android:name="com.mpfa.empf.service.MyAccessibilityService"
             android:permission="android.permission.BIND_ACCESSIBILITY_SERVICE">
             <intent-filter>
                 <action android:name="android.accessibilityservice.AccessibilityService" />

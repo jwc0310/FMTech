@@ -22,12 +22,12 @@ import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
 import android.text.TextUtils;
 import android.view.accessibility.AccessibilityEvent;
 import android.widget.ImageView;
-import com.fmtech.empf.service.MyAccessibilityService;
+import com.mpfa.empf.service.MyAccessibilityService;
 import com.android.utils.AccessibilityNodeInfoUtils;
 import com.android.utils.StringBuilderUtils;
 import com.android.utils.labeling.CustomLabelManager;
 import com.android.utils.labeling.Label;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.R;
 
 /**
  * Processes image widgets.

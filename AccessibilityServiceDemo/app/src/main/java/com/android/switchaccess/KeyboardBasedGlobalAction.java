@@ -18,7 +18,7 @@ package com.android.switchaccess;
 
 import android.accessibilityservice.AccessibilityService;
 
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.R;
 
 /**
  * Enum that associates preferences with global actions.

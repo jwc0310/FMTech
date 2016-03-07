@@ -24,11 +24,9 @@ import android.util.Log;
 import android.view.accessibility.AccessibilityEvent;
 
 import com.android.talkback.FeedbackItem;
-
 import com.android.talkback.SpeechController;
-import com.android.talkback.eventprocessor.EventState;
-import com.fmtech.empf.service.MyAccessibilityService;
 import com.android.talkback.Utterance;
+import com.android.talkback.eventprocessor.EventState;
 import com.android.talkback.speechrules.NodeSpeechRuleProcessor;
 import com.android.utils.AccessibilityEventListener;
 import com.android.utils.AccessibilityEventUtils;
@@ -36,7 +34,7 @@ import com.android.utils.AccessibilityNodeInfoUtils;
 import com.android.utils.LogUtils;
 import com.android.utils.traversal.SimpleTraversalStrategy;
 import com.android.utils.traversal.TraversalStrategy;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
 
 /**
  * This class is a formatter for handling touch exploration events. Current
@@ -205,9 +203,9 @@ public final class TouchExplorationFormatter
             mLastNodeWasScrollable = userCanScroll;
 
             if (userCanScroll) {
-                utterance.addAuditory(R.raw.chime_up);
+                utterance.addAuditory(com.mpfa.empf.R.raw.chime_up);
             } else {
-                utterance.addAuditory(R.raw.chime_down);
+                utterance.addAuditory(com.mpfa.empf.R.raw.chime_down);
             }
         }
 
@@ -220,7 +218,7 @@ public final class TouchExplorationFormatter
         try {
             if (userCanScroll &&
                     AccessibilityNodeInfoUtils.isEdgeListItem(announcedNode, traversalStrategy)) {
-                utterance.addAuditory(R.raw.scroll_more);
+                utterance.addAuditory(com.mpfa.empf.R.raw.scroll_more);
             }
         } finally {
             traversalStrategy.recycle();
@@ -229,11 +227,11 @@ public final class TouchExplorationFormatter
 
         // Actionable items provide different feedback than non-actionable ones.
         if (AccessibilityNodeInfoUtils.isActionableForAccessibility(announcedNode)) {
-            utterance.addAuditory(R.raw.focus_actionable);
-            utterance.addHaptic(R.array.view_actionable_pattern);
+            utterance.addAuditory(com.mpfa.empf.R.raw.focus_actionable);
+            utterance.addHaptic(com.mpfa.empf.R.array.view_actionable_pattern);
         } else {
-            utterance.addAuditory(R.raw.focus);
-            utterance.addHaptic(R.array.view_hovered_pattern);
+            utterance.addAuditory(com.mpfa.empf.R.raw.focus);
+            utterance.addHaptic(com.mpfa.empf.R.array.view_hovered_pattern);
         }
     }
 }

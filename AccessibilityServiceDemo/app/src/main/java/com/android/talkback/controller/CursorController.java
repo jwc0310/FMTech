@@ -17,6 +17,7 @@
 package com.android.talkback.controller;
 
 import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
+
 import com.android.talkback.CursorGranularity;
 
 /**

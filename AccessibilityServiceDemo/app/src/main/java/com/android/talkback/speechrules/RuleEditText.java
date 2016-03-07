@@ -25,12 +25,13 @@ import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityWindowInfo;
 import android.widget.EditText;
 
-import com.android.utils.AccessibilityNodeInfoUtils;
 import com.android.utils.StringBuilderUtils;
-import com.android.utils.WindowManager;
 import com.android.utils.compat.provider.SettingsCompatUtils;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
+import com.android.utils.AccessibilityNodeInfoUtils;
+import com.android.utils.WindowManager;
+
+import com.mpfa.empf.R;
 
 import java.util.List;
 

@@ -29,12 +29,12 @@ import android.text.SpannableStringBuilder;
 import android.text.format.DateFormat;
 import android.text.format.DateUtils;
 import android.util.Log;
+
 import com.android.talkback.contextmenu.MenuManager;
 import com.android.talkback.controller.FeedbackController;
 import com.android.utils.LogUtils;
 import com.android.utils.StringBuilderUtils;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
 
 // TODO(CB): Refactor this class into two separate receivers
 // with listener interfaces. This will remove the need to hold dependencies
@@ -137,7 +137,7 @@ public class RingerModeAndScreenMonitor extends BroadcastReceiver {
      */
     private void handleDeviceUnlocked() {
         if (isIdle()) {
-            final String text = mContext.getString(R.string.value_device_unlocked);
+            final String text = mContext.getString(com.mpfa.empf.R.string.value_device_unlocked);
             mSpeechController.speak(text, SpeechController.QUEUE_MODE_INTERRUPT, 0, null);
         }
     }
@@ -151,7 +151,7 @@ public class RingerModeAndScreenMonitor extends BroadcastReceiver {
         mSpeechController.setScreenIsOn(false);
         mMenuManager.dismissAll();
         final SpannableStringBuilder builder =
-                new SpannableStringBuilder(mContext.getString(R.string.value_screen_off));
+                new SpannableStringBuilder(mContext.getString(com.mpfa.empf.R.string.value_screen_off));
         // Only announce ringer state if we're not in a call.
         if (isIdle()) {
             appendRingerStateAnnouncement(builder);
@@ -171,11 +171,11 @@ public class RingerModeAndScreenMonitor extends BroadcastReceiver {
                 // interruption of music on JB). Adjust playback volume to
                 // compensate for music volume.
                 final float ringVolume = getStreamVolume(AudioManager.STREAM_RING);
-                soundId = R.raw.volume_beep;
+                soundId = com.mpfa.empf.R.raw.volume_beep;
                 volume = Math.min(1.0f, (ringVolume / musicVolume));
             } else {
                 // Normally we'll play the volume beep on the ring stream.
-                soundId = R.raw.volume_beep;
+                soundId = com.mpfa.empf.R.raw.volume_beep;
                 volume = 1.0f;
             }
 
@@ -203,7 +203,7 @@ public class RingerModeAndScreenMonitor extends BroadcastReceiver {
                     appendCurrentTimeAnnouncement(builder);
             } else {
                 // Device is not ready, just speak screen on
-                builder.append(mContext.getString(R.string.value_screen_on));
+                builder.append(mContext.getString(com.mpfa.empf.R.string.value_screen_on));
             }
         }
 
@@ -261,10 +261,10 @@ public class RingerModeAndScreenMonitor extends BroadcastReceiver {
 
         switch (mRingerMode) {
             case AudioManager.RINGER_MODE_SILENT:
-                announcement = mContext.getString(R.string.value_ringer_silent);
+                announcement = mContext.getString(com.mpfa.empf.R.string.value_ringer_silent);
                 break;
             case AudioManager.RINGER_MODE_VIBRATE:
-                announcement = mContext.getString(R.string.value_ringer_vibrate);
+                announcement = mContext.getString(com.mpfa.empf.R.string.value_ringer_vibrate);
                 break;
             case AudioManager.RINGER_MODE_NORMAL:
                 return;

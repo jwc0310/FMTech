@@ -198,7 +198,7 @@
       <!--<ss:eventType>TYPE_VIEW_SELECTED</ss:eventType>-->
     <!--</ss:filter>-->
     <!--<ss:formatter>-->
-      <!--<ss:custom>com.android.talkback.formatter.FallbackFormatter</ss:custom>-->
+      <!--<ss:custom>FallbackFormatter</ss:custom>-->
     <!--</ss:formatter>-->
   <!--</ss:rule>-->
 

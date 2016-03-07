@@ -32,8 +32,8 @@ import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityManager;
 import android.widget.Button;
 import android.widget.TextView;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+
+import com.mpfa.empf.service.MyAccessibilityService;
 
 public class KeyboardShortcutDialogPreference extends DialogPreference
         implements DialogInterface.OnKeyListener {
@@ -100,7 +100,7 @@ public class KeyboardShortcutDialogPreference extends DialogPreference
 
     private void init() {
         setPersistent(true);
-        setDialogLayoutResource(R.layout.keyboard_shortcut_dialog);
+        setDialogLayoutResource(com.mpfa.empf.R.layout.keyboard_shortcut_dialog);
         if (MyAccessibilityService.getInstance() != null) {
             mKeyComboManager = MyAccessibilityService.getInstance().getKeyComboManager();
         } else {
@@ -139,8 +139,8 @@ public class KeyboardShortcutDialogPreference extends DialogPreference
         super.onBindDialogView(view);
 
         mTemporaryKeyComboCode = mKeyComboManager.getKeyComboCodeForKey(getKey());
-        mKeyAssignmentView = (TextView) view.findViewById(R.id.assigned_combination);
-        mInstructionText = (TextView) view.findViewById(R.id.instruction);
+        mKeyAssignmentView = (TextView) view.findViewById(com.mpfa.empf.R.id.assigned_combination);
+        mInstructionText = (TextView) view.findViewById(com.mpfa.empf.R.id.instruction);
         updateKeyAssignmentText();
 
         mKeyComboManager.setMatchKeyCombo(false);
@@ -158,7 +158,7 @@ public class KeyboardShortcutDialogPreference extends DialogPreference
             return;
         }
 
-        View clear = alertDialog.findViewById(R.id.clear);
+        View clear = alertDialog.findViewById(com.mpfa.empf.R.id.clear);
         clear.setOnClickListener(mClearButtonClickListener);
         alertDialog.getButton(DialogInterface.BUTTON_POSITIVE)
                 .setOnClickListener(mOkButtonClickListener);
@@ -255,10 +255,10 @@ public class KeyboardShortcutDialogPreference extends DialogPreference
 
     private void showOverrideKeyComboDialog(CharSequence currentAction, CharSequence newAction,
                                             final DialogInterface.OnClickListener clickListener) {
-        String message = getContext().getString(R.string.override_keycombo_message_two_params,
+        String message = getContext().getString(com.mpfa.empf.R.string.override_keycombo_message_two_params,
                 currentAction, newAction);
         AlertDialog.Builder builder = new AlertDialog.Builder(getContext());
-        builder.setTitle(R.string.override_keycombo)
+        builder.setTitle(com.mpfa.empf.R.string.override_keycombo)
                 .setMessage(message)
                 .setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int which) {

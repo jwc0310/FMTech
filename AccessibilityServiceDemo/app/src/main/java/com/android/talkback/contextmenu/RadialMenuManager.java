@@ -27,13 +27,14 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MenuItem.OnMenuItemClickListener;
 import android.view.WindowManager;
+
+import com.android.utils.widget.SimpleOverlay;
 import com.android.talkback.SpeechController;
 import com.android.talkback.controller.FeedbackController;
 import com.android.talkback.tutorial.AccessibilityTutorialActivity;
 import com.android.talkback.tutorial.ContextMenuMonitor;
-import com.android.utils.widget.SimpleOverlay;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
+import com.mpfa.empf.R;
 
 public class RadialMenuManager implements MenuManager {
     /** Delay in milliseconds before speaking the radial menu usage hint. */

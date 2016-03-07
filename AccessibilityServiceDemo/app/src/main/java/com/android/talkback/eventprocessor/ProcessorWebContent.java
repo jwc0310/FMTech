@@ -22,14 +22,14 @@ import android.support.v4.view.accessibility.AccessibilityEventCompat;
 import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
 import android.support.v4.view.accessibility.AccessibilityRecordCompat;
 import android.view.accessibility.AccessibilityEvent;
+
 import com.android.talkback.SpeechController;
 import com.android.talkback.controller.FullScreenReadController;
 import com.android.utils.AccessibilityEventListener;
 import com.android.utils.AccessibilityEventUtils;
 import com.android.utils.AutomationUtils;
 import com.android.utils.WebInterfaceUtils;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
 
 /**
  * Processor for speaking web content (e.g. anything that support HTML element
@@ -102,7 +102,7 @@ public class ProcessorWebContent implements AccessibilityEventListener {
                     mService, PACKAGE_SETTINGS, RES_NAME_SCRIPT_INJECTION_TITLE);
             if (preferenceName != null) {
                 final CharSequence announcement = mService.getString(
-                        R.string.hint_script_injection, preferenceName);
+                        com.mpfa.empf.R.string.hint_script_injection, preferenceName);
                 mService.getSpeechController().speak(
                         announcement, SpeechController.QUEUE_MODE_INTERRUPT, 0, null);
             }

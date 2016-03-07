@@ -19,10 +19,10 @@ package com.android.talkback.contextmenu;
 import android.content.Intent;
 import android.support.v4.content.LocalBroadcastManager;
 import android.view.MenuItem;
+
 import com.android.talkback.TalkBackPreferencesActivity;
 import com.android.talkback.tutorial.ContextMenuMonitor;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
 
 public class ContextMenuItemClickProcessor {
 
@@ -39,22 +39,22 @@ public class ContextMenuItemClickProcessor {
         }
 
         final int itemId = menuItem.getItemId();
-        if (itemId == R.id.read_from_top) {
+        if (itemId == com.mpfa.empf.R.id.read_from_top) {
             mService.getFullScreenReadController().startReadingFromBeginning();
-        } else if (itemId == R.id.read_from_current) {
+        } else if (itemId == com.mpfa.empf.R.id.read_from_current) {
             mService.getFullScreenReadController().startReadingFromNextNode();
-        } else if (itemId == R.id.repeat_last_utterance) {
+        } else if (itemId == com.mpfa.empf.R.id.repeat_last_utterance) {
             mService.getSpeechController().repeatLastUtterance();
-        } else if (itemId == R.id.spell_last_utterance) {
+        } else if (itemId == com.mpfa.empf.R.id.spell_last_utterance) {
             mService.getSpeechController().spellLastUtterance();
-        } else if (itemId == R.id.pause_feedback) {
+        } else if (itemId == com.mpfa.empf.R.id.pause_feedback) {
             mService.requestSuspendTalkBack();
-        } else if (itemId == R.id.talkback_settings) {
+        } else if (itemId == com.mpfa.empf.R.id.talkback_settings) {
             final Intent settingsIntent = new Intent(mService, TalkBackPreferencesActivity.class);
             settingsIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             settingsIntent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
             mService.startActivity(settingsIntent);
-        } else if (itemId == R.id.tts_settings) {
+        } else if (itemId == com.mpfa.empf.R.id.tts_settings) {
             Intent intent = new Intent();
             intent.setAction("com.android.settings.TTS_SETTINGS");
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.fmtech.empf.ui.component.ItemHomeTab xmlns:android="http://schemas.android.com/apk/res/android"
+<com.mpfa.empf.ui.component.ItemHomeTab xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -16,7 +16,7 @@
         android:textColor="@color/item_home_tab_color"
         android:text="Personal\nAccount"/>
 
-    <com.fmtech.empf.ui.component.MessageReminder
+    <com.mpfa.empf.ui.component.MessageReminder
         android:id="@+id/home_tab_message_reminder"
         android:layout_width="wrap_content"
         android:layout_height="20dp"
@@ -53,5 +53,5 @@
             android:textColor="#ffFFFFFF"
             android:textSize="13sp" />
         <!--android:layout_marginTop="-3dp"-->
-    </com.fmtech.empf.ui.component.MessageReminder>
-</com.fmtech.empf.ui.component.ItemHomeTab>
+    </com.mpfa.empf.ui.component.MessageReminder>
+</com.mpfa.empf.ui.component.ItemHomeTab>

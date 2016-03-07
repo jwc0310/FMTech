@@ -24,9 +24,8 @@ import android.text.TextUtils;
 import android.view.accessibility.AccessibilityEvent;
 import android.widget.RemoteViews;
 
-import com.fmtech.empf.service.MyAccessibilityService;
+import com.mpfa.empf.service.MyAccessibilityService;
 import com.android.talkback.Utterance;
-import com.fmtech.accessibilityservicedemo.R;
 
 import java.util.Iterator;
 import java.util.LinkedList;
@@ -200,28 +199,28 @@ public class NotificationFormatter implements EventSpeechRule.AccessibilityEvent
     private CharSequence getTypeText(Context context, Notification notification) {
         switch (notification.icon) {
             case android.R.drawable.stat_notify_missed_call:
-                return context.getResources().getString(R.string.notification_type_missed_call);
+                return context.getResources().getString(com.mpfa.empf.R.string.notification_type_missed_call);
             case android.R.drawable.stat_notify_call_mute:
-                return context.getResources().getString(R.string.notification_type_status_mute);
+                return context.getResources().getString(com.mpfa.empf.R.string.notification_type_status_mute);
             case android.R.drawable.stat_notify_chat:
-                return context.getResources().getString(R.string.notification_type_status_chat);
+                return context.getResources().getString(com.mpfa.empf.R.string.notification_type_status_chat);
             case android.R.drawable.stat_notify_error:
-                return context.getResources().getString(R.string.notification_type_status_error);
+                return context.getResources().getString(com.mpfa.empf.R.string.notification_type_status_error);
             case android.R.drawable.stat_notify_more:
-                return context.getResources().getString(R.string.notification_type_status_more);
+                return context.getResources().getString(com.mpfa.empf.R.string.notification_type_status_more);
             case android.R.drawable.stat_notify_sdcard:
-                return context.getResources().getString(R.string.notification_type_status_sdcard);
+                return context.getResources().getString(com.mpfa.empf.R.string.notification_type_status_sdcard);
             case android.R.drawable.stat_notify_sdcard_usb:
                 return context.getResources().getString(
-                        R.string.notification_type_status_sdcard_usb);
+                        com.mpfa.empf.R.string.notification_type_status_sdcard_usb);
             case android.R.drawable.stat_notify_sync:
-                return context.getResources().getString(R.string.notification_status_sync);
+                return context.getResources().getString(com.mpfa.empf.R.string.notification_status_sync);
             case android.R.drawable.stat_notify_sync_noanim:
                 return context.getResources().getString(
-                        R.string.notification_type_status_sync_noanim);
+                        com.mpfa.empf.R.string.notification_type_status_sync_noanim);
             case android.R.drawable.stat_notify_voicemail:
                 return context.getResources().getString(
-                        R.string.notification_type_status_voicemail);
+                        com.mpfa.empf.R.string.notification_type_status_voicemail);
             default:
                 return null;
         }

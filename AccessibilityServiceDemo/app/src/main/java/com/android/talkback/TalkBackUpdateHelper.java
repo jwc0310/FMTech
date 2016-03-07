@@ -36,12 +36,13 @@ import android.support.v4.view.accessibility.AccessibilityRecordCompat;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.accessibility.AccessibilityEvent;
+
 import com.android.utils.AccessibilityEventListener;
-import com.android.utils.AutomationUtils;
 import com.android.utils.LogUtils;
 import com.android.utils.SharedPreferencesUtils;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.android.utils.AutomationUtils;
+import com.mpfa.empf.service.MyAccessibilityService;
+import com.mpfa.empf.R;
 
 import java.util.List;
 

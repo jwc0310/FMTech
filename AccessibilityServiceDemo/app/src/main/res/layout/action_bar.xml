@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.fmtech.empf.ui.component.layout.InsetsFrameLayout
+<com.mpfa.empf.ui.component.layout.InsetsFrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@id/action_bar_container_container"
     android:layout_width="match_parent"
@@ -7,12 +7,12 @@
     android:clipToPadding="true"
     android:fitsSystemWindows="true">
 
-    <com.fmtech.empf.ui.component.layout.MtelToolbar
+    <com.mpfa.empf.ui.component.layout.MtelToolbar
         android:id="@id/mtel_toolbar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <include layout="@layout/toolbar" />
-    </com.fmtech.empf.ui.component.layout.MtelToolbar>
+    </com.mpfa.empf.ui.component.layout.MtelToolbar>
 
-</com.fmtech.empf.ui.component.layout.InsetsFrameLayout>
+</com.mpfa.empf.ui.component.layout.InsetsFrameLayout>

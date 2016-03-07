@@ -19,6 +19,7 @@ package com.android.talkback.eventprocessor;
 import android.support.v4.view.accessibility.AccessibilityEventCompat;
 import android.util.SparseIntArray;
 import android.view.accessibility.AccessibilityEvent;
+
 import com.android.utils.AccessibilityEventUtils;
 
 import java.util.ArrayList;

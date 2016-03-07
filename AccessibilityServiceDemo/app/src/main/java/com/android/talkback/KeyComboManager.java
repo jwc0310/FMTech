@@ -24,8 +24,7 @@ import android.annotation.TargetApi;
 import android.os.Build;
 import android.view.KeyEvent;
 
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -129,39 +128,39 @@ public class KeyComboManager implements MyAccessibilityService.KeyEventListener 
      */
     private void loadCombos() {
         addCombo(ACTION_NAVIGATE_NEXT, mContext.getString(
-                R.string.keycombo_shortcut_navigate_next));
+                com.mpfa.empf.R.string.keycombo_shortcut_navigate_next));
         addCombo(ACTION_NAVIGATE_PREVIOUS, mContext.getString(
-                R.string.keycombo_shortcut_navigate_previous));
+                com.mpfa.empf.R.string.keycombo_shortcut_navigate_previous));
         addCombo(ACTION_NAVIGATE_FIRST, mContext.getString(
-                R.string.keycombo_shortcut_navigate_first));
+                com.mpfa.empf.R.string.keycombo_shortcut_navigate_first));
         addCombo(ACTION_NAVIGATE_LAST, mContext.getString(
-                R.string.keycombo_shortcut_navigate_last));
+                com.mpfa.empf.R.string.keycombo_shortcut_navigate_last));
         addCombo(ACTION_PERFORM_CLICK, mContext.getString(
-                R.string.keycombo_shortcut_perform_click));
+                com.mpfa.empf.R.string.keycombo_shortcut_perform_click));
         addCombo(ACTION_BACK, mContext.getString(
-                R.string.keycombo_shortcut_global_back));
+                com.mpfa.empf.R.string.keycombo_shortcut_global_back));
         addCombo(ACTION_HOME, mContext.getString(
-                R.string.keycombo_shortcut_global_home));
+                com.mpfa.empf.R.string.keycombo_shortcut_global_home));
         addCombo(ACTION_RECENTS, mContext.getString(
-                R.string.keycombo_shortcut_global_recents));
+                com.mpfa.empf.R.string.keycombo_shortcut_global_recents));
         addCombo(ACTION_NOTIFICATION, mContext.getString(
-                R.string.keycombo_shortcut_global_notifications));
+                com.mpfa.empf.R.string.keycombo_shortcut_global_notifications));
         addCombo(ACTION_SUSPEND, mContext.getString(
-                R.string.keycombo_shortcut_global_suspend));
+                com.mpfa.empf.R.string.keycombo_shortcut_global_suspend));
         addCombo(ACTION_GRANULARITY_INCREASE, mContext.getString(
-                R.string.keycombo_shortcut_granularity_increase));
+                com.mpfa.empf.R.string.keycombo_shortcut_granularity_increase));
         addCombo(ACTION_GRANULARITY_DECREASE, mContext.getString(
-                R.string.keycombo_shortcut_granularity_decrease));
+                com.mpfa.empf.R.string.keycombo_shortcut_granularity_decrease));
         addCombo(ACTION_READ_FROM_TOP, mContext.getString(
-                R.string.keycombo_shortcut_other_read_from_top));
+                com.mpfa.empf.R.string.keycombo_shortcut_other_read_from_top));
         addCombo(ACTION_READ_FROM_NEXT_ITEM, mContext.getString(
-                R.string.keycombo_shortcut_other_read_from_next_item));
+                com.mpfa.empf.R.string.keycombo_shortcut_other_read_from_next_item));
         addCombo(ACTION_TOGGLE_SEARCH, mContext.getString(
-                R.string.keycombo_shortcut_other_toggle_search));
+                com.mpfa.empf.R.string.keycombo_shortcut_other_toggle_search));
         addCombo(ACTION_LOCAL_CONTEXT_MENU, mContext.getString(
-                R.string.keycombo_shortcut_other_local_context_menu));
+                com.mpfa.empf.R.string.keycombo_shortcut_other_local_context_menu));
         addCombo(ACTION_GLOBAL_CONTEXT_MENU, mContext.getString(
-                R.string.keycombo_shortcut_other_global_context_menu));
+                com.mpfa.empf.R.string.keycombo_shortcut_other_global_context_menu));
     }
 
     // TODO(KM): Look into ways to add key combos for specific listeners
@@ -180,67 +179,67 @@ public class KeyComboManager implements MyAccessibilityService.KeyEventListener 
             return KEY_COMBO_CODE_UNASSIGNED;
         }
 
-        if (key.equals(mContext.getString(R.string.keycombo_shortcut_navigate_next))) {
+        if (key.equals(mContext.getString(com.mpfa.empf.R.string.keycombo_shortcut_navigate_next))) {
             return getKeyComboCode(KeyEvent.META_ALT_ON | KeyEvent.META_SHIFT_ON,
                     KeyEvent.KEYCODE_DPAD_RIGHT);
         }
 
-        if (key.equals(mContext.getString(R.string.keycombo_shortcut_navigate_previous))) {
+        if (key.equals(mContext.getString(com.mpfa.empf.R.string.keycombo_shortcut_navigate_previous))) {
             return getKeyComboCode(KeyEvent.META_ALT_ON | KeyEvent.META_SHIFT_ON,
                     KeyEvent.KEYCODE_DPAD_LEFT);
         }
 
-        if (key.equals(mContext.getString(R.string.keycombo_shortcut_navigate_first))) {
+        if (key.equals(mContext.getString(com.mpfa.empf.R.string.keycombo_shortcut_navigate_first))) {
             return getKeyComboCode(KeyEvent.META_ALT_ON | KeyEvent.META_SHIFT_ON,
                     KeyEvent.KEYCODE_DPAD_UP);
         }
 
-        if (key.equals(mContext.getString(R.string.keycombo_shortcut_navigate_last))) {
+        if (key.equals(mContext.getString(com.mpfa.empf.R.string.keycombo_shortcut_navigate_last))) {
             return getKeyComboCode(KeyEvent.META_ALT_ON | KeyEvent.META_SHIFT_ON,
                     KeyEvent.KEYCODE_DPAD_DOWN);
         }
 
-        if (key.equals(mContext.getString(R.string.keycombo_shortcut_perform_click))) {
+        if (key.equals(mContext.getString(com.mpfa.empf.R.string.keycombo_shortcut_perform_click))) {
             return getKeyComboCode(KeyEvent.META_ALT_ON | KeyEvent.META_SHIFT_ON,
                     KeyEvent.KEYCODE_ENTER);
         }
 
-        if (key.equals(mContext.getString(R.string.keycombo_shortcut_global_back))) {
+        if (key.equals(mContext.getString(com.mpfa.empf.R.string.keycombo_shortcut_global_back))) {
             return getKeyComboCode(KeyEvent.META_ALT_ON | KeyEvent.META_SHIFT_ON,
                     KeyEvent.KEYCODE_DEL);
         }
 
-        if (key.equals(mContext.getString(R.string.keycombo_shortcut_global_home))) {
+        if (key.equals(mContext.getString(com.mpfa.empf.R.string.keycombo_shortcut_global_home))) {
             return getKeyComboCode(KeyEvent.META_ALT_ON | KeyEvent.META_SHIFT_ON,
                     KeyEvent.KEYCODE_H);
         }
 
-        if (key.equals(mContext.getString(R.string.keycombo_shortcut_global_recents))) {
+        if (key.equals(mContext.getString(com.mpfa.empf.R.string.keycombo_shortcut_global_recents))) {
             return getKeyComboCode(KeyEvent.META_ALT_ON | KeyEvent.META_SHIFT_ON,
                     KeyEvent.KEYCODE_R);
         }
 
-        if (key.equals(mContext.getString(R.string.keycombo_shortcut_global_notifications))) {
+        if (key.equals(mContext.getString(com.mpfa.empf.R.string.keycombo_shortcut_global_notifications))) {
             return getKeyComboCode(KeyEvent.META_ALT_ON | KeyEvent.META_SHIFT_ON,
                     KeyEvent.KEYCODE_N);
         }
 
-        if (key.equals(mContext.getString(R.string.keycombo_shortcut_other_toggle_search))) {
+        if (key.equals(mContext.getString(com.mpfa.empf.R.string.keycombo_shortcut_other_toggle_search))) {
             return getKeyComboCode(KeyEvent.META_ALT_ON | KeyEvent.META_SHIFT_ON,
                     KeyEvent.KEYCODE_SLASH);
         }
 
-        if (key.equals(mContext.getString(R.string.keycombo_shortcut_global_suspend))) {
+        if (key.equals(mContext.getString(com.mpfa.empf.R.string.keycombo_shortcut_global_suspend))) {
             return getKeyComboCode(KeyEvent.META_ALT_ON | KeyEvent.META_SHIFT_ON,
                     KeyEvent.KEYCODE_Z);
         }
 
-        if (key.equals(mContext.getString(R.string.keycombo_shortcut_granularity_increase))) {
+        if (key.equals(mContext.getString(com.mpfa.empf.R.string.keycombo_shortcut_granularity_increase))) {
             return getKeyComboCode(KeyEvent.META_ALT_ON,
                     KeyEvent.KEYCODE_PLUS);
         }
 
-        if (key.equals(mContext.getString(R.string.keycombo_shortcut_granularity_decrease))) {
+        if (key.equals(mContext.getString(com.mpfa.empf.R.string.keycombo_shortcut_granularity_decrease))) {
             return getKeyComboCode(KeyEvent.META_ALT_ON,
                     KeyEvent.KEYCODE_MINUS);
         }
@@ -327,7 +326,7 @@ public class KeyComboManager implements MyAccessibilityService.KeyEventListener 
      */
     public String getKeyComboStringRepresentation(long keyComboCode) {
         if (keyComboCode == KEY_COMBO_CODE_UNASSIGNED) {
-            return mContext.getString(R.string.keycombo_unassigned);
+            return mContext.getString(com.mpfa.empf.R.string.keycombo_unassigned);
         }
 
         int modifier = getModifier(keyComboCode);
@@ -372,7 +371,7 @@ public class KeyComboManager implements MyAccessibilityService.KeyEventListener 
         }
 
         if (sb.length() == 0) {
-            return mContext.getString(R.string.keycombo_unassigned);
+            return mContext.getString(com.mpfa.empf.R.string.keycombo_unassigned);
         }
 
         return sb.toString();

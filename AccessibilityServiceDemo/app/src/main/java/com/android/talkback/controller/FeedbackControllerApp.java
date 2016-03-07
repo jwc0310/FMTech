@@ -33,12 +33,12 @@ import android.os.Vibrator;
 import android.preference.PreferenceManager;
 import android.util.Log;
 import android.util.SparseIntArray;
+
+import com.android.utils.SecureSettingsUtils;
 import com.android.talkback.TalkBackUpdateHelper;
 import com.android.utils.LogUtils;
 import com.android.utils.PackageManagerUtils;
-import com.android.utils.SecureSettingsUtils;
 import com.android.utils.SharedPreferencesUtils;
-import com.fmtech.accessibilityservicedemo.R;
 
 import java.util.HashSet;
 import java.util.Set;
@@ -235,18 +235,18 @@ public class FeedbackControllerApp implements FeedbackController {
             updateHapticFromPreference(prefs);
             updateAuditoryFromPreference(prefs);
             updateVolumeAdjustmentFromPreference(prefs);
-        } else if (key.equals(mContext.getString(R.string.pref_vibration_key))) {
+        } else if (key.equals(mContext.getString(com.mpfa.empf.R.string.pref_vibration_key))) {
             updateHapticFromPreference(prefs);
-        } else if (key.equals(mContext.getString(R.string.pref_soundback_key))) {
+        } else if (key.equals(mContext.getString(com.mpfa.empf.R.string.pref_soundback_key))) {
             updateAuditoryFromPreference(prefs);
-        } else if (key.equals(mContext.getString(R.string.pref_soundback_volume_key))) {
+        } else if (key.equals(mContext.getString(com.mpfa.empf.R.string.pref_soundback_volume_key))) {
             updateVolumeAdjustmentFromPreference(prefs);
         }
     }
 
     private void updateVolumeAdjustmentFromPreference(SharedPreferences prefs) {
         final int adjustment = SharedPreferencesUtils.getIntFromStringPref(prefs, mResources,
-                R.string.pref_soundback_volume_key, R.string.pref_soundback_volume_default);
+                com.mpfa.empf.R.string.pref_soundback_volume_key, com.mpfa.empf.R.string.pref_soundback_volume_default);
 
         setVolumeAdjustment(adjustment / 100.0f);
     }
@@ -259,7 +259,7 @@ public class FeedbackControllerApp implements FeedbackController {
                     mContext, TalkBackUpdateHelper.KICKBACK_PACKAGE);
         } else {
             enabled = SharedPreferencesUtils.getBooleanPref(
-                    prefs, mResources, R.string.pref_vibration_key, R.bool.pref_vibration_default);
+                    prefs, mResources, com.mpfa.empf.R.string.pref_vibration_key, com.mpfa.empf.R.bool.pref_vibration_default);
         }
 
         setHapticEnabled(enabled);
@@ -273,7 +273,7 @@ public class FeedbackControllerApp implements FeedbackController {
                     mContext, TalkBackUpdateHelper.SOUNDBACK_PACKAGE);
         } else {
             enabled = SharedPreferencesUtils.getBooleanPref(
-                    prefs, mResources, R.string.pref_soundback_key, R.bool.pref_soundback_default);
+                    prefs, mResources, com.mpfa.empf.R.string.pref_soundback_key, com.mpfa.empf.R.bool.pref_soundback_default);
         }
 
         setAuditoryEnabled(enabled);

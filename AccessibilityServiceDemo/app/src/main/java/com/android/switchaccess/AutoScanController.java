@@ -20,8 +20,8 @@ import android.content.Context;
 import android.content.SharedPreferences;
 import android.os.Handler;
 import android.preference.PreferenceManager;
+
 import com.android.utils.SharedPreferencesUtils;
-import com.fmtech.accessibilityservicedemo.R;
 
 /**
  * Auto-scanning allows the user to control the phone with one button. The user presses the button
@@ -131,7 +131,7 @@ public class AutoScanController implements OptionManager.FocusClearedListener {
         final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(mContext);
         return (int) (MILLISECONDS_PER_SECOND
                 * SharedPreferencesUtils.getFloatFromStringPref(prefs, mContext.getResources(),
-                R.string.pref_key_auto_scan_time_delay,
-                R.string.pref_auto_scan_time_delay_default_value));
+                com.mpfa.empf.R.string.pref_key_auto_scan_time_delay,
+                com.mpfa.empf.R.string.pref_auto_scan_time_delay_default_value));
     }
 }

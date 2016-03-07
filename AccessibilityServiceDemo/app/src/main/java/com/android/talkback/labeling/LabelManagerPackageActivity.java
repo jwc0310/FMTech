@@ -42,7 +42,6 @@ import com.android.utils.LogUtils;
 import com.android.utils.labeling.Label;
 import com.android.utils.labeling.LabelOperationUtils;
 import com.android.utils.labeling.LabelProviderClient;
-import com.fmtech.accessibilityservicedemo.R;
 
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
@@ -69,7 +68,7 @@ public class LabelManagerPackageActivity extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.label_manager_labels);
+        setContentView(com.mpfa.empf.R.layout.label_manager_labels);
 
         final Intent intent = getIntent();
         if (!intent.hasExtra(EXTRA_PACKAGE_NAME)) {
@@ -93,13 +92,13 @@ public class LabelManagerPackageActivity extends Activity {
             applicationLabel = mPackageName;
         }
 
-        setTitle(getString(R.string.label_manager_package_title, applicationLabel));
+        setTitle(getString(com.mpfa.empf.R.string.label_manager_package_title, applicationLabel));
 
         final ActionBar actionBar = getActionBar();
         actionBar.setIcon(packageIcon);
         actionBar.setDisplayHomeAsUpEnabled(true);
 
-        mLabelList = (ListView) findViewById(R.id.label_list);
+        mLabelList = (ListView) findViewById(com.mpfa.empf.R.id.label_list);
         mLabelProviderClient = new LabelProviderClient(this, LabelProvider.AUTHORITY);
     }
 
@@ -147,7 +146,7 @@ public class LabelManagerPackageActivity extends Activity {
         @Override
         public View getView(int position, View view, ViewGroup parent) {
             if (view == null) {
-                view = mLayoutInflater.inflate(R.layout.label_manager_label_row, null);
+                view = mLayoutInflater.inflate(com.mpfa.empf.R.layout.label_manager_label_row, null);
             }
 
             final Label label = getItem(position);
@@ -155,17 +154,17 @@ public class LabelManagerPackageActivity extends Activity {
                 return view;
             }
 
-            final TextView textView = (TextView) view.findViewById(R.id.label_text);
+            final TextView textView = (TextView) view.findViewById(com.mpfa.empf.R.id.label_text);
             textView.setText(label.getText());
 
-            final TextView timestampView = (TextView) view.findViewById(R.id.label_timestamp);
+            final TextView timestampView = (TextView) view.findViewById(com.mpfa.empf.R.id.label_timestamp);
             final DateFormat dateFormat = new SimpleDateFormat();
             final Date date = new Date(label.getTimestamp());
             final String timestampMessage
-                    = getString(R.string.label_manager_timestamp_text, dateFormat.format(date));
+                    = getString(com.mpfa.empf.R.string.label_manager_timestamp_text, dateFormat.format(date));
             timestampView.setText(timestampMessage);
 
-            final ImageView iconImage = (ImageView) view.findViewById(R.id.icon_image);
+            final ImageView iconImage = (ImageView) view.findViewById(com.mpfa.empf.R.id.icon_image);
             new LoadScreenshotTask(label, iconImage).execute();
 
             view.setOnClickListener(new OnClickListener() {
@@ -207,7 +206,7 @@ public class LabelManagerPackageActivity extends Activity {
         @Override
         protected void onPostExecute(List<Label> result) {
             mLabelList.setAdapter(new LabelAdapter(LabelManagerPackageActivity.this,
-                    R.layout.label_manager_label_row, result));
+                    com.mpfa.empf.R.layout.label_manager_label_row, result));
         }
     }
 

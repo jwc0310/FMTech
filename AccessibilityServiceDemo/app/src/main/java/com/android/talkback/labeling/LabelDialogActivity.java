@@ -46,8 +46,7 @@ import com.android.utils.labeling.CustomLabelManager;
 import com.android.utils.labeling.DirectLabelFetchRequest;
 import com.android.utils.labeling.Label;
 import com.android.utils.labeling.LabelOperationUtils;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
 
 /**
  * A general purpose activity for adding, editing, and removing custom labels.
@@ -176,10 +175,10 @@ public class LabelDialogActivity extends Activity {
     }
 
     private void showAddLabelDialog() {
-        setTheme(R.style.DialogStyle);
+        setTheme(com.mpfa.empf.R.style.DialogStyle);
         final LayoutInflater li = LayoutInflater.from(this);
-        final View dialogView = li.inflate(R.layout.label_addedit_dialog, null);
-        final EditText editField = (EditText) dialogView.findViewById(R.id.label_dialog_edit_text);
+        final View dialogView = li.inflate(com.mpfa.empf.R.layout.label_addedit_dialog, null);
+        final EditText editField = (EditText) dialogView.findViewById(com.mpfa.empf.R.id.label_dialog_edit_text);
         editField.setOnEditorActionListener(mEditActionListener);
         editField.addTextChangedListener(mTextValidator);
 
@@ -199,8 +198,8 @@ public class LabelDialogActivity extends Activity {
 
         final AlertDialog.Builder builder = new AlertDialog.Builder(this)
                 .setView(dialogView)
-                .setMessage(R.string.label_dialog_text)
-                .setTitle(R.string.label_dialog_title_add)
+                .setMessage(com.mpfa.empf.R.string.label_dialog_text)
+                .setTitle(com.mpfa.empf.R.string.label_dialog_title_add)
                 .setPositiveButton(android.R.string.ok, buttonClickListener)
                 .setNegativeButton(android.R.string.cancel, buttonClickListener)
                 .setOnDismissListener(mDismissListener)
@@ -215,10 +214,10 @@ public class LabelDialogActivity extends Activity {
     }
 
     private void showEditLabelDialog(final Label existing) {
-        setTheme(R.style.DialogStyle);
+        setTheme(com.mpfa.empf.R.style.DialogStyle);
         final LayoutInflater li = LayoutInflater.from(this);
-        final View dialogView = li.inflate(R.layout.label_addedit_dialog, null);
-        final EditText editField = (EditText) dialogView.findViewById(R.id.label_dialog_edit_text);
+        final View dialogView = li.inflate(com.mpfa.empf.R.layout.label_addedit_dialog, null);
+        final EditText editField = (EditText) dialogView.findViewById(com.mpfa.empf.R.id.label_dialog_edit_text);
         editField.setText(existing.getText());
         editField.setOnEditorActionListener(mEditActionListener);
         editField.addTextChangedListener(mTextValidator);
@@ -238,8 +237,8 @@ public class LabelDialogActivity extends Activity {
 
         final AlertDialog.Builder builder = new AlertDialog.Builder(this)
                 .setView(dialogView)
-                .setMessage(R.string.label_dialog_text)
-                .setTitle(R.string.label_dialog_title_edit)
+                .setMessage(com.mpfa.empf.R.string.label_dialog_text)
+                .setTitle(com.mpfa.empf.R.string.label_dialog_title_edit)
                 .setPositiveButton(android.R.string.ok, buttonClickListener)
                 .setNegativeButton(android.R.string.cancel, buttonClickListener)
                 .setOnDismissListener(mDismissListener)
@@ -253,15 +252,15 @@ public class LabelDialogActivity extends Activity {
     }
 
     private void showRemoveLabelDialog(final Label existing) {
-        setTheme(R.style.DialogStyle);
+        setTheme(com.mpfa.empf.R.style.DialogStyle);
         final CharSequence appName = getApplicationName(existing.getPackageName());
 
         final CharSequence message;
         if (TextUtils.isEmpty(appName)) {
-            message = getString(R.string.label_remove_dialog_text, existing.getText());
+            message = getString(com.mpfa.empf.R.string.label_remove_dialog_text, existing.getText());
         } else {
             message = getString(
-                    R.string.label_remove_dialog_text_app_name, existing.getText(), appName);
+                    com.mpfa.empf.R.string.label_remove_dialog_text_app_name, existing.getText(), appName);
         }
 
         final OnClickListener buttonClickListener = new OnClickListener() {
@@ -277,7 +276,7 @@ public class LabelDialogActivity extends Activity {
 
         new AlertDialog.Builder(this)
             .setMessage(message)
-            .setTitle(R.string.label_dialog_title_remove)
+            .setTitle(com.mpfa.empf.R.string.label_dialog_title_remove)
             .setPositiveButton(android.R.string.yes, buttonClickListener)
             .setNegativeButton(android.R.string.no, buttonClickListener)
             .setOnDismissListener(mDismissListener)

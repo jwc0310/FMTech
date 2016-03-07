@@ -23,14 +23,14 @@ import android.content.Context;
 import android.os.Build;
 import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
 import android.view.MenuItem;
+
 import com.android.talkback.CursorGranularity;
+import com.android.utils.WebInterfaceUtils;
 import com.android.talkback.CursorGranularityManager;
-import com.fmtech.empf.service.MyAccessibilityService;
+import com.mpfa.empf.service.MyAccessibilityService;
 import com.android.talkback.contextmenu.ContextMenuItem;
 import com.android.talkback.contextmenu.ContextMenuItemBuilder;
 import com.android.talkback.controller.CursorController;
-import com.android.utils.WebInterfaceUtils;
-import com.fmtech.accessibilityservicedemo.R;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -82,9 +82,9 @@ public class RuleGranularity implements NodeMenuRule {
             // special cased as it doesn't fit the semantics of an actual
             // granularity.
             ContextMenuItem specialContent = menuItemBuilder.createMenuItem(service,
-                    Menu.NONE, R.id.pseudo_web_special_content,
+                    Menu.NONE, com.mpfa.empf.R.id.pseudo_web_special_content,
                     Menu.NONE,
-                    service.getString(R.string.granularity_pseudo_web_special_content));
+                    service.getString(com.mpfa.empf.R.string.granularity_pseudo_web_special_content));
             specialContent.setOnMenuItemClickListener(clickListener);
             items.add(specialContent);
         }
@@ -94,7 +94,7 @@ public class RuleGranularity implements NodeMenuRule {
 
     @Override
     public CharSequence getUserFriendlyMenuName(Context context) {
-        return context.getString(R.string.title_granularity);
+        return context.getString(com.mpfa.empf.R.string.title_granularity);
     }
 
     @Override
@@ -125,7 +125,7 @@ public class RuleGranularity implements NodeMenuRule {
 
                 final int itemId = item.getItemId();
 
-                if (itemId == R.id.pseudo_web_special_content) {
+                if (itemId == com.mpfa.empf.R.id.pseudo_web_special_content) {
                     // If the user chooses to enter special web content, notify
                     // ChromeVox that the user entered this navigation mode and
                     // send further navigation movements at the default

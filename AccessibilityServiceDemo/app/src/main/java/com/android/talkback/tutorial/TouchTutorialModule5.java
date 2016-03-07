@@ -34,7 +34,6 @@ import android.widget.EditText;
 import android.widget.LinearLayout;
 import com.android.talkback.CursorGranularity;
 import com.android.talkback.controller.CursorController;
-import com.fmtech.accessibilityservicedemo.R;
 
 /**
  * A tutorial lesson that introduces editing text using the keyboard and the
@@ -232,7 +231,7 @@ class TouchTutorialModule5 extends TutorialModule {
         @Override
         public void afterTextChanged(Editable text) {
             final String editableText = getContext()
-                    .getString(R.string.accessibility_tutorial_lesson_5_editable_text);
+                    .getString(com.mpfa.empf.R.string.accessibility_tutorial_lesson_5_editable_text);
 
             if (text.length() >= MIN_CHARS_TO_TYPE && text.length() < editableText.length()) {
                 mEditText.removeTextChangedListener(this);
@@ -258,11 +257,11 @@ class TouchTutorialModule5 extends TutorialModule {
     private EditText mEditText;
 
     public TouchTutorialModule5(AccessibilityTutorialActivity parentTutorial) {
-        super(parentTutorial, R.layout.tutorial_lesson_5,
-                R.string.accessibility_tutorial_lesson_5_title);
+        super(parentTutorial, com.mpfa.empf.R.layout.tutorial_lesson_5,
+                com.mpfa.empf.R.string.accessibility_tutorial_lesson_5_title);
 
-        mLayout = (LinearLayout) findViewById(R.id.accessibility_tutorial_lesson_5_layout);
-        mEditText = (EditText) findViewById(R.id.accessibility_tutorial_lesson_5_edit_text);
+        mLayout = (LinearLayout) findViewById(com.mpfa.empf.R.id.accessibility_tutorial_lesson_5_layout);
+        mEditText = (EditText) findViewById(com.mpfa.empf.R.id.accessibility_tutorial_lesson_5_edit_text);
 
         setSkipVisible(false);
         setBackVisible(true);
@@ -285,7 +284,7 @@ class TouchTutorialModule5 extends TutorialModule {
         // Reset the text and selection
         mLayout.setAccessibilityDelegate(mIgnoreTextChangesDelegate);
         final String editableText = getContext()
-                .getString(R.string.accessibility_tutorial_lesson_5_editable_text);
+                .getString(com.mpfa.empf.R.string.accessibility_tutorial_lesson_5_editable_text);
         mEditText.clearComposingText();
         mEditText.setText(editableText);
         mEditText.clearFocus();
@@ -302,7 +301,7 @@ class TouchTutorialModule5 extends TutorialModule {
 
     /** The user started the lesson. */
     private void onTrigger0() {
-        addInstruction(R.string.accessibility_tutorial_lesson_5_text_1, true);
+        addInstruction(com.mpfa.empf.R.string.accessibility_tutorial_lesson_5_text_1, true);
 
         // Next trigger: The user focused the edit text.
         mLayout.setAccessibilityDelegate(mEditTextFocusedDelegate);
@@ -310,7 +309,7 @@ class TouchTutorialModule5 extends TutorialModule {
 
     /** The user focused the edit text. */
     private void onTrigger1() {
-        addInstruction(R.string.accessibility_tutorial_lesson_5_text_2, true);
+        addInstruction(com.mpfa.empf.R.string.accessibility_tutorial_lesson_5_text_2, true);
 
         // Next trigger: The user started editing the text.
         mEditText.setOnTouchListener(mEditTextOnTouchListener);
@@ -323,13 +322,13 @@ class TouchTutorialModule5 extends TutorialModule {
     private void onTrigger2() {
         Context context = getContext();
         String localContextMenuDirection = getGestureDirectionForRequiredAction(
-                getContext().getString(R.string.shortcut_value_local_breakout));
+                getContext().getString(com.mpfa.empf.R.string.shortcut_value_local_breakout));
 
-        String cursorControl = context.getString(R.string.title_edittext_controls);
+        String cursorControl = context.getString(com.mpfa.empf.R.string.title_edittext_controls);
         String moveToBeginning =
-                context.getString(R.string.title_edittext_breakout_move_to_beginning);
+                context.getString(com.mpfa.empf.R.string.title_edittext_breakout_move_to_beginning);
 
-        addInstruction(R.string.accessibility_tutorial_lesson_5_text_3, true,
+        addInstruction(com.mpfa.empf.R.string.accessibility_tutorial_lesson_5_text_3, true,
                 localContextMenuDirection, cursorControl, moveToBeginning);
 
         // Next trigger: The user moved the cursor to the beginning of the text.
@@ -340,11 +339,11 @@ class TouchTutorialModule5 extends TutorialModule {
     private void onTrigger3() {
         final Context context = getContext();
         final String localContextMenuDirection = getGestureDirectionForRequiredAction(
-                getContext().getString(R.string.shortcut_value_local_breakout));
-        final String changeGranularity = context.getString(R.string.title_granularity);
-        final String wordGranularity = context.getString(R.string.granularity_word);
+                getContext().getString(com.mpfa.empf.R.string.shortcut_value_local_breakout));
+        final String changeGranularity = context.getString(com.mpfa.empf.R.string.title_granularity);
+        final String wordGranularity = context.getString(com.mpfa.empf.R.string.granularity_word);
 
-        addInstruction(R.string.accessibility_tutorial_lesson_5_text_4, true,
+        addInstruction(com.mpfa.empf.R.string.accessibility_tutorial_lesson_5_text_4, true,
                 localContextMenuDirection, changeGranularity, wordGranularity);
 
         // Next trigger: The user changed to word granularity.
@@ -353,7 +352,7 @@ class TouchTutorialModule5 extends TutorialModule {
 
     /** The user changed to word granularity. */
     private void onTrigger4() {
-        addInstruction(R.string.accessibility_tutorial_lesson_5_text_5, true);
+        addInstruction(com.mpfa.empf.R.string.accessibility_tutorial_lesson_5_text_5, true);
 
         // Next trigger: The user traversed to the end of the text.
         mLayout.setAccessibilityDelegate(mMoveCursorToEndDelegate);
@@ -363,11 +362,11 @@ class TouchTutorialModule5 extends TutorialModule {
     private void onTrigger5() {
         final Context context = getContext();
         final String localContextMenuDirection = getGestureDirectionForRequiredAction(
-                getContext().getString(R.string.shortcut_value_local_breakout));
-        final String cursorControl = context.getString(R.string.title_edittext_controls);
+                getContext().getString(com.mpfa.empf.R.string.shortcut_value_local_breakout));
+        final String cursorControl = context.getString(com.mpfa.empf.R.string.title_edittext_controls);
         final String selectAll = context.getString(android.R.string.selectAll);
 
-        addInstruction(R.string.accessibility_tutorial_lesson_5_text_6, true,
+        addInstruction(com.mpfa.empf.R.string.accessibility_tutorial_lesson_5_text_6, true,
                 localContextMenuDirection, cursorControl, selectAll);
 
         // Next trigger: The user selected all the text in the edit text.
@@ -379,12 +378,12 @@ class TouchTutorialModule5 extends TutorialModule {
         // Reset the text (and selection).
         mLayout.setAccessibilityDelegate(mIgnoreTextChangesDelegate);
         final String editableText = getContext()
-                .getString(R.string.accessibility_tutorial_lesson_5_editable_text);
+                .getString(com.mpfa.empf.R.string.accessibility_tutorial_lesson_5_editable_text);
         mEditText.setText(editableText);
         mEditText.selectAll();
         mLayout.setAccessibilityDelegate(null);
 
-        addInstruction(R.string.accessibility_tutorial_lesson_5_text_7, true);
+        addInstruction(com.mpfa.empf.R.string.accessibility_tutorial_lesson_5_text_7, true);
 
         // Next trigger: The user replaced the text with custom text.
         mEditText.addTextChangedListener(mCustomTextTypedWatcher);
@@ -393,8 +392,8 @@ class TouchTutorialModule5 extends TutorialModule {
     /** The user replaced the text with custom text. */
     private void onTrigger7() {
         // This is the last trigger in this lesson.
-        addInstruction(R.string.accessibility_tutorial_lesson_5_text_8, true,
-                getContext().getString(R.string.accessibility_tutorial_finish));
+        addInstruction(com.mpfa.empf.R.string.accessibility_tutorial_lesson_5_text_8, true,
+                getContext().getString(com.mpfa.empf.R.string.accessibility_tutorial_finish));
     }
 
     private void clearDelegates() {

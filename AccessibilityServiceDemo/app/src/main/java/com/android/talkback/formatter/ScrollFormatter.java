@@ -22,9 +22,10 @@ import android.support.v4.view.accessibility.AccessibilityRecordCompat;
 import android.view.accessibility.AccessibilityEvent;
 
 import com.android.talkback.FeedbackItem;
-import com.fmtech.empf.service.MyAccessibilityService;
 import com.android.talkback.Utterance;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
+
+import com.mpfa.empf.R;
 
 /**
  * Formatter that returns an utterance to announce scrolling.

@@ -27,7 +27,7 @@ import android.preference.PreferenceManager;
 import android.preference.Preference.OnPreferenceChangeListener;
 import android.view.MenuItem;
 
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;

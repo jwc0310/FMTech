@@ -19,8 +19,9 @@ package com.android.talkback.speechrules;
 import android.content.Context;
 import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
 import android.view.accessibility.AccessibilityEvent;
-import com.android.utils.AccessibilityNodeInfoUtils;
+
 import com.android.utils.StringBuilderUtils;
+import com.android.utils.AccessibilityNodeInfoUtils;
 
 
 class RuleSimpleTemplate extends RuleDefault {

@@ -22,7 +22,6 @@ import android.graphics.PointF;
 import android.view.Menu;
 
 import com.android.utils.SparseIterableArray;
-import com.fmtech.accessibilityservicedemo.R;
 
 /**
  * Implements a radial menu with up to four corners.
@@ -92,7 +91,7 @@ public class RadialMenu extends ContextMenu {
             item.setOnMenuItemClickListener(getDefaultListener());
         }
 
-        if (item.getGroupId() == R.id.group_corners) {
+        if (item.getGroupId() == com.mpfa.empf.R.id.group_corners) {
             item.setCorner();
             mCorners.put(item.getOrder(), item);
         } else {

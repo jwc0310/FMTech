@@ -25,12 +25,12 @@ import android.os.Handler;
 import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+
 import com.android.talkback.SpeechController;
-import com.android.talkback.controller.CursorController;
 import com.android.talkback.controller.FeedbackController;
 import com.android.talkback.menurules.NodeMenuRuleProcessor;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
+import com.android.talkback.controller.CursorController;
 
 /**
  * TalkBack-specific implementation of RadialMenuClient.
@@ -56,14 +56,14 @@ public class TalkBackRadialMenuClient implements RadialMenuManager.RadialMenuCli
 
     @Override
     public void onCreateRadialMenu(int menuId, RadialMenu menu) {
-        if (menuId == R.menu.global_context_menu) {
+        if (menuId == com.mpfa.empf.R.menu.global_context_menu) {
             onCreateGlobalContextMenu(menu);
         }
     }
 
     @Override
     public boolean onPrepareRadialMenu(int menuId, RadialMenu menu) {
-        return menuId != R.menu.local_context_menu || onPrepareLocalContextMenu(menu);
+        return menuId != com.mpfa.empf.R.menu.local_context_menu || onPrepareLocalContextMenu(menu);
 
     }
 
@@ -84,11 +84,11 @@ public class TalkBackRadialMenuClient implements RadialMenuManager.RadialMenuCli
     }
 
     private void onCreateGlobalContextMenu(RadialMenu menu) {
-        mMenuInflater.inflate(R.menu.global_context_menu, menu);
-        onCreateQuickNavigationMenuItem(menu.findItem(R.id.quick_navigation));
+        mMenuInflater.inflate(com.mpfa.empf.R.menu.global_context_menu, menu);
+        onCreateQuickNavigationMenuItem(menu.findItem(com.mpfa.empf.R.id.quick_navigation));
 
         // Only show "Repeat last utterance" on useful platforms.
-        menu.removeItem(R.id.repeat_last_utterance);
+        menu.removeItem(com.mpfa.empf.R.id.repeat_last_utterance);
     }
 
     private void onCreateQuickNavigationMenuItem(RadialMenuItem quickNavigationItem) {
@@ -148,7 +148,7 @@ public class TalkBackRadialMenuClient implements RadialMenuManager.RadialMenuCli
         public void onPrevious() {
             if (!mCursorController.previous(false /* shouldWrap */, true /* shouldScroll */,
                     false /*useInputFocusAsPivotIfEmpty*/)) {
-                mFeedbackController.playAuditory(R.raw.complete);
+                mFeedbackController.playAuditory(com.mpfa.empf.R.raw.complete);
             }
         }
 
@@ -156,7 +156,7 @@ public class TalkBackRadialMenuClient implements RadialMenuManager.RadialMenuCli
         public void onNext() {
             if (!mCursorController.next(false /* shouldWrap */, true /* shouldScroll */,
                     false /*useInputFocusAsPivotIfEmpty*/)) {
-                mFeedbackController.playAuditory(R.raw.complete);
+                mFeedbackController.playAuditory(com.mpfa.empf.R.raw.complete);
             }
         }
 
@@ -187,7 +187,7 @@ public class TalkBackRadialMenuClient implements RadialMenuManager.RadialMenuCli
         private final Runnable mHintRunnable = new Runnable() {
             @Override
             public void run() {
-                final String hintText = mContext.getString(R.string.hint_summary_jog_dial);
+                final String hintText = mContext.getString(com.mpfa.empf.R.string.hint_summary_jog_dial);
                 mSpeechController.speak(hintText, SpeechController.QUEUE_MODE_QUEUE,
                         FeedbackItem.FLAG_NO_HISTORY, null);
             }

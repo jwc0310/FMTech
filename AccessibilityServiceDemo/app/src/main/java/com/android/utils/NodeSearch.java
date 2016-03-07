@@ -38,9 +38,10 @@ import android.view.View;
 import android.view.WindowManager;
 import android.view.WindowManager.LayoutParams;
 import android.view.accessibility.AccessibilityNodeInfo;
+
+import com.android.utils.widget.SimpleOverlay;
 import com.android.utils.labeling.CustomLabelManager;
 import com.android.utils.traversal.NodeFocusFinder;
-import com.android.utils.widget.SimpleOverlay;
 
 import java.util.ArrayList;
 import java.util.List;

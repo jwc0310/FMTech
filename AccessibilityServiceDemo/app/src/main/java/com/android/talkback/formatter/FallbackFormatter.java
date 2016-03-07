@@ -23,10 +23,9 @@ import android.text.TextUtils;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.android.talkback.Utterance;
 import com.android.utils.AccessibilityEventUtils;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
+import com.android.talkback.Utterance;
 
 /**
  * Provides formatting for {@link AccessibilityEvent#TYPE_VIEW_FOCUSED} and
@@ -51,16 +50,16 @@ public class FallbackFormatter implements EventSpeechRule.AccessibilityEventForm
         // Add earcons and patterns since the event doesn't have a source node
         switch (event.getEventType()) {
             case AccessibilityEvent.TYPE_VIEW_FOCUSED:
-                utterance.addHaptic(R.array.view_focused_or_selected_pattern);
-                utterance.addAuditory(R.raw.focus_actionable);
+                utterance.addHaptic(com.mpfa.empf.R.array.view_focused_or_selected_pattern);
+                utterance.addAuditory(com.mpfa.empf.R.raw.focus_actionable);
                 break;
             case AccessibilityEvent.TYPE_VIEW_SELECTED:
-                utterance.addHaptic(R.array.view_focused_or_selected_pattern);
-                utterance.addAuditory(R.raw.focus_actionable);
+                utterance.addHaptic(com.mpfa.empf.R.array.view_focused_or_selected_pattern);
+                utterance.addAuditory(com.mpfa.empf.R.raw.focus_actionable);
                 break;
             case AccessibilityEventCompat.TYPE_VIEW_HOVER_ENTER:
-                utterance.addHaptic(R.array.view_hovered_pattern);
-                utterance.addAuditory(R.raw.focus);
+                utterance.addHaptic(com.mpfa.empf.R.array.view_hovered_pattern);
+                utterance.addAuditory(com.mpfa.empf.R.raw.focus);
                 break;
         }
 

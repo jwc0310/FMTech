@@ -31,10 +31,12 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.util.Pair;
 import android.view.accessibility.AccessibilityNodeInfo;
-import com.fmtech.accessibilityservicedemo.BuildConfig;
+
 import com.android.utils.AccessibilityEventListener;
 import com.android.utils.LogUtils;
 import com.android.utils.StringBuilderUtils;
+
+import com.mpfa.empf.BuildConfig;
 
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;

@@ -18,6 +18,7 @@ package com.android.utils.traversal;
 
 import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
 import android.util.Log;
+
 import com.android.utils.LogUtils;
 
 import java.util.ArrayList;

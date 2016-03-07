@@ -26,10 +26,10 @@ import android.text.TextUtils;
 import android.view.accessibility.AccessibilityEvent;
 import android.widget.Switch;
 import android.widget.ToggleButton;
+
 import com.android.utils.AccessibilityEventUtils;
-import com.android.utils.AccessibilityNodeInfoUtils;
 import com.android.utils.StringBuilderUtils;
-import com.fmtech.accessibilityservicedemo.R;
+import com.android.utils.AccessibilityNodeInfoUtils;
 
 /**
  * Formats speech for CompoundButton widgets.
@@ -55,7 +55,7 @@ public class RuleSwitch extends RuleDefault {
         StringBuilderUtils.appendWithSeparator(output, contentDescription);
 
         // Append node or event text
-        final String switchDescription = context.getString(R.string.template_switch,
+        final String switchDescription = context.getString(com.mpfa.empf.R.string.template_switch,
                 (!TextUtils.isEmpty(text)) ? text : "");
         final Spannable spannableSwitchDescription =
                 StringBuilderUtils.createSpannableFromTextWithTemplate(switchDescription, text);
@@ -65,7 +65,7 @@ public class RuleSwitch extends RuleDefault {
         if (TextUtils.isEmpty(text) || AccessibilityNodeInfoUtils.nodeMatchesClassByType(node,
                 ToggleButton.class)) {
             final CharSequence state = context.getString(
-                    node.isChecked() ? R.string.value_checked : R.string.value_not_checked);
+                    node.isChecked() ? com.mpfa.empf.R.string.value_checked : com.mpfa.empf.R.string.value_not_checked);
             StringBuilderUtils.appendWithSeparator(output, state);
         }
 

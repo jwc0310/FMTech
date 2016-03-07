@@ -27,13 +27,14 @@ import android.view.accessibility.AccessibilityEvent;
 import android.widget.SeekBar;
 
 import com.android.talkback.FeedbackItem;
-import com.android.talkback.SpeechController;
-import com.fmtech.empf.service.MyAccessibilityService;
 import com.android.talkback.Utterance;
+import com.android.utils.StringBuilderUtils;
+import com.android.talkback.SpeechController;
+import com.mpfa.empf.service.MyAccessibilityService;
 import com.android.talkback.formatter.EventSpeechRule;
 import com.android.utils.AccessibilityNodeInfoUtils;
-import com.android.utils.StringBuilderUtils;
-import com.fmtech.accessibilityservicedemo.R;
+
+import com.mpfa.empf.R;
 
 /**
  * Formats speech for SeekBar widgets.

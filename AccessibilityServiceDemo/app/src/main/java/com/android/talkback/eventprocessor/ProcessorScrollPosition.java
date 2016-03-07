@@ -25,13 +25,13 @@ import android.util.Log;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
 import android.view.accessibility.AccessibilityRecord;
-import com.android.talkback.SpeechController;
-import com.android.talkback.controller.FullScreenReadController;
+
 import com.android.utils.AccessibilityEventListener;
 import com.android.utils.AccessibilityEventUtils;
+import com.android.talkback.SpeechController;
+import com.android.talkback.controller.FullScreenReadController;
 import com.android.utils.WeakReferenceHandler;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
 
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
@@ -178,12 +178,12 @@ public class ProcessorScrollPosition implements AccessibilityEventListener {
         // invalid, only announce the item at the from index.
         final int toIndex = event.getToIndex() + 1;
         if ((fromIndex == toIndex) || (toIndex <= 0) || (toIndex > itemCount)) {
-            return mContext.getString(R.string.template_scroll_from_count, fromIndex, itemCount);
+            return mContext.getString(com.mpfa.empf.R.string.template_scroll_from_count, fromIndex, itemCount);
         }
 
         // Announce the range of visible items.
         return mContext.getString(
-                R.string.template_scroll_from_to_count, fromIndex, toIndex, itemCount);
+                com.mpfa.empf.R.string.template_scroll_from_to_count, fromIndex, toIndex, itemCount);
     }
 
     private static class ScrollPositionHandler

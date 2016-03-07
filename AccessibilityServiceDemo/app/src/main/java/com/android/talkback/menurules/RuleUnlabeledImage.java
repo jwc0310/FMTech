@@ -26,16 +26,18 @@ import android.util.Pair;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ImageView;
+
 import com.android.talkback.FeedbackItem;
 import com.android.talkback.SpeechController;
-import com.fmtech.empf.service.MyAccessibilityService;
 import com.android.talkback.contextmenu.ContextMenuItem;
 import com.android.talkback.contextmenu.ContextMenuItemBuilder;
 import com.android.utils.AccessibilityNodeInfoUtils;
-import com.android.utils.labeling.CustomLabelManager;
 import com.android.utils.labeling.Label;
 import com.android.utils.labeling.LabelOperationUtils;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
+import com.android.utils.labeling.CustomLabelManager;
+
+import com.mpfa.empf.R;
 
 import java.util.LinkedList;
 import java.util.List;

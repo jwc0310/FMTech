@@ -29,16 +29,16 @@ import android.view.accessibility.AccessibilityNodeInfo;
 import android.view.accessibility.AccessibilityWindowInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.view.inputmethod.InputMethodSubtype;
+
 import com.android.talkback.FeedbackItem;
-import com.android.talkback.SpeechController;
 import com.android.utils.AccessibilityEventListener;
 import com.android.utils.AccessibilityEventUtils;
 import com.android.utils.LogUtils;
 import com.android.utils.SharedPreferencesUtils;
+import com.mpfa.empf.service.MyAccessibilityService;
+import com.android.talkback.SpeechController;
 import com.android.utils.WeakReferenceHandler;
 import com.android.utils.WindowManager;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -117,8 +117,8 @@ public class ProcessorPhoneticLetters implements AccessibilityEventListener {
     private boolean arePhoneticLettersEnabled() {
         return SharedPreferencesUtils.getBooleanPref(
                 mPrefs, mService.getResources(),
-                R.string.pref_phonetic_letters_key,
-                R.bool.pref_phonetic_letters_default);
+                com.mpfa.empf.R.string.pref_phonetic_letters_key,
+                com.mpfa.empf.R.bool.pref_phonetic_letters_default);
     }
 
     private boolean isKeyboardEvent(AccessibilityEvent event) {
@@ -227,7 +227,7 @@ public class ProcessorPhoneticLetters implements AccessibilityEventListener {
             mPhoneticLetters.put(locale, map);
 
             InputStream stream =
-                    mService.getResources().openRawResource(R.raw.phonetic_letters);
+                    mService.getResources().openRawResource(com.mpfa.empf.R.raw.phonetic_letters);
             BufferedReader reader = null;
             try {
                 reader = new BufferedReader(new InputStreamReader(stream, "UTF-8"));

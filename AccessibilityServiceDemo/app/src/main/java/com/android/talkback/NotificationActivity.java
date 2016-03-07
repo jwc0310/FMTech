@@ -25,8 +25,8 @@ import android.content.DialogInterface.OnClickListener;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Log;
+
 import com.android.utils.LogUtils;
-import com.fmtech.accessibilityservicedemo.R;
 
 public class NotificationActivity extends Activity {
 
@@ -76,7 +76,7 @@ public class NotificationActivity extends Activity {
         final int buttonRes = extras.getInt(EXTRA_INT_DIALOG_BUTTON, -1);
 
         final CharSequence dialogTitle = (titleRes != -1) ? getString(titleRes)
-                : getString(R.string.app_name);
+                : getString(com.mpfa.empf.R.string.app_name);
         final CharSequence dialogMessage = (messageRes != -1) ? getString(messageRes) : null;
         final CharSequence acceptButtonText = (buttonRes != -1) ? getString(buttonRes)
                 : getString(android.R.string.ok);

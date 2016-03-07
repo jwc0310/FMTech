@@ -20,8 +20,7 @@ import android.content.Context;
 import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
 import android.view.MenuInflater;
 import com.android.talkback.menurules.NodeMenuRuleProcessor;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
 
 public class ListMenuPreparer {
 
@@ -32,11 +31,11 @@ public class ListMenuPreparer {
     }
 
     public void prepareMenu(ListMenu menu, int menuId) {
-        if (menuId == R.menu.global_context_menu) {
-            new MenuInflater(mContext).inflate(R.menu.global_context_menu, menu);
-            menu.removeItem(R.id.quick_navigation);
-            menu.setTitle(mContext.getString(R.string.global_context_menu_title));
-        } else if (menuId == R.menu.local_context_menu) {
+        if (menuId == com.mpfa.empf.R.menu.global_context_menu) {
+            new MenuInflater(mContext).inflate(com.mpfa.empf.R.menu.global_context_menu, menu);
+            menu.removeItem(com.mpfa.empf.R.id.quick_navigation);
+            menu.setTitle(mContext.getString(com.mpfa.empf.R.string.global_context_menu_title));
+        } else if (menuId == com.mpfa.empf.R.menu.local_context_menu) {
             MyAccessibilityService service = MyAccessibilityService.getInstance();
             if (service == null) {
                 return;
@@ -51,7 +50,7 @@ public class ListMenuPreparer {
             NodeMenuRuleProcessor menuRuleProcessor = new NodeMenuRuleProcessor(service);
             menuRuleProcessor.prepareMenuForNode(menu, currentNode);
             currentNode.recycle();
-            menu.setTitle(mContext.getString(R.string.local_context_menu_title));
+            menu.setTitle(mContext.getString(com.mpfa.empf.R.string.local_context_menu_title));
         }
     }
 }

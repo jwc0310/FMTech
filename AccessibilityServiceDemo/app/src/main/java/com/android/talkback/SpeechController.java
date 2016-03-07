@@ -33,6 +33,7 @@ import android.speech.tts.TextToSpeech.Engine;
 import android.text.SpannableStringBuilder;
 import android.text.TextUtils;
 import android.util.Log;
+
 import com.android.talkback.controller.FeedbackController;
 import com.android.utils.FailoverTextToSpeech;
 import com.android.utils.LogUtils;
@@ -40,8 +41,7 @@ import com.android.utils.ProximitySensor;
 import com.android.utils.SharedPreferencesUtils;
 import com.android.utils.StringBuilderUtils;
 import com.android.utils.compat.media.AudioSystemCompatUtils;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
 
 import java.util.HashMap;
 import java.util.Iterator;
@@ -369,7 +369,7 @@ public class SpeechController {
             return;
         }
 
-        final String text = mService.getString(R.string.template_current_tts_engine, engineLabel);
+        final String text = mService.getString(com.mpfa.empf.R.string.template_current_tts_engine, engineLabel);
 
         speak(text, null, null, QUEUE_MODE_QUEUE, FeedbackItem.FLAG_NO_HISTORY,
                 UTTERANCE_GROUP_DEFAULT, null, null);
@@ -698,22 +698,22 @@ public class SpeechController {
         final Resources res = mService.getResources();
 
         final boolean ttsOverlayEnabled = SharedPreferencesUtils.getBooleanPref(prefs, res,
-                R.string.pref_tts_overlay_key, R.bool.pref_tts_overlay_default);
+                com.mpfa.empf.R.string.pref_tts_overlay_key, com.mpfa.empf.R.bool.pref_tts_overlay_default);
 
         setOverlayEnabled(ttsOverlayEnabled);
 
         mUseIntonation = SharedPreferencesUtils.getBooleanPref(prefs, res,
-                R.string.pref_intonation_key, R.bool.pref_intonation_default);
+                com.mpfa.empf.R.string.pref_intonation_key, com.mpfa.empf.R.bool.pref_intonation_default);
         mSpeechPitch = SharedPreferencesUtils.getFloatFromStringPref(prefs, res,
-                R.string.pref_speech_pitch_key, R.string.pref_speech_pitch_default);
+                com.mpfa.empf.R.string.pref_speech_pitch_key, com.mpfa.empf.R.string.pref_speech_pitch_default);
         mSpeechRate = SharedPreferencesUtils.getFloatFromStringPref(prefs, res,
-                R.string.pref_speech_rate_key, R.string.pref_speech_rate_default);
+                com.mpfa.empf.R.string.pref_speech_rate_key, com.mpfa.empf.R.string.pref_speech_rate_default);
         mUseAudioFocus = SharedPreferencesUtils.getBooleanPref(
-                prefs, res, R.string.pref_use_audio_focus_key, R.bool.pref_use_audio_focus_default);
+                prefs, res, com.mpfa.empf.R.string.pref_use_audio_focus_key, com.mpfa.empf.R.bool.pref_use_audio_focus_default);
 
         // Speech volume is stored as int [0,100] and scaled to float [0,1].
         mSpeechVolume = (SharedPreferencesUtils.getIntFromStringPref(prefs, res,
-                R.string.pref_speech_volume_key, R.string.pref_speech_volume_default) / 100.0f);
+                com.mpfa.empf.R.string.pref_speech_volume_key, com.mpfa.empf.R.string.pref_speech_volume_default) / 100.0f);
 
         if (!mUseAudioFocus) {
             mAudioManager.abandonAudioFocus(mAudioFocusListener);

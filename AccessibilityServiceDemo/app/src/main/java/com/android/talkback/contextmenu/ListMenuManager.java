@@ -27,12 +27,13 @@ import android.view.MenuItem;
 import android.view.WindowManager;
 import android.view.accessibility.AccessibilityEvent;
 import android.view.accessibility.AccessibilityNodeInfo;
+
 import com.android.talkback.FeedbackItem;
 import com.android.talkback.speechrules.NodeSpeechRuleProcessor;
 import com.android.talkback.tutorial.AccessibilityTutorialActivity;
 import com.android.utils.AccessibilityEventListener;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
+import com.mpfa.empf.R;
 
 import java.util.ArrayList;
 import java.util.List;

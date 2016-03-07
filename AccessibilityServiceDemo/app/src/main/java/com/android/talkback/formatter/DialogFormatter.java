@@ -20,8 +20,8 @@ import android.text.Spannable;
 import android.view.accessibility.AccessibilityEvent;
 import com.android.talkback.Utterance;
 import com.android.utils.StringBuilderUtils;
-import com.fmtech.empf.service.MyAccessibilityService;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
+import com.mpfa.empf.R;
 
 import java.util.List;
 

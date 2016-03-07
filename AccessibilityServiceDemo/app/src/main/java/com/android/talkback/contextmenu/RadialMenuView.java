@@ -49,10 +49,10 @@ import android.view.View;
 import android.view.ViewConfiguration;
 import android.view.accessibility.AccessibilityEvent;
 
-import java.util.List;
 import com.android.utils.ExploreByTouchObjectHelper;
 import com.android.utils.LogUtils;
-import com.fmtech.accessibilityservicedemo.R;
+
+import java.util.List;
 
 public class RadialMenuView extends SurfaceView {
     public enum SubMenuMode {
@@ -222,38 +222,38 @@ public class RadialMenuView extends SurfaceView {
         mSingleTapRadiusSq = config.getScaledTouchSlop();
 
         // Dimensions.
-        mInnerRadius = res.getDimensionPixelSize(R.dimen.inner_radius);
-        mOuterRadius = res.getDimensionPixelSize(R.dimen.outer_radius);
-        mCornerRadius = res.getDimensionPixelSize(R.dimen.corner_radius);
-        mExtremeRadius = res.getDimensionPixelSize(R.dimen.extreme_radius);
-        mSpacing = res.getDimensionPixelOffset(R.dimen.spacing);
-        mTextSize = res.getDimensionPixelSize(R.dimen.text_size);
-        mTextShadowRadius = res.getDimensionPixelSize(R.dimen.text_shadow_radius);
-        mShadowRadius = res.getDimensionPixelSize(R.dimen.shadow_radius);
+        mInnerRadius = res.getDimensionPixelSize(com.mpfa.empf.R.dimen.inner_radius);
+        mOuterRadius = res.getDimensionPixelSize(com.mpfa.empf.R.dimen.outer_radius);
+        mCornerRadius = res.getDimensionPixelSize(com.mpfa.empf.R.dimen.corner_radius);
+        mExtremeRadius = res.getDimensionPixelSize(com.mpfa.empf.R.dimen.extreme_radius);
+        mSpacing = res.getDimensionPixelOffset(com.mpfa.empf.R.dimen.spacing);
+        mTextSize = res.getDimensionPixelSize(com.mpfa.empf.R.dimen.text_size);
+        mTextShadowRadius = res.getDimensionPixelSize(com.mpfa.empf.R.dimen.text_shadow_radius);
+        mShadowRadius = res.getDimensionPixelSize(com.mpfa.empf.R.dimen.shadow_radius);
 
         // Colors.
-        mOuterFillColor = res.getColor(R.color.outer_fill);
-        mTextFillColor = res.getColor(R.color.text_fill);
-        mCornerFillColor = res.getColor(R.color.corner_fill);
-        mCornerTextFillColor = res.getColor(R.color.corner_text_fill);
-        mDotFillColor = res.getColor(R.color.dot_fill);
-        mDotStrokeColor = res.getColor(R.color.dot_stroke);
-        mSelectionColor = res.getColor(R.color.selection_fill);
-        mSelectionTextFillColor = res.getColor(R.color.selection_text_fill);
-        mSelectionShadowColor = res.getColor(R.color.selection_shadow);
-        mCenterFillColor = res.getColor(R.color.center_fill);
-        mCenterTextFillColor = res.getColor(R.color.center_text_fill);
-        mTextShadowColor = res.getColor(R.color.text_shadow);
+        mOuterFillColor = res.getColor(com.mpfa.empf.R.color.outer_fill);
+        mTextFillColor = res.getColor(com.mpfa.empf.R.color.text_fill);
+        mCornerFillColor = res.getColor(com.mpfa.empf.R.color.corner_fill);
+        mCornerTextFillColor = res.getColor(com.mpfa.empf.R.color.corner_text_fill);
+        mDotFillColor = res.getColor(com.mpfa.empf.R.color.dot_fill);
+        mDotStrokeColor = res.getColor(com.mpfa.empf.R.color.dot_stroke);
+        mSelectionColor = res.getColor(com.mpfa.empf.R.color.selection_fill);
+        mSelectionTextFillColor = res.getColor(com.mpfa.empf.R.color.selection_text_fill);
+        mSelectionShadowColor = res.getColor(com.mpfa.empf.R.color.selection_shadow);
+        mCenterFillColor = res.getColor(com.mpfa.empf.R.color.center_fill);
+        mCenterTextFillColor = res.getColor(com.mpfa.empf.R.color.center_text_fill);
+        mTextShadowColor = res.getColor(com.mpfa.empf.R.color.text_shadow);
 
         // Gradient colors.
-        final int gradientInnerColor = res.getColor(R.color.gradient_inner);
-        final int gradientOuterColor = res.getColor(R.color.gradient_outer);
+        final int gradientInnerColor = res.getColor(com.mpfa.empf.R.color.gradient_inner);
+        final int gradientOuterColor = res.getColor(com.mpfa.empf.R.color.gradient_outer);
         final int[] colors = new int[] {gradientInnerColor, gradientOuterColor};
         mGradientBackground = new GradientDrawable(Orientation.TOP_BOTTOM, colors);
         mGradientBackground.setGradientType(GradientDrawable.RADIAL_GRADIENT);
         mGradientBackground.setGradientRadius(mExtremeRadius * 2.0f);
 
-        final int subMenuOverlayColor = res.getColor(R.color.submenu_overlay);
+        final int subMenuOverlayColor = res.getColor(com.mpfa.empf.R.color.submenu_overlay);
 
         // Lighting filters generated from colors.
         mSubMenuFilter = new PorterDuffColorFilter(subMenuOverlayColor, PorterDuff.Mode.SCREEN);

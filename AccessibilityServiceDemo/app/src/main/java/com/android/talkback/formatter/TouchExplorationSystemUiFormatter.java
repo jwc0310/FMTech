@@ -21,10 +21,9 @@ import android.text.SpannableStringBuilder;
 import android.text.TextUtils;
 import android.view.accessibility.AccessibilityEvent;
 
-import com.fmtech.empf.service.MyAccessibilityService;
 import com.android.talkback.Utterance;
 import com.android.utils.StringBuilderUtils;
-import com.fmtech.accessibilityservicedemo.R;
+import com.mpfa.empf.service.MyAccessibilityService;
 
 import java.util.Collections;
 import java.util.List;
@@ -56,8 +55,8 @@ public class TouchExplorationSystemUiFormatter
         if (TextUtils.equals(mLastUtteranceText, recordText)) return false;
 
         utterance.addSpoken(recordText);
-        utterance.addHaptic(R.array.view_hovered_pattern);
-        utterance.addAuditory(R.raw.focus);
+        utterance.addHaptic(com.mpfa.empf.R.array.view_hovered_pattern);
+        utterance.addAuditory(com.mpfa.empf.R.raw.focus);
 
         mLastUtteranceText.clear();
         mLastUtteranceText.append(recordText);

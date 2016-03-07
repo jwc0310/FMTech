@@ -24,15 +24,15 @@ import android.text.TextUtils;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.EditText;
+
 import com.android.talkback.PasteHistory;
-import com.fmtech.empf.service.MyAccessibilityService;
 import com.android.talkback.contextmenu.ContextMenuItem;
 import com.android.talkback.contextmenu.ContextMenuItemBuilder;
-import com.android.talkback.controller.CursorController;
 import com.android.talkback.controller.FeedbackController;
+import com.mpfa.empf.service.MyAccessibilityService;
+import com.android.talkback.controller.CursorController;
 import com.android.utils.AccessibilityNodeInfoUtils;
 import com.android.utils.PerformActionUtils;
-import com.fmtech.accessibilityservicedemo.R;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -60,25 +60,25 @@ class RuleEditText implements NodeMenuRule {
             if (AccessibilityNodeInfoUtils.supportsAnyAction(nodeCopy,
                     AccessibilityNodeInfoCompat.ACTION_PREVIOUS_AT_MOVEMENT_GRANULARITY)) {
                 ContextMenuItem moveToBeginning = menuItemBuilder.createMenuItem(service,
-                        Menu.NONE, R.id.edittext_breakout_move_to_beginning,
+                        Menu.NONE, com.mpfa.empf.R.id.edittext_breakout_move_to_beginning,
                         Menu.NONE,
-                        service.getString(R.string.title_edittext_breakout_move_to_beginning));
+                        service.getString(com.mpfa.empf.R.string.title_edittext_breakout_move_to_beginning));
                 items.add(moveToBeginning);
             }
 
             if (AccessibilityNodeInfoUtils.supportsAnyAction(
                     nodeCopy, AccessibilityNodeInfoCompat.ACTION_NEXT_AT_MOVEMENT_GRANULARITY)) {
                 ContextMenuItem moveToEnd = menuItemBuilder.createMenuItem(service,
-                        Menu.NONE, R.id.edittext_breakout_move_to_end,
+                        Menu.NONE, com.mpfa.empf.R.id.edittext_breakout_move_to_end,
                         Menu.NONE,
-                        service.getString(R.string.title_edittext_breakout_move_to_end));
+                        service.getString(com.mpfa.empf.R.string.title_edittext_breakout_move_to_end));
                 items.add(moveToEnd);
             }
 
             if (AccessibilityNodeInfoUtils.supportsAnyAction(
                     nodeCopy, AccessibilityNodeInfoCompat.ACTION_CUT)) {
                 ContextMenuItem cut = menuItemBuilder.createMenuItem(service,
-                        Menu.NONE, R.id.edittext_breakout_cut,
+                        Menu.NONE, com.mpfa.empf.R.id.edittext_breakout_cut,
                         Menu.NONE,
                         service.getString(android.R.string.cut));
                 items.add(cut);
@@ -87,7 +87,7 @@ class RuleEditText implements NodeMenuRule {
             if (AccessibilityNodeInfoUtils.supportsAnyAction(
                     nodeCopy, AccessibilityNodeInfoCompat.ACTION_COPY)) {
                 ContextMenuItem copy = menuItemBuilder.createMenuItem(service,
-                        Menu.NONE, R.id.edittext_breakout_copy,
+                        Menu.NONE, com.mpfa.empf.R.id.edittext_breakout_copy,
                         Menu.NONE,
                         service.getString(android.R.string.copy));
                 items.add(copy);
@@ -96,7 +96,7 @@ class RuleEditText implements NodeMenuRule {
             if (AccessibilityNodeInfoUtils.supportsAnyAction(
                     nodeCopy, AccessibilityNodeInfoCompat.ACTION_PASTE)) {
                 ContextMenuItem paste = menuItemBuilder.createMenuItem(service,
-                        Menu.NONE, R.id.edittext_breakout_paste,
+                        Menu.NONE, com.mpfa.empf.R.id.edittext_breakout_paste,
                         Menu.NONE,
                         service.getString(android.R.string.paste));
                 items.add(paste);
@@ -105,7 +105,7 @@ class RuleEditText implements NodeMenuRule {
             if (AccessibilityNodeInfoUtils.supportsAnyAction(
                     nodeCopy, AccessibilityNodeInfoCompat.ACTION_SET_SELECTION)) {
                 ContextMenuItem select = menuItemBuilder.createMenuItem(service,
-                        Menu.NONE, R.id.edittext_breakout_select_all,
+                        Menu.NONE, com.mpfa.empf.R.id.edittext_breakout_select_all,
                         Menu.NONE,
                         service.getString(android.R.string.selectAll));
                 items.add(select);
@@ -117,14 +117,14 @@ class RuleEditText implements NodeMenuRule {
                 final ContextMenuItem selectionMode;
                 if (cursorController.isSelectionModeActive()) {
                     selectionMode = menuItemBuilder.createMenuItem(service,
-                            Menu.NONE, R.id.edittext_breakout_end_selection_mode,
+                            Menu.NONE, com.mpfa.empf.R.id.edittext_breakout_end_selection_mode,
                             Menu.NONE,
-                            service.getString(R.string.title_edittext_breakout_end_selection_mode));
+                            service.getString(com.mpfa.empf.R.string.title_edittext_breakout_end_selection_mode));
                 } else {
                     selectionMode = menuItemBuilder.createMenuItem(service,
-                            Menu.NONE, R.id.edittext_breakout_start_selection_mode,
+                            Menu.NONE, com.mpfa.empf.R.id.edittext_breakout_start_selection_mode,
                             Menu.NONE,
-                            service.getString(R.string.title_edittext_breakout_start_selection_mode));
+                            service.getString(com.mpfa.empf.R.string.title_edittext_breakout_start_selection_mode));
                 }
 
                 items.add(selectionMode);
@@ -140,7 +140,7 @@ class RuleEditText implements NodeMenuRule {
 
     @Override
     public CharSequence getUserFriendlyMenuName(Context context) {
-        return context.getString(R.string.title_edittext_controls);
+        return context.getString(com.mpfa.empf.R.string.title_edittext_controls);
     }
 
     @Override
@@ -171,37 +171,37 @@ class RuleEditText implements NodeMenuRule {
             final Bundle args = new Bundle();
             final boolean result;
 
-            if (itemId == R.id.edittext_breakout_move_to_beginning) {
+            if (itemId == com.mpfa.empf.R.id.edittext_breakout_move_to_beginning) {
                 args.putInt(AccessibilityNodeInfoCompat.ACTION_ARGUMENT_MOVEMENT_GRANULARITY_INT,
                         AccessibilityNodeInfoCompat.MOVEMENT_GRANULARITY_PAGE);
                 result = PerformActionUtils.performAction(mNode,
                         AccessibilityNodeInfoCompat.ACTION_PREVIOUS_AT_MOVEMENT_GRANULARITY, args);
-            } else if (itemId == R.id.edittext_breakout_move_to_end) {
+            } else if (itemId == com.mpfa.empf.R.id.edittext_breakout_move_to_end) {
                 args.putInt(AccessibilityNodeInfoCompat.ACTION_ARGUMENT_MOVEMENT_GRANULARITY_INT,
                         AccessibilityNodeInfoCompat.MOVEMENT_GRANULARITY_PAGE);
                 result = PerformActionUtils.performAction(mNode,
                         AccessibilityNodeInfoCompat.ACTION_NEXT_AT_MOVEMENT_GRANULARITY, args);
-            } else if (itemId == R.id.edittext_breakout_cut) {
+            } else if (itemId == com.mpfa.empf.R.id.edittext_breakout_cut) {
                 result = PerformActionUtils.performAction(mNode,
                         AccessibilityNodeInfoCompat.ACTION_CUT);
-            } else if (itemId == R.id.edittext_breakout_copy) {
+            } else if (itemId == com.mpfa.empf.R.id.edittext_breakout_copy) {
                 result = PerformActionUtils.performAction(mNode,
                         AccessibilityNodeInfoCompat.ACTION_COPY);
-            } else if (itemId == R.id.edittext_breakout_paste) {
+            } else if (itemId == com.mpfa.empf.R.id.edittext_breakout_paste) {
                 PasteHistory.getInstance().before();
                 result = PerformActionUtils.performAction(mNode,
                         AccessibilityNodeInfoCompat.ACTION_PASTE);
                 PasteHistory.getInstance().after();
-            } else if (itemId == R.id.edittext_breakout_select_all) {
+            } else if (itemId == com.mpfa.empf.R.id.edittext_breakout_select_all) {
                 args.putInt(AccessibilityNodeInfoCompat.ACTION_ARGUMENT_SELECTION_START_INT, 0);
                 args.putInt(AccessibilityNodeInfoCompat.ACTION_ARGUMENT_SELECTION_END_INT,
                         mNode.getText().length());
                 result = PerformActionUtils.performAction(mNode,
                         AccessibilityNodeInfoCompat.ACTION_SET_SELECTION, args);
-            } else if (itemId == R.id.edittext_breakout_start_selection_mode) {
+            } else if (itemId == com.mpfa.empf.R.id.edittext_breakout_start_selection_mode) {
                 mCursorController.setSelectionModeActive(mNode, true);
                 result = true;
-            } else if (itemId == R.id.edittext_breakout_end_selection_mode) {
+            } else if (itemId == com.mpfa.empf.R.id.edittext_breakout_end_selection_mode) {
                 mCursorController.setSelectionModeActive(mNode, false);
                 result = true;
             } else {
@@ -214,7 +214,7 @@ class RuleEditText implements NodeMenuRule {
                     service.getAnalytics().onTextEdited();
                 }
             } else {
-                mFeedback.playAuditory(R.raw.complete);
+                mFeedback.playAuditory(com.mpfa.empf.R.raw.complete);
             }
 
             mNode.recycle();

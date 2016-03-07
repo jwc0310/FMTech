@@ -22,9 +22,9 @@ import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat.Accessi
 import android.text.SpannableStringBuilder;
 import android.text.TextUtils;
 import android.view.accessibility.AccessibilityEvent;
-import com.android.utils.AccessibilityNodeInfoUtils;
+
 import com.android.utils.StringBuilderUtils;
-import com.fmtech.accessibilityservicedemo.R;
+import com.android.utils.AccessibilityNodeInfoUtils;
 
 import java.util.List;
 
@@ -56,9 +56,9 @@ public interface NodeHintRule {
 
         public static void updateActionResId(boolean forceSingleTap) {
             if (forceSingleTap) {
-                sActionResId = R.string.value_single_tap;
+                sActionResId = com.mpfa.empf.R.string.value_single_tap;
             } else {
-                sActionResId = R.string.value_double_tap;
+                sActionResId = com.mpfa.empf.R.string.value_double_tap;
             }
         }
 
@@ -100,11 +100,11 @@ public interface NodeHintRule {
             // Don't read both the checkable AND clickable hints!
             if (node.isCheckable()) {
                 StringBuilderUtils.appendWithSeparator(builder,
-                        NodeHintHelper.getHintString(context, R.string.template_hint_checkable));
+                        NodeHintHelper.getHintString(context, com.mpfa.empf.R.string.template_hint_checkable));
             } else if (AccessibilityNodeInfoUtils.isClickable(node)
                     && !hasClickActionHint) {
                 StringBuilderUtils.appendWithSeparator(builder,
-                        NodeHintHelper.getHintString(context, R.string.template_hint_clickable));
+                        NodeHintHelper.getHintString(context, com.mpfa.empf.R.string.template_hint_clickable));
             }
 
             // Add default long click hint if action doesn't have corresponding label
@@ -112,7 +112,7 @@ public interface NodeHintRule {
                     && !hasLongClickActionHint) {
                 StringBuilderUtils.appendWithSeparator(builder,
                         NodeHintHelper.getHintString(context,
-                                R.string.template_hint_long_clickable));
+                                com.mpfa.empf.R.string.template_hint_long_clickable));
             }
 
             List<AccessibilityActionCompat> customActions =
@@ -121,7 +121,7 @@ public interface NodeHintRule {
                 // TODO: Should describe how to get to custom actions
                 StringBuilderUtils.appendWithSeparator(builder,
                         NodeHintHelper.getHintString(context,
-                                R.string.template_hint_custom_actions));
+                                com.mpfa.empf.R.string.template_hint_custom_actions));
                 for (AccessibilityActionCompat action : customActions) {
                     StringBuilderUtils.appendWithSeparator(builder, action.getLabel());
                 }

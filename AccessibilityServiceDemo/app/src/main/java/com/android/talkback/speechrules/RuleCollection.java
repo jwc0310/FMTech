@@ -23,9 +23,9 @@ import android.support.v4.view.accessibility.AccessibilityNodeInfoCompat;
 import android.text.SpannableStringBuilder;
 import android.view.accessibility.AccessibilityEvent;
 import android.widget.ListView;
-import com.android.utils.AccessibilityNodeInfoUtils;
+
 import com.android.utils.StringBuilderUtils;
-import com.fmtech.accessibilityservicedemo.R;
+import com.android.utils.AccessibilityNodeInfoUtils;
 
 /**
  * Rule for how to speak collection items.
@@ -86,14 +86,14 @@ public class RuleCollection extends RuleDefault {
                 int itemNum = bundle.getInt(ROW_INDEX) + 1;
 
                 StringBuilderUtils.appendWithSeparator(builder,
-                        context.getString(R.string.item_index_template, itemNum));
+                        context.getString(com.mpfa.empf.R.string.item_index_template, itemNum));
             }
         } else {
             // This is a table
 
             if (bundle.containsKey(HEADING)) {
                 StringBuilderUtils.appendWithSeparator(builder,
-                        context.getString(R.string.heading_template));
+                        context.getString(com.mpfa.empf.R.string.heading_template));
             }
 
             if (bundle.containsKey(ROW_INDEX)) {
@@ -101,7 +101,7 @@ public class RuleCollection extends RuleDefault {
                 int rowNum = bundle.getInt(ROW_INDEX) + 1;
 
                 StringBuilderUtils.appendWithSeparator(builder,
-                        context.getString(R.string.row_index_template, rowNum));
+                        context.getString(com.mpfa.empf.R.string.row_index_template, rowNum));
             }
 
             if (bundle.containsKey(COLUMN_INDEX)) {
@@ -109,7 +109,7 @@ public class RuleCollection extends RuleDefault {
                 int columnNum = bundle.getInt(COLUMN_INDEX) + 1;
 
                 StringBuilderUtils.appendWithSeparator(builder,
-                        context.getString(R.string.column_index_template, columnNum));
+                        context.getString(com.mpfa.empf.R.string.column_index_template, columnNum));
             }
         }
 
