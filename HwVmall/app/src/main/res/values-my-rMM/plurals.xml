@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hwpush_delete_tip">
+        <item quantity="other">ရွေးချယ်ထားသော သတိပေးအချက်ပြမှုများကို ဖျက်ပစ်မည်လား?</item>
+    </plurals>
+</resources>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/table_bg" android:layout_width="fill_parent" android:layout_height="@dimen/font40"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="@dimen/font35">
+        <Button android:id="@id/product_bisic" android:text="@string/product_basic" style="@style/product_button_group_style" />
+        <Button android:id="@id/product_details" android:text="@string/product_details" style="@style/product_button_group_style" />
+        <Button android:id="@id/product_parameters" android:text="@string/product_parameters" style="@style/product_button_group_style" />
+        <Button android:ellipsize="marquee" android:id="@id/product_evaluations" android:focusable="true" android:focusableInTouchMode="true" android:text="@string/product_evaluations" android:singleLine="true" style="@style/product_button_group_style" />
+    </LinearLayout>
+    <ImageView android:id="@id/cursor_view" android:background="@drawable/tab_search_select" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:contentDescription="@null" />
+</RelativeLayout>

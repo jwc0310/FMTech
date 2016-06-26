@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="@dimen/font50" android:layout_alignParentBottom="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/divider_horizantal" />
+    <TextView android:textSize="@dimen/font13_sp" android:textColor="@color/time_title" android:gravity="center" android:id="@id/prd_count_down_time" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/font27" />
+    <RelativeLayout android:id="@id/buy_parent" android:layout_width="fill_parent" android:layout_height="@dimen/font50">
+        <RelativeLayout android:id="@id/product_shopping_cart" android:visibility="invisible" android:layout_width="@dimen/font43" android:layout_height="@dimen/font43" android:layout_marginRight="@dimen/font9" android:layout_marginBottom="@dimen/font5" android:layout_alignParentRight="true" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/shopping_cart" android:background="@drawable/product_shopping_cart_selector" android:layout_width="@dimen/font40" android:layout_height="@dimen/font40" android:layout_marginRight="@dimen/font5" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true" android:contentDescription="@null" />
+            <TextView android:textSize="@dimen/font11" android:textColor="@color/white" android:gravity="center" android:id="@id/cart_num" android:background="@drawable/red_dot" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/normal_buybutton_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/font12" android:layout_toLeftOf="@id/product_shopping_cart" android:layout_alignParentLeft="true" android:layout_alignParentBottom="true">
+            <TextView android:textSize="@dimen/font14_sp" android:textColor="@color/product_detail" android:gravity="center" android:id="@id/purchase_shou_text" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/font12" android:layout_centerVertical="true" />
+            <Button android:textColor="@color/white" android:id="@id/buy_single" android:background="@drawable/prd_buy_orange_selector" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/font40" android:layout_marginLeft="@dimen/font12" android:layout_marginBottom="@dimen/font5" android:minWidth="@dimen/font134" android:layout_alignParentBottom="true" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/buy_content" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font5" android:layout_alignParentBottom="true">
+                <Button android:ellipsize="end" android:layout_gravity="bottom" android:id="@id/buy_button" android:background="@drawable/prd_buy_red_selector" android:text="@string/product_buy" android:singleLine="true" style="@style/product_purchase_style" />
+                <Button android:ellipsize="end" android:layout_gravity="bottom" android:id="@id/add_cart" android:background="@drawable/prd_buy_orange_selector" android:text="@string/product_add_cart" android:singleLine="true" style="@style/product_purchase_style" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</merge>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/home_head_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/scroll_ads_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.vmall.client.view.AdsGallery android:id="@id/huawei_ads_gallery" android:layout_width="fill_parent" android:layout_height="@dimen/font152" android:spacing="@dimen/font1_px_n" android:soundEffectsEnabled="false" />
+        <LinearLayout android:layout_gravity="bottom|center|right" android:orientation="horizontal" android:id="@id/huawei_ads_dot" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/font5" android:layout_marginBottom="@dimen/font8" android:soundEffectsEnabled="false" />
+    </FrameLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/ads_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/ads_left" android:tag="0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_no_pic" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="1.0" android:contentDescription="@null" />
+        <TextView android:background="@color/honor_activity_border_color" android:layout_width="@dimen/font1_px" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/ads_middle_left" android:tag="1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_no_pic" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="1.0" android:contentDescription="@null" />
+        <TextView android:background="@color/honor_activity_border_color" android:layout_width="@dimen/font1_px" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/ads_middle_right" android:tag="2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_no_pic" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="1.0" android:contentDescription="@null" />
+        <TextView android:background="@color/honor_activity_border_color" android:layout_width="@dimen/font1_px" android:layout_height="fill_parent" />
+        <ImageView android:id="@id/ads_right" android:tag="3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:src="@drawable/icon_no_pic" android:scaleType="fitCenter" android:adjustViewBounds="true" android:layout_weight="1.0" android:contentDescription="@null" />
+    </LinearLayout>
+</LinearLayout>

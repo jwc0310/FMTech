@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/buttonsel" android:layout_width="fill_parent" android:layout_height="50.0dip">
+        <ToggleButton android:ellipsize="end" android:id="@id/busbutton" android:background="@drawable/sub_tab_selected_middle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:checked="true" android:textOn="@string/busline_sel" android:textOff="@string/busline_sel" android:maxLines="1" android:layout_weight="1.0" style="@style/TabTitleOn" />
+        <ImageView android:background="@color/level_line" android:layout_width="1.0px" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+        <ToggleButton android:ellipsize="end" android:id="@id/drivebutton" android:background="@drawable/sub_tab_normal_middle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textOn="@string/driveline_sel" android:textOff="@string/driveline_sel" android:maxLines="1" android:layout_weight="1.0" style="@style/TabTitleOff" />
+        <ImageView android:background="@color/level_line" android:layout_width="1.0px" android:layout_height="fill_parent" android:contentDescription="@string/app_name" />
+        <ToggleButton android:ellipsize="end" android:id="@id/walkbutton" android:background="@drawable/sub_tab_normal_middle" android:layout_width="fill_parent" android:layout_height="fill_parent" android:textOn="@string/walkline_sel" android:textOff="@string/walkline_sel" android:maxLines="1" android:layout_weight="1.0" style="@style/TabTitleOff" />
+    </LinearLayout>
+    <ImageView android:background="@color/level_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:contentDescription="@string/app_name" />
+    <include style="@style/ui_padding_horizontal" layout="@layout/noresult" />
+    <include style="@style/ui_padding_horizontal" layout="@layout/nobusresult" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ListView android:id="@id/buslineresult" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:dividerHeight="0.5dip" style="@style/ListViewStyle" />
+        <include android:id="@id/progress_switch" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" layout="@layout/custom_progressbar" />
+    </RelativeLayout>
+</LinearLayout>

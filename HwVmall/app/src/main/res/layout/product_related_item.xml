@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/related_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/font50">
+        <include android:id="@id/related_divider" layout="@layout/divider_horizantal" />
+        <ImageView android:id="@id/product_name_arrow" android:background="@drawable/arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+        <TextView android:textSize="@dimen/font12_sp" android:textColor="@color/time_title" android:ellipsize="end" android:id="@id/product_related_name" android:paddingRight="@dimen/font8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/font8" android:singleLine="true" android:layout_toLeftOf="@id/product_name_arrow" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

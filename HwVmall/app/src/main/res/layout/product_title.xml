@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/product_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/shop_cart_layout" android:layout_width="50.0dip" android:layout_height="wrap_content" android:layout_marginRight="0.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+            <ImageView android:background="@drawable/shopcart_bg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@null" />
+            <TextView android:textColor="@color/white" android:gravity="center" android:id="@id/shop_cart_size" android:background="@drawable/red_dot" android:layout_width="18.0dip" android:layout_height="18.0dip" android:layout_alignParentTop="true" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

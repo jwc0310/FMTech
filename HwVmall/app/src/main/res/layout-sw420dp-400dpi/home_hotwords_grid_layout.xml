@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/hotword_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/home_hotwords_title" />
+    <com.vmall.client.view.VmallGridView android:gravity="center" android:id="@id/home_hotwords_gridview" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font10" android:layout_marginRight="@dimen/font10" android:listSelector="@color/transparent" android:verticalSpacing="@dimen/font25" android:numColumns="3" />
+    <TextView android:id="@id/hotwords_devider" android:background="@color/honor_activity_border_color" android:layout_width="fill_parent" android:layout_height="@dimen/font1_px" android:layout_marginTop="@dimen/font18" />
+</LinearLayout>

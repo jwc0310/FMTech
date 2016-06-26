@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText android:textColor="@color/CS_black_85_percent" android:id="@id/verifycode_edittext" android:layout_width="@dimen/cs_register_phonenum_editsed_width" android:hint="@string/CS_sms_verification_code" android:maxLength="32" android:layout_weight="1.0" android:inputType="number" style="@style/CS_EmoutionUI3_EditTextStyle" />
+    <Button android:ellipsize="marquee" android:id="@id/btn_retrieve" android:layout_width="@dimen/cs_register_phonenum_buttonfir_width" android:layout_marginLeft="@dimen/cs_verification_margin" android:text="@string/CS_retrieve" android:layout_weight="1.0" android:layout_marginStart="@dimen/cs_verification_margin" style="@style/CS_EmoutionUI3_HoloButtonStyle" />
+</LinearLayout>

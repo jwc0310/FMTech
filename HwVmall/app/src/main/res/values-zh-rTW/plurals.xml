@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hwpush_delete_tip">
+        <item quantity="other">要刪除選取的通知嗎？</item>
+    </plurals>
+</resources>

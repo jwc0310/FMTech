@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="default_province">
+        <item>Beijing</item>
+    </string-array>
+    <string-array name="CS_country">
+        <item>Argentina +54</item>
+        <item>Österreich +43</item>
+        <item>Australia +61</item>
+        <item>België +32</item>
+        <item>Brasil +55</item>
+        <item>Canada +1</item>
+        <item>Schweiz +41</item>
+        <item>Chile +56</item>
+        <item>中国 +86</item>
+        <item>Colombia +57</item>
+        <item>Cuba +53</item>
+        <item>Česko +420</item>
+        <item>Deutschland +49</item>
+        <item>Danmark +45</item>
+        <item>United Kingdom +44</item>
+        <item>España +34</item>
+        <item>Suomi +358</item>
+        <item>France +33</item>
+        <item>Ελλάς +30</item>
+        <item>中國香港 +852</item>
+        <item>Hrvatska +385</item>
+        <item>Magyarország +36</item>
+        <item>Indonesia +62</item>
+        <item>Ireland +353</item>
+        <item>India +91</item>
+        <item>Italia +39</item>
+        <item>日本 +81</item>
+        <item>Kampuchea +855</item>
+        <item>Korea +82</item>
+        <item>Lietuva +370</item>
+        <item>Macao +853</item>
+        <item>México +52</item>
+        <item>Malaysia +60</item>
+        <item>Norge +47</item>
+        <item>New Zealand +64</item>
+        <item>Pilipinas +63</item>
+        <item>Polska +48</item>
+        <item>Portugal +351</item>
+        <item>România +40</item>
+        <item>Россия +7</item>
+        <item>Sverige +46</item>
+        <item>Singapura +65</item>
+        <item>Slovensko +421</item>
+        <item>ราชอาณาจักรไทย +66</item>
+        <item>Türkiye +90</item>
+        <item>台灣 +886</item>
+        <item>Україна +380</item>
+        <item>United States +1</item>
+        <item>Uruguay +598</item>
+        <item>Việt Nam +84</item>
+        <item>South Africa +27</item>
+        <item>Sri Lanka +94</item>
+        <item>Perú +51</item>
+        <item>Venezuela +58</item>
+        <item>Ecuador +593</item>
+        <item>Guatemala +502</item>
+        <item>Bolivia +591</item>
+        <item>Dominica +1890</item>
+        <item>Haïti +509</item>
+        <item>Honduras +506</item>
+        <item>Paraguay +595</item>
+        <item>El Salvador +503</item>
+        <item>Nicaragua +505</item>
+        <item>Costa Rica +506</item>
+        <item>Panamá +507</item>
+        <item>Jamaica +1876</item>
+        <item>Laos +856</item>
+        <item>Puerto Rico +1787</item>
+    </string-array>
+    <string-array name="CS_national_code">
+        <item>ar</item>
+        <item>at</item>
+        <item>au</item>
+        <item>be</item>
+        <item>br</item>
+        <item>ca</item>
+        <item>ch</item>
+        <item>cl</item>
+        <item>cn</item>
+        <item>co</item>
+        <item>cu</item>
+        <item>cz</item>
+        <item>de</item>
+        <item>dk</item>
+        <item>en</item>
+        <item>es</item>
+        <item>fi</item>
+        <item>fr</item>
+        <item>gr</item>
+        <item>hk</item>
+        <item>hr</item>
+        <item>hu</item>
+        <item>id</item>
+        <item>ie</item>
+        <item>in</item>
+        <item>it</item>
+        <item>jp</item>
+        <item>kh</item>
+        <item>kr</item>
+        <item>lt</item>
+        <item>mo</item>
+        <item>mx</item>
+        <item>my</item>
+        <item>no</item>
+        <item>nz</item>
+        <item>ph</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>ro</item>
+        <item>ru</item>
+        <item>se</item>
+        <item>sg</item>
+        <item>sk</item>
+        <item>th</item>
+        <item>tr</item>
+        <item>tw</item>
+        <item>ua</item>
+        <item>us</item>
+        <item>uy</item>
+        <item>vn</item>
+        <item>za</item>
+        <item>lk</item>
+        <item>pe</item>
+        <item>ve</item>
+        <item>ec</item>
+        <item>gt</item>
+        <item>bo</item>
+        <item>do</item>
+        <item>ht</item>
+        <item>hn</item>
+        <item>py</item>
+        <item>sv</item>
+        <item>ni</item>
+        <item>cr</item>
+        <item>pa</item>
+        <item>jm</item>
+        <item>la</item>
+        <item>pr</item>
+    </string-array>
+</resources>

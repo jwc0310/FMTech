@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/toastItem" android:background="@drawable/toast_frame_emui" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/imageView_toast" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_yes" android:contentDescription="@string/app_name" />
+    <TextView android:textSize="15.0sp" android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/textView_toast" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textIsSelectable="true" />
+</LinearLayout>

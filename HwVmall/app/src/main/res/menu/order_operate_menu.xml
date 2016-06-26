@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@id/delete_order" android:title="@string/order_cancel" android:showAsAction="ifRoom|withText" android:actionLayout="@layout/delete_order" />
+    <item android:id="@id/modify_order" android:title="@string/order_modify" android:showAsAction="ifRoom|withText" android:actionLayout="@layout/modify_order" />
+</menu>

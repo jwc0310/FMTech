@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:id="@id/imageView_return" android:background="?android:selectableItemBackground" android:visibility="gone" android:layout_width="50.0dip" android:layout_height="50.0dip">
+            <ImageView android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/return_icon_new" android:contentDescription="@string/app_name" />
+        </LinearLayout>
+        <com.vmall.client.view.VmallGallery android:layout_gravity="center" android:id="@id/mygallery" android:layout_width="fill_parent" android:layout_height="fill_parent" android:spacing="10.0px" />
+        <RelativeLayout android:id="@id/mySwitch" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="20.0px" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font40">
+        <TextView android:textSize="@dimen/font20" android:textColor="@color/time_title" android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/pic_indicater_index" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <TextView android:textSize="@dimen/font14" android:textColor="@color/product_detail" android:gravity="bottom" android:layout_gravity="bottom" android:id="@id/pic_indicater_length" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</FrameLayout>

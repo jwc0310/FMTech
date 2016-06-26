@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">華為商城</string>
+    <string name="cancel">取消</string>
+    <string name="confirm">確定</string>
+    <string name="downloading">正在下載</string>
+    <string name="CS_error_login_pwd_message">密碼不正確。 請重新輸入。</string>
+    <string name="CS_input_password">密碼</string>
+    <string name="CS_password_input_invalid">密碼字元無效。</string>
+    <string name="CS_waiting_progress_message">請稍後。</string>
+    <string name="CS_server_network_error">網路伺服器無法使用。請稍候重試。</string>
+    <string name="CS_network_connect_error">網路連線無法使用。請稍候重試。</string>
+    <string name="CS_notification">資訊</string>
+    <string name="CS_system_error_tip">系統錯誤。請重新登入。</string>
+    <string name="hwpush_goback">返回</string>
+    <string name="hwpush_forward">下一步</string>
+    <string name="hwpush_refresh">重新整理</string>
+    <string name="hwpush_collect">我的最愛</string>
+    <string name="hwpush_deltitle">刪除通知</string>
+    <string name="hwpush_msg_collect">我的最愛</string>
+    <string name="hwpush_msg_favorites">我的最愛通知</string>
+    <string name="hwpush_delete">刪除</string>
+    <string name="hwpush_selectall">選取全部</string>
+    <string name="hwpush_collect_tip">主螢幕上將出現「我的最愛」圖示。輕觸該圖示則可檢視所有您最愛的通知。</string>
+    <string name="hwpush_collect_tip_known">確定</string>
+    <string name="hwpush_cancel">取消</string>
+    <string name="hwpush_unselectall">取消全選</string>
+    <string name="hwpush_no_collection">沒有我的最愛通知</string>
+    <string name="cloudpush_app_name">Push 服務</string>
+    <string name="hwpush_richmedia">多媒體</string>
+    <string name="hwpush_loading_title">載入中… 請稍候。</string>
+    <string name="hwpush_dialog_limit_title">提示</string>
+    <string name="hwpush_dialog_limit_message">最多可以儲存 1000 筆我的最愛通知。刪除部分通知後，您才能新增其他通知。前往我的最愛通知清單？</string>
+    <string name="hwpush_dialog_limit_ok">前往</string>
+    <string name="hwpush_request_provider_permission">儲存訊息</string>
+    <string name="common_cny_signal">¥</string>
+    <string name="app_copyright">版權所有 © 2016 Huawei。保留所有權利。</string>
+    <string name="versionEqual">您正使用的是最新版本。不需要更新。</string>
+    <string name="updateNow">套用</string>
+    <string name="updateDesc">有可用更新。立刻更新？</string>
+    <string name="updateLater">忽略</string>
+    <string name="update_title">更新通知</string>
+    <string name="checkNewVer">檢查更新</string>
+    <string name="about">版本升級</string>
+    <string name="loading">載入中…請稍候。</string>
+    <string name="loading_title">載入中…</string>
+    <string name="tab_index">首頁</string>
+    <string name="tab_category">類別</string>
+    <string name="tab_huawei_channel">華為</string>
+    <string name="tab_honor_channel">榮耀系列</string>
+    <string name="changeNum">購買數量</string>
+    <string name="current_version">目前版本：</string>
+    <string name="check_download">偵測到自動下載更新</string>
+    <string name="get_messae_failed">無法取得更新資訊。</string>
+    <string name="download_failed">更新下載失敗。</string>
+    <string name="delete_order_tips">確認</string>
+    <string name="delete_exchange_order_tips">確認</string>
+    <string name="makesure_delete_order">將取消這張訂單。</string>
+    <string name="net_error_toast">網路存取錯誤。請確認網路連線，然後再試一次。</string>
+    <string name="makesure_delete_exchange_order">將取消此退貨和更換申請。</string>
+    <string name="from_vmall_client">從華為商城行動用戶端</string>
+    <string name="share_email_chooser_title">選取應用程式以傳送電子郵件</string>
+    <string name="shopping_cart">購物車</string>
+    <string name="order_cancel">取消訂單</string>
+    <string name="order_modify">修改訂單</string>
+    <string name="order_exchange">退回並更換</string>
+    <string name="filter">篩選</string>
+    <string name="login_timeout">登入逾時。請重新登入。</string>
+    <string name="over_limit">已超過庫存限制。</string>
+    <string name="login_failed">登入失敗。請重新登入。</string>
+    <string name="get_version_error">無法取得軟體版本資訊。</string>
+    <string name="apk_not_exists">沒有可用的更新套件。</string>
+    <string name="tips">確認</string>
+    <string name="get_imei_tips">華為商城要求您手機的 IMEI 或 SN。接受？</string>
+    <string name="software_not_found">軟體無法使用。</string>
+    <string name="service">服務</string>
+    <string name="select_province">選取省</string>
+    <string name="select_city">選取城市</string>
+    <string name="agree">允許</string>
+    <string name="rejection">拒絕</string>
+    <string name="do_not_remind_again">不再提醒</string>
+    <string name="message_center">訊息中心</string>
+    <string name="down_refresh">下拉以重新整理</string>
+    <string name="is_refresh">重新整理</string>
+    <string name="up_refresh">放開以重新整理</string>
+    <string name="locate_nearby_outlets">尋找附近服務中心</string>
+    <string name="gps_message">將啟用 GPS 定位以定出您的位置並尋找附近的服務中心</string>
+    <string name="no_service_outlets">"您的位置
+找不到附近的服務中心"</string>
+    <string name="no_network_connection_prompt">沒有可用的網路。請檢查您的網路連線</string>
+    <string name="once_more">重試</string>
+    <string name="gps_store_message">將啟用 GPS 定位以定出您的位置。</string>
+    <string name="gps_prompt_detail_message">GPS 定位將使用第三方服務 (百度地圖)。此服務和其內容並非由華為控制。繼續前請閱讀其隱私權政策。</string>
+    <string name="ok">確定</string>
+    <string name="find">搜尋</string>
+    <string name="huawei_service_center">Service center</string>
+    <string name="view_content_description">about_icon_content</string>
+    <string name="service_center_details">服務中心詳細料</string>
+    <string name="service_call">撥打服務中心</string>
+    <string name="new_call">通話</string>
+    <string name="huawei_service_line">路線</string>
+    <string name="networking_tips">沒有可用的網路。請檢查您的網路連線。</string>
+    <string name="busline_sel">公車</string>
+    <string name="driveline_sel">開車</string>
+    <string name="walkline_sel">步行</string>
+    <string name="no_buslinesearchresult_prompt">沒有公車路線資訊</string>
+    <string name="no_busline">沒有公車路線資訊</string>
+    <string name="no_driveline">沒有開車路線資訊</string>
+    <string name="no_walkline">沒有步行路線資訊</string>
+    <string name="title_helpcenter_04">服務中心</string>
+    <string name="totalsearch"> 服務中心</string>
+    <string name="no_centersearchresult_prompt">沒有服務中心</string>
+    <string name="search_results">搜尋結果</string>
+    <string name="draw_line_error">無法產生路線。請再試一次。</string>
+    <string name="flow_warning">華為商城需要存取網際網路和您的位置資訊，才能提供產品瀏覽、購物、服務中心搜尋和其他服務。輕觸「同意」即表示您同意我們的<a href="0">使用者授權合約</a>。</string>
+    <string name="agree_">同意</string>
+    <string name="up_grade">應用程式更新</string>
+    <string name="messnotify">通知</string>
+    <string name="open_messnotify">接收通知</string>
+    <string name="open_messnotify_detail">接收華為商城的通知</string>
+    <string name="sound_notify">提示音</string>
+    <string name="sound_notify_detail">提醒接收通知</string>
+    <string name="time_title">設定無聲時段</string>
+    <string name="start_time">開始時間</string>
+    <string name="end_time">結束時間</string>
+    <string name="silent_time">{0} - 隔天 {1}</string>
+    <string name="alarm_title">華為商城鬧鈴提醒</string>
+    <string name="giveup_buy">忽略</string>
+    <string name="panic_buy">加入</string>
+    <string name="alarm_tip">於以下時間前提醒我：</string>
+    <string name="one_minute">1 分鐘前</string>
+    <string name="ten_minute">10 分鐘前</string>
+    <string name="thirty_minute">30 分鐘前</string>
+    <string name="one_hour">1 小時前</string>
+    <string name="one_day">1 天前</string>
+    <string name="no_alarm">關閉</string>
+    <string name="outof_date">此事件發生在您的鬧鈴提醒前。請選取另一個選項。</string>
+    <string name="start_sell">將在 {0} 後開始。立刻加入。</string>
+    <string name="logistics_detail">物流詳細資料</string>
+    <string name="logistics_company">物流公司：</string>
+    <string name="logistics_company_shunfeng">順豐速運公司</string>
+    <string name="logistics_no">物流訂單編號：</string>
+    <string name="logistics_none_info_title">沒有物流追蹤資訊</string>
+    <string name="logistics_none_info_def_record">物流公司收到貨品</string>
+    <string name="logistics_plz_search">請造訪 {0} 網站或撥打以下電話給客服中心：4008111111。</string>
+    <string name="campaign_dialog_title">活動</string>
+    <string name="campaign_title">限時優惠</string>
+    <string name="campaign_browser_type">瀏覽器</string>
+    <string name="net_error">網路訊號弱</string>
+    <string name="system_busy">"很抱歉，系統忙碌中。
+請確定目前無任何手機安全性軟體阻擋 Vmall 存取網際網路，或請稍後再試。"</string>
+    <string name="refresh">輕觸以重新整理</string>
+    <string name="no_msg">沒有訊息</string>
+    <string name="back_home">返回首頁</string>
+    <string name="exit_pressed_again">再次輕觸即可離開。</string>
+    <string name="honor_channel_preemptive">Pre-emptive>></string>
+    <string name="honor_channel_countdown_text">倒數計時</string>
+    <string name="honor_channel_sale_setremind">提醒</string>
+    <string name="honor_channel_slidehome">輕觸或向右滑動螢幕返回首頁</string>
+    <string name="honor_channel_activity_state_wait_order">擱置中</string>
+    <string name="honor_channel_activity_state_wait_purchase">擱置中</string>
+    <string name="honor_channel_activity_state_immediately_order">預訂</string>
+    <string name="honor_channel_activity_state_immediately_purchase">加入</string>
+    <string name="honor_channel_sale_havesetremind">提醒設定</string>
+    <string name="no_accessory">沒有專用配件</string>
+    <string name="slide_left">向左滑動以取得更多資訊</string>
+    <string name="hotword">熱門</string>
+    <string name="address_title">地址：</string>
+    <string name="centerservice_tel_title">手機號碼：</string>
+    <string name="route">路線</string>
+    <string name="make_call">通話</string>
+    <string name="plan">解決方案</string>
+    <string name="dear_user">親愛的用戶，您好：</string>
+    <string name="welcome_vmall">"
+
+華為技術有限公司（以下稱「華為」）是一家以客戶為導向的公司。華為尊重您的個人資料並重視您的隱私權。閱讀、理解和同意本使用者合約前，請勿提交或提供任何資訊給華為。"</string>
+    <string name="use_vmall">使用此應用程式表示您同意並接受</string>
+    <string name="manage_protocol">使用者授權合約</string>
+    <string name="and">和</string>
+    <string name="user_agreement">使用者合約</string>
+    <string name="policy_title">華為隱私權政策</string>
+    <string name="protocol_title">使用者授權合約</string>
+    <string name="close">關閉</string>
+    <string name="agree_goon">同意並繼續</string>
+    <string name="protocol_content">"\u0009\u0009重要須知： 本《最終使用者軟體使用授權合約》 （以下簡稱“本協議”）是您（個人、公司、或其他組織）與華為技術有限公司（以下簡稱華為）簽訂的關於本軟體的最終使用者使用授權合約。 華為在此特別提示您仔細閱讀本協議中各條款， 包括但不限於用戶使用須知、法律責任與免責等。 您的安裝、使用行為將視為接受本協議。 一旦安裝或以任何方式使用本軟體，即表示您已同意接受本協議的約束。如果您不同意本協議的條款， 則不能獲得安裝、使用本軟體的權利。 
+\u0009\u0009本協定是您與華為就您下載、 安裝、 使用本軟體所訂立的協定。 本協定約定與您關於本軟體使用許可方面的權利義務。 
+\u0009\u00091、智慧財產權聲明 
+\u0009\u0009本軟體由華為開發或者由華為獲得軟體權利人（以下簡稱“許可人”）許可。本軟體的智慧財產權以及與本軟體相關的所有資訊內容，包括但不限於：文字表述及其組合、圖示、圖飾、圖表、色彩、介面設計、版面框架、有關資料、印刷材料、電子文檔等，均受著作權法和國際著作權條約以及其他智慧財產權法律、法規的保護，其智慧財產權均歸華為及其許可人所有。 
+\u0009\u00092、軟體的許可 
+\u0009\u0009 （1）本協議未明示授權的其他一切權利均歸華為及其許可人所有，如果您需要使用本協定未授予的任何其他權利，須另行取得華為的書面同意。 
+\u0009\u0009 （2）您通過本軟體使用協力廠商的應用服務，應另行與該協力廠商簽訂服務協定。 
+\u0009\u0009 （3）華為許可您在華為手機上下載、安裝、運行本軟體。該許可是有限的、不可轉讓的、不可分許可的、可撤銷的、非獨占的、非排他的。 
+\u0009\u0009 （4）您只能在一台華為手機上下載、安裝、運行本軟體的一份副本。 
+\u0009\u00093、使用限制 
+\u0009\u0009您在遵守國家法律、法規、政策及本協議的前提下，可依本協定使用本軟體。您無權也不得實施包括但不限於下列行為： 
+\u0009\u0009 （1）刪除本軟體中的任何版權申明或提示以及任何其他資訊、內容。 
+\u0009\u0009 （2）對本軟體進行反向工程、反向彙編、反向編譯等。 
+\u0009\u0009 （3）在本協議規定的條款之外，使用、複製、修改、租賃或轉讓本軟體或其中的任一部份。 
+\u0009\u0009 （4）向第三人提供本軟體，許可他人使用本軟體或將本軟體用於華為禁止的目的（如商業目的等）。 
+\u0009\u0009 （5）對本軟體的圖像、文字等相關資訊，擅自實施包括但不限於下列行為：使用、複製、修改、連結、轉載、彙編、發表、出版、建立鏡像網站、擅自借助本軟體發展與之有關的衍生產品、作品及服務等。 
+\u0009\u0009 （6）利用本軟體儲存、發表、傳播違反國家法律、法規以及國家政策規定的內容。 
+\u0009\u0009 （7）利用本軟體儲存、發表、傳播侵害他人智慧財產權、 商業秘密等合法權利的內容。 
+\u0009\u0009 （8）進行危害電腦網路安全的行為。 
+\u0009\u00094、技術支援 
+\u0009\u0009本協定下，華為及其許可人不提供關於本軟體的任何技術支援服務。 
+\u0009\u00095、版本升級 
+\u0009\u0009本軟體將來是否提供升級版本將由華為決定。如果本軟體經華為同意升級，除非升級版本有替代的軟體授權合約，否則升級版本仍適用本協議。如果該軟體標明為升級版本，您必須遵守本協議。 
+\u0009\u00096、法律責任 
+\u0009\u0009 （1）您同意，使用本軟體的風險由您自行承擔。 
+\u0009\u0009 （2）您認可，本軟體可能受到各種安全問題的侵擾，如他人利用您的資料，造成現實生活中的騷擾。下載安裝的軟體中含有“特洛伊木馬”等病毒，威脅到您的資訊和資料的安全，繼而影響本軟體的正常使用等等。您應加強資訊安全及資訊資源的保護意識，要注意加強式密碼保護，以免遭致損失和騷擾。 
+\u0009\u0009 （3）本軟體按“原樣”授予許可。華為及其許可人就本軟體不提供任何明示的或默示的擔保和保證，包括不對本軟體的適銷性、特定用途做任何明示或默示的保證，華為及其許可人不就不侵犯協力廠商權利作任何保證。 
+\u0009\u0009 （4）在適用法律所允許的最大範圍內，華為及其許可人絕不就因使用或不能使用本軟體所引起的或有關的任何直接的、間接的、意外的、特殊的、懲罰性的或其它任何損害（包括但不限於因人身傷害或財產損壞而造成的損害賠償，因利潤損失、營業中斷、商業資訊的遺失而造成的損害賠償，因未能履行包括誠信或相當注意在內的任何責任致使隱私洩露而造成的損害賠償，因疏忽而造成的損害賠償，或因任何金錢上的損失或任何其它損失而造成的損害賠償）承擔賠償責任，即使華為及其許可人事先被告知該損害發生的可能性。華為及其許可人承擔的所有責任以您購買本軟體所支付的價款為限。本條款在任何情況下都將有效。 
+\u0009\u0009 （5）非經華為及其許可人授權的其它任何由本軟體衍生的軟體，均屬非法。下載、安裝、使用此類軟體，將可能導致不可預知的風險，建議您不要輕易下載、安裝、使用，由此產生的一切損失、損害以及法律責任與糾紛將由您承擔責任，與華為無關。 
+\u0009\u0009 （6）對於您違法或違反本協議而引起的一切責任，由您負全部責任，若導致華為損失的，華為有權要求您全額賠償。 
+\u0009\u00097、權利終止 
+\u0009\u0009華為或其許可人有權隨時中止或終止本協議。本協議終止後，您必須立即停止使用本軟體，刪除已經複製、安裝的所有軟體及相關資料。 
+\u0009\u00098、其他條款 
+\u0009\u0009 （1）本協定任何條款的部分或全部無效，不影響其它條款的效力。 
+\u0009\u0009 （2）本協議的解釋、效力及糾紛的解決，適用於中華人民共和國法律。因本協議發生任何糾紛或爭議，首先應友好協商解決，協商不成的，您在此完全同意將糾紛或爭議提交深圳仲裁委員會仲裁裁決，仲裁裁決是終局的，對雙方具有約束力。仲裁的所有費用將由仲裁敗訴方承擔。 
+\u0009\u0009 （3）有關本軟體的問題，您可撥打華為客戶服務熱線諮詢。 
+\u0009\u0009感謝您對華為的支持，為了更好的解答您的疑問和保護您的權益，請在繼續之前仔細閱讀以下說明： 
+\u0009\u0009為了更好的提高產品的穩定性，華為將會收集您的產品的一些錯誤資訊和技術資料，華為請您授予華為對以下資訊進行收集和分析的權利： 
+\u0009\u0009 1、設備資訊：如手機作業系統、手機語言、終端型號、手機聯網模式等。 
+\u0009\u0009 2、用戶端信息：如用戶端版本號、用戶端下載管道、用戶打開/關閉用戶端的時間等。 
+\u0009\u0009 3、應用資訊：如應用報錯資訊、服務是否啟動等。 
+\u0009\u0009 如果您不希望您的上述資訊被華為收集和分析，請您不要繼續，退出本程式。 
+\u0009\u0009 另外，本軟體在使用過程中需訪問網路，所產生的流量費用由運營商收取，詳情請諮詢您所屬的運營商。 
+\u0009\u0009 如果您有任何問題，您可以和華為聯繫以取得詳細資訊。 
+\u0009\u0009 華為技術有限公司版權所有，保留在法律許可範圍內的解釋權。"</string>
+    <string name="policy_content">&lt;p> 親愛的用戶，您好：&lt;br /> &lt;br /> 華為技術有限公司和其在世界各地的企業分部（下稱「華為」或「我們」 、「我們的」）瞭解隱私和個人資料對您而言的重要性，並將您的隱私權保障列為第一要務。在您充分閱讀、瞭解並同意本政策前，請勿提交或提供任何個人或隱私資料給華為。&lt;br /> &lt;br /> 我們建立本政策來協助您瞭解：&lt;br /> 1 華為如何使用您的個人資料&lt;br /> 2 華為如何使用 Cookie&lt;br /> 3 華為如何揭露您的個人資料&lt;br /> 4 如何修改、變更或檢查您的個人資料&lt;br /> 5 華為如何保護您的個人資料&lt;br /> 6 華為如何處理未成年人的個人資料&lt;br /> 7 由誰擔任第三方服務供應商&lt;br /> 8 如何傳輸資料&lt;br /> 9 本政策的更新方式為何&lt;br /> 10 如何聯絡華為&lt;br /> &lt;br /> 請注意，本隱私政策僅適用於華為的消費性電子產品，包括但不限於功能手機、智慧型手機、平板電腦、家用裝置、資料卡、電腦應用程式、工具及軟體，以及相關的網站、產品和服務。那些未顯示或未連結至本政策的華為網站、服務及產品，或是其本身已受自有隱私政策所規範者，不適用此政策。&lt;br /> &lt;br /> 本政策將說明華為處理個人及隱私資料的方式，以及華為是如何致力於保護您的隱私權。儘管如此，單靠一項政策並不足以涵蓋並處理所有的資料處理疑慮。因此，華為或許會針對特定的產品或服務提供額外的資訊，作為本政策之補充，讓您能夠對其他的資料收集目的有進一步的掌握。&lt;br /> &lt;br /> 1 華為如何使用您的個人資料&lt;br /> &lt;br /> 1.1 華為會如何、何時以及基於什麼樣的目的，來收集和使用您的個人資料？&lt;br /> &lt;br /> 建立帳戶、購買或註冊產品或服務時&lt;br /> 當您在線上提出欲建立新帳戶、購買或註冊產品或服務的申請時，我們可能會要求您提供相關資訊（如您的電子郵件地址、配送地址、電話號碼、產品資訊、購買時間及付款方式），以便我們能夠為您執行採購訂單、配送產品或服務、啟用或驗證產品、按需求做出變更、提供技術支援或授權的更新，以及其他各種服務。&lt;br /> &lt;br /> 參與促銷活動或市場調查&lt;br /> 徵得您的同意後，我們可能會要求您提供相關的資訊（例如您的電話號碼和電子郵件地址），方便我們和您取得聯絡、提供您可能會感興趣的產品和服務資訊，或在您的同意之下邀請您參與華為的促銷活動和市場調查。您可以要求華為不要將您的個人資料用於促銷活動或市場調查之相關用途。您可以從華為的網站上或個別產品設定中退出或關閉對應選項，或傳送電子郵件至 &lt;a href=mailto:mobile@huawei.com>mobile@huawei.com&lt;/a>與我們聯絡。&lt;br /> &lt;br /> 和您的朋友分享內容時&lt;br /> 如果您想要利用華為服務來和朋友分享內容，我們會先徵得您的同意後，請您提供朋友的聯絡資訊，包括但不限於任何 SNS 帳戶和電子郵件地址。華為可能會利用這些資訊透過電子郵件、即時訊息、SNS 或 SMS/MMS，傳送邀請給您的朋友。邀請的傳送將成為此類資訊的唯一用途。華為不會藉著其他目的來儲存或使用此類資訊或提供其他第三方加以利用或儲存。&lt;br /> &lt;br /> 更新時&lt;br /> 為了通知您可用的系統或應用程式更新，華為可能會從您的裝置上收集相關的系統及應用程式資料。此類資訊可能包括您的裝置名稱、系統和應用程式版本、區域和語言設定、裝置識別碼（IMEI、 ESN、MEID 及 SN）以及您電信業者的網路 ID。告知您系統或應用程式的更新資訊，是華為收集和處理此類資訊的唯一目的。&lt;br /> &lt;br /> 作為統計資料&lt;br /> 華為可能會收集特定資料作為分析之用，包括您的裝置名稱、裝置版本、裝置識別碼（IMEI、ESN、MEID 及 SN）、裝置的乏晰地理位置資訊（例如您裝置所在位置的區域 ID）、電信業者的網路 ID (PLMN)、使用應用程式的方式，以及您用來存取網際網路的 IP 位址。華為收集和處理此類資訊的目的在於：提供您最佳的個人化使用者體驗及客製化內容、改善我們的產品、分析我們的業務營運效率、分析我們的市占率、提升華為網路及服務的安全性，及啟用您的售後服務。&lt;br /> &lt;br /> 疑難排解&lt;br /> 如果您的裝置或應用程式遭遇到任何錯誤，您可以選擇將錯誤資訊回傳至華為，以便華為能夠為您提供故障排除服務。華為可能會收集關於此問題的相關資訊，例如您的裝置型號、應用程式名稱及版本、裝置辨別碼及錯誤記錄。&lt;br /> &lt;br /> 資料的同步、分享及儲存&lt;br /> 您可以利用華為提供的部分服務來同步、分享及儲存資料。为实现前述目的，華為可能會收集和儲存您上傳或下載的資料，以及執行這些上傳及下載作業所需的資料。&lt;br /> &lt;br /> 1.2 定位服務&lt;br /> 當您存取定位服務時（例如以特定位置為基礎進行搜尋、導航或確認天氣資訊），華為可能會收集、使用和處理您裝置的精確或乏晰位置資訊。這讓華為能夠為您提供前述的服務項目。收集的資料可能包括您的裝置識別碼（IMEI、ESN、MEID 及 SN）、類型、型號以及即時位置資訊（包括透過 GPS、WLAN 取得的資訊，以及電信業者的網路 ID）。華為會以匿名的方式收集位置資訊以提供定位產品及服務，並進一步提升其品質。&lt;br /> &lt;br /> 1.3 非個人性資訊的收集與使用&lt;br /> 「非個人性資訊」係指資訊的內容無法用於辨識特定使用者。華為可能會收集總和性統計資訊，例如我們網站的造訪者人數統計。華為收集此類資訊的目的在於，瞭解人們如何使用我們的網站、產品及服務。這樣的方式，讓華為能夠提升其服務品質，並將服務內容組織為流暢的系統，以強化滿足客戶需求的能力。華為得在符合台灣相關法令規定下自行斟酌是否要收集、使用、傳輸或揭露非個人性資訊，以達成其他目的。&lt;br /> &lt;br /> 2 華為如何使用 Cookie&lt;br /> 為了確保網站的功能能夠正常運作，我們有時會將少量資料檔置入您的電腦或行動裝置中，此類檔案被稱為 Cookie。Cookie 是網站伺服器儲存在您的電腦或行動裝置上的簡易文字檔，且只有該伺服器能夠擷取或讀取該 Cookie 的內容。每個 Cookie 都是您的網頁瀏覽器專屬的。當中包含匿名資訊，例如唯一識別碼、網站名稱、數字及字元。Cookie 讓網站能夠記憶特定資訊，例如您的喜好或購物車中的品項。&lt;br /> &lt;br /> 多數的大型網站或網際網路服務供應商會利用 Cookie 來提升使用者體驗，讓網站能夠藉此「記住」您，這包括單次造訪期間所使用的「session cookie」，以及適用於多次回訪的「persistent cookie」。Cookie 能幫助網站記住您的設定內容，包括語言、字型大小，以及您在電腦或行動裝置上瀏覽網站時的其他使用偏好。這樣一來，您就不必在每次回訪時都必須重新輸入這些內容。如果網站未使用 Cookie，則每當您在該網站開啟新頁面時，您都會被視為是新來的造訪者。舉例而言，若您在輸入登入資料後即前往另一個頁面，則該網站將無法辨識出您，也就無法讓您保持在登入狀態。我們的 Cookie 其用途並不在於辨識您的個人身分。它們的目的是為了要提供您更優質的網站使用體驗。&lt;br /> &lt;br /> 您可以依照規定來控制或刪除 Cookie。需要更多細節資訊，請參閱 &lt;a href=http://aboutcookies.org/>AboutCookies.org&lt;/a>。&lt;br /> &lt;br /> 您可以刪除所有電腦上現存的 Cookie 資料，並調整多數瀏覽器的設定以阻斷 Cookie 置入。儘管如此，如果您決定這樣做，那麼在您每次造訪我們的網站時，您可能都必須以手動的方式調整部分偏好設定。&lt;br /> 關於如何變更瀏覽器設定的更多細節資訊，請前往以下連結：&lt;br /> &lt;br /> &lt;a href=http://support.microsoft.com/kb/260971 target=_blank>Internet Explorer&lt;/a>&lt;br /> &lt;a href=https://support.google.com/chrome/bin/answer.py?hl=en-GB&amp;amp;answer=95647&amp;amp;p=cpn_cookies target=_blank>Google Chrome&lt;/a>&lt;br /> &lt;a href=http://support.mozilla.org/en-US/kb/Cookies target=_blank>Mozilla Firefox&lt;/a>&lt;br /> &lt;a href=http://support.apple.com/kb/PH5042 target=_blank>Safari&lt;/a>&lt;br /> &lt;a href=http://www.opera.com/browser/tutorials/security/privacy/ target=_blank>Opera&lt;/a>&lt;br /> 除了這裡所指明的用途及目的外，華為不會將 Cookie 資料用作他途，亦不會藉著其他目的來收集任何個人資料。&lt;br /> &lt;br /> 3 華為如何揭露使用您的個人資料&lt;br /> 在未告知您的情況下，華為絕不會將您的個人資料銷售予第三方。儘管如此，華為可能會在以下情況中揭露您的個人資料：&lt;br /> (i) 對於該揭露行動您已明確表示同意：&lt;br /> 在獲得您的同意後，華為將得與其他公司分享您的個人資訊；&lt;br /> &lt;br /> (ii) 將您的個人資訊揭露給其他華為子公司或經授權的合作第三方。&lt;br /> 為了提供特定的服務給您，華為可能需要合作夥伴的協助。因此，華為可能會和合作夥伴分享您的部分個人資訊，以豐富我們的服務內容，並提升您的整體使用體驗。舉例而言，當您決定在線上購買華為的產品時，華為就必須將您的個人資訊交給物流服務業者，讓他們能夠將產品配送給您，或是讓我們的合作夥伴能夠藉此為您提供其他服務。華為禁止所有華為子公司或經授權的第三方，將其獲得的分享資訊用作他途。&lt;br /> &lt;br /> (iii) 依照法規要求揭露您的個人資訊：&lt;br /> 在法律、法律程序、訴訟、公務或政府機關的要求之下，華為可能會揭露您的個人資訊。在華為涉及重整、合併或破產清算等事務時，華為亦可能將您的個人資訊揭露給參與此類事務之他方。&lt;br /> &lt;br /> 4 如何修改、變更或檢查您的個人資料&lt;br /> 對於所提交的個人資料，您必須負責確保其準確性。華為會負起最高的商業盡責標準，努力維持您個人資料的準確性，並依照您的要求刪除或修正資訊內容。您可以寄送電子郵件至 &lt;a href=mailto:mobile@huawei.com>mobile@huawei.com&lt;/a> 與我們聯絡。依照華為的條款與條件，您隨時都可以管理自己的個人資料，如您的個人帳戶註冊資訊。&lt;br /> &lt;br /> 5 華為如何保護您的個人資料&lt;br /> 華為會在合理的範圍內採取預防措施，包括但不限於技術性、實體性及管理上的行動，以保護您的個人資訊免於遭受未經授權的存取、揭露、使用、變更、損壞或損失。以技術層面為例，華為會使用防毒軟體加密並監控我們的系統，以防止資料中心遭到惡意攻擊。在實體層面上，華為已建立了造訪控管機制，只有經授權的人員才能夠接近和存取部分個人資料。而在管理層面上，華為則針對安全及隱私保護的機警性開設了相關訓練課程，確保員工能夠瞭解保護個人資料的重要性。儘管我們已盡到最大的努力來保障您的資訊安全，但請記得沒有任何安全措施是絕對完美而無法破解的。&lt;br /> &lt;br /> 6 華為如何處理未成年人的個人資料&lt;br /> 除了受法規的要求外，在未得父母同意的情況下，華為不會向未成年人收集個人資訊。我們僅在法律許可的範圍內，在依當地法律與規定尋求家長同意並保護未成年人的前提下，使用或揭露有關未成年人的個人資料。根據所適用的法律及地方的文化習慣，未成年人的定義可能有所不同。&lt;br /> &lt;br /> 7 由誰擔任第三方服務供應商&lt;br /> 為呈現優良的造訪品質並提升使用者體驗，您可能會接觸到由第三方提供的內容或網際網路超連結。您可自行決定是否要存取這類超連結或內容，或是使用由第三方所提供的服務和產品，但這些內容都不在華為的控管範圍之內。對於第三方所提供的隱私和資料保護措施，華為無法控制亦無權介入，此類保護措施亦不受本政策所規範。您自願提供給第三方的任何資訊，均不在本政策的適用範圍之內。這部分您必須參考由第三方所提供的隱私保護政策。&lt;br /> &lt;br /> 8 如何傳輸資料&lt;br /> 華為可能會利用位於全球不同國家/地區的資源與伺服器，來提供產品與服務。因此，當您開始使用我們的產品與服務時，即代表您同意華為將您的個人資訊傳輸到您使用我們服務的國家以外的國家。這些國家/地區或許並未針對個人資料制定明確的保護規範，當然他們也可能針對資料保護設有不同的法規要求。在這種情況下，華為會確保有足夠的法律基礎來進行此類的資料傳輸，並會在所適用的法規要求下為您的個人資料提供適當的保護。舉例而言，華為可能會採用由對應機關所許可的標準協定（如有必要）或採取其他適當的技術和組織資訊保護措施。&lt;br /> &lt;br /> 9 本政策的更新方式為何&lt;br /> 華為可能會隨時更新或修訂此政策。華為將透過各種不同管道嘗試向您通知。請至我們的官方網站查看最新的政策版本。&lt;br /> &lt;br /> 10 如何聯絡華為&lt;br /> 如果您有任何問題、評論或建議，請將它們提交至我們在全球的辦公室據點。需要我們辦公室據點的完整清單，請造訪&lt;a href=http://www.huawei.com/en/about-huawei/contact-us/index.htm>http://www.huawei.com/en/about-huawei/contact-us/index.htm&lt;/a>。您可以寄送電子郵件至 &lt;a href=mailto:mobile@huawei.com>mobile@huawei.com&lt;/a>。&lt;br /> &lt;br /> 附註：由於採用了當地法律和語言，因此本隱私權政策可能與一般英文版不同。若本文件和一般英文版之間有任何差異，以本文件為準。&lt;br /> &lt;br /> 上次更新日期：2014 年 8 月 8 日&lt;br /> 版權所有 © 華為技術有限公司。2014 年。保留所有權利。&lt;/p></string>
+    <string name="share_to">分享到</string>
+    <string name="weibosdk_demo_toast_auth_success">授權成功。</string>
+    <string name="weibosdk_demo_toast_auth_failed">授權失敗。</string>
+    <string name="weibosdk_demo_toast_auth_canceled">取消授權。</string>
+    <string name="sina_weibo">新浪微博</string>
+    <string name="weixin">微信</string>
+    <string name="moments">朋友圈</string>
+    <string name="weixin_has_not_installed_moments">無法與您目前的微信版本分享。請將您的微信用戶端更新到 4.2 版或更新版本。</string>
+    <string name="weixin_not_installed">您的手機未安裝微信。</string>
+    <string name="share_to_sina">分享至新浪微博</string>
+    <string name="share">分享</string>
+    <string name="share_ok">成功分享</string>
+    <string name="size_over_limit">您已輸入太多字。</string>
+    <string name="share_no_content">跟您的朋友說說話。</string>
+    <string name="copy_url">複製網址</string>
+    <string name="copy_to_clipboard">已複製到剪貼板。</string>
+    <string name="hot_search">熱門搜尋</string>
+    <string name="no_search_result">很抱歉，無符合的結果。請嘗試不同的搜尋用詞</string>
+    <string name="newes">最新</string>
+    <string name="price">價格</string>
+    <string name="popularity">熱門</string>
+    <string name="relevance">相關</string>
+    <string name="without_product">已售完</string>
+    <string name="without_price">尚無價格</string>
+    <string name="input_search_word">輸入您想要搜尋的產品。</string>
+    <string name="search_product">搜尋產品</string>
+    <string name="remark">評價</string>
+    <string name="rignt_slip">向右滑動</string>
+    <string name="all">全部</string>
+    <string name="clear">清除</string>
+    <string name="product_detail">產品詳細資料</string>
+    <string name="product_basic">基本</string>
+    <string name="product_details">圖片</string>
+    <string name="product_parameters">規格</string>
+    <string name="product_evaluations">評價 ({0})</string>
+    <string name="product_buy">立即購買</string>
+    <string name="product_add_cart">放入購物車</string>
+    <string name="feedback">正面</string>
+    <string name="product_preferential">促銷活動：</string>
+    <string name="product_gift">贈品：</string>
+    <string name="product_freight">¥%s 以上免運費</string>
+    <string name="product_service">服務：</string>
+    <string name="product_related">相關產品</string>
+    <string name="product_plans">方案：</string>
+    <string name="product_price_real">訂價：¥%s</string>
+    <string name="product_price_plan">方案價：</string>
+    <string name="product_price_save">節省：</string>
+    <string name="product_num">數量：</string>
+    <string name="product_selected">已選取：</string>
+    <string name="good_comment_size">佳 ({0})</string>
+    <string name="middle_comment_size">一般 ({0})</string>
+    <string name="bad_comment_size">差 ({0})</string>
+    <string name="good_comment_prcent">佳 {0}%</string>
+    <string name="middle_comment_prcent">一般 {0}%</string>
+    <string name="bad_comment_prcent">差 {0}%</string>
+    <string name="product_service_text">%s 將運送產品、開立發票，並且提供售後服務。</string>
+    <string name="prd_attr_package">單買產品</string>
+    <string name="prd_attr_package0">方案 1</string>
+    <string name="prd_attr_package1">方案 2</string>
+    <string name="prd_attr_package2">方案 3</string>
+    <string name="prd_attr_package3">方案 4</string>
+    <string name="prd_attr_package4">方案 5</string>
+    <string name="prd_attr_package5">方案 6</string>
+    <string name="prd_attr_package6">方案 7</string>
+    <string name="prd_attr_package7">方案 8</string>
+    <string name="prd_attr_package8">方案 9</string>
+    <string name="prd_attr_package9">方案 10</string>
+    <string name="client_not_support">此應用程式無法購買本產品</string>
+    <string name="prd_book_now">預購</string>
+    <string name="prd_rush_buy">購買</string>
+    <string name="prd_sale_remind">可購買時請通知</string>
+    <string name="prd_not_sale">現在無法購買</string>
+    <string name="no_relevant_remark">無評價</string>
+    <string name="click_in_short_time">短時間內輕觸過多次。請稍後再試。</string>
+    <string name="prd_arrive_remind">可購買時請通知</string>
+    <string name="set_arrive_success">產品到貨時會通知您。</string>
+    <string name="set_remind_success">產品到貨的前 10 分鐘會通知您。</string>
+    <string name="time_to_start">活動開始時間倒數：%s</string>
+    <string name="prd_input_prd_num">選取數量。</string>
+    <string name="prd_up_to_limit">無法購買此數量。</string>
+    <string name="prd_up_to_inventory">存貨數量不足。</string>
+    <string name="prd_choose_package">請指明您只需要此產品還是要搭配方案。</string>
+    <string name="prd_freight">免費送貨</string>
+    <string name="prd_already_remind">提醒設定</string>
+    <string name="remarkpercenr_totoalcount">{0} 筆評價（{1}% 良好）</string>
+    <string name="remark_totoalcount">{0} 筆評價</string>
+    <string name="without_remark">沒有評價</string>
+    <string name="pay_success">支付成功。</string>
+    <string name="pay_failed">支付失敗。請選擇其他支付方法，然後再試一次。</string>
+    <string name="pay_deposit">支付儲值</string>
+    <string name="prd_no_price">尚無價格</string>
+    <string name="download_complete">下載完成。</string>
+    <string name="download_invoice_failed">下載失敗。</string>
+    <string name="ninemenu_title">版本過期</string>
+    <string name="ninemenu_messgae">使用本功能前，必須先更新 Vmall。</string>
+    <string name="ninemenu_update">更新</string>
+    <string name="setting">設定</string>
+    <string name="location_closed">無法使用定位服務。請檢查您的設定。</string>
+    <string name="permission_deny_msg">Vmall 要求存取 &lt;b>&lt;font color=\"red\">%1$s&lt;/font>&lt;/b>，否則應用程式無法正常運作。&lt;br />修改權限方式：&lt;br />輕觸「設定」，選取&lt;b>&lt;font color=\"red\">權限&lt;/font>&lt;/b>」，並且啟用對應的權限。</string>
+    <string name="permission_setting">設定</string>
+    <string name="permission_phone">手機</string>
+    <string name="permission_storage">儲存空間</string>
+    <string name="permission_location">位置</string>
+    <string name="permission_multiple">手機、位置與儲存空間</string>
+    <string name="activity_not_started">活動即將開始</string>
+    <string name="activity_end">活動已結束</string>
+    <string name="close_dialogue">關閉聊天</string>
+    <string name="CS_display_password">顯示密碼</string>
+    <string name="CS_connect_timeout_error">網路連線逾時。請稍候重試。</string>
+    <string name="CS_loading">載入中...</string>
+    <string name="CS_huawei_id_hint">華為 ID</string>
+    <string name="CS_check_password_title">若要驗證您的身分，請輸入您的密碼。</string>
+    <string name="CS_check_password_hint">輸入密碼</string>
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/divider_horizantal" />
+    <LinearLayout android:orientation="vertical" android:id="@id/prd_attr_value_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font4" android:layout_marginTop="@dimen/font3" android:layout_marginRight="@dimen/font12" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/prd_package_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font4" android:layout_marginRight="@dimen/font12" android:layout_marginBottom="@dimen/font8" />
+    <LinearLayout android:orientation="vertical" android:id="@id/prd_package_price" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginTop="@dimen/font8" android:layout_marginRight="@dimen/font12">
+        <include layout="@layout/divider_horizantal" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:layout_marginBottom="@dimen/font8">
+            <TextView android:id="@id/attr_product_plan_real" android:text="@string/product_price_real" style="@style/product_attr_text_style" />
+            <TextView android:id="@id/attr_product_sale_price_head" android:layout_marginLeft="@dimen/font8" android:text="@string/product_price_plan" android:layout_toRightOf="@id/attr_product_plan_real" android:layout_alignTop="@id/attr_product_plan_real" style="@style/product_attr_text_style" />
+            <TextView android:textSize="@dimen/font14" android:textColor="@color/vmall_default_red" android:id="@id/attr_product_price_plan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/attr_product_sale_price_head" android:layout_alignTop="@id/attr_product_sale_price_head" />
+            <TextView android:id="@id/attr_product_save_head" android:layout_marginLeft="@dimen/font8" android:text="@string/product_price_save" android:layout_toRightOf="@id/attr_product_price_plan" android:layout_alignTop="@id/attr_product_price_plan" style="@style/product_attr_text_style" />
+            <TextView android:textSize="@dimen/font14" android:textColor="@color/vmall_default_red" android:id="@id/attr_product_price_save" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/attr_product_save_head" android:layout_alignTop="@id/attr_product_save_head" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/attr_product_plans_details" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginRight="@dimen/font12" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginRight="@dimen/font12" android:layout_marginBottom="@dimen/font12">
+        <include android:id="@id/selected_divider" android:visibility="gone" layout="@layout/divider_horizantal" />
+        <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8">
+            <TextView android:text="@string/product_num" style="@style/product_text_head_style" />
+            <com.vmall.client.view.ProductBuyNumLayout android:id="@id/prd_buy_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font8" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/attr_selected_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font24">
+            <TextView android:text="@string/product_selected" style="@style/product_text_head_style" />
+            <TextView android:textSize="@dimen/font13_sp" android:textColor="@color/logistics_item_current_time_text_color" android:id="@id/attr_product_selected_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font8" />
+        </LinearLayout>
+    </LinearLayout>
+    <include android:id="@id/under_selected__divder" layout="@layout/divider_horizantal" />
+</LinearLayout>

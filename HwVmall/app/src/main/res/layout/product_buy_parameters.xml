@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/font13" android:layout_above="@id/pop_buy_layout">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginRight="@dimen/font54">
+            <ImageView android:layout_gravity="center_vertical" android:id="@id/attr_product_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" android:layout_marginBottom="@dimen/font12" android:src="@drawable/icon_no_pic" android:scaleType="fitXY" android:contentDescription="@null" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginTop="@dimen/font10" android:layout_marginBottom="@dimen/font9">
+                <TextView android:textSize="@dimen/font14_sp" android:textColor="@color/time_title" android:ellipsize="end" android:id="@id/attr_product_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginTop="@dimen/font10" android:maxLines="2" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginTop="@dimen/font8" android:layout_marginRight="@dimen/font4" android:layout_marginBottom="@dimen/font9">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/attr_prd_price_head_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                        <TextView android:textSize="@dimen/font14_sp" android:textColor="@color/vmall_default_red" android:id="@id/attr_product_price_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/font4" />
+                        <TextView android:textSize="@dimen/font9_sp" android:textColor="@color/white" android:gravity="center" android:id="@id/attr_prd_deposit_prom_head" android:background="@drawable/prd_deposit_bg" android:visibility="gone" android:layout_width="@dimen/font32" android:layout_height="@dimen/font14" android:layout_marginRight="@dimen/font6" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/font14_sp" android:textColor="@color/vmall_default_red" android:id="@id/attr_product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/font4" android:layout_toRightOf="@id/attr_prd_price_head_layout" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/font14_sp" android:textColor="@color/product_detail" android:id="@id/attr_product_price_real" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/attr_product_price" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="wrap_content" android:overScrollMode="never">
+            <include layout="@layout/buy_parameters_item" />
+        </ScrollView>
+    </LinearLayout>
+    <Button android:id="@id/attr_close_btn" android:background="@drawable/product_buy_attr" android:layout_width="@dimen/font34" android:layout_height="@dimen/font34" android:layout_marginRight="@dimen/font12" android:layout_alignParentRight="true" />
+    <com.vmall.client.view.ProductBuyBar android:id="@id/pop_buy_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" />
+</RelativeLayout>

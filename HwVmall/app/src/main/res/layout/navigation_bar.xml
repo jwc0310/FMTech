@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/font48"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:vmall="http://schemas.android.com/apk/res/com.vmall.client">
+    <TextView android:id="@id/divider" android:background="@color/without_product" android:layout_width="fill_parent" android:layout_height="@dimen/font1_px" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:background="@color/white" android:paddingLeft="@dimen/font5" android:paddingRight="@dimen/font5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/divider">
+        <com.vmall.client.view.NavigationBarItem android:id="@id/home_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font10" android:layout_weight="1.0" vmall:background="@drawable/home_tab_normal" vmall:text="@string/tab_index" />
+        <com.vmall.client.view.NavigationBarItem android:id="@id/huawei_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font10" android:layout_weight="1.0" vmall:background="@drawable/huawei_normal" vmall:text="@string/tab_huawei_channel" />
+        <com.vmall.client.view.NavigationBarItem android:id="@id/honor_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font10" android:layout_weight="1.0" vmall:background="@drawable/honor_tab_normal" vmall:text="@string/tab_honor_channel" />
+        <com.vmall.client.view.NavigationBarItem android:id="@id/category_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font10" android:layout_weight="1.0" vmall:background="@drawable/category_tab_normal" vmall:text="@string/tab_category" />
+        <com.vmall.client.view.NavigationBarItem android:id="@id/mine_tab" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font10" android:layout_weight="1.0" vmall:background="@drawable/mine_tab_normal" vmall:text="@string/service" />
+    </LinearLayout>
+</RelativeLayout>

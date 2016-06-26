@@ -1,0 +1,322 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Vmall</string>
+    <string name="cancel">Cancelar</string>
+    <string name="confirm">OK</string>
+    <string name="downloading">A transferir</string>
+    <string name="hwpush_goback">Anterior</string>
+    <string name="hwpush_forward">Reencaminhar</string>
+    <string name="hwpush_refresh">Atualizar</string>
+    <string name="hwpush_collect">Fav.</string>
+    <string name="hwpush_deltitle">Eliminar notificações</string>
+    <string name="hwpush_msg_collect">Favoritos</string>
+    <string name="hwpush_msg_favorites">Notificações favoritas</string>
+    <string name="hwpush_delete">Eliminar</string>
+    <string name="hwpush_selectall">Selec. tudo</string>
+    <string name="hwpush_collect_tip">Será criado um ícone de favoritos no Ecrã Inicial. Pode tocar no ícone para ver todas as suas notificações favoritas.</string>
+    <string name="hwpush_collect_tip_known">OK</string>
+    <string name="hwpush_cancel">Cancel.</string>
+    <string name="hwpush_unselectall">Desmar. tudo</string>
+    <string name="hwpush_no_collection">Não existem notificações favoritas</string>
+    <string name="cloudpush_app_name">Serviço Push</string>
+    <string name="hwpush_richmedia">Multimédia avançada</string>
+    <string name="hwpush_loading_title">A carregar... Aguarde.</string>
+    <string name="hwpush_dialog_limit_title">Nota</string>
+    <string name="hwpush_dialog_limit_message">Um máximo de 1000 notificações favoritas podem ser guardadas. Elimine algumas notificações antes de adicionar novas. Ir para a lista de notificações favoritas?</string>
+    <string name="hwpush_dialog_limit_ok">Ir</string>
+    <string name="hwpush_request_provider_permission">Armazenar mensagens</string>
+    <string name="common_cny_signal">¥</string>
+    <string name="app_copyright">Copyright © 2016 Huawei. Todos os direitos reservados.</string>
+    <string name="versionEqual">Está a versão mais recente. Não é necessário atualizar.</string>
+    <string name="updateNow">Aplicar</string>
+    <string name="updateDesc">Atualização disponível. Atualizar agora?</string>
+    <string name="updateLater">Ignorar</string>
+    <string name="update_title">Aviso de atualização</string>
+    <string name="checkNewVer">Verificar por atualizações</string>
+    <string name="about">Sobre nós</string>
+    <string name="loading">A carregar… Aguarde.</string>
+    <string name="loading_title">A carregar…</string>
+    <string name="tab_index">Início</string>
+    <string name="tab_category">Categorias</string>
+    <string name="tab_huawei_channel">Huawei</string>
+    <string name="tab_honor_channel">Honor S.</string>
+    <string name="changeNum">Quantidade de compra</string>
+    <string name="current_version">"Versão atual: "</string>
+    <string name="check_download">"Transferir atualizações detetadas automaticamente "</string>
+    <string name="get_messae_failed">Falha ao obter informação de atualizações.</string>
+    <string name="download_failed">Falha ao transferir atualização</string>
+    <string name="delete_order_tips">Confirmar</string>
+    <string name="delete_exchange_order_tips">Confirmar</string>
+    <string name="makesure_delete_order">Este pedido será cancelado.</string>
+    <string name="net_error_toast">Erro de acesso à rede. Verifique a sua ligação à rede e tente novamente.</string>
+    <string name="makesure_delete_exchange_order">Esta aplicação de substituição e devolução será cancelada.</string>
+    <string name="from_vmall_client">De Vmall Mobile</string>
+    <string name="share_email_chooser_title">Selecionar aplicação para enviar e-mail</string>
+    <string name="shopping_cart">Carrinho</string>
+    <string name="order_cancel">Cancelar pedido</string>
+    <string name="order_modify">Modificar pedido</string>
+    <string name="order_exchange">Devolução e substituição</string>
+    <string name="filter">Filtro</string>
+    <string name="login_timeout">Expirou o tempo de início de sessão. Inicie a sessão novamente.</string>
+    <string name="over_limit">Excedeu o limite de stock</string>
+    <string name="login_failed">Falha ao iniciar sessão. Inicie a sessão novamente.</string>
+    <string name="get_version_error">Falha ao ao obter informação da versão do software.</string>
+    <string name="apk_not_exists">Sem pacotes de atualização disponíveis.</string>
+    <string name="tips">Confirmar</string>
+    <string name="get_imei_tips">Vmall solicita o IMEI do telefone ou o número de série. Aceitar?</string>
+    <string name="software_not_found">Software indisponível.</string>
+    <string name="service">Serviços</string>
+    <string name="select_province">Selecionar região</string>
+    <string name="select_city">Selecionar cidade</string>
+    <string name="agree">Autorizar</string>
+    <string name="rejection">Recusar</string>
+    <string name="do_not_remind_again">Não voltar a lembrar-me</string>
+    <string name="message_center">Centro de mensagens</string>
+    <string name="down_refresh">Arrastar para baixo para atualizar</string>
+    <string name="is_refresh">A atualizar...</string>
+    <string name="up_refresh">Soltar para atualizar</string>
+    <string name="locate_nearby_outlets">Procurar centros de serviço nas proximidades</string>
+    <string name="gps_message">O serviço de localização GPS será ativado para localizar a sua posição e procurar por centros de serviço nas proximidades.</string>
+    <string name="no_service_outlets">"A sua localização
+Falha ao procurar por centros de serviço nas proximidades"</string>
+    <string name="no_network_connection_prompt">Sem redes disponíveis. Verifique as definições de rede</string>
+    <string name="once_more">Repetir</string>
+    <string name="gps_store_message">"O serviço de localização GPS será ativado para localizar a sua posição. "</string>
+    <string name="gps_prompt_detail_message">O serviço de localização GPS irá utilizar o serviço Baidu Map de terceiros. Este serviço e seu conteúdo não são controlados pela Huawei. Leia a sua política de privacidade antes de continuar.</string>
+    <string name="ok">OK</string>
+    <string name="find">Pesquisar</string>
+    <string name="huawei_service_center">Service center</string>
+    <string name="view_content_description">about_icon_content</string>
+    <string name="service_center_details">Detalhes do centro de serviço</string>
+    <string name="service_call">Chamar centro de serviço</string>
+    <string name="new_call">Chamar</string>
+    <string name="huawei_service_line">Rota</string>
+    <string name="networking_tips">Sem redes disponíveis. No network available.</string>
+    <string name="busline_sel">Autocarro</string>
+    <string name="driveline_sel">Carro</string>
+    <string name="walkline_sel">Caminhar</string>
+    <string name="no_buslinesearchresult_prompt">Sem informação de rotas de autocarros</string>
+    <string name="no_busline">Sem informação de rotas de autocarros</string>
+    <string name="no_driveline">Sem informação de rotas para carros</string>
+    <string name="no_walkline">Sem informação de rotas para pedestres</string>
+    <string name="title_helpcenter_04">Centros de apoio</string>
+    <string name="totalsearch"> centros de apoio</string>
+    <string name="no_centersearchresult_prompt">Sem serviços de apoio</string>
+    <string name="search_results">Resultados da pesquisa</string>
+    <string name="draw_line_error">Falha ao gerar rota. Tente novamente.</string>
+    <string name="flow_warning">O Vmall requer acesso à Internet e às informações de localização para fornecer serviços de navegação, compra, pesquisa no centro de serviços e outros serviços. Ao tocar em Concordo, está a concordar com as nossas <a href="0">Condições de Licença do Utilizador Final</a>.</string>
+    <string name="agree_">Concordo</string>
+    <string name="up_grade">Atualização da aplicação</string>
+    <string name="messnotify">Notificação</string>
+    <string name="open_messnotify">Receber notificações</string>
+    <string name="open_messnotify_detail">Receber notificações do Vmall</string>
+    <string name="sound_notify">Sons</string>
+    <string name="sound_notify_detail">Tornar as notificações audíveis</string>
+    <string name="time_title">Definir período de silêncio</string>
+    <string name="start_time">Hora de início</string>
+    <string name="end_time">Hora de fim</string>
+    <string name="silent_time">{0}-{1} do dia seguinte</string>
+    <string name="alarm_title">Notificação de alarme Vmall</string>
+    <string name="giveup_buy">Ignorar</string>
+    <string name="panic_buy">Participar</string>
+    <string name="alarm_tip">Notificar antes:</string>
+    <string name="one_minute">1 minuto</string>
+    <string name="ten_minute">10 minutos</string>
+    <string name="thirty_minute">30 minutos</string>
+    <string name="one_hour">1 hora</string>
+    <string name="one_day">1 dia</string>
+    <string name="no_alarm">Desligado</string>
+    <string name="outof_date">Este evento acontece antes da notificação de alarme. Selecione outra opção.</string>
+    <string name="start_sell">Começa em {0}. Participar agora.</string>
+    <string name="logistics_detail">Detalhes de logística</string>
+    <string name="logistics_company">Empresa de logística:</string>
+    <string name="logistics_company_shunfeng">S.F. Express</string>
+    <string name="logistics_no">Número de pedido de logística:</string>
+    <string name="logistics_none_info_title">Sem informação de controlo de logística</string>
+    <string name="logistics_none_info_def_record">A empresa de logística recebeu os produtos</string>
+    <string name="logistics_plz_search">Visit a página de Internet {0} ou ligue para o serviço ao cliente: 4008111111.</string>
+    <string name="campaign_dialog_title">Evento</string>
+    <string name="campaign_title">Tempo limite de oferta</string>
+    <string name="campaign_browser_type">Navegador</string>
+    <string name="net_error">Rede com sinal fraco</string>
+    <string name="system_busy">"Lamentamos, o sistema está ocupado.
+Certifique-se de que nenhum software de segurança está a bloquear o acesso do Vmall à Internet ou novamente mais tarde."</string>
+    <string name="refresh">Tocar para atualizar</string>
+    <string name="no_msg">Sem mensagens</string>
+    <string name="back_home">Voltar ao Início</string>
+    <string name="exit_pressed_again">Tocar outra vez para sair.</string>
+    <string name="honor_channel_preemptive">Pre-emptive>></string>
+    <string name="honor_channel_countdown_text">Contagem decrescente</string>
+    <string name="honor_channel_sale_setremind">Notificação</string>
+    <string name="honor_channel_slidehome">Tocar ao deslizar para a direita para voltar ao início</string>
+    <string name="honor_channel_activity_state_wait_order">Pendente</string>
+    <string name="honor_channel_activity_state_wait_purchase">Pendente</string>
+    <string name="honor_channel_activity_state_immediately_order">Reservar</string>
+    <string name="honor_channel_activity_state_immediately_purchase">Participar</string>
+    <string name="honor_channel_sale_havesetremind">Notificação definida</string>
+    <string name="no_accessory">Sem acessórios dedicados</string>
+    <string name="slide_left">Deslizar para a esquerda para ver mais</string>
+    <string name="hotword">Populares</string>
+    <string name="address_title">Morada:</string>
+    <string name="centerservice_tel_title">Número de telefone:</string>
+    <string name="route">Rota</string>
+    <string name="make_call">Chamar</string>
+    <string name="plan">Solução</string>
+    <string name="dear_user">Estimado utilizador,</string>
+    <string name="welcome_vmall">Bem-vindo ao Vmall</string>
+    <string name="use_vmall">Ao utilizar esta aplicação está a concordar e a aceitar com</string>
+    <string name="manage_protocol">"Contrato de Licença do Utilizador "</string>
+    <string name="and">e</string>
+    <string name="user_agreement">Contrato do Utilizador</string>
+    <string name="policy_title">Política de Privacidade da Huawei</string>
+    <string name="protocol_title">"Contrato de Licença do Utilizador "</string>
+    <string name="close">Fechar</string>
+    <string name="agree_goon">Concordar e continuar</string>
+    <string name="protocol_content">"\u0009\u0009This End User Software License Agreement is between you and Huawei Technologies Co., Ltd., (hereinafter called \"Huawei\"). This agreement governs your use of this software and all related documentation, and updates and upgrades that replace or supplement the software and are not distributed with a separate license (collectively, the \"Software\"). 
+
+\u0009\u0009By installing or using the Software, you agree to be bound by this Agreement. If you do not agree to all of the terms of this Agreement, click the button that indicates that you do not accept the terms of this Agreement and do not install or use the Software. If you install or use the Software, the terms and conditions of this Agreement are fully accepted by you. 
+
+\u0009\u00091. License Grant. 
+
+\u0009\u0009Subject to the terms and conditions of this Agreement and subject to your payment of the applicable license fees, Huawei hereby grants to you a personal, non-exclusive, non-transferable, non-sublicensable, revocable license to install and use the Software for your personal, non-commercial purposes as set forth in this Agreement. Your acquired rights are subject to your compliance with this Agreement. You are expressly prohibited from sub-licensing, renting, leasing or otherwise distributing the Software or rights to use the Software. 
+
+\u0009\u00092. Restrictions. 
+
+\u0009\u0009Your right to use the Software is limited to the rights granted by this license, and you will not, nor will you allow any third party to: (a) copy the Software; (b) modify, translate, adapt, alter, or create derivative works from the Software; (c) merge the Software with any other software or documentation; (d) reverse engineer, decompile, disassemble, or otherwise attempt to derive the source code of the Software; (e) distribute, sublicense, rent, lease or loan the Software to any third party; or (f) use the Software for the business needs of another person or entity. These needs include but are not limited to the provision of outsourcing services, or acting as a service bureau, commercial host, application or online service provider to third parties. You may not remove, alter or obscure any proprietary notice that appears on the Software or on any copies made in accordance with this Agreement. 
+
+\u0009\u00093. Ownership. 
+
+\u0009\u0009The Software is licensed, not sold, to you for use subject solely to the terms and conditions of this Agreement. The Software and all worldwide intellectual property and proprietary rights therein and relating thereto, including without limitation all copyrights, patents, trade secret rights, trademarks and other intellectual property rights are and will remain the exclusive property of Huawei. Your possession, installation, or use of the Software does not transfer to you any title to the intellectual property in the Software, and you will not acquire any rights to the Software except as expressly set forth in this Agreement. You agree not to challenge or contest Huawei's rights to or ownership of, or otherwise attempt to assert any rights to the Software.
+
+\u0009\u00094. Warranty and Disclaimer. 
+
+\u0009\u0009The Software is provided as is with all faults, without warranty of any kind and you use it solely at your own risk. To the maximum extent permitted by applicable law, Huawei disclaims all warranties, either express or implied, including but not limited to implied warranties of merchantability, fitness for a particular purpose, title and non-infringement with respect to the Software and the accompanying documentation. You assume responsibility for selecting the Software to achieve your intended results, and for the installation of, use of, and results obtained from the Software. Without limiting the foregoing provisions, Huawei makes no warranty that the Software will be error-free or free from interruptions or other failures or that the Software will meet your requirements. The foregoing provisions shall be enforceable to the maximum extent permitted by applicable law. 
+
+\u0009\u00095. Limitation of Liability. 
+
+\u0009\u0009In no event will Huawei be liable for any direct, indirect, special, incidental or consequential damages, however caused, whether for breach of contract, negligence or otherwise, and regardless of whether Huawei has been advised of the possibility of those damages, including without limitation, the use or inability to use the Software, or any results obtained from or through the Software. Huawei will not be liable for any network-related problems attributable to the Software or changes to network configuration that may affect the performance of the Software. The liability of Huawei under this Agreement, regardless of the basis of liability or the form of action, will not exceed the fees paid to Huawei for the portion of the Software causing the liability. 
+
+\u0009\u00096. Indemnification. 
+
+\u0009\u0009You shall defend, indemnify, and hold harmless Huawei, its licensors, and each of their respective employees, officers, diretors, and affiliates (Indemnified Parties), from any and all claims, losses, liabilities, damages, fees, expenses and costs (including attorneys'fees, court costs, damage awards, and settlement amounts) which result from any claim or allegation against any Indemnified Party arising from your use of the Software or your breach of any term of this Agreement.
+
+\u0009\u00097. Injunctive Relief. 
+
+\u0009\u0009You agree that a breach of this Agreement may cause irreparable injury to Huawei for which monetary damages would not be an adequate remedy and Huawei shall be entitled to seek equitable relief in addition to any remedies it may have hereunder or at law. 
+
+\u0009\u00098. Term and Termination. 
+
+\u0009\u0009The term of this Agreement and the license granted to you shall commence on the date that you install or otherwise use the Software, and shall end on the date that you dispose of the Software, or Huawei terminates this Agreement, whichever comes first. This Agreement will terminate automatically if you fail to comply with any of the restrictions or other requirements described under this Agreement. Upon termination or expiration of this Agreement, you agree to immediately cease any use of the Software, destroy all copies of the Software, and certify in writing your compliance with the terms and conditions of this Section 8. Sections2, 3, 4, 5, 6, 7, 8 and 9 shall survive any termination of this Agreement. 
+
+\u0009\u00099. Governing Law and Jurisdiction. 
+
+\u0009\u0009This Agreement shall be governed by and construed in accordance with the laws of the People's Republic of China, without giving effect to its choice of legal provisions. Any disputes relating to this Agreement shall be submitted to binding arbitration conducted in accordance with the rules of Shenzhen Arbitration Commission. The site of the arbitration shall be in Shenzhen, China. The cost of the arbitration shall be borne by the losing party."</string>
+    <string name="policy_content">"&lt;p>Dear Users,&lt;br /> &lt;br /> Huawei Technologies Co., Ltd. and its worldwide corporate affiliates (Huawei or We/Our/Us) understand how important your privacy and personal data is to you and is fully committed to protecting your privacy. Please do not submit or provide any personal or private data to Huawei before you comprehensively read, understand, and agree to this Policy.&lt;br /> &lt;br /> We created this Policy to help you understand:&lt;br /> 1 How Huawei uses your personal data;&lt;br /> 2 How Huawei uses cookies;&lt;br /> 3 How Huawei discloses your personal data;&lt;br /> 4 How to modify, change, or check your personal data;&lt;br /> 5 How Huawei protects your personal data;&lt;br /> 6 How Huawei handles the personal data of minors;&lt;br /> 7 Who the third party service providers are&lt;br /> 8 How data is transferred&lt;br /> 9 How this Policy is updated&lt;br /> 10 How to contact Huawei&lt;br /> &lt;br /> Please note that this Privacy Policy applies solely to the consumer-level electronic products of Huawei, including but not limited to feature phones, smartphones, tablets, home devices, data cards, computer applications, tools and software, and relevant websites, products, and services. This Policy does not apply to Huawei websites, services, and products that do not display or link to this Policy or those that have their own Privacy Policies.&lt;br /> This Policy describes how Huawei handles personal and private data and how Huawei is committed to protecting your privacy. However, one policy may not be expansive enough to address all concerns of data processing. Therefore, Huawei may provide additional information that is specific to a product or service as a supplement to this Policy in order to keep you informed about other data collection purposes.&lt;br /> &lt;br /> 1 How Huawei uses your personal data?&lt;br /> &lt;br /> 1.1 How, when, and for what purposes does Huawei collect and make use of your personal data?&lt;br /> &lt;br /> Creating accounts, and purchasing or registering products or services&lt;br /> If you submit requests online to create an account or to purchase or register our products or services, we may ask you to provide information, such as your email address, delivery address, phone number, product information, time of purchase, and method of payment to implement your purchase orders, deliver your products or services, activate or verify your products, make changes upon your request, provide technical support or authorized updates, and more.&lt;br /> &lt;br /> Participating in promotions or market surveys&lt;br /> After receiving your approval, we may ask you to provide relevant information, such as your phone number and email address, to contact you, send you information about products and services that you may be interested in or invite you to Huawei's promotions and market surveys upon your agreement. You can ask Huawei not to use your personal data for promotions or market surveys. To do so, opt out or turn off such options on Huawei websites or from individual product settings, or contact us by sending an email to &lt;a href=mailto:mobile@huawei.com>mobile@huawei.com&lt;/a>.&lt;br /> &lt;br /> Sharing content with your friends&lt;br /> If you use Huawei services to share content with your friends, we may need you to provide your friends' contact information, including but not limited to any SNS accounts and email addresses. Huawei may use such information to send invitations to your friends by email, instant messages, SNS, or SMS/MMS. The information will only be used for the purpose of sending invitations. Huawei will not save this information or use such information for other purposes.&lt;br /> &lt;br /> Update&lt;br /> Huawei may collect system and application data from your devices in order to inform you about available system or application updates. Such information may include your device name, system and application versions, region and language settings, device identification numbers (IMEI, ESN, MEID, and SN), and your service provider's network ID. Huawei processes such information for the sole purpose of informing you about system or application updates.&lt;br /> &lt;br /> Statistics&lt;br /> Huawei may collect certain information for analysis, including your device name, device version, device identification numbers (IMEI, ESN, MEID, and SN), the fuzzy geographic location information of your device (such as the ID of the area where your device is located), your service provider's network ID (PLMN), how you use your applications, and the IP address you use to access the Internet. Huawei collects and processes such information to provide you with the best personalized user experience and to customize content, improve our products, analyze the efficiency of our business operations, analyze our market share, improve the security of Huawei's networks and services, and activate your after-sale services.&lt;br /> &lt;br /> Troubleshooting&lt;br /> If your device or application experiences any errors, you can choose to send the error information to Huawei so that Huawei and Huawei's partners can provide you with troubleshooting services. Huawei may collect relevant information about the issue, such as your device model, application name and version, device identification number, and error logs.&lt;br /> &lt;br /> Synchronizing, sharing, and storing data&lt;br /> Some of the services that Huawei provides allow you to synchronize, share, and store data. Huawei may collect and store data that you upload or download and data required to implement the uploads and downloads. &lt;br /> &lt;br /> 1.2 Location-based services&lt;br /> When you access certain location-based services, for example, when you search for information, navigate, or check the weather based on specific locations, Huawei may collect, use, and process the precise or fuzzy location information of your device. This is to allow Huawei to provide the preceding services for you. Information collected may include your device identification numbers (IMEI, ESN, MEID, and SN), type, model, and real-time location information (including that obtained through GPS, WLAN, and your service provider's network ID). Huawei collects location information anonymously to provide and improve location-based products and services.&lt;br /> &lt;br /> 1.3 Collection and use of non-personal information&lt;br /> Non-personal information refers to information that cannot be used to identify a specific person. Huawei may collect aggregate statistical information, such as the number of visitors to our website. Huawei collects such information to understand how people use our website, products, or services. In this way, Huawei can improve and streamline our services to better meet customer needs. Huawei may, at its own discretion, collect, use, transfer, or disclose non-personal information for other purposes.&lt;br /> &lt;br /> 2 How Huawei uses cookies&lt;br /> To make sure our websites function properly, we sometimes place small data files on your computer or mobile devices, known as cookies. A cookie is a simple text file that is stored on your computer or mobile device by a website's server, and only that server will be able to retrieve or read the content of that cookie. Each cookie is unique to your web browser. It contains anonymous information, such as a unique identifier, the site name, digits, and characters. Cookies allow websites to remember information, such as your preferences or what's in your shopping basket.&lt;br /> Most large websites or Internet service providers do this in order to improve user experience by enabling websites to remember you, either during your single visit (using a session cookie) or for repeated visits (using a persistent cookie). Cookies help websites remember your settings – language, font size, and other preferences for how you want to view the website on your computer or mobile device. This way, you don't have to keep re-entering them whenever you come back to us. If a website doesn't use cookies, it will deem you as a new visitor every time you open a new page on the website. For example, when you enter your login details and move to another page, the website won't recognize you, and it won't be able to keep you logged in. Our cookies are not used to identify you personally. They're just there to make the website work better for you.&lt;br /> You can control or delete cookies as required. For details, see &lt;a href=http://aboutcookies.org/>AboutCookies.org&lt;/a>.&lt;br /> You can delete all cookies already on your computer and set most browsers to block cookies. However, if you do so, you may have to manually adjust some preference settings every time you visit our websites.&lt;br /> For details about how to change your browser settings, please go to the following links:&lt;br /> &lt;a href=http://support.microsoft.com/kb/260971 target=_blank>Internet Explorer&lt;/a>&lt;br /> &lt;a href=https://support.google.com/chrome/bin/answer.py?hl=en-GB&amp;amp;answer=95647&amp;amp;p=cpn_cookies target=_blank>Google Chrome&lt;/a>&lt;br /> &lt;a href=http://support.mozilla.org/en-US/kb/Cookies target=_blank>Mozilla Firefox&lt;/a>&lt;br /> &lt;a href=http://support.apple.com/kb/PH5042 target=_blank>Safari&lt;/a>&lt;br /> &lt;a href=http://www.opera.com/browser/tutorials/security/privacy/ target=_blank>Opera&lt;/a>&lt;br /> Huawei does not use cookies for any other purposes than those specified here and does not collect any personal data for any other purposes.&lt;br /> &lt;br /> 3 How Huawei discloses your personal data&lt;br /> Huawei will never sell your personal data to third parties without your knowledge. However, Huawei may disclose your personal data in the following situations:&lt;br /> (i) You have explicitly agreed to the disclosure: After obtaining your approval, Huawei may share your personal information with other companies;&lt;br /> (ii) Disclose your personal information to other Huawei subsidiaries or authorized cooperating third parties:&lt;br /> Huawei may need to provide you with certain services through some cooperating parties. Therefore, Huawei may share some of your personal information with cooperating parties to enrich our services and improve your overall experience. For example, when you decide to purchase Huawei products online, Huawei will need to submit your personal information to relevant logistic service providers to allow them to deliver the products to you, or allow our cooperating parties to provide you with other services. Huawei forbids all Huawei subsidiaries or authorized third parties to use shared personal information for any other purposes.&lt;br /> (iii) Disclose your personal information under legal requirements: Huawei may disclose your personal information when required by the law, legal proceedings, litigation, or public, governmental authorities. Your personal information may also be disclosed to transaction parties under circumstances that Huawei is involved in such as reorganization, merger, or insolvency liquidation.&lt;br /> &lt;br /> 4 How to modify, change, or check your personal data&lt;br /> You will be responsible for the accuracy of the personal information you submit. Huawei makes the best commercial endeavor to keep the accuracy of your personal information, and Huawei will delete or amend the information upon your request. You can contact us by emailing &lt;a href=mailto:mobile@huawei.com>mobile@huawei.com&lt;/a> Under the terms and conditions of Huawei, you can manage your personal information at any time, such as your personal account registration information.&lt;br /> &lt;br /> 5 How Huawei protects your personal data&lt;br /> Huawei takes reasonable preventive measures, including but not limited to, technical, physical, and regulatory actions to protect your personal information from unauthorized access, disclosure, use, change, damage, or loss. For example, from a technical perspective, Huawei uses anti-virus software to encrypt and monitor our systems and protect data centers from malicious attacks. From a physical perspective, Huawei has set in place visit control mechanisms, allowing only authorized personnel to access some personal data. From a regulatory perspective, Huawei makes sure employees understand the importance of protecting personal data through training sessions on security and privacy protection awareness. Although we take the utmost care to protect your personal data, please note that no security measures are 100% perfect or unbreakable.&lt;br /> &lt;br /> 6 How Huawei handles the personal data of minors&lt;br /> Unless required by law, Huawei will not collect personal data from minors without seeking prior parental consent. We will only use or disclose personal data about a minor to the extent permitted by law, with parental consent according to local laws and regulations, or to protect the minor. The definition of a minor may vary depending on applicable laws and local cultural customs.&lt;br /> &lt;br /> 7 Who the third party service providers are&lt;br /> To ensure an efficient visit and improve user experience, you may be provided with content or Internet hyperlinks from third parties. You can choose whether to access such hyperlinks or content or use services and products of these third parties, over which Huawei does not have control. Huawei cannot control any privacy and data protection measures of third parties, and such measures will not be governed by this Policy either. This Policy does not apply to any information that you voluntarily provide to third parties. Please refer to the privacy protection policies of the third parties instead.&lt;br /> &lt;br /> 8 How data is transferred&lt;br /> Huawei products and services may be provided using resources and servers located in various countries and regions around the world. Therefore, your personal information may be transferred across international borders outside the country where you use our services. Those countries may not have laws providing specific protection for personal data, or they may have different legal regulations on data protection. In such cases, Huawei will ensure that there is a legal basis for such transfers and that adequate protection for your personal data is provided as required by applicable laws. For example, Huawei may use standard agreements approved by corresponding authorities (where necessary) or take other appropriate technical and organizational information protection measures.&lt;br /> &lt;br /> 9 How this Policy is updated&lt;br /> Huawei may update or amend this Policy from time to time. Huawei will generally try to notify you of the changes through different channels. Please check for the latest version of this Policy on our official website. &lt;br /> 10 How to contact Huawei&lt;br /> If you have any questions, comments, or suggestions, please submit them to one of our global field offices. For a complete list of our office locations, please visit &lt;a href=http://www.huawei.com/en/about-huawei/contact-us/index.htm>http://www.huawei.com/en/about-huawei/contact-us/index.htm&lt;/a>. You can also contact us by emailing &lt;a href=mailto:mobile@huawei.com>mobile@huawei.com&lt;/a>.&lt;br /> Note: The local language version of Huawei Privacy Policy may vary from the local version due to the local laws and language habits. With regard to the differences, the local language version prevails&lt;br /> &lt;br /> Last updated: Aug 8, 2014&lt;br /> Copyright © Huawei Technologies Co., Ltd. 2014. All rights reserved.&lt;/p>"</string>
+    <string name="share_to">Partilhar com</string>
+    <string name="weibosdk_demo_toast_auth_success">Autorização bem sucedida.</string>
+    <string name="weibosdk_demo_toast_auth_failed">Autorização falhou.</string>
+    <string name="weibosdk_demo_toast_auth_canceled">Autorização cancelada.</string>
+    <string name="sina_weibo">Sina Weibo</string>
+    <string name="weixin">WeChat</string>
+    <string name="moments">Partilhar em momentos WeChat</string>
+    <string name="weixin_has_not_installed_moments">Não é possível partilhar com a sua versão atual do WeChat. Atualize a versão do seu cliente WeChat para 4.2 ou posterior.</string>
+    <string name="weixin_not_installed">O seu telefone não tem o WeChat instalado.</string>
+    <string name="share_to_sina">Partilhar com Sina Weibo</string>
+    <string name="share">Partilhar</string>
+    <string name="share_ok">Partilhado com êxito</string>
+    <string name="size_over_limit">Introduziu demasiadas palavras.</string>
+    <string name="share_no_content">Diga qualquer coisa aos seus amigos.</string>
+    <string name="copy_url">Copiar URL</string>
+    <string name="copy_to_clipboard">Copiado para a área de transferência.</string>
+    <string name="hot_search">Pesquisas principais</string>
+    <string name="no_search_result">Lamentamos, não há resultados correspondentes. Tente com um termo de pesquisa diferente</string>
+    <string name="newes">Os mais recentes</string>
+    <string name="price">Preço</string>
+    <string name="popularity">Popular</string>
+    <string name="relevance">Relacionado</string>
+    <string name="without_product">Esgotado</string>
+    <string name="without_price">Ainda sem preço</string>
+    <string name="input_search_word">Introduza o produto que deseja procurar.</string>
+    <string name="search_product">Procurar produto</string>
+    <string name="remark">Avaliações</string>
+    <string name="rignt_slip">Deslizar para a direita</string>
+    <string name="all">Tudo</string>
+    <string name="clear">Apagar</string>
+    <string name="product_detail">Detalhes do produto</string>
+    <string name="product_basic">Básico</string>
+    <string name="product_details">Imagens</string>
+    <string name="product_parameters">Especificações</string>
+    <string name="product_evaluations">Avaliações ({0})</string>
+    <string name="product_buy">Comprar agora</string>
+    <string name="product_add_cart">Adicionar ao carrinho</string>
+    <string name="feedback">Positivo</string>
+    <string name="product_preferential">Promoção:</string>
+    <string name="product_gift">Ofertas:</string>
+    <string name="product_freight">Envio gratuito acima de ¥%s</string>
+    <string name="product_service">Serviço:</string>
+    <string name="product_related">Produtos relacionados</string>
+    <string name="product_plans">Planos:</string>
+    <string name="product_price_real">Preço sem plano: ¥%s</string>
+    <string name="product_price_plan">Preço com plano:</string>
+    <string name="product_price_save">Poupa:</string>
+    <string name="product_num">Quantidade:</string>
+    <string name="product_selected">Selecionado:</string>
+    <string name="good_comment_size">Bom ({0})</string>
+    <string name="middle_comment_size">Médio ({0})</string>
+    <string name="bad_comment_size">Fraco ({0})</string>
+    <string name="good_comment_prcent">Bom {0}%</string>
+    <string name="middle_comment_prcent">Média {0}%</string>
+    <string name="bad_comment_prcent">Fraco {0}%</string>
+    <string name="product_service_text">%s irá proceder ao envio do produto, emitir a fatura e fornecer os serviços pós-venda.</string>
+    <string name="prd_attr_package">Apenas o produto</string>
+    <string name="prd_attr_package0">Plano 1</string>
+    <string name="prd_attr_package1">Plano 2</string>
+    <string name="prd_attr_package2">Plano 3</string>
+    <string name="prd_attr_package3">Plano 4</string>
+    <string name="prd_attr_package4">Plano 5</string>
+    <string name="prd_attr_package5">Plano 6</string>
+    <string name="prd_attr_package6">Plano 7</string>
+    <string name="prd_attr_package7">Plano 8</string>
+    <string name="prd_attr_package8">Plano 9</string>
+    <string name="prd_attr_package9">Plano 10</string>
+    <string name="client_not_support">Este produto não pode ser adquirido com esta aplicação</string>
+    <string name="prd_book_now">Pré-encomenda</string>
+    <string name="prd_rush_buy">Comprar</string>
+    <string name="prd_sale_remind">Notificar quando estiver disponível</string>
+    <string name="prd_not_sale">Indisponível de momento</string>
+    <string name="no_relevant_remark">Sem críticas</string>
+    <string name="click_in_short_time">Demasiados toques num curto período de tempo. Tente novamente mais tarde.</string>
+    <string name="prd_arrive_remind">Notificar quando estiver disponível</string>
+    <string name="set_arrive_success">Será avisado quando o produto estiver disponível.</string>
+    <string name="set_remind_success">Será avisado 10 minutos antes de o produto estar disponível.</string>
+    <string name="time_to_start">Início da promoção em: %s</string>
+    <string name="prd_input_prd_num">Selecione a quantidade.</string>
+    <string name="prd_up_to_limit">Não é possível adquirir esta quantidade.</string>
+    <string name="prd_up_to_inventory">Quantidade insuficiente no inventário.</string>
+    <string name="prd_choose_package">Especifique se pretende apenas o produto ou também um plano.</string>
+    <string name="prd_freight">Envio grátis</string>
+    <string name="prd_already_remind">Notificação configurada</string>
+    <string name="remarkpercenr_totoalcount">{0} avaliações ({1}% bom)</string>
+    <string name="remark_totoalcount">{0} avaliações</string>
+    <string name="without_remark">Sem avaliações</string>
+    <string name="pay_success">Pagamento efetuado com sucesso.</string>
+    <string name="pay_failed">Falha no pagamento. Escolha um método de pagamento diferente e tente novamente.</string>
+    <string name="pay_deposit">Pagar depósito</string>
+    <string name="prd_no_price">Ainda sem preço.</string>
+    <string name="download_complete">Transferência concluída.</string>
+    <string name="download_invoice_failed">Falha na transferência.</string>
+    <string name="ninemenu_title">Versão desatualizada</string>
+    <string name="ninemenu_messgae">O Vmall deve ser atualizado antes de poder utilizar esta funcionalidade.</string>
+    <string name="ninemenu_update">Atualizar</string>
+    <string name="setting">Definições</string>
+    <string name="location_closed">Serviços de localização não disponíveis. Verifique as definições.</string>
+    <string name="permission_deny_msg">O Vmall necessita de acesso a &lt;b>&lt;font color=\"black\">%1$s&lt;/font>&lt;/b> para funcionar normalmente.&lt;br />Para modificar as permissões:&lt;br />Toque em Definições, selecione &lt;b>&lt;font color=\"black\">Permissions&lt;/font>&lt;/b> e conceda a permissão correspondente.</string>
+    <string name="permission_setting">Definições</string>
+    <string name="permission_phone">telemóvel</string>
+    <string name="permission_storage">armazenamento</string>
+    <string name="permission_location">localização</string>
+    <string name="permission_multiple">telemóvel, localização e armazenamento</string>
+    <string name="activity_not_started">Promoção prestes a começar</string>
+    <string name="activity_end">Promoção terminada</string>
+    <string name="close_dialogue">Fechar janela</string>
+</resources>

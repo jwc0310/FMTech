@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hwpush_delete_tip">
+        <item quantity="other">[CS_135982]_Delete selected notifications?</item>
+        <item quantity="zero">[CS_135981]_Delete selected notifications?</item>
+        <item quantity="one">[CS_135980]_Delete selected notification?</item>
+        <item quantity="two">[CS_135976]_Delete selected notifications?</item>
+        <item quantity="few">[CS_135979]_Delete selected notifications?</item>
+        <item quantity="many">[CS_135975]_Delete selected notifications?</item>
+    </plurals>
+</resources>

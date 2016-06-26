@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="guidelines">
+        <enum name="off" value="0" />
+        <enum name="on" value="2" />
+        <enum name="onTouch" value="1" />
+    </attr>
+    <attr name="fixAspectRatio" format="boolean" />
+    <attr name="aspectRatioX" format="integer" />
+    <attr name="aspectRatioY" format="integer" />
+    <attr name="imageResource" format="reference" />
+    <attr name="direction">
+        <enum name="both" value="2" />
+        <enum name="bottom" value="1" />
+        <enum name="top" value="0" />
+    </attr>
+    <attr name="level">
+        <enum name="big0" value="0" />
+        <enum name="big1" value="1" />
+        <enum name="big2" value="2" />
+        <enum name="big3" value="3" />
+        <enum name="small0" value="4" />
+        <enum name="small1" value="5" />
+        <enum name="small2" value="6" />
+    </attr>
+    <attr name="buttonSize">
+        <enum name="big" value="0" />
+        <enum name="small" value="1" />
+    </attr>
+    <attr name="background" format="reference|color" />
+    <attr name="text" format="string" />
+</resources>

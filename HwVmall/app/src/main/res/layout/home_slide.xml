@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/divider_horizantal" />
+    <LinearLayout android:gravity="center" android:id="@id/slide_left_layout" android:layout_width="fill_parent" android:layout_height="@dimen/font60">
+        <ImageView android:background="@drawable/vmall_slide_left" android:layout_width="@dimen/font40" android:layout_height="@dimen/font40" android:contentDescription="@null" />
+        <TextView android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/slide_left" style="@style/TextNormalStyle.BlackSixtyFive" />
+    </LinearLayout>
+</RelativeLayout>

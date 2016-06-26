@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:ellipsize="marquee" android:id="@id/btn_back" android:layout_width="@dimen/cs_button_width_by_weight" android:layout_marginRight="@dimen/cs_button_margin" android:text="@string/CS_back" android:layout_weight="1.0" style="@style/CS_EmoutionUI3_HoloButtonStyle" />
+    <Button android:ellipsize="marquee" android:id="@id/btn_next" android:layout_width="@dimen/cs_button_width_by_weight" android:text="@string/CS_next" android:layout_weight="1.0" style="@style/CS_EmoutionUI3_HoloButtonStyle" />
+</LinearLayout>

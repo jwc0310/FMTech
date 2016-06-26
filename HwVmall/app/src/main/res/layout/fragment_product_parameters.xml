@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/product_para_scrollview" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/package_layout" android:background="@drawable/list_bg_bottom" android:paddingLeft="@dimen/font12" android:paddingTop="@dimen/font10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font12" android:layout_alignParentTop="true" />
+            <LinearLayout android:orientation="vertical" android:id="@id/specifications_parameters_layout" android:background="@drawable/bg" android:paddingLeft="@dimen/font12" android:paddingTop="@dimen/font10" android:paddingBottom="@dimen/font7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="12.0dip" android:layout_below="@id/package_layout" />
+            <LinearLayout android:orientation="vertical" android:id="@id/aftersale_service_layout" android:background="@drawable/bg" android:paddingLeft="@dimen/font12" android:paddingTop="@dimen/font10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/specifications_parameters_layout" />
+            <Space android:layout_width="fill_parent" android:layout_height="@dimen/font12" android:layout_below="@id/aftersale_service_layout" />
+        </RelativeLayout>
+    </ScrollView>
+    <include android:layout_gravity="center_horizontal" android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/common_exception_alert_include" />
+    <include android:id="@id/progress_bar" layout="@layout/custom_progressbar" />
+</RelativeLayout>

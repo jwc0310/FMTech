@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="PrimaryColorThemeRed">
+        <item name="android:textColorPrimary">#ffffffff</item>
+        <item name="android:colorPrimary">@color/vmall_default_red</item>
+        <item name="android:colorPrimaryDark">@color/vmall_default_red</item>
+    </style>
+</resources>

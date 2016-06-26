@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/font30">
+
+    <LinearLayout
+        android:id="@id/logistics_item_time_layout"
+        android:layout_width="@dimen/font64"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/font10"
+        android:layout_marginTop="@dimen/font3"
+        android:gravity="right"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@id/logistic_item_time_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/logistics_item_current_time_text_color"
+            android:textSize="@dimen/font9_sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@id/logistic_item_time_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:textColor="@color/logistics_item_current_time_text_color"
+            android:textSize="@dimen/font9_sp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@id/logistic_item_point"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/font3"
+        android:layout_marginTop="@dimen/font5"
+        android:layout_toRightOf="@id/logistics_item_time_layout"
+        android:background="@drawable/logistic_current_point"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@id/logistic_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="@dimen/font13"
+        android:layout_marginRight="@dimen/font18"
+        android:layout_toRightOf="@id/logistic_item_point"
+        android:lineSpacingExtra="@dimen/font3"
+        android:textColor="@color/logistics_item_current_time_text_color"
+        android:textSize="@dimen/font12_sp" />
+</RelativeLayout>

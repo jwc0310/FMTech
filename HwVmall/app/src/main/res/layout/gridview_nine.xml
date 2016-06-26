@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/font4" android:paddingRight="@dimen/font4" android:paddingBottom="@dimen/cs_display_pass_left" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/gridview_img" android:layout_width="@dimen/font32" android:layout_height="@dimen/font32" android:src="@drawable/icon_no_pic" android:scaleType="fitXY" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+    <TextView android:textSize="@dimen/font11" android:textColor="@color/time_title" android:ellipsize="end" android:gravity="center" android:id="@id/gridview_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font3" android:singleLine="true" android:layout_below="@id/gridview_img" android:layout_centerHorizontal="true" />
+</RelativeLayout>

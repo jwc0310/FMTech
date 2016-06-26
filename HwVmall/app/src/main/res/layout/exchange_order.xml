@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/block" android:layout_width="4.0dip" android:layout_height="wrap_content" />
+    <RelativeLayout android:gravity="center" android:id="@id/exchange_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/block">
+        <Button android:textSize="16.0sp" android:gravity="center" android:id="@id/order_exchange" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:layout_marginBottom="2.0dip" android:text="@string/order_exchange" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:layout_width="4.0dip" android:layout_height="wrap_content" android:layout_toRightOf="@id/exchange_layout" />
+</RelativeLayout>

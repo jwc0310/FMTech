@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/divider_pre" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="@dimen/font8" android:layout_alignParentTop="true" />
+    <TextView android:textSize="@dimen/font13" android:textColor="@color/category_text_color" android:gravity="center" android:id="@id/tv_primary_category_name" android:paddingLeft="@dimen/font12" android:paddingRight="@dimen/font12" android:layout_width="wrap_content" android:layout_height="@dimen/font32" android:singleLine="true" android:layout_below="@id/divider_pre" android:layout_alignParentLeft="true" />
+    <com.vmall.client.view.VmallGridView android:id="@id/gv_secondary_category" android:paddingLeft="@dimen/font5" android:paddingRight="@dimen/font5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:listSelector="@android:color/transparent" android:horizontalSpacing="@dimen/font10" android:numColumns="4" android:layout_below="@id/tv_primary_category_name" android:layout_alignParentLeft="true" />
+</RelativeLayout>

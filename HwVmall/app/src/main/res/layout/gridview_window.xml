@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/gridview_window" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font11" android:textColor="@color/time_title" android:ellipsize="end" android:gravity="center" android:id="@id/gridview_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font4" android:layout_marginTop="@dimen/font6" android:layout_marginRight="@dimen/font4" android:maxEms="7" android:singleLine="true" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <ImageView android:id="@id/gridview_img" android:layout_width="@dimen/font74" android:layout_height="@dimen/font74" android:layout_marginTop="@dimen/font2" android:layout_marginBottom="@dimen/font4" android:src="@drawable/icon_no_pic" android:scaleType="fitXY" android:layout_below="@id/gridview_text" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+</RelativeLayout>

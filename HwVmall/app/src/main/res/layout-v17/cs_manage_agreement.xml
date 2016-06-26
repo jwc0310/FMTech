@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/CS_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbarStyle="outsideOverlay" android:id="@id/privacy_content" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/privacy_layout" android:paddingLeft="18.0dip" android:paddingTop="28.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="18.0dip" android:paddingEnd="18.0dip">
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/CS_black_85_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/CS_hwid_policy" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+                    <TextView android:textSize="11.0sp" android:textColor="@color/CS_more_detail" android:id="@id/privacy_policy_detail" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/CS_agreement_detail" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <TextView android:textSize="11.0sp" android:textColor="@color/CS_black_65_percent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/CS_hw_agreement_privacy_policy_outline" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/CS_black_65_percent" android:id="@id/privacy_policy_signing_time" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/CS_agreement_signing_time" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/privacy_policy_agree" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <LinearLayout android:id="@id/privacy_policy_agree_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <CheckBox android:layout_gravity="center" android:id="@id/privacy_policy_check" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="@dimen/cs_checkbox_size" android:textColor="@color/CS_black_65_percent" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/CS_agree_new_policy" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@id/line1" android:background="@drawable/cs_list_divider_holo_light" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="28.0dip" android:layout_below="@id/privacy_layout" />
+            <LinearLayout android:orientation="vertical" android:id="@id/user_term_layout" android:paddingLeft="18.0dip" android:paddingTop="28.0dip" android:paddingRight="18.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/line1" android:paddingStart="18.0dip" android:paddingEnd="18.0dip">
+                <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textColor="@color/CS_black_85_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/CS_hwid_terms" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+                    <TextView android:textSize="11.0sp" android:textColor="@color/CS_more_detail" android:id="@id/user_terms_detail" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/CS_agreement_detail" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <TextView android:textSize="11.0sp" android:textColor="@color/CS_black_65_percent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/CS_hw_agreement_user_terms_outline" />
+                <TextView android:textSize="11.0sp" android:textColor="@color/CS_black_65_percent" android:id="@id/user_terms_signing_time" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/CS_agreement_signing_time" />
+                <LinearLayout android:orientation="horizontal" android:id="@id/user_terms_agree" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="12.0dip">
+                    <LinearLayout android:id="@id/user_terms_agree_layout" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <CheckBox android:layout_gravity="center" android:id="@id/user_terms_check" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="@dimen/cs_checkbox_size" android:textColor="@color/CS_black_65_percent" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/CS_agree_new_policy" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <ImageView android:id="@id/line2" android:background="@drawable/cs_list_divider_holo_light" android:layout_width="fill_parent" android:layout_height="1.0px" android:layout_marginTop="28.0dip" android:layout_below="@id/user_term_layout" />
+        </RelativeLayout>
+    </ScrollView>
+    <Button android:id="@id/btn_next" android:background="@drawable/cs_register_button_background_drawable" android:layout_marginLeft="18.0dip" android:layout_marginTop="28.0dip" android:layout_marginRight="18.0dip" android:layout_marginBottom="28.0dip" android:text="@string/CS_next" android:layout_marginStart="18.0dip" android:layout_marginEnd="18.0dip" style="@style/CS_EmoutionUI3_HoloButtonStyle" />
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/zoom_out" android:layout_width="62.0dip" android:layout_height="47.0dip" android:layout_marginRight="-8.0dip" android:src="@drawable/normal_out" android:scaleType="fitXY" android:contentDescription="@string/app_name" />
+    <ImageButton android:id="@id/zoom_in" android:layout_width="62.0dip" android:layout_height="47.0dip" android:src="@drawable/normal_in" android:scaleType="fitXY" android:layout_toRightOf="@id/zoom_out" android:contentDescription="@string/app_name" />
+</RelativeLayout>

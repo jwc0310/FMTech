@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/category_ad" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginTop="@dimen/font12" android:layout_marginRight="@dimen/font12" android:layout_marginBottom="@dimen/font4" android:adjustViewBounds="true" />
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:id="@id/parent_layout" android:paddingLeft="@dimen/font20" android:paddingTop="@dimen/font20" android:paddingRight="@dimen/font20" android:paddingBottom="@dimen/font12" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.vmall.client">
+    <TextView android:textSize="@dimen/font14" android:textColor="@color/time_title" android:id="@id/force_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font20" android:text="@string/about" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+    <TextView android:textSize="@dimen/font13" android:textColor="@color/time_title" android:id="@id/force_dialog_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/force_update_notice" android:layout_below="@id/force_dialog_title" />
+    <TextView android:textSize="@dimen/font13" android:textColor="@color/product_detail" android:id="@id/no_wifi_tip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/no_wifi_tip" android:layout_below="@id/force_dialog_content" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/button_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font20" android:layout_below="@id/no_wifi_tip">
+        <com.vmall.client.view.VmallButton android:id="@id/forceupdate_cancel_bt" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:text="@string/no" android:layout_weight="1.0" app:level="big3" app:buttonSize="big" />
+        <com.vmall.client.view.VmallButton android:id="@id/forceupdate_sure_bt" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/yes" android:layout_weight="1.0" app:level="big0" app:buttonSize="big" />
+    </LinearLayout>
+</RelativeLayout>

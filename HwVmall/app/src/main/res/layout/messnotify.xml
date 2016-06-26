@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:id="@id/setnotify" android:background="@color/background" android:paddingLeft="16.0dip" android:paddingTop="18.0dip" android:paddingRight="4.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+            <TextView android:textSize="@dimen/font14_sp" android:textColor="@color/black_eighty_five" android:id="@id/setnotifytv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/open_messnotify" android:layout_alignParentLeft="true" />
+            <CheckBox android:id="@id/notifyswitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/font11_sp" android:textColor="@color/black_sixty_five" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/open_messnotify_detail" android:layout_toLeftOf="@id/notifyswitch" android:layout_below="@id/setnotifytv" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/line1" android:background="@color/level_line" android:layout_width="fill_parent" android:layout_height="@dimen/font1_px" android:layout_below="@id/setnotify" />
+        <RelativeLayout android:id="@id/setsoundnotify" android:background="@color/background" android:paddingLeft="16.0dip" android:paddingTop="18.0dip" android:paddingRight="4.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/line1">
+            <TextView android:textSize="@dimen/font14_sp" android:textColor="@color/black_eighty_five" android:id="@id/setsoundtv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/sound_notify" android:layout_alignParentLeft="true" />
+            <CheckBox android:id="@id/soundswitch" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/font11_sp" android:textColor="@color/black_sixty_five" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/sound_notify_detail" android:layout_toLeftOf="@id/soundswitch" android:layout_below="@id/setsoundtv" android:layout_alignParentLeft="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/timelayout" android:background="@color/background" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/setsoundnotify">
+            <ImageView android:id="@id/line2" android:background="@color/level_line" android:layout_width="fill_parent" android:layout_height="@dimen/font1_px" android:layout_marginBottom="18.0dip" android:layout_alignParentTop="true" />
+            <RelativeLayout android:paddingLeft="16.0dip" android:paddingRight="4.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/line2">
+                <RelativeLayout android:id="@id/showtimelayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                    <TextView android:textSize="@dimen/font14_sp" android:textColor="@color/black_eighty_five" android:id="@id/timetitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/time_title" android:layout_alignParentLeft="true" />
+                    <Button android:id="@id/timeset_bt" android:background="@drawable/arrow" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    <TextView android:textSize="@dimen/font11_sp" android:textColor="@color/black_sixty_five" android:id="@id/timecontent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:layout_toLeftOf="@id/timeset_bt" android:layout_below="@id/timetitle" android:layout_alignParentLeft="true" />
+                </RelativeLayout>
+                <LinearLayout android:id="@id/timeselect_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_below="@id/showtimelayout">
+                    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_weight="1.0">
+                        <TextView android:textColor="@color/time_title" android:id="@id/starttime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/start_time" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                        <com.vmall.client.view.WheelView android:id="@id/startview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/starttime" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="1.0">
+                        <TextView android:textColor="@color/time_title" android:id="@id/endtime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/end_time" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+                        <com.vmall.client.view.WheelView android:id="@id/endview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/endtime" android:layout_centerHorizontal="true" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

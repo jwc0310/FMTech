@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/error_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font127" android:layout_centerHorizontal="true">
+        <include android:id="@id/honor_channel_network_error" android:visibility="gone" layout="@layout/common_network_error_alert_include" />
+        <include android:id="@id/honor_channel_server_error" android:visibility="gone" layout="@layout/common_server_error_alert_include" />
+    </RelativeLayout>
+    <TextView android:textSize="12.0sp" android:textColor="@color/refersh_text_color" android:id="@id/refresh" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="11.0dip" android:text="@string/refresh" android:layout_below="@id/error_layout" android:layout_centerHorizontal="true" />
+</RelativeLayout>

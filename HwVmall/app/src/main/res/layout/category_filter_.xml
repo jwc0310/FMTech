@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:layout_width="@dimen/font40" android:layout_height="wrap_content">
+        <ImageView android:id="@id/category_filter" android:background="@drawable/filter" android:layout_width="@dimen/font32" android:layout_height="@dimen/font32" android:layout_marginRight="@dimen/font8" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</FrameLayout>

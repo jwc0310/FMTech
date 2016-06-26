@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/left_item" android:background="@drawable/left_category_selector" android:layout_width="fill_parent" android:layout_height="64.0dip">
+        <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/font14" android:textColor="@color/black_eighty_five" android:id="@id/left_item_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font16" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@id/region_up_big" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/region_up_big_left" android:layout_width="fill_parent" android:layout_height="@dimen/font200" android:layout_weight="1.0">
+        <TextView android:background="@color/honor_activity_border_color" android:layout_width="fill_parent" android:layout_height="@dimen/font1_px" />
+        <LinearLayout android:orientation="vertical" android:id="@id/location_up_big_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font10" android:layout_marginTop="@dimen/font10" android:layout_marginRight="@dimen/font17">
+            <TextView android:textSize="@dimen/font15" android:textColor="@color/time_title" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/big_goods_name" android:layout_width="@dimen/font142" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/font13" android:textColor="@color/home_goods_description_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/big_goods_description" android:layout_width="@dimen/font142" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font1" android:maxLines="2" />
+            <TextView android:textSize="@dimen/font15" android:textColor="@color/time_title" android:id="@id/big_goods_price" android:layout_width="@dimen/font142" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font2" />
+        </LinearLayout>
+        <ImageView android:id="@id/goods_pic_big" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font3" android:layout_marginBottom="@dimen/font7" android:src="@drawable/icon_no_pic" android:layout_below="@id/location_up_big_layout" android:layout_centerHorizontal="true" android:contentDescription="@null" />
+        <ImageView android:id="@id/big_goods_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:maxWidth="@dimen/font32" android:maxHeight="@dimen/font32" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@null" />
+        <TextView android:layout_gravity="fill_vertical" android:background="@color/honor_activity_border_color" android:layout_width="@dimen/font1_px" android:layout_height="fill_parent" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/region_up_right_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <FrameLayout android:id="@id/goods_right_up_layout" android:layout_width="fill_parent" android:layout_height="@dimen/font100">
+            <TextView android:background="@color/honor_activity_border_color" android:layout_width="fill_parent" android:layout_height="@dimen/font1_px" />
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/goods_right_up_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font10" android:layout_marginTop="@dimen/font10" android:layout_marginRight="@dimen/font10" android:layout_toLeftOf="@id/goods_right_up_pic">
+                    <TextView android:textSize="@dimen/font15" android:textColor="@color/time_title" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/goods_right_up_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+                    <TextView android:textSize="@dimen/font13" android:textColor="@color/home_goods_description_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/goods_right_up_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font2" android:maxLines="2" />
+                    <TextView android:textSize="@dimen/font15" android:textColor="@color/time_title" android:id="@id/goods_right_up_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" />
+                </LinearLayout>
+                <ImageView android:id="@id/goods_right_up_pic" android:background="@drawable/icon_no_pic" android:layout_width="@dimen/font92" android:layout_height="@dimen/font92" android:layout_marginTop="@dimen/font4" android:layout_marginBottom="@dimen/font4" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:contentDescription="@null" />
+            </RelativeLayout>
+            <ImageView android:layout_gravity="center|right|top" android:id="@id/goods_right_up_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:maxWidth="@dimen/font32" android:maxHeight="@dimen/font32" android:contentDescription="@null" />
+        </FrameLayout>
+        <include android:id="@id/goods_right_down_layout" android:layout_width="fill_parent" android:layout_height="@dimen/font100" android:layout_below="@id/goods_right_up_layout" layout="@layout/home_location_grid_item" />
+    </RelativeLayout>
+</LinearLayout>

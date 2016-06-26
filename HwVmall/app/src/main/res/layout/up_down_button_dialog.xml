@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.vmall.client">
+    <TextView android:textSize="@dimen/font14" android:textColor="@color/time_title" android:gravity="center" android:id="@id/textview_title" android:layout_width="fill_parent" android:layout_height="@dimen/font60" android:text="@string/pay_success" />
+    <LinearLayout android:orientation="vertical" android:id="@id/contentPanel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ScrollView android:id="@id/scrollView_tag" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font20" android:layout_marginTop="@dimen/font2" android:layout_marginRight="@dimen/font20" android:overScrollMode="ifContentScrolls">
+            <TextView android:textSize="@dimen/font13_sp" android:textColor="@color/product_detail" android:id="@id/textview_content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </ScrollView>
+    </LinearLayout>
+    <com.vmall.client.view.VmallButton android:textSize="@dimen/font14_sp" android:ellipsize="end" android:id="@id/button_up" android:layout_width="fill_parent" android:layout_height="@dimen/font48" android:layout_marginLeft="@dimen/font20" android:layout_marginTop="@dimen/font20" android:layout_marginRight="@dimen/font20" android:singleLine="true" app:level="big0" app:buttonSize="big" />
+    <com.vmall.client.view.VmallButton android:textSize="@dimen/font14_sp" android:id="@id/button_down" android:layout_width="fill_parent" android:layout_height="@dimen/font48" android:layout_marginLeft="@dimen/font20" android:layout_marginTop="@dimen/font12" android:layout_marginRight="@dimen/font20" android:layout_marginBottom="@dimen/font17" android:text="@string/check_order" app:level="big3" app:buttonSize="big" />
+</LinearLayout>

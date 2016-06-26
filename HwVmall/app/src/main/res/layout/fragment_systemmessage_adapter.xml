@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font14" android:ellipsize="end" android:id="@id/system_msg_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginTop="@dimen/font12" android:layout_marginRight="@dimen/font12" android:singleLine="true" />
+    <TextView android:textSize="@dimen/font11" android:textColor="@color/product_detail" android:id="@id/system_msg_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginTop="@dimen/font3" android:layout_marginRight="@dimen/font12" android:layout_below="@id/system_msg_title" android:lineSpacingExtra="@dimen/font4" />
+    <ImageView android:id="@id/imageView1" android:background="@color/divided_line" android:layout_width="fill_parent" android:layout_height="0.100000024dip" android:layout_marginLeft="@dimen/font12" android:layout_marginTop="@dimen/font12" android:layout_marginRight="@dimen/font12" android:layout_below="@id/system_msg_content" />
+    <RelativeLayout android:gravity="center_vertical" android:id="@id/relativeLayout1" android:layout_width="fill_parent" android:layout_height="@dimen/font33" android:layout_below="@id/imageView1">
+        <TextView android:textSize="@dimen/font11" android:textColor="@color/product_detail" android:id="@id/system_msg_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginRight="@dimen/font12" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/font11" android:textColor="@color/time_title" android:id="@id/system_msg_checkdetail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginRight="@dimen/font12" android:text="@string/msg_checkdetail" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+    <ImageView android:background="@color/background" android:layout_width="fill_parent" android:layout_height="@dimen/font14" android:layout_below="@id/relativeLayout1" />
+</RelativeLayout>

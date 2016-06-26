@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.vmall.client">
+    <RelativeLayout android:id="@id/category_tab_layout" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+        <TextView android:textSize="@dimen/font14_sp" android:textColor="@color/vmall_default_red" android:gravity="center" android:id="@id/c_newes_tv" android:background="@drawable/tab_search_select" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/newes" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/font14_sp" android:textColor="@color/product_detail" android:gravity="center" android:id="@id/c_popularity_tv" android:background="@drawable/tab_search" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/popularity" android:layout_toRightOf="@id/c_newes_tv" />
+        <RelativeLayout android:gravity="center" android:id="@id/c_price_layout" android:background="@drawable/tab_search" android:layout_width="wrap_content" android:layout_height="40.0dip" android:layout_toRightOf="@id/c_popularity_tv">
+            <TextView android:textSize="@dimen/font14_sp" android:textColor="@color/product_detail" android:gravity="center" android:id="@id/c_price_tv" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/price" />
+            <ImageView android:id="@id/c_price_iv" android:background="@drawable/order_normal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="1.0dip" android:layout_toRightOf="@id/c_price_tv" android:layout_centerVertical="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <TextView android:textSize="@dimen/font14_sp" android:textColor="@color/product_detail" android:gravity="center" android:id="@id/c_remark_tv" android:background="@drawable/tab_search" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/remark" android:layout_toRightOf="@id/c_price_layout" />
+    </RelativeLayout>
+    <ListView android:id="@id/category2list" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" android:layout_below="@id/category_tab_layout" />
+    <GridView android:id="@id/category2grid" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:numColumns="2" android:divider="@null" android:layout_below="@id/category_tab_layout" />
+    <ImageButton android:id="@id/c_backtop" android:background="@drawable/honor_backtotop_selector" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/font10" android:layout_marginBottom="@dimen/font10" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@null" />
+    <TextView android:textSize="@dimen/font12_sp" android:textColor="@color/black_sixty_five" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/no_result_tv" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="30.0dip" android:layout_marginTop="@dimen/font127" android:layout_marginRight="30.0dip" android:text="@string/no_search_result" android:drawableTop="@drawable/icon_accessory_null" android:layout_centerHorizontal="true" />
+    <include android:layout_gravity="center_horizontal" android:id="@id/refresh_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/common_exception_alert_include" />
+    <include android:id="@id/progress_bar" layout="@layout/custom_progressbar" />
+    <SlidingDrawer android:orientation="horizontal" android:id="@id/sliding_drawer" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:handle="@id/handle_layout" android:content="@id/content_layout">
+        <RelativeLayout android:gravity="center" android:id="@id/handle_layout" android:background="@color/black_eighty" android:layout_width="80.0dip" android:layout_height="fill_parent">
+            <TextView android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/flip_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="2.0dip" android:text="@string/rignt_slip" android:layout_centerVertical="true" />
+            <ImageView android:background="@drawable/slide_right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/flip_tv" android:layout_centerVertical="true" android:contentDescription="@null" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/content_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/bt_layout" android:background="@drawable/list_attr_bg" android:layout_width="fill_parent" android:layout_height="59.0dip" android:layout_alignParentBottom="true" android:layout_centerVertical="true">
+                <com.vmall.client.view.VmallButton android:id="@id/leftBt" android:layout_width="100.0dip" android:layout_height="34.0dip" android:layout_marginLeft="16.0dip" android:layout_marginTop="12.0dip" android:layout_marginBottom="13.0dip" android:text="@string/clear" android:layout_alignParentLeft="true" app:level="big3" app:buttonSize="big" />
+                <com.vmall.client.view.VmallButton android:id="@id/rightBt" android:layout_width="100.0dip" android:layout_height="34.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="16.0dip" android:layout_marginBottom="13.0dip" android:text="@string/ok" android:layout_alignParentRight="true" app:level="big3" app:buttonSize="big" />
+            </RelativeLayout>
+            <ExpandableListView android:id="@id/expandable_ListView" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:groupIndicator="@null" android:divider="@null" android:layout_above="@id/bt_layout" />
+        </RelativeLayout>
+    </SlidingDrawer>
+</RelativeLayout>

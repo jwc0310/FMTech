@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="#fff7f7f7" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:gravity="center" android:id="@id/head_contentLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="24.0dip" android:layout_marginBottom="24.0dip">
+        <FrameLayout android:id="@id/framlayout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageView android:layout_gravity="center" android:id="@id/head_arrowImageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/up_tip" android:rotation="180.0" />
+            <ProgressBar android:gravity="center" android:id="@id/head_progressBar" android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/progressbar" android:indeterminateDuration="1500" android:indeterminateBehavior="repeat" android:interpolator="@android:anim/decelerate_interpolator" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/framlayout" android:layout_centerHorizontal="true">
+            <TextView android:textSize="14.0sp" android:textColor="#ff888888" android:id="@id/head_tipsTextView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="6.0dip" android:text="@string/down_refresh" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

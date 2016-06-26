@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:id="@id/honor_channel_countdown_time_layout" android:background="@drawable/honor_activity_countdown_bg" android:padding="@dimen/font8" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/countdowntext" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/honor_channel_countdown_text" style="@style/TextSmallStyle.BlackEightFive" />
+    <TextView android:textSize="@dimen/font11_sp" android:textColor="@color/white" android:gravity="center" android:id="@id/hour" android:background="@drawable/honor_activity_countdown_num_bg" android:padding="@dimen/font1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font5" />
+    <TextView android:textSize="@dimen/font11_sp" android:textColor="@color/white" android:gravity="center" android:id="@id/minute" android:background="@drawable/honor_activity_countdown_num_bg" android:padding="@dimen/font1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font5" />
+    <TextView android:textSize="@dimen/font11_sp" android:textColor="@color/white" android:gravity="center" android:id="@id/second" android:background="@drawable/honor_activity_countdown_num_bg" android:padding="@dimen/font1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font5" />
+</LinearLayout>

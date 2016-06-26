@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/no_network_prompt" android:background="@drawable/common_bg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font14_sp" android:textColor="@color/listcolor1" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="14.0dip" android:text="@string/no_network_connection_prompt" />
+    <Button android:textSize="@dimen/font18_sp" android:id="@id/refresh_outlets_no_network" android:layout_width="160.0dip" android:layout_height="wrap_content" android:layout_marginTop="52.0dip" android:text="@string/once_more" />
+</LinearLayout>

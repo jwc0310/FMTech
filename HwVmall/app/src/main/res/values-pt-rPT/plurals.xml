@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hwpush_delete_tip">
+        <item quantity="other">Eliminar as notificações selecionadas?</item>
+        <item quantity="one">Eliminar a notificação selecionada?</item>
+    </plurals>
+</resources>

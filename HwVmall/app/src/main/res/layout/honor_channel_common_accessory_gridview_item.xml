@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/honor_channel_hot_common_accessory_gridview_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+        <ImageView android:id="@id/honor_channel_common_accessory_item_pic" android:background="@drawable/honor_list_shap" android:padding="@dimen/font1_px" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_no_pic" android:scaleType="fitXY" android:contentDescription="@null" />
+        <ImageView android:id="@id/honor_channel_common_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:contentDescription="@null" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_gravity="center_horizontal" android:paddingLeft="@dimen/font1" android:paddingRight="@dimen/font1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8">
+        <TextView android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/honor_channel_common_accessory_item_name" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxWidth="@dimen/font155" android:singleLine="true" style="@style/TextNormalStyle.BlackEightFive" />
+        <TextView android:textSize="@dimen/font11_sp" android:textColor="@color/price_color" android:ellipsize="end" android:gravity="left" android:id="@id/honor_channel_common_accessory_item_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font2" android:maxWidth="@dimen/font155" android:maxLines="1" android:layout_below="@id/honor_channel_common_accessory_item_name" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="never">
+        <LinearLayout android:orientation="vertical" android:id="@id/all_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/product_pic_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.vmall.client.view.AdsGallery android:id="@id/product_pic" android:layout_width="fill_parent" android:layout_height="wrap_content" android:spacing="@dimen/font1_px_n" android:soundEffectsEnabled="false" />
+                <RelativeLayout android:id="@id/product_name_layout" android:background="@drawable/no_net_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                    <ImageView android:id="@id/share_bt" android:background="@drawable/share_bt" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginTop="@dimen/font9" android:layout_marginRight="@dimen/font12" android:layout_marginBottom="@dimen/font9" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+                    <TextView android:textSize="@dimen/font14_sp" android:textColor="@color/white" android:ellipsize="end" android:id="@id/product_name" android:paddingLeft="@dimen/font12" android:paddingTop="@dimen/font6" android:paddingRight="@dimen/font12" android:paddingBottom="@dimen/font6" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="2" android:layout_toLeftOf="@id/share_bt" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/dot_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:layout_centerHorizontal="true" android:soundEffectsEnabled="false" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/product_description" android:background="@color/white" android:paddingLeft="@dimen/font12" android:paddingTop="@dimen/font10" android:paddingRight="@dimen/font12" android:paddingBottom="@dimen/font11" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:id="@id/product_price_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/prd_price_prom_head" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/font4" android:layout_centerVertical="true">
+                        <TextView android:textSize="@dimen/font16_sp" android:textColor="@color/vmall_default_red" android:id="@id/prodct_price_prom_head" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                        <TextView android:textSize="@dimen/font9_sp" android:textColor="@color/white" android:gravity="center" android:id="@id/prd_deposit_prom_head" android:background="@drawable/prd_deposit_bg" android:visibility="gone" android:layout_width="@dimen/font32" android:layout_height="wrap_content" android:layout_marginRight="@dimen/font6" />
+                    </LinearLayout>
+                    <TextView android:textSize="@dimen/font16_sp" android:textColor="@color/vmall_default_red" android:id="@id/prodct_price_prom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/font4" android:layout_toRightOf="@id/prd_price_prom_head" />
+                    <TextView android:textSize="@dimen/font16_sp" android:textColor="@color/product_detail" android:id="@id/product_price_real" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/prodct_price_prom" />
+                    <TextView android:textSize="@dimen/font10_sp" android:textColor="@color/vmall_default_red" android:id="@id/product_freight_text" android:background="@drawable/free_shopping_box" android:paddingLeft="@dimen/font1" android:paddingRight="@dimen/font1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_freight" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <TextView android:textSize="@dimen/font11_sp" android:textColor="@color/time_title" android:ellipsize="end" android:id="@id/product_sale_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" />
+                <RelativeLayout android:id="@id/prd_activity_prom_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@id/product_preferential" android:layout_marginTop="@dimen/font6" android:text="@string/product_preferential" style="@style/product_text_head_style" />
+                    <TextView android:textSize="@dimen/font13_sp" android:textColor="@color/product_preferential_color" android:ellipsize="end" android:id="@id/product_preferential_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font3" android:layout_toRightOf="@id/product_preferential" android:layout_alignTop="@id/product_preferential" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/prd_gift_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:id="@id/product_gift_text" android:layout_marginTop="@dimen/font12" android:text="@string/product_gift" style="@style/product_text_head_style" />
+                    <HorizontalScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font3" android:layout_toRightOf="@id/product_gift_text" android:layout_alignTop="@id/product_gift_text">
+                        <LinearLayout android:orientation="horizontal" android:id="@id/gift_pic_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    </HorizontalScrollView>
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/prd_service_layout" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12">
+                    <TextView android:id="@id/product_service" android:text="@string/product_service" style="@style/product_text_head_style" />
+                    <TextView android:textSize="@dimen/font13_sp" android:textColor="@color/time_title" android:ellipsize="end" android:id="@id/product_service_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font3" android:maxLines="2" android:layout_toRightOf="@id/product_service" android:layout_alignTop="@id/product_service" />
+                </RelativeLayout>
+            </LinearLayout>
+            <include layout="@layout/divider_horizantal" />
+            <Space android:layout_width="fill_parent" android:layout_height="@dimen/font12" />
+            <include layout="@layout/buy_parameters_item" />
+            <LinearLayout android:orientation="vertical" android:id="@id/prd_related_all_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/honor_activity_border_color" android:layout_width="fill_parent" android:layout_height="@dimen/font1_px" android:layout_marginTop="@dimen/font12" />
+                <LinearLayout android:orientation="vertical" android:id="@id/product_related_layout" android:background="@color/white" android:paddingLeft="@dimen/font12" android:paddingRight="@dimen/font12" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/font18" android:paddingRight="@dimen/font18" android:layout_width="fill_parent" android:layout_height="@dimen/font36">
+                        <TextView android:textSize="@dimen/font12_sp" android:textColor="@color/product_detail" android:id="@id/related_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/product_related" android:layout_centerInParent="true" />
+                        <include android:layout_width="fill_parent" android:layout_height="@dimen/font1_px" android:layout_marginRight="@dimen/font20" android:layout_toLeftOf="@id/related_title" android:layout_centerVertical="true" layout="@layout/divider_horizantal" />
+                        <include android:layout_width="fill_parent" android:layout_height="@dimen/font1_px" android:layout_marginLeft="@dimen/font20" android:layout_toRightOf="@id/related_title" android:layout_centerVertical="true" layout="@layout/divider_horizantal" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <include layout="@layout/divider_horizantal" />
+            </LinearLayout>
+            <Space android:layout_width="fill_parent" android:layout_height="@dimen/font12" />
+        </LinearLayout>
+    </ScrollView>
+    <include android:id="@id/exception_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerHorizontal="true" layout="@layout/common_exception_alert_include" />
+    <include android:id="@id/progress_bar" layout="@layout/custom_progressbar" />
+</RelativeLayout>

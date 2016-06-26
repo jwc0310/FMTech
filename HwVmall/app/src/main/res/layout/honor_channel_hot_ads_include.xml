@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/honor_channel_hotshowview_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.vmall.client.view.AdsGallery android:id="@id/honor_ads_gallery" android:layout_width="fill_parent" android:layout_height="wrap_content" android:soundEffectsEnabled="false" />
+        <LinearLayout android:layout_gravity="bottom|center" android:orientation="horizontal" android:id="@id/honor_channel_hotshowview_bottombar" android:layout_width="wrap_content" android:layout_height="@dimen/font20" android:soundEffectsEnabled="false" />
+        <ImageView android:layout_gravity="bottom|center|right" android:id="@id/honor_channel_hotshowview_dismiss" android:padding="@dimen/font3" android:layout_width="@dimen/font30" android:layout_height="@dimen/font30" android:layout_margin="@dimen/font4" android:src="@drawable/honor_ads_dismiss_selector" android:soundEffectsEnabled="false" android:contentDescription="@null" />
+    </FrameLayout>
+    <RelativeLayout android:id="@id/honor_channel_logo_layout" android:layout_width="fill_parent" android:layout_height="@dimen/font70">
+        <ImageView android:id="@id/honor_channel_logo" android:background="@drawable/honor_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:contentDescription="@null" />
+        <TextView android:id="@id/honor_channel_preemptive" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/font8" android:text="@string/honor_channel_preemptive" android:layout_below="@id/honor_channel_logo" android:layout_alignParentRight="true" />
+    </RelativeLayout>
+</LinearLayout>

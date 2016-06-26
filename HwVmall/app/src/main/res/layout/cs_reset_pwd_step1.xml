@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/CS_background" android:paddingLeft="@dimen/cs_page_padding_layout" android:paddingTop="@dimen/cs_page_padding_top" android:paddingRight="@dimen/cs_page_padding_layout" android:paddingBottom="@dimen/cs_page_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbarStyle="outsideOverlay" android:paddingLeft="@dimen/cs_page_padding_scrollView" android:paddingRight="@dimen/cs_page_padding_scrollView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/cs_textview_jump_size" android:textColor="@color/CS_black" android:gravity="center_vertical" android:id="@id/reset_pwd_step1_textview_1" android:layout_width="fill_parent" android:layout_height="@dimen/cs_view_height" android:layout_marginLeft="@dimen/cs_view_margin" android:layout_marginRight="@dimen/cs_view_margin" android:text="@string/CS_reset_pwd_step1" />
+            <EditText android:id="@id/edit_hwid" android:layout_width="fill_parent" android:layout_marginTop="@dimen/cs_edittext_button_margin" android:hint="@string/CS_reset_name_hint" android:maxLength="128" android:inputType="textEmailAddress" style="@style/CS_EmoutionUI3_EditTextStyle" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:paddingLeft="@dimen/cs_page_padding_scrollView" android:paddingRight="@dimen/cs_page_padding_scrollView" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/cs_button_auto" />
+    </LinearLayout>
+</LinearLayout>

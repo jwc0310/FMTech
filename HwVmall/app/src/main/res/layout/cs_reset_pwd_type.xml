@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/CS_background" android:paddingLeft="@dimen/cs_page_padding" android:paddingRight="@dimen/cs_page_padding" android:paddingBottom="@dimen/cs_page_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <ListView android:id="@id/reset_pwd_type_lostview" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <include layout="@layout/cs_button_auto" />
+</LinearLayout>

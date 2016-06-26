@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/ScrollView" android:background="@color/background" android:scrollbars="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingTop="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/common_bg" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingTop="18.0dip" android:paddingRight="16.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:ellipsize="end" android:id="@id/centerservice_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/huawei_service_center" android:maxLines="2" android:lineSpacingExtra="2.0dip" style="@style/TextTitleStyle" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="6.0dip">
+                    <TextView android:ellipsize="end" android:id="@id/address_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/address_title" android:maxLines="2" android:layout_centerVertical="true" android:lineSpacingExtra="2.0dip" style="@style/TextContentStyle" />
+                    <TextView android:textColor="@color/listcolor1" android:ellipsize="end" android:id="@id/address_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_toRightOf="@id/address_title" android:layout_centerVertical="true" android:lineSpacingExtra="2.0dip" style="@style/TextContentStyle" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="3.0dip">
+                    <TextView android:ellipsize="end" android:id="@id/centerservice_tel_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/centerservice_tel_title" android:maxLines="2" android:layout_centerVertical="true" android:lineSpacingExtra="2.0dip" style="@style/TextContentStyle" />
+                    <TextView android:ellipsize="end" android:id="@id/centerservice_tel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:layout_toRightOf="@id/centerservice_tel_title" android:layout_centerVertical="true" android:lineSpacingExtra="2.0dip" style="@style/TextContentStyle" />
+                </RelativeLayout>
+            </LinearLayout>
+            <TextView android:background="@color/level_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:contentDescription="@string/view_content_description" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/caltel_layout" android:background="@drawable/bottombar_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/centerdervice_call" android:background="@drawable/call" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/view_content_description" />
+                    <TextView android:textSize="@dimen/font14_sp" android:textColor="@color/listcolor1" android:layout_gravity="center_horizontal" android:paddingTop="4.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/make_call" />
+                </LinearLayout>
+                <ImageView android:background="@color/level_line" android:layout_width="1.0px" android:layout_height="fill_parent" android:contentDescription="@string/view_content_description" />
+                <LinearLayout android:orientation="vertical" android:id="@id/mapshow_layout" android:background="@drawable/bottombar_bg_selector" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <ImageView android:layout_gravity="center_horizontal" android:id="@id/centerservice_map" android:background="@drawable/map" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/view_content_description" />
+                    <TextView android:textSize="@dimen/font14_sp" android:textColor="@color/listcolor1" android:layout_gravity="center_horizontal" android:paddingTop="4.0dip" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/route" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="CS_HoloButtonStyle">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textColor">@color/cs_button_text_color</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingLeft">@dimen/cs_button_paddingLeft</item>
+        <item name="android:paddingRight">@dimen/cs_button_paddingRight</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">@dimen/cs_button_height</item>
+        <item name="android:maxWidth">@dimen/cs_button_max_width</item>
+        <item name="android:minWidth">@dimen/cs_button_min_width</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingStart">@dimen/cs_button_paddingLeft</item>
+        <item name="android:paddingEnd">@dimen/cs_button_paddingRight</item>
+    </style>
+    <style name="CS_EmoutionUI3_HoloButtonStyle">
+        <item name="android:textSize">@dimen/cs_button_size</item>
+        <item name="android:textColor">@color/cs_button_text_color</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:paddingLeft">@dimen/cs_button_paddingLeft</item>
+        <item name="android:paddingRight">@dimen/cs_button_paddingRight</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/cs_button_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingStart">@dimen/cs_button_paddingLeft</item>
+        <item name="android:paddingEnd">@dimen/cs_button_paddingRight</item>
+    </style>
+    <style name="CS_EmoutionUI3_EditTextStyle">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textSize">@dimen/cs_edittext_size</item>
+        <item name="android:textColor">@color/CS_black_75_percent</item>
+        <item name="android:textColorHint">@color/CS_black_30_percent</item>
+        <item name="android:paddingLeft">@dimen/cs_pass_edit_padding</item>
+        <item name="android:paddingRight">@dimen/cs_pass_edit_padding</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/cs_text_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingStart">@dimen/cs_pass_edit_padding</item>
+        <item name="android:paddingEnd">@dimen/cs_pass_edit_padding</item>
+    </style>
+    <style name="CS_EmoutionUI3_OOBE_EditTextStyle">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textSize">@dimen/cs_edittext_size</item>
+        <item name="android:textColor">@color/CS_black</item>
+        <item name="android:textColorHint">@color/CS_black_30_percent</item>
+        <item name="android:background">@drawable/cs_edittext_background_drawable</item>
+        <item name="android:paddingLeft">@dimen/cs_pass_edit_padding</item>
+        <item name="android:paddingRight">@dimen/cs_pass_edit_padding</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">@dimen/cs_text_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingStart">@dimen/cs_pass_edit_padding</item>
+        <item name="android:paddingEnd">@dimen/cs_pass_edit_padding</item>
+    </style>
+    <style name="CS_EmoutionUI2_EditTextStyle">
+        <item name="android:textAppearance">?android:textAppearanceMedium</item>
+        <item name="android:textSize">18.0sp</item>
+        <item name="android:textColor">@color/CS_black</item>
+        <item name="android:textColorHint">@color/CS_hint_color</item>
+        <item name="android:paddingLeft">@dimen/cs_pass_edit_padding</item>
+        <item name="android:paddingRight">@dimen/cs_pass_edit_padding</item>
+        <item name="android:clickable">true</item>
+        <item name="android:layout_height">@dimen/cs_text_height</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:paddingStart">@dimen/cs_pass_edit_padding</item>
+        <item name="android:paddingEnd">@dimen/cs_pass_edit_padding</item>
+    </style>
+    <style name="CS_Spinner_Style">
+        <item name="android:paddingLeft">@dimen/cs_country_region_spinner_padding</item>
+        <item name="android:paddingRight">@dimen/cs_country_region_spinner_padding</item>
+        <item name="android:layout_height">@dimen/cs_country_region_spinner_height</item>
+        <item name="android:drawSelectorOnTop">false</item>
+        <item name="android:dropDownWidth">fill_parent</item>
+        <item name="android:paddingStart">@dimen/cs_country_region_spinner_padding</item>
+        <item name="android:paddingEnd">@dimen/cs_country_region_spinner_padding</item>
+    </style>
+</resources>

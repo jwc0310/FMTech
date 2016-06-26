@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font14_sp" android:textColor="@color/white" android:id="@id/filter_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <RelativeLayout android:id="@id/filter_layout" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <ImageView android:id="@id/category_filter" android:background="@drawable/filter" android:layout_width="@dimen/font32" android:layout_height="@dimen/font32" android:layout_marginRight="@dimen/font8" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <ImageView android:id="@id/prd_show_style" android:background="@drawable/prd_showstyle_list" android:layout_width="@dimen/font32" android:layout_height="@dimen/font32" android:layout_marginRight="@dimen/font6" android:layout_toLeftOf="@id/filter_layout" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ProgressBar android:id="@id/foot_pb" android:visibility="gone" android:layout_width="40.0dip" android:layout_height="40.0dip" android:indeterminateOnly="true" android:indeterminateDrawable="@drawable/progressbar" android:indeterminateDuration="1500" android:indeterminateBehavior="repeat" android:interpolator="@android:anim/decelerate_interpolator" android:layout_centerInParent="true" android:layout_centerHorizontal="true" />
+</RelativeLayout>

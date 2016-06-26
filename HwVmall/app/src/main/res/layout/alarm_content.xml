@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@drawable/circle_angle" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.vmall.client">
+    <RelativeLayout android:gravity="center" android:id="@id/alarm_content" android:background="@drawable/circle_angle" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_vertical" android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_alignParentTop="true">
+            <ImageView android:id="@id/huawei_shop" android:background="@drawable/vmall_icon" android:layout_width="120.0dip" android:layout_height="@dimen/font19" android:contentDescription="@null" />
+            <TextView android:textSize="@dimen/font15" android:textColor="@color/black" android:id="@id/alarm_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font10" android:text="@string/alarm_title" />
+        </LinearLayout>
+        <TextView android:textSize="@dimen/font15" android:id="@id/goods_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font20" android:layout_marginTop="@dimen/font10" android:layout_marginBottom="@dimen/font2" android:layout_below="@id/title_layout" android:layout_alignParentLeft="true" />
+        <TextView android:textSize="@dimen/font15" android:textColor="@color/black" android:id="@id/alarm_time" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font15" android:layout_marginBottom="@dimen/font10" android:layout_below="@id/goods_name" />
+        <LinearLayout android:paddingLeft="@dimen/font10" android:paddingRight="@dimen/font10" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font10" android:layout_below="@id/alarm_time">
+            <com.vmall.client.view.VmallButton android:id="@id/giveup" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="@dimen/font10" android:text="@string/giveup_buy" android:layout_weight="1.0" app:level="big3" app:buttonSize="big" />
+            <com.vmall.client.view.VmallButton android:id="@id/go_buy" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/panic_buy" android:layout_weight="1.0" app:level="big0" app:buttonSize="big" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

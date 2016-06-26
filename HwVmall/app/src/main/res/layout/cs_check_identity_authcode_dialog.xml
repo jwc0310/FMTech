@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/CS_background" android:paddingLeft="@dimen/cs_dialog_padding" android:paddingRight="@dimen/cs_dialog_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="end|center" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginLeft="@dimen/cs_view_margin" android:layout_marginRight="@dimen/cs_view_margin">
+            <Button android:textSize="@dimen/cs_text_size" android:textColor="@color/CS_black_85_percent" android:gravity="center_vertical" android:id="@id/chkid_account_select_btn" android:background="@drawable/cs_chehck_identity_dropdown_drawable" android:paddingLeft="@dimen/cs_chkid_text_padding" android:paddingRight="@dimen/cs_chkid_text_padding" android:layout_width="fill_parent" android:layout_height="@dimen/cs_button_height" android:singleLine="true" android:drawableRight="@drawable/cs_spinner" android:drawableEnd="@drawable/cs_spinner" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="56.0dip" android:layout_marginTop="@dimen/cs_edittext_button_margin">
+            <EditText android:typeface="monospace" android:textColor="@color/CS_black_85_percent" android:id="@id/verifycode_edittext" android:layout_width="@dimen/cs_register_phonenum_editsed_width" android:hint="@string/CS_sms_verification_code" android:maxLength="32" android:layout_weight="1.0" android:inputType="number" style="@style/CS_EmoutionUI3_EditTextStyle" />
+            <Button android:ellipsize="marquee" android:id="@id/btn_retrieve" android:layout_width="@dimen/cs_register_phonenum_buttonfir_width" android:layout_marginLeft="@dimen/cs_verification_margin" android:layout_marginRight="1.0dip" android:text="@string/CS_retrieve" android:layout_weight="1.0" style="@style/CS_EmoutionUI3_HoloButtonStyle" />
+        </LinearLayout>
+        <LinearLayout android:id="@id/receive_msg" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <CheckBox android:layout_gravity="center" android:id="@id/agree_policy" android:layout_width="@dimen/cs_textview_checkbox_width" android:layout_height="@dimen/cs_textview_checkbox_height" android:layout_weight="0.0" />
+            <TextView android:textSize="@dimen/cs_checkbox_size" android:textColor="@color/CS_black_65_percent" android:layout_gravity="center_vertical" android:id="@id/intro_agent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_weight="1.0" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/update_num" android:background="@color/background" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/title_layout" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentTop="true">
+        <TextView android:textSize="14.0sp" android:textColor="@color/black_seventy" android:id="@id/updatenum_dialog_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/edit_num_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="34.0dip" android:layout_below="@id/title_layout">
+        <EditText android:gravity="center" android:id="@id/product_num_text" android:background="@drawable/num" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginLeft="29.0dip" android:layout_marginRight="29.0dip" android:minWidth="100.0dip" android:layout_centerHorizontal="true" android:inputType="number" />
+        <Button android:gravity="center_vertical" android:id="@id/subtraction" android:background="@drawable/button_selector_subtraction" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_toLeftOf="@id/product_num_text" android:layout_centerVertical="true" />
+        <Button android:id="@id/plus" android:background="@drawable/button_selector_plus" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_toRightOf="@id/product_num_text" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <TextView android:textSize="18.0sp" android:gravity="center_horizontal" android:id="@id/total_price" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="28.0dip" android:minWidth="100.0dip" android:layout_below="@id/edit_num_layout" android:textIsSelectable="true" />
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/empty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/total_price" />
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="20.0dip" android:paddingTop="12.0dip" android:paddingRight="20.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/empty">
+        <Button android:textSize="14.0sp" android:textColor="@color/black_seventy" android:id="@id/updatenum_dialog_cancel_bt" android:background="@drawable/update_later_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:layout_weight="1.0" />
+        <Button android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/updatenum_dialog_sure_bt" android:background="@drawable/update_ok_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

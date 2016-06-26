@@ -1,0 +1,1610 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="13dd3497-a717-4f56-9c16-96ba784d64d3" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/api/MpfaApi.java" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\SlidingMenuLibrary\.classpath" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\SlidingMenuLibrary\.project" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\SlidingMenuLibrary\.settings\org.eclipse.jdt.core.prefs" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\SlidingMenuLibrary\AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\SlidingMenuLibrary\LICENSE.txt" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\SlidingMenuLibrary\build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\SlidingMenuLibrary\libs\android-support-v4.jar" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\SlidingMenuLibrary\pom.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\SlidingMenuLibrary\project.properties" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\SlidingMenuLibrary\res\layout\slidingmenumain.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\SlidingMenuLibrary\res\values\attrs.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\SlidingMenuLibrary\res\values\ids.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\SlidingMenuLibrary\src\com\jeremyfeinstein\slidingmenu\lib\CanvasTransformerBuilder.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\SlidingMenuLibrary\src\com\jeremyfeinstein\slidingmenu\lib\CustomViewAbove.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\SlidingMenuLibrary\src\com\jeremyfeinstein\slidingmenu\lib\CustomViewBehind.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\SlidingMenuLibrary\src\com\jeremyfeinstein\slidingmenu\lib\MenuInterface.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\SlidingMenuLibrary\src\com\jeremyfeinstein\slidingmenu\lib\SlidingMenu.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\SlidingMenuLibrary\src\com\jeremyfeinstein\slidingmenu\lib\app\SlidingActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\SlidingMenuLibrary\src\com\jeremyfeinstein\slidingmenu\lib\app\SlidingActivityBase.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\SlidingMenuLibrary\src\com\jeremyfeinstein\slidingmenu\lib\app\SlidingActivityHelper.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\SlidingMenuLibrary\src\com\jeremyfeinstein\slidingmenu\lib\app\SlidingFragmentActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\SlidingMenuLibrary\src\com\jeremyfeinstein\slidingmenu\lib\app\SlidingListActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\SlidingMenuLibrary\src\com\jeremyfeinstein\slidingmenu\lib\app\SlidingPreferenceActivity.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\java\com\viewpagerindicator\CirclePageIndicator.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\java\com\viewpagerindicator\IconPageIndicator.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\java\com\viewpagerindicator\IconPagerAdapter.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\java\com\viewpagerindicator\IcsLinearLayout.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\java\com\viewpagerindicator\LinePageIndicator.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\java\com\viewpagerindicator\PageIndicator.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\java\com\viewpagerindicator\TabPageIndicator.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\java\com\viewpagerindicator\TitlePageIndicator.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\java\com\viewpagerindicator\UnderlinePageIndicator.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\color\vpi__dark_theme.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\color\vpi__light_theme.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\drawable-hdpi\news_tab_item_bg_select.9.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\drawable-hdpi\vpi__tab_selected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\drawable-hdpi\vpi__tab_selected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\drawable-hdpi\vpi__tab_selected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\drawable-hdpi\vpi__tab_unselected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\drawable-hdpi\vpi__tab_unselected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\drawable-hdpi\vpi__tab_unselected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\drawable-mdpi\vpi__tab_selected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\drawable-mdpi\vpi__tab_selected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\drawable-mdpi\vpi__tab_selected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\drawable-mdpi\vpi__tab_unselected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\drawable-mdpi\vpi__tab_unselected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\drawable-mdpi\vpi__tab_unselected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\drawable-xhdpi\vpi__tab_selected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\drawable-xhdpi\vpi__tab_selected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\drawable-xhdpi\vpi__tab_selected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\drawable-xhdpi\vpi__tab_unselected_focused_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\drawable-xhdpi\vpi__tab_unselected_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\drawable-xhdpi\vpi__tab_unselected_pressed_holo.9.png" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\drawable\tab_bg.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\drawable\tab_color.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\drawable\vpi__tab_indicator.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\values\colors.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\values\vpi__attrs.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\values\vpi__colors.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\values\vpi__defaults.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\ViewPagerIndicatorLibrary\src\main\res\values\vpi__styles.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\build.gradle" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\AndroidManifest.xml" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\BitmapUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\DbUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\HttpUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\ViewUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\bitmap\BitmapCacheListener.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\bitmap\BitmapCommonUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\bitmap\BitmapDisplayConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\bitmap\BitmapGlobalConfig.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\bitmap\PauseOnScrollListener.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\bitmap\callback\BitmapLoadCallBack.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\bitmap\callback\BitmapLoadFrom.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\bitmap\callback\BitmapSetter.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\bitmap\callback\DefaultBitmapLoadCallBack.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\bitmap\core\AsyncDrawable.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\bitmap\core\BitmapCache.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\bitmap\core\BitmapDecoder.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\bitmap\core\BitmapSize.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\bitmap\download\DefaultDownloader.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\bitmap\download\Downloader.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\bitmap\factory\BitmapFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\cache\FileNameGenerator.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\cache\KeyExpiryMap.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\cache\LruDiskCache.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\cache\LruMemoryCache.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\cache\MD5FileNameGenerator.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\annotation\Check.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\annotation\Column.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\annotation\Finder.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\annotation\Foreign.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\annotation\Id.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\annotation\NoAutoIncrement.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\annotation\NotNull.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\annotation\Table.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\annotation\Transient.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\annotation\Unique.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\converter\BooleanColumnConverter.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\converter\ByteArrayColumnConverter.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\converter\ByteColumnConverter.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\converter\CharColumnConverter.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\converter\ColumnConverter.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\converter\ColumnConverterFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\converter\DateColumnConverter.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\converter\DoubleColumnConverter.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\converter\FloatColumnConverter.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\converter\IntegerColumnConverter.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\converter\LongColumnConverter.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\converter\ShortColumnConverter.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\converter\SqlDateColumnConverter.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\converter\StringColumnConverter.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\sqlite\ColumnDbType.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\sqlite\CursorUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\sqlite\DbModelSelector.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\sqlite\FinderLazyLoader.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\sqlite\ForeignLazyLoader.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\sqlite\Selector.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\sqlite\SqlInfo.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\sqlite\SqlInfoBuilder.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\sqlite\WhereBuilder.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\table\Column.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\table\ColumnUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\table\DbModel.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\table\Finder.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\table\Foreign.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\table\Id.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\table\KeyValue.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\table\Table.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\db\table\TableUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\exception\BaseException.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\exception\DbException.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\exception\HttpException.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\HttpCache.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\HttpHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\RequestParams.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\ResponseInfo.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\ResponseStream.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\SyncHttpHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\callback\DefaultHttpRedirectHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\callback\FileDownloadHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\callback\HttpRedirectHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\callback\RequestCallBack.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\callback\RequestCallBackHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\callback\StringDownloadHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\DefaultSSLSocketFactory.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\HttpRequest.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\RetryHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\entity\BodyParamsEntity.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\entity\DecompressingEntity.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\entity\FileUploadEntity.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\entity\GZipDecompressingEntity.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\entity\InputStreamUploadEntity.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\entity\UploadEntity.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\multipart\FormBodyPart.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\multipart\HttpMultipart.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\multipart\HttpMultipartMode.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\multipart\MIME.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\multipart\MinimalField.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\multipart\MinimalFieldHeader.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\multipart\MultipartEntity.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\multipart\content\AbstractContentBody.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\multipart\content\ByteArrayBody.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\multipart\content\ContentBody.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\multipart\content\ContentDescriptor.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\multipart\content\FileBody.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\multipart\content\InputStreamBody.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\multipart\content\StringBody.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\util\URIBuilder.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\http\client\util\URLEncodedUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\task\Priority.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\task\PriorityAsyncTask.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\task\PriorityExecutor.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\task\PriorityObject.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\task\PriorityObjectBlockingQueue.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\task\PriorityRunnable.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\task\TaskHandler.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\util\CharsetUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\util\DoubleKeyValueMap.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\util\IOUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\util\LogUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\util\MimeTypeUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\util\OtherUtils.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\util\PreferencesCookieStore.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\EventListenerManager.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\ResLoader.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\ResType.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\ViewFinder.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\ViewInjectInfo.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\ContentView.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\PreferenceInject.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\ResInject.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\ViewInject.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\event\EventBase.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\event\OnChildClick.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\event\OnClick.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\event\OnCompoundButtonCheckedChange.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\event\OnFocusChange.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\event\OnGroupClick.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\event\OnGroupCollapse.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\event\OnGroupExpand.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\event\OnItemClick.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\event\OnItemLongClick.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\event\OnItemSelected.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\event\OnKey.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\event\OnLongClick.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\event\OnNothingSelected.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\event\OnPreferenceChange.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\event\OnPreferenceClick.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\event\OnProgressChanged.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\event\OnRadioGroupCheckedChange.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\event\OnScroll.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\event\OnScrollStateChanged.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\event\OnStartTrackingTouch.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\event\OnStopTrackingTouch.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\event\OnTabChange.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\ExtraLibs\xUtils\src\main\java\com\lidroid\xutils\view\annotation\event\OnTouch.java" afterPath="" />
+      <change type="DELETED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\api\MpfaAPI.java" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/eventprocessor/AccessibilityEventProcessor.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/eventprocessor/AccessibilityEventProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/AccessibilityNodeActionNode.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/AccessibilityNodeActionNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/AccessibilityNodeInfoUtils.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/AccessibilityNodeInfoUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/compat/accessibilityservice/AccessibilityServiceCompatUtils.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/compat/accessibilityservice/AccessibilityServiceCompatUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/tutorial/AccessibilityTutorialActivity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/tutorial/AccessibilityTutorialActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/Analytics.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/Analytics.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/AndroidManifest.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/AutoScanController.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/AutoScanController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/BatteryMonitor.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/BatteryMonitor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/BootReceiver.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/BootReceiver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/CallStateMonitor.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/CallStateMonitor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/CheckableClickedFormatter.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/CheckableClickedFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../GooglePlay6.0.5/app/src/main/java/com/google/android/finsky/layout/ContentFrame.java" afterPath="$PROJECT_DIR$/../../GooglePlay6.0.5/app/src/main/java/com/google/android/finsky/layout/ContentFrame.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/contextmenu/ContextMenuItemClickProcessor.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/contextmenu/ContextMenuItemClickProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/ContextMenuNode.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/ContextMenuNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/controller/CursorController.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/controller/CursorController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/controller/CursorControllerApp.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/controller/CursorControllerApp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/CursorGranularity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/CursorGranularity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/CursorGranularityManager.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/CursorGranularityManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/labeling/CustomLabelManager.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/labeling/CustomLabelManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/DialogFormatter.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/DialogFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/controller/DimScreenControllerApp.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/controller/DimScreenControllerApp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/DimmingOverlayView.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/DimmingOverlayView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/DropEventFormatter.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/DropEventFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/eventprocessor/EventQueue.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/eventprocessor/EventQueue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/EventSpeechRule.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/EventSpeechRule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/EventSpeechRuleProcessor.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/EventSpeechRuleProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/FailoverTextToSpeech.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/FailoverTextToSpeech.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/FallbackFormatter.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/FallbackFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/controller/FeedbackControllerApp.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/controller/FeedbackControllerApp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/FeedbackItem.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/FeedbackItem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/FeedbackProcessingUtils.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/FeedbackProcessingUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/controller/FullScreenReadControllerApp.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/controller/FullScreenReadControllerApp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/GestureChangeNotificationActivity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/GestureChangeNotificationActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/controller/GestureControllerApp.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/controller/GestureControllerApp.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/GlobalActionNode.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/GlobalActionNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/HuffmanTreeBuilder.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/HuffmanTreeBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/ImageViewFormatter.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/ImageViewFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/phone/InCallScreenFormatter.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/phone/InCallScreenFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/phone/InCallScreenFormatterICS.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/phone/InCallScreenFormatterICS.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/phone/InCallScreenFormatterJB.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/phone/InCallScreenFormatterJB.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/phone/InCallScreenFormatterKK.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/phone/InCallScreenFormatterKK.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/KeyComboManager.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/KeyComboManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/KeyComboPreference.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/KeyComboPreference.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/KeyboardBasedGlobalAction.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/KeyboardBasedGlobalAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/KeyboardEventManager.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/KeyboardEventManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/KeyboardSearchManager.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/KeyboardSearchManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/KeyboardShortcutDialogPreference.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/KeyboardShortcutDialogPreference.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/labeling/LabelDialogActivity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/labeling/LabelDialogActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/labeling/LabelManagerPackageActivity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/labeling/LabelManagerPackageActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/labeling/LabelManagerSummaryActivity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/labeling/LabelManagerSummaryActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/labeling/LabelProvider.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/labeling/LabelProvider.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/labeling/LabelProviderClient.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/labeling/LabelProviderClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/contextmenu/ListMenuManager.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/contextmenu/ListMenuManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/contextmenu/ListMenuPreparer.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/contextmenu/ListMenuPreparer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/LiveViewFormatter.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/LiveViewFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/MultiWindowTreeBuilder.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/MultiWindowTreeBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/traversal/NodeCachedBoundsCalculator.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/traversal/NodeCachedBoundsCalculator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/traversal/NodeFocusFinder.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/traversal/NodeFocusFinder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/speechrules/NodeHintRule.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/speechrules/NodeHintRule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/menurules/NodeMenuRule.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/menurules/NodeMenuRule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/menurules/NodeMenuRuleProcessor.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/menurules/NodeMenuRuleProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/NodeSearch.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/NodeSearch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/speechrules/NodeSpeechRuleProcessor.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/speechrules/NodeSpeechRuleProcessor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/NotificationActivity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/NotificationActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/NotificationFormatter.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/NotificationFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/OptionManager.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/OptionManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/traversal/OrderedTraversalController.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/traversal/OrderedTraversalController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/traversal/OrderedTraversalStrategy.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/traversal/OrderedTraversalStrategy.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/OrientationMonitor.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/OrientationMonitor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/OverlayController.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/OverlayController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/PPMTrie.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/PPMTrie.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/labeling/PackageRemovalReceiver.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/labeling/PackageRemovalReceiver.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/PerformActionUtils.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/PerformActionUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../GooglePlay6.0.5/app/src/main/java/com/google/android/play/search/PlaySearchToolbar.java" afterPath="$PROJECT_DIR$/../../GooglePlay6.0.5/app/src/main/java/com/google/android/play/search/PlaySearchToolbar.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/ProbabilityModelReader.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/ProbabilityModelReader.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/eventprocessor/ProcessorAccessibilityHints.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/eventprocessor/ProcessorAccessibilityHints.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/eventprocessor/ProcessorEventQueue.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/eventprocessor/ProcessorEventQueue.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/eventprocessor/ProcessorFocusAndSingleTap.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/eventprocessor/ProcessorFocusAndSingleTap.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/eventprocessor/ProcessorGestureVibrator.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/eventprocessor/ProcessorGestureVibrator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/eventprocessor/ProcessorPhoneticLetters.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/eventprocessor/ProcessorPhoneticLetters.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/eventprocessor/ProcessorScrollPosition.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/eventprocessor/ProcessorScrollPosition.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/eventprocessor/ProcessorVolumeStream.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/eventprocessor/ProcessorVolumeStream.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/eventprocessor/ProcessorWebContent.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/eventprocessor/ProcessorWebContent.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/ProgressBarFormatter.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/ProgressBarFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/contextmenu/RadialMenu.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/contextmenu/RadialMenu.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/RadialMenuInflater.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/RadialMenuInflater.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/contextmenu/RadialMenuManager.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/contextmenu/RadialMenuManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/contextmenu/RadialMenuOverlay.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/contextmenu/RadialMenuOverlay.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/contextmenu/RadialMenuView.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/contextmenu/RadialMenuView.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/traversal/ReorderedChildrenIterator.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/traversal/ReorderedChildrenIterator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/RingerModeAndScreenMonitor.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/RingerModeAndScreenMonitor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/speechrules/RuleCollection.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/speechrules/RuleCollection.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/speechrules/RuleContainer.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/speechrules/RuleContainer.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/menurules/RuleCustomAction.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/menurules/RuleCustomAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/speechrules/RuleDefault.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/speechrules/RuleDefault.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/menurules/RuleEditText.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/menurules/RuleEditText.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/speechrules/RuleEditText.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/speechrules/RuleEditText.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/menurules/RuleGranularity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/menurules/RuleGranularity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/speechrules/RuleNonTextViews.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/speechrules/RuleNonTextViews.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/speechrules/RuleSeekBar.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/speechrules/RuleSeekBar.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/speechrules/RuleSimpleTemplate.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/speechrules/RuleSimpleTemplate.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/menurules/RuleSpannables.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/menurules/RuleSpannables.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/speechrules/RuleSwitch.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/speechrules/RuleSwitch.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/menurules/RuleUnlabeledImage.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/menurules/RuleUnlabeledImage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/speechrules/RuleViewGroup.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/speechrules/RuleViewGroup.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/menurules/RuleViewPager.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/menurules/RuleViewPager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/SavedNode.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/SavedNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/ScrollFormatter.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/ScrollFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/ShakeDetector.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/ShakeDetector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/ShortcutProxyActivity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/ShortcutProxyActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/SideTapManager.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/SideTapManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/SpeechCleanupUtils.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/SpeechCleanupUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/SpeechController.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/SpeechController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/SwitchAccessPreferenceActivity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/SwitchAccessPreferenceActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/SwitchAccessService.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/SwitchAccessService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/TalkBackKeyboardShortcutPreferencesActivity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/TalkBackKeyboardShortcutPreferencesActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/TalkBackOrderNDegreeTreeBuilder.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/TalkBackOrderNDegreeTreeBuilder.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/TalkBackPreferencesActivity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/TalkBackPreferencesActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/contextmenu/TalkBackRadialMenuClient.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/contextmenu/TalkBackRadialMenuClient.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/TalkBackShortcutPreferencesActivity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/TalkBackShortcutPreferencesActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/TalkBackUpdateHelper.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/TalkBackUpdateHelper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/TextFormatters.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/TextFormatters.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/compat/speech/tts/TextToSpeechCompatUtils.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/compat/speech/tts/TextToSpeechCompatUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/TextToSpeechOverlay.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/TextToSpeechOverlay.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/TextToSpeechUtils.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/TextToSpeechUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/TouchExplorationFormatter.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/TouchExplorationFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/TouchExplorationSystemUiFormatter.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/TouchExplorationSystemUiFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/tutorial/TouchTutorialModule1.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/tutorial/TouchTutorialModule1.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/tutorial/TouchTutorialModule2.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/tutorial/TouchTutorialModule2.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/tutorial/TouchTutorialModule3.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/tutorial/TouchTutorialModule3.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/tutorial/TouchTutorialModule4.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/tutorial/TouchTutorialModule4.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/tutorial/TouchTutorialModule5.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/tutorial/TouchTutorialModule5.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/TreeBuilderUtils.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/switchaccess/TreeBuilderUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/TtsEngineUtils.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/TtsEngineUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/tutorial/TutorialModule.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/tutorial/TutorialModule.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/VolumeMonitor.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/VolumeMonitor.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/WebActivity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/WebActivity.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/WebContentFormatter.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/talkback/formatter/WebContentFormatter.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/WebInterfaceUtils.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/WebInterfaceUtils.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/traversal/WorkingTree.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/android/utils/traversal/WorkingTree.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/res/xml/accessibilityservice.xml" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/res/xml/accessibilityservice.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/res/layout/action_bar.xml" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/res/layout/action_bar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/res/layout/activity_guidance.xml" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/res/layout/activity_guidance.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/res/layout/activity_main.xml" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/res/layout/activity_main.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/build.gradle" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/res/layout/common_titlebar.xml" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/res/layout/common_titlebar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/res/layout/fragment_login_signup.xml" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/res/layout/fragment_login_signup.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/res/layout/fragment_setting.xml" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/res/layout/fragment_setting.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../GooglePlay6.0.5/app/src/main/res/layout/free_song_of_the_day_frame.xml" afterPath="$PROJECT_DIR$/../../GooglePlay6.0.5/app/src/main/res/layout/free_song_of_the_day_frame.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../GooglePlay6.0.5/app/src/main/res/layout/generic_frame.xml" afterPath="$PROJECT_DIR$/../../GooglePlay6.0.5/app/src/main/res/layout/generic_frame.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/.idea/gradle.xml" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/.idea/gradle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/res/layout/item_home_tab.xml" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/res/layout/item_home_tab.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/res/layout/main_content.xml" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/res/layout/main_content.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/.idea/modules.xml" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../GooglePlay6.0.5/app/src/main/res/layout-v21/search_toolbar.xml" afterPath="$PROJECT_DIR$/../../GooglePlay6.0.5/app/src/main/res/layout-v21/search_toolbar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/settings.gradle" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/settings.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/res/raw/speechstrategy.xml" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/res/raw/speechstrategy.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/res/layout/toolbar.xml" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/res/layout/toolbar.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/res/layout/toolbar_mtel_bak.xml" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/res/layout/toolbar_mtel_bak.xml" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\androidTest\java\com\fmtech\accessibilityservicedemo\ApplicationTest.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/androidTest/java/empf/fmtech/accessibilityservicedemo/ApplicationTest.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\FMApplication.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/FMApplication.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\MainActivity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/MainActivity.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\api\MpfaApiImpl.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/api/MpfaApiImpl.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\image\BitmapLoader.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/image/BitmapLoader.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\model\NewsInfo.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/model/NewsInfo.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\service\MyAccessibilityService.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/service/MyAccessibilityService.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\service\TextToSpeechController.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/service/TextToSpeechController.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\activities\BaseActivity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/activities/BaseActivity.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\activities\FirstLoginActivity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/activities/FirstLoginActivity.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\activities\ForgotPasswordActivity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/activities/ForgotPasswordActivity.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\activities\GuidanceActivity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/activities/GuidanceActivity.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\activities\LoginActivity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/activities/LoginActivity.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\activities\NewsDetailActivity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/activities/NewsDetailActivity.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\activities\SelectLanguageActivity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/activities/SelectLanguageActivity.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\activities\SelectLoginModeActivity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/activities/SelectLoginModeActivity.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\activities\SignupActivity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/activities/SignupActivity.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\activities\SplashActivity.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/activities/SplashActivity.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\adapter\NewsAdapter.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/adapter/NewsAdapter.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\component\CommonTitleBar.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/component/CommonTitleBar.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\component\ItemHomeTab.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/component/ItemHomeTab.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\component\MPFADialog.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/component/MPFADialog.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\component\MPFASimpleDialog.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/component/MPFASimpleDialog.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\component\MessageReminder.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/component/MessageReminder.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\component\actionbar\ActionBarBackgroundUpdater.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/component/actionbar/ActionBarBackgroundUpdater.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\component\actionbar\ActionBarController.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/component/actionbar/ActionBarController.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\component\actionbar\ActionBarHelper.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/component/actionbar/ActionBarHelper.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\component\drawer\DrawerAdapter.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/component/drawer/DrawerAdapter.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\component\drawer\DrawerContentClickListener.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/component/drawer/DrawerContentClickListener.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\component\drawer\FMDrawerLayout.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/component/drawer/FMDrawerLayout.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\component\layout\InsetsAware.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/component/layout/InsetsAware.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\component\layout\InsetsFrameLayout.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/component/layout/InsetsFrameLayout.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\component\layout\InsetsLinearLayout.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/component/layout/InsetsLinearLayout.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\component\layout\LayoutSwitcher.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/component/layout/LayoutSwitcher.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\component\layout\MtelToolbar.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/component/layout/MtelToolbar.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\component\layout\ScrimInsetsFrameLayout.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/component/layout/ScrimInsetsFrameLayout.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\decorator\DividerItemDecoration.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/decorator/DividerItemDecoration.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\ContactUsFragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/ContactUsFragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\FragmentConfig.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/FragmentConfig.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\HomeFragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/HomeFragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\LoginSignupFragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/LoginSignupFragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\NewsFragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/NewsFragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\SecurityTipsFragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/SecurityTipsFragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\SettingFragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/SettingFragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\TutorialsFragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/TutorialsFragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\base\CommonBaseFragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/base/CommonBaseFragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\base\PageFragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/base/PageFragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\base\PageFragmentHost.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/base/PageFragmentHost.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\homepages\HomeFragmentPagerAdapter.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/homepages/HomeFragmentPagerAdapter.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\homepages\MessageBoxFragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/homepages/MessageBoxFragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\homepages\PersonalAccountFragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/homepages/PersonalAccountFragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\homepages\PersonalProfileFragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/homepages/PersonalProfileFragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\homepages\TrusteeContactFragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/homepages/TrusteeContactFragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\login\FirstLoginStep1Fragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/login/FirstLoginStep1Fragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\login\FirstLoginStep2Fragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/login/FirstLoginStep2Fragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\login\FirstLoginStep3Fragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/login/FirstLoginStep3Fragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\login\FirstLoginStep4Fragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/login/FirstLoginStep4Fragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\login\ForgotPasswordConfirmFragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/login/ForgotPasswordConfirmFragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\login\ForgotPasswordFragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/login/ForgotPasswordFragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\login\OneTimePasswordFragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/login/OneTimePasswordFragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\login\SedondPasswordFragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/login/SedondPasswordFragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\login\SelectLoginModeFragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/login/SelectLoginModeFragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\signup\SignupStep1Fragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/signup/SignupStep1Fragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\signup\SignupStep2Fragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/signup/SignupStep2Fragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\signup\SignupStep3Fragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/signup/SignupStep3Fragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\fragments\signup\SignupStep4Fragment.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/fragments/signup/SignupStep4Fragment.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\navigationmanager\NavigationManager.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/navigationmanager/NavigationManager.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\navigationmanager\NavigationState.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/navigationmanager/NavigationState.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\view\NavigationDot.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/view/NavigationDot.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\ui\view\ToggleButton.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/ui/view/ToggleButton.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\utils\CommonResourceUtils.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/utils/CommonResourceUtils.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\utils\CorpusResourceUtils.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/utils/CorpusResourceUtils.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\utils\DimenUtils.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/utils/DimenUtils.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\utils\MainThreadStack.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/utils/MainThreadStack.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\utils\PreferenceUtils.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/utils/PreferenceUtils.java" />
+      <change type="MOVED" beforePath="F:\CHIANG-GITHUBOS-FMTech\FMTech\AccessibilityServiceDemo\app\src\main\java\com\fmtech\empf\utils\Utils.java" afterPath="$PROJECT_DIR$/../../AccessibilityServiceDemo/app/src/main/java/com/mpfa/empf/utils/Utils.java" />
+    </list>
+    <ignored path="FragmentTransactionExample.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="FragmentTransactionExample" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="SlidingListFragmentLeft.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/desarrollodroide/fragmenttrasitionextendedexample/SlidingListFragmentLeft.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+              <folding>
+                <element signature="e#868#869#0" expanded="false" />
+                <element signature="e#901#902#0" expanded="false" />
+                <element signature="e#966#967#0" expanded="false" />
+                <element signature="e#1001#1002#0" expanded="false" />
+                <element signature="e#1066#1067#0" expanded="false" />
+                <element signature="e#1098#1099#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/com/desarrollodroide/fragmenttrasitionextendedexample/MainActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="46" column="127" selection-start-line="46" selection-start-column="108" selection-end-line="46" selection-end-column="127" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SlidingListFragmentRight.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/com/desarrollodroide/fragmenttrasitionextendedexample/SlidingListFragmentRight.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.37545127">
+              <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://E:/AndroidSDK/android-studio-ide-135.1711524-windows/sdk/sources/android-19/android/app/Fragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="924" column="74" selection-start-line="924" selection-start-column="74" selection-end-line="924" selection-end-column="74" />
+              <folding>
+                <element signature="e#0#73392#0" expanded="false" />
+                <element signature="imports" expanded="false" />
+                <element signature="e#3960#3961#0" expanded="false" />
+                <element signature="e#3984#3985#0" expanded="false" />
+                <element signature="e#4626#4627#0" expanded="false" />
+                <element signature="e#4678#4679#0" expanded="false" />
+                <element signature="e#4739#4740#0" expanded="false" />
+                <element signature="e#4793#4794#0" expanded="false" />
+                <element signature="e#19316#19317#0" expanded="false" />
+                <element signature="e#19354#19355#0" expanded="false" />
+                <element signature="e#19627#19628#0" expanded="false" />
+                <element signature="e#19659#19660#0" expanded="false" />
+                <element signature="e#19738#19739#0" expanded="false" />
+                <element signature="e#19786#19787#0" expanded="false" />
+                <element signature="e#19993#19994#0" expanded="false" />
+                <element signature="e#20056#20057#0" expanded="false" />
+                <element signature="e#20256#20257#0" expanded="false" />
+                <element signature="e#20315#20316#0" expanded="false" />
+                <element signature="e#20617#20618#0" expanded="false" />
+                <element signature="e#20658#20659#0" expanded="false" />
+                <element signature="e#25179#25180#0" expanded="false" />
+                <element signature="e#25223#25224#0" expanded="false" />
+                <element signature="e#25339#25340#0" expanded="false" />
+                <element signature="e#25377#25378#0" expanded="false" />
+                <element signature="e#25485#25486#0" expanded="false" />
+                <element signature="e#25524#25525#0" expanded="false" />
+                <element signature="e#26298#26299#0" expanded="false" />
+                <element signature="e#26332#26333#0" expanded="false" />
+                <element signature="e#26443#26444#0" expanded="false" />
+                <element signature="e#26470#26471#0" expanded="false" />
+                <element signature="e#27148#27149#0" expanded="false" />
+                <element signature="e#27181#27182#0" expanded="false" />
+                <element signature="e#28653#28654#0" expanded="false" />
+                <element signature="e#28683#28684#0" expanded="false" />
+                <element signature="e#28819#28820#0" expanded="false" />
+                <element signature="e#28860#28861#0" expanded="false" />
+                <element signature="e#28990#28991#0" expanded="false" />
+                <element signature="e#29022#29023#0" expanded="false" />
+                <element signature="e#29575#29576#0" expanded="false" />
+                <element signature="e#29627#29628#0" expanded="false" />
+                <element signature="e#29840#29841#0" expanded="false" />
+                <element signature="e#29894#29895#0" expanded="false" />
+                <element signature="e#30994#30995#0" expanded="false" />
+                <element signature="e#31033#31034#0" expanded="false" />
+                <element signature="e#31990#31991#0" expanded="false" />
+                <element signature="e#32028#32029#0" expanded="false" />
+                <element signature="e#32153#32154#0" expanded="false" />
+                <element signature="e#32203#32204#0" expanded="false" />
+                <element signature="e#32463#32464#0" expanded="false" />
+                <element signature="e#32495#32496#0" expanded="false" />
+                <element signature="e#32782#32783#0" expanded="false" />
+                <element signature="e#32814#32815#0" expanded="false" />
+                <element signature="e#33246#33247#0" expanded="false" />
+                <element signature="e#33278#33279#0" expanded="false" />
+                <element signature="e#33487#33488#0" expanded="false" />
+                <element signature="e#33518#33519#0" expanded="false" />
+                <element signature="e#34311#34312#0" expanded="false" />
+                <element signature="e#34341#34342#0" expanded="false" />
+                <element signature="e#35785#35786#0" expanded="false" />
+                <element signature="e#35823#35824#0" expanded="false" />
+                <element signature="e#38243#38244#0" expanded="false" />
+                <element signature="e#38282#38283#0" expanded="false" />
+                <element signature="e#39012#39013#0" expanded="false" />
+                <element signature="e#39055#39056#0" expanded="false" />
+                <element signature="e#42394#42395#0" expanded="false" />
+                <element signature="e#42424#42425#0" expanded="false" />
+                <element signature="e#44914#44915#0" expanded="false" />
+                <element signature="e#44944#44945#0" expanded="false" />
+                <element signature="e#45096#45097#0" expanded="false" />
+                <element signature="e#45123#45124#0" expanded="false" />
+                <element signature="e#45876#45877#0" expanded="false" />
+                <element signature="e#45906#45907#0" expanded="false" />
+                <element signature="e#48015#48016#0" expanded="false" />
+                <element signature="e#48043#48044#0" expanded="false" />
+                <element signature="e#48829#48830#0" expanded="false" />
+                <element signature="e#48859#48860#0" expanded="false" />
+                <element signature="e#49460#49461#0" expanded="false" />
+                <element signature="e#49490#49491#0" expanded="false" />
+                <element signature="e#50390#50391#0" expanded="false" />
+                <element signature="e#50420#50421#0" expanded="false" />
+                <element signature="e#51630#51631#0" expanded="false" />
+                <element signature="e#51660#51661#0" expanded="false" />
+                <element signature="e#51888#51889#0" expanded="false" />
+                <element signature="e#51918#51919#0" expanded="false" />
+                <element signature="e#52143#52144#0" expanded="false" />
+                <element signature="e#52173#52174#0" expanded="false" />
+                <element signature="e#52210#52211#0" expanded="false" />
+                <element signature="e#52240#52241#0" expanded="false" />
+                <element signature="e#52287#52288#0" expanded="false" />
+                <element signature="e#52317#52318#0" expanded="false" />
+                <element signature="e#52875#52876#0" expanded="false" />
+                <element signature="e#52905#52906#0" expanded="false" />
+                <element signature="e#54585#54586#0" expanded="false" />
+                <element signature="e#54615#54616#0" expanded="false" />
+                <element signature="e#57120#57121#0" expanded="false" />
+                <element signature="e#57148#57149#0" expanded="false" />
+                <element signature="e#59032#59033#0" expanded="false" />
+                <element signature="e#59089#59090#0" expanded="false" />
+                <element signature="e#59430#59431#0" expanded="false" />
+                <element signature="e#59487#59488#0" expanded="false" />
+                <element signature="e#60396#60397#0" expanded="false" />
+                <element signature="e#60424#60425#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="FragmentTransactionExtended.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../LibraryFragmentTransactionExtended/src/com/desarrollodroide/libraryfragmenttransactionextended/FragmentTransactionExtended.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+              <folding>
+                <element signature="e#9806#10275#0" expanded="false" />
+                <element signature="e#10274#10275#0" expanded="false" />
+                <element signature="e#12502#12715#0" expanded="false" />
+                <element signature="e#12714#12715#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="activity_main.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SlidingRelativeLayout.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/../LibraryFragmentTransactionExtended/src/com/desarrollodroide/libraryfragmenttransactionextended/SlidingRelativeLayout.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+              <folding>
+                <element signature="e#413#414#0" expanded="false" />
+                <element signature="e#443#444#0" expanded="false" />
+                <element signature="e#516#517#0" expanded="false" />
+                <element signature="e#553#554#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="sliding_fragment_layout_left.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/res/layout/sliding_fragment_layout_left.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="android-designer">
+            <state />
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="GradleLocalSettings">
+    <option name="externalProjectsViewState">
+      <projects_view />
+    </option>
+  </component>
+  <component name="NamedScopeManager">
+    <order />
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1050" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FragmentTransactionExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FragmentTransactionExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FragmentTransactionExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FragmentTransactionExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FragmentTransactionExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="desarrollodroide" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="fragmenttrasitionextendedexample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FragmentTransactionExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FragmentTransactionExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FragmentTransactionExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FragmentTransactionExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="layout" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FragmentTransactionExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FragmentTransactionExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-xhdpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FragmentTransactionExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="FragmentTransactionExample" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="drawable-hdpi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="AndroidView">
+        <subPane />
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="GoToClass.includeLibraries" value="false" />
+    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
+    <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="MemberChooser.sorted" value="false" />
+    <property name="MemberChooser.showClasses" value="true" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
+    <property name="settings.editor.selected.configurable" value="android.sdk-updates" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="last_opened_file_path" value="F:/CHIANG-GITHUB-Samples/material-check-mark-animation" />
+    <property name="recentsLimit" value="5" />
+    <property name="FullScreen" value="false" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android Application">
+      <module name="" />
+      <option name="DEPLOY" value="true" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
+      <module name="" />
+      <option name="TESTING_TYPE" value="0" />
+      <option name="INSTRUMENTATION_RUNNER_CLASS" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="CLASS_NAME" value="" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="EXTRA_OPTIONS" value="" />
+      <option name="TARGET_SELECTION_MODE" value="SHOW_DIALOG" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <method />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="true" type="JarApplication" factoryName="JAR Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Remote" factoryName="Remote">
+      <option name="USE_SOCKET_TRANSPORT" value="true" />
+      <option name="SERVER_MODE" value="false" />
+      <option name="SHMEM_ADDRESS" value="javadebug" />
+      <option name="HOST" value="localhost" />
+      <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="Applet" default="true" selected="false">
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
+    <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
+      <Host>localhost</Host>
+      <Port>5050</Port>
+    </configuration>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="13dd3497-a717-4f56-9c16-96ba784d64d3" name="Default" comment="" />
+      <created>1453947835853</created>
+      <option name="number" value="Default" />
+      <updated>1453947835853</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-9" y="-9" width="1938" height="1050" extended-state="6" />
+    <editor active="false" />
+    <layout>
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32959402" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25320512" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.17200854" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="1" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/desarrollodroide/fragmenttrasitionextendedexample/SlidingListFragmentLeft.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+          <folding>
+            <element signature="e#868#869#0" expanded="false" />
+            <element signature="e#901#902#0" expanded="false" />
+            <element signature="e#966#967#0" expanded="false" />
+            <element signature="e#1001#1002#0" expanded="false" />
+            <element signature="e#1066#1067#0" expanded="false" />
+            <element signature="e#1098#1099#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/desarrollodroide/fragmenttrasitionextendedexample/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="127" selection-start-line="46" selection-start-column="108" selection-end-line="46" selection-end-column="127" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/desarrollodroide/fragmenttrasitionextendedexample/SlidingListFragmentRight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/AndroidSDK/android-studio-ide-135.1711524-windows/sdk/sources/android-19/android/app/Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="924" column="74" selection-start-line="924" selection-start-column="74" selection-end-line="924" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#73392#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3960#3961#0" expanded="false" />
+            <element signature="e#3984#3985#0" expanded="false" />
+            <element signature="e#4626#4627#0" expanded="false" />
+            <element signature="e#4678#4679#0" expanded="false" />
+            <element signature="e#4739#4740#0" expanded="false" />
+            <element signature="e#4793#4794#0" expanded="false" />
+            <element signature="e#19316#19317#0" expanded="false" />
+            <element signature="e#19354#19355#0" expanded="false" />
+            <element signature="e#19627#19628#0" expanded="false" />
+            <element signature="e#19659#19660#0" expanded="false" />
+            <element signature="e#19738#19739#0" expanded="false" />
+            <element signature="e#19786#19787#0" expanded="false" />
+            <element signature="e#19993#19994#0" expanded="false" />
+            <element signature="e#20056#20057#0" expanded="false" />
+            <element signature="e#20256#20257#0" expanded="false" />
+            <element signature="e#20315#20316#0" expanded="false" />
+            <element signature="e#20617#20618#0" expanded="false" />
+            <element signature="e#20658#20659#0" expanded="false" />
+            <element signature="e#25179#25180#0" expanded="false" />
+            <element signature="e#25223#25224#0" expanded="false" />
+            <element signature="e#25339#25340#0" expanded="false" />
+            <element signature="e#25377#25378#0" expanded="false" />
+            <element signature="e#25485#25486#0" expanded="false" />
+            <element signature="e#25524#25525#0" expanded="false" />
+            <element signature="e#26298#26299#0" expanded="false" />
+            <element signature="e#26332#26333#0" expanded="false" />
+            <element signature="e#26443#26444#0" expanded="false" />
+            <element signature="e#26470#26471#0" expanded="false" />
+            <element signature="e#27148#27149#0" expanded="false" />
+            <element signature="e#27181#27182#0" expanded="false" />
+            <element signature="e#28653#28654#0" expanded="false" />
+            <element signature="e#28683#28684#0" expanded="false" />
+            <element signature="e#28819#28820#0" expanded="false" />
+            <element signature="e#28860#28861#0" expanded="false" />
+            <element signature="e#28990#28991#0" expanded="false" />
+            <element signature="e#29022#29023#0" expanded="false" />
+            <element signature="e#29575#29576#0" expanded="false" />
+            <element signature="e#29627#29628#0" expanded="false" />
+            <element signature="e#29840#29841#0" expanded="false" />
+            <element signature="e#29894#29895#0" expanded="false" />
+            <element signature="e#30994#30995#0" expanded="false" />
+            <element signature="e#31033#31034#0" expanded="false" />
+            <element signature="e#31990#31991#0" expanded="false" />
+            <element signature="e#32028#32029#0" expanded="false" />
+            <element signature="e#32153#32154#0" expanded="false" />
+            <element signature="e#32203#32204#0" expanded="false" />
+            <element signature="e#32463#32464#0" expanded="false" />
+            <element signature="e#32495#32496#0" expanded="false" />
+            <element signature="e#32782#32783#0" expanded="false" />
+            <element signature="e#32814#32815#0" expanded="false" />
+            <element signature="e#33246#33247#0" expanded="false" />
+            <element signature="e#33278#33279#0" expanded="false" />
+            <element signature="e#33487#33488#0" expanded="false" />
+            <element signature="e#33518#33519#0" expanded="false" />
+            <element signature="e#34311#34312#0" expanded="false" />
+            <element signature="e#34341#34342#0" expanded="false" />
+            <element signature="e#35785#35786#0" expanded="false" />
+            <element signature="e#35823#35824#0" expanded="false" />
+            <element signature="e#38243#38244#0" expanded="false" />
+            <element signature="e#38282#38283#0" expanded="false" />
+            <element signature="e#39012#39013#0" expanded="false" />
+            <element signature="e#39055#39056#0" expanded="false" />
+            <element signature="e#42394#42395#0" expanded="false" />
+            <element signature="e#42424#42425#0" expanded="false" />
+            <element signature="e#44914#44915#0" expanded="false" />
+            <element signature="e#44944#44945#0" expanded="false" />
+            <element signature="e#45096#45097#0" expanded="false" />
+            <element signature="e#45123#45124#0" expanded="false" />
+            <element signature="e#45876#45877#0" expanded="false" />
+            <element signature="e#45906#45907#0" expanded="false" />
+            <element signature="e#48015#48016#0" expanded="false" />
+            <element signature="e#48043#48044#0" expanded="false" />
+            <element signature="e#48829#48830#0" expanded="false" />
+            <element signature="e#48859#48860#0" expanded="false" />
+            <element signature="e#49460#49461#0" expanded="false" />
+            <element signature="e#49490#49491#0" expanded="false" />
+            <element signature="e#50390#50391#0" expanded="false" />
+            <element signature="e#50420#50421#0" expanded="false" />
+            <element signature="e#51630#51631#0" expanded="false" />
+            <element signature="e#51660#51661#0" expanded="false" />
+            <element signature="e#51888#51889#0" expanded="false" />
+            <element signature="e#51918#51919#0" expanded="false" />
+            <element signature="e#52143#52144#0" expanded="false" />
+            <element signature="e#52173#52174#0" expanded="false" />
+            <element signature="e#52210#52211#0" expanded="false" />
+            <element signature="e#52240#52241#0" expanded="false" />
+            <element signature="e#52287#52288#0" expanded="false" />
+            <element signature="e#52317#52318#0" expanded="false" />
+            <element signature="e#52875#52876#0" expanded="false" />
+            <element signature="e#52905#52906#0" expanded="false" />
+            <element signature="e#54585#54586#0" expanded="false" />
+            <element signature="e#54615#54616#0" expanded="false" />
+            <element signature="e#57120#57121#0" expanded="false" />
+            <element signature="e#57148#57149#0" expanded="false" />
+            <element signature="e#59032#59033#0" expanded="false" />
+            <element signature="e#59089#59090#0" expanded="false" />
+            <element signature="e#59430#59431#0" expanded="false" />
+            <element signature="e#59487#59488#0" expanded="false" />
+            <element signature="e#60396#60397#0" expanded="false" />
+            <element signature="e#60424#60425#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../LibraryFragmentTransactionExtended/src/com/desarrollodroide/libraryfragmenttransactionextended/FragmentTransactionExtended.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+          <folding>
+            <element signature="e#9806#10275#0" expanded="false" />
+            <element signature="e#10274#10275#0" expanded="false" />
+            <element signature="e#12502#12715#0" expanded="false" />
+            <element signature="e#12714#12715#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../LibraryFragmentTransactionExtended/src/com/desarrollodroide/libraryfragmenttransactionextended/SlidingRelativeLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#413#414#0" expanded="false" />
+            <element signature="e#443#444#0" expanded="false" />
+            <element signature="e#516#517#0" expanded="false" />
+            <element signature="e#553#554#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/sliding_fragment_layout_left.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/desarrollodroide/fragmenttrasitionextendedexample/SlidingListFragmentLeft.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="15" column="74" selection-start-line="15" selection-start-column="74" selection-end-line="15" selection-end-column="74" />
+          <folding>
+            <element signature="e#868#869#0" expanded="false" />
+            <element signature="e#901#902#0" expanded="false" />
+            <element signature="e#966#967#0" expanded="false" />
+            <element signature="e#1001#1002#0" expanded="false" />
+            <element signature="e#1066#1067#0" expanded="false" />
+            <element signature="e#1098#1099#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/desarrollodroide/fragmenttrasitionextendedexample/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/activity_main.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="19" column="47" selection-start-line="19" selection-start-column="47" selection-end-line="19" selection-end-column="47" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/values/strings.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26065162">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../LibraryFragmentTransactionExtended/src/com/desarrollodroide/libraryfragmenttransactionextended/FragmentTransactionExtended.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="53" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+          <folding>
+            <element signature="e#9806#10275#0" expanded="false" />
+            <element signature="e#10274#10275#0" expanded="false" />
+            <element signature="e#12502#12715#0" expanded="false" />
+            <element signature="e#12714#12715#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../LibraryFragmentTransactionExtended/src/com/desarrollodroide/libraryfragmenttransactionextended/SlidingRelativeLayout.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+          <folding>
+            <element signature="e#413#414#0" expanded="false" />
+            <element signature="e#443#444#0" expanded="false" />
+            <element signature="e#516#517#0" expanded="false" />
+            <element signature="e#553#554#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable/back1.9.png">
+      <provider selected="true" editor-type-id="ninepatcheditor">
+        <state />
+      </provider>
+      <provider editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/drawable/back2.9.png">
+      <provider selected="true" editor-type-id="ninepatcheditor">
+        <state />
+      </provider>
+      <provider editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/res/layout/sliding_fragment_layout_left.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="android-designer">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/desarrollodroide/fragmenttrasitionextendedexample/MainActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="46" column="127" selection-start-line="46" selection-start-column="108" selection-end-line="46" selection-end-column="127" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/desarrollodroide/fragmenttrasitionextendedexample/SlidingListFragmentLeft.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+          <folding>
+            <element signature="e#868#869#0" expanded="false" />
+            <element signature="e#901#902#0" expanded="false" />
+            <element signature="e#966#967#0" expanded="false" />
+            <element signature="e#1001#1002#0" expanded="false" />
+            <element signature="e#1066#1067#0" expanded="false" />
+            <element signature="e#1098#1099#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/AndroidSDK/android-studio-ide-135.1711524-windows/sdk/sources/android-19/android/app/Fragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="924" column="74" selection-start-line="924" selection-start-column="74" selection-end-line="924" selection-end-column="74" />
+          <folding>
+            <element signature="e#0#73392#0" expanded="false" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#3960#3961#0" expanded="false" />
+            <element signature="e#3984#3985#0" expanded="false" />
+            <element signature="e#4626#4627#0" expanded="false" />
+            <element signature="e#4678#4679#0" expanded="false" />
+            <element signature="e#4739#4740#0" expanded="false" />
+            <element signature="e#4793#4794#0" expanded="false" />
+            <element signature="e#19316#19317#0" expanded="false" />
+            <element signature="e#19354#19355#0" expanded="false" />
+            <element signature="e#19627#19628#0" expanded="false" />
+            <element signature="e#19659#19660#0" expanded="false" />
+            <element signature="e#19738#19739#0" expanded="false" />
+            <element signature="e#19786#19787#0" expanded="false" />
+            <element signature="e#19993#19994#0" expanded="false" />
+            <element signature="e#20056#20057#0" expanded="false" />
+            <element signature="e#20256#20257#0" expanded="false" />
+            <element signature="e#20315#20316#0" expanded="false" />
+            <element signature="e#20617#20618#0" expanded="false" />
+            <element signature="e#20658#20659#0" expanded="false" />
+            <element signature="e#25179#25180#0" expanded="false" />
+            <element signature="e#25223#25224#0" expanded="false" />
+            <element signature="e#25339#25340#0" expanded="false" />
+            <element signature="e#25377#25378#0" expanded="false" />
+            <element signature="e#25485#25486#0" expanded="false" />
+            <element signature="e#25524#25525#0" expanded="false" />
+            <element signature="e#26298#26299#0" expanded="false" />
+            <element signature="e#26332#26333#0" expanded="false" />
+            <element signature="e#26443#26444#0" expanded="false" />
+            <element signature="e#26470#26471#0" expanded="false" />
+            <element signature="e#27148#27149#0" expanded="false" />
+            <element signature="e#27181#27182#0" expanded="false" />
+            <element signature="e#28653#28654#0" expanded="false" />
+            <element signature="e#28683#28684#0" expanded="false" />
+            <element signature="e#28819#28820#0" expanded="false" />
+            <element signature="e#28860#28861#0" expanded="false" />
+            <element signature="e#28990#28991#0" expanded="false" />
+            <element signature="e#29022#29023#0" expanded="false" />
+            <element signature="e#29575#29576#0" expanded="false" />
+            <element signature="e#29627#29628#0" expanded="false" />
+            <element signature="e#29840#29841#0" expanded="false" />
+            <element signature="e#29894#29895#0" expanded="false" />
+            <element signature="e#30994#30995#0" expanded="false" />
+            <element signature="e#31033#31034#0" expanded="false" />
+            <element signature="e#31990#31991#0" expanded="false" />
+            <element signature="e#32028#32029#0" expanded="false" />
+            <element signature="e#32153#32154#0" expanded="false" />
+            <element signature="e#32203#32204#0" expanded="false" />
+            <element signature="e#32463#32464#0" expanded="false" />
+            <element signature="e#32495#32496#0" expanded="false" />
+            <element signature="e#32782#32783#0" expanded="false" />
+            <element signature="e#32814#32815#0" expanded="false" />
+            <element signature="e#33246#33247#0" expanded="false" />
+            <element signature="e#33278#33279#0" expanded="false" />
+            <element signature="e#33487#33488#0" expanded="false" />
+            <element signature="e#33518#33519#0" expanded="false" />
+            <element signature="e#34311#34312#0" expanded="false" />
+            <element signature="e#34341#34342#0" expanded="false" />
+            <element signature="e#35785#35786#0" expanded="false" />
+            <element signature="e#35823#35824#0" expanded="false" />
+            <element signature="e#38243#38244#0" expanded="false" />
+            <element signature="e#38282#38283#0" expanded="false" />
+            <element signature="e#39012#39013#0" expanded="false" />
+            <element signature="e#39055#39056#0" expanded="false" />
+            <element signature="e#42394#42395#0" expanded="false" />
+            <element signature="e#42424#42425#0" expanded="false" />
+            <element signature="e#44914#44915#0" expanded="false" />
+            <element signature="e#44944#44945#0" expanded="false" />
+            <element signature="e#45096#45097#0" expanded="false" />
+            <element signature="e#45123#45124#0" expanded="false" />
+            <element signature="e#45876#45877#0" expanded="false" />
+            <element signature="e#45906#45907#0" expanded="false" />
+            <element signature="e#48015#48016#0" expanded="false" />
+            <element signature="e#48043#48044#0" expanded="false" />
+            <element signature="e#48829#48830#0" expanded="false" />
+            <element signature="e#48859#48860#0" expanded="false" />
+            <element signature="e#49460#49461#0" expanded="false" />
+            <element signature="e#49490#49491#0" expanded="false" />
+            <element signature="e#50390#50391#0" expanded="false" />
+            <element signature="e#50420#50421#0" expanded="false" />
+            <element signature="e#51630#51631#0" expanded="false" />
+            <element signature="e#51660#51661#0" expanded="false" />
+            <element signature="e#51888#51889#0" expanded="false" />
+            <element signature="e#51918#51919#0" expanded="false" />
+            <element signature="e#52143#52144#0" expanded="false" />
+            <element signature="e#52173#52174#0" expanded="false" />
+            <element signature="e#52210#52211#0" expanded="false" />
+            <element signature="e#52240#52241#0" expanded="false" />
+            <element signature="e#52287#52288#0" expanded="false" />
+            <element signature="e#52317#52318#0" expanded="false" />
+            <element signature="e#52875#52876#0" expanded="false" />
+            <element signature="e#52905#52906#0" expanded="false" />
+            <element signature="e#54585#54586#0" expanded="false" />
+            <element signature="e#54615#54616#0" expanded="false" />
+            <element signature="e#57120#57121#0" expanded="false" />
+            <element signature="e#57148#57149#0" expanded="false" />
+            <element signature="e#59032#59033#0" expanded="false" />
+            <element signature="e#59089#59090#0" expanded="false" />
+            <element signature="e#59430#59431#0" expanded="false" />
+            <element signature="e#59487#59488#0" expanded="false" />
+            <element signature="e#60396#60397#0" expanded="false" />
+            <element signature="e#60424#60425#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/desarrollodroide/fragmenttrasitionextendedexample/SlidingListFragmentRight.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.37545127">
+          <caret line="27" column="0" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Android</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>FragmentTransactionExample</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>Android API 21 Platform</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

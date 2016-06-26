@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.vmall.client">
+    <RelativeLayout android:id="@id/share_layout" android:paddingBottom="@dimen/font12" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/font14_sp" android:textColor="@color/time_title" android:id="@id/msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font15" android:layout_marginTop="@dimen/font20" android:layout_marginRight="@dimen/font15" android:layout_alignParentTop="true" android:layout_centerInParent="true" />
+        <TextView android:textSize="@dimen/font13_sp" android:textColor="@color/text_herf" android:id="@id/pay_success_content" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font15" android:layout_marginTop="@dimen/font20" android:layout_marginRight="@dimen/font15" android:layout_below="@id/msg" />
+        <com.vmall.client.view.VmallButton android:id="@id/ok" android:layout_width="fill_parent" android:layout_height="@dimen/font44" android:layout_marginLeft="@dimen/font15" android:layout_marginTop="@dimen/font20" android:layout_marginRight="@dimen/font15" android:text="@string/ok" android:layout_below="@id/pay_success_content" app:level="big3" app:buttonSize="big" />
+    </RelativeLayout>
+</RelativeLayout>

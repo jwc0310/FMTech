@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="@color/black_eighty_five" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="16.0dip" android:text="@string/dear_user" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/black_eighty_five" android:id="@id/welcome_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="16.0dip" android:layout_marginRight="18.0dip" android:text="@string/welcome_vmall" android:layout_below="@id/title" android:lineSpacingExtra="5.0dip" />
+    <TextView android:textSize="11.0sp" android:textColor="@color/black_eighty" android:id="@id/use_vmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="24.0dip" android:text="@string/use_vmall" android:layout_below="@id/welcome_desc" android:layout_alignParentLeft="true" />
+    <RelativeLayout android:id="@id/relativelayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="18.0dip" android:layout_marginTop="5.0dip" android:layout_below="@id/use_vmall" android:layout_alignParentLeft="true">
+        <TextView android:textSize="11.0sp" android:id="@id/tv_left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/manage_protocol" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/edit_num_layout" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="18.0dip" android:layout_marginRight="18.0dip" android:layout_above="@id/button" android:layout_alignParentLeft="true">
+        <CheckBox android:id="@id/checkbox_tips" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <TextView android:textSize="13.0sp" android:textColor="@color/black_sixty_five" android:gravity="center" android:id="@id/product_num_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="@string/do_not_remind_again" android:layout_toRightOf="@id/checkbox_tips" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/button" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="28.0dip" android:layout_alignParentBottom="true">
+        <Button android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/agree" android:background="@drawable/update_ok_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="4.0dip" android:text="@string/agree_goon" android:layout_weight="1.0" />
+        <Button android:textSize="14.0sp" android:textColor="@color/black_seventy" android:id="@id/close" android:background="@drawable/update_later_selector" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="4.0dip" android:text="@string/close" android:layout_weight="1.0" />
+    </LinearLayout>
+</RelativeLayout>

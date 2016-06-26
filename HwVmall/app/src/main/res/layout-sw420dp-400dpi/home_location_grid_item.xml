@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="@dimen/font100" android:layout_marginLeft="@dimen/font10">
+        <TextView android:background="@color/honor_activity_border_color" android:layout_width="fill_parent" android:layout_height="@dimen/font1_px" />
+        <LinearLayout android:orientation="vertical" android:id="@id/small_goods_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font10" android:layout_marginRight="@dimen/font10" android:layout_toLeftOf="@id/small_goods_pic">
+            <TextView android:textSize="@dimen/font15" android:textColor="@color/time_title" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/small_goods_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/font13" android:textColor="@color/home_goods_description_color" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/small_goods_description" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font2" android:maxLines="2" />
+            <TextView android:textSize="@dimen/font15" android:textColor="@color/time_title" android:id="@id/small_goods_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" />
+        </LinearLayout>
+        <ImageView android:id="@id/small_goods_pic" android:background="@drawable/icon_no_pic" android:layout_width="@dimen/font92" android:layout_height="@dimen/font92" android:layout_marginTop="@dimen/font4" android:layout_marginBottom="@dimen/font4" android:scaleType="fitCenter" android:layout_alignParentRight="true" android:contentDescription="@null" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/small_goods_status" android:layout_width="wrap_content" android:layout_height="wrap_content" android:adjustViewBounds="true" android:maxWidth="@dimen/font32" android:maxHeight="@dimen/font32" android:contentDescription="@null" />
+    <TextView android:layout_gravity="fill_vertical|center|right" android:id="@id/small_region_right_divider" android:background="@color/honor_activity_border_color" android:visibility="gone" android:layout_width="@dimen/font1_px" android:layout_height="@dimen/font100" />
+</FrameLayout>

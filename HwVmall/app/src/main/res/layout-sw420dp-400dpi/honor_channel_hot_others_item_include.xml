@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/honor_channel_others_layout" android:background="@drawable/honor_inset_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingBottom="@dimen/font8" android:layout_width="wrap_content" android:layout_height="@dimen/font84">
+        <ImageView android:id="@id/honor_channel_hot_others_goods_pic" android:layout_width="@dimen/font68" android:layout_height="@dimen/font68" android:layout_marginLeft="@dimen/font8" android:layout_marginTop="@dimen/font8" android:src="@drawable/icon_no_pic" android:scaleType="fitXY" android:contentDescription="@null" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginTop="@dimen/font24" android:layout_marginRight="@dimen/font48" android:layout_toRightOf="@id/honor_channel_hot_others_goods_pic">
+            <TextView android:textSize="@dimen/font15_sp" android:textColor="@color/time_title" android:id="@id/honor_channel_hot_others_goods_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:singleLine="true" />
+            <TextView android:textSize="@dimen/font13_sp" android:textColor="@color/home_goods_description_color" android:ellipsize="end" android:id="@id/honor_channel_hot_others_goods_desc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font4" android:maxLines="2" android:minLines="2" android:lineSpacingExtra="@dimen/font3" />
+            <TextView android:textSize="@dimen/font11_sp" android:textColor="@color/price_color" android:layout_gravity="bottom" android:id="@id/honor_channel_hot_others_goods_price" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <ImageView android:background="@drawable/honor_others_arrow" android:layout_width="@dimen/font30" android:layout_height="@dimen/font30" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:contentDescription="@null" />
+    </RelativeLayout>
+    <ImageView android:layout_gravity="center|right|top" android:id="@id/honor_channel_hot_others_goods_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+</FrameLayout>

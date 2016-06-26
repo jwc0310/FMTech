@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:background="@drawable/list_bottom_normal" android:paddingBottom="6.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/font12" android:layout_marginRight="@dimen/font12">
+        <TextView android:textSize="@dimen/font13_sp" android:textColor="@color/time_title" android:id="@id/remark_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font10" android:layout_marginRight="@dimen/font12" android:layout_marginBottom="@dimen/font15" android:layout_alignParentTop="true" />
+        <TextView android:textSize="@dimen/font11" android:textColor="@color/product_detail" android:id="@id/custom_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/remark_content" android:layout_alignParentLeft="true" />
+        <ImageView android:id="@id/custom_level" android:layout_width="@dimen/font12" android:layout_height="@dimen/font12" android:layout_marginLeft="@dimen/font3" android:layout_marginRight="@dimen/font3" android:layout_toRightOf="@id/custom_name" android:layout_below="@id/remark_content" />
+        <TextView android:textSize="@dimen/font11" android:textColor="@color/product_detail" android:id="@id/remark_time" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/custom_level" android:layout_below="@id/remark_content" />
+        <RatingBar android:id="@id/remark_ratingbar" android:layout_width="wrap_content" android:layout_height="@dimen/font12" android:layout_marginLeft="@dimen/font10" android:numStars="5" android:rating="1.5" android:layout_below="@id/remark_content" android:layout_alignParentRight="true" style="@style/roomRatingBar" />
+        <LinearLayout android:orientation="vertical" android:id="@id/remark_reply" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font6" android:layout_below="@id/custom_name" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+</LinearLayout>

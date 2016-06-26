@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/cs_page_padding_left" android:paddingTop="@dimen/cs_release_verify_check_linearfirst_land_margin_top" android:paddingRight="@dimen/cs_page_padding_right" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="@dimen/cs_page_padding_left" android:paddingEnd="@dimen/cs_page_padding_right"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/releaseverify_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@string/CS_app_name" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/cs_release_verify_check_textthird_size" android:textColor="@color/CS_black" android:gravity="center" android:layout_gravity="center" android:id="@id/releaseverify_value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cs_release_verify_check_textsecond_top" />
+    <TextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/cs_release_verify_check_textfirst_size" android:textColor="@color/CS_black" android:gravity="center" android:layout_gravity="center" android:id="@id/releaseverify_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/cs_release_verify_check_textthird_top" />
+</LinearLayout>

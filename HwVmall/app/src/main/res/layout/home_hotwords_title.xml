@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/background" android:layout_width="fill_parent" android:layout_height="@dimen/font8" />
+    <TextView android:background="@color/honor_activity_border_color" android:layout_width="fill_parent" android:layout_height="@dimen/font1_px" />
+    <TextView android:textSize="@dimen/font14" android:textColor="@color/time_title" android:id="@id/home_hotwords_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font10" android:layout_marginTop="@dimen/font10" android:layout_marginRight="@dimen/font10" android:layout_marginBottom="@dimen/font28" android:text="@string/hotword" />
+</merge>

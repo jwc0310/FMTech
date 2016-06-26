@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:paddingLeft="@dimen/font20" android:paddingTop="@dimen/font20" android:paddingRight="@dimen/font20" android:paddingBottom="@dimen/font12" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.vmall.client">
+    <TextView android:textSize="@dimen/font14" android:textColor="@color/time_title" android:id="@id/center_service_location_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/font20" android:text="@string/location_closed" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/button_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font10" android:layout_below="@id/center_service_location_title">
+        <com.vmall.client.view.VmallButton android:id="@id/dialog_cancel_bt" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginRight="10.0dip" android:text="@string/cancel" android:layout_weight="1.0" app:level="big3" app:buttonSize="big" />
+        <com.vmall.client.view.VmallButton android:id="@id/dialog_setting_bt" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/setting" android:layout_weight="1.0" app:level="big3" app:buttonSize="big" />
+    </LinearLayout>
+</RelativeLayout>

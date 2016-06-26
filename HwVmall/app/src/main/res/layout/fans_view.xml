@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/logistics_bg_color" style="@style/NavPage"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <WebView android:id="@id/fans_webview" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:layout_gravity="center_horizontal" android:id="@id/refresh_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/common_exception_alert_include" />
+    <include android:id="@id/progress_bar" layout="@layout/custom_progressbar" />
+    <ImageButton android:id="@id/back_home" android:background="@drawable/close_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/font10" android:layout_marginBottom="@dimen/font67" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@null" />
+</RelativeLayout>

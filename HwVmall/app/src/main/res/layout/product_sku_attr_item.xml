@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_vertical" android:id="@id/attr_name" android:layout_marginLeft="@dimen/font8" android:layout_marginTop="@dimen/font8" style="@style/product_text_head_style" />
+    <com.vmall.client.view.AutoWrapLinearLayout android:id="@id/prd_attr_all_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

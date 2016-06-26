@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.vmall.client.view.messagecenter.MessageCenterListView android:id="@id/msg_list" android:layout_width="fill_parent" android:layout_height="fill_parent" android:divider="@null" />
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/no_message_layout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/no_msg_view" android:background="@drawable/icon14" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="@dimen/font127" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/tab_titile_corlor" android:id="@id/no_msg_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/msg_getdatafail" android:layout_below="@id/no_msg_view" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <include android:id="@id/progress_bar" layout="@layout/custom_progressbar" />
+</RelativeLayout>

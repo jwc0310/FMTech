@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:background="@drawable/vmall_sc_search_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="12.0sp" android:textColor="@color/black_sixty_five" android:id="@id/searchresult_title" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip" android:text="@string/totalsearch" style="@style/titledecriptionSize" />
+    </LinearLayout>
+    <ImageView android:id="@id/searchresult_line" android:background="@color/level_line" android:layout_width="fill_parent" android:layout_height="1.0px" android:contentDescription="@string/view_content_description" />
+    <include style="@style/ui_padding_horizontal" layout="@layout/searchprogressbarp" />
+    <include style="@style/ui_padding_horizontal" layout="@layout/noresult" />
+    <include style="@style/ui_padding_horizontal" layout="@layout/nocenterresult" />
+    <ListView android:id="@id/showsearchresult" android:paddingLeft="8.0dip" android:paddingRight="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:dividerHeight="1.0px" style="@style/ListViewStyle" />
+</LinearLayout>

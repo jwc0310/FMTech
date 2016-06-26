@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/popinfo" android:background="@drawable/bubble_image" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="69.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/font14" android:textColor="#ff000000" android:ellipsize="end" android:id="@id/textcache" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginRight="9.0dip" android:maxWidth="186.0dip" android:maxLines="2" />
+    <ImageView android:id="@id/popleft" android:background="@drawable/bottombar_bg_selector" android:layout_width="32.0dip" android:layout_height="32.0dip" android:layout_marginRight="@dimen/font9" android:src="@drawable/route_line" android:contentDescription="@string/huawei_service_line" />
+</LinearLayout>

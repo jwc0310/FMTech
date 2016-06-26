@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/CS_background" android:paddingLeft="@dimen/cs_page_padding_layout" android:paddingTop="@dimen/cs_page_padding_top" android:paddingRight="@dimen/cs_page_padding_layout" android:paddingBottom="@dimen/cs_page_padding_bottom" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:scrollbarStyle="outsideOverlay" android:paddingLeft="@dimen/cs_page_padding_scrollView" android:paddingRight="@dimen/cs_page_padding_scrollView" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <Button android:textSize="@dimen/cs_button_size_13sp" android:textColor="@color/cs_spinner_text_color" android:ellipsize="marquee" android:gravity="start|center" android:id="@id/countryregion_btn" android:background="@drawable/cs_spinner_background_drawable" android:paddingLeft="@dimen/cs_button_paddingLeft" android:layout_width="fill_parent" android:layout_height="@dimen/cs_button_height" android:singleLine="true" android:drawableRight="@drawable/cs_spinner" android:drawableEnd="@drawable/cs_spinner" />
+            <EditText android:id="@id/phone_number" android:layout_marginTop="@dimen/cs_edittext_button_margin" android:hint="@string/CS_register_reset_phone_number" android:maxLength="24" android:inputType="number" style="@style/CS_EmoutionUI3_EditTextStyle" />
+            <include layout="@layout/cs_textview_jump" />
+            <LinearLayout android:gravity="center_vertical" android:id="@id/policy_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/cs_checkbox_min_auto" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:paddingLeft="@dimen/cs_page_padding_scrollView" android:paddingRight="@dimen/cs_page_padding_scrollView" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/cs_button_auto" />
+    </LinearLayout>
+</LinearLayout>

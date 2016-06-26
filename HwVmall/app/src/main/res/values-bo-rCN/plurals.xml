@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="hwpush_delete_tip">
+        <item quantity="other">བདམས་ཟིན་པའི་བརྡ་སྦྱོར་སུབ་བམ།</item>
+    </plurals>
+</resources>

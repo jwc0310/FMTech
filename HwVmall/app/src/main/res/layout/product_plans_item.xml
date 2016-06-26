@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginRight="@dimen/font12"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/divider_horizantal" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/prd_package_details_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/attr_product_pic" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font12" android:layout_marginBottom="@dimen/font12" android:src="@drawable/icon_no_pic" android:scaleType="fitXY" android:contentDescription="@null" />
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginTop="@dimen/font10" android:layout_marginBottom="@dimen/font9">
+            <TextView android:textSize="@dimen/font14_sp" android:textColor="@color/time_title" android:ellipsize="end" android:id="@id/attr_product_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginTop="@dimen/font10" android:maxLines="2" />
+            <TextView android:textSize="@dimen/font14_sp" android:textColor="@color/time_title" android:id="@id/attr_product_price" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font8" android:layout_marginBottom="@dimen/font9" android:layout_below="@id/attr_product_name" android:layout_alignLeft="@id/attr_product_name" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

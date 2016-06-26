@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/cs_text_size" android:textColor="@color/CS_black_85_percent" android:gravity="center_vertical" android:id="@id/accttextview" android:paddingLeft="@dimen/cs_chkid_text_padding" android:paddingRight="@dimen/cs_chkid_text_padding" android:layout_width="fill_parent" android:layout_height="@dimen/cs_chkid_list_text_height" android:drawablePadding="@dimen/cs_chkid_draw_padding"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/NavPage"
+    android:background="@color/logistics_bg_color">
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@id/logistics_bottombar_layout">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@id/logistics_left_divider"
+                android:layout_width="@dimen/font1"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="@dimen/font80"
+                android:background="@color/logistic_left_divider_color" />
+
+            <include
+                android:id="@id/logistics_none_info"
+                layout="@layout/logistics_none_info_include"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_toRightOf="@id/logistics_left_divider" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <RelativeLayout
+                android:id="@id/logistics_none_info_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="200dp">
+
+                <include
+                    android:id="@id/view_logistic_item"
+                    layout="@layout/view_logistic_item"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true" />
+            </RelativeLayout>
+
+            <ListView
+                android:id="@id/logistics_listview"
+                android:layout_width="fill_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/logistics_none_info_layout"
+                android:cacheColorHint="@color/transparent"
+                android:divider="@color/transparent"
+                android:listSelector="@color/transparent"
+                android:scrollbars="none"
+                android:visibility="visible" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@id/logistics_bottombar_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/font46"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/logistic_bottombar"
+        android:baselineAligned="false"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/font18"
+        android:paddingRight="@dimen/font18">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@id/logistics_company"
+                style="@style/TextSmallStyle.BlackSixtyFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/logistics_company" />
+
+            <TextView
+                android:id="@id/logistics_company_content"
+                style="@style/TextSmallStyle.BlackSixtyFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:singleLine="true"
+                android:text="@string/logistics_company_shunfeng" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@id/logistics_no"
+                style="@style/TextSmallStyle.BlackSixtyFive"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:singleLine="true"
+                android:text="@string/logistics_no" />
+
+            <TextView
+                android:id="@id/logistics_no_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:gravity="center"
+                android:singleLine="true"
+                android:textColor="@color/black_sixty_five"
+                android:textSize="@dimen/font14_sp" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

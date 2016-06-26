@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.view.ViewPager android:id="@id/comment_page" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:id="@id/product_evalution_layout" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/top_layout" android:background="@drawable/list_bg_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center_vertical" android:id="@id/proportion_layout" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/font14" android:layout_marginBottom="@dimen/font12" android:layout_alignParentTop="true">
+                <TextView android:textSize="@dimen/font14" android:textColor="@color/time_title" android:id="@id/good_remark_degree" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font12" android:layout_marginRight="@dimen/font5" android:text="@string/good_remark_degree" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ProgressBar android:id="@id/good_comment_pb" android:layout_width="@dimen/font160" android:layout_height="@dimen/font10" android:progressDrawable="@drawable/cust_progress" android:layout_toRightOf="@id/good_remark_degree" android:layout_centerVertical="true" style="?android:attr/progressBarStyleHorizontal" />
+                <TextView android:textSize="@dimen/font14" android:textColor="@color/good_comment_color" android:id="@id/good_remark_percent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/font8" android:layout_toRightOf="@id/good_comment_pb" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <com.vmall.client.view.AutoWrapLinearLayout android:orientation="horizontal" android:id="@id/users_impression_layout" android:paddingBottom="@dimen/font8" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip" android:layout_below="@id/proportion_layout" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/layout_tab" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/font44">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/font44">
+                <TextView android:textSize="@dimen/font14_sp" android:textColor="@color/vmall_default_red" android:gravity="center_horizontal" android:id="@id/good_comment_tv" android:background="@drawable/tab_search" android:paddingTop="@dimen/font11" android:paddingBottom="@dimen/font10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/font14_sp" android:textColor="@color/time_title" android:gravity="center_horizontal" android:id="@id/middle_comment_tv" android:background="@drawable/tab_search" android:paddingTop="@dimen/font11" android:paddingBottom="@dimen/font10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+                <TextView android:textSize="@dimen/font14_sp" android:textColor="@color/time_title" android:gravity="center_horizontal" android:id="@id/bad_comment_tv" android:background="@drawable/tab_search" android:paddingTop="@dimen/font11" android:paddingBottom="@dimen/font10" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" />
+            </LinearLayout>
+            <ImageView android:id="@id/up_arrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/p_up_arrow" android:layout_alignParentBottom="true" android:contentDescription="@null" />
+        </RelativeLayout>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/no_remark_layout" android:background="@color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/no_msg_view" android:background="@drawable/icon14" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginTop="130.0dip" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="14.0sp" android:textColor="@color/tab_titile_corlor" android:id="@id/no_msg_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/no_relevant_remark" android:layout_below="@id/no_msg_view" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <include android:layout_gravity="center_horizontal" android:id="@id/refresh_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/common_exception_alert_include" />
+    <include android:id="@id/progress_bar" layout="@layout/custom_progressbar" />
+</RelativeLayout>
