@@ -1,5 +1,6 @@
 package com.fmtech.softinput;
 
+import android.graphics.Rect;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.ViewTreeObserver;
@@ -12,6 +13,9 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
     private FMLinearLayout mFMLinearLayout;
     private ScrollView mScrollView;
     private FrameLayout mTitleBar;
+
+    private int inputViewOffset = 0;
+    private int keyboardHeight = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +31,24 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
         mScrollView.getViewTreeObserver().addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
             @Override
             public void onGlobalLayout() {
+                Rect r = new Rect();
+                mScrollView.getWindowVisibleDisplayFrame(r);
+                //getRootView ---Finds the topmost view in the current view hierarchy
+                int screenHeight = mScrollView.getRootView().getHeight();
+                //mInputView的top到rootView的top的差值
+                int heightDifference = screenHeight - (r.bottom - r.top);
+                if (inputViewOffset == 0) {
+                    // 拿到inputView初始化高度
+                    inputViewOffset = heightDifference;
+                } else if (inputViewOffset != heightDifference) {//界面发生改变了
+                    keyboardHeight = inputViewOffset - heightDifference;//最初的差值与改变后的差值即键盘的高度
+//                    isShowKeyBord = true;
+                } else {
+//                    isShowKeyBord = false;
+                }
+
+                System.out.println("-------KeyBoardHeight: " + keyboardHeight);
+
 //                mScrollView.getViewTreeObserver().removeGlobalOnLayoutListener(this);
                 System.out.println("-------mScrollViewHeight1: "+mScrollView.getHeight());
 
