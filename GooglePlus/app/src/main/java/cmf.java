@@ -1,0 +1,14 @@
+public abstract interface cmf
+{
+  public abstract void A();
+  
+  public abstract boolean v();
+  
+  public abstract void w();
+}
+
+
+/* Location:           F:\apktool\apktool\com.google.android.apps.plus\classes-dex2jar.jar
+ * Qualified Name:     cmf
+ * JD-Core Version:    0.7.0.1
+ */

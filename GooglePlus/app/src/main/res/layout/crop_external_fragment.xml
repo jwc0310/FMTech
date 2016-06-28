@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.libraries.photoeditor.ui.views.CropImageView android:id="@id/crop_image_view" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:id="@id/aspectButtonsPanel" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.google.android.libraries.photoeditor.ui.views.ToolButton android:id="@id/freeToolButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_tb_crop_free_ratio" android:text="@string/photo_editor_crop_free" style="@style/ParameterPanelToolButton" />
+            <com.google.android.libraries.photoeditor.ui.views.ToolButton android:id="@id/originalToolButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_tb_crop_original" android:text="@string/photo_editor_crop_original" style="@style/ParameterPanelToolButton" />
+            <com.google.android.libraries.photoeditor.ui.views.ToolButton android:id="@id/squareToolButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_tb_crop_1_1" android:text="@string/photo_editor_crop_square" style="@style/ParameterPanelToolButton" />
+        </LinearLayout>
+    </LinearLayout>
+    <ProgressBar android:layout_gravity="center" android:id="@id/render_progress2" android:focusableInTouchMode="false" android:layout_width="wrap_content" android:layout_height="wrap_content" style="?android:attr/progressBarStyleLarge" />
+</FrameLayout>

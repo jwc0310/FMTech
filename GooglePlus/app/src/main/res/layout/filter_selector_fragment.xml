@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:id="@id/filter_list_container" android:background="@color/main_background" android:paddingTop="@dimen/filter_list_item_top_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/filter_list" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <com.google.android.apps.photoeditor.views.FitImageView android:id="@id/image_preview" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/filter_selector_image_horz" android:layout_marginTop="@dimen/filter_selector_image_top" android:layout_marginRight="@dimen/filter_selector_image_horz" android:layout_marginBottom="@dimen/filter_selector_image_bottom" android:layout_above="@id/filter_list_container" />
+    <View android:id="@id/filter_list_overlay" android:background="#7f000000" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <ProgressBar android:id="@id/load_progress" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" style="?android:attr/progressBarStyleLarge" />
+</RelativeLayout>

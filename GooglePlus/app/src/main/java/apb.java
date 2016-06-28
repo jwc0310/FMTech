@@ -1,0 +1,10 @@
+public abstract interface apb
+{
+  public abstract void V_();
+}
+
+
+/* Location:           F:\apktool\apktool\com.google.android.apps.plus\classes-dex2jar.jar
+ * Qualified Name:     apb
+ * JD-Core Version:    0.7.0.1
+ */

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:focusable="true" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/prev" android:background="@null" android:paddingBottom="@dimen/collexion_colorpicker_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quantum_ic_chevron_left_white_18" android:contentDescription="@string/collexion_banner_color_swipe_text" android:paddingStart="@dimen/collexion_colorpicker_item_padding" />
+    <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/quantum_black_secondary_text" android:id="@id/swipe_text" android:paddingBottom="@dimen/collexion_colorpicker_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="250.0dip" android:text="@string/collexion_banner_color_swipe_text" android:textAllCaps="true" />
+    <ImageButton android:id="@id/next" android:background="@null" android:paddingBottom="@dimen/collexion_colorpicker_item_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/quantum_ic_chevron_right_white_18" android:contentDescription="@string/collexion_banner_color_swipe_text" android:paddingEnd="@dimen/collexion_colorpicker_item_padding" />
+</LinearLayout>

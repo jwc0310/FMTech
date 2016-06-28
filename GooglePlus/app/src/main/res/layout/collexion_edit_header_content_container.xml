@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/quantum_grey900" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:gravity="center_horizontal" android:id="@id/choose_cover_text" android:paddingTop="@dimen/collexion_photopicker_instruction_padding" android:paddingBottom="@dimen/collexion_photopicker_instruction_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/collexion_banner_photo_edit_text" android:textAllCaps="true" style="@style/quantum_text_caption_white" />
+    <include layout="@layout/empty_view_layout" />
+    <android.support.v7.widget.RecyclerView android:layout_gravity="center_vertical" android:id="@id/edit_header_photo_gallery" android:paddingTop="@dimen/collexion_photopicker_edge_padding" android:paddingBottom="@dimen/collexion_photopicker_edge_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="@dimen/collexion_photopicker_container_min_height" />
+</LinearLayout>

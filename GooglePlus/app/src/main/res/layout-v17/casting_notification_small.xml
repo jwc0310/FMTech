@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/thumbnail" android:layout_width="64.0dip" android:layout_height="64.0dip" android:scaleType="centerCrop" android:contentDescription="@string/current_post" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="8.0dip" android:paddingRight="12.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:paddingStart="8.0dip" android:paddingEnd="12.0dip" android:layout_alignParentEnd="true">
+        <ProgressBar android:id="@id/connecting" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+        <ImageView android:id="@id/next" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:contentDescription="@string/next" />
+        <ImageView android:id="@id/stop" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" android:contentDescription="@string/disconnect" />
+    </LinearLayout>
+    <TextView android:id="@id/title" android:paddingLeft="8.0dip" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/socialcast_hardcoded_app_name" android:layout_toRightOf="@id/thumbnail" android:layout_alignParentTop="true" android:paddingStart="8.0dip" android:layout_toEndOf="@id/thumbnail" style="@style/cast_notification_title_text" />
+    <TextView android:ellipsize="end" android:id="@id/subtitle" android:paddingLeft="8.0dip" android:paddingTop="4.0dip" android:paddingBottom="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:maxLength="30" android:layout_toRightOf="@id/thumbnail" android:layout_below="@id/title" android:paddingStart="8.0dip" android:layout_toEndOf="@id/thumbnail" style="@style/cast_notification_body_text" />
+</RelativeLayout>

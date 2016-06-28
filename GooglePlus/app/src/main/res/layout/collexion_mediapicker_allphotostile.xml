@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.social.mediapicker.SquareGridViewCell android:background="@drawable/bluegrey_card_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:contentDescription="@string/collexion_photo_picker_all_photos_tile_title"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/collexion_photo_picker_all_photos_tile_title" android:drawableTop="@drawable/ic_photos_white_24" style="@style/quantum_text_subhead_white" />
+</com.google.android.libraries.social.mediapicker.SquareGridViewCell>

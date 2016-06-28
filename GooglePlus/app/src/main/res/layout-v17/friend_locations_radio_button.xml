@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.plus.locations.LocationSharingRadioButton android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/friend_locations_radio_button_height">
+        <CheckedTextView android:id="@id/button_icon" android:background="@drawable/friend_locations_radio_button" android:layout_width="@dimen/friend_locations_radio_button_icon_height" android:layout_height="@dimen/friend_locations_radio_button_icon_height" android:layout_marginLeft="@dimen/friend_locations_normal_padding" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_marginStart="@dimen/friend_locations_normal_padding" android:layout_alignParentStart="true" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/friend_locations_radio_button_text_margin_left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:paddingStart="@dimen/friend_locations_radio_button_text_margin_left" android:layout_alignParentStart="true">
+            <CheckedTextView android:id="@id/button_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/friend_locations_share_pinpoint_location" style="@style/LocationSharingRadioButtonTitle" />
+            <TextView android:id="@id/button_description" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/friend_locations_share_pinpoint_location_description" style="@style/LocationSharingRadioButtonDescription" />
+        </LinearLayout>
+    </LinearLayout>
+</com.google.android.apps.plus.locations.LocationSharingRadioButton>

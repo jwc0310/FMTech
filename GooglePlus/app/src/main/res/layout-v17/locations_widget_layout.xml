@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <StackView android:gravity="center" android:id="@id/stack_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:loopViews="true" />
+    <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/text_white" android:gravity="center" android:id="@id/empty_view" android:background="@color/locations_widget_empty_view_background" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/no_locations" />
+    <FrameLayout android:layout_gravity="end|bottom|center" android:id="@id/locations_widget_refresh" android:paddingLeft="15.0dip" android:paddingTop="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="1.0dip" android:paddingStart="15.0dip">
+        <ImageView android:id="@id/locations_widget_refresh_icon" android:layout_width="24.0dip" android:layout_height="24.0dip" android:src="@drawable/ic_refresh_white" android:scaleType="center" android:contentDescription="@string/menu_refresh" />
+        <FrameLayout android:id="@id/locations_widget_refresh_progress" android:visibility="gone" android:layout_width="24.0dip" android:layout_height="24.0dip">
+            <ProgressBar android:layout_gravity="center" android:layout_width="24.0dip" android:layout_height="24.0dip" android:indeterminate="true" style="?android:attr/progressBarStyleSmall" />
+        </FrameLayout>
+    </FrameLayout>
+</FrameLayout>

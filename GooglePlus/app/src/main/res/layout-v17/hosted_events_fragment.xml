@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.libraries.social.ui.swiperefresh.SwipeRefreshLayoutWithUpScroll android:id="@id/pull_to_refresh" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.google.android.libraries.social.ui.views.columngridview.ColumnGridView android:id="@id/grid" android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </com.google.android.libraries.social.ui.swiperefresh.SwipeRefreshLayoutWithUpScroll>
+    <include layout="@layout/empty_layout" />
+    <Button android:id="@id/createButton" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/event_button_create_event_label" android:drawableLeft="@drawable/icn_events_create_event" android:layout_centerInParent="true" android:drawableStart="@drawable/icn_events_create_event" />
+    <TextView android:textSize="@dimen/text_size_20" android:gravity="center" android:id="@id/createText" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/event_create_text" android:layout_above="@id/createButton" android:layout_centerHorizontal="true" />
+    <com.google.android.libraries.social.ui.views.fab.FloatingActionButton android:id="@id/compose_button" android:visibility="gone" android:layout_width="@dimen/floating_action_button_diameter" android:layout_height="@dimen/floating_action_button_diameter" android:layout_marginRight="@dimen/event_compose_bar_border_padding" android:layout_marginBottom="@dimen/compose_bar_border_padding" android:src="@drawable/quantum_ic_create_white_24" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:contentDescription="@string/create_event_button_description" android:layout_marginEnd="@dimen/event_compose_bar_border_padding" android:layout_alignParentEnd="true" />
+</RelativeLayout>

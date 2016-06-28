@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_notification_count_description">
+        <item quantity="other">%d nových upozornení Google+</item>
+        <item quantity="one">%d nové upozornenie Google+</item>
+        <item quantity="few">%d nové upozornenia Google+</item>
+        <item quantity="many">%d new Google+ notifications</item>
+    </plurals>
+    <plurals name="accessibility_people_notification_count_description">
+        <item quantity="other">%d nových upozornení na ľudí na Google+</item>
+        <item quantity="one">%d nové upozornenie na ľudí na Google+</item>
+        <item quantity="few">%d nové upozornenia na ľudí na Google+</item>
+        <item quantity="many">%d new Google+ people notifications</item>
+    </plurals>
+    <plurals name="acl_picker_title_length_other">
+        <item quantity="other">%1$s, %2$s a %3$d ďalších</item>
+        <item quantity="one">%1$s, %2$s a %3$d ďalší</item>
+        <item quantity="few">%1$s, %2$s a %3$d ďalší</item>
+        <item quantity="many">%1$s, %2$s, and %3$d others</item>
+    </plurals>
+    <plurals name="added_to_circle_notification_message">
+        <item quantity="other">%d ľudí bolo pridaných do kruhov</item>
+        <item quantity="one">1 človek bol pridaný do kruhov</item>
+        <item quantity="few">%d ľudia boli pridaní do kruhov</item>
+        <item quantity="many">Added %d people to circles</item>
+    </plurals>
+    <plurals name="album_photo_count">
+        <item quantity="other">%d fotiek</item>
+        <item quantity="one">%d fotka</item>
+        <item quantity="few">%d fotky</item>
+        <item quantity="many">%d photos</item>
+    </plurals>
+    <plurals name="animated_gif_count_content_description">
+        <item quantity="other">%d animovaných súborov GIF.</item>
+        <item quantity="one">%d animovaný súbor GIF.</item>
+        <item quantity="few">%d animované súbory GIF.</item>
+        <item quantity="many">%d animovaného súboru GIF.</item>
+    </plurals>
+    <plurals name="audience_display_selection_count">
+        <item quantity="other">%d vybratých</item>
+        <item quantity="one">%d vybratý</item>
+        <item quantity="few">%d vybraté</item>
+        <item quantity="many">%d selected</item>
+    </plurals>
+    <plurals name="audience_hidden_user_count">
+        <item quantity="other">+%d ďalších</item>
+        <item quantity="one">+1 ďalší</item>
+        <item quantity="few">+%d ďalší</item>
+        <item quantity="many">+%d others</item>
+    </plurals>
+    <plurals name="auto_backup_photo_count">
+        <item quantity="other">%s fotiek</item>
+        <item quantity="one">%s fotka</item>
+        <item quantity="few">%s fotky</item>
+        <item quantity="many">%s photos</item>
+    </plurals>
+    <plurals name="auto_backup_wait_network">
+        <item quantity="other">Čaká sa na sieť (%d v poradí)</item>
+        <item quantity="one">Čaká sa na sieť (%d v poradí)</item>
+        <item quantity="few">Čaká sa na sieť (%d v poradí)</item>
+        <item quantity="many">Waiting for network (%d queued)</item>
+    </plurals>
+    <plurals name="auto_backup_wait_wifi">
+        <item quantity="other">Čaká sa na Wi-Fi (%d v poradí)</item>
+        <item quantity="one">Čaká sa na Wi-Fi (%d v poradí)</item>
+        <item quantity="few">Čaká sa na Wi-Fi (%d v poradí)</item>
+        <item quantity="many">Waiting for Wi-Fi (%d queued)</item>
+    </plurals>
+    <plurals name="backing_up_photos_count">
+        <item quantity="other">Zálohuje sa...Zostáva %1$d</item>
+        <item quantity="one">Zálohuje sa...Zostáva %1$d</item>
+        <item quantity="few">Zálohuje sa...Zostávajú %1$d</item>
+        <item quantity="many">Backing up...%1$d left</item>
+    </plurals>
+    <plurals name="circle_button_more_circles">
+        <item quantity="other">%d ďalších</item>
+        <item quantity="one">%d ďalší</item>
+        <item quantity="few">%d ďalšie</item>
+        <item quantity="many">%d more</item>
+    </plurals>
+    <plurals name="circle_count_and_matched_email">
+        <item quantity="other">%1$d kruhov, %2$s</item>
+        <item quantity="one">%1$d kruh, %2$s</item>
+        <item quantity="few">%1$d kruhy, %2$s</item>
+        <item quantity="many">%1$d circles, %2$s</item>
+    </plurals>
+    <plurals name="circle_entry_content_description">
+        <item quantity="other">%d členov</item>
+        <item quantity="one">%d člen</item>
+        <item quantity="few">%d členovia</item>
+        <item quantity="many">%d člena</item>
+    </plurals>
+    <plurals name="circle_location_sharing_count">
+        <item quantity="other">%d zdieľajúcich ľudí</item>
+        <item quantity="one">%d zdieľajúci človek</item>
+        <item quantity="few">%d zdieľajúci ľudia</item>
+        <item quantity="many">%d people sharing</item>
+    </plurals>
+    <plurals name="circle_num_members">
+        <item quantity="other">%d ľudí</item>
+        <item quantity="one">%d osoba</item>
+        <item quantity="few">%d ľudia</item>
+        <item quantity="many">%d people</item>
+    </plurals>
+    <plurals name="collexion_source_bar_stream_social_friends_plusoned">
+        <item quantity="other">%1$s a %2$d ďalších dali +1 tomuto príspevku v zbierke %3$s</item>
+        <item quantity="one">%1$s a %2$d ďalší dali +1 tomuto príspevku v zbierke %3$s</item>
+        <item quantity="few">%1$s a %2$d ďalší dali +1 tomuto príspevku v zbierke %3$s</item>
+        <item quantity="many">%1$s a niekoľko (%2$d) ďalších dali +1 tomuto príspevku v zbierke %3$s</item>
+    </plurals>
+    <plurals name="comment_button_with_comments_content_description">
+        <item quantity="other">Tlačidlo komentovania s %d komentármi.</item>
+        <item quantity="one">Tlačidlo komentovania s %d komentárom.</item>
+        <item quantity="few">Tlačidlo komentovania s %d komentármi.</item>
+        <item quantity="many">Tlačidlo komentovania s %d komentármi.</item>
+    </plurals>
+    <plurals name="comments">
+        <item quantity="other">%d komentárov</item>
+        <item quantity="one">%d komentár</item>
+        <item quantity="few">%d komentáre</item>
+        <item quantity="many">%d comments</item>
+    </plurals>
+    <plurals name="comments_on_original_post">
+        <item quantity="other">Zobraziť %d komentárov k pôvodného príspevku</item>
+        <item quantity="one">Zobraziť 1 komentár pôvodného príspevku</item>
+        <item quantity="few">Zobraziť %d komentáre pôvodného príspevku</item>
+        <item quantity="many">Zobraziť %d komentárov pôvodného príspevku</item>
+    </plurals>
+    <plurals name="common_friend_count">
+        <item quantity="other">%d spoločných ľudí</item>
+        <item quantity="one">Jedna spoločná osoba</item>
+        <item quantity="few">%d spoločné osoby</item>
+        <item quantity="many">%d in common</item>
+    </plurals>
+    <plurals name="copy_photos_confirmation_dialog">
+        <item quantity="other">Kopírovať %1$d fotiek do albumu %2$s?</item>
+        <item quantity="one">Kopírovať fotku do albumu %2$s?</item>
+        <item quantity="few">Kopírovať %1$d fotky do albumu %2$s?</item>
+        <item quantity="many">Copy %1$d photos to %2$s?</item>
+    </plurals>
+    <plurals name="delete_circles_dialog_message">
+        <item quantity="other">Chcete natrvalo odstrániť tieto kruhy?</item>
+        <item quantity="one">Chcete natrvalo odstrániť tento kruh?</item>
+        <item quantity="few">Chcete natrvalo odstrániť tieto kruhy?</item>
+        <item quantity="many">Do you want to permanently delete these circles?</item>
+    </plurals>
+    <plurals name="delete_circles_dialog_title">
+        <item quantity="other">Odstrániť kruhy</item>
+        <item quantity="one">Odstrániť kruh</item>
+        <item quantity="few">Odstrániť kruhy</item>
+        <item quantity="many">Delete circles</item>
+    </plurals>
+    <plurals name="delete_drive_photo_dialog_message">
+        <item quantity="other">Fotky zo služby Disk Google sa odstránia z Google+, neodstránia sa však z Disku</item>
+        <item quantity="one">Pôvodná fotka nebude odstránená z Disku Google</item>
+        <item quantity="few">Fotky zo služby Disk Google sa odstránia z Google+, neodstránia sa však z Disku</item>
+        <item quantity="many">"Photos from Google Drive will be removed from Google+ but won't be deleted from Drive."</item>
+    </plurals>
+    <plurals name="delete_drive_video_dialog_message">
+        <item quantity="other">Videá zo služby Disk Google sa odstránia z Google+, neodstránia sa však z Disku</item>
+        <item quantity="one">Pôvodné video nebude odstránené z Disku Google</item>
+        <item quantity="few">Videá zo služby Disk Google sa odstránia z Google+, neodstránia sa však z Disku</item>
+        <item quantity="many">"Videos from Google Drive will be removed from Google+ but won't be deleted from Drive."</item>
+    </plurals>
+    <plurals name="delete_duplicate_drive_photo_dialog_message">
+        <item quantity="other">Tieto fotky sa odstránia zo všetkých albumov a zdieľaní. Fotky zo služby Disk Google sa z Disku neodstránia.</item>
+        <item quantity="one">Táto fotka sa odstráni zo všetkých albumov a zdieľaní. Pôvodná fotka nebude odstránená z Disku Google.</item>
+        <item quantity="few">Tieto fotky sa odstránia zo všetkých albumov a zdieľaní. Fotky zo služby Disk Google sa z Disku neodstránia.</item>
+        <item quantity="many">"These photos will be removed from all albums &amp;amp; shares. Photos from Google Drive won't be deleted from Drive."</item>
+    </plurals>
+    <plurals name="delete_duplicate_drive_video_dialog_message">
+        <item quantity="other">Tieto videá sa odstránia zo všetkých albumov a zdieľaní Videá zo služby Disk Google sa z Disku neodstránia.</item>
+        <item quantity="one">Toto video sa odstráni zo všetkých albumov a zdieľaní. Pôvodné video nebude odstránené z Disku Google.</item>
+        <item quantity="few">Tieto videá sa odstránia zo všetkých albumov a zdieľaní Videá zo služby Disk Google sa z Disku neodstránia.</item>
+        <item quantity="many">"These videos will be removed from all albums &amp;amp; shares. Videos from Google Drive won't be deleted from Drive."</item>
+    </plurals>
+    <plurals name="delete_duplicate_photo_dialog_message">
+        <item quantity="other">Tieto fotky sa odstránia zo všetkých albumov a zdieľaní</item>
+        <item quantity="one">Táto fotka sa odstráni zo všetkých albumov a zdieľaní</item>
+        <item quantity="few">Tieto fotky sa odstránia zo všetkých albumov a zdieľaní</item>
+        <item quantity="many">These photos will be removed from all albums &amp;amp; shares</item>
+    </plurals>
+    <plurals name="delete_duplicate_video_dialog_message">
+        <item quantity="other">Tieto videá sa odstránia zo všetkých albumov a zdieľaní</item>
+        <item quantity="one">Toto video sa odstráni zo všetkých albumov a zdieľaní</item>
+        <item quantity="few">Tieto videá sa odstránia zo všetkých albumov a zdieľaní</item>
+        <item quantity="many">These videos will be removed from all albums &amp;amp; shares</item>
+    </plurals>
+    <plurals name="delete_item">
+        <item quantity="other">Odstrániť položky</item>
+        <item quantity="one">Odstrániť položku</item>
+        <item quantity="few">Odstrániť položky</item>
+        <item quantity="many">Delete items</item>
+    </plurals>
+    <plurals name="delete_item_pending">
+        <item quantity="other">Odstraňujú sa položky…</item>
+        <item quantity="one">Odstraňuje sa položka…</item>
+        <item quantity="few">Odstraňujú sa položky…</item>
+        <item quantity="many">Deleting items…</item>
+    </plurals>
+    <plurals name="delete_local_and_remote_item_confirmation_dialog_message">
+        <item quantity="other">%d z týchto položiek je uložených vo vašom zariadení. Tieto položky sa touto akciou natrvalo odstránia z vášho zariadenia. Odstránenie sa nedá vrátiť späť.</item>
+        <item quantity="one">%d z týchto položiek je uložená vo vašom zariadení. Táto položka sa touto akciou natrvalo odstráni z vášho zariadenia. Odstránenie sa nedá vrátiť späť.</item>
+        <item quantity="few">%d z týchto položiek sú uložené vo vašom zariadení. Tieto položky sa touto akciou natrvalo odstránia z vášho zariadenia. Odstránenie sa nedá vrátiť späť.</item>
+        <item quantity="many">"%d of these items are saved on your device. This will permanently delete these items from your device. Deleting can't be undone."</item>
+    </plurals>
+    <plurals name="delete_local_and_remote_photo_confirmation_dialog_message">
+        <item quantity="other">%d z týchto fotiek je uložených vo vašom zariadení. Tieto fotky sa touto akciou natrvalo odstránia z vášho zariadenia. Odstránenie sa nedá vrátiť späť.</item>
+        <item quantity="one">%d z týchto fotiek je uložená vo vašom zariadení. Táto fotka sa touto akciou natrvalo odstráni z vášho zariadenia. Odstránenie sa nedá vrátiť späť.</item>
+        <item quantity="few">%d z týchto fotiek sú uložené vo vašom zariadení. Tieto fotky sa touto akciou natrvalo odstránia z vášho zariadenia. Odstránenie sa nedá vrátiť späť.</item>
+        <item quantity="many">"%d of these photos are saved on your device. This will permanently delete these photos from your device. Deleting can't be undone."</item>
+    </plurals>
+    <plurals name="delete_local_and_remote_video_confirmation_dialog_message">
+        <item quantity="other">%d z týchto videí je uložených vo vašom zariadení. Tieto videá sa touto akciou natrvalo odstránia z vášho zariadenia. Odstránenie sa nedá vrátiť späť.</item>
+        <item quantity="one">%d z týchto videí je uložené vo vašom zariadení. Toto video sa touto akciou natrvalo odstráni z vášho zariadenia. Odstránenie sa nedá vrátiť späť.</item>
+        <item quantity="few">%d z týchto videí sú uložené vo vašom zariadení. Tieto videá sa touto akciou natrvalo odstránia z vášho zariadenia. Odstránenie sa nedá vrátiť späť.</item>
+        <item quantity="many">"%d of these videos are saved on your device. This will permanently delete these videos from your device. Deleting can't be undone."</item>
+    </plurals>
+    <plurals name="delete_local_item_dialog_message">
+        <item quantity="other">Tieto položky sa natrvalo odstránia z vášho zariadenia. Odstránenie sa nedá vrátiť späť.</item>
+        <item quantity="one">Táto položka sa natrvalo odstráni z vášho zariadenia. Odstránenie sa nedá vrátiť späť.</item>
+        <item quantity="few">Tieto položky sa natrvalo odstránia z vášho zariadenia. Odstránenie sa nedá vrátiť späť.</item>
+        <item quantity="many">"This will permanently delete these items from your device. Deleting can't be undone."</item>
+    </plurals>
+    <plurals name="delete_local_photo_dialog_message">
+        <item quantity="other">Tieto fotky sa touto akciou natrvalo odstránia z vášho zariadenia. Odstránenie sa nedá vrátiť späť.</item>
+        <item quantity="one">Táto fotka sa touto akciou natrvalo odstráni z vášho zariadenia. Odstránenie sa nedá vrátiť späť.</item>
+        <item quantity="few">Tieto fotky sa touto akciou natrvalo odstránia z vášho zariadenia. Odstránenie sa nedá vrátiť späť.</item>
+        <item quantity="many">"This will permanently delete these photos from your device. Deleting can't be undone."</item>
+    </plurals>
+    <plurals name="delete_local_video_dialog_message">
+        <item quantity="other">Tieto videá sa touto akciou natrvalo odstránia z vášho zariadenia. Odstránenie sa nedá vrátiť späť.</item>
+        <item quantity="one">Toto video sa touto akciou natrvalo odstráni z vášho zariadenia. Odstránenie sa nedá vrátiť späť.</item>
+        <item quantity="few">Tieto videá sa touto akciou natrvalo odstránia z vášho zariadenia. Odstránenie sa nedá vrátiť späť.</item>
+        <item quantity="many">"This will permanently delete these videos from your device. Deleting can't be undone."</item>
+    </plurals>
+    <plurals name="delete_photo">
+        <item quantity="other">Odstrániť fotky</item>
+        <item quantity="one">Odstrániť fotku</item>
+        <item quantity="few">Odstrániť fotky</item>
+        <item quantity="many">Delete photos</item>
+    </plurals>
+    <plurals name="delete_photo_pending">
+        <item quantity="other">Odstraňujú sa fotky…</item>
+        <item quantity="one">Odstraňuje sa fotka…</item>
+        <item quantity="few">Odstraňujú sa fotky…</item>
+        <item quantity="many">Deleting photos…</item>
+    </plurals>
+    <plurals name="delete_video">
+        <item quantity="other">Odstrániť videá</item>
+        <item quantity="one">Odstrániť video</item>
+        <item quantity="few">Odstrániť videá</item>
+        <item quantity="many">Delete videos</item>
+    </plurals>
+    <plurals name="delete_video_pending">
+        <item quantity="other">Odstraňujú sa videá…</item>
+        <item quantity="one">Odstraňuje sa video…</item>
+        <item quantity="few">Odstraňujú sa videá…</item>
+        <item quantity="many">Deleting videos…</item>
+    </plurals>
+    <plurals name="deselect_photo_dialog_message">
+        <item quantity="other">Naozaj chcete zrušiť výber týchto fotiek? Prídete tým o všetky svoje zmeny.</item>
+        <item quantity="one">Naozaj chcete zrušiť výber tejto fotky? Prídete tým o všetky svoje zmeny.</item>
+        <item quantity="few">Naozaj chcete zrušiť výber týchto fotiek? Prídete tým o všetky svoje zmeny.</item>
+        <item quantity="many">Are you sure you want to deselect these photos? All your changes will be lost.</item>
+    </plurals>
+    <plurals name="dialog_permanently_delete_items_confirmation_button">
+        <item quantity="other">Navždy odstrániť</item>
+        <item quantity="one">Navždy odstrániť</item>
+        <item quantity="few">Navždy odstrániť</item>
+        <item quantity="many">Delete forever</item>
+    </plurals>
+    <plurals name="dialog_remove_items_confirmation_button">
+        <item quantity="other">Odstrániť</item>
+        <item quantity="one">Odstrániť</item>
+        <item quantity="few">Odstrániť</item>
+        <item quantity="many">Remove</item>
+    </plurals>
+    <plurals name="drafts_number_of_deleted_drafts">
+        <item quantity="other">%d konceptov bolo úspešne odstránených</item>
+        <item quantity="one">%d koncept bol úspešne odstránený</item>
+        <item quantity="few">%d koncepty boli úspešne odstránené</item>
+        <item quantity="many">Koncepty (%d) boli úspešne odstránené</item>
+    </plurals>
+    <plurals name="edit_audience_num_members">
+        <item quantity="other">%d ľudí</item>
+        <item quantity="one">%d osoba</item>
+        <item quantity="few">%d ľudia</item>
+        <item quantity="many">%d people</item>
+    </plurals>
+    <plurals name="event_invitee_other_count">
+        <item quantity="other">+ %d hostí</item>
+        <item quantity="one">+ %d hosť</item>
+        <item quantity="few">+ %d hostia</item>
+        <item quantity="many">+ %d guests</item>
+    </plurals>
+    <plurals name="event_invitee_other_count_total">
+        <item quantity="other">%d hostí</item>
+        <item quantity="one">%d hosť</item>
+        <item quantity="few">%d hostia</item>
+        <item quantity="many">%d guests</item>
+    </plurals>
+    <plurals name="event_invitee_with_guests">
+        <item quantity="other">%1$s (+%2$d hostí)</item>
+        <item quantity="one">%1$s (+%2$d hosť)</item>
+        <item quantity="few">%1$s (+%2$d hostia)</item>
+        <item quantity="many">%1$s (+%2$d guests)</item>
+    </plurals>
+    <plurals name="find_people_circle_description">
+        <item quantity="other">%1$s, kruh, %2$d členov</item>
+        <item quantity="one">%1$s, kruh, %2$d člen</item>
+        <item quantity="few">%1$s, kruh, %2$d členovia</item>
+        <item quantity="many">%1$s, kruh, %2$d člena</item>
+    </plurals>
+    <plurals name="find_people_friends_add_with_count">
+        <item quantity="other">%d ľudí na pridanie</item>
+        <item quantity="one">%d človek na pridanie</item>
+        <item quantity="few">%d ľudia na pridanie</item>
+        <item quantity="many">%d people to add</item>
+    </plurals>
+    <plurals name="from_your_phone_selected_count">
+        <item quantity="other">%d vybratých</item>
+        <item quantity="one">%d vybratý</item>
+        <item quantity="few">%d vybraté</item>
+        <item quantity="many">%d selected</item>
+    </plurals>
+    <plurals name="hoa_event_countdown_days">
+        <item quantity="other">%1$d dní</item>
+        <item quantity="one">%1$d deň</item>
+        <item quantity="few">%1$d dni</item>
+        <item quantity="many">%1$d days</item>
+    </plurals>
+    <plurals name="hoa_event_countdown_hours">
+        <item quantity="other">%1$d hodín</item>
+        <item quantity="one">%1$d hodina</item>
+        <item quantity="few">%1$d hodiny</item>
+        <item quantity="many">%1$d hours</item>
+    </plurals>
+    <plurals name="hoa_event_countdown_minutes">
+        <item quantity="other">%1$d minút</item>
+        <item quantity="one">%1$d minúta</item>
+        <item quantity="few">%1$d minúty</item>
+        <item quantity="many">%1$d minutes</item>
+    </plurals>
+    <plurals name="ingest_number_of_items_scanned">
+        <item quantity="other">%1$d naskenovaných položiek</item>
+        <item quantity="one">%1$d naskenovaná položka</item>
+        <item quantity="few">%1$d naskenované položky</item>
+        <item quantity="many">%1$d items scanned</item>
+    </plurals>
+    <plurals name="ingest_number_of_items_selected">
+        <item quantity="other">%1$d vybratých položiek</item>
+        <item quantity="one">%1$d vybratá položka</item>
+        <item quantity="few">%1$d vybraté položky</item>
+        <item quantity="many">%1$d items selected</item>
+    </plurals>
+    <plurals name="local_folders_list_n">
+        <item quantity="other">%1$s, %2$s, %3$s a %4$d ďalších</item>
+        <item quantity="one">%1$s, %2$s, %3$s a %4$d ďalší</item>
+        <item quantity="few">%1$s, %2$s, %3$s a %4$d ďalšie</item>
+        <item quantity="many">%1$s, %2$s, %3$s and %4$d others</item>
+    </plurals>
+    <plurals name="manual_awesome_selection_toast_fixed">
+        <item quantity="other">Vyberte %1$d fotiek</item>
+        <item quantity="one">Vyberte jednu fotku</item>
+        <item quantity="few">Vyberte %1$d fotky</item>
+        <item quantity="many">Select %1$d photos</item>
+    </plurals>
+    <plurals name="manual_awesome_selection_toast_fixed_including_video">
+        <item quantity="other">Vyberte %1$d fotiek alebo videí</item>
+        <item quantity="one">Vyberte jednu fotku alebo video</item>
+        <item quantity="few">Vyberte %1$d fotky alebo videá</item>
+        <item quantity="many">Select %1$d photos or videos</item>
+    </plurals>
+    <plurals name="map_marker_user_count">
+        <item quantity="other">%d ľudí</item>
+        <item quantity="one">%d človek</item>
+        <item quantity="few">%d ľudia</item>
+        <item quantity="many">%d people</item>
+    </plurals>
+    <plurals name="more_followers_count">
+        <item quantity="other">a %d ďalších</item>
+        <item quantity="one">a %d ďalší</item>
+        <item quantity="few">a %d ďalší</item>
+        <item quantity="many">a ďalší (%d)</item>
+    </plurals>
+    <plurals name="moved_to_trash">
+        <item quantity="other">%d položiek bolo presunutých do koša</item>
+        <item quantity="one">%d položka bola presunutá do koša</item>
+        <item quantity="few">%d položky boli presunuté do koša</item>
+        <item quantity="many">%d moved to trash</item>
+    </plurals>
+    <plurals name="new_auto_awesome_movies">
+        <item quantity="other">%d nových filmov vytvorených Autogeniálnymi úpravami</item>
+        <item quantity="one">Nový film vytvorený Autogeniálnymi úpravami</item>
+        <item quantity="few">%d nové filmy vytvorené Autogeniálnymi úpravami</item>
+        <item quantity="many">%d new Auto Awesome movies</item>
+    </plurals>
+    <plurals name="notification_autobackup_stalled_quantity_text">
+        <item quantity="other">Od posledného zálohovania uplynulo %1$d dní</item>
+        <item quantity="one">Od posledného zálohovania uplynul %1$d deň</item>
+        <item quantity="few">Od posledného zálohovania uplynuli %1$d dni</item>
+        <item quantity="many">%1$d days since last backup</item>
+    </plurals>
+    <plurals name="notification_public_text">
+        <item quantity="other">Máte %1$d upozornení.</item>
+        <item quantity="one">Máte upozornenie.</item>
+        <item quantity="few">Máte %1$d upozornenia.</item>
+        <item quantity="many">You have %1$d notifications.</item>
+    </plurals>
+    <plurals name="notification_sending_posts">
+        <item quantity="other">Odosiela sa %d príspevkov…</item>
+        <item quantity="one">Odosiela sa príspevok…</item>
+        <item quantity="few">Odosielajú sa %d prípevky…</item>
+        <item quantity="many">Sending %d posts…</item>
+    </plurals>
+    <plurals name="notifications_content_text">
+        <item quantity="other">%1$s (%2$d)</item>
+        <item quantity="one">%1$s (%2$d)</item>
+        <item quantity="few">%1$s (%2$d)</item>
+        <item quantity="many">%1$s (%2$d)</item>
+    </plurals>
+    <plurals name="notifications_ticker_text">
+        <item quantity="other">Nové upozornenia Google+</item>
+        <item quantity="one">Nové upozornenie Google+</item>
+        <item quantity="few">Nové upozornenia Google+</item>
+        <item quantity="many">New Google+ notifications</item>
+    </plurals>
+    <plurals name="one_up_comment_count">
+        <item quantity="other">%d komentárov</item>
+        <item quantity="one">%d komentár</item>
+        <item quantity="few">%d komentáre</item>
+        <item quantity="many">%d comments</item>
+    </plurals>
+    <plurals name="people_in_common_count_more">
+        <item quantity="other">%1$s, %2$s, +%3$d spoločných ľudí</item>
+        <item quantity="one">%1$s, %2$s, +%3$d spoločná osoba</item>
+        <item quantity="few">%1$s, %2$s, +%3$d spoloční ľudia</item>
+        <item quantity="many">%1$s, %2$s, +%3$d in common</item>
+    </plurals>
+    <plurals name="permanent_delete_item_message">
+        <item quantity="other">Chcete natrvalo odstrániť %d vybratých položiek?</item>
+        <item quantity="one">Chcete natrvalo odstrániť túto položku?</item>
+        <item quantity="few">Chcete natrvalo odstrániť %d vybraté položky?</item>
+        <item quantity="many">Do you want to permanently delete the selected %d items?</item>
+    </plurals>
+    <plurals name="permanent_delete_item_pending">
+        <item quantity="other">Položky sa natrvalo odstraňujú…</item>
+        <item quantity="one">Položka sa natrvalo odstraňuje…</item>
+        <item quantity="few">Položky sa natrvalo odstraňujú…</item>
+        <item quantity="many">Permanently deleting items…</item>
+    </plurals>
+    <plurals name="permanent_delete_item_title">
+        <item quantity="other">Natrvalo odstrániť položky</item>
+        <item quantity="one">Natrvalo odstrániť položku</item>
+        <item quantity="few">Natrvalo odstrániť položky</item>
+        <item quantity="many">Permanently delete items</item>
+    </plurals>
+    <plurals name="permanent_delete_photo_message">
+        <item quantity="other">Chcete natrvalo odstrániť %d vybratých fotiek?</item>
+        <item quantity="one">Chcete natrvalo odstrániť túto fotku?</item>
+        <item quantity="few">Chcete natrvalo odstrániť %d vybraté fotky?</item>
+        <item quantity="many">Do you want to permanently delete the selected %d photos?</item>
+    </plurals>
+    <plurals name="permanent_delete_photo_pending">
+        <item quantity="other">Fotky sa natrvalo odstraňujú…</item>
+        <item quantity="one">Fotka sa natrvalo odstraňuje…</item>
+        <item quantity="few">Fotky sa natrvalo odstraňujú…</item>
+        <item quantity="many">Permanently deleting photos…</item>
+    </plurals>
+    <plurals name="permanent_delete_photo_title">
+        <item quantity="other">Natrvalo odstrániť fotky</item>
+        <item quantity="one">Natrvalo odstrániť fotku</item>
+        <item quantity="few">Natrvalo odstrániť fotky</item>
+        <item quantity="many">Permanently delete photos</item>
+    </plurals>
+    <plurals name="permanent_delete_video_message">
+        <item quantity="other">Chcete natrvalo odstrániť %d vybratých videí?</item>
+        <item quantity="one">Chcete natrvalo odstrániť toto video?</item>
+        <item quantity="few">Chcete natrvalo odstrániť %d vybraté videá?</item>
+        <item quantity="many">Do you want to permanently delete the selected %d videos?</item>
+    </plurals>
+    <plurals name="permanent_delete_video_pending">
+        <item quantity="other">Videá sa natrvalo odstraňujú…</item>
+        <item quantity="one">Video sa natrvalo odstraňuje…</item>
+        <item quantity="few">Videá sa natrvalo odstraňujú…</item>
+        <item quantity="many">Permanently deleting videos…</item>
+    </plurals>
+    <plurals name="permanent_delete_video_title">
+        <item quantity="other">Natrvalo odstrániť videá</item>
+        <item quantity="one">Natrvalo odstrániť video</item>
+        <item quantity="few">Natrvalo odstrániť videá</item>
+        <item quantity="many">Permanently delete videos</item>
+    </plurals>
+    <plurals name="photo_tile_one_up_plusone_count">
+        <item quantity="other">%d ľudí tomu dalo +1</item>
+        <item quantity="one">%d človek tomu dal +1</item>
+        <item quantity="few">%d ľudia tomu dali +1</item>
+        <item quantity="many">"%d people +1'd this."</item>
+    </plurals>
+    <plurals name="photo_view_count">
+        <item quantity="other">%s zobrazení</item>
+        <item quantity="one">%s zobrazenie</item>
+        <item quantity="few">%s zobrazenia</item>
+        <item quantity="many">%s views</item>
+    </plurals>
+    <plurals name="photos_selected_description">
+        <item quantity="other">%1$d vybratých položiek</item>
+        <item quantity="one">%1$d vybratá položka</item>
+        <item quantity="few">%1$d vybraté položky</item>
+        <item quantity="many">%1$d items selected</item>
+    </plurals>
+    <plurals name="plus_one_accessibility_description">
+        <item quantity="other">%d hodnotení +1.</item>
+        <item quantity="one">%d hodnotenie +1.</item>
+        <item quantity="few">%d hodnotenia +1.</item>
+        <item quantity="many">%d hodnotenia +1.</item>
+    </plurals>
+    <plurals name="plus_one_people_more_plus_ones">
+        <item quantity="other">+%d ďalších</item>
+        <item quantity="one">+1 ďalší</item>
+        <item quantity="few">+%d ďalší</item>
+        <item quantity="many">+%d others</item>
+    </plurals>
+    <plurals name="plusone_button_with_plusones_content_description">
+        <item quantity="other">Tlačidlo +1 s %d označeniami +1.</item>
+        <item quantity="one">Tlačidlo +1 s %d označením +1.</item>
+        <item quantity="few">Tlačidlo +1 s %d označeniami +1.</item>
+        <item quantity="many">Tlačidlo +1 s %d označeniami +1.</item>
+    </plurals>
+    <plurals name="poll_card_content_description">
+        <item quantity="other">Anketa s %d možnosťami.</item>
+        <item quantity="one">Anketa s %d možnosťou.</item>
+        <item quantity="few">Anketa s %d možnosťami.</item>
+        <item quantity="many">Anketa s niekoľkými (%d) možnosťami.</item>
+    </plurals>
+    <plurals name="poll_option_image_content_description">
+        <item quantity="other">Fotka k možnosti %1$d z %2$d</item>
+        <item quantity="one">Fotka k prieskumu</item>
+        <item quantity="few">Fotka k možnosti %1$d z %2$d</item>
+        <item quantity="many">Fotka k možnosti %1$d z %2$d</item>
+    </plurals>
+    <plurals name="poll_vote_count">
+        <item quantity="other">%s hlasov</item>
+        <item quantity="one">%s hlas</item>
+        <item quantity="few">%s hlasy</item>
+        <item quantity="many">%s votes</item>
+    </plurals>
+    <plurals name="poll_vote_count_and_visibility">
+        <item quantity="other">%1$s hlasov – hlasy sú viditeľné pre publikum %2$s</item>
+        <item quantity="one">%1$s hlas – hlasy sú viditeľné pre publikum %2$s</item>
+        <item quantity="few">%1$s hlasy – hlasy sú viditeľné pre publikum %2$s</item>
+        <item quantity="many">%1$s hlasov – hlasy sú viditeľné pre publikum %2$s</item>
+    </plurals>
+    <plurals name="profile_about_review_summary_total_count">
+        <item quantity="other">%s recenzie</item>
+        <item quantity="one">%s recenzia</item>
+        <item quantity="few">%s recenzií</item>
+        <item quantity="many">%s reviews</item>
+    </plurals>
+    <plurals name="profile_followers">
+        <item quantity="other">%s sledovateľov</item>
+        <item quantity="one">%s sledovateľ</item>
+        <item quantity="few">%s sledovatelia</item>
+        <item quantity="many">%s followers</item>
+    </plurals>
+    <plurals name="profile_views">
+        <item quantity="other">%s zobrazení</item>
+        <item quantity="one">%s zobrazenie</item>
+        <item quantity="few">%s zobrazenia</item>
+        <item quantity="many">%s views</item>
+    </plurals>
+    <plurals name="promo_auto_backup_reminder_description">
+        <item quantity="other">%1$d starších fotiek a videí čaká na zálohovanie</item>
+        <item quantity="one">%1$d staršia fotka alebo video čaká na zálohovanie</item>
+        <item quantity="few">%1$d staršie fotky a videá čakajú na zálohovanie</item>
+        <item quantity="many">%1$d photos and videos from the past are waiting to be backed up.</item>
+    </plurals>
+    <plurals name="remove_plusone_button_with_plusones_content_description">
+        <item quantity="other">Zrušte výber tlačidla +1 s %d hodnoteniami +1.</item>
+        <item quantity="one">Zrušte výber tlačidla +1 s %d hodnotením +1.</item>
+        <item quantity="few">Zrušte výber tlačidla +1 s %d hodnoteniami +1.</item>
+        <item quantity="many">Zrušte výber tlačidla +1 s niekoľkými (%d) hodnoteniami +1.</item>
+    </plurals>
+    <plurals name="reshare_button_with_reshares_content_description">
+        <item quantity="other">Tlačidlo opätovného zdieľania s %d opätovnými zdieľaniami.</item>
+        <item quantity="one">Tlačidlo opätovného zdieľania s %d opätovným zdieľaním.</item>
+        <item quantity="few">Tlačidlo opätovného zdieľania s %d opätovnými zdieľaniami.</item>
+        <item quantity="many">Tlačidlo opätovného zdieľania s %d opätovnými zdieľaniami.</item>
+    </plurals>
+    <plurals name="reshare_count_description">
+        <item quantity="other">%d ľudí to opäť zdieľa</item>
+        <item quantity="one">%d človek to opäť zdieľa</item>
+        <item quantity="few">%d ľudia to opäť zdieľajú</item>
+        <item quantity="many">%d ľudí to opäť zdieľa</item>
+    </plurals>
+    <plurals name="restore_item_pending">
+        <item quantity="other">Položky sa obnovujú…</item>
+        <item quantity="one">Položka sa obnovuje…</item>
+        <item quantity="few">Položky sa obnovujú…</item>
+        <item quantity="many">Restoring items…</item>
+    </plurals>
+    <plurals name="restore_photo_pending">
+        <item quantity="other">Fotky sa obnovujú…</item>
+        <item quantity="one">Fotka sa obnovuje…</item>
+        <item quantity="few">Fotky sa obnovujú…</item>
+        <item quantity="many">Restoring photos…</item>
+    </plurals>
+    <plurals name="restore_video_pending">
+        <item quantity="other">Videá sa obnovujú…</item>
+        <item quantity="one">Video sa obnovuje…</item>
+        <item quantity="few">Videá sa obnovujú…</item>
+        <item quantity="many">Restoring videos…</item>
+    </plurals>
+    <plurals name="riviera_album_media_count">
+        <item quantity="other">%d fotiek</item>
+        <item quantity="one">%d fotka</item>
+        <item quantity="few">%d fotky</item>
+        <item quantity="many">%d photos</item>
+    </plurals>
+    <plurals name="share_photo_count">
+        <item quantity="other">%d fotiek</item>
+        <item quantity="one">%d fotka</item>
+        <item quantity="few">%d fotky</item>
+        <item quantity="many">%d photos</item>
+    </plurals>
+    <plurals name="share_video_count">
+        <item quantity="other">%d videí</item>
+        <item quantity="one">%d video</item>
+        <item quantity="few">%d videá</item>
+        <item quantity="many">%d videos</item>
+    </plurals>
+    <plurals name="sign_out_message">
+        <item quantity="other">%d položiek čaká na nahranie. Odhlásením sa čakajúce nahrávanie zruší.</item>
+        <item quantity="one">%d položka čaká na nahranie. Odhlásením sa čakajúce nahrávanie zruší.</item>
+        <item quantity="few">%d položky čakajú na nahranie. Odhlásením sa čakajúce nahrávanie zruší.</item>
+        <item quantity="many">%d items waiting to be uploaded. Signing out will cancel all pending uploads.</item>
+    </plurals>
+    <plurals name="source_bar_stream_social_friends_community">
+        <item quantity="other">%1$s a %2$d ďalších používateľov dali +1 tomuto príspevku v komunite %3$s</item>
+        <item quantity="one">%1$s a %2$d ďalší používateľ dali +1 tomuto príspevku v komunite %3$s</item>
+        <item quantity="few">%1$s a %2$d ďalší používatelia dali +1 tomuto príspevku v komunite %3$s</item>
+        <item quantity="many">"%1$s and %2$d others +1'd this post in %3$s"</item>
+    </plurals>
+    <plurals name="spaces_follower_count">
+        <item quantity="other">%s sledovateľov</item>
+        <item quantity="one">%s sledovateľ</item>
+        <item quantity="few">%s sledovatelia</item>
+        <item quantity="many">%s sledovateľov</item>
+    </plurals>
+    <plurals name="spaces_post_count">
+        <item quantity="other">%s príspevkov</item>
+        <item quantity="one">%s príspevok</item>
+        <item quantity="few">%s príspevky</item>
+        <item quantity="many">Niekoľko (%s) príspevkov</item>
+    </plurals>
+    <plurals name="square_members_count">
+        <item quantity="other">%s členov</item>
+        <item quantity="one">%s člen</item>
+        <item quantity="few">%s členovia</item>
+        <item quantity="many">%s members</item>
+    </plurals>
+    <plurals name="square_promo_members">
+        <item quantity="other">%s členov</item>
+        <item quantity="one">%s člen</item>
+        <item quantity="few">%s členovia</item>
+        <item quantity="many">%s members</item>
+    </plurals>
+    <plurals name="squares_listitem_member_count_content_description">
+        <item quantity="other">Zobraziť komunitu %1$s s %2$s členmi</item>
+        <item quantity="one">Zobraziť komunitu %1$s s %2$s členom</item>
+        <item quantity="few">Zobraziť komunitu %1$s s %2$s členmi</item>
+        <item quantity="many">Zobraziť komunitu %1$s s %2$s člena</item>
+    </plurals>
+    <plurals name="squares_listitem_member_count_with_context_content_description">
+        <item quantity="other">Zobraziť komunitu %1$s s %2$s členmi</item>
+        <item quantity="one">Zobraziť komunitu %1$s s %2$s členom</item>
+        <item quantity="few">Zobraziť komunitu %1$s s %2$s členmi</item>
+        <item quantity="many">Zobraziť komunitu %1$s s niekoľkými členmi (%2$s)</item>
+    </plurals>
+    <plurals name="squares_listitem_unread_post_count">
+        <item quantity="other">%s neprečítaných príspevkov</item>
+        <item quantity="one">%s neprečítaný príspevok</item>
+        <item quantity="few">%s neprečítané príspevky</item>
+        <item quantity="many">Niekoľko neprečítaných príspevkov (%s)</item>
+    </plurals>
+    <plurals name="squares_listitem_with_member_count_change_square_visibility_description">
+        <item quantity="other">%1$s komunitu %2$s Community s %3$s členmi v profile</item>
+        <item quantity="one">%1$s komunitu %2$s Community s %3$s členom v profile</item>
+        <item quantity="few">%1$s komunitu %2$s Community s %3$s členmi v profile</item>
+        <item quantity="many">%1$s komunitu %2$s Community s niekoľkými členmi (%3$s) v profile</item>
+    </plurals>
+    <plurals name="stream_album_photo_count">
+        <item quantity="other">%d FOTIEK</item>
+        <item quantity="one">%d FOTKA</item>
+        <item quantity="few">%d FOTKY</item>
+        <item quantity="many">%d PHOTOS</item>
+    </plurals>
+    <plurals name="stream_social_review_embed_review_count">
+        <item quantity="other">%d recenzií</item>
+        <item quantity="one">%d recenzia</item>
+        <item quantity="few">%d recenzie</item>
+        <item quantity="many">%d Reviews</item>
+    </plurals>
+    <plurals name="tagged_people">
+        <item quantity="other">%d ľudí bolo označených</item>
+        <item quantity="one">%d osoba bola označená</item>
+        <item quantity="few">%d ľudia boli označení</item>
+        <item quantity="many">%d people tagged</item>
+    </plurals>
+</resources>

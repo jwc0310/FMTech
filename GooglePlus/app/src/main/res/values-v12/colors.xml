@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ingest_date_tile_text">#ff33b5e5</color>
+    <color name="ingest_highlight_semitransparent">#8833b5e5</color>
+</resources>

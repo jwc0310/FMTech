@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/more_squares_button_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/text_size_14" android:textColor="@color/square_green_light" android:gravity="center" android:id="@id/more_squares_button" android:background="?buttonSelectableBackground" android:paddingTop="@dimen/square_card_padding" android:paddingBottom="@dimen/square_card_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/squares_joined_communities" android:includeFontPadding="false" android:layout_alignParentBottom="true" android:textAllCaps="true" />
+</RelativeLayout>

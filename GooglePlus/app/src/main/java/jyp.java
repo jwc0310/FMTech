@@ -1,0 +1,14 @@
+final class jyp
+  implements jyk
+{
+  public final void a(bp parambp, mek parammek)
+  {
+    new jyq(parambp, parammek);
+  }
+}
+
+
+/* Location:           F:\apktool\apktool\com.google.android.apps.plus\classes-dex2jar.jar
+ * Qualified Name:     jyp
+ * JD-Core Version:    0.7.0.1
+ */

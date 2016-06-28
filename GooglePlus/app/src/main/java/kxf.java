@@ -1,0 +1,9 @@
+public abstract interface kxf
+  extends gxs
+{}
+
+
+/* Location:           F:\apktool\apktool\com.google.android.apps.plus\classes-dex2jar.jar
+ * Qualified Name:     kxf
+ * JD-Core Version:    0.7.0.1
+ */

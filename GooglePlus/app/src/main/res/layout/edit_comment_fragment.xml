@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <com.google.android.libraries.social.sharekit.comments.MentionMultiAutoCompleteTextView
+        android:id="@id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/compose_comment_hint"
+        android:imeActionLabel="@string/sharebox_send_content_description"
+        android:imeOptions="actionDone"
+        android:inputType="textLongMessage|textAutoCorrect|textCapSentences|textMultiLine"
+        android:paddingTop="5.0dip"
+        android:textColor="@color/text_normal"
+        android:textColorHint="@color/text_hint" />
+</ScrollView>

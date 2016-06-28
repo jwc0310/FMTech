@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="accessibility_notification_count_description">
+        <item quantity="other">%d νέες ειδοποιήσεις Google+</item>
+        <item quantity="one">%d νέα ειδοποίηση Google+</item>
+    </plurals>
+    <plurals name="accessibility_people_notification_count_description">
+        <item quantity="other">%d νέες ειδοποιήσεις ατόμων στο Google+</item>
+        <item quantity="one">%d νέα ειδοποίηση ατόμων στο Google+</item>
+    </plurals>
+    <plurals name="acl_picker_title_length_other">
+        <item quantity="other">%1$s, %2$s και %3$d ακόμη</item>
+        <item quantity="one">%1$s, %2$s και %3$d ακόμη</item>
+    </plurals>
+    <plurals name="added_to_circle_notification_message">
+        <item quantity="other">Προστέθηκαν %d άτομα στους κύκλους</item>
+        <item quantity="one">Προστέθηκε ένα άτομο στους κύκλους</item>
+    </plurals>
+    <plurals name="album_photo_count">
+        <item quantity="other">%d φωτογραφίες</item>
+        <item quantity="one">%d φωτογραφία</item>
+    </plurals>
+    <plurals name="animated_gif_count_content_description">
+        <item quantity="other">%d κινούμενες εικόνες gif.</item>
+        <item quantity="one">%d κινούμενη εικόνα gif.</item>
+    </plurals>
+    <plurals name="audience_display_selection_count">
+        <item quantity="other">%d επιλέχτηκαν</item>
+        <item quantity="one">%d επιλέχτηκε</item>
+    </plurals>
+    <plurals name="audience_hidden_user_count">
+        <item quantity="other">+%d ακόμη</item>
+        <item quantity="one">+1 ακόμη</item>
+    </plurals>
+    <plurals name="auto_backup_photo_count">
+        <item quantity="other">%s φωτογραφίες</item>
+        <item quantity="one">%s φωτογραφία</item>
+    </plurals>
+    <plurals name="auto_backup_wait_network">
+        <item quantity="other">Αναμονή για το δίκτυο (%d στην ουρά)</item>
+        <item quantity="one">Αναμονή για το δίκτυο (%d στην ουρά)</item>
+    </plurals>
+    <plurals name="auto_backup_wait_wifi">
+        <item quantity="other">Αναμονή για Wi-Fi (%d στην ουρά)</item>
+        <item quantity="one">Αναμονή για Wi-Fi (%d στην ουρά)</item>
+    </plurals>
+    <plurals name="backing_up_photos_count">
+        <item quantity="other">Δημιουργία αντιγράφων ασφαλείας…Απομένουν %1$d</item>
+        <item quantity="one">Δημιουργία αντιγράφων ασφαλείας…Απομένει %1$d</item>
+    </plurals>
+    <plurals name="circle_button_more_circles">
+        <item quantity="other">%d ακόμη</item>
+        <item quantity="one">%d ακόμη</item>
+    </plurals>
+    <plurals name="circle_count_and_matched_email">
+        <item quantity="other">%1$d κύκλοι, %2$s</item>
+        <item quantity="one">%1$d κύκλος, %2$s</item>
+    </plurals>
+    <plurals name="circle_entry_content_description">
+        <item quantity="other">%d μέλη</item>
+        <item quantity="one">%d μέλος</item>
+    </plurals>
+    <plurals name="circle_location_sharing_count">
+        <item quantity="other">Κοινοποίηση με %d άτομα</item>
+        <item quantity="one">Κοινοποίηση με %d άτομο</item>
+    </plurals>
+    <plurals name="circle_num_members">
+        <item quantity="other">%d άτομα</item>
+        <item quantity="one">%d άτομο</item>
+    </plurals>
+    <plurals name="collexion_source_bar_stream_social_friends_plusoned">
+        <item quantity="other">Ο χρήστης %1$s και %2$d ακόμη επισήμαναν με +1 αυτήν την ανάρτηση στη συλλογή %3$s</item>
+        <item quantity="one">Ο χρήστης %1$s και %2$d ακόμη επισήμαναν με +1 αυτήν την ανάρτηση στη συλλογή %3$s</item>
+    </plurals>
+    <plurals name="comment_button_with_comments_content_description">
+        <item quantity="other">Κουμπί σχολιασμού με %d σχόλια.</item>
+        <item quantity="one">Κουμπί σχολιασμού με %d σχόλιο.</item>
+    </plurals>
+    <plurals name="comments">
+        <item quantity="other">%d σχόλια</item>
+        <item quantity="one">%d σχόλιο</item>
+    </plurals>
+    <plurals name="comments_on_original_post">
+        <item quantity="other">Εμφάνιση %d σχολίων στην αρχική ανάρτηση</item>
+        <item quantity="one">Εμφάνιση 1 σχολίου στην αρχική ανάρτηση</item>
+    </plurals>
+    <plurals name="common_friend_count">
+        <item quantity="other">%d κοινά</item>
+        <item quantity="one">ένα κοινό</item>
+    </plurals>
+    <plurals name="copy_photos_confirmation_dialog">
+        <item quantity="other">Αντιγραφή %1$d φωτογραφιών στο λεύκωμα %2$s;</item>
+        <item quantity="one">Αντιγραφή φωτογραφίας στο λεύκωμα %2$s;</item>
+    </plurals>
+    <plurals name="delete_circles_dialog_message">
+        <item quantity="other">Θέλετε να διαγράψετε οριστικά αυτούς τους κύκλους;</item>
+        <item quantity="one">Θέλετε να διαγράψετε οριστικά αυτόν τον κύκλο;</item>
+    </plurals>
+    <plurals name="delete_circles_dialog_title">
+        <item quantity="other">Διαγραφή κύκλων</item>
+        <item quantity="one">Διαγραφή κύκλο</item>
+    </plurals>
+    <plurals name="delete_drive_photo_dialog_message">
+        <item quantity="other">Οι φωτογραφίες από το Google Drive θα καταργηθούν από το Google+ αλλά δεν θα διαγραφούν από το Drive.</item>
+        <item quantity="one">Η αρχική δεν θα διαγραφεί από το Google Drive.</item>
+    </plurals>
+    <plurals name="delete_drive_video_dialog_message">
+        <item quantity="other">Τα βίντεο από το Google Drive θα καταργηθούν από το Google+ αλλά δεν θα διαγραφούν από το Drive.</item>
+        <item quantity="one">Το αρχικό δεν θα διαγραφεί από το Google Drive.</item>
+    </plurals>
+    <plurals name="delete_duplicate_drive_photo_dialog_message">
+        <item quantity="other">Αυτές οι φωτογραφίες θα καταργηθούν από όλα τα λευκώματα και τα κοινόχρηστα στοιχεία. Οι φωτογραφίες από το Google Drive δεν θα διαγραφούν από εκεί.</item>
+        <item quantity="one">Αυτή η φωτογραφία θα καταργηθεί από όλα τα λευκώματα και τα κοινόχρηστα στοιχεία. Η αρχική δεν θα διαγραφεί από το Google Drive.</item>
+    </plurals>
+    <plurals name="delete_duplicate_drive_video_dialog_message">
+        <item quantity="other">Αυτά τα βίντεο θα καταργηθούν από όλα τα λευκώματα και τα κοινόχρηστα στοιχεία. Τα βίντεο από το Google Drive δεν θα διαγραφούν από εκεί.</item>
+        <item quantity="one">Αυτό το βίντεο θα καταργηθεί από όλα τα λευκώματα και τα κοινόχρηστα στοιχεία. Το αρχικό δεν θα διαγραφεί από το Google Drive.</item>
+    </plurals>
+    <plurals name="delete_duplicate_photo_dialog_message">
+        <item quantity="other">Αυτές οι φωτογραφίες θα καταργηθούν από όλα τα λευκώματα και τα κοινόχρηστα στοιχεία</item>
+        <item quantity="one">Αυτή η φωτογραφία θα καταργηθεί από όλα τα λευκώματα και τα κοινόχρηστα στοιχεία</item>
+    </plurals>
+    <plurals name="delete_duplicate_video_dialog_message">
+        <item quantity="other">Αυτό το βίντεο θα καταργηθεί από όλα τα λευκώματα και τα κοινόχρηστα στοιχεία</item>
+        <item quantity="one">Αυτό το βίντεο θα καταργηθεί από όλα τα λευκώματα και τα κοινόχρηστα στοιχεία</item>
+    </plurals>
+    <plurals name="delete_item">
+        <item quantity="other">Διαγραφή στοιχείων</item>
+        <item quantity="one">Διαγραφή στοιχείου</item>
+    </plurals>
+    <plurals name="delete_item_pending">
+        <item quantity="other">Διαγραφή στοιχείων…</item>
+        <item quantity="one">Διαγραφή στοιχείου…</item>
+    </plurals>
+    <plurals name="delete_local_and_remote_item_confirmation_dialog_message">
+        <item quantity="other">%d από αυτά τα στοιχεία είναι αποθηκευμένα στη συσκευή σας. Με αυτόν τον τρόπο θα διαγραφούν οριστικά αυτά τα στοιχεία από τη συσκευή σας. Δεν είναι δυνατή η αναίρεση της διαγραφής.</item>
+        <item quantity="one">%d από αυτά τα στοιχεία είναι αποθηκευμένα στη συσκευή σας. Με αυτόν τον τρόπο θα διαγραφεί οριστικά αυτό το στοιχείο από τη συσκευή σας. Δεν είναι δυνατή η αναίρεση της διαγραφής.</item>
+    </plurals>
+    <plurals name="delete_local_and_remote_photo_confirmation_dialog_message">
+        <item quantity="other">%d από αυτές τις φωτογραφίες είναι αποθηκευμένες στη συσκευή σας. Με αυτόν τον τρόπο θα διαγραφούν οριστικά αυτές οι φωτογραφίες από τη συσκευή σας. Δεν είναι δυνατή η αναίρεση της διαγραφής.</item>
+        <item quantity="one">%d από αυτές τις φωτογραφίες είναι αποθηκευμένες στη συσκευή σας. Με αυτόν τον τρόπο θα διαγραφεί οριστικά αυτή η φωτογραφία από τη συσκευή σας. Δεν είναι δυνατή η αναίρεση της διαγραφής.</item>
+    </plurals>
+    <plurals name="delete_local_and_remote_video_confirmation_dialog_message">
+        <item quantity="other">%d από αυτά τα βίντεο είναι αποθηκευμένα στη συσκευή σας. Με αυτόν τον τρόπο θα διαγραφούν οριστικά αυτά τα βίντεο από τη συσκευή σας. Δεν είναι δυνατή η αναίρεση της διαγραφής.</item>
+        <item quantity="one">%d από αυτά τα βίντεο είναι αποθηκευμένα στη συσκευή σας. Με αυτόν τον τρόπο θα διαγραφεί οριστικά αυτό το βίντεο από τη συσκευή σας. Δεν είναι δυνατή η αναίρεση της διαγραφής.</item>
+    </plurals>
+    <plurals name="delete_local_item_dialog_message">
+        <item quantity="other">Αυτό θα διαγράψει οριστικά αυτά τα στοιχεία από τη συσκευή σας. Δεν είναι δυνατή η αναίρεση της διαγραφής.</item>
+        <item quantity="one">Αυτό θα διαγράψει οριστικά αυτό το στοιχείο από τη συσκευή σας. Δεν είναι δυνατή η αναίρεση της διαγραφής.</item>
+    </plurals>
+    <plurals name="delete_local_photo_dialog_message">
+        <item quantity="other">Με αυτόν τον τρόπο θα διαγραφούν οριστικά αυτές οι φωτογραφίες από τη συσκευή σας. Δεν είναι δυνατή η αναίρεση της διαγραφής.</item>
+        <item quantity="one">Με αυτόν τον τρόπο θα διαγραφεί οριστικά αυτή η φωτογραφία από τη συσκευή σας. Δεν είναι δυνατή η αναίρεση της διαγραφής.</item>
+    </plurals>
+    <plurals name="delete_local_video_dialog_message">
+        <item quantity="other">Με αυτόν τον τρόπο θα διαγραφούν οριστικά αυτά τα βίντεο από τη συσκευή σας. Δεν είναι δυνατή η αναίρεση της διαγραφής.</item>
+        <item quantity="one">Με αυτόν τον τρόπο θα διαγραφεί οριστικά αυτό το βίντεο από τη συσκευή σας. Δεν είναι δυνατή η αναίρεση της διαγραφής.</item>
+    </plurals>
+    <plurals name="delete_photo">
+        <item quantity="other">Διαγραφή φωτογραφιών</item>
+        <item quantity="one">Διαγραφή φωτογραφίας</item>
+    </plurals>
+    <plurals name="delete_photo_pending">
+        <item quantity="other">Διαγραφή φωτογραφιών…</item>
+        <item quantity="one">Διαγραφή φωτογραφίας…</item>
+    </plurals>
+    <plurals name="delete_video">
+        <item quantity="other">Διαγραφή βίντεο</item>
+        <item quantity="one">Διαγραφή βίντεο</item>
+    </plurals>
+    <plurals name="delete_video_pending">
+        <item quantity="other">Διαγραφή βίντεο…</item>
+        <item quantity="one">Διαγραφή βίντεο…</item>
+    </plurals>
+    <plurals name="deselect_photo_dialog_message">
+        <item quantity="other">Είστε βέβαιοι ότι θέλετε να καταργήσετε την επιλογή αυτών των φωτογραφιών; Όλες οι αλλαγές σας θα χαθούν.</item>
+        <item quantity="one">Είστε βέβαιοι ότι θέλετε να καταργήσετε την επιλογή αυτής της φωτογραφίας; Όλες οι αλλαγές σας θα χαθούν.</item>
+    </plurals>
+    <plurals name="dialog_permanently_delete_items_confirmation_button">
+        <item quantity="other">Οριστική διαγραφή</item>
+        <item quantity="one">Οριστική διαγραφή</item>
+    </plurals>
+    <plurals name="dialog_remove_items_confirmation_button">
+        <item quantity="other">Κατάργηση</item>
+        <item quantity="one">Κατάργηση</item>
+    </plurals>
+    <plurals name="drafts_number_of_deleted_drafts">
+        <item quantity="other">Επιτυχής διαγραφή %d προχείρων</item>
+        <item quantity="one">Επιτυχής διαγραφή %d προχείρου</item>
+    </plurals>
+    <plurals name="edit_audience_num_members">
+        <item quantity="other">%d άτομα</item>
+        <item quantity="one">%d άτομο</item>
+    </plurals>
+    <plurals name="event_invitee_other_count">
+        <item quantity="other">+ %d επισκέπτες</item>
+        <item quantity="one">+ %d επισκέπτης</item>
+    </plurals>
+    <plurals name="event_invitee_other_count_total">
+        <item quantity="other">%d επισκέπτες</item>
+        <item quantity="one">%d επισκέπτης</item>
+    </plurals>
+    <plurals name="event_invitee_with_guests">
+        <item quantity="other">%1$s (+%2$d επισκέπτες)</item>
+        <item quantity="one">%1$s (+%2$d επισκέπτης)</item>
+    </plurals>
+    <plurals name="find_people_circle_description">
+        <item quantity="other">%1$s, κύκλος, %2$d μέλη</item>
+        <item quantity="one">%1$s, κύκλος, %2$d μέλος</item>
+    </plurals>
+    <plurals name="find_people_friends_add_with_count">
+        <item quantity="other">%d άτομα για προσθήκη</item>
+        <item quantity="one">%d άτομο για προσθήκη</item>
+    </plurals>
+    <plurals name="from_your_phone_selected_count">
+        <item quantity="other">%d επιλέχτηκαν</item>
+        <item quantity="one">%d επιλέχτηκε</item>
+    </plurals>
+    <plurals name="hoa_event_countdown_days">
+        <item quantity="other">%1$d ημέρες</item>
+        <item quantity="one">%1$d ημέρα</item>
+    </plurals>
+    <plurals name="hoa_event_countdown_hours">
+        <item quantity="other">%1$d ώρες</item>
+        <item quantity="one">%1$d ώρα</item>
+    </plurals>
+    <plurals name="hoa_event_countdown_minutes">
+        <item quantity="other">%1$d λεπτά</item>
+        <item quantity="one">%1$d λεπτό</item>
+    </plurals>
+    <plurals name="ingest_number_of_items_scanned">
+        <item quantity="other">%1$d στοιχεία σαρώθηκαν</item>
+        <item quantity="one">%1$d στοιχείο σαρώθηκε</item>
+    </plurals>
+    <plurals name="ingest_number_of_items_selected">
+        <item quantity="other">Επιλέχτηκαν %1$d στοιχεία</item>
+        <item quantity="one">Επιλέχτηκε %1$d στοιχείο</item>
+    </plurals>
+    <plurals name="local_folders_list_n">
+        <item quantity="other">%1$s, %2$s, %3$s και %4$d ακόμη</item>
+        <item quantity="one">%1$s, %2$s, %3$s και %4$d ακόμη</item>
+    </plurals>
+    <plurals name="manual_awesome_selection_toast_fixed">
+        <item quantity="other">Επιλέξτε %1$d φωτογραφίες</item>
+        <item quantity="one">Επιλέξτε μία φωτογραφία</item>
+    </plurals>
+    <plurals name="manual_awesome_selection_toast_fixed_including_video">
+        <item quantity="other">Επιλέξτε %1$d φωτογραφίες ή βίντεο</item>
+        <item quantity="one">Επιλέξτε μία φωτογραφία ή βίντεο</item>
+    </plurals>
+    <plurals name="map_marker_user_count">
+        <item quantity="other">%d άτομα</item>
+        <item quantity="one">%d άτομο</item>
+    </plurals>
+    <plurals name="more_followers_count">
+        <item quantity="other">και ακόμα %d άτομα</item>
+        <item quantity="one">και ακόμα %d χρήστης</item>
+    </plurals>
+    <plurals name="moved_to_trash">
+        <item quantity="other">%d στον κάδο απορριμμάτων</item>
+        <item quantity="one">%d στον κάδο απορριμμάτων</item>
+    </plurals>
+    <plurals name="new_auto_awesome_movies">
+        <item quantity="other">%d νέες ταινίες με \"Αυτόματα εφέ\"</item>
+        <item quantity="one">Νέα ταινία με \"Αυτόματα εφέ\"</item>
+    </plurals>
+    <plurals name="notification_autobackup_stalled_quantity_text">
+        <item quantity="other">%1$d ημέρες από την τελ.δημ.αντ.ασφαλείας</item>
+        <item quantity="one">%1$d ημέρα από την τελ.δημ.αντ.ασφαλείας</item>
+    </plurals>
+    <plurals name="notification_public_text">
+        <item quantity="other">Έχετε %1$d ειδοποιήσεις.</item>
+        <item quantity="one">Έχετε μία ειδοποίηση.</item>
+    </plurals>
+    <plurals name="notification_sending_posts">
+        <item quantity="other">Αποστολή %d αναρτήσεων…</item>
+        <item quantity="one">Αποστολή ανάρτησης…</item>
+    </plurals>
+    <plurals name="notifications_content_text">
+        <item quantity="other">%1$s (%2$d)</item>
+        <item quantity="one">%1$s (%2$d)</item>
+    </plurals>
+    <plurals name="notifications_ticker_text">
+        <item quantity="other">Νέες ειδοποιήσεις Google+</item>
+        <item quantity="one">Νέα ειδοποίηση Google+</item>
+    </plurals>
+    <plurals name="one_up_comment_count">
+        <item quantity="other">%d σχόλια</item>
+        <item quantity="one">%d σχόλιο</item>
+    </plurals>
+    <plurals name="people_in_common_count_more">
+        <item quantity="other">%1$s, %2$s +%3$d κοινά άτομα</item>
+        <item quantity="one">%1$s, %2$s +%3$d κοινό άτομο</item>
+    </plurals>
+    <plurals name="permanent_delete_item_message">
+        <item quantity="other">Θέλετε να διαγράψετε οριστικά αυτά τα %d στοιχεία;</item>
+        <item quantity="one">Θέλετε να διαγράψετε οριστικά αυτό το στοιχείο;</item>
+    </plurals>
+    <plurals name="permanent_delete_item_pending">
+        <item quantity="other">Οριστική διαγραφή στοιχείων…</item>
+        <item quantity="one">Οριστική διαγραφή στοιχείου…</item>
+    </plurals>
+    <plurals name="permanent_delete_item_title">
+        <item quantity="other">Οριστική διαγραφή στοιχείων</item>
+        <item quantity="one">Οριστική διαγραφή στοιχείου</item>
+    </plurals>
+    <plurals name="permanent_delete_photo_message">
+        <item quantity="other">Θέλετε να διαγράψετε οριστικά τις επιλεγμένες %d φωτογραφίες;</item>
+        <item quantity="one">Θέλετε να διαγράψετε οριστικά αυτήν τη φωτογραφία;</item>
+    </plurals>
+    <plurals name="permanent_delete_photo_pending">
+        <item quantity="other">Οριστική διαγραφή φωτογραφιών…</item>
+        <item quantity="one">Οριστική διαγραφή φωτογραφίας…</item>
+    </plurals>
+    <plurals name="permanent_delete_photo_title">
+        <item quantity="other">Οριστική διαγραφή φωτογραφιών</item>
+        <item quantity="one">Οριστική διαγραφή φωτογραφίας</item>
+    </plurals>
+    <plurals name="permanent_delete_video_message">
+        <item quantity="other">Θέλετε να διαγράψετε οριστικά τα επιλεγμένα %d βίντεο;</item>
+        <item quantity="one">Θέλετε να διαγράψετε οριστικά αυτό το βίντεο;</item>
+    </plurals>
+    <plurals name="permanent_delete_video_pending">
+        <item quantity="other">Οριστική διαγραφή βίντεο…</item>
+        <item quantity="one">Οριστική διαγραφή βίντεο…</item>
+    </plurals>
+    <plurals name="permanent_delete_video_title">
+        <item quantity="other">Οριστική διαγραφή βίντεο</item>
+        <item quantity="one">Οριστική διαγραφή βίντεο</item>
+    </plurals>
+    <plurals name="photo_tile_one_up_plusone_count">
+        <item quantity="other">%d άτομα επισήμαναν με +1 αυτό το στοιχείο.</item>
+        <item quantity="one">%d άτομο επισήμανε με +1 αυτό το στοιχείο.</item>
+    </plurals>
+    <plurals name="photo_view_count">
+        <item quantity="other">%s προβολές</item>
+        <item quantity="one">%s προβολή</item>
+    </plurals>
+    <plurals name="photos_selected_description">
+        <item quantity="other">Επιλέχτηκαν %1$d στοιχεία</item>
+        <item quantity="one">Επιλέχτηκε %1$d στοιχείο</item>
+    </plurals>
+    <plurals name="plus_one_accessibility_description">
+        <item quantity="other">%d επισημάνσεις +1.</item>
+        <item quantity="one">%d επισήμανση +1.</item>
+    </plurals>
+    <plurals name="plus_one_people_more_plus_ones">
+        <item quantity="other">+%d ακόμη</item>
+        <item quantity="one">+1 ακόμη</item>
+    </plurals>
+    <plurals name="plusone_button_with_plusones_content_description">
+        <item quantity="other">Κουμπί συν ένα με %d επισημάνσεις συν ένα.</item>
+        <item quantity="one">Κουμπί συν ένα με %d επισήμανση συν ένα.</item>
+    </plurals>
+    <plurals name="poll_card_content_description">
+        <item quantity="other">Δημοσκόπηση με %d επιλογές.</item>
+        <item quantity="one">Δημοσκόπηση με %d επιλογή.</item>
+    </plurals>
+    <plurals name="poll_option_image_content_description">
+        <item quantity="other">Φωτογραφία για την επιλογή %1$d από %2$d</item>
+        <item quantity="one">Φωτογραφία για τη δημοσκόπηση</item>
+    </plurals>
+    <plurals name="poll_vote_count">
+        <item quantity="other">%s ψήφοι</item>
+        <item quantity="one">%s ψήφος</item>
+    </plurals>
+    <plurals name="poll_vote_count_and_visibility">
+        <item quantity="other">%1$s ψήφοι - οι ψήφοι είναι ορατές σε %2$s</item>
+        <item quantity="one">%1$s ψήφος - οι ψήφοι είναι ορατές σε %2$s</item>
+    </plurals>
+    <plurals name="profile_about_review_summary_total_count">
+        <item quantity="other">%s κριτικές</item>
+        <item quantity="one">%s κριτική</item>
+    </plurals>
+    <plurals name="profile_followers">
+        <item quantity="other">%s ακόλουθοι</item>
+        <item quantity="one">%s ακόλουθος</item>
+    </plurals>
+    <plurals name="profile_views">
+        <item quantity="other">%s προβολές</item>
+        <item quantity="one">%s προβολή</item>
+    </plurals>
+    <plurals name="promo_auto_backup_reminder_description">
+        <item quantity="other">Αναμονή για δημιουργία αντιγράφων ασφαλείας για %1$d παλαιότερες φωτογραφίες ή βίντεο.</item>
+        <item quantity="one">Αναμονή για δημιουργία αντιγράφων ασφαλείας για %1$d παλαιότερη φωτογραφία ή βίντεο.</item>
+    </plurals>
+    <plurals name="remove_plusone_button_with_plusones_content_description">
+        <item quantity="other">Κατάργηση επιλογής κουμπιού συν ένα με %d επισημάνσεις συν ένα.</item>
+        <item quantity="one">Κατάργηση επιλογής κουμπιού συν ένα με %d επισήμανση συν ένα.</item>
+    </plurals>
+    <plurals name="reshare_button_with_reshares_content_description">
+        <item quantity="other">Κουμπί αναδημοσίευσης με %d αναδημοσιεύσεις.</item>
+        <item quantity="one">Κουμπί αναδημοσίευσης με %d αναδημοσίευση.</item>
+    </plurals>
+    <plurals name="reshare_count_description">
+        <item quantity="other">%d άτομα το αναδημοσίευσαν.</item>
+        <item quantity="one">%d άτομο το αναδημοσίευσε.</item>
+    </plurals>
+    <plurals name="restore_item_pending">
+        <item quantity="other">Επαναφορά στοιχείων…</item>
+        <item quantity="one">Επαναφορά στοιχείου…</item>
+    </plurals>
+    <plurals name="restore_photo_pending">
+        <item quantity="other">Επαναφορά φωτογραφιών…</item>
+        <item quantity="one">Επαναφορά φωτογραφίας…</item>
+    </plurals>
+    <plurals name="restore_video_pending">
+        <item quantity="other">Επαναφορά βίντεο…</item>
+        <item quantity="one">Επαναφορά βίντεο…</item>
+    </plurals>
+    <plurals name="riviera_album_media_count">
+        <item quantity="other">%d φωτογραφίες</item>
+        <item quantity="one">%d φωτογραφία</item>
+    </plurals>
+    <plurals name="share_photo_count">
+        <item quantity="other">%d φωτογραφίες</item>
+        <item quantity="one">%d φωτογραφία</item>
+    </plurals>
+    <plurals name="share_video_count">
+        <item quantity="other">%d βίντεο</item>
+        <item quantity="one">%d βίντεο</item>
+    </plurals>
+    <plurals name="sign_out_message">
+        <item quantity="other">Αναμονή για μεταφόρτωση %d στοιχείων. Η αποσύνδεση θα ακυρώσει όλες τις εκκρεμείς μεταφορτώσεις.</item>
+        <item quantity="one">Αναμονή για μεταφόρτωση %d στοιχείου. Η αποσύνδεση θα ακυρώσει την εκκρεμή μεταφόρτωση.</item>
+    </plurals>
+    <plurals name="source_bar_stream_social_friends_community">
+        <item quantity="other">Ο χρήστης %1$s και %2$d ακόμη επισήμαναν με +1 αυτήν την ανάρτηση στην κοινότητα %3$s</item>
+        <item quantity="one">Ο χρήστης %1$s και %2$d ακόμη επισήμαναν με +1 αυτήν την ανάρτηση στην κοινότητα %3$s</item>
+    </plurals>
+    <plurals name="spaces_follower_count">
+        <item quantity="other">%s ακόλουθοι</item>
+        <item quantity="one">%s ακόλουθος</item>
+    </plurals>
+    <plurals name="spaces_post_count">
+        <item quantity="other">%s αναρτήσεις</item>
+        <item quantity="one">%s ανάρτηση</item>
+    </plurals>
+    <plurals name="square_members_count">
+        <item quantity="other">%s μέλη</item>
+        <item quantity="one">%s μέλος</item>
+    </plurals>
+    <plurals name="square_promo_members">
+        <item quantity="other">%s μέλη</item>
+        <item quantity="one">%s μέλος</item>
+    </plurals>
+    <plurals name="squares_listitem_member_count_content_description">
+        <item quantity="other">Προβολή κοινότητας %1$s, με %2$s μέλη</item>
+        <item quantity="one">Προβολή κοινότητας %1$s, με %2$s μέλος</item>
+    </plurals>
+    <plurals name="squares_listitem_member_count_with_context_content_description">
+        <item quantity="other">Προβολή κοινότητας %1$s, με %2$s μέλη</item>
+        <item quantity="one">Προβολή κοινότητας %1$s, με %2$s μέλος</item>
+    </plurals>
+    <plurals name="squares_listitem_unread_post_count">
+        <item quantity="other">%s μη αναγνωσμένες αναρτήσεις</item>
+        <item quantity="one">%s μη αναγνωσμένη ανάρτηση</item>
+    </plurals>
+    <plurals name="squares_listitem_with_member_count_change_square_visibility_description">
+        <item quantity="other">%1$s %2$s Community, με %3$s μέλη στο προφίλ σας</item>
+        <item quantity="one">%1$s %2$s Community, με %3$s μέλος στο προφίλ σας</item>
+    </plurals>
+    <plurals name="stream_album_photo_count">
+        <item quantity="other">%d ΦΩΤΟΓΡΑΦΙΕΣ</item>
+        <item quantity="one">%d ΦΩΤΟΓΡΑΦΙΑ</item>
+    </plurals>
+    <plurals name="stream_social_review_embed_review_count">
+        <item quantity="other">%d Κριτικές</item>
+        <item quantity="one">%d Κριτική</item>
+    </plurals>
+    <plurals name="tagged_people">
+        <item quantity="other">Προστέθηκε ετικέτα σε %d άτομα</item>
+        <item quantity="one">Προστέθηκε ετικέτα σε %d άτομο</item>
+    </plurals>
+</resources>

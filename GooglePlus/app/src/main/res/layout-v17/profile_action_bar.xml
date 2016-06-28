@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/avatar_container" android:layout_width="@dimen/profile_avatar_tap_target_size" android:layout_height="fill_parent">
+        <com.google.android.libraries.social.avatars.ui.AvatarView android:id="@id/actionbar_avatar" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" shape="round" size="tiny" />
+        <ImageView android:layout_width="@dimen/tiny_avatar_dimension" android:layout_height="@dimen/tiny_avatar_dimension" android:src="@drawable/action_bar_avatar_border" android:layout_centerInParent="true" />
+    </RelativeLayout>
+    <FrameLayout android:layout_gravity="center_vertical" android:id="@id/primary_spinner_frame" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_toRightOf="@id/avatar_container" android:layout_centerVertical="true" android:layout_toEndOf="@id/avatar_container">
+        <com.google.android.libraries.social.actionbar.ActionBarSpinner android:id="@id/primary_spinner" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent" android:dropDownWidth="240.0dip" android:paddingStart="10.0dip" style="@style/Theme.Arkham.ActionBar.DropDown" />
+    </FrameLayout>
+    <TextView android:ellipsize="end" android:id="@id/actionbar_name" android:paddingLeft="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:maxLines="1" android:singleLine="true" android:layout_toRightOf="@id/primary_spinner_frame" android:layout_centerVertical="true" android:paddingStart="10.0dip" android:layout_marginStart="8.0dip" android:layout_toEndOf="@id/primary_spinner_frame" style="@style/Theme.Arkham.ActionBar.Text" />
+</RelativeLayout>

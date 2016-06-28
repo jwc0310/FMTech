@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.plus.actionbar.PeopleNotificationButtonView android:id="@id/people_notification_button" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="@dimen/notification_layout_width" style="@style/Theme.Host.ActionBar.Button"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center" android:layout_width="@dimen/notification_layout_width" android:layout_height="@dimen/notification_layout_hight">
+        <ImageView android:id="@id/people_notification" android:src="@drawable/ic_people_outline_badge_white_20" style="@style/notificationIcon" />
+        <ImageView android:id="@id/people_notification_empty" android:visibility="gone" android:src="@drawable/ic_people_outline_white_20" style="@style/notificationIcon" />
+        <TextView android:id="@id/people_notification_count" android:visibility="gone" style="@style/notificationCounter" />
+    </FrameLayout>
+</com.google.android.apps.plus.actionbar.PeopleNotificationButtonView>

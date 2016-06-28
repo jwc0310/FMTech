@@ -1,20 +1,663 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.fmtech.hwvmall">
+    package="com.vmall.client"
+    platformBuildVersionCode="23"
+    platformBuildVersionName="6.0-2166767">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.huawei.hwid.permission.ACCESS" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNAL_SYSTEM_WINDOW" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.BAIDU_LOCATION_SERVICE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.WRITE_APN_SETTINGS" />
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="com.android.mylauncher.permission.INSTALL_SHORTCUT" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="com.huawei.hwid.permission.CONTENT_PROVIDER" />
+    <uses-permission android:name="com.huawei.hwid.ACTION_MAIN_SETTING_ACCESS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <supports-screens
+        android:anyDensity="true"
+        android:largeScreens="true"
+        android:normalScreens="false"
+        android:resizeable="true"
+        android:smallScreens="true" />
     <application
-        android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:name="com.vmall.client.VmallApplication"
+        android:allowBackup="false"
+        android:icon="@drawable/logo3_0"
         android:label="@string/app_name"
-        android:supportsRtl="true"
-        android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        android:theme="@style/Theme.AppStartLoadTranslucent">
+        <meta-data
+            android:name="hwc-theme"
+            android:value="androidhwext:style/Theme.Emui" />
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="lOK1FugI2ptZ8OuI4G0WONmf" />
+
+        <provider
+            android:name=".storage.provider.VmallContentProvider"
+            android:authorities="com.vmall.client.storage.provider"
+            android:exported="false" />
+
+        <activity
+            android:name="com.vmall.client.activity.VmallWapActivity"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-    </application>
+        <activity
+            android:name="com.vmall.client.activity.SplashActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name="com.vmall.client.activity.SinglePageActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.vmall.client.activity.GalleryActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name="com.vmall.client.activity.centerService.CenterServiceDescriptionActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.vmall.client.activity.centerService.SearchResultActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.vmall.client.activity.centerService.NearByMapAcitivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.vmall.client.activity.centerService.MapShowActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.vmall.client.activity.centerService.LineActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.vmall.client.activity.centerService.BusDetailActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.vmall.client.activity.centerService.MapShowDetailActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.vmall.client.activity.AboutActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.vmall.client.activity.messageCenter.MessageCenterActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.vmall.client.activity.LogisticsActivity"
+            android:configChanges="keyboardHidden|orientation"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.vmall.client.activity.HonorAccessoryListActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Light">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.vmall.client.activity.CampaignActivity"
+            android:excludeFromRecents="true"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity=""
+            android:theme="@android:style/Theme.Holo.Light">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.vmall.client.activity.product.ProductDetailActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.huawei.hwid.ui.common.login.LoginActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="@string/CS_app_name"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateVisible">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.huawei.hwid.manager.AccountManagerActivity"
+            android:configChanges="locale|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Translucent">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+        <activity
+            android:name="com.huawei.hwid.ui.common.login.RegisterViaEmailActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="@string/CS_register_email"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateVisible">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.huawei.hwid.ui.common.login.SetRegisterPhoneNumPasswordActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="@string/CS_register_via_phone_number"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateVisible">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.huawei.hwid.ui.common.login.RegisterViaPhoneNumberActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="@string/CS_register_via_phone_number"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateVisible">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.huawei.hwid.ui.common.password.FindpwdByHwIdActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="@string/CS_reset_pwd_label"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateVisible">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+            <intent-filter>
+                <action android:name="com.huawei.hwid.ACTION_FIND_PWD_BY_HWID" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.huawei.hwid.ui.common.password.FindpwdTypeActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="@string/CS_reset_pwd_label"
+            android:theme="@android:style/Theme.Holo.Light">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.huawei.hwid.ui.common.password.FindpwdbyPhonenumberActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="@string/CS_reset_pwd_label"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.huawei.hwid.ui.common.password.FindpwdbyEmailActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="@string/CS_reset_pwd_label"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.huawei.hwid.ui.common.setting.ModifyPasswordActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="@string/CS_modify_pwd_title"
+            android:taskAffinity="com.android.settings"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateVisible">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+            <intent-filter>
+                <action android:name="com.huawei.hwid.MODIFY_PWD" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.huawei.hwid.ui.common.login.PrivacyPolicyActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:taskAffinity="com.android.settings"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.huawei.hwid.ui.common.password.ResetPwdByPhoneNumberActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="@string/CS_reset_pwd_label"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateVisible">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
 
+        <service
+            android:name="com.huawei.hwid.core.model.service.FetchCountryIPService"
+            android:exported="false" />
+
+        <activity
+            android:name="com.huawei.hwid.api.common.apkimpl.DummyActivity"
+            android:configChanges="locale|orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+        <activity
+            android:name="com.huawei.hwid.ui.common.password.ResetPwdByPhoneNumberVerificationActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="@string/CS_reset_pwd_label"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateVisible">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.huawei.hwid.ui.common.login.RegisterViaPhoneNumVerificationActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="@string/CS_register_now"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateVisible">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.huawei.hwid.ui.common.login.StartUpGuideLoginForAPPActivity"
+            android:exported="false"
+            android:label="@string/CS_app_name"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+            <intent-filter>
+                <action android:name="com.huawei.hwid.START_BY_SDK" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.huawei.hwid.ui.common.login.SetRegisterEmailPasswordActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="@string/CS_app_name"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateVisible">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.huawei.hwid.ui.common.login.RegisterResetVerifyEmailActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="@string/CS_app_name"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Holo.Light"
+            android:windowSoftInputMode="stateAlwaysHidden">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.huawei.hwid.ui.common.login.CheckUidPwdActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.huawei.hwid.UID_AUTH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+        <activity
+            android:name="com.huawei.hwid.ui.common.login.ManageAgreementActivity"
+            android:configChanges="orientation|screenSize"
+            android:exported="false"
+            android:label="@string/CS_agreement_history"
+            android:theme="@android:style/Theme.Holo.Light">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.huawei.hwid.ui.common.checkid.CheckIdentityActivity"
+            android:configChanges="orientation|screenSize"
+            android:excludeFromRecents="true"
+            android:exported="false"
+            android:theme="@android:style/Theme.Translucent"
+            android:windowSoftInputMode="stateHidden">
+            <intent-filter>
+                <action android:name="com.huawei.hwid.ACTION_CHECK_IDENTITY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui.Translucent" />
+        </activity>
+
+        <receiver android:name="com.vmall.client.service.receiver.VmallPushReceiver">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTRATION" />
+                <action android:name="com.huawei.android.push.intent.RECEIVE" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.huawei.android.pushagent.PushEventReceiver"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REFRESH_PUSH_CHANNEL" />
+                <action android:name="com.huawei.intent.action.PUSH" />
+                <action android:name="com.huawei.intent.action.PUSH_ON" />
+                <action android:name="com.huawei.android.push.PLUGIN" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <action android:name="android.intent.action.PACKAGE_REMOVED" />
+
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.huawei.android.pushagent.PushBootReceiver"
+            android:process=":pushservice">
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.REGISTER" />
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+            <meta-data
+                android:name="CS_cloud_version"
+                android:value="@string/cloudpush_version_value" />
+        </receiver>
+
+        <service
+            android:name="com.huawei.android.pushagent.PushService"
+            android:process=":pushservice" />
+
+        <activity
+            android:name="com.huawei.android.pushselfshow.richpush.RichPushActivity"
+            android:configChanges="locale|layoutDirection|orientation|screenSize"
+            android:process=":pushservice"
+            android:screenOrientation="portrait"
+            android:theme="@style/hwpush_NoActionBar">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+            <intent-filter>
+                <action android:name="com.huawei.android.push.intent.RICHPUSH" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.huawei.android.pushselfshow.permission.RequestPermissionsActivity"
+            android:configChanges="locale|layoutDirection|orientation|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.DeviceDefault.Light.Dialog.NoActionBar" />
+
+        <meta-data
+            android:name="oplog_encrypt"
+            android:value="1" />
+        <meta-data
+            android:name="CHANNEL"
+            android:value="vmall_vmall" />
+
+        <activity
+            android:name="com.vmall.client.activity.MessNotifyActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.vmall.client.activity.StartAlarmActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.Dialog.NoActionBar" />
+
+        <receiver
+            android:name="com.vmall.client.service.broadcast.AlarmBroadcast"
+            android:enabled="true"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="android.intent.action.alarm" />
+            </intent-filter>
+        </receiver>
+
+        <activity
+            android:name=".activity.WelcomeVmallActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.Policy"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.vmall.client.activity.ShareActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name="com.vmall.client.activity.SearchActivity"
+            android:hardwareAccelerated="true"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+            <intent-filter>
+                <action android:name="com.vmall.client.search" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.CategorySecondActivity"
+            android:hardwareAccelerated="true"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" />
+
+        <activity
+            android:name="com.alipay.sdk.app.H5PayActivity"
+            android:configChanges="keyboardHidden|navigation|orientation|screenSize"
+            android:exported="false"
+            android:screenOrientation="behind"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name="com.vmall.client.wxapi.WXPayEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.vmall.client.wxapi.WXEntryActivity"
+            android:exported="true"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.FansActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name=".activity.ReceiveNotifyActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name=".activity.OnlineSeviceActivity"
+            android:launchMode="singleTask"
+            android:screenOrientation="portrait"
+            android:taskAffinity="com.vmall.client.online">
+            <intent-filter>
+                <action android:name="com.vmall.client.Online" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Holo.NoActionBar" />
+        <activity
+            android:name="com.vmall.client.activity.SubChannelCategoryActivity"
+            android:hardwareAccelerated="true"
+            android:label="@string/app_name"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan">
+            <meta-data
+                android:name="hwc-theme"
+                android:value="androidhwext:style/Theme.Emui" />
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name="com.vmall.client.service.receiver.DealPushDataReceiver"
+            android:exported="false">
+            <intent-filter>
+                <action android:name="com.vmall.client.broadcast.PUSH_TOKEN" />
+            </intent-filter>
+        </receiver>
+    </application>
 </manifest>

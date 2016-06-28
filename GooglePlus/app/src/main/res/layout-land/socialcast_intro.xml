@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_20" android:textColor="@color/text_white" android:gravity="center" android:id="@id/intro_message" android:background="@color/modal_green" android:paddingTop="20.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/intro_message" android:drawableTop="@drawable/modal" />
+    <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_white" android:gravity="center" android:id="@id/intro_description" android:background="@color/modal_green" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cast_description" />
+</LinearLayout>

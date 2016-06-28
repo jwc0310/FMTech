@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.apps.plus.locations.LocationSharingRadioGroup android:orientation="vertical" android:id="@id/radio_group" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/pinpoint_radio_button" layout="@layout/friend_locations_radio_button" />
+    <include android:id="@id/city_radio_button" layout="@layout/friend_locations_radio_button" />
+</com.google.android.apps.plus.locations.LocationSharingRadioGroup>

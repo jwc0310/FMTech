@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="?android:selectableItemBackground" android:paddingLeft="@dimen/menu_fragment_list_left_right_padding" android:paddingRight="@dimen/menu_fragment_list_left_right_padding" android:layout_width="fill_parent" android:layout_height="@dimen/menu_fragment_item_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_vertical" android:id="@android:id/icon" android:layout_width="@dimen/menu_fragment_item_icon_size" android:layout_height="@dimen/menu_fragment_item_icon_size" />
+    <TextView android:textAppearance="@style/TextStyle.MenuFragment" android:layout_gravity="center_vertical" android:id="@android:id/text1" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+</LinearLayout>

@@ -1,0 +1,17 @@
+final class cbb
+  implements Runnable
+{
+  cbb(caz paramcaz) {}
+  
+  public final void run()
+  {
+    this.a.c = false;
+    this.a.W_();
+  }
+}
+
+
+/* Location:           F:\apktool\apktool\com.google.android.apps.plus\classes-dex2jar.jar
+ * Qualified Name:     cbb
+ * JD-Core Version:    0.7.0.1
+ */

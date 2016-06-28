@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_normal" android:gravity="start|center" android:paddingLeft="@dimen/tabbar_item_padding" android:paddingRight="@dimen/tabbar_item_padding" android:layout_width="wrap_content" android:layout_height="fill_parent" android:singleLine="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/warm_welcome_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/warm_welcome_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <com.google.android.apps.plus.views.WarmWelcomeIllustrationView android:layout_gravity="end" android:id="@id/warm_welcome_illustration" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/warm_welcome" android:scaleType="centerInside" />
+        </FrameLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textColor="@color/text_black_87_percent" android:id="@id/warm_welcome_title" android:paddingBottom="@dimen/warm_welcome_title_vertical_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/warm_welcome_title" style="@style/WarmWelcome.Title" />
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_black_87_percent" android:id="@id/warm_welcome_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/warm_welcome_subtitle" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:id="@id/divider" android:background="@color/warm_welcome_button_stroke" android:layout_width="fill_parent" android:layout_height="@dimen/contacts_sync_divider_height" android:layout_above="@id/warm_welcome_button" />
+    <TextView android:textColor="@color/text_black_87_percent" android:gravity="center" android:id="@id/warm_welcome_button" android:background="@drawable/warm_welcome_large_button" android:paddingLeft="@dimen/warm_welcome_layout_padding" android:paddingRight="@dimen/warm_welcome_layout_padding" android:layout_width="fill_parent" android:layout_height="@dimen/warm_welcome_button_height" android:text="@string/warm_welcome_next_button" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+</LinearLayout>

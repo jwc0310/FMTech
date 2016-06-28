@@ -1,0 +1,7 @@
+public class fll {}
+
+
+/* Location:           F:\apktool\apktool\com.google.android.apps.plus\classes-dex2jar.jar
+ * Qualified Name:     fll
+ * JD-Core Version:    0.7.0.1
+ */

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.social.oneprofile.about.OneProfileAboutPeopleView android:orientation="vertical" android:id="@id/people" android:paddingBottom="@dimen/profile_about_default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/edit_layout" android:paddingLeft="@dimen/profile_about_default_padding" android:paddingTop="@dimen/profile_about_default_padding" android:paddingRight="@dimen/profile_about_default_padding" android:paddingBottom="@dimen/profile_about_default_half_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_gravity="center_vertical" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/profile_about_people" android:layout_weight="1.0" />
+        <View android:layout_gravity="center_vertical" android:id="@id/edit" android:background="@drawable/profile_edit_button" android:duplicateParentState="true" android:layout_width="26.0dip" android:layout_height="27.0dip" android:contentDescription="@string/profile_about_people_edit" android:layout_marginStart="@dimen/profile_about_default_half_padding" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:paddingLeft="@dimen/profile_about_default_padding" android:paddingRight="@dimen/profile_about_default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/profile_about_default_padding" android:paddingEnd="@dimen/profile_about_default_padding" />
+</com.google.android.libraries.social.oneprofile.about.OneProfileAboutPeopleView>

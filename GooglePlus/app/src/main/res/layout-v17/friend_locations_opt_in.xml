@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/friend_locations_opt_in_background" android:paddingTop="@dimen/friend_locations_normal_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/friend_locations_normal_padding" android:paddingRight="@dimen/friend_locations_normal_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:paddingStart="@dimen/friend_locations_normal_padding" android:paddingEnd="@dimen/friend_locations_normal_padding">
+        <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/opt_in" android:scaleType="fitCenter" android:layout_weight="1.0" />
+        <TextView android:id="@id/title" android:paddingTop="@dimen/friend_locations_large_padding" android:paddingBottom="@dimen/friend_locations_large_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/friend_locations_opt_in_title" style="@style/LocationSharingOptInTitle" />
+        <TextView android:id="@id/body_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/friend_locations_opt_in_text" style="@style/LocationSharingOptInDescription" />
+        <TextView android:textSize="@dimen/text_size_14" android:textColor="@color/text_blue" android:gravity="center" android:id="@id/account" android:paddingTop="@dimen/friend_locations_large_padding" android:paddingBottom="@dimen/friend_locations_large_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/friend_locations_signed_in_as" />
+    </LinearLayout>
+    <View android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="@dimen/friend_locations_quantum_button_border" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/friend_locations_quantum_button_height">
+        <TextView android:id="@id/negative_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/friend_locations_opt_in_negative_button_text" android:layout_weight="1.0" style="@style/LocationSharingQuantumBlackButton" />
+        <View android:background="?android:listDivider" android:layout_width="@dimen/friend_locations_quantum_button_border" android:layout_height="fill_parent" />
+        <TextView android:id="@id/positive_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/friend_locations_opt_in_positive_button_text" android:layout_weight="1.0" style="@style/LocationSharingQuantumBlueButton" />
+    </LinearLayout>
+</LinearLayout>

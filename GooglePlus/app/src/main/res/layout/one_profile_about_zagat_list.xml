@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.social.oneprofile.about.OneProfileAboutZagatListView android:orientation="vertical" android:id="@id/zagat_list_card" android:padding="@dimen/profile_about_default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:ellipsize="end" android:id="@id/title" android:paddingBottom="@dimen/profile_about_default_half_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/profile_about_zagat_list" android:singleLine="true" android:drawableLeft="@drawable/iconic_ic_zagat_color_20" android:drawablePadding="@dimen/profile_about_default_half_padding" android:drawableStart="@drawable/iconic_ic_zagat_color_20" />
+    <include android:id="@id/zagat_scores_data" layout="@layout/profile_item_local_zagat_scores" />
+    <TextView android:id="@id/zagat_review_text" android:paddingTop="@dimen/profile_about_default_half_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/zagat_list_divider" android:visibility="gone" android:layout_marginTop="@dimen/profile_about_default_padding" style="@style/Divider" />
+    <LinearLayout android:orientation="vertical" android:id="@id/zagat_links" android:paddingTop="@dimen/profile_about_default_half_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.google.android.libraries.social.oneprofile.about.OneProfileAboutZagatListView>

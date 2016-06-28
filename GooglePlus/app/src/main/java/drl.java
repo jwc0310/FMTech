@@ -1,0 +1,10 @@
+public final class drl
+{
+  String a;
+}
+
+
+/* Location:           F:\apktool\apktool\com.google.android.apps.plus\classes-dex2jar.jar
+ * Qualified Name:     drl
+ * JD-Core Version:    0.7.0.1
+ */

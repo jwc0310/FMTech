@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.social.acl2.DomainRestrictionToggleView android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/acl_picker_domain_restriction_toggle_text" android:paddingLeft="@dimen/acl_section_padding" android:paddingTop="@dimen/acl_section_padding" android:paddingBottom="@dimen/acl_section_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/acl_section_padding" android:layout_toLeftOf="@id/acl_picker_domain_restriction_toggle_button">
+        <TextView android:textStyle="bold" android:textColor="@color/text_normal" android:id="@id/acl_picker_domain_restriction_toggle_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:drawableLeft="@drawable/quantum_ic_domain_black_18" android:drawablePadding="@dimen/acl_picker_domain_icon_padding" android:drawableStart="@drawable/quantum_ic_domain_black_18" />
+        <TextView android:textColor="@color/text_black_26_percent" android:id="@id/acl_picker_domain_restriction_toggle_description" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <Switch android:enabled="false" android:id="@id/acl_picker_domain_restriction_toggle_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/acl_section_padding" android:minHeight="@dimen/acl_domain_restriction_toggle_view_button_min_height" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    <View android:layout_below="@id/acl_picker_domain_restriction_toggle_text" style="@style/acl_section_divider" />
+</com.google.android.libraries.social.acl2.DomainRestrictionToggleView>

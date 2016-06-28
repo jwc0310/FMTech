@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.social.oneprofile.about.OneProfileAboutReviewSummaryView android:orientation="vertical" android:id="@id/review_summary_card" android:padding="@dimen/profile_about_default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:layout_gravity="center_vertical" android:id="@id/title" android:paddingBottom="@dimen/profile_about_default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/profile_about_review_summary" android:layout_weight="1.0" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include android:id="@id/histogram" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" layout="@layout/one_profile_about_review_summary_histogram" />
+        <LinearLayout android:orientation="vertical" android:id="@id/aggregate" android:paddingLeft="@dimen/profile_about_default_3x_padding" android:paddingRight="@dimen/profile_about_default_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/profile_about_default_3x_padding" android:paddingEnd="@dimen/profile_about_default_padding">
+            <TextView android:textSize="50.0sp" android:textColor="#ffe7721c" android:layout_gravity="center_horizontal" android:id="@id/score" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-16.0dip" android:fontFamily="sans-serif-light" />
+            <com.google.android.libraries.social.oneprofile.about.LocalStarRating android:layout_gravity="center_horizontal" android:id="@id/stars" android:layout_width="wrap_content" android:layout_height="wrap_content" size="12" />
+            <TextView android:textSize="@dimen/text_size_12" android:textColor="@color/text_gray" android:layout_gravity="center_horizontal" android:id="@id/count" android:paddingTop="@dimen/profile_about_default_half_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:id="@id/summary" android:paddingTop="@dimen/profile_about_default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.google.android.libraries.social.oneprofile.about.OneProfileAboutReviewSummaryView>

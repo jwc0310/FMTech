@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <HorizontalScrollView android:id="@id/preset_list_container" android:paddingTop="@dimen/filter_list_item_top_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <LinearLayout android:orientation="horizontal" android:id="@id/preset_list" android:paddingBottom="@dimen/preset_list_item_bottom_margin" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </HorizontalScrollView>
+    <FrameLayout android:id="@id/image_preview_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/looks_image_horz" android:layout_marginTop="@dimen/looks_image_top" android:layout_marginRight="@dimen/looks_image_horz" android:layout_marginBottom="@dimen/looks_image_bottom" android:layout_above="@id/preset_list_container" />
+    <com.google.android.libraries.photoeditor.ui.views.ParameterOverlayView android:id="@id/parameter_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/preset_list_container" />
+    <android.support.v4.view.ViewPager android:id="@id/filter_list_pager" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/looks_image_top" android:layout_marginBottom="@dimen/preset_list_item_size" android:alpha="0.0" />
+</RelativeLayout>

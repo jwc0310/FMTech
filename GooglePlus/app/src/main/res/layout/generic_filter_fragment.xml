@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/main_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/preview_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.google.android.libraries.photoeditor.ui.views.ParameterOverlayView android:id="@id/parameter_overlay" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <FrameLayout android:layout_gravity="bottom" android:id="@id/filter_parameter_panel_container" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <TextView android:layout_gravity="center|top" android:id="@id/parameter_value_action_view" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/parameter_value_action_view_top_offset" android:text="" style="@style/ParameterValueActionView" />
+    <View android:id="@id/overlay_background_view" android:background="@color/help_touch_background_color" android:layout_width="fill_parent" android:layout_height="fill_parent" android:alpha="0.0" />
+    <ProgressBar android:layout_gravity="center" android:id="@id/render_progress" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/filter_preview_top_padding" android:layout_marginBottom="@dimen/filter_preview_bottom_padding" style="?android:attr/progressBarStyleLarge" />
+    <com.google.android.libraries.photoeditor.ui.views.TouchVisualizationView android:id="@id/help_overlay_touch_view" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

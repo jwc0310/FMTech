@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="abc_action_bar_default_height_material">48.0dip</dimen>
+    <dimen name="abc_action_bar_progress_bar_size">32.0dip</dimen>
+    <dimen name="abc_text_size_subtitle_material_toolbar">12.0dip</dimen>
+    <dimen name="abc_text_size_title_material_toolbar">14.0dip</dimen>
+    <dimen name="acl_picker_slidingtab_tab_title_horizontal_padding">8.0dip</dimen>
+    <dimen name="action_bar_menu_item_height">48.0dip</dimen>
+    <dimen name="collexion_learn_more_illustration_padding_left">69.0dip</dimen>
+    <dimen name="collexion_learn_more_illustration_padding_top">0.0dip</dimen>
+    <item type="dimen" name="collexion_learn_more_illustration_page_padding_bottom">@dimen/collexion_learn_more_nav_panel_height</item>
+    <dimen name="contacts_sync_preference_padding_bottom">24.0dip</dimen>
+    <dimen name="filter_preview_bottom_padding">50.0dip</dimen>
+    <dimen name="filter_preview_bottom_padding_straighten">41.0dip</dimen>
+    <dimen name="filter_preview_top_padding">44.0dip</dimen>
+    <dimen name="help_gesture_crop_horizontal_drag">45.0dip</dimen>
+    <dimen name="help_gesture_crop_vertical_drag">8.0dip</dimen>
+    <dimen name="help_gesture_horizontal_touch_margin">80.0dip</dimen>
+    <dimen name="help_gesture_vertical_touch_margin">60.0dip</dimen>
+    <dimen name="host_action_bar_height">40.0dip</dimen>
+    <dimen name="launchscreens_product_logo_bottom">48.0dip</dimen>
+    <dimen name="max_album_cover_height">140.0dip</dimen>
+    <dimen name="mini_share_min_exposure">220.0dip</dimen>
+    <dimen name="parameter_indicator_value_font_size">24.0dip</dimen>
+    <dimen name="parameter_panel_item_bottom_padding">5.5dip</dimen>
+    <dimen name="parameter_readout_top_margin">44.0dip</dimen>
+    <dimen name="warm_welcome_layout_padding">16.0dip</dimen>
+    <dimen name="collexion_learn_more_illustration_max_width">202.0dip</dimen>
+    <dimen name="collexion_learn_more_or_label_margin">76.0dip</dimen>
+    <dimen name="contacts_sync_title_padding_bottom">16.0dip</dimen>
+    <dimen name="contacts_sync_title_padding_left">56.0dip</dimen>
+    <dimen name="parameter_panel_title_bottom_padding">13.5dip</dimen>
+    <dimen name="parameter_panel_value_bottom_padding">6.0dip</dimen>
+</resources>

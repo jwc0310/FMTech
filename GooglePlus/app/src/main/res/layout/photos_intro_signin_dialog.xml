@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:orientation="vertical" android:paddingBottom="@dimen/photos_intro_button_layout_height" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/photos_intro_header" />
+            <include layout="@layout/photos_intro_signin_text" />
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:orientation="horizontal" android:id="@id/photos_intro_buttons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textColor="@color/text_black_54_percent" android:id="@id/promo_signin_not_now_btn" android:background="@color/text_white" android:layout_width="0.0dip" android:layout_height="@dimen/photos_intro_button_layout_height" android:text="@string/promo_no_thanks_btn" android:layout_weight="1.0" style="@style/quantum_text_button_black" />
+        <View android:background="@color/host_background" android:layout_width="1.0dip" android:layout_height="fill_parent" />
+        <Button android:textColor="@color/text_blue" android:id="@id/promo_signin_main_btn" android:background="@color/text_white" android:layout_width="0.0dip" android:layout_height="@dimen/photos_intro_button_layout_height" android:text="@string/promo_signin_btn" android:layout_weight="1.0" style="@style/quantum_text_button_black" />
+    </LinearLayout>
+    <View android:background="@color/promo_divider_color" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/photos_intro_buttons" />
+</RelativeLayout>

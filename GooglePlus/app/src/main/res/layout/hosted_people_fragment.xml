@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.google.android.libraries.social.ui.views.RecyclingViewGroup android:orientation="vertical" android:id="@id/people_recycling_view_group" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@null" android:dividerHeight="0.0dip" />
+    <include layout="@layout/empty_layout" />
+</FrameLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <TextView android:gravity="center" android:id="@id/header_text" android:background="@android:color/white" android:padding="@dimen/friend_locations_normal_padding" android:layout_width="fill_parent" android:layout_height="@dimen/friend_locations_notification_header_height" style="@style/LocationSharingNotificationHeader" />
+        <ViewFlipper android:id="@id/map_flipper" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <FrameLayout android:background="@color/friend_locations_location_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/il_pinpoint" android:scaleType="fitCenter" />
+                <com.google.android.libraries.social.location.MarkerIconView android:layout_gravity="center" android:id="@id/pinpoint_marker_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/friend_locations_marker_settings_y_offset" />
+            </FrameLayout>
+            <FrameLayout android:background="@color/friend_locations_location_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <ImageView android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/il_city" android:scaleType="fitCenter" />
+                <com.google.android.libraries.social.location.MarkerIconView android:layout_gravity="center" android:id="@id/city_marker_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/friend_locations_marker_settings_y_offset" />
+            </FrameLayout>
+            <View android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </ViewFlipper>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <FrameLayout android:background="@color/friend_locations_location_background" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ViewFlipper android:id="@id/location_flipper" android:paddingLeft="@dimen/friend_locations_normal_padding" android:layout_width="fill_parent" android:layout_height="@dimen/friend_locations_display_name_height" android:paddingStart="@dimen/friend_locations_normal_padding">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_location_red_12" />
+                    <TextView android:id="@id/target_location" android:paddingLeft="@dimen/friend_locations_small_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/friend_locations_small_padding" style="@style/LocationSharingDisplayName" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_location_red_12" android:scaleType="fitCenter" />
+                    <TextView android:id="@id/owner_location" android:paddingLeft="@dimen/friend_locations_small_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="@dimen/friend_locations_small_padding" style="@style/LocationSharingDisplayName" />
+                </LinearLayout>
+            </ViewFlipper>
+        </FrameLayout>
+        <FrameLayout android:paddingTop="@dimen/friend_locations_small_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <include android:id="@id/radio_group" android:visibility="invisible" layout="@layout/friend_locations_radio_group" />
+        </FrameLayout>
+        <View android:background="?android:listDivider" android:layout_width="fill_parent" android:layout_height="@dimen/friend_locations_quantum_button_border" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/friend_locations_quantum_button_height">
+            <Button android:id="@id/negative_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/friend_locations_skip" android:layout_weight="1.0" style="@style/LocationSharingQuantumBlackButton" />
+            <View android:id="@id/button_divider" android:background="?android:listDivider" android:visibility="gone" android:layout_width="@dimen/friend_locations_quantum_button_border" android:layout_height="fill_parent" />
+            <Button android:id="@id/positive_button" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/friend_locations_onboarding_button_text" android:layout_weight="1.0" style="@style/LocationSharingQuantumBlueButton" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

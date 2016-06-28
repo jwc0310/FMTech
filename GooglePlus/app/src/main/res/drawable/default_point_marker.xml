@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_selected="true">
+        <shape android:shape="oval">
+            <solid android:color="#cc4285f4" />
+            <stroke android:width="@dimen/default_point_marker_stroke_width" android:color="#cc404040" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#a6ffffff" />
+            <stroke android:width="@dimen/default_point_marker_stroke_width" android:color="#a6404040" />
+        </shape>
+    </item>
+</selector>

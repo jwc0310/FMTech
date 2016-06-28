@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/acl_list_background" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:slidingtab="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/acl_picker_domain_restriction_toggle_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" layout="@layout/acl_picker_domain_restriction_toggle_view" />
+    <com.google.android.libraries.social.ui.views.slidingtab.SlidingTabLayout android:id="@id/acl_picker_shareousel_sliding_tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/acl_picker_domain_restriction_toggle_view" slidingtab:selectedTabIndicator="@color/quantum_googblue" slidingtab:selectedTabIndicatorThickness="@dimen/acl_picker_slidingtab_tab_indicator_thickness" slidingtab:tabTitleColorStateList="@color/acl_picker_sliding_tabs_title_color" slidingtab:tabTitleHorizontalPadding="@dimen/acl_picker_slidingtab_tab_title_horizontal_padding" slidingtab:tabTitleOffset="@dimen/acl_picker_slidingtab_tab_title_offset" slidingtab:tabTitleTextStyle="@style/TextStyle.Acl2.SlidingTab.TitleText" />
+    <com.google.android.libraries.social.acl2.Shareousel android:id="@id/acl_picker_shareousel" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/acl_picker_shareousel_sliding_tabs" />
+    <View style="@style/acl_section_divider" />
+</RelativeLayout>

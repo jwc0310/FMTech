@@ -1,0 +1,10 @@
+abstract interface gdm<E>
+{
+  public abstract void a(String paramString, E paramE);
+}
+
+
+/* Location:           F:\apktool\apktool\com.google.android.apps.plus\classes-dex2jar.jar
+ * Qualified Name:     gdm
+ * JD-Core Version:    0.7.0.1
+ */

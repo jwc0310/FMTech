@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="240.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_size_24" android:textColor="@color/text_blue" android:ellipsize="end" android:gravity="start" android:id="@id/hint_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:text="@string/zagat_explanation_title" android:singleLine="true" />
+    <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_white" android:gravity="start" android:id="@id/hint_header" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="30.0dip" android:text="@string/zagat_explanation_description" />
+    <TableLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip" android:stretchColumns="1" android:shrinkColumns="1">
+        <TableRow android:id="@id/hint_table_row1">
+            <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/text_white" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="32.0dip" android:text="26-30" />
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_white" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zagat_explanation_score_description_26_30" />
+        </TableRow>
+        <TableRow android:id="@id/hint_table_row2">
+            <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/text_white" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="32.0dip" android:text="21-25" />
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_white" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zagat_explanation_score_description_21_25" />
+        </TableRow>
+        <TableRow android:id="@id/hint_table_row3">
+            <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/text_white" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="32.0dip" android:text="16-20" />
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_white" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zagat_explanation_score_description_16_20" />
+        </TableRow>
+        <TableRow android:id="@id/hint_table_row4">
+            <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/text_white" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="32.0dip" android:text="11-15" />
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_white" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zagat_explanation_score_description_11_15" />
+        </TableRow>
+        <TableRow android:id="@id/hint_table_row5">
+            <TextView android:textSize="@dimen/text_size_16" android:textStyle="bold" android:textColor="@color/text_white" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="32.0dip" android:text="0-10" />
+            <TextView android:textSize="@dimen/text_size_16" android:textColor="@color/text_white" android:gravity="start" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/zagat_explanation_score_description_0_10" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

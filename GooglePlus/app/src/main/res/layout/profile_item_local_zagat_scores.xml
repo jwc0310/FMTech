@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="@dimen/profile_about_default_half_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textStyle="bold" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_about_zagat_scores" android:singleLine="true" />
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginTop="-10.0dip">
+        <LinearLayout android:orientation="horizontal" android:id="@id/zagat_scores" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        <FrameLayout android:id="@id/zagat_explanation" android:background="@drawable/list_selector" android:layout_width="40.0dip" android:layout_height="40.0dip">
+            <TextView android:textStyle="bold" android:textColor="@android:color/white" android:gravity="center" android:layout_gravity="center" android:background="@drawable/grey_circle" android:layout_width="20.0dip" android:layout_height="20.0dip" android:text=" ? " style="@style/ListItemAction" />
+        </FrameLayout>
+    </LinearLayout>
+</LinearLayout>

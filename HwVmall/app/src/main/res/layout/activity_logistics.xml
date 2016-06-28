@@ -35,7 +35,7 @@
             <RelativeLayout
                 android:id="@id/logistics_none_info_layout"
                 android:layout_width="fill_parent"
-                android:layout_height="200dp">
+                android:layout_height="wrap_content">
 
                 <include
                     android:id="@id/view_logistic_item"
@@ -48,14 +48,15 @@
             <ListView
                 android:id="@id/logistics_listview"
                 android:layout_width="fill_parent"
-                android:layout_height="60dp"
+                android:layout_height="wrap_content"
                 android:layout_alignParentBottom="true"
                 android:layout_below="@id/logistics_none_info_layout"
                 android:cacheColorHint="@color/transparent"
                 android:divider="@color/transparent"
                 android:listSelector="@color/transparent"
                 android:scrollbars="none"
-                android:visibility="visible" />
+                android:visibility="gone" />
+
         </RelativeLayout>
     </FrameLayout>
 

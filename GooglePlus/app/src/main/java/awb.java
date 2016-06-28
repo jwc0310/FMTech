@@ -1,0 +1,11 @@
+final class awb
+  implements aip
+{
+  awb(avz paramavz) {}
+}
+
+
+/* Location:           F:\apktool\apktool\com.google.android.apps.plus\classes-dex2jar.jar
+ * Qualified Name:     awb
+ * JD-Core Version:    0.7.0.1
+ */

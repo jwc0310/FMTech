@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/notifications_menu_height"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_width="@dimen/notifications_menu_height" android:layout_height="@dimen/notifications_menu_height">
+        <ImageView android:layout_gravity="center" android:id="@id/header_arrow_down" android:layout_width="@dimen/notifications_menu_icon_size" android:layout_height="@dimen/notifications_menu_icon_size" android:src="@drawable/quantum_ic_arrow_drop_down_grey600_24" android:importantForAccessibility="no" />
+        <ImageView android:layout_gravity="center" android:id="@id/check_mark" android:layout_width="@dimen/notifications_menu_icon_size" android:layout_height="@dimen/notifications_menu_icon_size" android:src="@drawable/quantum_ic_check_googblue_24" android:importantForAccessibility="no" />
+    </FrameLayout>
+    <TextView android:textSize="@dimen/notification_text_font_size" android:textColor="@color/text_normal" android:gravity="center_vertical" android:id="@id/heading" android:visibility="visible" android:layout_width="0.0dip" android:layout_height="fill_parent" android:maxLines="1" android:layout_weight="1.0" />
+    <FrameLayout android:id="@id/dismiss_all_button" android:layout_width="@dimen/notifications_menu_height" android:layout_height="@dimen/notifications_menu_height">
+        <ImageView android:layout_gravity="center" android:layout_width="@dimen/notifications_menu_icon_size" android:layout_height="@dimen/notifications_menu_icon_size" android:src="@drawable/quantum_ic_clear_all_grey600_24" android:contentDescription="@string/notifications_dismiss_all" />
+    </FrameLayout>
+</LinearLayout>

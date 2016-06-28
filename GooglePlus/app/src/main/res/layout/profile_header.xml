@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/quantum_white_100" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:background="@null" android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/space_header" />
+    <Button android:textSize="@dimen/space_header_follow_button_text_size" android:ellipsize="end" android:layout_gravity="center_horizontal" android:id="@id/profile_follow_button" android:paddingLeft="@dimen/profile_follow_button_padding_24" android:paddingTop="0.0dip" android:paddingRight="@dimen/profile_follow_button_padding_24" android:paddingBottom="0.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="@dimen/profile_follow_button_height_32" android:layout_marginBottom="@dimen/profile_follow_button_margin_24" android:maxWidth="@dimen/profile_follow_button_max_width" android:singleLine="true" android:textAllCaps="true" />
+</LinearLayout>

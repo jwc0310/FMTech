@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/map_container" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include layout="@layout/empty_layout" />
+    <RelativeLayout android:id="@id/list_parent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true">
+        <com.google.android.libraries.social.ui.views.DeprecatedExpandingScrollView android:id="@id/list_expander" android:layout_width="wrap_content" android:layout_height="wrap_content" app:expandingScrollViewMinExposure="@dimen/friend_locations_button_bar_exposure">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <FrameLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="@dimen/friend_locations_button_bar_exposure">
+                    <include layout="@layout/friend_locations_button_bar" />
+                </FrameLayout>
+                <com.google.android.apps.plus.views.MaxWidthFrameLayout android:id="@id/list_fragment_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="@dimen/album_stream_one_up_max_width" />
+            </LinearLayout>
+        </com.google.android.libraries.social.ui.views.DeprecatedExpandingScrollView>
+    </RelativeLayout>
+    <com.google.android.libraries.social.location.FriendLocationsTouchHandler android:id="@id/touch_handler" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <include android:id="@id/banner" android:visibility="gone" layout="@layout/friend_locations_tooltip" />
+    <include android:id="@id/pre_work_overlay" android:visibility="gone" layout="@layout/friend_locations_pre_work_overlay" />
+</RelativeLayout>

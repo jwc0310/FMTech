@@ -1,0 +1,11 @@
+import android.os.Parcelable.Creator;
+
+final class gvr
+  implements Parcelable.Creator<gvq>
+{}
+
+
+/* Location:           F:\apktool\apktool\com.google.android.apps.plus\classes-dex2jar.jar
+ * Qualified Name:     gvr
+ * JD-Core Version:    0.7.0.1
+ */

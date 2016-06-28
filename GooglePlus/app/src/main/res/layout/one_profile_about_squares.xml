@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.social.squares.profile.about.OneProfileAboutSquaresView android:orientation="vertical" android:id="@id/squares" android:background="@drawable/card_ltgreenborder" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/edit_layout" android:paddingLeft="@dimen/profile_about_default_padding" android:paddingTop="@dimen/profile_about_default_padding" android:paddingRight="@dimen/profile_about_default_padding" android:paddingBottom="@dimen/profile_about_default_half_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:layout_gravity="start" android:id="@id/title" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/profile_about_squares" android:layout_weight="1.0" />
+        <View android:layout_gravity="center_vertical" android:id="@id/edit" android:background="@drawable/profile_edit_button" android:duplicateParentState="true" android:layout_width="26.0dip" android:layout_height="27.0dip" android:contentDescription="@string/profile_about_squares_edit" />
+    </LinearLayout>
+    <TextView android:id="@id/missing_content" android:paddingLeft="@dimen/profile_about_default_padding" android:paddingRight="@dimen/profile_about_default_padding" android:paddingBottom="@dimen/profile_about_default_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/profile_squares_existing_user_promo_text" />
+    <LinearLayout android:orientation="vertical" android:id="@id/content" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.google.android.libraries.social.squares.profile.about.OneProfileAboutSquaresView>

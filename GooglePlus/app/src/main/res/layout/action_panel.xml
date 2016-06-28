@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/cancel_button" android:background="?android:selectableItemBackground" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_action_cancel" android:contentDescription="@string/photo_editor_cancel" />
+    <Space android:id="@id/help_button_space" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageView android:id="@id/help_button" android:background="?android:selectableItemBackground" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_action_help_toggle" android:contentDescription="@string/photo_editor_help" />
+    <Space android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageView android:id="@id/compare_button" android:background="?android:selectableItemBackground" android:paddingLeft="12.0dip" android:paddingRight="12.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_action_compare" android:contentDescription="@string/photo_editor_compare" />
+    <Space android:id="@id/compare_button_space" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <ImageView android:id="@id/apply_button" android:background="?android:selectableItemBackground" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/ic_action_accept" android:contentDescription="@string/photo_editor_apply" />
+</LinearLayout>

@@ -1,0 +1,16 @@
+final class hrj
+  implements hrf
+{
+  hrj(hri paramhri, hre paramhre) {}
+  
+  public final void aL_()
+  {
+    this.a.notifyDataSetChanged();
+  }
+}
+
+
+/* Location:           F:\apktool\apktool\com.google.android.apps.plus\classes-dex2jar.jar
+ * Qualified Name:     hrj
+ * JD-Core Version:    0.7.0.1
+ */

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.libraries.social.oneprofile.about.OneProfileAboutHoursView android:orientation="vertical" android:id="@id/hours" android:paddingBottom="@dimen/profile_about_default_half_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/title" android:paddingLeft="@dimen/profile_about_default_padding" android:paddingTop="@dimen/profile_about_default_padding" android:paddingRight="@dimen/profile_about_default_padding" android:paddingBottom="@dimen/profile_about_default_half_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/profile_about_hours" android:paddingStart="@dimen/profile_about_default_padding" android:paddingEnd="@dimen/profile_about_default_padding" />
+    <LinearLayout android:orientation="vertical" android:id="@id/opening_hours" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</com.google.android.libraries.social.oneprofile.about.OneProfileAboutHoursView>

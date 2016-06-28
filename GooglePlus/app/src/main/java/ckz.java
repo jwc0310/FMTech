@@ -1,0 +1,12 @@
+public abstract interface ckz
+{
+  public abstract void a(String paramString1, String paramString2, jjd paramjjd);
+  
+  public abstract void a(String paramString, jgs paramjgs);
+}
+
+
+/* Location:           F:\apktool\apktool\com.google.android.apps.plus\classes-dex2jar.jar
+ * Qualified Name:     ckz
+ * JD-Core Version:    0.7.0.1
+ */

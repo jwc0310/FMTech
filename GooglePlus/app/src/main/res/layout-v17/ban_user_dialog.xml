@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/also_remove_section" android:background="?buttonSelectableBackground" android:paddingLeft="20.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:paddingStart="20.0dip" android:paddingEnd="10.0dip">
+        <TextView android:textAppearance="?android:textAppearance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ban_user_also_remove_post" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <CheckBox android:id="@id/also_remove_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View style="@style/Divider" />
+    <RelativeLayout android:id="@id/also_report_section" android:background="?buttonSelectableBackground" android:paddingLeft="20.0dip" android:paddingRight="10.0dip" android:layout_width="fill_parent" android:layout_height="48.0dip" android:paddingStart="20.0dip" android:paddingEnd="10.0dip">
+        <TextView android:textAppearance="?android:textAppearance" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ban_user_also_report_spam" android:layout_alignParentLeft="true" android:layout_centerVertical="true" android:layout_alignParentStart="true" />
+        <CheckBox android:id="@id/also_report_checkbox" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

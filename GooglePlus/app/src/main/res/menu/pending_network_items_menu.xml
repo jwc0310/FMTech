@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/quantum_ic_refresh_white_24" android:id="@id/item_refresh" android:title="@string/pending_items_retry_text" />
+    <item android:id="@id/feedback" android:title="@string/menu_feedback" />
+    <item android:id="@id/help" android:title="@string/menu_help" />
+</menu>

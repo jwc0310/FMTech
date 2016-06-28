@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/button_bar" android:background="@drawable/ov_bar_white_40" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageButton android:id="@id/previous_person" android:src="@drawable/ic_chevron_start_grey_20" android:contentDescription="@string/friend_locations_previous_person" style="@style/FriendLocationsButton" />
+    <View style="@style/FriendLocationsDivider" />
+    <ImageButton android:id="@id/list_all_people" android:src="@drawable/ic_person_list_darkgrey_20" android:contentDescription="@string/friend_locations_list_all_people" style="@style/FriendLocationsButton" />
+    <View style="@style/FriendLocationsDivider" />
+    <ImageButton android:id="@id/next_person" android:src="@drawable/ic_chevron_end_grey_20" android:contentDescription="@string/friend_locations_next_person" style="@style/FriendLocationsButton" />
+</LinearLayout>
