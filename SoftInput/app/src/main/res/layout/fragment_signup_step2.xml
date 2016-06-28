@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.fmtech.softinput.FMLinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@id/singup_navigator_step2"
+        android:layout_width="match_parent"
+        android:layout_height="48dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@mipmap/progress_bar_registration_02" />
+
+        <TextView
+            android:id="@id/tv_signup_step2_navigator_title"
+            style="@style/CommFontSize"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="70dp"
+            android:text="@string/registration_form"
+            android:textColor="@color/play_white" />
+    </FrameLayout>
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mpfa_white"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/MPFATitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:text="@string/registration_form"
+                    android:textColor="@color/mpfa_title_color_orange"
+                    android:textStyle="bold" />
+
+                <TextView
+                    style="@style/CommFontSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/registration_form_desc" />
+
+                <TextView
+                    style="@style/CommFontSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/mandatory_field"
+                    android:textColor="@color/mpfa_title_color_orange" />
+
+                <EditText
+                    android:id="@id/et_signup_step2_surname_en"
+                    style="@style/CommonEditText"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/surname_en"
+                    android:maxLength="20" />
+
+                <TextView
+                    android:id="@id/tv_surname_en_error_info"
+                    style="@style/CommFontSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/please_input_surname_en"
+                    android:textColor="@color/mpfa_error"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@id/et_signup_step2_other_name_en"
+                    style="@style/CommonEditText"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/otaher_name_en"
+                    android:maxLength="120" />
+
+                <TextView
+                    android:id="@id/tv_other_name_en_error_info"
+                    style="@style/CommFontSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:text="@string/please_input_othername_en"
+                    android:textColor="@color/mpfa_error"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@id/et_signup_step2_surname_cn"
+                    style="@style/CommonEditText"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/surname_cn"
+                    android:maxLength="30" />
+
+                <EditText
+                    android:id="@id/et_signup_step2_other_name_cn"
+                    style="@style/CommonEditText"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/other_name_cn"
+                    android:maxLength="30" />
+
+                <EditText
+                    android:id="@id/et_signup_step2_other_hkid_card_num"
+                    style="@style/CommonEditText"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/hkid_card_num"
+                    android:maxLength="9" />
+
+                <TextView
+                    android:id="@id/tv_hkid_error_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Error info"
+                    android:textColor="@color/mpfa_error"
+                    android:visibility="gone" />
+
+                <TextView
+                    style="@style/CommFontSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/hkid_input_eg" />
+
+                <EditText
+                    android:id="@id/et_signup_step2_email_address"
+                    style="@style/CommonEditText"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/email_address"
+                    android:maxLength="100" />
+
+                <TextView
+                    android:id="@id/tv_email_addr_error_info"
+                    style="@style/CommFontSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/mpfa_error"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@id/et_signup_step2_re_email_address"
+                    style="@style/CommonEditText"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/re_email_address"
+                    android:maxLength="100" />
+
+                <TextView
+                    android:id="@id/tv_re_email_addr_error_info"
+                    style="@style/CommFontSize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:textColor="@color/mpfa_error"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@id/et_signup_step2_contact_num"
+                    style="@style/CommonEditText"
+                    android:layout_marginTop="16dp"
+                    android:hint="@string/contact_num"
+                    android:maxLength="30" />
+
+                <TextView
+                    style="@style/CommFontSize"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/phonenum_out_hk_eg" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="32dp"
+                    android:layout_marginTop="48dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <Button
+                        android:id="@id/btn_signup_step2_reset"
+                        style="@style/Style_MPFAButton"
+                        android:layout_width="0dp"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/btn_background_grey"
+                        android:text="@string/reset" />
+
+                    <Button
+                        android:id="@id/btn_signup_step2_submit"
+                        style="@style/Style_MPFAButton"
+                        android:layout_width="0dp"
+                        android:layout_marginLeft="13dp"
+                        android:layout_weight="1.0"
+                        android:text="@string/submit" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+</com.fmtech.softinput.FMLinearLayout>

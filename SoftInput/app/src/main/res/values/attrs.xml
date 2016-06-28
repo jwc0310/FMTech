@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="NavigationDot">
+        <attr name="navigationDotSelected" format="reference"/>
+        <attr name="navigationDotNormal" format="reference"/>
+        <attr name="navigationDotCount" format="integer"/>
+        <attr name="navigationDotPadding" format="dimension"/>
+    </declare-styleable>
+    <declare-styleable name="FMScrimInsetsView">
+        <attr name="insetForeground_FM" format="reference|color" />
+    </declare-styleable>
+
+    <declare-styleable name="DrawShadowFrameLayout">
+        <attr name="shadowDrawable" format="reference" />
+        <attr name="shadowVisible" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MtelSelectTextView">
+        <attr name="selectedFontIcon" format="string" />
+        <attr name="unSelectedFontIcon" format="string" />
+    </declare-styleable>
+    
+    <declare-styleable name="MtelIndicator">
+        <attr name="indicatorDotCount" format="integer"/>
+        <attr name="indicatorColor" format="reference|color"/>
+        <attr name="indicatorSize" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="MtelDrawerLayout">
+        <attr name="isPadMode" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MtelFontSize">
+        <attr name="mtelFontSize" format="dimension"></attr>
+        <attr name="mtelDateTimeFontSize" format="dimension"></attr>
+        <attr name="mtelButtonFontSize" format="dimension"></attr>
+        <attr name="mtelHeaderFontSize" format="dimension"></attr>
+        <attr name="mtelTitleFontSize" format="dimension"></attr>
+        <attr name="mtelDrawerFontSize" format="dimension"></attr>
+        <attr name="mtelDrawerFontSizePad" format="dimension"></attr>
+        <attr name="mtelIconFontSize" format="dimension"></attr>
+        <attr name="mtelIconFontSizePad" format="dimension"></attr>
+        <attr name="mtelHomeBtnFontSize" format="dimension"></attr>
+    </declare-styleable>
+</resources>

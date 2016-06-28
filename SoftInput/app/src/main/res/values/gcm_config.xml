@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
+    <!--<string name="gcm_server_api_key">AIzaSyAo9kKfxyKEkd8Z460XPmvVXOdQMn1jxuA</string>-->
+    <string name="gcm_server_api_key">AIzaSyBsh1KETjDeKxf1Q-nk1kQ0yjblJxM_Mw0</string>
+    <!--<string name="gcm_senderId">1098126989640</string>-->
+    <string name="gcm_senderId">557649957929</string>
+</resources>
