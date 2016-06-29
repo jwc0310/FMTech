@@ -69,9 +69,19 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
                     mPreContainerVisibleHeight = containerVisibleFrameHeight;
                 }
 
+                int[] location1 = new int[2];
+                mContainer.getLocationOnScreen(location1);
+                System.out.println("-------mContainer x:"+location1[0] +" y:"+location1[1]);
+                mScrollView.getLocationOnScreen(location1);
+                System.out.println("-------mScrollView x:"+location1[0] +" y:"+location1[1]);
+
+                System.out.println("-------mContainer scrollY:"+mContainer.getScrollY());
+                System.out.println("-------mScrollView scrollY:"+mScrollView.getScrollY());
+
                 System.out.println("-------mContainer Height2: " + mContainer.getHeight());
                 System.out.println("-------mTitleBar Height: " + mTitleBar.getHeight());
                 System.out.println("-------mScrollViewHeight2: " + mScrollView.getHeight());
+                System.out.println("-------containerVisibleHeight: " + getContainerVisibleHeight());
 //                System.out.println("-------mScrollView Content Height2: " + mScrollView.getChildAt(0).getHeight());
             }
         };
