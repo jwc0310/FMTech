@@ -3,6 +3,7 @@ package com.fmtech.softinput;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
+import android.widget.RelativeLayout;
 
 /**
  * ==================================================================
@@ -17,7 +18,7 @@ import android.widget.LinearLayout;
  * ==================================================================
  */
 
-public class FMLinearLayout extends LinearLayout{
+public class FMLinearLayout extends RelativeLayout{
     private OnSizeChangedListener mSizeChangedListener;
 
     public FMLinearLayout(Context context) {

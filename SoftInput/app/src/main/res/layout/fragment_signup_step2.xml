@@ -4,7 +4,10 @@
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true">
 
     <FrameLayout
         android:id="@id/singup_navigator_step2"
@@ -31,6 +34,7 @@
         android:id="@+id/scrollview"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_below="@id/singup_navigator_step2"
         android:background="@color/mpfa_white"
         android:scrollbars="none">
 
@@ -219,7 +223,8 @@
             <View
                 android:id="@+id/paddingView"
                 android:layout_width="match_parent"
-                android:layout_height="0dp"/>
+                android:layout_height="0dp"
+                android:background="@color/mpfa_title_color_orange"/>
 
         </LinearLayout>
 
