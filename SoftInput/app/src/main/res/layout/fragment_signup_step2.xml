@@ -7,9 +7,9 @@
     android:focusable="true"
     android:focusableInTouchMode="true"
     android:orientation="vertical"
-    android:fitsSystemWindows="true"
-    android:background="@color/mpfa_title_color_orange">
+    android:fitsSystemWindows="true">
 
+    <!--android:background="@color/mpfa_title_color_orange"-->
     <FrameLayout
         android:id="@id/singup_navigator_step2"
         android:layout_width="match_parent"
@@ -216,6 +216,7 @@
                         android:layout_width="0dp"
                         android:layout_marginLeft="13dp"
                         android:layout_weight="1.0"
+                        android:onClick="submit"
                         android:text="@string/submit" />
 
                 </LinearLayout>
