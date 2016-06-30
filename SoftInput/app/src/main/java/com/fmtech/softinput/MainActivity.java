@@ -51,8 +51,10 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
                     System.out.println("-------mTitleBar Height: " + mTitleBar.getHeight());
                     System.out.println("-------heightDiff: " + heightDiff);
                     System.out.println("-------mScrollViewHeight: " + mScrollView.getHeight());
-
-                    mContainer.getViewTreeObserver().removeOnGlobalLayoutListener(mOnGlobalLayoutChangeListener);
+                    System.out.println("-------containerVisibleHeight: " + getContainerVisibleHeight());
+                    System.out.println("--------------------------------------------------");
+//                    mContainer.getViewTreeObserver().removeOnGlobalLayoutListener(mOnGlobalLayoutChangeListener);
+//                    mContainer.requestLayout();
                     if (heightDiff > screenHeight / 3) {
                         mScrollView.getLayoutParams().height = mContainer.getHeight() - titleBarHeight - heightDiff;
                         mScrollView.requestLayout();//very important
@@ -64,33 +66,51 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
 //                        mPaddingView.getLayoutParams().height = 0;
 //                        mPaddingView.requestLayout();//very important
                     }
-                    mContainer.getViewTreeObserver().addOnGlobalLayoutListener(mOnGlobalLayoutChangeListener);
+//                    mContainer.getViewTreeObserver().addOnGlobalLayoutListener(mOnGlobalLayoutChangeListener);
 
                     mPreContainerVisibleHeight = containerVisibleFrameHeight;
+//                    mContainer.getRootView().requestLayout();
+                    printInfo2();
                 }
 
-                int[] location1 = new int[2];
-                mContainer.getLocationOnScreen(location1);
-                System.out.println("-------mContainer x:"+location1[0] +" y:"+location1[1]);
-                mScrollView.getLocationOnScreen(location1);
-                System.out.println("-------mScrollView x:"+location1[0] +" y:"+location1[1]);
-
-                System.out.println("-------mContainer scrollY:"+mContainer.getScrollY());
-                System.out.println("-------mScrollView scrollY:"+mScrollView.getScrollY());
-
-                System.out.println("-------mContainer Height2: " + mContainer.getHeight());
-                System.out.println("-------mTitleBar Height: " + mTitleBar.getHeight());
-                System.out.println("-------mScrollViewHeight2: " + mScrollView.getHeight());
-                System.out.println("-------containerVisibleHeight: " + getContainerVisibleHeight());
-//                System.out.println("-------mScrollView Content Height2: " + mScrollView.getChildAt(0).getHeight());
+//                printInfo2();
             }
         };
         mContainer.getViewTreeObserver().addOnGlobalLayoutListener(mOnGlobalLayoutChangeListener);
     }
 
+    private void printInfo2(){
+        int[] location1 = new int[2];
+        mContainer.getLocationOnScreen(location1);
+        System.out.println("-------mContainer screenX:"+location1[0] +" screenY:"+location1[1]);
+        mContainer.getLocationInWindow(location1);
+        System.out.println("-------mContainer windowX:"+location1[0] +" windowY:"+location1[1]);
+        mScrollView.getLocationOnScreen(location1);
+        System.out.println("-------mScrollView screenX:"+location1[0] +" screenY:"+location1[1]);
+        mScrollView.getLocationInWindow(location1);
+        System.out.println("-------mScrollView windowX:"+location1[0] +" windowY:"+location1[1]);
+//                System.out.println("-------mContainer getTranslationY:"+mContainer.getTranslationY());
+//                System.out.println("-------mScrollView getTranslationY:"+mScrollView.getTranslationY());
+//                System.out.println("-------mContainer scrollY:"+mContainer.getScrollY());
+//                System.out.println("-------mScrollView scrollY:"+mScrollView.getScrollY());
+
+        System.out.println("-------mContainer Height2: " + mContainer.getHeight());
+        System.out.println("-------mTitleBar Height2: " + mTitleBar.getHeight());
+        System.out.println("-------mScrollViewHeight2: " + mScrollView.getHeight());
+        System.out.println("-------containerVisibleHeight2: " + getContainerVisibleHeight());
+        System.out.println("-------scrollViewVisibleHeight2: " + getScrollViewVisibleHeight());
+//                System.out.println("-------mScrollView Content Height2: " + mScrollView.getChildAt(0).getHeight());
+    }
+
     private int getContainerVisibleHeight() {
         Rect r = new Rect();
         mContainer.getWindowVisibleDisplayFrame(r);
+        return (r.bottom - r.top);
+    }
+
+    private int getScrollViewVisibleHeight() {
+        Rect r = new Rect();
+        mScrollView.getWindowVisibleDisplayFrame(r);
         return (r.bottom - r.top);
     }
 
