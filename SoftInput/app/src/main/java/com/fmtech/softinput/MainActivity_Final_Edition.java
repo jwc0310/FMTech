@@ -22,7 +22,6 @@ public class MainActivity_Final_Edition extends AppCompatActivity implements FML
     private ViewTreeObserver.OnPreDrawListener mOnPreDrawListener;
 
     private View mPaddingView;
-    //    private boolean mIsSoftKeyboardShowing = false;
     private int mPreContainerVisibleHeight = 0;
     private int mPreScreenY = 0;
 
@@ -78,13 +77,14 @@ public class MainActivity_Final_Edition extends AppCompatActivity implements FML
             public boolean onPreDraw() {
                 int[] location1 = new int[2];
                 mContainer.getLocationOnScreen(location1);
+                RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) mTitleBar.getLayoutParams();
                 if (location1[1] < 0) {
-                    RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) mTitleBar.getLayoutParams();
-                    layoutParams.setMargins(0, Math.abs(location1[1]), 0, 0);
+//                    layoutParams.setMargins(0, Math.abs(location1[1]), 0, 0);
+                    layoutParams.topMargin = Math.abs(location1[1]);
                     mTitleBar.setLayoutParams(layoutParams);
                 } else {
-                    RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) mTitleBar.getLayoutParams();
-                    layoutParams.setMargins(0, 0, 0, 0);
+//                    layoutParams.setMargins(0, 0, 0, 0);
+                    layoutParams.topMargin = 0;
                     mTitleBar.setLayoutParams(layoutParams);
                 }
 
