@@ -101,7 +101,8 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
             public boolean onPreDraw() {
                 int[] location1 = new int[2];
                 mContainer.getLocationOnScreen(location1);
-                System.out.println("-------onPreDraw---mContainer screenX:" + location1[0] + " screenY:" + location1[1]);
+//                System.out.println("-------onPreDraw---mContainer screenX:" + location1[0] + " screenY:" + location1[1]);
+                RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) mTitleBar.getLayoutParams();
                 if (location1[1] < 0) {
 //                    if(mPreScreenY != location1[1]){
 //                        mPreScreenY = Math.min(mPreScreenY, location1[1]);
@@ -122,14 +123,12 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
                         mPreScreenY = 0;
                     }*/
 
-                    RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) mTitleBar.getLayoutParams();
-                    layoutParams.setMargins(0, Math.abs(location1[1]), 0, 0);
+                    layoutParams.topMargin = Math.abs(location1[1]);
                     mTitleBar.setLayoutParams(layoutParams);
 //                        mContainer.getViewTreeObserver().removeOnPreDrawListener(mOnPreDrawListener);
-                } else {
-                    RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) mTitleBar.getLayoutParams();
-                    layoutParams.setMargins(0, 0, 0, 0);
-                    mTitleBar.setLayoutParams(layoutParams);
+                } else if(layoutParams.topMargin != 0){
+                    layoutParams.topMargin = 0;
+                            mTitleBar.setLayoutParams(layoutParams);
                 }
 
 //                mContainer.getViewTreeObserver().removeOnPreDrawListener(mOnPreDrawListener);
