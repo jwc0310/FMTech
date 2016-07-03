@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btn_tips" type="id">false</item>
+    <item name="toolbar" type="id">false</item>
+    <item name="tabs" type="id">false</item>
+    <item name="viewpager" type="id">false</item>
+</resources>
