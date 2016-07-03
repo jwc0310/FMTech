@@ -40,7 +40,7 @@ public abstract class BaseFragment extends Fragment {
 
     }
 
-    private void unsubscribe(){
+    protected void unsubscribe(){
         if(null != mSubscription && mSubscription.isUnsubscribed()){
             mSubscription.unsubscribe();
         }
