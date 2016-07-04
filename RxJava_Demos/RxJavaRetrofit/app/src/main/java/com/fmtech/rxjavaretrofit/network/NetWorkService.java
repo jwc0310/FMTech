@@ -27,7 +27,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 public class NetWorkService {
 
     private static final String BASE_URL_ZBAPI = "http://zhuangbi.info/";
-    private static final String BASE_URL_GANKAPI = "http://zhuangbi.info/";
+    private static final String BASE_URL_GANKAPI = "http://gank.io/api/";
     private static GankApi mGankApi;
     private static ZbApi mZbApi;
     private static FakeApi mFakeApi;
@@ -37,7 +37,7 @@ public class NetWorkService {
     private static CallAdapter.Factory mRxJavaCallAdapterFactory = RxJavaCallAdapterFactory.create();
 
     public static ZbApi getZbApi(){
-        if(null == mZbApi){
+        if(null == mZbApi) {
             Retrofit retrofit = new Retrofit.Builder()
                     .client(mOkHttpClient)
                     .baseUrl(BASE_URL_ZBAPI)
@@ -47,7 +47,6 @@ public class NetWorkService {
 
             mZbApi = retrofit.create(ZbApi.class);
         }
-
         return mZbApi;
     }
 
