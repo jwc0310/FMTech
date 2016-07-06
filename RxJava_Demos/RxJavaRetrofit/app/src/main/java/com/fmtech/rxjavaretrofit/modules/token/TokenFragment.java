@@ -50,9 +50,10 @@ public class TokenFragment extends BaseFragment {
 
     @OnClick(R.id.requestBt)
     void getData(){
+        unsubscribe();
         mSwipeRefreshLayout.setRefreshing(true);
         final FakeApi fakeApi = NetWorkService.getFakeApi();
-        fakeApi.getFakeToken("FAKE_AUTH_TOKEN")
+        mSubscription = fakeApi.getFakeToken("FAKE_AUTH_TOKEN")
                 .flatMap(new Func1<FakeToken, Observable<FakeThing>>() {
                     @Override
                     public Observable<FakeThing> call(FakeToken fakeToken) {
