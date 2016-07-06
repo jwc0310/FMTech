@@ -64,4 +64,12 @@ public class NetWorkService {
 
         return mGankApi;
     }
+
+    public static FakeApi getFakeApi(){
+        if(null == mFakeApi){
+            mFakeApi = new FakeApi();
+        }
+        return mFakeApi;
+    }
+
 }
