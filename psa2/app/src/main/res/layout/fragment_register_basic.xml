@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.Layout.AllFill">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/btnContinue">
+
+        <LinearLayout style="@style/Widget.Layout.AllFill.OrientationVert">
+
+            <!--<include layout="@layout/registration_panel" />-->
+
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MemberZoneHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:text="@string/register_page_account_info" />
+
+            <LinearLayout
+                android:id="@+id/llTitleField"
+                style="@style/Widget.Layout.WidthFill.OrientationHori"
+                android:visibility="visible">
+
+                <Button
+                    android:id="@+id/btnMr"
+                    style="@style/Widget.TextView.LargeWhite"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_sharp_blue"
+                    android:text="@string/register_page_mr" />
+
+                <Button
+                    android:id="@+id/btnMrs"
+                    style="@style/Widget.TextView.LargeBlue"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_sharp_white"
+                    android:text="@string/register_page_mrs" />
+
+                <Button
+                    android:id="@+id/btnMiss"
+                    style="@style/Widget.TextView.LargeBlue"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_sharp_white"
+                    android:text="@string/register_page_miss" />
+
+                <Button
+                    android:id="@+id/btnMs"
+                    style="@style/Widget.TextView.LargeBlue"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btn_sharp_white"
+                    android:text="@string/register_page_ms" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llNameField"
+                style="@style/Widget.Layout.WidthFill.OrientationVert"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/edtFirstName"
+                    style="@style/Widget.EditText.WithBG"
+                    android:layout_margin="10dp"
+                    android:hint="@string/register_page_first_name_hint" />
+
+                <EditText
+                    android:id="@+id/edtLastName"
+                    style="@style/Widget.EditText.WithBG"
+                    android:layout_margin="10dp"
+                    android:hint="@string/register_page_last_name_hint" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/edtEmail"
+                style="@style/Widget.EditText.WithBG"
+                android:layout_margin="10dp"
+                android:hint="@string/register_page_email_hint" />
+
+            <TextView
+                style="@style/Widget.TextView.NormalBlack"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:text="@string/register_page_email_desc" />
+
+            <LinearLayout
+                android:id="@+id/llPwdField"
+                style="@style/Widget.Layout.WidthFill.OrientationVert"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/edtPassword"
+                    style="@style/Widget.EditText.WithBG"
+                    android:layout_margin="10dp"
+                    android:hint="@string/register_page_password_hint"
+                    android:inputType="textPassword"
+                    android:maxLength="6" />
+
+                <TextView
+                    style="@style/Widget.TextView.NormalBlack"
+                    android:layout_width="match_parent"
+                    android:layout_margin="10dp"
+                    android:text="@string/register_page_password_desc" />
+
+                <EditText
+                    android:id="@+id/edtConfirmPassword"
+                    style="@style/Widget.EditText.WithBG"
+                    android:layout_margin="10dp"
+                    android:hint="@string/register_page_confirm_password_hint"
+                    android:inputType="textPassword"
+                    android:maxLength="6" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/llContactField"
+                style="@style/Widget.Layout.WidthFill.OrientationVert"
+                android:visibility="visible">
+
+                <EditText
+                    android:id="@+id/edtPhoneNo"
+                    style="@style/Widget.EditText.WithBG"
+                    android:layout_margin="10dp"
+                    android:hint="@string/register_page_contact_no_hint"
+                    android:inputType="phone" />
+
+            </LinearLayout>
+
+            <TextView
+                style="@style/Widget.TextView.NormalBlack"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:text="@string/register_page_receive_desc" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MoneyBackCardProfileItem
+                android:id="@+id/switchSMS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:member_picker_header="@string/register_page_receive_sms" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MoneyBackCardProfileItem
+                android:id="@+id/switchEmails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:member_picker_header="@string/register_page_receive_email" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MoneyBackCardProfileItem
+                android:id="@+id/switchPost"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:member_picker_header="@string/register_page_receive_post" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <TextView
+                style="@style/Widget.TextView.NormalBlack"
+                android:layout_width="match_parent"
+                android:layout_margin="10dp"
+                android:text="@string/register_page_disclaimer" />
+
+            <RelativeLayout
+                android:id="@+id/rlTNC"
+                style="@style/Widget.Layout.WidthFill"
+                android:layout_margin="10dp">
+
+                <CheckBox
+                    android:id="@+id/cbTNC"
+                    style="@style/Widget.Layout"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/register_page_tnc"
+                    style="@style/Widget.TextView.NormalBlack"
+                    android:layout_width="match_parent"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@+id/cbTNC"
+                    android:text="@string/register_page_tnc" />
+
+            </RelativeLayout>
+
+            <!--<RelativeLayout-->
+            <!--android:id="@+id/rlRecMsg"-->
+            <!--style="@style/Widget.Layout.WidthFill"-->
+            <!--android:layout_margin="10dp">-->
+
+            <!--<CheckBox-->
+            <!--android:id="@+id/cbRecMsg"-->
+            <!--style="@style/Widget.Layout"-->
+            <!--android:layout_centerVertical="true" />-->
+
+            <!--<TextView-->
+            <!--style="@style/Widget.TextView.NormalBlack"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:layout_marginLeft="5dp"-->
+            <!--android:layout_toRightOf="@+id/cbRecMsg"-->
+            <!--android:text="@string/register_page_receive_msg" />-->
+
+            <!--</RelativeLayout>-->
+
+        </LinearLayout>
+    </ScrollView>
+
+    <parknshop.parknshopapp.View.LoadingButton
+        android:id="@+id/btnContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:btn_text="@string/btn_continue"
+        android:layout_alignParentBottom="true"
+        app:btn_background="@drawable/btn_sharp_blue"/>
+
+    <!--<Button-->
+        <!--android:id="@+id/btnContinue"-->
+        <!--style="@style/Widget.TextView.LargeGrey"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:layout_margin="10dp"-->
+        <!--android:background="@drawable/btn_sharp_blue"-->
+        <!--android:text="@string/btn_continue" />-->
+
+</RelativeLayout>

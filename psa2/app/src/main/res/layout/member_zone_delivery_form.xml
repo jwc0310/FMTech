@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <parknshop.parknshopapp.View.CheckoutEditText
+                android:id="@+id/flat"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:checkout_edittext_title="@string/address_flat_room_important" />
+
+            <parknshop.parknshopapp.View.CheckoutEditText
+                android:id="@+id/floor"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:checkout_edittext_title="@string/address_floor_important" />
+        </LinearLayout>
+
+        <parknshop.parknshopapp.View.CheckoutEditText
+            android:id="@+id/block"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:checkout_edittext_title="@string/address_block_important" />
+
+        <parknshop.parknshopapp.View.CheckoutEditText
+            android:id="@+id/building"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:checkout_edittext_title="@string/address_building_important" />
+
+        <parknshop.parknshopapp.View.CheckoutEditText
+            android:id="@+id/estate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:checkout_edittext_title="@string/address_estate_name_important" />
+
+        <parknshop.parknshopapp.View.CheckoutEditText
+            android:id="@+id/street_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:checkout_edittext_title="@string/address_street_no_important" />
+
+        <parknshop.parknshopapp.View.CheckoutEditText
+            android:id="@+id/street_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:checkout_edittext_title="@string/address_street_name_important" />
+
+        <parknshop.parknshopapp.View.CheckoutPicker
+            android:id="@+id/area_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:checkout_picker_title="@string/area_choose_important" />
+
+        <parknshop.parknshopapp.View.CheckoutPicker
+            android:id="@+id/district_picker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:checkout_picker_title="@string/district_choose_important" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/grey" />
+
+        <LinearLayout
+            android:id="@+id/title_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <parknshop.parknshopapp.View.CheckoutButton
+                android:id="@+id/btnMr"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:checkout_button_is_alternative="true"
+                app:checkout_button_title="@string/mr" />
+
+            <parknshop.parknshopapp.View.CheckoutButton
+                android:id="@+id/btnMs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:checkout_button_title="@string/ms" />
+
+            <parknshop.parknshopapp.View.CheckoutButton
+                android:id="@+id/btnMrs"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:checkout_button_title="@string/mrs" />
+
+            <parknshop.parknshopapp.View.CheckoutButton
+                android:id="@+id/btnMiss"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                app:checkout_button_title="@string/miss" />
+        </LinearLayout>
+
+        <parknshop.parknshopapp.View.CheckoutEditText
+            android:id="@+id/lastname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:checkout_edittext_title="@string/last_name_important" />
+
+        <parknshop.parknshopapp.View.CheckoutEditText
+            android:id="@+id/firstname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:checkout_edittext_title="@string/first_name_important" />
+
+        <parknshop.parknshopapp.View.CheckoutEditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:checkout_edittext_title="@string/email" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <parknshop.parknshopapp.View.CheckoutPicker
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:checkout_picker_title="+852" />
+
+            <parknshop.parknshopapp.View.CheckoutEditText
+                android:id="@+id/contact_no"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                app:checkout_edittext_title="@string/contact_no_important"
+                app:checkout_edittext_type="number" />
+        </LinearLayout>
+
+        <parknshop.parknshopapp.View.CheckoutCheckBoxWithText
+            android:id="@+id/checkbox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:checkboxtitle="@string/use_as_delivery_address"
+            app:isSelected="false"
+            app:selected_drawable="@drawable/sign_in_icn_tick_selected"
+            app:unselected_drawable="@drawable/checkout_unfilled_circle" />
+
+        <parknshop.parknshopapp.View.LoadingButton
+            android:id="@+id/save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:btn_background="@drawable/btn_sharp_blue"
+            app:btn_text="@string/btn_save" />
+        <!--<parknshop.parknshopapp.View.CheckoutButton-->
+        <!--android:id="@+id/save"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginBottom="10dp"-->
+        <!--app:checkout_button_is_alternative="true"-->
+        <!--app:checkout_button_title="@string/btn_save" />-->
+
+    </LinearLayout>
+</ScrollView>

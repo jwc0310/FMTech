@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="parknshop.parknshopapp.MainActivity">
+
+        <TextView
+            android:id="@+id/txtOrderNo"
+            style="@style/Widget.TextView.LargeBlack"
+            android:layout_width="match_parent"
+            android:padding="15dp"
+            android:text="@string/order_details_order_no"
+            android:textStyle="bold" />
+
+        <parknshop.parknshopapp.View.CheckoutItem
+            android:id="@+id/txtOrderDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:header="@string/order_details_order_date" />
+
+        <parknshop.parknshopapp.View.CheckoutItem
+            android:id="@+id/txtOrderTotal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:header="@string/order_details_order_total" />
+
+        <parknshop.parknshopapp.View.CheckoutHeader
+            android:id="@+id/order_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:text="@string/order_history_status"></parknshop.parknshopapp.View.CheckoutHeader>
+
+        <include layout="@layout/order_history_details_panel" />
+
+        <parknshop.parknshopapp.View.CheckoutHeader
+            android:id="@+id/delivery_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:text="@string/order_details_delivery_details">
+
+
+            <parknshop.parknshopapp.View.CheckoutItem
+                android:id="@+id/delivery_method"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/order_details_delivery_method" />
+
+            <parknshop.parknshopapp.View.CheckoutItem
+                android:id="@+id/recipient"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/order_details_recipient" />
+
+            <parknshop.parknshopapp.View.CheckoutItem
+                android:id="@+id/contact_no"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/order_details_contact_no" />
+
+            <parknshop.parknshopapp.View.CheckoutItem
+                android:id="@+id/delivery_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/delivery_date" />
+
+            <parknshop.parknshopapp.View.CheckoutItem
+                android:id="@+id/delivery_time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/delivery_time" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/grey" />
+
+            <parknshop.parknshopapp.View.CheckoutAddress
+                android:id="@+id/delivery_address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:checkout_address_receiver_title="@string/delivery_address_placeholder" />
+
+        </parknshop.parknshopapp.View.CheckoutHeader>
+
+        <parknshop.parknshopapp.View.CheckoutHeader
+            android:id="@+id/payment_method"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:text="@string/payment_method">
+
+            <parknshop.parknshopapp.View.CheckoutItem
+                android:id="@+id/payment_type"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </parknshop.parknshopapp.View.CheckoutHeader>
+
+        <parknshop.parknshopapp.View.CheckoutHeader
+            android:id="@+id/order_details"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:text="@string/order_details_order_details">
+
+            <parknshop.parknshopapp.View.CheckoutItem
+                android:id="@+id/total_items"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/total_items" />
+
+            <parknshop.parknshopapp.View.CheckoutItem
+                android:id="@+id/subtotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/subtotal" />
+
+            <parknshop.parknshopapp.View.CheckoutItem
+                android:id="@+id/delivery_fee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/delivery_fee" />
+
+            <!--<parknshop.parknshopapp.View.CheckoutItem-->
+            <!--android:id="@+id/discount_ecoupon"-->
+            <!--app:header="Discount eCoupon"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"/>-->
+
+            <!--<parknshop.parknshopapp.View.CheckoutItem-->
+            <!--android:id="@+id/discount_evoucher"-->
+            <!--app:header="Discount eVoucher"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"/>-->
+
+            <parknshop.parknshopapp.View.CheckoutItem
+                android:id="@+id/order_total"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/order_total"
+                app:textStyle="@integer/font_style_extra_bold" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/grey" />
+
+                <LinearLayout
+                    android:id="@+id/products_lists_top_three_in_cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <LinearLayout
+                    android:id="@+id/products_lists_view_all_itmes"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="2dp"
+                        android:background="@color/grey" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="5dp"
+                            android:text="@string/view_all_items"
+                            android:textColor="@color/color_primary"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=">" />
+                    </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/products_lists_exclude_three_in_cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="@color/grey" />
+            </LinearLayout>
+        </parknshop.parknshopapp.View.CheckoutHeader>
+
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Layout.AllFill">
+
+    <LinearLayout
+        style="@style/Widget.Layout.AllFill.OrientationVert"
+        android:layout_above="@+id/btnContinue">
+
+
+        <include layout="@layout/registration_panel"/>
+        <EditText
+            android:id="@+id/edtEmail"
+            style="@style/Widget.EditText.WithBG"
+            android:layout_margin="10dp"
+            android:hint="@string/register_page_email_hint" />
+
+        <TextView
+            style="@style/Widget.TextView.NormalBlack"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/register_page_email_desc" />
+
+        <LinearLayout
+            style="@style/Widget.Layout.AllFill.OrientationHori"
+            android:layout_above="@+id/btnContinue"
+            android:layout_margin="10dp">
+
+            <TextView
+                android:id="@+id/txtPrefixNo"
+                style="@style/Widget.EditText.WithBG"
+                android:layout_width="match_parent"
+                android:layout_weight="3"
+                android:drawableRight="@drawable/register_arrow_down" />
+
+            <EditText
+                android:id="@+id/edtPhoneNo"
+                style="@style/Widget.EditText.WithBG"
+                android:layout_weight="1"
+                android:hint="@string/register_page_contact_no_hint" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnContinue"
+        style="@style/Widget.TextView.LargeWhite"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_sharp_blue"
+        android:text="@string/btn_continue" />
+
+</RelativeLayout>

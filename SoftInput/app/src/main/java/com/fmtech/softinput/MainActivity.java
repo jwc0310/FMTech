@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.graphics.Rect;
 import android.os.Build;
 import android.os.Handler;
+import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,6 +21,7 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
     private FrameLayout mTitleBar;
     private ViewTreeObserver.OnGlobalLayoutListener mOnGlobalLayoutChangeListener;
     private ViewTreeObserver.OnPreDrawListener mOnPreDrawListener;
+    private ViewTreeObserver.OnDrawListener mOnDrawListener;
 
     private View mPaddingView;
     //    private boolean mIsSoftKeyboardShowing = false;
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        getWindow().addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_signup_step2);
@@ -101,7 +104,7 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
             public boolean onPreDraw() {
                 int[] location1 = new int[2];
                 mContainer.getLocationOnScreen(location1);
-//                System.out.println("-------onPreDraw---mContainer screenX:" + location1[0] + " screenY:" + location1[1]);
+                System.out.println("-------onPreDraw---mContainer screenX:" + location1[0] + " screenY:" + location1[1]);
                 RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) mTitleBar.getLayoutParams();
                 if (location1[1] < 0) {
 //                    if(mPreScreenY != location1[1]){
@@ -128,7 +131,7 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
 //                        mContainer.getViewTreeObserver().removeOnPreDrawListener(mOnPreDrawListener);
                 } else if(layoutParams.topMargin != 0){
                     layoutParams.topMargin = 0;
-                            mTitleBar.setLayoutParams(layoutParams);
+                    mTitleBar.setLayoutParams(layoutParams);
                 }
 
 //                mContainer.getViewTreeObserver().removeOnPreDrawListener(mOnPreDrawListener);
@@ -136,8 +139,30 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
             }
         };
 
+        mOnDrawListener = new ViewTreeObserver.OnDrawListener() {
+            @Override
+            public void onDraw() {
+                int[] location1 = new int[2];
+                mContainer.getLocationOnScreen(location1);
+                System.out.println("-------onDraw---mContainer screenX:" + location1[0] + " screenY:" + location1[1]);
+//                RelativeLayout.LayoutParams layoutParams = (RelativeLayout.LayoutParams) mTitleBar.getLayoutParams();
+//                if (location1[1] < 0) {
+//
+//                    layoutParams.topMargin = Math.abs(location1[1]);
+//                    mTitleBar.setLayoutParams(layoutParams);
+////                        mContainer.getViewTreeObserver().removeOnPreDrawListener(mOnPreDrawListener);
+//                } else if(layoutParams.topMargin != 0){
+//                    layoutParams.topMargin = 0;
+//                    mTitleBar.setLayoutParams(layoutParams);
+//                }
+
+            }
+        };
+
         mContainer.getViewTreeObserver().addOnGlobalLayoutListener(mOnGlobalLayoutChangeListener);
         mContainer.getViewTreeObserver().addOnPreDrawListener(mOnPreDrawListener);
+//        mContainer.getViewTreeObserver().addOnDrawListener(mOnDrawListener);
+        MediaStore.
     }
 
     private void printInfo2() {

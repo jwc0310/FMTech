@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Layout.AllFill">
+
+    <LinearLayout
+        style="@style/Widget.Layout.AllFill.OrientationVert"
+        android:layout_above="@+id/btnContinue">
+
+
+        <!--<include layout="@layout/registration_panel" />-->
+
+        <EditText
+            android:id="@+id/edtEmail"
+            style="@style/Widget.EditText.WithBG"
+            android:layout_margin="10dp"
+            android:hint="@string/register_page_email_hint" />
+
+        <TextView
+            style="@style/Widget.TextView.NormalBlack"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/cbTNC"
+            android:text="@string/register_page_email_desc" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            style="@style/Widget.EditText.WithBG"
+            android:layout_margin="10dp"
+            android:hint="@string/register_page_password_hint"
+            android:inputType="textPassword"
+            android:maxLength="6" />
+
+        <TextView
+            style="@style/Widget.TextView.NormalBlack"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/cbTNC"
+            android:text="@string/register_page_tnc" />
+
+        <EditText
+            android:id="@+id/edtConfirmPassword"
+            style="@style/Widget.EditText.WithBG"
+            android:layout_margin="10dp"
+            android:hint="@string/register_page_confirm_password_hint"
+            android:inputType="textPassword"
+            android:maxLength="6" />
+
+        <RelativeLayout
+            style="@style/Widget.Layout.WidthFill"
+            android:layout_margin="10dp">
+
+            <CheckBox
+                android:id="@+id/cbTNC"
+                style="@style/Widget.Layout"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                style="@style/Widget.TextView.NormalBlack"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/cbTNC"
+                android:text="@string/register_page_tnc" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            style="@style/Widget.Layout.WidthFill"
+            android:layout_margin="10dp">
+
+            <CheckBox
+                android:id="@+id/cbRecMsg"
+                style="@style/Widget.Layout"
+                android:layout_centerVertical="true" />
+
+            <TextView
+                style="@style/Widget.TextView.NormalBlack"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/cbRecMsg"
+                android:text="@string/register_page_receive_msg" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnContinue"
+        style="@style/Widget.TextView.LargeWhite"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_sharp_blue"
+        android:text="@string/btn_continue" />
+
+</RelativeLayout>

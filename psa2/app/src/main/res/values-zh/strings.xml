@@ -1,0 +1,853 @@
+<resources>
+    <string name="app_name">PARKnSHOP</string>
+
+    <string name="app_update_title">更新</string>
+    <string name="app_update_msg">請更新您的應用程式</string>
+
+    <string name="tutorial_activity_start">開始使用</string>
+    <string name="tutorial_activity_skip">跳過</string>
+
+    <string name="app_quit">決定離開本應用程式?</string>
+
+    <!--error-->
+    <string name="g_e_connect">目前偵測不到網路，請檢查您的網路設定。</string>
+    <string name="g_e_network">目前檔案傳輸有誤，請稍後再試。</string>
+    <string name="g_e_token">會員登入時限已過，請重新登入。</string>
+    <string name="gps_error">請開啟網絡定位功能</string>
+
+    <!-- Normal Use -->
+    <string name="btn_ok">確認</string>
+    <string name="btn_add">添加</string>
+    <string name="btn_create">創建</string>
+    <string name="btn_cancel">取消</string>
+    <string name="btn_accept">同意</string>
+    <string name="btn_confirm">確認</string>
+    <string name="btn_edit">更改</string>
+    <string name="btn_yes">是</string>
+    <string name="btn_no">否</string>
+    <string name="btn_next">下一頁</string>
+    <string name="btn_delete">刪除</string>
+    <string name="btn_close">關閉</string>
+    <string name="btn_done">確定</string>
+    <string name="btn_use">篩選</string>
+    <string name="btn_continue">繼續</string>
+    <string name="btn_apply">提交</string>
+    <string name="btn_ecoupon_apply">使用</string>
+    <string name="understand_and_continue">了解並繼續</string>
+    <string name="btn_remove">移除</string>
+    <string name="dismiss">關閉</string>
+    <string name="btn_add_upper">添加</string>
+    <string name="tv_select">選擇</string>
+    <string name="btn_save">儲存</string>
+    <string name="permission_title">權限要求</string>
+    <string name="permission_contacts">此頁面需要允許屬聯絡人權限</string>
+    <string name="permission_location">此頁面需要允許位置權限</string>
+
+    <string name="colon">：</string>
+    <string name="fillin_pay_creditall">信用卡一次付清</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Sliding Fragment -->
+    <string name="home_activity_sliding_menu_my_account">我的賬戶</string>
+    <string name="home_activity_sliding_menu_grocery_list">購物清單</string>
+    <string name="home_activity_sliding_menu_suggest_list">推薦購物清單</string>
+    <string name="home_activity_sliding_menu_my_list">我的購物清單</string>
+    <string name="home_activity_sliding_menu_redemption">積分兌換</string>
+    <string name="home_activity_sliding_menu_m_coupon">電子優惠劵</string>
+    <string name="home_activity_sliding_menu_tips_ideas">Tips and Ideas</string>
+    <string name="home_activity_sliding_menu_on_sale">On Sale</string>
+    <string name="home_activity_sliding_menu_new_arrival">新到貨品</string>
+    <string name="home_activity_sliding_menu_international">International</string>
+    <string name="home_activity_sliding_menu_top_brands">熱門品牌</string>
+    <string name="home_activity_sliding_menu_recipes">食譜</string>
+
+    <string name="home_activity_sliding_menu_about_us">關於百佳</string>
+    <string name="home_activity_sliding_menu_online_shopping">網上購物</string>
+    <string name="home_activity_sliding_menu_quality_assurance">品質檢定</string>
+    <string name="home_activity_sliding_menu_customer_service">客戶服務</string>
+    <string name="home_activity_sliding_menu_settings">設定</string>
+    <string name="home_activity_sliding_menu_tutorial">入門教學</string>
+    <string name="home_activity_sliding_menu_facebook">Facebook</string>
+    <string name="home_activity_sliding_menu_logout">登出</string>
+
+
+    <!-- quality assurance -->
+    <string name="quality_assurance_qa_dept">百佳品質檢定部</string>
+    <string name="quality_assurance_food_safety_centre">食物安全中心</string>
+    <string name="quality_assurance_fresh_check_food_hygiene_academy">新鮮衛生檢定學堂</string>
+    <string name="quality_assurance_own_brand_quality_assurance">自家品牌品質檢定</string>
+    <string name="quality_assurance_non_food_quality_assurance">非食品類品質檢定</string>
+    <string name="quality_assurance_legal_services">法律服務</string>
+    <string name="quality_assurance_licence_and_permit">牌照及許可證</string>
+
+    <!-- about us -->
+    <string name="about_us_about_us">關於百佳</string>
+    <string name="about_us_qa_dept">品質檢定部</string>
+    <string name="about_us_social_responsibility">企業社會責任</string>
+    <string name="about_us_privacy_policy">隱私權政策</string>
+    <string name="about_us_terms_and_conditions">網上購物條款及細則</string>
+    <string name="about_us_disclaimer_and_notice">免責聲明及通知</string>
+    <string name="about_us_corporation_information">企業資訊</string>
+
+    <!-- Customer Service -->
+    <string name="customer_service_faq">一般疑難</string>
+    <string name="customer_service_contact_us">聯絡我們</string>
+    <string name="customer_service_contact_us_email_subject">百佳手機應用程式查詢</string>
+    <string name="customer_service_contact_us_os_version">OS版本： </string>
+    <string name="customer_service_contact_us_device_model">設備型號： </string>
+    <string name="customer_service_contact_us_app_version">應用程序版本： </string>
+    <string name="customer_service_contact_us_app_language">應用語言： </string>
+    <string name="customer_service_contact_us_date_n_time">日期及時間： </string>
+    <string name="customer_service_contact_us_langauge">中文</string>
+
+    <!-- Online Shopping -->
+    <string name="online_shopping_app">App購物指南</string>
+    <string name="online_shopping_delivery_detail">送貨服務</string>
+    <string name="online_shopping_payment_method">付款方式</string>
+    <string name="online_shopping_refund_guraantee">退款/退換保證</string>
+    <string name="online_shopping_self_pickup">自取服務</string>
+
+    <!-- product list -->
+    <string name="product_list_fragment_out_of_stuck">缺貨</string>
+    <string name="product_list_fragment_sold_out">售罄</string>
+    <string name="product_list_fragment_sort_filter">商品篩選</string>
+
+    <!-- shopping cart -->
+    <string name="was_price"></string>
+    <string name="added_to_shopping_cart">已加入購物車</string>
+    <string name="quantity_changed">已更新購物車</string>
+    <string name="home_activity_sliding_menu_my_cart">我的購物車</string>
+    <string name="home_activity_sliding_menu_dollar_sign">HK$</string>
+    <string name="home_activity_shopping_cart_add_2_cart">加入\n購物車</string>
+    <string name="home_activity_shopping_cart_add_2_grocery_item">加入購物清單</string>
+    <string name="home_activity_shopping_cart_remove_item">移除貨品</string>
+
+    <string name="home_activity_sliding_menu_delivery_placeholder">送貨費用</string>
+    <string name="home_activity_sliding_menu_subtotal_placeholder">總額</string>
+    <string name="home_activity_sliding_menu_empty_cart_message">未選購任何貨品</string>
+    <string name="home_activity_sliding_menu_empty_cart_browse_items">其他項目</string>
+
+    <string name="home_activity_sliding_menu_empty_cart_top_brands_market_place">Top Brands / Market Place</string>
+    <string name="home_activity_sliding_menu_empty_cart_tip_idea">Tip and Idea</string>
+    <string name="home_activity_sliding_menu_empty_cart_on_sale">On Sale</string>
+    <string name="home_activity_sliding_menu_empty_cart_new_arrival">New Arrival</string>
+    <string name="home_activity_sliding_menu_empty_cart_international">International</string>
+
+    <!-- product list sliding down panel -->
+    <string name="productlist_fragment_cart_panel_item_added">已加入%s件貨品</string>
+    <string name="productlist_fragment_cart_panel_items_added">已加入%s件貨品</string>
+    <string name="productlist_fragment_cart_panel_money_for_free_delivery">%s 更多以享受免費送貨</string>
+
+    <string name="product_detail_description">商品介紹</string>
+    <string name="product_detail_specification">商品規格</string>
+    <string name="product_detail_use">使用方式</string>
+    <string name="product_detail_precautions">注意事項</string>
+    <string name="product_detail_ingredient">成分</string>
+    <string name="product_detail_new_product">新產品</string>
+
+    <string name="product_detail_add_to_cart">加入購物車</string>
+    <string name="product_detail_update_cart">更新購物車</string>
+    <string name="product_detail_not_for_sell">此商品目前沒有販售</string>
+    <string name="promotion_list">促銷活動</string>
+
+
+    <!-- memberzone -->
+    <string name="discount_placeholder">請連接您的易賞錢享受折扣優惠</string>
+    <string name="link_the_member_ship_card">鏈接易賞錢</string>
+    <string name="account_detail">賬戶資料</string>
+    <string name="membership_card">會員卡</string>
+    <string name="order_history">訂單記錄</string>
+    <string name="order_details_title">訂單詳細</string>
+    <string name="contact_us">聯絡我們</string>
+    <string name="contact_us_member_zone">聯繫我們</string>
+    <string name="faq">一般疑難</string>
+    <string name="member_notice">會員通知</string>
+    <string name="logout_dialog_title">會員登出</string>
+    <string name="logout_dialog_msg">是否確定登出？</string>
+    <string name="logout">登出</string>
+    <string name="transaction_history">交易記錄</string>
+
+    <string name="link_card_member_card_no_hint">卡號碼</string>
+    <string name="link_card_password_hint">密碼</string>
+    <string name="existing_point">現有積分</string>
+    <string name="pts">分</string>
+    <string name="point">分</string>
+
+    <string name="moneyback_card">易賞錢</string>
+    <string name="myaccount_page_please_link_moneyback">請連接您的易賞錢享受折扣。</string>
+    <string name="myaccount_page_link_moneyback">連接易賞錢</string>
+    <string name="myaccount_page_apply_moneyback">申請易賞錢</string>
+    <string name="myaccount_page_moneyback_card_no_hint">易賞錢號碼</string>
+    <string name="myaccount_page_moneyback_card_no_empty">卡號碼不能為空</string>
+    <string name="myaccount_page_moneyback_card_profile">易賞錢資訊</string>
+    <string name="myaccount_page_moneyback_promotion">易賞錢推廣</string>
+    <string name="valid_thru">有效期至</string>
+    <string name="valid_thru_pure">有效期至</string>
+
+    <string name="myaccount_page_moneyback_valid_thru">到期日</string>
+    <string name="myaccount_page_moneyback_point_expiry">到期日 %s</string>
+    <string name="myaccount_page_family_name">姓氏</string>
+    <string name="myaccount_page_given_name">姓名</string>
+    <string name="myaccount_page_chinese_name">中文名稱</string>
+    <string name="myaccount_page_date_of_birth">生日日期</string>
+    <string name="myaccount_page_mobile_number">手機號碼</string>
+    <string name="myaccount_page_tel_number">電話號碼</string>
+    <string name="myaccount_page_my_information">我的資訊</string>
+    <string name="myaccount_page_contact_number">聯絡電話</string>
+    <string name="myaccount_page_home_address">住址</string>
+    <string name="myaccount_page_my_language_preferred_in_card_communication">Language preferred in card communication</string>
+    <string name="myaccount_page_opt_out_sms">我想收到SMS消息</string>
+    <string name="myaccount_page_opt_out_emails">我想收到電郵</string>
+    <string name="myaccount_page_opt_out_direct_mailings">我想收到郵件</string>
+    <string name="moneyback_card_hint">易賞錢號碼</string>
+    <string name="moneyback_card_pwd_hint">密碼/電話號碼</string>
+    <string name="moneyback_card_view_my_moneyback_card">查看我的易賞錢</string>
+    <string name="moneyback_card_login_fail">無效的易賞錢號碼或密碼</string>
+
+    <!-- Account-->
+    <string name="register_page_account_info">賬戶資料</string>
+    <string name="register_page_account_info2">賬戶資訊</string>
+    <string name="register_page_moneyback_info">易賞錢資訊</string>
+    <string name="register_page_personal_info">個人資訊</string>
+    <string name="information">個人信息</string>
+    <string name="title">稱謂</string>
+    <string name="birthday">生日日期</string>
+    <string name="children">孩子</string>
+    <string name="region">地區</string>
+    <string name="login">登入</string>
+    <string name="keep_me_logged_on">保持登入</string>
+    <string name="login_and_password">使用者名稱 &amp; 密碼</string>
+    <string name="not_yet_reg">沒有賬戶?</string>
+    <string name="join_now">立即申請</string>
+    <string name="earn_more">享受更多優惠折扣</string>
+    <string name="have_money_back_card">你有易賞錢嗎?</string>
+    <string name="yes_i_have_moeny_back_card">對，我有易賞錢</string>
+    <string name="no_i_dun_have_moeny_back_card">否, 我沒有易賞錢</string>
+    <string name="already_have_account">已經註冊?</string>
+    <string name="login_username_require">請輸入您的電子郵件地址，然後重試</string>
+    <string name="login_pwd_require">請輸入您的密碼，然後再試一次</string>
+    <string name="login_page_merge_cart">您早前已把一些貨品加入購物車內，您現在要一併購買它們嗎？</string>
+
+    <!-- Change Password-->
+    <string name="password">密碼</string>
+    <string name="change_password">更改密碼</string>
+    <string name="modify_password">更改密碼</string>
+    <string name="current_password_hint">當前密碼</string>
+    <string name="new_password_hint">新密碼</string>
+    <string name="confirm_password_hint">確認新密碼</string>
+    <string name="update_password_btn">更新密碼</string>
+    <string name="update_password_current_pwd_empty">密碼不能為空</string>
+    <string name="update_password_new_pwd_empty">新密碼不能為空</string>
+    <string name="update_password_confirm_pwd_empty">確認密碼不能為空</string>
+    <string name="update_password_pwd_not_match">新密碼和確認密碼不匹配</string>
+    <string name="update_success">更新成功</string>
+    <string name="upload_success">上傳成功</string>
+    <string name="upload_canceled">己取消</string>
+    <string name="faq_tab_title_general">常規</string>
+    <string name="faq_tab_title_security_and_technical">安全性和技術</string>
+    <string name="email_cannot_be_empty">電郵不可填空</string>
+    <string name="email_format_invalid">電郵格式不正確</string>
+    <string name="password_format_invalid">密碼格式不正確</string>
+    <string name="password_not_match">密碼不符</string>
+    <string name="please_agree_t_and_c">請接受相關條款</string>
+
+    <!-- Order-->
+    <string name="order_history_details">訂單詳細</string>
+    <string name="order_all_status">狀態</string>
+    <string name="order_preparing">準備中</string>
+    <string name="order_ready_to_ship">準備出貨</string>
+    <string name="order_shipped">已出貨</string>
+    <string name="order_delivered">已送到</string>
+    <string name="order_add_review">添加評論</string>
+    <string name="product_review">評論</string>
+    <string name="product_review_hint">評論(可選)</string>
+    <string name="delivery_tracking">送貨追踪</string>
+    <string name="order_history_status_btn">狀態</string>
+    <string name="order_history_status">訂單狀態</string>
+
+    <string name="order_status_all_status">全部訂單</string>
+    <string name="order_status_order_processing">訂單處理中</string>
+    <string name="order_status_order_confirmed">訂單已獲確認</string>
+    <string name="order_status_picking_in_process">收集貨品中</string>
+    <string name="order_status_delivering">訂單運送中</string>
+    <!--<string name="order_status_returned">退貨</string>-->
+    <string name="order_status_order_completed">訂單已完成</string>
+    <string name="order_status_delivery_failure">運送失敗</string>
+    <string name="order_status_order_canceled">訂單已取消</string>
+    <string name="order_status_na">不適用</string>
+
+    <!-- Order Details -->
+    <string name="order_details_order_no">訂單號碼</string>
+    <string name="order_details_order_date">訂單日期</string>
+    <string name="order_details_order_total">訂單總計</string>
+    <string name="order_details_delivery_details">送貨詳情</string>
+    <string name="order_details_delivery_method">送貨方式</string>
+    <string name="order_details_recipient">收據</string>
+    <string name="order_details_contact_no">聯絡電話</string>
+    <string name="order_details_delivery_date">送貨日期</string>
+    <string name="order_details_delivery_time">送貨時間</string>
+    <string name="order_details_delivery_address">送貨地址</string>
+    <string name="order_details_payment_method"></string>
+    <string name="order_details_order_details">訂單詳情</string>
+    <string name="order_details_total_items">貨品總數</string>
+    <string name="order_details_subtotal">小計</string>
+    <string name="order_details_delivery_fee">運費</string>
+    <string name="order_details_hk_dollar_sign">HK$</string>
+    <string name="order_details_add_review">添加評論</string>
+    <string name="order_details_rate_success">已評論</string>
+
+    <string name="order_details_value_for_money">物有所值</string>
+    <string name="order_details_good_quality">良好質料/物料</string>
+    <string name="order_details_good_taste_flavour">味道良好</string>
+    <string name="order_details_quick_visible_results">必備</string>
+    <string name="order_details_ideal_for_gift">豐富營養資料</string>
+    <string name="order_details_ease_of_use">詳細產品資料</string>
+
+    <!-- Payment-->
+    <string name="add_payment_btn">添加付款方式</string>
+    <string name="no_payment">沒有付款方式</string>
+    <string name="use_as_default_payment">使用默認付款方式</string>
+    <string name="card_number_hint">卡號碼</string>
+    <string name="what_is_security_code">何謂\"信用卡保安碼\"？</string>
+    <string name="end_date_hint">到期日</string>
+    <string name="holder_name_hint">持卡人姓名</string>
+    <!-- Delivery Address-->
+    <string name="add_address">添加新地址</string>
+    <string name="delivery_address">送貨地址</string>
+    <string name="add_billing_address">新增賬單地址</string>
+    <string name="add_delivery_address">新增送貨地址</string>
+    <string name="add_delivery_address_btn">添加新地址</string>
+    <string name="edit_delivery_address">更改送貨地址</string>
+    <string name="no_delivery_address">沒有送貨地址</string>
+    <string name="use_as_default_address">使用默認送貨地址</string>
+    <string name="checkout">付款</string>
+
+    <!-- checkout dot -->
+    <string name="checkout_edit">編輯</string>
+    <string name="checkout_next_delivery_data_time">送貨時間</string>
+    <string name="checkout_next_payment_method">付款方式</string>
+    <string name="checkout_next_order_review_and_confirm">訂單詳情及確認</string>
+    <string name="checout_next_payment_gateway">付款</string>
+
+    <string name="checkout_timeslot_selected">已選擇</string>
+    <string name="checkout_timeslot_avaliable">可選擇</string>
+    <string name="checkout_timeslot_unavaliable">未能提供</string>
+
+    <string name="checkout_cheung_chau">長洲</string>
+    <string name="checkout_lautau_island">大嶼山</string>
+
+    <string name="thank_you_for_your_order">感謝您的訂單</string>
+    <string name="your_order_number_is">您的訂單號碼為 %s</string>
+    <string name="confirmation_message">你將會收到確認電郵</string>
+    <string name="check_out_view_order_history">查看訂單記錄</string>
+    <string name="check_out_dot_details">詳情</string>
+    <string name="check_out_dot_delivery_method">送貨方法</string>
+    <string name="check_out_dot_contact_info">聯絡方式</string>
+    <string name="check_out_dot_delivery_date">送貨日期</string>
+    <string name="check_out_dot_special_instruction">特殊說明</string>
+    <string name="check_out_dot_special_instruction_hint">如有任何特別訂單及/或送貨備註，請填寫此爛，最多只可填寫220個字元。</string>
+    <string name="check_out_dot_payment">付款</string>
+    <string name="check_out_dot_confirmation">確認付款</string>
+    <string name="check_out_dot_thank_you">Thank You</string>
+    <string name="watson_checko_out_ref_num">參考編號</string>
+    <string name="watson_con_shopping">繼續購物</string>
+    <string name="watson_checko_out_scb">SCB:%s</string>
+    <string name="watson_checko_out_kbank">KBank:%s</string>
+
+    <string name="watson_checko_out_remind">Reference # is used for the bank transfer.\nAnd you will recieve an email confirmation shortly\nYou will have 2 days to do the tranfer, either\nthrough SCB or KBank (ATM or Bank)</string>
+
+    <string name="check_out_credit_card_no_empty">卡號碼不能為空</string>
+    <string name="check_out_credit_card_no_invalid">卡號碼格式不正確</string>
+    <string name="check_out_credit_card_security_code_empty">安全碼不能為空</string>
+    <string name="check_out_credit_card_security_code_invalid">安全碼格式不正確</string>
+    <string name="check_out_credit_card_expiry_month_empty">到期日不能為空</string>
+    <string name="check_out_credit_card_expiry_month_invalid">到期日格式不正確</string>
+    <string name="check_out_credit_card_expiry_year_empty">到期月份不能為空</string>
+    <string name="check_out_credit_card_expiry_year_invalid">到期月份格式不正確</string>
+    <string name="check_out_credit_card_name_empty">卡片持有人姓名不能為空</string>
+    <string name="check_out_credit_card_pay_confirm">立即付款及完成</string>
+
+    <!-- watson -->
+    <string name="watson_check_out_dot_discount">折扣</string>
+    <string name="watson_check_out_dot_payment">付款方法</string>
+    <string name="watson_check_out_dot_confirmation">訂單確認</string>
+    <string name="watson_check_out_dot_payment_gateway">Payment Gateway</string>
+
+    <!--checkout reminder -->
+    <string name="reminder">溫馨提示</string>
+    <string name="reminder_primary_desc">%s個物品暫時不能同時購買</string>
+    <string name="reminder_secondary_desc">以下產品不能送遞至已選定之送貨地址，這些產品會放回購物車內，留待下次購買。</string>
+
+    <!-- checkout dialog -->
+    <string name="hamper">溫馨提示</string>
+    <string name="hamper_text">下面產品不能與其他產品同時結賬。你可以先結賬部份產品，並留待下次再購買。</string>
+    <string name="hamper_confirm">同意並繼續結賬</string>
+    <string name="basket_level_offer">優惠</string>
+    <string name="basket_reward_amount">金額 HK$</string>
+    <string name="adult_only_alcohol">+ 18歲警告</string>
+    <string name="adult_only_alcohol_text">我已年滿18歲或以上，可於百佳網上超級市場PARKnSHOP.com購買酒精類飲品。</string>
+    <string name="adult_only_alcohol_yes">是的，我是18歲以上</string>
+    <string name="adult_only_alcohol_no">不，我未滿18歲</string>
+
+    <string name="out_of_stock_insufficient_stock">缺貨/庫存不足</string>
+    <string name="out_of_stock_confirm_btn">同意並繼續結賬</string>
+    <string name="out_of_stock_items">缺貨貨品</string>
+    <string name="hamper_items">Hamper Items</string>
+    <string name="insufficient_stock_items">庫存不足產品</string>
+    <string name="following_stock">下列產品庫存不足。\n如果要繼續結賬，你必須從購物籃移除下列售罄貨品或自行調節至適當數量。</string>
+
+    <!-- Checkout -->
+
+    <string name="check_out_home_delivery">本地送貨</string>
+    <string name="checkout_please_select_store">請選擇自取店舖</string>
+
+    <string name="watson_checkout_title_1">結賬</string>
+
+    <string name="watson_checkout_title_2">添加新的送貨地址</string>
+    <string name="watson_checkout_title_3">添加新的賬單地址</string>
+
+
+    <string name="check_out_page_address_1">地址1</string>
+    <string name="check_out_page_address_2">地址12</string>
+    <string name="check_out_page_address_desc">送貨到工作地點? 請提供您的公司名稱</string>
+    <string name="checkout_address_form_invalid_input">以下資料為必填欄位，請檢查有否填寫正確。</string>
+    <string name="check_out_page_city">市*</string>
+    <string name="check_out_page_country">國家*</string>
+    <string name="check_out_back">返回</string>
+    <string name="check_out_next">下一頁</string>
+    <string name="check_out_select_ecoupon">選擇 電子優惠券</string>
+    <string name="check_out_select_evoucher">選擇 電子禮券</string>
+    <string name="check_out_select_account_holder_name">卡主名稱</string>
+    <string name="check_out_select_card_number">信用卡號碼</string>
+    <string name="check_out_select_expiry_month">到期月份</string>
+    <string name="check_out_select_expiry_year">到期年份</string>
+    <string name="check_out_select_issue_number">信用卡保安密碼</string>
+    <string name="check_out_evoucher">電子禮券</string>
+
+    <string name="check_out_burn_point">BURN POINT</string>
+
+    <string name="watson_check_out_select_card_number">卡號碼</string>
+    <string name="watson_check_out_security_number">安全碼</string>
+
+    <string name="watson_check_out_expiry_date">到期日</string>
+    <string name="watson_check_out_name">持卡人姓名</string>
+
+
+
+
+    <!-- checkout detail header-->
+    <string name="support">支援</string>
+    <string name="orders">訂單</string>
+    <string name="order_details">訂單詳情</string>
+    <string name="order_confirmation">確認訂單</string>
+    <string name="billing_address">賬單地址</string>
+    <string name="billing_method">結算方式</string>
+    <string name="total_items">貨品總數</string>
+    <string name="your_total">總數</string>
+    <string name="subtotal">總額</string>
+    <string name="delivery_fee">運費</string>
+    <string name="order_total">訂單總額</string>
+
+    <!-- footer -->
+    <string name="promotion_code">優惠碼</string>
+    <string name="select_evoucher">選擇 電子禮券</string>
+    <string name="no_need_the_receipt">送貨時無需附上訂單收據</string>
+    <string name="t_and_c">本條款適用於 閣下對本網站之遊覽及使用，透過本網站向百佳超級市場(下稱「本公司」)購買貨品或服務之交易。請在使用本網頁之前仔細閱讀本網上購物條款及細則。 閣下使用本網頁或其中任何部分，即表示同意 閣下已閱讀本網上購物條款及細則，並且接受和同意受本網上購物條款及細則約束。</string>
+    <string name="t_and_c_terms_con">網上購物條款及細則</string>
+    <string name="t_and_c_terms">網上</string>
+    <string name="t_and_c_condition">購物條款及細則</string>
+    <string name="discount">折扣</string>
+
+
+    <string name="error_firstname">姓名</string>
+    <string name="error_lastname">姓氏</string>
+    <string name="error_mobile">電話號碼</string>
+    <string name="error_room">號/室</string>
+    <string name="error_floor">樓</string>
+    <string name="error_line3">座</string>
+    <string name="error_alley">大廈</string>
+    <string name="error_lane">屋苑名稱</string>
+    <string name="error_town">區域</string>
+    <string name="error_district">地區</string>
+    <string name="error_streetname">街道名稱</string>
+
+    <string name="your_detail">詳細</string>
+    <string name="first_name">名字</string>
+    <string name="last_name">姓氏</string>
+    <string name="mr">先生</string>
+    <string name="ms">女士</string>
+    <string name="mrs">夫人</string>
+    <string name="miss">小姐</string>
+    <string name="area">區域</string>
+    <string name="district">地區</string>
+    <string name="area_choose">選擇區域</string>
+    <string name="district_choose">選擇地區</string>
+    <string name="address_flat_room_block">地址 (號/室/樓/座)</string>
+    <string name="address_building_estate_street">地址 (大廈/屋苑/街道)</string>
+    <string name="address_new_address">新地址</string>
+    <string name="address_flat_room">號/室</string>
+    <string name="address_floor">樓層</string>
+    <string name="address_block">座</string>
+    <string name="address_building">大廈</string>
+    <string name="address_estate_name">屋苑名稱</string>
+    <string name="address_street_no">街號</string>
+    <string name="address_street_name">街道名稱</string>
+    <string name="email">電子郵件</string>
+    <string name="emailshort">電郵</string>
+    <string name="contact_no">聯絡電話</string>
+    <string name="address_flat_room_important">號/室*</string>
+    <string name="address_floor_important">樓層*</string>
+    <string name="address_block_important">座*</string>
+    <string name="address_building_important">大廈*</string>
+    <string name="address_estate_name_important">屋苑名稱*</string>
+    <string name="address_street_no_important">街號*</string>
+    <string name="address_street_name_important">街道名稱*</string>
+    <string name="first_name_important">名字*</string>
+    <string name="last_name_important">姓氏*</string>
+    <string name="contact_no_important">聯絡電話*</string>
+    <string name="area_choose_important">選擇區域*</string>
+    <string name="district_choose_important">選擇地區*</string>
+
+    <string name="delivery_details">送貨方式</string>
+    <string name="delivery_date">送貨日期</string>
+    <string name="delivery_time">送貨時間</string>
+
+    <string name="special_instruction">特殊說明</string>
+    <string name="with_gift_wrap">禮品包裝</string>
+    <string name="remarks">備註</string>
+
+    <string name="ecoupon_evoucher">電子優惠券 &amp; 電子禮券</string>
+
+    <string name="ecoupon_evoucher_upper">電子優惠券 &amp; 電子禮券</string>
+    <string name="ecoupon_code">優惠碼</string>
+    <string name="ecoupon">電子優惠券</string>
+    <string name="ecoupon_not_found">沒有電子優惠券</string>
+    <string name="evoucher_not_found">沒有電子禮券</string>
+
+    <string name="evoucher">電子禮券</string>
+
+    <string name="hint_burn_point">Burn Point</string>
+
+
+    <!--Delivery-->
+    <string name="date">日期</string>
+    <string name="delivery_date_time_placeholder">送貨日期和時間</string>
+    <string name="delivery_placeholder">送貨</string>
+    <string name="delivery_method_title">賬戶資料</string>
+
+    <string name="delivery_new_address">添加新地址</string>
+
+    <string name="view_all_items">查看所有貨品</string>
+    <string name="delivery_method_self">自取</string>
+    <string name="pick_up_store_title">自取商店</string>
+    <string name="select_store">選擇商店</string>
+
+    <string name="delivery_address_placeholder">送貨地址</string>
+    <string name="payment_address_placeholder">付款地址</string>
+    <string name="use_as_delivery_address">設定為默認送貨地址</string>
+    <string name="same_as_delivery_address">同交貨地址</string>
+    <string name="same_as_billing_address">同發票地址</string>
+    <string name="use_as_billing_address">用作賬單地址</string>
+    <string name="new_billing_addres">新賬單地址</string>
+    <string name="cash_on_delivery">貨到付款</string>
+
+    <string name="delivery_time_placeholder">送貨時間</string>
+    <string name="delivery_date_placeholder">送貨日期</string>
+
+    <!-- payment -->
+    <string name="payment_method">付款方法</string>
+    <string name="select_payment_method">選擇付款方法</string>
+
+
+    <!-- store list -->
+    <string name="st">沙田</string>
+    <string name="mos">馬鞍山</string>
+    <string name="tm">屯門</string>
+
+    <string name="hki">香港島</string>
+    <string name="kln">九龍</string>
+    <string name="nt">新界</string>
+
+    <!-- Sorting Fragment -->
+    <string name="product_cate_from_API">類別</string>
+    <string name="product_brand_from_API">品牌</string>
+    <string name="product_price_from_API">價錢</string>
+    <string name="product_event_from_API">選擇特惠活動</string>
+
+    <string name="sort_by">選擇排序方式</string>
+    <string name="rank">排名</string>
+    <string name="filter_by_category">選擇類別</string>
+    <string name="filter_by_brand">選擇其中品牌</string>
+    <string name="filter_by_rank">Filter by Rank</string>
+    <string name="filter_by_special_offer">選擇特惠活動</string>
+
+    <string name="special_offer">特別優惠</string>
+    <string name="category">類別</string>
+    <string name="brand">品牌</string>
+
+    <string name="recommended">推薦</string>
+    <string name="popularity">流行</string>
+    <string name="rank_desc">排名（從高到低)</string>
+    <string name="rank_asc">排名（從低到高)</string>
+    <string name="price_desc">價格（從高到低)</string>
+    <string name="price_asc">價格（低到高)</string>
+    <string name="brand_name_asc">品牌名稱（A-Z)</string>
+    <string name="brand_name_desc">品牌名稱 (Z-A)</string>
+    <string name="product_name_asc">產品名稱 (A-Z)</string>
+    <string name="product_name_desc">產品名稱 (Z-A)</string>
+
+    <string name="all_star">全部</string>
+    <string name="two_star">2 星或以上</string>
+    <string name="three_star">3 星或以上</string>
+    <string name="four_star">4 星或以上</string>
+    <string name="five_star">5 星</string>
+
+    <string name="reset">重設</string>
+    <string name="clear">清除</string>
+    <string name="retail_price">零售價格</string>
+    <string name="any">不限</string>
+
+    <!-- Grocery List -->
+    <string name="grocery_list_not_yet_login">請於側邊攔登入會員\n查看購物清單</string>
+    <string name="grocery_list_set_reminder">設置提醒</string>
+    <string name="grocery_list_remind_me_on_a_day">提示功能</string>
+    <string name="grocery_list_alarm">提示時間</string>
+    <string name="grocery_list_repeat">重複</string>
+    <string name="grocery_list_add_all_to_cart">全部加入購物車</string>
+    <string name="grocery_list_alarm_picker_never">永不</string>
+    <string name="grocery_list_alarm_picker_everyday">每日</string>
+    <string name="grocery_list_alarm_picker_every_week">每週</string>
+    <string name="grocery_list_alarm_picker_every_month">每月</string>
+    <string name="grocery_list_alarm_picker_every_year">每年</string>
+    <string name="grocery_list_alarm_setup">購買提示已設定</string>
+    <string name="grocery_list_alarm_msg">購買提示</string>
+
+    <!-- Add Wish List -->
+    <string name="add_wish_list_create_new_list">加入購物清單</string>
+    <string name="add_wish_list_enter_name">新列表輸入一個名稱</string>
+    <string name="add_wish_list_enter_name_hint">列表名稱</string>
+    <string name="add_wish_list_add_to_grocery_list">加入願望清單</string>
+    <string name="add_wish_list_added_to_grocery_list">已加入購物清單</string>
+    <string name="add_wish_list_dialog_create_new_list">建立購物清單</string>
+
+    <!-- Add Wish List -->
+    <string name="search_page_title">搜尋</string>
+    <string name="search_page_recently_searched">最近搜尋結果</string>
+    <string name="search_page_hot_search">熱門搜尋</string>
+    <string name="search_page_clear">清除</string>
+
+    <!-- Register -->
+    <string name="register_page_title">註冊</string>
+    <string name="register_page_flow1">易賞錢</string>
+    <string name="register_page_flow2">基本</string>
+    <string name="register_page_flow3">聯絡</string>
+    <string name="register_page_flow4">賬戶\n詳細</string>
+    <string name="register_page_money_back_card_no_hint">易賞錢號碼</string>
+    <string name="register_page_password_hint">密碼</string>
+    <string name="register_page_password_desc">密碼可以為字母和數字的組合。它必須至少由6個字符。</string>
+    <string name="register_page_confirm_password_hint">確認密碼</string>
+    <string name="register_page_receive_desc">我想通過從百佳獲得促銷信息，新產品發布會，特別活動的更新：</string>
+    <string name="register_page_mr">先生</string>
+    <string name="register_page_mrs">夫人</string>
+    <string name="register_page_miss">小姐</string>
+    <string name="register_page_ms">女士</string>
+    <string name="register_page_first_name_hint">名字</string>
+    <string name="register_page_last_name_hint">姓氏</string>
+    <string name="register_page_email_hint">電子郵件</string>
+    <string name="register_page_email_desc">電子郵件將是你的用戶名。</string>
+    <string name="register_page_contact_no_hint">聯絡電話</string>
+    <string name="register_page_birthday">生日 (年/月/日)</string>
+    <string name="register_page_martial_status">婚姻狀況</string>
+    <string name="register_page_no_of_children">子女數目</string>
+    <string name="register_page_region">地區</string>
+    <string name="register_page_tnc">我已閱讀並同意網上購物條款及細則和私穩條款政策聲明。</string>
+    <string name="reg_terms_con">條款</string>
+    <string name="reg_terms_privacy_policy">隱私權政策</string>
+    <string name="reg_terms">網上</string>
+    <string name="reg_condition">購物條款及細則</string>
+    <string name="reg_privacy">私穩條款</string>
+    <string name="reg_policy">政策</string>
+
+    <string name="register_page_disclaimer">您可以選擇多個首選聯繫方式，登記後，可隨時更新。
+    \n你如果希望收到任何宣傳的更新，簡單地將其留空。
+    \n\n*直接營銷材料將被發送到通過即時消息應用程序，如WhatsApp的手機號碼。</string>
+    <string name="register_page_receive_sms">短信/即時信息應用程序</string>
+    <string name="register_page_receive_email">電子郵件地址</string>
+    <string name="register_page_receive_post">郵寄</string>
+    <string name="register_page_receive_msg">我希望收到促銷信息</string>
+    <string name="register_page_single">單身</string>
+    <string name="register_page_married">已婚</string>
+    <string name="register_page_devoiced">離婚</string>
+    <string name="register_page_no_children">沒有孩子</string>
+    <string name="register_page_one_children">一個</string>
+    <string name="register_page_two_children">兩個</string>
+    <string name="register_page_three_or_more_children">三個或以上</string>
+    <string name="register_page_no_children_count">沒有子女</string>
+    <string name="register_page_one_children_count">一個</string>
+    <string name="register_page_two_children_count">兩個</string>
+    <string name="register_page_three_or_more_children_count">三個或以上</string>
+    <string name="g_member_e_pw">密碼格式錯誤</string>
+    <string name="g_member_p_oldpw">請輸入原先密碼</string>
+    <string name="g_member_e_confirm">密碼與確認密碼不符</string>
+    <string name="register_page_moneyback_card_already_register">此卡已註冊</string>
+    <string name="register_page_moneyback_card_pwd_require">輸入您的易賞錢號碼和密碼後，再試一次</string>
+    <string name="register_page_moneyback_card_card_no_invalid">易賞錢無效，請重新輸入</string>
+    <string name="register_page_moneyback_card_card_next_personal_info">個人信息</string>
+    <string name="register_page_moneyback_card_card_next_finish">完成</string>
+    <string name="register_page_register_success">註冊成功</string>
+
+    <!-- History -->
+    <string name="history_page_title">歷史</string>
+
+    <!-- Top Brands -->
+    <string name="top_brands_page_title">熱門品牌</string>
+
+    <string name="recipe_all">全部</string>
+    <string name="recipe_bookmarked">書籤</string>
+    <string name="recipe_serves">Serves</string>
+    <string name="recipe_preparation">Preparation</string>
+    <string name="recipe_cooking">Cooking</string>
+    <string name="recipe_seasonings">Seasonings</string>
+    <string name="recipe_method">煮食方法</string>
+    <string name="recipe_cooking_tips">Cooking Tips</string>
+    <string name="recipe_suggested_items">建議烹飪</string>
+    <string name="recipe_dish_type">菜式</string>
+    <string name="recipe_dish_type_all">所有類型</string>
+
+    <!-- Store locator -->
+    <string name="store_locator">店鋪位置</string>
+    <string name="store_locator_map">地圖</string>
+    <string name="store_locator_list">列表</string>
+    <string name="store_locator_advacned_search">進階搜索</string>
+    <string name="store_locator_share_to_friend">分享給朋友</string>
+    <string name="store_locator_recently_search">最近搜索</string>
+    <string name="store_with_parking">可泊車</string>
+    <string name="store_locator_search_now">立即搜索</string>
+    <string name="store_lcaotor_call">撥打 %s</string>
+
+    <!-- Settings -->
+    <string name="setting_notifications">通知</string>
+    <string name="setting_notifications_go_to_setting">請到"設定"開啓接收推送通知</string>
+    <string name="setting_language">語言</string>
+    <string name="setting_terms_of_use">使用條款</string>
+    <string name="setting_privacy_policy">隱私權政策</string>
+    <string name="setting_license">Licence</string>
+    <string name="setting_disclaimer_and_notice">免責聲明 &amp; 通知</string>
+    <string name="setting_rate_in_app_store">前往 Play Store 評分</string>
+    <string name="setting_version">版本</string>
+
+    <!-- Customer Service -->
+    <string name="customer_service_page_about">關於百佳</string>
+
+    <!-- ADD TO CART -->
+    <string name="add_to_cart">加入購物車</string>
+
+    <!-- comment -->
+    <string name="comment_list">評論列表</string>
+
+    <string name="dish_type">菜式</string>
+
+    <!-- Forget Password -->
+    <string name="forget_password_page_title">忘記密碼</string>
+    <string name="forget_password_page_text">忘記密碼?</string>
+    <string name="forget_password_page_desc">請輸入您用來註冊您的電子郵件地址。我們會向你發送電子郵件說明如何重置你的密碼信息。</string>
+    <string name="forget_password_page_email">電子郵件</string>
+    <string name="forget_password_page_check_your_email">檢查你的電子郵件</string>
+    <string name="forget_password_page_success">我們已經向您發出的密碼重置指令到您的電郵。\ n請打開電子郵件中的鏈接重設密碼</string>
+    <string name="forget_password_page_error_invalid_required">請輸入電子郵件地址</string>
+    <string name="forget_password_page_error_invalid_required_desc">輸入您的電子郵件地址， \n然後重試。</string>
+    <string name="forget_password_page_error_invalid_email">無效電子郵件</string>
+    <string name="forget_password_page_error_invalid_email_desc">>電子郵件無效，\ n請重新輸入。</string>
+
+    <!-- Contacts -->
+    <string name="contacts_page_head_title">聯絡我們</string>
+    <string name="contacts_page_head_office">總公司</string>
+    <string name="contacts_page_head_office_address">Watson house, 1-5 Wo Liu Road, Fo Tan, Sha Tin,
+    \nNew Territories, Hong Kong</string>
+
+    <!-- Contacts Details -->
+    <string name="contacts_details_page_dial_to">致電</string>
+    <string name="contacts_details_page_btn_call">致電</string>
+    <string name="contacts_details_page_hk_office_no">[Hong Kong] +(852)2187 2277</string>
+    <string name="contacts_details_page_hk_no">85221872277</string>
+    <string name="contacts_details_page_mo_office_no">[Macau] +(853)2851 9274</string>
+    <string name="contacts_details_page_mo_no">8532851 9274</string>
+    <string name="contacts_details_page_email">moneyback@asw.com.hk</string>
+    <string name="contacts_details_page_office_hr_day">星期一至日</string>
+    <string name="contacts_details_page_office_hr">0900AM - 6:00PM</string>
+
+    <!-- Inbox -->
+    <string name="inbox_page_title">收件箱</string>
+    <string name="inbox_page_no_result">沒有信息</string>
+    <string name="inbox_page_select_all">選擇全部</string>
+
+    <string name="not_found">沒有結果</string>
+
+    <string name="day">日</string>
+    <string name="hour">時</string>
+    <string name="minute">分</string>
+    <string name="item">件貨物</string>
+    <string name="items">件貨物</string>
+
+    <string name="process_fail">目前無法處理你的需求</string>
+    <string name="related_product">相關產品</string>
+
+    <string name="search_page_title_main">貨品搜尋</string>
+
+    <string name="free">免運費</string>
+    <string name="comments">項評論</string>
+    <string name="max_allowed_buy_qty">已經達到購買上限</string>
+
+    <string name="email_empty">不能填空電郵</string>
+    <string name="password_empty">不能填空密碼</string>
+    <string name="gps_not_enabled">GPS 尚未設定</string>
+    <string name="open_location_setting">打開相關設定</string>
+    <string name="free_gift">贈品</string>
+    <string name="product_code">編號 : </string>
+
+    <string name="room">%s室</string>
+    <string name="floor">%s樓</string>
+    <string name="block">第%s座</string>
+
+    <string name="security_code_notice">信用卡保安碼(簡稱CVV2/CVC2)是進行交易的一種保安措施，這編碼只會印在信用卡上，因此只有持有此信用卡的人方可得知正確的CVV2/CVC2。
+    \n您可以看見一個3位數字，這個3位數就是您的\"信用卡保安碼\" (CVV2/CVC2)。</string>
+
+    <string name="sorting_brand_name">默認</string>
+    <string name="sorting_new">最新</string>
+    <string name="sorting_low_to_high">價格由低至高</string>
+    <string name="sorting_hight_to_low">價格由高至低</string>
+    <string name="sorting_product_name_a_to_z">商品名稱由A至Z</string>
+    <string name="sorting_product_name_z_to_a">商品名稱由Z至A</string>
+
+    <string name="checkout_timeslot_item_am">上午%s</string>
+    <string name="checkout_timeslot_item_pm">下午%s</string>
+    <string name="storage_information">儲存方式</string>
+
+    <string name="barcode_scan">條碼掃描</string>
+    <string name="bardcode_scan_dummy_label">框內對準條形碼掃描</string>
+    <string name="you_can_enjoy_free_delivery">你可以享受免運費!</string>
+
+    <string name="tutorial_title_1">隨時隨地超市體驗</string>
+    <string name="tutorial_desc_1">精選心水貨品唾手可得\n百佳專人送到府上！</string>
+
+    <string name="tutorial_title_2">更好、更流暢和更愉快的購物體驗</string>
+    <string name="tutorial_desc_2">左右滑動能更快、更方便地瀏覽菜單和購物車</string>
+
+    <string name="tutorial_title_3">推廣優惠</string>
+    <string name="tutorial_desc_3">緊貼百佳最新推廣及App獨賞優惠</string>
+
+    <string name="tutorial_title_4">易賞錢．易賞你</string>
+    <string name="tutorial_desc_4">你的易賞錢卡亦可儲分，立即體驗全新百佳App！</string>
+
+    <string name="cube_ptr_pull_down">下拉可以更新</string>
+    <string name="cube_ptr_pull_down_to_refresh">下拉可以更新</string>
+    <string name="cube_ptr_release_to_refresh">放開立即更新</string>
+    <string name="cube_ptr_refreshing">正在更新數據中</string>
+    <string name="cube_ptr_refresh_complete">下拉可以更新</string>
+    <string name="expiry_date_ecoupon">有效日期:</string>
+    <string name="available_store">提供店鋪</string>
+    <string name="store_not_found">沒有相關店舖</string>
+    <string name="credit_card_full_pay">Visa / Master</string>
+</resources>

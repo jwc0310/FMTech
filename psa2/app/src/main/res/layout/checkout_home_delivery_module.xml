@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <parknshop.parknshopapp.View.CheckoutHeader
+        app:text="@string/delivery_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/addresses_wrapper"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </LinearLayout>
+    <!--
+    <parknshop.parknshopapp.View.CheckoutAddress
+        android:id="@+id/stored_delivery_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:checkout_address_checkbox_is_enable="true"
+        app:checkout_address_checkbox_title="@string/use_as_delivery_address"
+        app:checkout_address_receiver_title="@string/delivery_address_placeholder"
+        app:checkout_address_receiver_address=""
+        app:checkout_address_receiver_name="" />
+-->
+
+    <include
+        layout="@layout/checkout_add_home_delivery_panel" />
+
+    <!-- canceled -->
+    <parknshop.parknshopapp.View.CheckoutAddressForm
+        android:id="@+id/address_form"
+        android:visibility="gone"
+        app:form_selected_drawable="@drawable/sign_in_icn_tick_selected"
+        app:form_unselected_drawable="@drawable/checkout_unfilled_circle"
+        app:form_checkboxtitle="@string/use_as_delivery_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <parknshop.parknshopapp.View.CheckoutReminder
+        android:id="@+id/item_not_available_reminder_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:checkout_remeinder_type="home delivery" />
+</LinearLayout>

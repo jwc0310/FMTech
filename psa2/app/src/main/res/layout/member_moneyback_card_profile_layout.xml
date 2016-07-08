@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.Layout.AllFill">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            style="@style/Widget.Layout.AllFill.OrientationVert"
+            android:layout_above="@+id/btnLink">
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MemberZoneHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:text="@string/myaccount_page_my_information" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MemberZoneItem
+                android:id="@+id/txtTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/title" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MemberZoneItem
+                android:id="@+id/txtFamilyName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/myaccount_page_family_name" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MemberZoneItem
+                android:id="@+id/txtGivenName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/myaccount_page_given_name" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MemberZoneItem
+                android:id="@+id/txtChineseName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/myaccount_page_chinese_name" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MemberZoneItemPicker
+                android:id="@+id/txtDateOfBirth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:member_picker_header="@string/myaccount_page_date_of_birth" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MemberZoneItem
+                android:id="@+id/txtEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/email" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MemberZoneHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:text="@string/myaccount_page_contact_number" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MemberZoneItem
+                android:id="@+id/txtMobileNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/myaccount_page_mobile_number" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MemberZoneItem
+                android:id="@+id/txtTelNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/myaccount_page_tel_number" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MemberZoneHeader
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:text="@string/myaccount_page_home_address" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MemberZoneItem
+                android:id="@+id/txtFlat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/address_flat_room" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MemberZoneItem
+                android:id="@+id/txtFloor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/address_floor" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MemberZoneItem
+                android:id="@+id/txtBlock"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/address_block" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MemberZoneItem
+                android:id="@+id/txtBuilding"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/address_building" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MemberZoneItem
+                android:id="@+id/txtEstateName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/address_estate_name" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MemberZoneItem
+                android:id="@+id/txtStreetNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/address_street_no" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MemberZoneItem
+                android:id="@+id/txtStreetName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/address_street_name" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MemberZoneItem
+                android:id="@+id/txtDistrict"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/district" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MemberZoneItem
+                android:id="@+id/txtArea"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:header="@string/area" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MemberZoneItemPicker
+                android:id="@+id/txtLanguage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:member_picker_header="@string/myaccount_page_my_language_preferred_in_card_communication" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MemberZoneItemPicker
+                android:id="@+id/txtMaritalStatus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:member_picker_header="@string/register_page_martial_status" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <TextView
+                style="@style/Widget.TextView.LargeGrey"
+                android:layout_width="match_parent"
+                android:padding="15dp"
+                android:text="@string/myaccount_page_my_language_preferred_in_card_communication" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MoneyBackCardProfileItem
+                android:id="@+id/switchSMS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:member_picker_header="@string/myaccount_page_opt_out_sms" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MoneyBackCardProfileItem
+                android:id="@+id/switchEmails"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:member_picker_header="@string/myaccount_page_opt_out_emails" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+            <parknshop.parknshopapp.Fragment.MemberZone.View.MoneyBackCardProfileItem
+                android:id="@+id/switchDirMail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:member_picker_header="@string/myaccount_page_opt_out_direct_mailings" />
+
+            <View style="@style/Widget.Layout.Line" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

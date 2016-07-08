@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp">
+        <android.support.v4.view.ViewPager
+            android:id="@+id/happy_time_gallery_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+        <LinearLayout
+            android:id="@+id/happy_time_tutorial_dot_panel"
+            style="@style/Widget.Layout.WidthFill.OrientationHori"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true">
+        </LinearLayout>
+        <include
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:visibility="gone"
+            layout="@layout/crazy_sale_share_locale_panel" />
+    </RelativeLayout>
+
+    <include android:id="@+id/crazy_sale_time_panel" layout="@layout/crazy_sale_time_panel" />
+
+    <include  android:id="@+id/crazy_sale_promotion_heading" layout="@layout/crazy_sale_promotion_heading" />
+
+</LinearLayout>

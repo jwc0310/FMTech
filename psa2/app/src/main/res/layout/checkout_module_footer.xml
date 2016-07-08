@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include
+        android:id="@+id/your_detail_header"
+        layout="@layout/check_out_header" />
+
+    <include
+        android:id="@+id/firstname"
+        layout="@layout/checkout_module_order_dictionary" />
+
+    <include
+        android:id="@+id/lastname"
+        layout="@layout/checkout_module_order_dictionary" />
+
+    <include
+        android:id="@+id/email"
+        layout="@layout/checkout_module_order_dictionary" />
+
+    <include
+        android:id="@+id/contact_no"
+        layout="@layout/checkout_module_order_dictionary" />
+
+
+    <include
+        android:id="@+id/delivery_detail"
+        layout="@layout/check_out_header" />
+
+    <include
+        android:id="@+id/delivery_method"
+        layout="@layout/checkout_module_order_dictionary" />
+
+    <include
+        android:id="@+id/delivery_date"
+        layout="@layout/checkout_module_order_dictionary" />
+
+    <include
+        android:id="@+id/delivery_time"
+        layout="@layout/checkout_module_order_dictionary" />
+
+    <include
+        android:id="@+id/delivery_address"
+        layout="@layout/checkout_delivery_address_item" />
+
+    <include
+        android:id="@+id/special_instruction"
+        layout="@layout/check_out_header" />
+
+    <include
+        android:id="@+id/with_gift_wrap"
+        layout="@layout/checkout_module_order_dictionary" />
+
+    <include
+        android:id="@+id/remarks"
+        layout="@layout/checkout_module_order_dictionary" />
+
+    <include
+        android:id="@+id/ecoupon_evoucher"
+        layout="@layout/check_out_header" />
+
+    <include
+        android:id="@+id/ecoupon_code_text"
+        layout="@layout/checkout_module_order_dictionary" />
+
+    <include
+        android:id="@+id/ecoupon_text"
+        layout="@layout/checkout_module_order_dictionary" />
+
+    <include
+        android:id="@+id/payment_method"
+        layout="@layout/check_out_header" />
+
+    <include
+        android:id="@+id/billing_address"
+        layout="@layout/checkout_delivery_address_item" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/reciple"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/no_need_the_receipt" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_weight="1"
+                android:text="@string/t_and_c" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/next"
+        layout="@layout/checkout_next_btn" />
+</LinearLayout>

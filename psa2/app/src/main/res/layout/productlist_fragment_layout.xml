@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E7EE">
+
+    <include
+        android:id="@+id/search_bar"
+        layout="@layout/home_activity_search_bar"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/slLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/search_bar"
+        android:gravity="bottom">
+
+        <RelativeLayout style="@style/Widget.Layout.AllFill">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1">
+
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scrollbars="none" />
+
+                    <android.support.v7.widget.RecyclerView
+                        android:id="@+id/category_recycler_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="105dp"
+                        android:background="@android:color/white"
+                        android:scrollbars="vertical"
+                        android:elevation="5dp"
+                        android:visibility="gone" />
+
+                    <!--
+                    <include
+                        android:id="@+id/cart_panel"
+                        layout="@layout/productlist_fragment_cart_panel"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone" />-->
+
+                    <LinearLayout
+                        android:id="@+id/add_to_my_panel"
+                        android:visibility="gone"
+                        android:gravity="center"
+                        android:background="@color/transparent_black_80"
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:elevation="6dp"
+                        android:layout_height="90dp">
+                        <TextView
+                            android:textColor="@color/white"
+                            android:text="@string/add_wish_list_added_to_grocery_list"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content" />
+                    </LinearLayout>
+
+                    <include
+                        android:id="@+id/product_list_header"
+                        layout="@layout/productlist_items_header"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:visibility="gone" />
+
+                    <Button
+                        android:id="@+id/sort"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_margin="10dp"
+                        android:background="@drawable/sort_drawable"
+                        android:elevation="5dp"
+                        android:text="@string/product_list_fragment_sort_filter"
+                        android:textColor="@android:color/white" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/sorting_dimmed"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/transparent_black_80"
+                android:visibility="gone"></RelativeLayout>
+
+        </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/no_item_found"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/not_found"
+            android:drawablePadding="5dp"
+            android:drawableTop="@drawable/icon_item_not_found"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <include
+            android:id="@+id/sort_root"
+            layout="@layout/product_sorting_activity_layout"
+            android:layout_width="match_parent"
+            android:layout_height="360dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="50dp"
+            android:visibility="gone" />
+
+
+    </RelativeLayout>
+
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+
+    <include
+        android:id="@+id/buttom_layout"
+        layout="@layout/product_detail_bottom_panel"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone" />
+</RelativeLayout>

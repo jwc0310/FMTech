@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_layout"
+    style="@style/Widget.Layout.WidthFill">
+    <!-- Bottom View Start-->
+    <RelativeLayout
+        style="@style/Widget.Layout.HeightFill">
+        <!--What you want to show-->
+        <LinearLayout
+            android:layout_width="160dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/btnEdit"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:background="@color/sliding_item_cart_add_to_grocery_list"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/check_out_edit_icn"
+                    android:tint="@android:color/white" />
+                <TextView
+                    style="@style/Widget.TextView.NormalWhite"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/btn_edit" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/btnDelete"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:background="@color/sliding_item_cart_remove_item"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/shopping_cart_icn_del"
+                    android:tint="@android:color/white" />
+                <TextView
+                    style="@style/Widget.TextView.NormalWhite"
+                    android:layout_margin="5dp"
+                    android:gravity="center"
+                    android:text="@string/btn_remove" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- Bottom View End-->
+
+    <!-- Surface View Start -->
+    <RelativeLayout
+        android:id="@+id/front_wrapper"
+        style="@style/Widget.Layout.AllFill"
+        android:background="@android:color/white"
+        android:padding="10dp">
+        <!--What you want to show in SurfaceView-->
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:id="@+id/credit"
+                    android:src="@drawable/payment_method_icn_visa"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp" />
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_width="0dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical">
+                        <TextView
+                            android:id="@+id/title"
+                            android:layout_margin="2dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                        <TextView
+                            android:id="@+id/item"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/txtEndDate"
+                        android:layout_margin="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+                    <TextView
+                        android:id="@+id/txtName"
+                        android:layout_margin="2dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <parknshop.parknshopapp.View.CheckoutCheckBoxWithText
+                android:id="@+id/checkbox"
+                app:checkboxtitle="@string/use_as_default_payment"
+                app:isSelected="false"
+                app:selected_drawable="@drawable/sign_in_icn_tick_selected"
+                app:unselected_drawable="@drawable/checkout_unfilled_circle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </RelativeLayout>
+    <!-- Surface View End -->
+</com.daimajia.swipe.SwipeLayout>

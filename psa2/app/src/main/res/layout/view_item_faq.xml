@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Layout.WidthFill"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:id="@+id/rlTitle"
+        style="@style/Widget.Layout.WidthFill">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/Widget.TextView.LargeBlack"
+            android:layout_width="match_parent"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/imgArrow" />
+
+        <ImageView
+            android:id="@+id/imgArrow"
+            style="@style/Widget.ImageView"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/grocery_list_icn_down" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/txtContent"
+        style="@style/Widget.TextView.LargeBlack"
+        android:layout_below="@+id/rlTitle"
+        android:layout_marginTop="10dp"
+        android:visibility="gone" />
+</RelativeLayout>

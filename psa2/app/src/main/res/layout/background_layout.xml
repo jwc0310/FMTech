@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/Widget.Layout.AllFill"
+    tools:context=".OneActivity">
+
+    <ListView
+        android:id="@+id/list"
+        style="@style/Widget.Layout.AllFill"
+        android:layout_above="@+id/groceryBottomLayout"></ListView>
+
+    <include
+        android:id="@+id/groceryBottomLayout"
+        layout="@layout/grocery_categories_bottom_panel" />
+</RelativeLayout>

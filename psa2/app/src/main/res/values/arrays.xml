@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="grocery_list_alarm_picker">
+        <item>@string/grocery_list_alarm_picker_never</item>
+        <item>@string/grocery_list_alarm_picker_everyday</item>
+        <item>@string/grocery_list_alarm_picker_every_week</item>
+        <item>@string/grocery_list_alarm_picker_every_month</item>
+        <item>@string/grocery_list_alarm_picker_every_year</item>
+    </string-array>
+
+    <string-array name="register_dot_string">
+        <item>@string/register_page_flow1</item>
+        <item>@string/register_page_flow2</item>
+        <item>@string/register_page_flow3</item>
+        <item>@string/register_page_flow4</item>
+    </string-array>
+
+    <string-array name="register_without_mb_dot_string">
+        <item>@string/register_page_title</item>
+        <item>@string/register_page_flow2</item>
+        <item>@string/register_page_flow3</item>
+        <item>@string/register_page_flow4</item>
+    </string-array>
+
+    <string-array name="register_title_string">
+        <item>@string/register_page_mr</item>
+        <item>@string/register_page_ms</item>
+        <item>@string/register_page_mrs</item>
+        <item>@string/register_page_miss</item>
+    </string-array>
+
+    <string-array name="check_out_dot_string">
+        <item>@string/check_out_dot_details</item>
+        <item>@string/check_out_dot_delivery_method</item>
+        <item>@string/check_out_dot_delivery_date</item>
+        <item>@string/check_out_dot_special_instruction</item>
+        <item>@string/ecoupon_evoucher</item>
+        <item>@string/check_out_dot_payment</item>
+        <item>@string/check_out_dot_confirmation</item>
+        <item>@string/check_out_dot_thank_you</item>
+        <item>@string/order_preparing</item>
+        <item>@string/order_ready_to_ship</item>
+        <item>@string/order_shipped</item>
+        <item>@string/order_delivered</item>
+        <!--<item>@string/check_out_dot_contact_info</item>-->
+    </string-array>
+
+    <string-array name="watson_check_out_dot_string">
+        <item>@string/check_out_dot_delivery_method</item>
+        <item>@string/watson_check_out_dot_discount</item>
+        <item>@string/watson_check_out_dot_payment</item>
+        <item>@string/watson_check_out_dot_confirmation</item>
+        <item>@string/watson_check_out_dot_payment_gateway</item>
+        <item>@string/check_out_dot_thank_you</item>
+        <!--<item>@string/check_out_dot_contact_info</item>-->
+    </string-array>
+
+    <string-array name="check_out_delivery_method">
+        <item>@string/delivery_method_self</item>
+        <item>@string/delivery_placeholder</item>
+    </string-array>
+
+    <string-array name="check_out_list_of_store">
+        <item>@string/tm</item>
+        <item>@string/st</item>
+        <item>@string/mos</item>
+    </string-array>
+
+    <string-array name="checkout_area">
+        <item>@string/hki</item>
+        <item>@string/kln</item>
+        <item>@string/nt</item>
+    </string-array>
+
+    <string-array name="register_children">
+        <item>@string/register_page_no_children</item>
+        <item>@string/register_page_one_children</item>
+        <item>@string/register_page_two_children</item>
+        <item>@string/register_page_three_or_more_children</item>
+    </string-array>
+
+    <string-array name="register_children_count">
+        <item>@string/register_page_no_children_count</item>
+        <item>@string/register_page_one_children_count</item>
+        <item>@string/register_page_two_children_count</item>
+        <item>@string/register_page_three_or_more_children_count</item>
+    </string-array>
+
+    <string-array name="register_children_count_code">
+        <item>zero</item>
+        <item>one</item>
+        <item>two</item>
+        <item>more</item>
+    </string-array>
+
+    <string-array name="register_status">
+        <item>@string/register_page_single</item>
+        <item>@string/register_page_married</item>
+        <item>@string/register_page_devoiced</item>
+    </string-array>
+
+    <!--<string-array name="order_status">-->
+        <!--<item>@string/order_all_status</item>-->
+        <!--<item>@string/order_preparing</item>-->
+        <!--<item>@string/order_ready_to_ship</item>-->
+        <!--<item>@string/order_shipped</item>-->
+        <!--<item>@string/order_delivered</item>-->
+    <!--</string-array>-->
+
+    <!-- Member Zone - Profile -->
+    <string-array name="profile_title">
+        <item>@string/mr</item>
+        <item>@string/mrs</item>
+        <item>@string/ms</item>
+        <item>@string/miss</item>
+    </string-array>
+    <string-array name="profile_title_code">
+        <item>mr</item>
+        <item>mrs</item>
+        <item>ms</item>
+        <item>miss</item>
+    </string-array>
+    <string-array name="profile_region">
+        <item>Hong Kong</item>
+        <item>HK</item>
+    </string-array>
+
+    <!-- Setting -->
+    <string-array name="setting_language">
+        <item>English</item>
+        <item>繁體中文</item>
+    </string-array>
+
+    <!-- Order History delivery status filter -->
+    <string-array name="delivery_status_filter">
+        <item>@string/order_status_all_status</item>
+        <item>@string/order_status_order_processing</item>
+        <item>@string/order_status_order_confirmed</item>
+        <item>@string/order_status_picking_in_process</item>
+        <item>@string/order_status_delivering</item>
+        <item>@string/order_status_order_completed</item>
+        <item>@string/order_status_delivery_failure</item>
+        <item>@string/order_status_order_canceled</item>
+        <!--<item>@string/order_status_order_processing</item>-->
+        <!--<item>@string/order_status_returned</item>-->
+        <!--<item>@string/order_status_order_completed</item>-->
+    </string-array>
+
+    <string-array name="delivery_status_filter_code">
+        <item>ALL</item>
+        <item>FRAUD_CHECK</item>
+        <item>ON_HOLD</item>
+        <item>CREATED</item>
+        <item>ORDER_PLACED_NOTIFICATION_SENT</item>
+        <item>WAITING_FOR_CAPTURE</item>
+        <item>PAYMENT_CAPTURED</item>
+        <item>COMPLETED</item>
+        <item>CANCELLED</item>
+        <!--<item>WAIT_RETURN</item>-->
+        <!--<item>DELIVERY_FAILURE</item>-->
+        <!--<item>DELIVERY_CONFIRM</item>-->
+    </string-array>
+
+
+    <string-array name="order_details_review_status">
+        <item>@string/order_details_value_for_money</item>
+        <item>@string/order_details_good_quality</item>
+        <item>@string/order_details_good_taste_flavour</item>
+        <item>@string/order_details_quick_visible_results</item>
+        <item>@string/order_details_ideal_for_gift</item>
+        <item>@string/order_details_ease_of_use</item>
+    </string-array>
+</resources>

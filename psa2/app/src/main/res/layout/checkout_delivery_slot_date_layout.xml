@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <parknshop.parknshopapp.Fragment.Checkout.View.CheckoutHeaderPanel
+        android:id="@+id/checkout_header_panel"
+        app:checkout_dot_panel_number="4"
+        app:checkout_dot_panel_prefix="checkout_step"
+        app:checkout_dot_panel_current_step="2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <ScrollView
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!--
+            <include
+                layout="@layout/registration_panel" />
+            -->
+
+            <parknshop.parknshopapp.View.CheckoutHeader
+                app:text="@string/delivery_date_time_placeholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:id="@+id/timeslot_panel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:id="@+id/timeslot_panel_row_placeholder"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content">
+
+                </LinearLayout>
+            </RelativeLayout>
+            <parknshop.parknshopapp.View.CheckoutReminder
+                android:id="@+id/reminder"
+                android:visibility="gone"
+                app:checkout_remeinder_type="home delivery"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <parknshop.parknshopapp.View.CheckoutButton
+        android:id="@+id/con"
+        app:checkout_button_title="@string/checkout_next_payment_method"
+        app:checkout_button_is_alternative="true"
+        app:checkout_button_is_disabled="true"
+        app:checkout_button_is_forward="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

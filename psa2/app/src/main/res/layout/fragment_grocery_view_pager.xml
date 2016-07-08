@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Layout.AllFill"
+    android:background="@color/white">
+
+
+    <se.emilsjolander.stickylistheaders.ExpandableStickyListHeadersListView
+        android:id="@+id/list"
+        style="@style/Widget.Layout.AllFill"
+        android:layout_above="@+id/llAddNewList" />
+
+    <TextView
+        android:id="@+id/txtNoItems"
+        style="@style/Widget.Layout.AllFill"
+        android:layout_above="@+id/llAddNewList"
+        android:gravity="center"
+        android:text="@string/not_found"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/llAddNewList"
+        style="@style/Widget.Layout.WidthFill.OrientationVert"
+        android:layout_alignParentBottom="true"
+        android:visibility="gone">
+
+        <View style="@style/Widget.Layout.Line" />
+
+        <LinearLayout
+            android:id="@+id/btnAddNewList"
+            style="@style/Widget.Layout.WidthFill"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center_vertical"
+            android:padding="10dp">
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/grocery_list_icn_add" />
+
+            <TextView
+                style="@style/Widget.TextView.LargeBlue"
+                android:layout_marginLeft="10dp"
+                android:text="@string/add_wish_list_dialog_create_new_list" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

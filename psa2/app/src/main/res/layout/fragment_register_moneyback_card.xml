@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.Layout.AllFill">
+
+    <LinearLayout
+        style="@style/Widget.Layout.AllFill.OrientationVert"
+        android:layout_above="@+id/btnContinue">
+
+        <parknshop.parknshopapp.Fragment.MemberZone.View.MemberZoneHeader
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:text="@string/register_page_moneyback_info" />
+        <!--<include layout="@layout/registration_panel" />-->
+
+        <EditText
+            android:id="@+id/edtMoneyBackCardNo"
+            style="@style/Widget.EditText.WithBG"
+            android:layout_margin="10dp"
+            android:hint="@string/register_page_money_back_card_no_hint" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            style="@style/Widget.EditText.WithBG"
+            android:layout_margin="10dp"
+            android:hint="@string/register_page_password_hint"
+            android:inputType="textPassword"
+            android:maxLength="6" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnContinue"
+        style="@style/Widget.TextView.LargeWhite"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_sharp_blue"
+        android:text="@string/register_page_moneyback_card_card_next_personal_info" />
+
+</RelativeLayout>

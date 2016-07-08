@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_margin="10dp"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@+id/card_payment_layout"
+        android:layout_margin="2dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/credit"
+            android:src="@drawable/payment_method_icn_visa"
+            android:layout_width="40dp"
+            android:layout_height="40dp" />
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content">
+
+            <include
+                layout="@layout/checkout_module_payment_dictionary" />
+
+            <include
+                layout="@layout/checkout_module_payment_dictionary" />
+
+            <TextView
+                android:id="@+id/name"
+                android:text="Mr. Chan Wai San"
+                android:layout_margin="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/edit"
+            android:src="@drawable/check_out_edit_icn"
+            android:layout_margin="10dp"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/selected_delivery"
+        android:orientation="horizontal"
+        android:layout_margin="2dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/check_box"
+            android:layout_margin="5dp"
+            android:tint="@android:color/black"
+            android:src="@drawable/sign_in_icn_tick_unselect"
+            android:layout_width="20dp"
+            android:layout_height="20dp" />
+
+        <TextView
+            android:id="@+id/use_as_delivery_address"
+            android:layout_margin="2dp"
+            android:text="@string/use_as_delivery_address"
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+
+        <TextView
+            android:id="@+id/cash_on_delivery"
+            android:layout_margin="2dp"
+            android:visibility="gone"
+            android:text="@string/cash_on_delivery"
+            android:textColor="@color/black"
+            android:textSize="15sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+
+</LinearLayout>

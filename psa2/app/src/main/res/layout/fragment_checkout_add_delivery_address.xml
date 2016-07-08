@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Layout.AllFill">
+
+    <ScrollView
+        style="@style/Widget.Layout.AllFill"
+        android:layout_above="@+id/btnAdd">
+
+        <LinearLayout style="@style/Widget.Layout.AllFill.OrientationVert">
+
+            <LinearLayout style="@style/Widget.Layout.AllFill.OrientationVert">
+
+                <LinearLayout style="@style/Widget.Layout.WidthFill.OrientationHori">
+
+                    <Button
+                        android:id="@+id/btnMr"
+                        style="@style/Widget.TextView.LargeWhite"
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_sharp_blue"
+                        android:text="@string/register_page_mr" />
+
+                    <Button
+                        android:id="@+id/btnMrs"
+                        style="@style/Widget.TextView.LargeBlue"
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_sharp_white"
+                        android:text="@string/register_page_mrs" />
+
+                    <Button
+                        android:id="@+id/btnMiss"
+                        style="@style/Widget.TextView.LargeBlue"
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_sharp_white"
+                        android:text="@string/register_page_miss" />
+
+                    <Button
+                        android:id="@+id/btnMs"
+                        style="@style/Widget.TextView.LargeBlue"
+                        android:layout_width="match_parent"
+                        android:layout_margin="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/btn_sharp_white"
+                        android:text="@string/register_page_ms" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/edtFirstName"
+                    style="@style/Widget.EditText.WithBG"
+                    android:layout_margin="10dp"
+                    android:hint="@string/register_page_first_name_hint" />
+
+                <EditText
+                    android:id="@+id/edtLastName"
+                    style="@style/Widget.EditText.WithBG"
+                    android:layout_margin="10dp"
+                    android:hint="@string/register_page_last_name_hint" />
+
+                <EditText
+                    android:id="@+id/edtCompanyName"
+                    style="@style/Widget.EditText.WithBG"
+                    android:layout_margin="10dp"
+                    android:hint="@string/register_page_last_name_hint" />
+
+                <EditText
+                    android:id="@+id/edtAddress1"
+                    style="@style/Widget.EditText.WithBG"
+                    android:layout_margin="10dp"
+                    android:hint="@string/check_out_page_address_1" />
+
+                <EditText
+                    android:id="@+id/edtAddress2"
+                    style="@style/Widget.EditText.WithBG"
+                    android:layout_margin="10dp"
+                    android:hint="@string/check_out_page_address_2" />
+
+                <TextView
+                    android:id="@+id/txtAddDesc"
+                    style="@style/Widget.TextView.NormalBlack"
+                    android:layout_margin="10dp"
+                    android:hint="@string/check_out_page_address_desc" />
+
+                <TextView
+                    android:id="@+id/txtCity"
+                    style="@style/Widget.EditText.WithBG"
+                    android:layout_margin="10dp"
+                    android:hint="@string/check_out_page_city" />
+
+                <TextView
+                    android:id="@+id/txtCountry"
+                    style="@style/Widget.EditText.WithBG"
+                    android:layout_margin="10dp"
+                    android:hint="@string/check_out_page_country" />
+
+                <LinearLayout
+                    style="@style/Widget.Layout.AllFill.OrientationHori"
+                    android:layout_above="@+id/btnContinue"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:id="@+id/txtPrefixNo"
+                        style="@style/Widget.EditText.WithBG"
+                        android:layout_width="match_parent"
+                        android:layout_weight="3"
+                        android:drawableRight="@drawable/register_arrow_down" />
+
+                    <EditText
+                        android:id="@+id/edtPhoneNo"
+                        style="@style/Widget.EditText.WithBG"
+                        android:layout_weight="1"
+                        android:hint="@string/register_page_contact_no_hint" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/btnAdd"
+        style="@style/Widget.TextView.LargeWhite"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_sharp_blue"
+        android:text="@string/btn_add" />
+
+</RelativeLayout>
