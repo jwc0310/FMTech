@@ -15,10 +15,14 @@ import android.widget.Toast;
 import com.fmtech.rxjavaretrofit.BaseFragment;
 import com.fmtech.rxjavaretrofit.R;
 import com.fmtech.rxjavaretrofit.adapter.RecyclerListAdapter;
+import com.fmtech.rxjavaretrofit.model.Image;
+
+import java.util.List;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import rx.Observer;
 
 /**
  * ==================================================================
@@ -61,6 +65,35 @@ public class CacheFragment extends BaseFragment {
         Toast.makeText(getActivity(), R.string.memory_and_disk_cache_cleared, Toast.LENGTH_SHORT).show();
     }
 
+    @OnClick(R.id.loadBt)
+    void loadData(){
+        mSwipeRefreshLayout.setRefreshing(true);
+        mStartingTime = System.currentTimeMillis();
+        unsubscribe();
+
+        mSubscription = DataService.instance()
+                .subscribeData(new Observer<List<Image>>() {
+                    @Override
+                    public void onCompleted() {
+
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+                        e.printStackTrace();
+                        mSwipeRefreshLayout.setRefreshing(false);
+                        Toast.makeText(getActivity(), R.string.loading_failed, Toast.LENGTH_SHORT).show();
+                    }
+
+                    @Override
+                    public void onNext(List<Image> images) {
+                        mSwipeRefreshLayout.setRefreshing(false);
+                        int loadingCostTime = (int)(System.currentTimeMillis() - mStartingTime);
+                        mLoadingTimeTV.setText(getString(R.string.loading_time_and_source, loadingCostTime, DataService.instance().getDataSourceText()));
+                        mAdapter.setImages(images);
+                    }
+                });
+    }
 
     @Nullable
     @Override
