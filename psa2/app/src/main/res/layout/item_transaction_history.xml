@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Layout.AllFill.OrientationHori"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtShop"
+        style="@style/Widget.TextView.LargeBlack"
+        android:layout_width="match_parent"
+        android:layout_toLeftOf="@+id/txtPoint"
+        android:padding="5dp" />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        style="@style/Widget.TextView.LargeBlack"
+        android:layout_below="@+id/txtShop"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/txtDate"
+        style="@style/Widget.TextView.LargeBlack"
+        android:layout_below="@+id/txtPrice"
+        android:padding="5dp"/>
+
+    <TextView
+        android:id="@+id/txtPoint"
+        style="@style/Widget.TextView.XLargeBlack"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:textStyle="bold"
+        android:padding="5dp"/>
+</RelativeLayout>

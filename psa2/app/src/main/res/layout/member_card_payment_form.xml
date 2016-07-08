@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <parknshop.parknshopapp.View.CheckoutPicker
+        android:id="@+id/card_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:checkout_picker_title="Visa"/>
+
+    <parknshop.parknshopapp.View.CheckoutEditText
+        android:id="@+id/edtCardNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        app:checkout_edittext_title="@string/card_number_hint" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_gravity="right"
+        android:text="@string/what_is_security_code"
+        android:textStyle="italic"/>
+
+    <parknshop.parknshopapp.View.CheckoutPicker
+        android:id="@+id/delivery_date_picker"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:checkout_picker_title="@string/end_date_hint"/>
+
+    <parknshop.parknshopapp.View.CheckoutEditText
+        android:id="@+id/edtHolderName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:checkout_edittext_title="@string/holder_name_hint" />
+
+    <View
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp" />
+
+    <parknshop.parknshopapp.View.CheckoutButton
+        android:id="@+id/save"
+        android:layout_marginBottom="10dp"
+        app:checkout_button_is_alternative="true"
+        app:checkout_button_title="@string/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Layout.AllFill">
+
+    <LinearLayout
+        style="@style/Widget.Layout.AllFill.OrientationVert"
+        android:layout_above="@+id/btnLink">
+
+        <EditText
+            android:id="@+id/edtCardNo"
+            style="@style/Widget.EditText.WithBG"
+            android:layout_margin="10dp"
+            android:hint="@string/myaccount_page_moneyback_card_no_hint"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/edtPassword"
+            style="@style/Widget.EditText.WithBG"
+            android:layout_margin="10dp"
+            android:hint="@string/new_password_hint"
+            android:inputType="textPassword"
+            android:maxLength="6" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnLink"
+        style="@style/Widget.TextView.LargeWhite"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:background="@drawable/btn_sharp_blue"
+        android:text="@string/myaccount_page_link_moneyback" />
+
+</RelativeLayout>

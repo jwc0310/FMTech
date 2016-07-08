@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:id="@+id/address_layout_root"
+        android:gravity="center"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <parknshop.parknshopapp.View.CheckoutCheckBoxWithText
+            android:id="@+id/checkbox"
+            app:isSelected="false"
+            app:selected_drawable="@drawable/sign_in_icn_tick_selected"
+            app:unselected_drawable="@drawable/checkout_unfilled_circle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/address_view_title"
+                    android:visibility="gone"
+                    android:layout_margin="2dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Delivery address"/>
+
+                <TextView
+                    android:id="@+id/address_view_recevier_name"
+                    android:textStyle="bold"
+                    android:textColor="@android:color/black"
+                    android:text="Mr. Chan Wai San"
+                    android:layout_margin="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/address_view_recevier_address"
+                    android:text="Address: Millennium City Phase III, 370 Kwun Tong Rd"
+                    android:layout_margin="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/address_view_recevier_edit"
+                android:layout_margin="10dp"
+                android:layout_width="20dp"
+                android:layout_height="20dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <View
+        android:visibility="gone"
+        android:background="@color/grey"
+        android:layout_width="match_parent"
+        android:layout_height="1dp" />
+</LinearLayout>

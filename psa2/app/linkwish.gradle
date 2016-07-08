@@ -1,0 +1,113 @@
+apply plugin: 'com.android.application'
+
+/**
+ * Gets the git sha prefix 7
+ */
+def getCommitSha() {
+    return ""
+}
+
+/**
+ * Gets the git commit count ahead master
+ */
+def getCommitCount() {
+    return 0
+}
+
+def getSuffix() {
+    def suffix = "-" + getCommitCount() + "-" + getCommitSha();
+
+    return suffix
+}
+
+ext {
+    suffix = getSuffix()
+}
+
+gradle.buildFinished {
+    println()
+    println "=============== Apk Info ==============="
+    println "Version Name: " + android.defaultConfig.getVersionName() + getSuffix()
+    println "========================================"
+    println()
+}
+
+android {
+    signingConfigs {
+        release {
+            if (project.hasProperty("storeFile")) {
+                storeFile file("$project.storeFile")
+                storePassword "$project.storePassword"
+                keyAlias "$project.keyAlias"
+                keyPassword "$project.keyPassword"
+            }
+        }
+    }
+
+    productFlavors {
+        local {
+            buildConfigField "boolean", "REPORT_CRASHS", "false"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+
+        debug {
+            zipAlignEnabled false
+            versionNameSuffix suffix
+        }
+
+        dev {
+            applicationIdSuffix ".debug"
+            minifyEnabled false
+            debuggable true
+            signingConfig android.signingConfigs.debug
+            zipAlignEnabled false
+            versionNameSuffix suffix
+        }
+    }
+}
+
+android.applicationVariants.all { variant ->
+    if (variant.buildType.name == 'release') {
+        variant.buildConfigField "String", "SERVER_TYPE", "\"production\""
+    }
+    else if (variant.buildType.name == 'debug') {
+        variant.buildConfigField "String", "SERVER_TYPE", "\"production\""
+    }
+    else {
+        variant.buildConfigField "String", "SERVER_TYPE", "\"${variant.buildType.name}\""
+    }
+
+    def outputMap = [:]
+    variant.outputs.each { output ->
+        def outputFile = output.outputFile
+        if (outputFile != null && outputFile.name.endsWith('.apk')) {
+            def fileName = outputFile.name.replace(".apk", "-${android.defaultConfig.getVersionName() + getSuffix()}.apk")
+
+            output.outputFile = new File(outputFile.parent, fileName)
+        }
+        outputMap.put(variant.name, output.outputFile)
+    }
+
+    task "hockey${variant.name.capitalize()}"(dependsOn: "assemble${variant.name.capitalize()}") << {
+        println()
+        println "=============== Hockey Info ==============="
+        println "Apk: " + outputMap[variant.name]
+        println "App Id: " + hockeyAppId[variant.name]
+        println "==========================================="
+        println()
+
+        exec {
+            executable "sh"
+            args "-c", "curl -F status=2 -F notify=0 -F ipa=@" + outputMap[variant.name] + " -H \"X-HockeyAppToken: " +
+                    HockeyAppToken + "\" https://rink.hockeyapp.net/api/2/apps/" + hockeyAppId[variant.name] +
+                    "/app_versions/upload"
+        }
+    }
+}

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/Widget.Layout.AllFill.OrientationVert"
+    android:background="@drawable/tutorial_bg">
+
+    <RelativeLayout
+        style="@style/Widget.Layout.WidthFill"
+        android:layout_weight="1">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/tutorial_viewpager"
+            style="@style/Widget.Layout.AllFill" />
+
+        <Button
+            android:id="@+id/skip"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="@dimen/activity_horizontal_margin"
+            android:background="@drawable/rounded_button"
+            android:text="@string/tutorial_activity_skip"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/tutorial_dot_panel"
+        style="@style/Widget.Layout.WidthFill.OrientationHori"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:visibility="visible">
+
+    </LinearLayout>
+
+    <parknshop.parknshopapp.View.CheckoutButton
+        android:id="@+id/start"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/slidingmenu_offset"
+        app:checkout_button_is_alternative="true"
+        app:checkout_button_title="@string/tutorial_activity_start"
+        android:textColor="@android:color/white"
+        android:visibility="invisible" />
+</LinearLayout>

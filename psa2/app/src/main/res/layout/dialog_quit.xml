@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Layout.AllFill.OrientationVert">
+
+    <LinearLayout
+        style="@style/Widget.Layout.AllFill.OrientationVert"
+        android:layout_width="300dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/Widget.TextView.LargeBlue"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:text="@string/app_quit" />
+
+        <TextView
+            android:id="@+id/txtMsg"
+            style="@style/Widget.TextView.NormalBlack"
+            android:layout_width="match_parent"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/llbtn"
+            style="@style/Widget.Layout.WidthFill.OrientationHori"
+            android:layout_below="@+id/rlAdd"
+            android:layout_marginTop="10dp"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/btnCancel"
+                style="@style/Widget.TextView.NormalBlue"
+                android:layout_width="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_sharp_white"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/btn_cancel" />
+
+            <TextView
+                android:id="@+id/btnOK"
+                style="@style/Widget.TextView.NormalWhite"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_sharp_blue"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/btn_ok" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

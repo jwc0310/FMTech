@@ -1,0 +1,2 @@
+include ':app', ':w_rangeseekbar', ':SlideBottomPanel', ':PullToRefresh'
+project(':w_rangeseekbar').projectDir = new File('rangeseekbar')

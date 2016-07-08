@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Layout.AllFill.OrientationVert">
+
+    <RelativeLayout
+        style="@style/Widget.Layout.AllFill"
+        android:layout_width="250dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/Widget.TextView.LargeBlue"
+            android:layout_width="match_parent"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/add_wish_list_add_to_grocery_list" />
+
+        <View
+            style="@style/Widget.Layout.Line"
+            android:layout_below="@+id/txtTitle" />
+
+        <ListView
+            android:id="@+id/lvChoose"
+            style="@style/Widget.Layout.WidthFill"
+            android:layout_width="match_parent"
+            android:layout_below="@+id/txtTitle"
+            android:divider="@null"></ListView>
+
+        <View
+            style="@style/Widget.Layout.Line"
+            android:layout_below="@+id/lvChoose" />
+
+        <RelativeLayout
+            android:id="@+id/rlAdd"
+            style="@style/Widget.Layout.WidthFill"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/lvChoose"
+            android:padding="10dp">
+
+            <ImageView
+                android:id="@+id/imgAdd"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_centerVertical="true"
+                android:src="@drawable/grocery_list_icn_add" />
+
+            <TextView
+                android:id="@+id/btnAddNewList"
+                style="@style/Widget.TextView.LargeBlue"
+                android:layout_width="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="10dp"
+                android:layout_toRightOf="@+id/imgAdd"
+                android:text="@string/add_wish_list_dialog_create_new_list" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/llbtn"
+            style="@style/Widget.Layout.WidthFill.OrientationHori"
+            android:layout_below="@+id/rlAdd"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/btnCancel"
+                style="@style/Widget.TextView.NormalBlue"
+                android:layout_width="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_sharp_white"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/btn_cancel" />
+
+
+            <TextView
+                android:id="@+id/btnOK"
+                style="@style/Widget.TextView.NormalWhite"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_sharp_blue"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/btn_add" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</LinearLayout>

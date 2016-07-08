@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/white"
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <LinearLayout
+            android:layout_centerInParent="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-light"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#292d84"
+                android:text="@string/home_activity_sliding_menu_my_cart"/>
+
+            <TextView
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-light"
+                android:id="@+id/my_cart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#242778"
+                android:text=""/>
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:id="@+id/basket_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true">
+
+            <ImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/basket_level_promotion_button"
+                android:layout_width="34dp"
+                android:layout_height="34dp"
+                android:src="@drawable/shopping_cart_icn_gift"/>
+
+            <parknshop.parknshopapp.View.PureCircleImageView
+                android:layout_centerInParent="true"
+                android:id="@+id/dim_basket_level_icon"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:src="@color/transparent_white_90"/>
+
+            <TextView
+                android:id="@+id/cancel"
+                android:text="@string/btn_cancel"
+                android:visibility="gone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/right_sliding_menu_cancel_textview"
+            android:visibility="gone"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_primary"
+            android:textStyle="bold"
+            android:text="@string/btn_cancel"
+            android:fontFamily="sans-serif-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/right_sliding_menu_edit_textview"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/color_primary"
+            android:textStyle="bold"
+            android:text="@string/btn_edit"
+            android:fontFamily="sans-serif-light"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.25dp"
+        android:background="#C2C2C2"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <include
+            android:id="@+id/shopping_cart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/home_activity_sliding_menu_right_shopping_cart_layout" />
+
+        <include
+            android:id="@+id/empty_shopping_cart"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/home_activity_sliding_menu_right_empty_shopping_cart" />
+    </RelativeLayout>
+</LinearLayout>

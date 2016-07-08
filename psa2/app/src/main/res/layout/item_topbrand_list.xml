@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Layout.WidthFill"
+    android:id="@+id/llView"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txtName"
+        style="@style/Widget.TextView.LargeBlack" />
+</LinearLayout>

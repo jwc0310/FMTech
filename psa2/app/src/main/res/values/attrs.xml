@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_fill_color" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="PromotionTextView">
+        <attr name="promotion_text" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="CheckoutHeader">
+        <attr name="text" format="string"/>
+        <attr name="textColor" format="color"/>
+        <attr name="textSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CheckoutItem">
+        <attr name="header" format="string"/>
+        <attr name="content" format="string"/>
+        <attr name="textStyle" format="integer"/>
+        <attr name="drawable" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="MemberZoneItemPicker">
+        <attr name="member_picker_header" format="string"/>
+        <attr name="member_picker_content" format="string"/>
+        <attr name="member_picker_textStyle" format="integer"/>
+        <attr name="member_picker_drawable" format="integer"/>
+        <attr name="member_picker_data" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="CheckoutCheckBoxWithText">
+        <attr name="checkboxtitle" format="string"/>
+        <attr name="isSelected" format="boolean" />
+        <attr name="selected_drawable" format="integer"/>
+        <attr name="unselected_drawable" format="integer"/>
+        <attr name="exclusive_checkbox" format="boolean" />
+        <attr name="isGrey" format="boolean" />
+        <attr name="background_color" format="string" />
+        <attr name="text_color" format="string" />
+        <attr name="select_all" format="boolean" />
+        <attr name="select_shopping_cart_remove_item" format="boolean" />
+     </declare-styleable>
+
+    <declare-styleable name="LoadingButton">
+        <attr name="btn_text" format="string"/>
+        <attr name="btn_background" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CheckoutAddressForm">
+        <attr name="form_checkboxtitle" format="string"/>
+        <attr name="form_isSelected" format="boolean" />
+        <attr name="form_selected_drawable" format="integer"/>
+        <attr name="form_unselected_drawable" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="CheckoutButton">
+        <attr name="checkout_button_title" format="string"/>
+        <attr name="checkout_button_is_forward" format="boolean"/>
+        <attr name="checkout_button_is_alternative" format="boolean"/>
+        <attr name="checkout_button_is" format="boolean"/>
+        <attr name="checkout_button_is_disabled" format="boolean"/>
+        <attr name="checkout_button_direction_left" format="string"/>
+        <attr name="checkout_button_is_lower_case" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CheckoutPicker">
+        <attr name="checkout_picker_title" format="string"/>
+        <attr name="checkout_picker_drawable" format="integer"/>
+        <attr name="checkout_picker_data" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="CheckoutCouponPicker">
+        <attr name="checkout_coupon_title" format="string"/>
+        <attr name="checkout_coupon_drawable" format="integer"/>
+        <attr name="checkout_coupon_data" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="CheckoutDiscountItem">
+        <attr name="checkout_discount_title" format="string"/>
+        <attr name="checkout_discount_data" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="CheckoutSelectorPanel">
+        <attr name="selector_panel_label" format="string"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CheckoutEditText">
+        <attr name="checkout_edittext_title" format="string"/>
+        <attr name="checkout_edittext_type" format="string"/>
+        <attr name="checkout_edittext_drawable" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="CheckoutButtonGroup">
+    </declare-styleable>
+
+    <declare-styleable name="CheckoutAddress">
+        <attr name="checkout_address_receiver_name" format="string"/>
+        <attr name="checkout_address_receiver_address" format="string" />
+        <attr name="checkout_address_receiver_title" format="string"/>
+        <attr name="checkout_address_checkbox_title" format="string"/>
+        <attr name="checkout_address_checkbox_is_enable" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CheckoutDot">
+        <attr name="checkout_dot_status" format="integer"/>
+        <attr name="checkout_dot_number" format="integer" />
+        <attr name="checkout_dot_type" format="integer"/>
+        <attr name="checkout_dot_is_dimmed" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="CheckoutHeaderPanel">
+        <attr name="checkout_dot_panel_number" format="integer" />
+        <attr name="checkout_dot_panel_prefix" format="string" />
+        <attr name="checkout_dot_panel_current_step" format="integer" />
+        <attr name="checkout_dot_panel_tick" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CheckoutReminder">
+        <attr name="checkout_remeinder_type" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="CheckoutPaymentItem">
+        <attr name="checkout_payment_drawable" format="integer"/>
+        <attr name="checkout_payment_title" format="string"/>
+        <attr name="checkout_payment_type" format="string"/>
+        <attr name="checkout_payment_selected" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="CheckoutDeliveryTimeSlotItem">
+        <attr name="checkout_delivery_timeslot_date" format="string"/>
+        <attr name="checkout_delivery_timeslot_status" format="integer"/>
+        <attr name="checkout_delivery_timeslot_is_selected" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="CheckoutDeliveryTimeSlotRow">
+        <attr name="checkout_delivery_timeslot_row_title" format="string"/>
+        <attr name="checkout_delivery_timeslot_row_title_1" format="string"/>
+        <attr name="checkout_delivery_timeslot_row_title_2" format="string"/>
+        <attr name="checkout_delivery_timeslot_row_title_3" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="MemberZoneIconTitle">
+        <attr name="member_zone_title" format="string"/>
+        <attr name="member_zone_drawable" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="RecipeHeader">
+        <attr name="recipe_title" format="string"/>
+        <attr name="recipe_title_color" format="integer"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="SettingItemView">
+        <attr name="setting_item_title" format="string"/>
+        <attr name="setting_item_minor_title" format="string"/>
+        <attr name="setting_item_type" format="string"/>
+        <attr name="setting_item_show_arrow" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="StoreLocatorCallItem">
+        <attr name="store_locator_call_item_title" format="string"/>
+        <attr name="store_locator_call_minor_title" format="string"/>
+        <attr name="store_locator_call_item_image" format="integer"/>
+        <attr name="store_title" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="StoreLocatorHeader">
+        <attr name="store_locator_header_title" format="string"/>
+        <attr name="store_locator_header_sub_title" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="RecipeBookmarkButton">
+        <attr name="is_bookmarked" format="boolean"/>
+    </declare-styleable>
+
+
+    <integer name="font_style_extra_light">10</integer>
+    <integer name="font_style_extra_bold">11</integer>
+</resources>

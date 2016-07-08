@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        style="@style/Widget.Layout.WidthFill.OrientationVert"
+        android:layout_width="250dp"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/txtTitle"
+            style="@style/Widget.TextView.LargeBlue"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/add_wish_list_create_new_list" />
+
+        <TextView
+            android:id="@+id/txtDesc"
+            style="@style/Widget.TextView.NormalBlack"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:text="@string/add_wish_list_enter_name" />
+
+        <EditText
+            android:id="@+id/edtName"
+            style="@style/Widget.EditText"
+            android:maxLength="16"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/btn_sharp_white"
+            android:hint="@string/add_wish_list_enter_name_hint"
+            android:padding="10dp" />
+
+        <LinearLayout
+            style="@style/Widget.Layout.AllFill.OrientationHori"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:id="@+id/btnCancel"
+                style="@style/Widget.TextView.LargeBlue"
+                android:layout_width="match_parent"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_sharp_white"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/btn_cancel" />
+
+            <TextView
+                android:id="@+id/btnCreate"
+                style="@style/Widget.TextView.LargeWhite"
+                android:layout_width="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/btn_sharp_blue"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/btn_create" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

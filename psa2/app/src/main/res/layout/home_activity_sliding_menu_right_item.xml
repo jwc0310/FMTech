@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/swipe_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <!-- Bottom View Start-->
+    <LinearLayout
+        android:orientation="vertical"
+        android:id="@+id/right_slide_bottom_wrapper"
+        android:layout_width="100dp"
+        android:layout_height="match_parent">
+        <!--What you want to show-->
+        <include
+            android:id="@+id/wrapper_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            layout="@layout/home_activity_sliding_menu_right_sliding_item" />
+    </LinearLayout>
+    <!-- Bottom View End-->
+
+    <!-- Surface View Start -->
+    <LinearLayout
+        android:id="@+id/right_slide_front_wrapper"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <!--What you want to show in SurfaceView-->
+        <parknshop.parknshopapp.View.ShoppingCartProductItem
+            android:id="@+id/shopping_cart_product_item"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <!-- Surface View End -->
+</com.daimajia.swipe.SwipeLayout>

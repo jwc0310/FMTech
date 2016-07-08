@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Layout.WidthFill.OrientationVert">
+
+    <View style="@style/Widget.Layout.Line" />
+
+    <LinearLayout
+        android:id="@+id/btnAddNewList"
+        style="@style/Widget.Layout.WidthFill"
+        android:gravity="center_vertical"
+        android:padding="10dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/grocery_list_icn_add" />
+
+        <TextView
+            style="@style/Widget.TextView.LargeBlue"
+            android:layout_marginLeft="10dp"
+            android:text="@string/add_wish_list_dialog_create_new_list" />
+    </LinearLayout>
+
+</LinearLayout>

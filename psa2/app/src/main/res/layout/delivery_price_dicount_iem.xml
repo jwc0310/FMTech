@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:layout_margin="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/delivery_fee_placeholder"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:textColor="#363636"
+        android:layout_height="match_parent"
+        android:text="@string/home_activity_sliding_menu_delivery_placeholder"/>
+
+    <TextView
+        android:id="@+id/delivery_fee_value"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textColor="#FC586A"
+        android:text="Free !"/>
+</LinearLayout>

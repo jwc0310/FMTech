@@ -1,0 +1,538 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyCustomTabLayout" parent="Widget.Design.TabLayout">
+        <item name="tabIndicatorColor">?attr/colorAccent</item>
+        <item name="tabIndicatorHeight">2dp</item>
+        <item name="tabPaddingStart">12dp</item>
+        <item name="tabPaddingEnd">12dp</item>
+        <item name="tabBackground">?attr/selectableItemBackground</item>
+        <item name="tabTextAppearance">@style/MyCustomTabTextAppearance</item>
+        <item name="tabSelectedTextColor">?android:textColorPrimary</item>
+    </style>
+    <style name="MyCustomTabTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/tab_text_color</item>
+        <item name="textAllCaps">true</item>
+    </style>
+
+    <style name="Widget">
+    </style>
+
+    <style name="AppTheme.NoTitleBar">
+        <item name="android:windowNoTitle">true</item>
+    </style>
+
+    <style name="AppTheme.NoTitleBar.Fullscreen">
+        <item name="windowActionBar">false</item>
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+    <style name="Widget.ImageView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Widget.ImageView.AllFill">
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="Widget.ImageView.AllFill.AdjuetViewBounds">
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="Widget.ImageView.WidthFill">
+        <item name="android:layout_width">match_parent</item>
+    </style>
+
+    <style name="Widget.ImageView.WidthFill.AdjustViewBounds">
+        <item name="android:adjustViewBounds">true</item>
+    </style>
+
+    <style name="Widget.ImageView.HeightFill">
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Widget.Layout">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Widget.Layout.Line">
+        <item name="android:layout_height">1dp</item>
+        <item name="android:background">@color/grey</item>
+    </style>
+
+    <style name="Widget.Layout.Line.WidthFillDeepGreen">
+        <item name="android:layout_height">3dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:background">@color/deep_green</item>
+    </style>
+
+    <style name="Widget.Layout.Line.Horizontal">
+        <item name="android:layout_height">30dp</item>
+        <item name="android:layout_width">1dp</item>
+        <item name="android:background">@color/grey</item>
+    </style>
+
+    <style name="Widget.Layout.BottomButtons">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentBottom">true</item>
+    </style>
+
+
+    <style name="Widget.Layout.WidthFill">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <style name="Widget.Layout.HeightFill">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Widget.Layout.WidthFill.OrientationVert">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Widget.Layout.WidthFill.OrientationHori">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Widget.Layout.HeightFill.OrientationVert">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Widget.Layout.HeightFill.OrientationHori">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Widget.Layout.AllFill">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+    </style>
+
+    <style name="Widget.Layout.AllFill.Clickable">
+        <item name="android:clickable">true</item>
+    </style>
+
+    <style name="Widget.Layout.AllFill.OrientationVert">
+        <item name="android:orientation">vertical</item>
+    </style>
+
+    <style name="Widget.Layout.AllFill.OrientationHori">
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="Widget.TextView">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:padding">@dimen/padding_extra_small</item>
+    </style>
+
+    <style name="Widget.TextView.SmallDeepGreen">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/txt_green</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Widget.TextView.NormalDeepGreen">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/txt_green</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="Widget.TextView.LargeDeepGreen">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/txt_green</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Widget.EditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:theme">@style/EditText.Base</item>
+        <item name="android:imeOptions">actionNext</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="Widget.EditText.WithBG">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@drawable/edittext_no_bg</item>
+    </style>
+
+    <style name="Widget.EditText.WithNoBG">
+        <item name="android:layout_margin">5dp</item>
+        <item name="android:background">@drawable/edittext_bg</item>
+    </style>
+
+    <style name="Widget.EditText.White">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:theme">@style/EditText.Base.White</item>
+    </style>
+
+    <style name="Widget.EditText.White.DisableFocus">
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="Widget.EditText.DisableFocus">
+        <item name="android:focusableInTouchMode">false</item>
+    </style>
+
+    <style name="Widget.EditText.Password">
+        <item name="android:inputType">textPassword</item>
+    </style>
+
+    <style name="Widget.EditText.Password.Number">
+        <item name="android:inputType">numberPassword</item>
+    </style>
+
+    <style name="Widget.EditText.Password.Number.CardCode">
+        <item name="android:maxLength">8</item>
+    </style>
+
+    <style name="Widget.EditText.Number">
+        <item name="android:inputType">number</item>
+        <item name="android:digits">0123456789</item>
+    </style>
+
+    <style name="Widget.EditText.CardNumber">
+        <item name="android:inputType">number</item>
+        <item name="android:digits">0123456789</item>
+        <item name="android:maxLength">16</item>
+    </style>
+
+    <style name="EditText.Base" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">#c5c5c5</item>
+        <item name="colorControlActivated">@color/deep_green</item>
+        <item name="colorControlHighlight">@color/deep_green</item>
+        <item name="android:textColorHint">@color/txt_grey</item>
+    </style>
+
+    <style name="EditText.Base.White" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorControlNormal">#c5c5c5</item>
+        <item name="colorControlActivated">@color/white</item>
+        <item name="colorControlHighlight">@color/white</item>
+        <item name="android:textColorHint">@color/grey</item>
+    </style>
+
+    <style name="Widget.TextView.SmallWhite">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Widget.TextView.XSmallWhite">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_xsmall</item>
+    </style>
+
+    <style name="Widget.TextView.NormalWhite">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="Widget.TextView.LargeWhite">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Widget.TextView.XLargeWhite">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_xlarge</item>
+    </style>
+
+    <style name="Widget.TextView.XXLargeWhite">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_xxlarge</item>
+    </style>
+
+
+    <style name="Widget.TextView.XXXLargeWhite">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_xxxlarge</item>
+    </style>
+
+    <style name="Widget.TextView.NormalWhite.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/app_black</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="Widget.TextView.NormalWhite.ButtonGrey">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:gravity">center</item>
+        <item name="android:background">@color/txt_grey</item>
+        <item name="android:padding">@dimen/padding</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="Widget.TextView.XSmallBlack">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_xsmall</item>
+    </style>
+
+    <style name="Widget.TextView.SmallBlack">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Widget.TextView.NormalBlack">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="Widget.TextView.LargeBlack">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Widget.TextView.XLargeBlack">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_xlarge</item>
+    </style>
+
+    <style name="Widget.TextView.SmallBlue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/txt_blue</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Widget.TextView.NormalBlue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/txt_blue</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="Widget.TextView.LargeBlue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/txt_blue</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Widget.TextView.XLargeBlue">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/txt_blue</item>
+        <item name="android:textSize">@dimen/text_size_xlarge</item>
+    </style>
+
+    <style name="Widget.TextView.SmallGrey">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/txt_grey</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Widget.TextView.NormalGrey">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/txt_grey</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="Widget.TextView.LargeGrey">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/txt_grey</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Widget.TextView.NormalGold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/txt_gold</item>
+        <item name="android:textSize">@dimen/text_size_normal</item>
+    </style>
+
+    <style name="Widget.TextView.LargeGold">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/txt_gold</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+    </style>
+
+    <style name="Widget.TextView.SmallRed">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/txt_red</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+    </style>
+
+    <style name="Widget.TextView.ActionBarTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/txt_green</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:layout_gravity">center</item>
+
+    </style>
+
+    <style name="GridLine">
+        <item name="android:background">@color/black</item>
+        <item name="android:layout_gravity">center</item>
+    </style>
+
+    <style name="HorizontalGridLine" parent="GridLine">
+        <item name="android:layout_height">1.33dp</item>
+        <item name="android:layout_width">284dp</item>
+    </style>
+
+    <style name="VerticalGridLine" parent="GridLine">
+        <item name="android:layout_height">38.66dp</item>
+        <item name="android:layout_width">1.33dp</item>
+    </style>
+
+    <style name="NumpadNumberTheme">
+    </style>
+
+    <style name="NumpadTheme" >
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:textSize">14pt</item>
+    </style>
+
+    <style name="NumpadFirstRow" parent="NumpadTheme">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">106.66dp</item>
+        <item name="android:layout_height">58.66dp</item>
+    </style>
+
+    <style name="NumpadSecondRow" parent="NumpadTheme">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">106.66dp</item>
+        <item name="android:layout_height">58.66dp</item>
+    </style>
+
+    <style name="NumpadThirdRow" parent="NumpadTheme">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">106.66dp</item>
+        <item name="android:layout_height">60dp</item>
+    </style>
+
+    <style name="NumpadFourthRow" parent="NumpadTheme">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">106.66dp</item>
+        <item name="android:layout_height">61.33dp</item>
+    </style>
+
+    <style name="NPadBtn1" parent="NumpadFirstRow">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">17.33dp</item>
+        <item name="android:layout_width">89.33dp</item>
+        <item name="android:paddingRight">10.66dp</item>
+    </style>
+
+    <style name="NPadBtn2" parent="NumpadFirstRow">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">104dp</item>
+    </style>
+
+    <style name="NPadBtn3" parent="NumpadFirstRow">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginRight">17.33dp</item>
+        <item name="android:layout_width">89.33dp</item>
+        <item name="android:paddingLeft">10.66dp</item>
+    </style>
+
+    <style name="NPadBtn4" parent="NumpadSecondRow">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">89.33dp</item>
+        <item name="android:paddingRight">10.66dp</item>
+        <item name="android:layout_marginLeft">17.33dp</item>
+    </style>
+
+    <style name="NPadBtn5" parent="NumpadSecondRow">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">104dp</item>
+    </style>
+
+    <style name="NPadBtn6" parent="NumpadSecondRow">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">89.33dp</item>
+        <item name="android:paddingLeft">10.66dp</item>
+        <item name="android:layout_marginRight">17.33dp</item>
+    </style>
+
+    <style name="NPadBtn7" parent="NumpadThirdRow">
+        <item name="android:layout_width">89.33dp</item>
+        <item name="android:paddingRight">10.66dp</item>
+        <item name="android:layout_marginLeft">17.33dp</item>
+    </style>
+
+    <style name="NPadBtn8" parent="NumpadThirdRow">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">104dp</item>
+    </style>
+
+    <style name="NPadBtn9" parent="NumpadThirdRow">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">89.33dp</item>
+        <item name="android:paddingLeft">10.66dp</item>
+        <item name="android:layout_marginRight">17.33dp</item>
+    </style>
+
+    <style name="NPadBtnCanc" parent="NumpadFourthRow">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">89.33dp</item>
+        <item name="android:paddingRight">10.66dp</item>
+        <item name="android:layout_marginLeft">17.33dp</item>
+    </style>
+
+    <style name="NPadBtnZero" parent="NumpadFourthRow">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">104dp</item>
+    </style>
+
+    <style name="NPadBtnCall" parent="NumpadFourthRow">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">89.33dp</item>
+        <item name="android:paddingLeft">10.66dp</item>
+        <item name="android:layout_marginRight">17.33dp</item>
+    </style>
+</resources>

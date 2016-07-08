@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.Layout.AllFill.OrientationVert"
+    android:background="@color/white"
+    android:weightSum="5">
+
+    <RelativeLayout
+        android:id="@+id/rlFAQ"
+        style="@style/Widget.Layout.WidthFill"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            style="@style/Widget.TextView.LargeBlack"
+            android:text="@string/faq" />
+
+        <ImageView
+            style="@style/Widget.ImageView"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/grocery_list_icn_next" />
+
+    </RelativeLayout>
+
+    <View style="@style/Widget.Layout.Line" />
+
+    <RelativeLayout
+        android:id="@+id/rlContacts"
+        style="@style/Widget.Layout.WidthFill"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            style="@style/Widget.TextView.LargeBlack"
+            android:text="@string/contacts_page_head_title" />
+
+        <ImageView
+            style="@style/Widget.ImageView"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/grocery_list_icn_next" />
+
+    </RelativeLayout>
+
+    <View style="@style/Widget.Layout.Line" />
+
+    <RelativeLayout
+        android:visibility="gone"
+        android:id="@+id/rlAbout"
+        style="@style/Widget.Layout.WidthFill"
+        android:paddingBottom="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="20dp">
+
+        <TextView
+            style="@style/Widget.TextView.LargeBlack"
+            android:text="@string/customer_service_page_about" />
+
+        <ImageView
+            style="@style/Widget.ImageView"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/grocery_list_icn_next" />
+
+    </RelativeLayout>
+
+    <!--<View style="@style/Widget.Layout.Line" />-->
+
+</LinearLayout>

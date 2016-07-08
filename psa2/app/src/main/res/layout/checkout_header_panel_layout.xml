@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/color_primary"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <parknshop.parknshopapp.Fragment.Checkout.View.CheckoutDot
+        android:id="@+id/new_checkout_dot_1"
+        app:checkout_dot_type="1"
+        app:checkout_dot_is_dimmed="false"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <parknshop.parknshopapp.Fragment.Checkout.View.CheckoutDot
+        android:id="@+id/new_checkout_dot_2"
+        app:checkout_dot_type="2"
+        app:checkout_dot_is_dimmed="true"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <parknshop.parknshopapp.Fragment.Checkout.View.CheckoutDot
+        android:id="@+id/new_checkout_dot_3"
+        app:checkout_dot_type="3"
+        app:checkout_dot_is_dimmed="true"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <parknshop.parknshopapp.Fragment.Checkout.View.CheckoutDot
+        android:id="@+id/new_checkout_dot_4"
+        app:checkout_dot_type="4"
+        app:checkout_dot_is_dimmed="true"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+
+    <parknshop.parknshopapp.Fragment.Checkout.View.CheckoutDot
+        android:id="@+id/new_checkout_dot_5"
+        app:checkout_dot_type="5"
+        app:checkout_dot_is_dimmed="true"
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"/>
+</LinearLayout>
