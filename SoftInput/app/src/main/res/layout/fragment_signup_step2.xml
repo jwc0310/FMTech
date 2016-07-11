@@ -194,6 +194,14 @@
                     android:layout_marginTop="20dp"
                     android:text="@string/phonenum_out_hk_eg" />
 
+                <EditText
+                    android:id="@+id/et_sum_of_money"
+                    style="@style/CommonEditText"
+                    android:layout_marginTop="16dp"
+                    android:inputType="numberDecimal"
+                    android:hint="@string/sum_of_money"
+                    android:maxLength="30" />
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

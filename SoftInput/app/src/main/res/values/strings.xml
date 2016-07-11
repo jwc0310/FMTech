@@ -112,6 +112,7 @@
     <string name="email_address1">Email Address</string>
     <string name="re_email_address">Re-Enter Email Address*</string>
     <string name="contact_num">Contact Number</string>
+    <string name="sum_of_money">sum of money</string>
         <string name="phonenum_out_hk_eg">When your contact number is outside
     Hong Kong, put the country code within the brackets. i.e. (86) 12345678901 for
     the contact number in Mainland</string>

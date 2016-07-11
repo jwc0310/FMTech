@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.WindowManager;
+import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
@@ -19,6 +20,8 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
     private FMLinearLayout mContainer;
     private ScrollView mScrollView;
     private FrameLayout mTitleBar;
+    private EditText mMoneyAmountET;
+
     private ViewTreeObserver.OnGlobalLayoutListener mOnGlobalLayoutChangeListener;
     private ViewTreeObserver.OnPreDrawListener mOnPreDrawListener;
     private ViewTreeObserver.OnDrawListener mOnDrawListener;
@@ -38,6 +41,10 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_signup_step2);
 //        AndroidBug5497Workaround.assistActivity(this);
+        mMoneyAmountET = (EditText)findViewById(R.id.et_sum_of_money);
+
+
+
         mContainer = (FMLinearLayout) findViewById(R.id.container);
         mScrollView = (ScrollView) findViewById(R.id.scrollview);
         mTitleBar = (FrameLayout) findViewById(R.id.singup_navigator_step2);
@@ -162,7 +169,6 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
         mContainer.getViewTreeObserver().addOnGlobalLayoutListener(mOnGlobalLayoutChangeListener);
         mContainer.getViewTreeObserver().addOnPreDrawListener(mOnPreDrawListener);
 //        mContainer.getViewTreeObserver().addOnDrawListener(mOnDrawListener);
-        MediaStore.
     }
 
     private void printInfo2() {
