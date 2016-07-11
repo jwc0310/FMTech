@@ -29,7 +29,7 @@ public class CashierInputFilter implements InputFilter {
     Pattern mPattern;
 
     //输入的最大金额
-    private static final int MAX_VALUE = Integer.MAX_VALUE;
+    private static final int MAX_VALUE = Integer.MAX_VALUE;//2147483647
     //小数点后的位数
     private static final int POINTER_LENGTH = 2;
 
@@ -95,8 +95,10 @@ public class CashierInputFilter implements InputFilter {
         if (sumText > MAX_VALUE) {
             return dest.subSequence(dstart, dend);
         }
-
-        return dest.subSequence(dstart, dend) + sourceText;
+        CharSequence result = dest.subSequence(dstart, dend) + sourceText;
+//        return dest.subSequence(dstart, dend) + sourceText;
+        System.out.println("-------result:"+result);
+        return result;
     }
 
 

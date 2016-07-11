@@ -45,30 +45,36 @@ public class MainActivity extends AppCompatActivity {
 
             @Override
             public void afterTextChanged(Editable s) {
-                if(s.length() > 0){
-                    String originalStr = s.toString();
+                try {
+                    if(s.length() > 0){
+                        String originalStr = s.toString();
 
-                    int originalLen = 0,formatedLen =0;
+                        int originalLen = 0,formatedLen =0;
 
-                    String amount = delComma(originalStr);
+                        String amount = delComma(originalStr);
 
-                    mMoneyAmountET.removeTextChangedListener(mMoneyAmountTextWatcher);
+                        mMoneyAmountET.removeTextChangedListener(mMoneyAmountTextWatcher);
+                        double amount1 = (Double.parseDouble(amount));
+                        amount = formatMoneyAmount(amount1);
 
-                    amount = formatMoneyAmount(Double.parseDouble(amount));
+                        originalLen = originalStr.length();
+                        formatedLen = amount.length();
+                        if(originalStr.indexOf(".") > 0) {
+                            originalLen = originalLen - 3;
+                            formatedLen = formatedLen - 3;
+                        }
+                        mMoneyAmountET.setText(amount);
+                        if(formatedLen - originalLen > 0){
+                            mStart = mStart + 1;
+                        }else if(formatedLen - originalLen < 0){
+                            mStart = mStart - 1;
+                        }
+                        mMoneyAmountET.setSelection(mStart);
 
-                    if(originalStr.indexOf(".") > 0) {
-                        originalLen = originalStr.length() - 3;
-                        formatedLen = amount.length() - 3;
+                        mMoneyAmountET.addTextChangedListener(mMoneyAmountTextWatcher);
                     }
-                    mMoneyAmountET.setText(amount);
-                    if(formatedLen - originalLen > 0){
-                        mStart = mStart + 1;
-                    }else if(formatedLen - originalLen < 0){
-                        mStart = mStart - 1;
-                    }
-                    mMoneyAmountET.setSelection(mStart);
-
-                    mMoneyAmountET.addTextChangedListener(mMoneyAmountTextWatcher);
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
             }
         };
@@ -77,7 +83,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private String formatMoneyAmount(double amount){
-        DecimalFormat formatVal =new DecimalFormat("###,###.00");
+//        DecimalFormat formatVal =new DecimalFormat("###,###.00");
+        DecimalFormat formatVal =new DecimalFormat("###,###");
         return formatVal.format(amount);
     }
 
