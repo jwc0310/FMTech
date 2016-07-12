@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.Editable;
 import android.text.InputFilter;
+import android.text.TextUtils;
 import android.text.TextWatcher;
 import android.view.View;
 import android.widget.EditText;
@@ -12,6 +13,11 @@ import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final String INT_REGEX = "^[1-9]\\d*$";
+    private static final String DECIMAL_REGEX = "^[0-9]+(\\.[0-9]+)?$";
+    private static final String EXTRA_REGEX = "^[0-9]+(\\.)$";
+    private static final String DECIMAL_POINT = ".";
+    private static final String COMMA = ",";
     private EditText mMoneyAmountET;
     private TextWatcher mMoneyAmountTextWatcher;
     private int mStart = 0;
@@ -49,29 +55,45 @@ public class MainActivity extends AppCompatActivity {
                     if(s.length() > 0){
                         String originalStr = s.toString();
 
-                        int originalLen = 0,formatedLen =0;
+                        int originalLen = 0,formatedLen =0, decimalPlaces = -1;
 
                         String amount = delComma(originalStr);
 
+                        if(originalStr.indexOf(DECIMAL_POINT) != -1){
+                            decimalPlaces = originalStr.length() -1 - originalStr.indexOf(DECIMAL_POINT);
+                        }
+
                         mMoneyAmountET.removeTextChangedListener(mMoneyAmountTextWatcher);
-                        double amount1 = (Double.parseDouble(amount));
-                        amount = formatMoneyAmount(amount1);
 
-                        originalLen = originalStr.length();
-                        formatedLen = amount.length();
-                        if(originalStr.indexOf(".") > 0) {
-                            originalLen = originalLen - 3;
-                            formatedLen = formatedLen - 3;
-                        }
-                        mMoneyAmountET.setText(amount);
-                        if(formatedLen - originalLen > 0){
-                            mStart = mStart + 1;
-                        }else if(formatedLen - originalLen < 0){
-                            mStart = mStart - 1;
-                        }
-                        mMoneyAmountET.setSelection(mStart);
+                        try {
+                            if(!TextUtils.isEmpty(amount) && (amount.matches(DECIMAL_REGEX) || amount.matches(INT_REGEX) || amount.matches(EXTRA_REGEX))) {
+                                double amount1 = (Double.parseDouble(amount));
+                                amount = formatMoneyAmount(amount1, decimalPlaces);
+                            }
 
-                        mMoneyAmountET.addTextChangedListener(mMoneyAmountTextWatcher);
+                            mMoneyAmountET.setText(amount);
+                            //check the comma after formatting
+                            int lengthDeff = countStr(amount, COMMA) - countStr(originalStr, COMMA);
+                            if(lengthDeff > 0){
+                                mStart = mStart + 1;
+                            }else if(lengthDeff < 0){
+                                mStart = mStart - 1;
+                            }
+                            String text = mMoneyAmountET.getText().toString();
+                            System.out.println("-------text:"+text);
+                            System.out.println("-------mStart:"+mStart);
+                            if(mMoneyAmountET.getText().length() > 0 ) {
+                                if(mStart > mMoneyAmountET.getText().length()){
+                                    mStart = mMoneyAmountET.getText().length();
+                                }
+                                mMoneyAmountET.setSelection(mStart);
+                            }
+
+                            mMoneyAmountET.addTextChangedListener(mMoneyAmountTextWatcher);
+                        } catch (Exception e) {
+                            e.printStackTrace();
+                            mMoneyAmountET.addTextChangedListener(mMoneyAmountTextWatcher);
+                        }
                     }
                 } catch (Exception e) {
                     e.printStackTrace();
@@ -82,16 +104,30 @@ public class MainActivity extends AppCompatActivity {
         mMoneyAmountET.addTextChangedListener(mMoneyAmountTextWatcher);
     }
 
-    private String formatMoneyAmount(double amount){
-//        DecimalFormat formatVal =new DecimalFormat("###,###.00");
-        DecimalFormat formatVal =new DecimalFormat("###,###");
-        return formatVal.format(amount);
+    private String formatMoneyAmount(double amount, int decimalPlaces){
+        System.out.println("-------decimalPlaces:"+decimalPlaces);
+        String decimalFormat = "###,###.00";
+        switch (decimalPlaces){
+            case 0:
+                decimalFormat = "###,###";
+                break;
+            case 1:
+                decimalFormat = "###,###.0";
+                break;
+            case -1:
+            case 2:
+                decimalFormat = "###,###.00";
+                break;
+        }
+
+        DecimalFormat formatVal =new DecimalFormat(decimalFormat);
+        return decimalPlaces == 0?formatVal.format(amount) + DECIMAL_POINT :formatVal.format(amount);
     }
 
     private String delComma(String s) {
         String formatString = "";
         if (s != null && s.length() >= 1) {
-            formatString = s.replaceAll(",", "");
+            formatString = s.replaceAll(COMMA, "");
         }
 
         return formatString;

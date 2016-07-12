@@ -29,7 +29,9 @@ public class CashierInputFilter implements InputFilter {
     Pattern mPattern;
 
     //输入的最大金额
-    private static final int MAX_VALUE = Integer.MAX_VALUE;//2147483647
+//    private static final int MAX_VALUE = Integer.MAX_VALUE;//2147483647
+    private static final long MAX_VALUE = Long.MAX_VALUE;//
+
     //小数点后的位数
     private static final int POINTER_LENGTH = 2;
 
@@ -53,7 +55,7 @@ public class CashierInputFilter implements InputFilter {
     @Override
     public CharSequence filter(CharSequence source, int start, int end, Spanned dest, int dstart, int dend) {
         String sourceText = source.toString();
-        String destText = delComma(dest.toString());
+        String destText = dest.toString();
 
         //验证删除等按键
         if (TextUtils.isEmpty(sourceText)) {
@@ -91,14 +93,13 @@ public class CashierInputFilter implements InputFilter {
 
         //验证输入金额的大小
 //        double sumText = Double.parseDouble(destText + sourceText);
-        double sumText = Double.parseDouble(delComma(destText + sourceText));
+        CharSequence sum = destText + sourceText;
+        double sumText = Double.parseDouble(delComma(sum.toString()));
         if (sumText > MAX_VALUE) {
-            return dest.subSequence(dstart, dend);
+//            return dest.subSequence(dstart, dend);
+            return formatMoneyAmount(MAX_VALUE);
         }
-        CharSequence result = dest.subSequence(dstart, dend) + sourceText;
-//        return dest.subSequence(dstart, dend) + sourceText;
-        System.out.println("-------result:"+result);
-        return result;
+        return dest.subSequence(dstart, dend) + sourceText;
     }
 
 
