@@ -16,8 +16,11 @@ public class MainActivity extends AppCompatActivity {
     private static final String INT_REGEX = "^[1-9]\\d*$";
     private static final String DECIMAL_REGEX = "^[0-9]+(\\.[0-9]+)?$";
     private static final String EXTRA_REGEX = "^[0-9]+(\\.)$";
+    private static final String DECIMAL_ZERO_REGEX = "\\.[0-9]+";
     private static final String DECIMAL_POINT = ".";
     private static final String COMMA = ",";
+    private static final String ZERO = "0";
+
     private EditText mMoneyAmountET;
     private TextWatcher mMoneyAmountTextWatcher;
     private int mStart = 0;
@@ -71,6 +74,9 @@ public class MainActivity extends AppCompatActivity {
                                 amount = formatMoneyAmount(amount1, decimalPlaces);
                             }
 
+                            if(amount.matches(DECIMAL_ZERO_REGEX)){
+                                amount = "0" + amount;
+                            }
                             mMoneyAmountET.setText(amount);
                             //check the comma after formatting
                             int lengthDeff = countStr(amount, COMMA) - countStr(originalStr, COMMA);

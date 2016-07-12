@@ -75,9 +75,9 @@ public class CashierInputFilter implements InputFilter {
 
             //验证小数点精度，保证小数点后只能输入两位
             int index = destText.indexOf(POINTER);
-            int length = dend - index;
+            int length = (destText.length() - 1) - index;
 
-            if (length > POINTER_LENGTH) {
+            if (length >= POINTER_LENGTH && dstart > index) {
                 return dest.subSequence(dstart, dend);
             }
         } else {
@@ -85,7 +85,8 @@ public class CashierInputFilter implements InputFilter {
             if (!matcher.matches()) {
                 return "";
             } else {
-                if ((POINTER.equals(source) || ZERO.equals(source)) && TextUtils.isEmpty(destText)) {
+//                if ((POINTER.equals(source) || ZERO.equals(source)) && TextUtils.isEmpty(destText)) {
+                if ((POINTER.equals(source)) && TextUtils.isEmpty(destText)) {
                     return "";
                 }
             }
