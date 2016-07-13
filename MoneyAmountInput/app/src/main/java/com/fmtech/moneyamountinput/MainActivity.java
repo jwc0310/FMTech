@@ -13,6 +13,7 @@ import java.text.DecimalFormat;
 
 public class MainActivity extends AppCompatActivity {
 
+    private static final int MAX_LENGTH = 15;//
     private static final String INT_REGEX = "^[1-9]\\d*$";
     private static final String DECIMAL_REGEX = "^[0-9]+(\\.[0-9]+)?$";
     private static final String EXTRA_REGEX = "^[0-9]+(\\.)$";
@@ -70,7 +71,7 @@ public class MainActivity extends AppCompatActivity {
 
                         try {
                             if(!TextUtils.isEmpty(amount) && (amount.matches(DECIMAL_REGEX) || amount.matches(INT_REGEX) || amount.matches(EXTRA_REGEX))) {
-                                double amount1 = (Double.parseDouble(amount));
+                                double amount1 = (Double.parseDouble(checkLength(amount)));
                                 amount = formatMoneyAmount(amount1, decimalPlaces);
                             }
 
@@ -149,5 +150,17 @@ public class MainActivity extends AppCompatActivity {
             source=source.substring(source.indexOf(taget)+taget.length());
         }
         return counter;
+    }
+
+    private String checkLength(String source){
+        int pointIndex = source.indexOf(DECIMAL_POINT);
+        if(pointIndex != -1) {
+            String temp = source.substring(0, pointIndex);
+            if (temp.length() > MAX_LENGTH) {
+                source = source.substring(0, pointIndex - 1) + source.substring(pointIndex, source.length());
+                mStart = mStart - 1;
+            }
+        }
+        return source;
     }
 }

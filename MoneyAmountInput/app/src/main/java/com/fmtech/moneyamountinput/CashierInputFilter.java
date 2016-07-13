@@ -94,12 +94,12 @@ public class CashierInputFilter implements InputFilter {
 
         //验证输入金额的大小
 //        double sumText = Double.parseDouble(destText + sourceText);
-        CharSequence sum = destText + sourceText;
-        double sumText = Double.parseDouble(delComma(sum.toString()));
-        if (sumText > MAX_VALUE) {
-//            return dest.subSequence(dstart, dend);
-            return formatMoneyAmount(MAX_VALUE);
-        }
+//        CharSequence sum = destText + sourceText;
+//        double sumText = Double.parseDouble(delComma(sum.toString()));
+//        if (sumText > MAX_VALUE) {
+////            return dest.subSequence(dstart, dend);
+//            return formatMoneyAmount(MAX_VALUE);
+//        }
         return dest.subSequence(dstart, dend) + sourceText;
     }
 
