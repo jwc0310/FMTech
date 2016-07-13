@@ -10,7 +10,7 @@ import java.util.regex.Pattern;
 
 /**
  * ==================================================================
- * Copyright (C) 2016 MTel Limited All Rights Reserved.
+ * Copyright (C) 2016 FMTech All Rights Reserved.
  *
  * @author Drew.Chiang
  * @version v1.0.0
