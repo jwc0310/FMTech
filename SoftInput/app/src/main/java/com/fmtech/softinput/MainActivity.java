@@ -7,6 +7,7 @@ import android.os.Handler;
 import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.text.InputFilter;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.WindowManager;
@@ -20,7 +21,8 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
     private FMLinearLayout mContainer;
     private ScrollView mScrollView;
     private FrameLayout mTitleBar;
-    private EditText mMoneyAmountET;
+    private EditText mSurnameChi;
+    private EditText mSurnameEng;
 
     private ViewTreeObserver.OnGlobalLayoutListener mOnGlobalLayoutChangeListener;
     private ViewTreeObserver.OnPreDrawListener mOnPreDrawListener;
@@ -41,7 +43,8 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_signup_step2);
 //        AndroidBug5497Workaround.assistActivity(this);
-        mMoneyAmountET = (EditText)findViewById(R.id.et_sum_of_money);
+        mSurnameChi = (EditText)findViewById(R.id.et_signup_step2_surname_cn);
+        mSurnameEng = (EditText)findViewById(R.id.et_signup_step2_surname_en);
 
 
 
@@ -232,5 +235,15 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
         int[] location1 = new int[2];
         mContainer.getLocationOnScreen(location1);
         System.out.println("-------mContainer screenX:" + location1[0] + " screenY:" + location1[1]);
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        InputFilter[] inputFilters = { new ChineseInputFilter()};
+        mSurnameChi.setFilters(inputFilters);
+
+        InputFilter[] inputFilters1 = { new EnglishInputFilter()};
+        mSurnameEng.setFilters(inputFilters1);
     }
 }
