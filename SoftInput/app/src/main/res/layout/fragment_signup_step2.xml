@@ -82,8 +82,9 @@
                     style="@style/CommonEditText"
                     android:layout_marginTop="16dp"
                     android:hint="@string/surname_en"
+                    android:inputType="textFilter"
                     android:maxLength="20" />
-
+                <!--android:digits="@string/allowedEnglishInput"-->
                 <TextView
                     android:id="@id/tv_surname_en_error_info"
                     style="@style/CommFontSize"
