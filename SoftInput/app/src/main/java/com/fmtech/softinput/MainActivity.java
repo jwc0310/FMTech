@@ -5,10 +5,10 @@ import android.content.Context;
 import android.graphics.Rect;
 import android.os.Build;
 import android.os.Handler;
-import android.provider.MediaStore;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.text.InputFilter;
+import android.text.TextWatcher;
 import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.WindowManager;
@@ -21,11 +21,14 @@ import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class MainActivity extends AppCompatActivity implements FMLinearLayout.OnSizeChangedListener {
 
+    private int mStartSurnameEn;
     private FMLinearLayout mContainer;
     private ScrollView mScrollView;
     private FrameLayout mTitleBar;
     private EditText mSurnameChi;
     private EditText mSurnameEng;
+    private EditText mOthernameEng;
+    private TextWatcher mSurnameEnWatcher;
 
     private ViewTreeObserver.OnGlobalLayoutListener mOnGlobalLayoutChangeListener;
     private ViewTreeObserver.OnPreDrawListener mOnPreDrawListener;
@@ -53,6 +56,7 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
 //        AndroidBug5497Workaround.assistActivity(this);
         mSurnameChi = (EditText)findViewById(R.id.et_signup_step2_surname_cn);
         mSurnameEng = (EditText)findViewById(R.id.et_signup_step2_surname_en);
+        mOthernameEng = (EditText)findViewById(R.id.et_signup_step2_other_name_en);
 
         mSurnameEng.setText("HUA WEI");
 
@@ -179,8 +183,8 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
             }
         };
 
-        mContainer.getViewTreeObserver().addOnGlobalLayoutListener(mOnGlobalLayoutChangeListener);
-        mContainer.getViewTreeObserver().addOnPreDrawListener(mOnPreDrawListener);
+//        mContainer.getViewTreeObserver().addOnGlobalLayoutListener(mOnGlobalLayoutChangeListener);
+//        mContainer.getViewTreeObserver().addOnPreDrawListener(mOnPreDrawListener);
 //        mContainer.getViewTreeObserver().addOnDrawListener(mOnDrawListener);
     }
 
@@ -252,8 +256,16 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
         super.onResume();
         InputFilter[] inputFilters = { new ChineseInputFilter()};
         mSurnameChi.setFilters(inputFilters);
+//        DigitsKeyListener
+        InputFilter[] inputFilters1 = { new InputFilter.AllCaps(), new EnglishInputFilter()};
+//        InputFilter[] inputFilters1 = { new InputFilter.AllCaps()};
+//
+//        InputFilter[] inputFilters1 = { new EnglishInputFilterNew()};
+//        InputFilter[] inputFilters1 = {
+//                new EnglishInputFilterNew(" abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ"), new InputFilter.AllCaps()};
 
-        InputFilter[] inputFilters1 = { new EnglishInputFilter()};
         mSurnameEng.setFilters(inputFilters1);
+        mOthernameEng.setFilters(inputFilters1);
+
     }
 }

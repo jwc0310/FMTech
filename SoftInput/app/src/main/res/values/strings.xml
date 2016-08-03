@@ -311,6 +311,7 @@
     <string name="download_pdf">download pdf</string>
     <string name="select_lang_cn">Select Traditional Chinese</string>
     <string name="select_lang_en">Select English</string>
+    <string name="allowedEnglishInput">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ&#160;</string>
     <!--<string name=""></string>-->
     <!--<string name=""></string>-->
     <!--<string name=""></string>-->
