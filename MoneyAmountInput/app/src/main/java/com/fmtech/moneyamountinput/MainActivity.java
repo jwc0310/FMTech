@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
     private static final String INT_REGEX = "^[1-9]\\d*$";
     private static final String DECIMAL_REGEX = "^[0-9]+(\\.[0-9]+)?$";
     private static final String EXTRA_REGEX = "^[0-9]+(\\.)$";
-    private static final String DECIMAL_ZERO_REGEX = "\\.[0-9]+";
+    private static final String DECIMAL_ZERO_REGEX = "^0\\.[0-9]+$";
     private static final String DECIMAL_POINT = ".";
     private static final String COMMA = ",";
     private static final String ZERO = "0";
@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
     private EditText mMoneyAmountET;
     private TextWatcher mMoneyAmountTextWatcher;
     private int mStart = 0;
+    private boolean needFormat = true;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -62,6 +63,10 @@ public class MainActivity extends AppCompatActivity {
 
                         String amount = delComma(originalStr);
 
+//                        if(amount.matches(DECIMAL_ZERO_REGEX)){
+//                            needFormat = false;
+//                        }
+
                         if(originalStr.indexOf(DECIMAL_POINT) != -1){
                             decimalPlaces = originalStr.length() -1 - originalStr.indexOf(DECIMAL_POINT);
                         }
@@ -70,13 +75,17 @@ public class MainActivity extends AppCompatActivity {
 
                         try {
                             if(!TextUtils.isEmpty(amount) && (amount.matches(DECIMAL_REGEX) || amount.matches(INT_REGEX) || amount.matches(EXTRA_REGEX))) {
-                                double amount1 = (Double.parseDouble(amount));
-                                amount = formatMoneyAmount(amount1, decimalPlaces);
+                                if(!amount.matches(DECIMAL_ZERO_REGEX)) {
+                                    double amount1 = (Double.parseDouble(amount));
+                                    amount = formatMoneyAmount(amount1, decimalPlaces);
+                                }
                             }
 
-                            if(amount.matches(DECIMAL_ZERO_REGEX)){
-                                amount = "0" + amount;
-                            }
+//                            if(amount.matches(DECIMAL_ZERO_REGEX)){
+////                                amount = "0" + amount;
+//                                amount = "";
+//                                needFormat = false;
+//                            }
                             mMoneyAmountET.setText(amount);
                             //check the comma after formatting
                             int lengthDeff = countStr(amount, COMMA) - countStr(originalStr, COMMA);

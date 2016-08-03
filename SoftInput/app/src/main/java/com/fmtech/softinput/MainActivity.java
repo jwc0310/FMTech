@@ -1,6 +1,7 @@
 package com.fmtech.softinput;
 
 import android.annotation.SuppressLint;
+import android.content.Context;
 import android.graphics.Rect;
 import android.os.Build;
 import android.os.Handler;
@@ -15,6 +16,8 @@ import android.widget.EditText;
 import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 import android.widget.ScrollView;
+
+import uk.co.chrisjenx.calligraphy.CalligraphyContextWrapper;
 
 public class MainActivity extends AppCompatActivity implements FMLinearLayout.OnSizeChangedListener {
 
@@ -36,6 +39,11 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
     Handler mHandler = new Handler();
 
     @Override
+    protected void attachBaseContext(Context newBase) {
+        super.attachBaseContext(CalligraphyContextWrapper.wrap(newBase));
+    }
+
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         getWindow().addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN);
@@ -46,7 +54,9 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
         mSurnameChi = (EditText)findViewById(R.id.et_signup_step2_surname_cn);
         mSurnameEng = (EditText)findViewById(R.id.et_signup_step2_surname_en);
 
+        mSurnameEng.setText("HUA WEI");
 
+        mSurnameChi.setText("华为");
 
         mContainer = (FMLinearLayout) findViewById(R.id.container);
         mScrollView = (ScrollView) findViewById(R.id.scrollview);

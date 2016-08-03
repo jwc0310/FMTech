@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<com.fmtech.softinput.FMLinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<com.fmtech.softinput.FMLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:ignore="MissingPrefix"
     android:id="@+id/container"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -146,6 +147,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="10dp"
+                    fontPath="fonts/fontello.ttf"
                     android:text="@string/hkid_input_eg" />
 
                 <EditText
