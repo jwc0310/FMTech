@@ -1,6 +1,7 @@
 package com.fmtech.shapedrawable;
 
 import android.content.Context;
+import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.StateListDrawable;
@@ -88,6 +89,10 @@ public class TabItem extends TextView{
         setBackground(mBackgroundDrawable);
 
         setText(mText);
+        ColorStateList textColor = new ColorStateList(
+                new int[][]{new int[]{android.R.attr.state_selected}, new int[]{-android.R.attr.state_selected}},
+                new int[]{0xffffffff, 0xff666666});
+        setTextColor(textColor);
 
         setOnClickListener(new OnClickListener() {
             @Override

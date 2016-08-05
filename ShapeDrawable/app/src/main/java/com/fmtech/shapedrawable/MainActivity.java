@@ -62,6 +62,8 @@ public class MainActivity extends AppCompatActivity {
             final TabItem mEntertainmentTab = new TabItem(MainActivity.this, Color.parseColor("#66c09F"), "娱乐");
             final TabItem mSportsTab = new TabItem(MainActivity.this, Color.parseColor("#FF4081"), "体育");
 
+            mAutoMobileTab.setSelected(true);
+
             mDietTab.setOnTabSelectedListener(new TabItem.OnTabSelectedListener() {
                 @Override
                 public void onTabSelected() {
