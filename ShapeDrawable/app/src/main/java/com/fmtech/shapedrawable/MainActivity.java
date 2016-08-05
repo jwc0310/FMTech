@@ -54,12 +54,53 @@ public class MainActivity extends AppCompatActivity {
         gd3.setColor(fillColor);
         mSportsTV.setBackground(gd3);*/
 
-        mRootContainer = (LinearLayout)findViewById(R.id.root_container);
+        try {
+            mRootContainer = (LinearLayout)findViewById(R.id.root_container);
 
-        mRootContainer.addView(new TabItem(MainActivity.this, Color.parseColor("#FF4081"), "饮食"));
-        mRootContainer.addView(new TabItem(MainActivity.this, Color.parseColor("#903F9F"), "汽车"));
-        mRootContainer.addView(new TabItem(MainActivity.this, Color.parseColor("#66c09F"), "娱乐"));
-        mRootContainer.addView(new TabItem(MainActivity.this, Color.parseColor("#FF4081"), "体育"));
+            final TabItem mDietTab = new TabItem(MainActivity.this, Color.parseColor("#FF4081"), "饮食");
+            final TabItem mAutoMobileTab = new TabItem(MainActivity.this, Color.parseColor("#903F9F"), "汽车");
+            final TabItem mEntertainmentTab = new TabItem(MainActivity.this, Color.parseColor("#66c09F"), "娱乐");
+            final TabItem mSportsTab = new TabItem(MainActivity.this, Color.parseColor("#FF4081"), "体育");
+
+            mDietTab.setOnTabSelectedListener(new TabItem.OnTabSelectedListener() {
+                @Override
+                public void onTabSelected() {
+                    mAutoMobileTab.setSelected(false);
+                    mEntertainmentTab.setSelected(false);
+                    mSportsTab.setSelected(false);
+                }
+            });
+            mAutoMobileTab.setOnTabSelectedListener(new TabItem.OnTabSelectedListener() {
+                @Override
+                public void onTabSelected() {
+                    mDietTab.setSelected(false);
+                    mEntertainmentTab.setSelected(false);
+                    mSportsTab.setSelected(false);
+                }
+            });
+            mEntertainmentTab.setOnTabSelectedListener(new TabItem.OnTabSelectedListener() {
+                @Override
+                public void onTabSelected() {
+                    mDietTab.setSelected(false);
+                    mAutoMobileTab.setSelected(false);
+                    mSportsTab.setSelected(false);
+                }
+            });
+            mSportsTab.setOnTabSelectedListener(new TabItem.OnTabSelectedListener() {
+                @Override
+                public void onTabSelected() {
+                    mDietTab.setSelected(false);
+                    mAutoMobileTab.setSelected(false);
+                    mEntertainmentTab.setSelected(false);
+                }
+            });
+            mRootContainer.addView(mDietTab);
+            mRootContainer.addView(mAutoMobileTab);
+            mRootContainer.addView(mEntertainmentTab);
+            mRootContainer.addView(mSportsTab);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 
     public int dip2px(Context context, float dipValue){

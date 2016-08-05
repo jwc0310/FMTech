@@ -32,10 +32,12 @@ public class TabItem extends TextView{
     private String mText;
 
     GradientDrawable mSelectedDrawable;
+    GradientDrawable mUnSelectedDrawable;
 
     StateListDrawable mBackgroundDrawable;
 
     int mSelectedColor = Color.parseColor("#FF4081");
+    int mUnSelectedColor = Color.parseColor("#00FFFFFF");
 
     public TabItem(Context context) {
         super(context);
@@ -64,12 +66,26 @@ public class TabItem extends TextView{
         setHeight(dip2px(getContext(),30));
         setGravity(Gravity.CENTER);
 
+        mBackgroundDrawable = new StateListDrawable();
+
         mSelectedDrawable = new GradientDrawable();
+        mUnSelectedDrawable = new GradientDrawable();
+
         int roundRadius = dip2px(getContext(), 15);
         mSelectedDrawable.setCornerRadius(roundRadius);
         mSelectedDrawable.setColor(mSelectedColor);
-        setBackground(mSelectedDrawable);
-//        setBackground(mBackgroundDrawable);
+
+        mUnSelectedDrawable.setColor(mUnSelectedColor);
+
+        int[] selectedStates = {android.R.attr.state_selected};
+        int[] unselectedStates = {-android.R.attr.state_selected};
+
+        mBackgroundDrawable.addState(selectedStates, mSelectedDrawable);
+        mBackgroundDrawable.addState(unselectedStates, mUnSelectedDrawable);
+
+        mBackgroundDrawable.setCallback(this);
+
+        setBackground(mBackgroundDrawable);
 
         setText(mText);
 
@@ -92,6 +108,10 @@ public class TabItem extends TextView{
 
     public interface OnTabSelectedListener{
         public void onTabSelected();
+    }
+
+    public void setOnTabSelectedListener(OnTabSelectedListener listener){
+        mOnTabSelectedListener = listener;
     }
 
     public int dip2px(Context context, float dipValue){
