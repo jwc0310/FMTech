@@ -5,6 +5,7 @@ import android.graphics.Color;
 import android.graphics.drawable.GradientDrawable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.widget.LinearLayout;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
@@ -13,13 +14,14 @@ public class MainActivity extends AppCompatActivity {
     private TextView mAutomobileTV;
     private TextView mEntertainmentTV;
     private TextView mSportsTV;
+    private LinearLayout mRootContainer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        mDietTV = (TextView)findViewById(R.id.diet);
+        /*mDietTV = (TextView)findViewById(R.id.diet);
         mAutomobileTV = (TextView)findViewById(R.id.automobile);
         mEntertainmentTV = (TextView)findViewById(R.id.entertainment);
         mSportsTV = (TextView)findViewById(R.id.sports);
@@ -50,9 +52,14 @@ public class MainActivity extends AppCompatActivity {
         gd3.setCornerRadius(roundRadius);
         fillColor = Color.parseColor("#FF4081");
         gd3.setColor(fillColor);
-        mSportsTV.setBackground(gd3);
+        mSportsTV.setBackground(gd3);*/
 
+        mRootContainer = (LinearLayout)findViewById(R.id.root_container);
 
+        mRootContainer.addView(new TabItem(MainActivity.this, Color.parseColor("#FF4081"), "饮食"));
+        mRootContainer.addView(new TabItem(MainActivity.this, Color.parseColor("#903F9F"), "汽车"));
+        mRootContainer.addView(new TabItem(MainActivity.this, Color.parseColor("#66c09F"), "娱乐"));
+        mRootContainer.addView(new TabItem(MainActivity.this, Color.parseColor("#FF4081"), "体育"));
     }
 
     public int dip2px(Context context, float dipValue){

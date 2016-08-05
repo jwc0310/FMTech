@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_container"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,35 +11,44 @@
     tools:context="com.fmtech.shapedrawable.MainActivity"
     android:orientation="horizontal">
 
-    <TextView
-        android:id="@+id/diet"
-        android:layout_width="72dp"
-        android:layout_height="30dp"
-        android:gravity="center"
-        android:text="饮食" />
 
-    <TextView
-        android:id="@+id/automobile"
-        android:layout_width="72dp"
-        android:layout_height="30dp"
-        android:layout_marginLeft="8dp"
-        android:gravity="center"
-        android:text="汽车" />
+    <!--<TextView-->
+        <!--android:id="@+id/diet"-->
+        <!--android:layout_width="72dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="饮食" />-->
 
-    <TextView
-        android:id="@+id/entertainment"
-        android:layout_width="72dp"
-        android:layout_height="30dp"
-        android:layout_marginLeft="8dp"
-        android:gravity="center"
-        android:text="娱乐" />
+    <!--<TextView-->
+        <!--android:id="@+id/automobile"-->
+        <!--android:layout_width="72dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="汽车" />-->
 
-    <TextView
-        android:id="@+id/sports"
-        android:layout_width="72dp"
-        android:layout_height="30dp"
-        android:layout_marginLeft="8dp"
-        android:gravity="center"
-        android:text="体育" />
+    <!--<TextView-->
+        <!--android:id="@+id/entertainment"-->
+        <!--android:layout_width="72dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="娱乐" />-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/sports"-->
+        <!--android:layout_width="72dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="体育" />-->
+
+    <!--<com.fmtech.shapedrawable.TabItem-->
+        <!--android:id="@+id/test"-->
+        <!--android:layout_width="72dp"-->
+        <!--android:layout_height="30dp"-->
+        <!--android:layout_marginLeft="8dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="测试" />-->
 
 </LinearLayout>
