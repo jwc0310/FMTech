@@ -93,6 +93,6 @@ public class EnglishInputFilter implements InputFilter {
     }
 
     private boolean isCharAllowed(char c) {
-        return Character.isLetterOrDigit(c) || Character.isSpaceChar(c);
+        return Character.isLetter(c) || Character.isSpaceChar(c);
     }
 }
