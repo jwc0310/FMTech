@@ -48,8 +48,8 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        getWindow().addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN);
+//        getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
+//        getWindow().addFlags(WindowManager.LayoutParams.FLAG_LAYOUT_IN_SCREEN);
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.fragment_signup_step2);
@@ -59,7 +59,8 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
         mOthernameEng = (EditText)findViewById(R.id.et_signup_step2_other_name_en);
 
         mSurnameEng.setText("HUA WEI");
-
+        String surnameChi = "华为";
+        System.out.println("-------surnameChi.length:"+surnameChi.length());
         mSurnameChi.setText("华为");
 
         mContainer = (FMLinearLayout) findViewById(R.id.container);
@@ -183,7 +184,7 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
             }
         };
 
-//        mContainer.getViewTreeObserver().addOnGlobalLayoutListener(mOnGlobalLayoutChangeListener);
+        mContainer.getViewTreeObserver().addOnGlobalLayoutListener(mOnGlobalLayoutChangeListener);
 //        mContainer.getViewTreeObserver().addOnPreDrawListener(mOnPreDrawListener);
 //        mContainer.getViewTreeObserver().addOnDrawListener(mOnDrawListener);
     }
@@ -254,10 +255,10 @@ public class MainActivity extends AppCompatActivity implements FMLinearLayout.On
     @Override
     protected void onResume() {
         super.onResume();
-        InputFilter[] inputFilters = { new ChineseInputFilter()};
+        InputFilter[] inputFilters = { new ChineseInputFilter(), new InputFilter.LengthFilter(10)};
         mSurnameChi.setFilters(inputFilters);
 //        DigitsKeyListener
-        InputFilter[] inputFilters1 = { new InputFilter.AllCaps(), new EnglishInputFilter()};
+        InputFilter[] inputFilters1 = { new InputFilter.AllCaps(), new EnglishInputFilter(), new InputFilter.LengthFilter(20)};
 //        InputFilter[] inputFilters1 = { new InputFilter.AllCaps()};
 //
 //        InputFilter[] inputFilters1 = { new EnglishInputFilterNew()};

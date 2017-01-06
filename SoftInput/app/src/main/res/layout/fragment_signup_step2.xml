@@ -167,7 +167,7 @@
                     android:textColor="@color/mpfa_error"
                     android:visibility="gone" />
 
-                <EditText
+                <com.fmtech.softinput.MtelEditText
                     android:id="@id/et_signup_step2_re_email_address"
                     style="@style/CommonEditText"
                     android:layout_marginTop="16dp"
